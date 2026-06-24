@@ -9,15 +9,13 @@ export default function ExperienceCard({ experience }) {
   return (
     <article className="card-hover group flex flex-col overflow-hidden" style={{ background: "white", border: "1px solid #e5d9c8" }}>
 
-      {/* ── Image — natural height, no cropping ── */}
-      <div className="overflow-hidden">
+      {/* ── Image — fixed height, object-position top so subject stays visible ── */}
+      <div className="relative overflow-hidden" style={{ height: "220px" }}>
         <Image
           src={heroImage}
           alt={title}
-          width={800}
-          height={520}
-          className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
-          style={{ display: "block", objectFit: "cover" }}
+          fill
+          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
