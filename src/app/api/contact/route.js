@@ -32,7 +32,7 @@ export async function POST(request) {
     return Response.json({ success: false, message: "Invalid request." }, { status: 400 });
   }
 
-  const { name, email, phone, country, experience, date, guests, message } = body;
+  const { name, email, phone, country, city, experience, date, guests, message } = body;
 
   // ── 3. Validate required fields ──
   if (!name?.trim() || !email?.trim() || !experience?.trim() || !guests?.trim()) {
@@ -59,7 +59,8 @@ export async function POST(request) {
     ["Name",                name],
     ["Email",               email],
     ["Phone / WhatsApp",    phone    || "—"],
-    ["Country / City",      country  || "—"],
+    ["Country",             country  || "—"],
+    ["City",                city     || "—"],
     ["Experience",          experience],
     ["Preferred Date",      date     || "—"],
     ["No. of Guests",       guests],

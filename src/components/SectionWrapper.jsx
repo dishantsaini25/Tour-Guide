@@ -1,10 +1,10 @@
 export default function SectionWrapper({ children, variant = "main", id, className = "" }) {
   const bg = {
-    main:   "#F2F0EC",
-    soft:   "#E8F0EC",
+    main:   "#FFFFFF",
+    soft:   "#FFFDE7",
     card:   "#FFFFFF",
-    dark:   "#1A1F1C",
-    maroon: "#1E4D3A",
+    dark:   "#1A1209",
+    maroon: "#FF8C00",
     white:  "#FFFFFF",
   };
   return (

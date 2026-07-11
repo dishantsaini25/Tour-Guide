@@ -4,9 +4,9 @@ import { Plus, Minus } from "lucide-react";
 
 export default function FAQAccordion({ items = [], dark = false }) {
   const [open, setOpen] = useState(null);
-  const bd = dark ? "rgba(176,125,62,0.15)" : "#C8D8D0";
-  const qc = dark ? "#F0EDE8" : "#1E4D3A";
-  const ac = dark ? "rgba(240,237,232,0.6)" : "#4A5550";
+  const bd = dark ? "rgba(255,255,255,0.18)" : "#FFD89B";
+  const qc = dark ? "#FFFFFF" : "#1A1209";
+  const ac = dark ? "rgba(255,255,255,0.65)" : "#6B5B2E";
 
   return (
     <div>
@@ -18,7 +18,7 @@ export default function FAQAccordion({ items = [], dark = false }) {
             aria-expanded={open === i}
           >
             <span style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.05rem", fontWeight: 600, color: qc, lineHeight: 1.4 }}>{item.q}</span>
-            <span style={{ flexShrink: 0, width: "28px", height: "28px", borderRadius: "50%", border: "1.5px solid #B07D3E", display: "flex", alignItems: "center", justifyContent: "center", color: open === i ? "#1A1F1C" : "#B07D3E", background: open === i ? "#B07D3E" : "transparent", transition: "all .25s" }}>
+            <span style={{ flexShrink: 0, width: "28px", height: "28px", borderRadius: "50%", border: "1.5px solid #FF8C00", display: "flex", alignItems: "center", justifyContent: "center", color: open === i ? "#FFFFFF" : "#FF8C00", background: open === i ? "#FF8C00" : "transparent", transition: "all .25s" }}>
               {open === i ? <Minus size={11} /> : <Plus size={11} />}
             </span>
           </button>

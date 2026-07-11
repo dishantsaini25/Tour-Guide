@@ -3,14 +3,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { MapPin, Mail, Phone, Plus, Minus } from "lucide-react";
 
-const FG  = "#0A1F15";
-const FT  = "rgba(240,237,232,0.55)";
-const FTH = "#F0EDE8";
-const FBD = "rgba(176,125,62,0.14)";
-const GO  = "#B07D3E";
-const IV  = "#E8F0EC";
-const MR  = "#1E4D3A";
-const BD  = "#C8D8D0";
+/* ── Light footer palette ── */
+const FG  = "#1A1209";               /* footer bg — warm near-black */
+const FT  = "rgba(255,253,231,0.58)";/* muted text */
+const FTH = "#FFFDE7";               /* headings / bright text */
+const FBD = "rgba(255,253,231,0.12)";/* divider */
+const ACC = "#F5A623";               /* accent — golden yellow */
 const PF  = "Fraunces, Georgia, serif";
 const IN  = "DM Sans, system-ui, sans-serif";
 
@@ -48,51 +46,78 @@ export default function Footer() {
   return (
     <>
       <style>{`
-        .fl:hover { color:${GO}!important; }
-        .fs:hover { border-color:${GO}!important; color:${GO}!important; }
-        .fbook:hover { background:${GO}!important; color:${FG}!important; border-color:${GO}!important; }
+        /* Nav link hover */
+        .fl { transition: color .2s ease; }
+        .fl:hover { color: ${ACC} !important; }
+
+        /* Social icon hover */
+        .fs { transition: border-color .2s ease, color .2s ease; }
+        .fs:hover { border-color: ${ACC} !important; color: ${ACC} !important; }
+
+        /* Footer CTA — pill, gradient, glow hover (matches hero primary) */
+        .fbook {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          border-radius: 9999px !important;
+          background: linear-gradient(135deg, #FF8C00 0%, #E07800 55%, #C45E00 100%);
+          color: #FFFFFF !important;
+          box-shadow: 0 3px 14px rgba(255,140,0,0.30);
+          transition: box-shadow 0.3s ease, transform 0.3s ease;
+          text-decoration: none;
+        }
+        .fbook:hover, .fbook:focus-visible {
+          color: #FFFFFF !important;
+          transform: translateY(-2px) scale(1.03);
+          box-shadow:
+            0 0 0 4px rgba(255,140,0,0.14),
+            0 0 22px rgba(255,140,0,0.48),
+            0 8px 24px rgba(255,140,0,0.30) !important;
+        }
+        .fbook:active { transform: translateY(0) scale(1); }
       `}</style>
+
       <footer style={{ fontFamily: IN }}>
 
-        {/* Signature strip */}
-        <div style={{ background: IV, borderTop: `2px solid ${MR}`, borderBottom: `1px solid ${BD}`, padding: "20px 24px", textAlign: "center" }}>
-          <p style={{ fontFamily: PF, fontSize: "1rem", fontStyle: "italic", color: MR, fontWeight: 500 }}>
+        {/* ── Signature strip ── */}
+        <div style={{ background: "#FFFDE7", borderTop: "2px solid #FF8C00", borderBottom: "1px solid #FFD89B", padding: "20px 24px", textAlign: "center" }}>
+          <p style={{ fontFamily: PF, fontSize: "1rem", fontStyle: "italic", color: "#3D2E0E", fontWeight: 500 }}>
             "Walk Slowly. Listen Deeply.{" "}
-            <em style={{ color: GO, fontStyle: "normal", fontWeight: 600 }}>Experience Authentically.</em>"
+            <em style={{ color: "#FF8C00", fontStyle: "normal", fontWeight: 600 }}>Experience Authentically.</em>"
           </p>
         </div>
 
         {/* ── MOBILE FOOTER ── */}
         <div className="f-mobile" style={{ background: FG, color: FT }} aria-label="Site footer">
 
-          {/* Collapsed header */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 20px", borderBottom: mobileOpen ? `1px solid ${FBD}` : "none" }}>
             <div>
               <div style={{ fontFamily: PF, fontSize: "1.25rem", fontWeight: 700, color: FTH, lineHeight: 1 }}>Raah India</div>
-              <div style={{ fontFamily: IN, fontSize: "0.48rem", letterSpacing: "0.24em", textTransform: "uppercase", color: GO, fontWeight: 600, marginTop: "3px" }}>Curated Experiences · Jaipur</div>
+              <div style={{ fontFamily: IN, fontSize: "0.48rem", letterSpacing: "0.24em", textTransform: "uppercase", color: ACC, fontWeight: 600, marginTop: "3px" }}>Curated Experiences · Jaipur</div>
             </div>
-            <button onClick={() => setMobileOpen(p => !p)}
-              aria-expanded={mobileOpen} aria-controls="mobile-footer-body"
+            <button
+              onClick={() => setMobileOpen(p => !p)}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-footer-body"
               aria-label={mobileOpen ? "Collapse footer" : "Expand footer"}
-              style={{ width: "44px", height: "44px", borderRadius: "50%", border: `1.5px solid rgba(176,125,62,0.35)`, background: "transparent", color: GO, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}
+              style={{ width: "44px", height: "44px", borderRadius: "50%", border: `1.5px solid rgba(245,166,35,0.35)`, background: "transparent", color: ACC, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}
             >
               {mobileOpen ? <Minus size={16} /> : <Plus size={16} />}
             </button>
           </div>
 
-          {/* Expandable body */}
-          <div id="mobile-footer-body" style={{ overflow: "hidden", maxHeight: mobileOpen ? "1200px" : "0px", opacity: mobileOpen ? 1 : 0, transition: "max-height .45s ease, opacity .35s ease" }}>
+          <div id="mobile-footer-body" style={{ overflow: "hidden", maxHeight: mobileOpen ? "1400px" : "0px", opacity: mobileOpen ? 1 : 0, transition: "max-height .45s ease, opacity .35s ease" }}>
             <div style={{ padding: "28px 20px 0" }}>
               <div style={{ textAlign: "center", marginBottom: "28px" }}>
                 <div style={{ fontFamily: PF, fontSize: "1.5rem", fontWeight: 700, color: FTH, marginBottom: "4px" }}>Raah India</div>
-                <div style={{ fontFamily: IN, fontSize: "0.5rem", letterSpacing: "0.25em", textTransform: "uppercase", color: GO, fontWeight: 600, marginBottom: "12px" }}>Curated Experiences · Jaipur</div>
+                <div style={{ fontFamily: IN, fontSize: "0.5rem", letterSpacing: "0.25em", textTransform: "uppercase", color: ACC, fontWeight: 600, marginBottom: "12px" }}>Curated Experiences · Jaipur</div>
                 <p style={{ fontFamily: IN, fontSize: "0.82rem", lineHeight: 1.75, color: FT, fontWeight: 300, maxWidth: "280px", margin: "0 auto 16px" }}>
                   Boutique walking tours & cultural experiences in Jaipur — for travellers who want depth, not destinations.
                 </p>
                 <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
                   {socialIcons.map(s => (
                     <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="fs"
-                      style={{ width: "36px", height: "36px", borderRadius: "50%", border: "1px solid rgba(240,237,232,0.14)", display: "flex", alignItems: "center", justifyContent: "center", color: "rgba(240,237,232,0.45)", textDecoration: "none", transition: "all .2s" }}
+                      style={{ width: "36px", height: "36px", borderRadius: "50%", border: "1px solid rgba(245,166,35,0.25)", display: "flex", alignItems: "center", justifyContent: "center", color: "rgba(245,166,35,0.55)", textDecoration: "none" }}
                     >{s.icon}</a>
                   ))}
                 </div>
@@ -100,13 +125,12 @@ export default function Footer() {
 
               <div style={{ height: "1px", background: FBD, marginBottom: "28px" }} />
 
-              {/* Two-col links */}
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px 16px", marginBottom: "28px" }}>
                 <div>
                   <h3 style={{ fontFamily: IN, color: FTH, fontSize: "0.6rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "14px" }}>Experiences</h3>
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "11px" }}>
                     {expLinks.map(([href, label]) => (
-                      <li key={href}><Link href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.82rem", textDecoration: "none", color: FT, transition: "color .2s", fontWeight: 300, display: "block", lineHeight: 1.4 }}>{label}</Link></li>
+                      <li key={href}><Link href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.82rem", textDecoration: "none", color: FT, fontWeight: 300, display: "block", lineHeight: 1.4 }}>{label}</Link></li>
                     ))}
                   </ul>
                 </div>
@@ -114,7 +138,7 @@ export default function Footer() {
                   <h3 style={{ fontFamily: IN, color: FTH, fontSize: "0.6rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "14px" }}>Navigate</h3>
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "11px" }}>
                     {navLinks.map(([href, label]) => (
-                      <li key={href}><Link href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.82rem", textDecoration: "none", color: FT, transition: "color .2s", fontWeight: 300, display: "block", lineHeight: 1.4 }}>{label}</Link></li>
+                      <li key={href}><Link href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.82rem", textDecoration: "none", color: FT, fontWeight: 300, display: "block", lineHeight: 1.4 }}>{label}</Link></li>
                     ))}
                   </ul>
                 </div>
@@ -122,32 +146,32 @@ export default function Footer() {
 
               <div style={{ height: "1px", background: FBD, marginBottom: "28px" }} />
 
-              {/* Get in Touch */}
               <div style={{ marginBottom: "28px" }}>
                 <h3 style={{ fontFamily: IN, color: FTH, fontSize: "0.6rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "16px" }}>Get in Touch</h3>
-                <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "13px", marginBottom: "18px" }}>
+                <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "13px", marginBottom: "20px" }}>
                   {[
                     { Icon: MapPin, text: "Jaipur, Rajasthan, India", href: null },
                     { Icon: Phone,  text: "+91 98765 43210",          href: "tel:+919876543210" },
                     { Icon: Mail,   text: "hello@raahindia.com",      href: "mailto:hello@raahindia.com" },
                   ].map(({ Icon, text, href }) => (
                     <li key={text} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                      <Icon size={13} style={{ color: GO, marginTop: "3px", flexShrink: 0 }} />
-                      {href ? <a href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.85rem", textDecoration: "none", transition: "color .2s", fontWeight: 300 }}>{text}</a>
-                             : <span style={{ fontFamily: IN, fontSize: "0.85rem", fontWeight: 300 }}>{text}</span>}
+                      <Icon size={13} style={{ color: ACC, marginTop: "3px", flexShrink: 0 }} />
+                      {href
+                        ? <a href={href} className="fl" style={{ fontFamily: IN, fontSize: "0.85rem", textDecoration: "none", fontWeight: 300, color: FT }}>{text}</a>
+                        : <span style={{ fontFamily: IN, fontSize: "0.85rem", fontWeight: 300, color: FT }}>{text}</span>}
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="fbook"
-                  style={{ display: "inline-block", border: `1px solid rgba(176,125,62,0.4)`, color: GO, padding: "10px 20px", fontFamily: IN, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", transition: "all .2s" }}
-                >Book Experience</Link>
+                <Link href="/contact" className="fbook" style={{ padding: "10px 22px", fontFamily: IN, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                  Book Experience
+                </Link>
               </div>
             </div>
             <div style={{ borderTop: `1px solid ${FBD}`, padding: "16px 20px", textAlign: "center" }}>
-              <p style={{ fontFamily: IN, fontSize: "0.7rem", color: "rgba(240,237,232,0.25)", fontWeight: 300, marginBottom: "3px" }}>
+              <p style={{ fontFamily: IN, fontSize: "0.7rem", color: "rgba(255,253,231,0.3)", fontWeight: 300, marginBottom: "3px" }}>
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
-              <p style={{ fontFamily: IN, fontSize: "0.65rem", color: "rgba(240,237,232,0.15)", fontStyle: "italic" }}>
+              <p style={{ fontFamily: IN, fontSize: "0.65rem", color: "rgba(255,253,231,0.18)", fontStyle: "italic" }}>
                 Crafted with care · Jaipur, Rajasthan
               </p>
             </div>
@@ -156,64 +180,79 @@ export default function Footer() {
 
         {/* ── DESKTOP FOOTER ── */}
         <div className="f-desktop" style={{ background: FG, color: FT }}>
-          <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "60px 32px" }}>
+          <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "64px 32px" }}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+              {/* Brand col */}
               <div>
                 <div style={{ fontFamily: PF, fontSize: "1.65rem", fontWeight: 700, color: FTH, lineHeight: 1, marginBottom: "4px" }}>Raah India</div>
-                <div style={{ fontFamily: IN, fontSize: "0.52rem", letterSpacing: "0.28em", textTransform: "uppercase", color: GO, fontWeight: 600, marginBottom: "16px" }}>Curated Experiences · Jaipur</div>
-                <p style={{ fontSize: "0.875rem", lineHeight: 1.8, maxWidth: "220px", marginBottom: "20px", fontWeight: 300 }}>Boutique walking tours & cultural experiences in Jaipur — for travellers who want depth, not destinations.</p>
-                <div style={{ display: "flex", gap: "10px" }}>
+                <div style={{ fontFamily: IN, fontSize: "0.52rem", letterSpacing: "0.28em", textTransform: "uppercase", color: ACC, fontWeight: 600, marginBottom: "16px" }}>Curated Experiences · Jaipur</div>
+                <p style={{ fontSize: "0.875rem", lineHeight: 1.8, maxWidth: "220px", marginBottom: "22px", fontWeight: 300, color: FT }}>
+                  Boutique walking tours & cultural experiences in Jaipur — for travellers who want depth, not destinations.
+                </p>
+                <div style={{ display: "flex", gap: "10px", marginBottom: "24px" }}>
                   {socialIcons.map(s => (
                     <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="fs"
-                      style={{ width: "36px", height: "36px", borderRadius: "50%", border: "1px solid rgba(240,237,232,0.14)", display: "flex", alignItems: "center", justifyContent: "center", color: "rgba(240,237,232,0.45)", textDecoration: "none", transition: "all .2s" }}
+                      style={{ width: "36px", height: "36px", borderRadius: "50%", border: "1px solid rgba(245,166,35,0.25)", display: "flex", alignItems: "center", justifyContent: "center", color: "rgba(245,166,35,0.55)", textDecoration: "none" }}
                     >{s.icon}</a>
                   ))}
                 </div>
+                {/* CTA in brand column */}
+                <Link href="/contact" className="fbook" style={{ padding: "11px 24px", fontFamily: IN, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                  Book an Experience
+                </Link>
               </div>
 
+              {/* Experiences */}
               <div>
                 <h3 style={{ color: FTH, fontSize: "0.62rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "18px" }}>Experiences</h3>
                 <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                   {expLinks.map(([href, label]) => (
-                    <li key={href}><Link href={href} className="fl" style={{ fontSize: "0.85rem", textDecoration: "none", transition: "color .2s", fontWeight: 300 }}>{label}</Link></li>
+                    <li key={href}><Link href={href} className="fl" style={{ fontSize: "0.85rem", textDecoration: "none", fontWeight: 300, color: FT }}>{label}</Link></li>
                   ))}
                 </ul>
               </div>
 
+              {/* Navigate */}
               <div>
                 <h3 style={{ color: FTH, fontSize: "0.62rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "18px" }}>Navigate</h3>
                 <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                   {navLinks.map(([href, label]) => (
-                    <li key={href}><Link href={href} className="fl" style={{ fontSize: "0.85rem", textDecoration: "none", transition: "color .2s", fontWeight: 300 }}>{label}</Link></li>
+                    <li key={href}><Link href={href} className="fl" style={{ fontSize: "0.85rem", textDecoration: "none", fontWeight: 300, color: FT }}>{label}</Link></li>
                   ))}
                 </ul>
               </div>
 
+              {/* Contact */}
               <div>
                 <h3 style={{ color: FTH, fontSize: "0.62rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700, marginBottom: "18px" }}>Get in Touch</h3>
-                <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "14px", marginBottom: "20px" }}>
+                <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "14px", marginBottom: "24px" }}>
                   {[
                     { Icon: MapPin, text: "Jaipur, Rajasthan, India", href: null },
                     { Icon: Phone,  text: "+91 98765 43210",          href: "tel:+919876543210" },
                     { Icon: Mail,   text: "hello@raahindia.com",      href: "mailto:hello@raahindia.com" },
                   ].map(({ Icon, text, href }) => (
                     <li key={text} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                      <Icon size={13} style={{ color: GO, marginTop: "3px", flexShrink: 0 }} />
-                      {href ? <a href={href} className="fl" style={{ fontSize: "0.875rem", textDecoration: "none", transition: "color .2s", fontWeight: 300 }}>{text}</a>
-                             : <span style={{ fontSize: "0.875rem", fontWeight: 300 }}>{text}</span>}
+                      <Icon size={13} style={{ color: ACC, marginTop: "3px", flexShrink: 0 }} />
+                      {href
+                        ? <a href={href} className="fl" style={{ fontSize: "0.875rem", textDecoration: "none", fontWeight: 300, color: FT }}>{text}</a>
+                        : <span style={{ fontSize: "0.875rem", fontWeight: 300, color: FT }}>{text}</span>}
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="fbook"
-                  style={{ display: "inline-block", border: `1px solid rgba(176,125,62,0.4)`, color: GO, padding: "9px 18px", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", transition: "all .2s" }}
-                >Book Experience</Link>
               </div>
             </div>
           </div>
+
+          {/* Bottom bar */}
           <div style={{ borderTop: `1px solid ${FBD}` }}>
             <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "18px 32px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
-              <p style={{ fontSize: "0.72rem", color: "rgba(240,237,232,0.25)", fontWeight: 300 }}>© {new Date().getFullYear()} Raah India Experiences. All rights reserved.</p>
-              <p style={{ fontSize: "0.68rem", color: "rgba(240,237,232,0.15)", fontStyle: "italic" }}>Crafted with care · Jaipur, Rajasthan</p>
+              <p style={{ fontSize: "0.72rem", color: "rgba(255,253,231,0.28)", fontWeight: 300 }}>
+                © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
+              </p>
+              <p style={{ fontSize: "0.68rem", color: "rgba(255,253,231,0.16)", fontStyle: "italic" }}>
+                Crafted with care · Jaipur, Rajasthan
+              </p>
             </div>
           </div>
         </div>

@@ -2,26 +2,26 @@
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════════════
-   RAAH INDIA — Midnight Forest Theme
-   Forest Green · Warm Linen · Copper Bronze · Clean White
+   RAAH INDIA — Warm Sunshine Theme
+   White · Cream · Peach · Golden Yellow · Vivid Orange
    ═══════════════════════════════════════════════════════════ */
 :root {
-  --bg:           #F2F0EC;   /* warm linen — main bg */
-  --bg-soft:      #E8F0EC;   /* light sage — alt section */
-  --card:         #FFFFFF;   /* clean white — cards */
-  --charcoal:     #1A1F1C;   /* near-black green — headings */
-  --body:         #3A4440;   /* body text */
-  --muted:        #4A5550;   /* muted text */
-  --subtle:       #7A8A84;   /* captions, meta */
-  --forest:       #1E4D3A;   /* deep forest green — PRIMARY */
-  --forest-dark:  #163529;   /* hover state */
-  --forest-mid:   #2A6B52;   /* mid tone */
-  --copper:       #B07D3E;   /* warm copper — accent */
-  --copper-light: #C89A5A;   /* lighter copper */
-  --copper-pale:  #F0E5D0;   /* very pale copper */
-  --sage:         #7FA89A;   /* sage teal accent */
-  --border:       #C8D8D0;   /* sage border */
-  --border-soft:  #E0EAE4;   /* lighter border */
+  --bg:           #FFFFFF;   /* pure white — main bg */
+  --bg-soft:      #FFFDE7;   /* cream/light yellow — alt sections */
+  --card:         #FFFFFF;   /* white — cards */
+  --charcoal:     #1A1209;   /* warm near-black — headings */
+  --body:         #3D2E0E;   /* warm dark brown — body text */
+  --muted:        #6B5B2E;   /* muted warm brown */
+  --subtle:       #9C8550;   /* captions, meta */
+  --orange:       #FF8C00;   /* vivid orange — PRIMARY brand */
+  --orange-dark:  #E07800;   /* hover/darker orange */
+  --orange-mid:   #FF9D1A;   /* mid orange */
+  --gold:         #F5A623;   /* golden yellow — buttons/icons */
+  --gold-light:   #FFD89B;   /* light peach — highlights */
+  --gold-pale:    #FFF3DC;   /* very pale gold */
+  --cream:        #FFFDE7;   /* cream section bg */
+  --border:       #FFD89B;   /* peach border */
+  --border-soft:  #FFF3DC;   /* pale border */
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -46,16 +46,16 @@ h1, h2, h3, h4, h5 {
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--copper); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--forest); }
+::-webkit-scrollbar-track { background: var(--bg-soft); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--orange); }
 
 /* Selection */
-::selection { background: #D4EAE0; color: var(--forest); }
+::selection { background: #FFD89B; color: #1A1209; }
 
 /* Card hover */
 .raah-card { transition: box-shadow 0.35s ease, transform 0.35s ease; }
-.raah-card:hover { box-shadow: 0 12px 40px rgba(30,77,58,0.12); transform: translateY(-3px); }
+.raah-card:hover { box-shadow: 0 12px 40px rgba(255,140,0,0.15); transform: translateY(-3px); }
 
 /* Animations */
 @keyframes fadeUp {
@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5 {
     padding: 0 20px 4px; margin: 0 -20px;
   }
   .filters-bar::-webkit-scrollbar { display: none; }
+  .fc-track::-webkit-scrollbar    { display: none; }
   .filters-bar > * { flex-shrink: 0; }
   .quick-info-strip {
     display: flex; overflow-x: auto; scrollbar-width: none;
@@ -115,7 +116,7 @@ h1, h2, h3, h4, h5 {
   .detail-page-content { padding-bottom: 80px; }
   .mobile-book-bar {
     display: flex; position: fixed; bottom: 0; left: 0; right: 0;
-    height: 64px; background: #FFFFFF; border-top: 1px solid #C8D8D0;
+    height: 64px; background: #FFFFFF; border-top: 1px solid #FFD89B;
     z-index: 40; align-items: center; padding: 0 16px; gap: 12px;
   }
 }
