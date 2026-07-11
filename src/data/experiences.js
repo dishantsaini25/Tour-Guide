@@ -259,10 +259,10 @@ export const experiences = [
     languages: ["English", "Hindi"],
     location: "Walled City, Jaipur",
     meetingPoint: "Main Entry Gate, Hawa Mahal",
-    heroImage: "https://www.islands.com/img/gallery/indias-pink-city-is-a-picturesque-destination-with-artisanal-craft-luxe-resorts-and-palaces/intro-1730835958.jpg",
-    cardImage: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    heroImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&q=85",
+    cardImage: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
     gallery: [
-      { src: "https://www.islands.com/img/gallery/indias-pink-city-is-a-picturesque-destination-with-artisanal-craft-luxe-resorts-and-palaces/intro-1730835958.jpg", alt: "Jaipur Pink City bazaar" },
+      { src: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80", alt: "Jaipur Pink City bazaar" },
       { src: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80", alt: "Jaipur walled city evening streets" },
       { src: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80", alt: "Jaipur street food kachori chai" },
       { src: "https://images.unsplash.com/photo-1575835063815-f08b6c8b7936?w=800&q=80", alt: "Lac bangle craft workshop Jaipur" },

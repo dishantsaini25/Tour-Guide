@@ -7,8 +7,15 @@ export default function WhatsAppButton({ message = MSG }) {
   return (
     <>
       <style>{`
-        /* Lift button above mobile sticky booking bar */
-        @media (max-width: 767px) { .wa-btn { bottom: 80px !important; } }
+        /* On mobile: float above the experience detail floating action bar.
+           Bar is at bottom:20px, ~66px tall → top edge ≈ 86px from bottom.
+           WhatsApp button at bottom:110px sits ~24px clear above it. */
+        @media (max-width: 767px) {
+          .wa-btn {
+            bottom: 110px !important;
+            right: 20px !important;
+          }
+        }
 
         /* Pulse glow ring */
         @keyframes wa-pulse {

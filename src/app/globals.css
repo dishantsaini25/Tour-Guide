@@ -113,11 +113,24 @@ h1, h2, h3, h4, h5 {
   .quick-info-strip::-webkit-scrollbar { display: none; }
   .quick-info-strip > * { flex-shrink: 0; }
   .detail-sidebar { display: none !important; }
-  .detail-page-content { padding-bottom: 80px; }
+  .detail-page-content { padding-bottom: 100px; }
   .mobile-book-bar {
-    display: flex; position: fixed; bottom: 0; left: 0; right: 0;
-    height: 64px; background: #FFFFFF; border-top: 1px solid #FFD89B;
-    z-index: 40; align-items: center; padding: 0 16px; gap: 12px;
+    display: flex;
+    position: fixed;
+    bottom: 20px;        /* floating — off the edge */
+    left: 16px;
+    right: 16px;
+    height: auto;
+    background: rgba(255, 251, 240, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,216,155,0.5);
+    border-radius: 9999px;   /* full pill */
+    z-index: 40;
+    align-items: center;
+    padding: 8px 8px;
+    gap: 8px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.14), 0 2px 8px rgba(255,140,0,0.12);
   }
 }
 @media (min-width: 768px) {

@@ -117,6 +117,11 @@ export default function Navbar() {
         .nb:active { transform: translateY(0); }
 
         /* ── Hamburger icon lines → X animation ── */
+        .hb-btn {
+          /* flex centering for the icon — only active when element is displayed */
+          align-items: center;
+          justify-content: center;
+        }
         .hb-wrap {
           width: 22px; height: 16px;
           display: flex; flex-direction: column;
@@ -307,23 +312,19 @@ export default function Navbar() {
               >Book Now</Link>
             </nav>
 
-            {/* Hamburger toggle — mobile only */}
+            {/* Hamburger toggle — mobile only (md:hidden hides it at ≥768px) */}
             <button
               ref={toggleRef}
               onClick={() => setOpen(o => !o)}
-              className="md:hidden"
+              className="md:hidden hb-btn"
               aria-label={open ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={open}
               aria-controls="mobile-nav-drawer"
               style={{
-                /* Always display:flex so the icon centres correctly */
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                /* z-index above drawer (9999) and overlay (9998) */
+                /* No display property here — Tailwind md:hidden owns it.
+                   flex centering applied via the hb-btn CSS class below. */
                 position: "relative",
                 zIndex: 10001,
-                /* Orange when menu open, brand-tinted otherwise */
                 background: open
                   ? "rgba(255,140,0,0.15)"
                   : solid ? "rgba(255,140,0,0.08)" : "rgba(255,255,255,0.12)",
