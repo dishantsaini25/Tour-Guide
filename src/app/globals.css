@@ -1,89 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
-/* ============================================================
-   JAIPUR WALKS — Design System
-   Pink City palette: rose sandstone, terracotta, deep indigo,
-   warm gold, ivory parchment
-   ============================================================ */
-
+/* ═══════════════════════════════════════════════════════════
+   RAAH INDIA — Midnight Forest Theme
+   Forest Green · Warm Linen · Copper Bronze · Clean White
+   ═══════════════════════════════════════════════════════════ */
 :root {
-  /* Core palette */
-  --indigo:        #1e1b3a;   /* deep indigo-night — main dark */
-  --indigo-mid:    #2d2a52;   /* slightly lighter indigo */
-  --terracotta:    #c1440e;   /* Rajasthan terracotta */
-  --rose-pink:     #d4617a;   /* Jaipur rose pink */
-  --rose-light:    #e8a0a8;   /* soft pink accent */
-  --gold:          #c9943a;   /* warm Rajasthani gold */
-  --gold-light:    #e2b86a;   /* lighter gold */
-  --parchment:     #fdf6ed;   /* ivory parchment */
-  --parchment-mid: #f5ece0;   /* slightly warmer */
-  --sandstone:     #c8a882;   /* warm sandstone beige */
-  --text-dark:     #1a1625;   /* near-black text */
-  --text-body:     #4a4458;   /* body text */
-  --text-muted:    #8a7e9a;   /* muted / captions */
-  --border:        #e5d9c8;   /* warm border */
+  --bg:           #F2F0EC;   /* warm linen — main bg */
+  --bg-soft:      #E8F0EC;   /* light sage — alt section */
+  --card:         #FFFFFF;   /* clean white — cards */
+  --charcoal:     #1A1F1C;   /* near-black green — headings */
+  --body:         #3A4440;   /* body text */
+  --muted:        #4A5550;   /* muted text */
+  --subtle:       #7A8A84;   /* captions, meta */
+  --forest:       #1E4D3A;   /* deep forest green — PRIMARY */
+  --forest-dark:  #163529;   /* hover state */
+  --forest-mid:   #2A6B52;   /* mid tone */
+  --copper:       #B07D3E;   /* warm copper — accent */
+  --copper-light: #C89A5A;   /* lighter copper */
+  --copper-pale:  #F0E5D0;   /* very pale copper */
+  --sage:         #7FA89A;   /* sage teal accent */
+  --border:       #C8D8D0;   /* sage border */
+  --border-soft:  #E0EAE4;   /* lighter border */
 }
 
-/* ---- Base ---- */
-*, *::before, *::after { box-sizing: border-box; }
-
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--parchment);
-  color: var(--text-dark);
+  background-color: var(--bg);
+  color: var(--charcoal);
   font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* ---- Typography ---- */
-.font-display {
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  line-height: 1.15;
-}
-
-/* ---- Scrollbar ---- */
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--parchment); }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
-
-/* ---- Utility: gold divider line ---- */
-.gold-line::before {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 2px;
-  background: var(--gold);
-  margin-bottom: 16px;
-}
-
-/* ---- Utility: label style ---- */
-.label-tag {
-  font-size: 0.65rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+h1, h2, h3, h4, h5 {
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 600;
-  color: var(--gold);
+  line-height: 1.1;
+  color: var(--charcoal);
 }
 
-/* ---- Page transitions ---- */
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--copper); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--forest); }
+
+/* Selection */
+::selection { background: #D4EAE0; color: var(--forest); }
+
+/* Card hover */
+.raah-card { transition: box-shadow 0.35s ease, transform 0.35s ease; }
+.raah-card:hover { box-shadow: 0 12px 40px rgba(30,77,58,0.12); transform: translateY(-3px); }
+
+/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.anim-fade-up { animation: fadeUp 0.65s ease both; }
-
-/* ---- Card hover glow ---- */
-.card-hover {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
 }
-.card-hover:hover {
-  box-shadow: 0 16px 48px rgba(30,27,58,0.12);
-  transform: translateY(-3px);
+
+/* Section responsive */
+@media (min-width: 768px) {
+  .section-responsive { padding: 88px 0 !important; }
+  .inner-pad { padding: 0 32px !important; }
+}
+
+/* ── Carousel utilities ─────────────────────────────── */
+@media (max-width: 767px) {
+  .wcu-slider,.tc-slider,.jp-slider {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; gap: 16px;
+    padding: 4px 20px 20px; margin: 0 -20px; scrollbar-width: none;
+  }
+  .wcu-slider::-webkit-scrollbar,.tc-slider::-webkit-scrollbar,.jp-slider::-webkit-scrollbar { display: none; }
+  .wcu-slider > *,.tc-slider > *,.jp-slider > * { flex: 0 0 88%; scroll-snap-align: start; min-width: 0; }
+  .exp-cards-slider {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; gap: 16px;
+    padding: 4px 20px 20px; margin: 0 -20px; scrollbar-width: none;
+  }
+  .exp-cards-slider::-webkit-scrollbar { display: none; }
+  .exp-cards-slider > * { flex: 0 0 88%; scroll-snap-align: start; min-width: 0; }
+  .gallery-carousel {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; gap: 12px;
+    padding: 4px 0 16px; scrollbar-width: none;
+  }
+  .gallery-carousel::-webkit-scrollbar { display: none; }
+  .gallery-carousel > * { flex: 0 0 80%; scroll-snap-align: start; min-width: 0; }
+  .filters-bar {
+    display: flex; overflow-x: auto; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; gap: 8px;
+    flex-wrap: nowrap !important; justify-content: flex-start !important;
+    padding: 0 20px 4px; margin: 0 -20px;
+  }
+  .filters-bar::-webkit-scrollbar { display: none; }
+  .filters-bar > * { flex-shrink: 0; }
+  .quick-info-strip {
+    display: flex; overflow-x: auto; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; gap: 20px;
+    flex-wrap: nowrap !important; padding: 18px 20px;
+  }
+  .quick-info-strip::-webkit-scrollbar { display: none; }
+  .quick-info-strip > * { flex-shrink: 0; }
+  .detail-sidebar { display: none !important; }
+  .detail-page-content { padding-bottom: 80px; }
+  .mobile-book-bar {
+    display: flex; position: fixed; bottom: 0; left: 0; right: 0;
+    height: 64px; background: #FFFFFF; border-top: 1px solid #C8D8D0;
+    z-index: 40; align-items: center; padding: 0 16px; gap: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .wcu-slider { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .tc-slider  { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .jp-slider  { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .exp-cards-slider { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+  .gallery-carousel { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+  .mobile-book-bar { display: none; }
+}
+@media (min-width: 1024px) {
+  .exp-cards-slider { grid-template-columns: repeat(3,1fr); }
 }

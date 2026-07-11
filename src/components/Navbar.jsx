@@ -1,15 +1,14 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
+const links = [
   { href: "/", label: "Home" },
   { href: "/experiences", label: "Experiences" },
   { href: "/about", label: "About" },
-  { href: "/gallery", label: "Gallery" },
+  { href: "/journal", label: "The Journal" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -20,116 +19,72 @@ export default function Navbar() {
   const isHome = pathname === "/";
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 50);
+    const fn = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
   }, []);
+  useEffect(() => setOpen(false), [pathname]);
 
-  useEffect(() => { setOpen(false); }, [pathname]);
-
-  /* Transparent on home hero, solid elsewhere */
   const solid = scrolled || !isHome;
 
   return (
-    <header
-      style={{
-        background: solid ? "rgba(30,27,58,0.97)" : "transparent",
-        backdropFilter: solid ? "blur(12px)" : "none",
-        borderBottom: solid ? "1px solid rgba(255,255,255,0.06)" : "none",
-        transition: "background 0.4s ease, border-color 0.4s ease",
-      }}
-      className="fixed top-0 left-0 right-0 z-50"
-    >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-16 md:h-20">
+    <>
+      <style>{`
+        .nl:hover { color: #B07D3E !important; }
+        .nb { background: #1E4D3A !important; color: #F0EDE8 !important; transition: background .2s; }
+        .nb:hover { background: #163529 !important; }
+      `}</style>
+      <header style={{
+        position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
+        background: solid ? "rgba(15,25,20,0.97)" : "transparent",
+        backdropFilter: solid ? "blur(16px)" : "none",
+        borderBottom: solid ? "1px solid rgba(176,125,62,0.15)" : "none",
+        transition: "all 0.4s cubic-bezier(0.4,0,0.2,1)",
+      }}>
+        <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }} className="inner-pad">
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: solid ? "68px" : "80px", transition: "height 0.4s ease" }}>
 
-          {/* ─── Logo ─── */}
-          <Link href="/" className="flex flex-col leading-none select-none">
-            <span
-              className="text-white text-xl md:text-2xl font-semibold tracking-wide"
-              style={{ fontFamily: "Cormorant Garamond, Georgia, serif", letterSpacing: "0.02em" }}
-            >
-              Jaipur Walks
-            </span>
-            <span style={{ fontSize: "0.58rem", letterSpacing: "0.25em", color: "#c9943a", textTransform: "uppercase", fontWeight: 600, marginTop: "2px" }}>
-              Curated Local Experiences
-            </span>
-          </Link>
-
-          {/* ─── Desktop Nav ─── */}
-          <nav className="hidden md:flex items-center gap-7">
-            {navLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="text-sm font-medium transition-colors duration-200"
-                style={{
-                  color: pathname === l.href ? "#c9943a" : "rgba(255,255,255,0.78)",
-                  letterSpacing: "0.02em",
-                }}
-                onMouseEnter={e => e.target.style.color = "#c9943a"}
-                onMouseLeave={e => e.target.style.color = pathname === l.href ? "#c9943a" : "rgba(255,255,255,0.78)"}
-              >
-                {l.label}
-              </Link>
-            ))}
-            <Link
-              href="/contact"
-              className="ml-2 text-sm font-semibold px-5 py-2.5 transition-all duration-200"
-              style={{
-                background: "#c9943a",
-                color: "#1e1b3a",
-                letterSpacing: "0.04em",
-              }}
-              onMouseEnter={e => e.currentTarget.style.background = "#e2b86a"}
-              onMouseLeave={e => e.currentTarget.style.background = "#c9943a"}
-            >
-              Book Now
+            <Link href="/" style={{ textDecoration: "none", display: "flex", flexDirection: "column" }}>
+              <span style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.55rem", fontWeight: 700, color: "white", lineHeight: 1 }}>Raah India</span>
+              <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.52rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "#B07D3E", fontWeight: 500, marginTop: "3px" }}>Curated Experiences · Jaipur</span>
             </Link>
+
+            <nav className="hidden md:flex" style={{ alignItems: "center", gap: "32px" }}>
+              {links.map((l) => (
+                <Link key={l.href} href={l.href} className="nl"
+                  style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.82rem", fontWeight: 500, color: pathname === l.href ? "#B07D3E" : "rgba(240,237,232,0.75)", textDecoration: "none", transition: "color 0.2s" }}
+                >{l.label}</Link>
+              ))}
+              <Link href="/contact" className="nb"
+                style={{ padding: "10px 24px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
+              >Book Now</Link>
+            </nav>
+
+            <button onClick={() => setOpen(!open)} className="md:hidden"
+              style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px", cursor: "pointer" }}
+              aria-label="Toggle menu"
+            >
+              {open ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile drawer */}
+        <div style={{ background: "#F2F0EC", borderTop: "1px solid #C8D8D0", maxHeight: open ? "480px" : 0, overflow: "hidden", transition: "max-height 0.4s ease" }}>
+          <nav style={{ padding: "28px 20px", display: "flex", flexDirection: "column", gap: "18px" }}>
+            {links.map((l) => (
+              <Link key={l.href} href={l.href}
+                style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.2rem", fontWeight: 600, color: pathname === l.href ? "#1E4D3A" : "#1A1F1C", textDecoration: "none", borderBottom: "1px solid #C8D8D0", paddingBottom: "16px" }}
+              >{l.label}</Link>
+            ))}
+            <Link href="/contact"
+              style={{ display: "block", textAlign: "center", background: "#1E4D3A", color: "#F0EDE8", padding: "14px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none" }}
+            >Book an Experience</Link>
           </nav>
 
-          {/* ─── Mobile Toggle ─── */}
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden p-2 text-white rounded-sm"
-            style={{ background: "rgba(255,255,255,0.06)" }}
-            aria-label="Toggle menu"
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
+        
         </div>
-      </div>
-
-      {/* ─── Mobile Drawer ─── */}
-      <div
-        style={{
-          background: "rgba(30,27,58,0.98)",
-          maxHeight: open ? "400px" : "0",
-          overflow: "hidden",
-          transition: "max-height 0.35s ease",
-          borderTop: "1px solid rgba(255,255,255,0.07)",
-        }}
-      >
-        <nav className="flex flex-col px-6 py-6 gap-5">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-base font-medium"
-              style={{ color: pathname === l.href ? "#c9943a" : "rgba(255,255,255,0.8)", letterSpacing: "0.02em" }}
-            >
-              {l.label}
-            </Link>
-          ))}
-          <Link
-            href="/contact"
-            className="mt-1 text-center py-3 text-sm font-semibold"
-            style={{ background: "#c9943a", color: "#1e1b3a", letterSpacing: "0.04em" }}
-          >
-            Book Now
-          </Link>
-        </nav>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }

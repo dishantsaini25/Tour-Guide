@@ -1,124 +1,42 @@
-import SectionWrapper from "@/components/SectionWrapper";
-import CTAButton from "@/components/CTAButton";
-
-export const metadata = {
-  title: "Terms & Conditions",
-  description: "Terms and conditions for Jaipur Walks experiences.",
-};
-
+import Link from "next/link";
+export const metadata = { title: "Terms & Conditions" };
+const PF="Fraunces,Georgia,serif", IN="DM Sans,system-ui,sans-serif";
+const CH="#1A1F1C", MU="#4A5550", FR="#1E4D3A", CP="#B07D3E", SF="#E8F0EC", BD="#C8D8D0";
+const H2 = { fontFamily:PF, fontSize:"1.35rem", fontWeight:700, color:FR, marginBottom:"10px", marginTop:"32px" };
 export default function TermsPage() {
   return (
     <>
-      <section className="pt-32 pb-16 bg-[#0d1b2a]">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-[#c9a84c] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
-            Legal
-          </p>
-          <h1
-            className="font-serif text-4xl md:text-5xl text-white font-semibold"
-            style={{ fontFamily: "Playfair Display, Georgia, serif" }}
-          >
-            Terms & Conditions
-          </h1>
-        </div>
-      </section>
-
-      <SectionWrapper variant="light">
-        <div className="max-w-3xl mx-auto prose-width space-y-8 text-[#6b6570] leading-relaxed text-sm md:text-base">
-          <p className="text-xs text-[#6b6570]">Last updated: 2024</p>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              1. Bookings
-            </h2>
-            <p>
-              All bookings are confirmed only after written confirmation from Jaipur
-              Walks. An experience is not confirmed until you receive a confirmation
-              message via email or WhatsApp.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              2. Cancellation Policy
-            </h2>
-            <p>
-              We understand that travel plans change. Our general cancellation terms:
-            </p>
-            <ul className="list-disc list-inside space-y-2 mt-3 ml-2">
-              <li>
-                Cancellation 72+ hours before the experience: Full refund or free
-                rescheduling.
-              </li>
-              <li>
-                Cancellation 24–72 hours before: 50% refund or rescheduling at our
-                discretion.
-              </li>
-              <li>
-                Cancellation within 24 hours: No refund, but we may offer a
-                rescheduling option where possible.
-              </li>
-              <li>
-                Cancellation by us: Full refund or free rescheduling offered.
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              3. Health & Safety
-            </h2>
-            <p>
-              Guests participate in all experiences at their own risk. We take all
-              reasonable precautions to ensure a safe and comfortable experience.
-              Guests with specific medical conditions or mobility concerns should
-              inform us in advance.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              4. Weather
-            </h2>
-            <p>
-              Jaipur experiences largely run regardless of weather. In extreme
-              weather conditions, we reserve the right to modify or cancel an
-              experience for guest safety. A full refund or rescheduling will be
-              offered in such cases.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              5. Photography
-            </h2>
-            <p>
-              Guests are welcome to photograph their experiences for personal use.
-              Commercial use of images taken during Jaipur Walks experiences requires
-              prior written consent.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-[#0d1b2a] font-semibold mb-3" style={{ fontFamily: "Playfair Display, Georgia, serif" }}>
-              6. Contact
-            </h2>
-            <p>
-              For questions about these terms, please contact us at{" "}
-              <a href="mailto:hello@jaipurwalks.com" className="text-[#c9a84c]">
-                hello@jaipurwalks.com
-              </a>
-              .
-            </p>
-          </div>
-
-          <div className="pt-4">
-            <CTAButton href="/" variant="outline">
-              Back to Home
-            </CTAButton>
+      <div style={{ background:SF, borderBottom:`1px solid ${BD}`, paddingTop:"100px", paddingBottom:"48px", textAlign:"center" }}>
+        <p style={{ fontFamily:IN, fontSize:"0.6rem", letterSpacing:"0.28em", textTransform:"uppercase", fontWeight:700, color:CP, marginBottom:"10px" }}>Legal</p>
+        <div style={{ width:"36px", height:"1.5px", background:CP, margin:"0 auto 16px" }} />
+        <h1 style={{ fontFamily:PF, fontSize:"2.8rem", fontWeight:700, color:CH }}>Terms & Conditions</h1>
+        <p style={{ fontFamily:IN, color:MU, marginTop:"8px", fontSize:"0.85rem", fontWeight:300 }}>Last updated: 2024</p>
+      </div>
+      <div style={{ background:"#F2F0EC", padding:"72px 24px" }}>
+        <div style={{ maxWidth:"720px", margin:"0 auto", fontFamily:IN, color:MU, lineHeight:1.85, fontSize:"0.95rem", fontWeight:300 }}>
+          <h2 style={H2}>1. Bookings</h2>
+          <p>All bookings are confirmed only after written confirmation from Raah India Experiences via email or WhatsApp.</p>
+          <h2 style={H2}>2. Cancellation Policy</h2>
+          <ul style={{ paddingLeft:"20px", display:"flex", flexDirection:"column", gap:"8px", marginTop:"8px" }}>
+            <li>72+ hours before: Full refund or free rescheduling.</li>
+            <li>24–72 hours before: 50% refund or rescheduling at our discretion.</li>
+            <li>Within 24 hours: No refund; rescheduling offered where possible.</li>
+            <li>Cancellation by us: Full refund or free rescheduling.</li>
+          </ul>
+          <h2 style={H2}>3. Health & Safety</h2>
+          <p>Guests with specific medical conditions or mobility concerns should inform us in advance.</p>
+          <h2 style={H2}>4. Weather</h2>
+          <p>Most experiences run in light rain. In severe weather, we modify or reschedule with a full refund if cancelled by us.</p>
+          <h2 style={H2}>5. Photography</h2>
+          <p>Personal photography is welcome. Commercial use requires prior written consent.</p>
+          <h2 style={H2}>6. Contact</h2>
+          <p>Questions? Email <a href="mailto:hello@raahindia.com" style={{ color:CP, textDecoration:"underline" }}>hello@raahindia.com</a>.</p>
+          <div style={{ marginTop:"44px", paddingTop:"32px", borderTop:`1px solid ${BD}` }}>
+            <Link href="/" style={{ background:FR, color:"#F0EDE8", padding:"12px 26px", fontFamily:IN, fontSize:"0.8rem", fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", textDecoration:"none" }} className="tc-back">Back to Home</Link>
           </div>
         </div>
-      </SectionWrapper>
+      </div>
+      <style>{`.tc-back:hover{background:#163529!important;}`}</style>
     </>
   );
 }

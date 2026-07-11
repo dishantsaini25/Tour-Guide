@@ -1,18 +1,16 @@
-/**
- * SectionWrapper — consistent padding & background per section.
- * variant: "parchment" | "indigo" | "cream" | "white" | "none"
- */
-export default function SectionWrapper({ children, className = "", variant = "parchment", id }) {
+export default function SectionWrapper({ children, variant = "main", id, className = "" }) {
   const bg = {
-    parchment: "bg-[#fdf6ed]",
-    indigo:    "bg-[#1e1b3a]",
-    cream:     "bg-[#f5ece0]",
-    white:     "bg-white",
-    none:      "",
+    main:   "#F2F0EC",
+    soft:   "#E8F0EC",
+    card:   "#FFFFFF",
+    dark:   "#1A1F1C",
+    maroon: "#1E4D3A",
+    white:  "#FFFFFF",
   };
   return (
-    <section id={id} className={`py-20 md:py-28 ${bg[variant] ?? ""} ${className}`}>
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <section id={id} style={{ background: bg[variant] || bg.main, padding: "60px 0" }}
+      className={`section-responsive ${className}`}>
+      <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }} className="inner-pad">
         {children}
       </div>
     </section>

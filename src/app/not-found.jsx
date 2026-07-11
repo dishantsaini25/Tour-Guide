@@ -1,55 +1,20 @@
 import Link from "next/link";
-
 export default function NotFound() {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center px-4"
-      style={{ background: "#1e1b3a" }}
-    >
-      <div className="text-center">
-        <p style={{ fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600, color: "#c9943a", marginBottom: "16px" }}>
-          Page Not Found
+    <div style={{ minHeight: "100vh", background: "#E8F0EC", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px", textAlign: "center" }}>
+      <div>
+        <div style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(8rem,20vw,14rem)", fontWeight: 700, color: "rgba(30,77,58,0.07)", lineHeight: 1, marginBottom: "8px" }}>404</div>
+        <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: "#B07D3E", marginBottom: "16px" }}>Page Not Found</p>
+        <div style={{ width: "36px", height: "1.5px", background: "#B07D3E", margin: "0 auto 20px" }} />
+        <h1 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 700, color: "#1A1F1C", marginBottom: "14px", lineHeight: 1.15 }}>Lost in the Lanes?</h1>
+        <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", color: "#4A5550", maxWidth: "360px", margin: "0 auto 36px", lineHeight: 1.75, fontSize: "0.95rem", fontWeight: 300 }}>
+          This page doesn't exist — but the perfect Jaipur experience does.
         </p>
-        <h1
-          style={{
-            fontFamily: "Cormorant Garamond, Georgia, serif",
-            fontSize: "clamp(5rem, 15vw, 10rem)",
-            fontWeight: 700,
-            color: "rgba(255,255,255,0.08)",
-            lineHeight: 1,
-            marginBottom: "16px",
-          }}
-        >
-          404
-        </h1>
-        <h2
-          style={{
-            fontFamily: "Cormorant Garamond, Georgia, serif",
-            fontSize: "2rem",
-            fontWeight: 600,
-            color: "white",
-            marginBottom: "12px",
-          }}
-        >
-          Lost in Jaipur?
-        </h2>
-        <p style={{ color: "rgba(255,255,255,0.45)", maxWidth: "360px", margin: "0 auto 36px", lineHeight: 1.7, fontSize: "0.95rem" }}>
-          This page doesn't exist — but a perfect Jaipur experience does. Let's take you somewhere beautiful.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/"
-            style={{ background: "#c9943a", color: "#1e1b3a", padding: "14px 32px", fontWeight: 700, fontSize: "0.85rem", letterSpacing: "0.04em", display: "inline-block" }}
-          >
-            Back to Home
-          </Link>
-          <Link
-            href="/experiences"
-            style={{ border: "1.5px solid rgba(255,255,255,0.4)", color: "white", padding: "14px 32px", fontWeight: 600, fontSize: "0.85rem", display: "inline-block" }}
-          >
-            See Experiences
-          </Link>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", justifyContent: "center" }}>
+          <Link href="/" style={{ background: "#1E4D3A", color: "#F0EDE8", padding: "13px 30px", fontFamily: "DM Sans, system-ui, sans-serif", fontWeight: 700, fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }} className="nf1">Back to Home</Link>
+          <Link href="/experiences" style={{ border: "1.5px solid #1E4D3A", color: "#1E4D3A", padding: "13px 30px", fontFamily: "DM Sans, system-ui, sans-serif", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none" }} className="nf2">See Experiences</Link>
         </div>
+        <style>{`.nf1:hover{background:#163529!important;} .nf2:hover{background:#1E4D3A!important;color:#F0EDE8!important;}`}</style>
       </div>
     </div>
   );

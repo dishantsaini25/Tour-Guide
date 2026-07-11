@@ -1,80 +1,67 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, MapPin, Sunrise, ArrowRight } from "lucide-react";
+import { Clock, Gauge, ArrowUpRight } from "lucide-react";
 
 export default function ExperienceCard({ experience }) {
-  const { slug, title, tagline, location, duration, startTime, shortDescription, heroImage } = experience;
+  const { slug, title, subtitle, question, theme, duration, difficulty, cardImage, heroImage, filters } = experience;
+  const img = cardImage || heroImage;
 
   return (
-    <article className="card-hover group flex flex-col overflow-hidden" style={{ background: "white", border: "1px solid #e5d9c8" }}>
+    <>
+      <style>{`
+        .ec-root { background:#FFFFFF; border:1px solid #C8D8D0; display:flex; flex-direction:column; transition:box-shadow .35s ease,transform .35s ease; overflow:hidden; }
+        .ec-root:hover { box-shadow:0 12px 44px rgba(30,77,58,0.12); transform:translateY(-4px); }
+        .ec-img { transition:transform .7s cubic-bezier(.25,.46,.45,.94); }
+        .ec-root:hover .ec-img { transform:scale(1.06); }
+        .ec-view { display:flex;align-items:center;justify-content:center;gap:6px;background:#1E4D3A;color:#F0EDE8;padding:13px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;flex:1;font-family:'DM Sans',system-ui,sans-serif;transition:background .2s; }
+        .ec-view:hover { background:#163529!important; }
+        .ec-enq { display:flex;align-items:center;justify-content:center;flex:1;border:none;border-left:1px solid #C8D8D0;color:#1E4D3A;background:#F2F0EC;font-size:.78rem;font-weight:600;text-decoration:none;font-family:'DM Sans',system-ui,sans-serif;transition:all .2s;padding:13px; }
+        .ec-enq:hover { background:#1E4D3A!important;color:#F0EDE8!important; }
+      `}</style>
 
-      {/* ── Image — fixed height, object-position top so subject stays visible ── */}
-      <div className="relative overflow-hidden" style={{ height: "220px" }}>
-        <Image
-          src={heroImage}
-          alt={title}
-          fill
-          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
-
-      {/* ── Body ── */}
-      <div className="flex flex-col flex-1 p-6">
-
-        {/* Title */}
-        <h3
-          className="mb-1 group-hover:text-[#c9943a] transition-colors duration-200"
-          style={{ fontFamily: "Cormorant Garamond, Georgia, serif", fontSize: "1.45rem", fontWeight: 600, color: "#1e1b3a", lineHeight: 1.2 }}
-        >
-          {title}
-        </h3>
-        <p style={{ color: "#c9943a", fontStyle: "italic", fontSize: "0.9rem", marginBottom: "14px" }}>{tagline}</p>
-
-        {/* Meta pills */}
-        <div className="flex flex-wrap gap-3 mb-4">
-          {[
-            { icon: <Clock size={12} />, text: duration },
-            { icon: <MapPin size={12} />, text: location },
-            { icon: <Sunrise size={12} />, text: startTime },
-          ].map((m) => (
-            <span key={m.text} className="flex items-center gap-1.5" style={{ color: "#8a7e9a", fontSize: "0.75rem" }}>
-              <span style={{ color: "#c9943a" }}>{m.icon}</span>
-              {m.text}
+      <article className="ec-root raah-card">
+        <div style={{ position: "relative", height: "220px", overflow: "hidden" }}>
+          <Image src={img} alt={title} fill className="object-cover object-top ec-img"
+            sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw"
+          />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,25,16,0.92) 0%, rgba(10,25,16,0.15) 55%, transparent 100%)" }} />
+          <div style={{ position: "absolute", top: "14px", left: "14px" }}>
+            <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.58rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, color: "#F0EDE8", background: "rgba(30,77,58,0.85)", padding: "4px 10px", backdropFilter: "blur(4px)" }}>
+              {filters?.[0] || theme?.split("·")[0].trim()}
             </span>
-          ))}
+          </div>
+          <div style={{ position: "absolute", bottom: "14px", left: "16px", right: "16px" }}>
+            <p style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "0.82rem", fontStyle: "italic", color: "rgba(240,237,232,0.88)", lineHeight: 1.4 }}>
+              "{question}"
+            </p>
+          </div>
         </div>
 
-        {/* Description */}
-        <p style={{ color: "#4a4458", fontSize: "0.875rem", lineHeight: 1.7, flex: 1, marginBottom: "20px" }}>
-          {shortDescription}
-        </p>
+        <div style={{ padding: "22px 22px 0", display: "flex", flexDirection: "column", flex: 1 }}>
+          <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.58rem", letterSpacing: "0.22em", textTransform: "uppercase", color: "#B07D3E", fontWeight: 700, marginBottom: "8px" }}>{theme}</p>
+          <h3 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.5rem", fontWeight: 700, color: "#1A1F1C", lineHeight: 1.1, marginBottom: "6px" }}>{title}</h3>
+          <p style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "0.9rem", fontStyle: "italic", color: "#4A5550", marginBottom: "16px" }}>{subtitle}</p>
+          <div style={{ width: "32px", height: "1.5px", background: "linear-gradient(to right, #B07D3E, #C89A5A)", marginBottom: "16px" }} />
+          <div style={{ display: "flex", gap: "18px", marginBottom: "18px" }}>
+            <span style={{ display: "flex", alignItems: "center", gap: "5px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.75rem", color: "#4A5550" }}>
+              <Clock size={12} style={{ color: "#B07D3E" }} />{duration}
+            </span>
+            <span style={{ display: "flex", alignItems: "center", gap: "5px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.75rem", color: "#4A5550" }}>
+              <Gauge size={12} style={{ color: "#B07D3E" }} />{difficulty}
+            </span>
+          </div>
+        </div>
 
-        {/* CTA row */}
-        <div className="flex gap-3 pt-4" style={{ borderTop: "1px solid #e5d9c8" }}>
-          <Link
-            href={`/experiences/${slug}`}
-            className="exp-card-view flex-1 flex items-center justify-center gap-2 py-2.5 px-3 text-sm font-semibold"
-            style={{ background: "#1e1b3a", color: "white", transition: "background 0.2s" }}
-          >
-            View Details <ArrowRight size={13} />
+        <div style={{ display: "flex", borderTop: "1px solid #C8D8D0" }}>
+          <Link href={`/experiences/${slug}`} className="ec-view">
+            View Experience <ArrowUpRight size={13} />
           </Link>
-          <Link
-            href={`/contact?experience=${encodeURIComponent(title)}`}
-            className="exp-card-enq flex-1 flex items-center justify-center py-2.5 px-3 text-sm font-semibold"
-            style={{ border: "1.5px solid #c9943a", color: "#c9943a", transition: "background 0.2s, color 0.2s" }}
-          >
+          <Link href={`/contact?experience=${encodeURIComponent(title)}`} className="ec-enq">
             Enquire
           </Link>
         </div>
-      </div>
-
-      {/* hover styles via CSS — no JS handlers needed on links */}
-      <style>{`
-        .exp-card-view:hover { background: #2d2a52 !important; }
-        .exp-card-enq:hover  { background: #c9943a !important; color: #1e1b3a !important; }
-      `}</style>
-    </article>
+      </article>
+    </>
   );
 }

@@ -1,61 +1,43 @@
-"use client";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 
 const reasons = [
-  {
-    num: "01",
-    title: "Local Storytelling",
-    desc: "Every lane, every monument, every ritual comes alive through stories from someone who grew up here — not a scripted tour script.",
-  },
-  {
-    num: "02",
-    title: "Slow Travel Philosophy",
-    desc: "We pause. We linger. We watch. There's no checklist — only moments worth remembering.",
-  },
-  {
-    num: "03",
-    title: "Small Groups Only",
-    desc: "Maximum 6 guests per experience — ensuring an intimate, unhurried atmosphere where every question is welcomed.",
-  },
-  {
-    num: "04",
-    title: "Authentic Food & Culture",
-    desc: "From predawn street kitchens to family-run chai stalls — food is a lens for understanding Jaipur, not just a tasting detour.",
-  },
+  { icon: "✦", title: "Curated, Not Scripted", desc: "Every route is personally researched, walked, and refined. No two walks feel the same because no two groups of guests are the same." },
+  { icon: "◈", title: "Small Groups Only", desc: "Maximum 8 guests. Meaningful travel requires space for conversation, curiosity, and genuine human connection." },
+  { icon: "⟡", title: "Local Stories, Not History Books", desc: "We share the stories that live in the lanes, kitchens, and communities — not the dates and dynasties you already read online." },
+  { icon: "◇", title: "Authentic Food Discoveries", desc: "From predawn street kitchens to countryside farmhouses — food is how we understand Jaipur, not just a tasting detour." },
+  { icon: "◈", title: "Responsible Tourism", desc: "We support local artisans, small food vendors, and community spaces. Your journey creates genuine value for Jaipur's people." },
+  { icon: "✦", title: "No Forced Shopping. Ever.", desc: "Not one stop on any Raah experience is commission-based. We guide with complete independence and honesty." },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <SectionWrapper variant="indigo">
-      <SectionHeading
-        label="Why Travel With Us"
-        title="A Different Kind of Jaipur"
-        subtitle="Most tours show you Jaipur. We take you into it."
-        dark
-      />
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {reasons.map((r) => (
-          <div
-            key={r.num}
-            className="p-7 group transition-all duration-300"
-            style={{ border: "1px solid rgba(255,255,255,0.07)", background: "rgba(255,255,255,0.03)" }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(201,148,58,0.3)"; e.currentTarget.style.background = "rgba(201,148,58,0.05)"; }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
-          >
-            <div style={{ fontFamily: "Cormorant Garamond, Georgia, serif", fontSize: "2.5rem", fontWeight: 600, color: "rgba(201,148,58,0.25)", lineHeight: 1, marginBottom: "16px" }}>
-              {r.num}
+    <>
+      <style>{`
+        .wcu-card { background:#FFFFFF; border:1px solid #C8D8D0; border-top:2px solid #B07D3E; padding:28px 24px; transition:box-shadow .35s,transform .35s; }
+        .wcu-card:hover { box-shadow:0 8px 32px rgba(30,77,58,0.1); transform:translateY(-3px); }
+      `}</style>
+      <SectionWrapper variant="soft">
+        <SectionHeading label="Why Walk With Raah" title="A Different Way to Travel" subtitle="We don't collect destinations. We create connections." />
+        <div className="wcu-slider">
+          {reasons.map((r) => (
+            <div key={r.title} className="wcu-card">
+              <div style={{ width: "40px", height: "40px", background: "#E8F0EC", border: "1px solid #C8D8D0", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+                <span style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.1rem", color: "#B07D3E" }}>{r.icon}</span>
+              </div>
+              <div style={{ width: "28px", height: "1.5px", background: "#B07D3E", marginBottom: "14px" }} />
+              <h3 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.1rem", fontWeight: 700, color: "#1A1F1C", marginBottom: "10px", lineHeight: 1.25 }}>{r.title}</h3>
+              <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.875rem", color: "#4A5550", lineHeight: 1.8, fontWeight: 300 }}>{r.desc}</p>
             </div>
-            <h3 style={{ fontFamily: "Cormorant Garamond, Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "white", marginBottom: "10px" }}>
-              {r.title}
-            </h3>
-            <p style={{ color: "rgba(255,255,255,0.52)", fontSize: "0.875rem", lineHeight: 1.75 }}>
-              {r.desc}
-            </p>
-          </div>
-        ))}
-      </div>
-    </SectionWrapper>
+          ))}
+        </div>
+        <div style={{ textAlign: "center", marginTop: "56px", paddingTop: "36px", borderTop: "1px solid #C8D8D0" }}>
+          <p style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.1rem,2.2vw,1.5rem)", fontStyle: "italic", fontWeight: 400, color: "#4A5550" }}>
+            "We don't just show you Jaipur.{" "}
+            <em style={{ color: "#1E4D3A", fontStyle: "normal", fontWeight: 600 }}>We help you understand it.</em>"
+          </p>
+        </div>
+      </SectionWrapper>
+    </>
   );
 }

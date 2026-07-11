@@ -1,120 +1,83 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => { const t = setTimeout(() => setLoaded(true), 80); return () => clearTimeout(t); }, []);
+  const [vis, setVis] = useState(false);
+  useEffect(() => { const t = setTimeout(() => setVis(true), 120); return () => clearTimeout(t); }, []);
+
+  const anim = (d) => ({
+    opacity: vis ? 1 : 0,
+    transform: vis ? "translateY(0)" : "translateY(28px)",
+    transition: `opacity 0.9s ease ${d}ms, transform 0.9s ease ${d}ms`,
+  });
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <>
+      <style>{`
+        .h-cta1 { transition: background 0.25s, transform 0.2s; }
+        .h-cta1:hover { background: #163529 !important; transform: translateY(-1px); }
+        .h-cta2 { transition: all 0.25s; }
+        .h-cta2:hover { background: rgba(240,237,232,0.1) !important; border-color: rgba(240,237,232,0.8) !important; }
+      `}</style>
+      <section style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0 }}>
+          <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1920&q=90')", backgroundSize: "cover", backgroundPosition: "center 40%" }} />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg, rgba(10,25,16,0.82) 0%, rgba(10,25,16,0.45) 55%, rgba(10,25,16,0.22) 100%)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,25,16,0.85) 0%, transparent 55%)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 15% 60%, rgba(30,77,58,0.2) 0%, transparent 55%)" }} />
+        </div>
 
-      {/* ── Background: Hawa Mahal / Pink City ── */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1800&q=90')",
-        }}
-      />
+        <div style={{ position: "relative", zIndex: 10, maxWidth: "1320px", margin: "0 auto", padding: "clamp(100px,14vh,140px) 20px clamp(60px,8vh,90px)", width: "100%" }} className="inner-pad">
+          <div style={{ maxWidth: "700px" }}>
 
-      {/* ── Layered overlays for cinematic depth ── */}
-      <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(30,27,58,0.62) 0%, rgba(30,27,58,0.45) 40%, rgba(30,27,58,0.82) 100%)" }} />
-      <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(30,27,58,0.55) 0%, transparent 60%)" }} />
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px", ...anim(100) }}>
+              <div style={{ width: "32px", height: "1px", background: "#B07D3E" }} />
+              <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "#B07D3E", fontWeight: 600 }}>
+                Jaipur · Rajasthan · Curated Walking Experiences
+              </span>
+            </div>
 
-      {/* ── Content ── */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-32 pb-24">
-        <div className="max-w-3xl">
+            <h1 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(3.6rem,8vw,7.5rem)", lineHeight: 1.0, color: "#F0EDE8", marginBottom: "24px", ...anim(220) }}>
+              Raah India<br />
+              <em style={{ color: "#B07D3E", fontStyle: "italic", fontWeight: 600 }}>Experiences</em>
+            </h1>
 
-          {/* Location badge */}
-          <div
-            className={`flex items-center gap-2 mb-7 transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-            style={{ transitionDelay: "100ms" }}
-          >
-            <MapPin size={13} style={{ color: "#c9943a" }} />
-            <span style={{ fontSize: "0.65rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 600, color: "#c9943a" }}>
-              Jaipur, Rajasthan &nbsp;·&nbsp; Pink City
-            </span>
-          </div>
+            <p style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.1rem,2.2vw,1.5rem)", color: "rgba(240,237,232,0.8)", lineHeight: 1.65, marginBottom: "10px", fontStyle: "italic", fontWeight: 400, ...anim(360) }}>
+              Curated Walking Tours & Cultural Experiences in Jaipur
+            </p>
+            <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", color: "rgba(240,237,232,0.55)", lineHeight: 1.75, marginBottom: "40px", maxWidth: "540px", fontWeight: 300, ...anim(440) }}>
+              Walk slowly through Jaipur's stories, rituals, flavours, forts, markets, and hidden corners — with someone who calls this city home.
+            </p>
 
-          {/* Main heading */}
-          <h1
-            className={`text-white leading-none mb-6 transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-            style={{
-              fontFamily: "Cormorant Garamond, Georgia, serif",
-              fontSize: "clamp(3.2rem, 7vw, 6.5rem)",
-              fontWeight: 600,
-              transitionDelay: "220ms",
-              textShadow: "0 2px 20px rgba(0,0,0,0.3)",
-            }}
-          >
-            See Jaipur
-            <br />
-            <span style={{ color: "#c9943a", fontStyle: "italic" }}>Like a Local</span>
-          </h1>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "14px", ...anim(560) }}>
+              <Link href="/experiences" className="h-cta1"
+                style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "#1E4D3A", color: "#F0EDE8", padding: "15px 32px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", boxShadow: "0 4px 20px rgba(30,77,58,0.4)" }}
+              >Explore Experiences <ArrowRight size={15} /></Link>
+              <Link href="/contact" className="h-cta2"
+                style={{ display: "inline-flex", alignItems: "center", border: "1.5px solid rgba(240,237,232,0.45)", color: "rgba(240,237,232,0.9)", padding: "15px 32px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.82rem", fontWeight: 600, textDecoration: "none" }}
+              >Book Your Experience</Link>
+            </div>
 
-          {/* Subline */}
-          <p
-            className={`mb-10 max-w-xl transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-            style={{
-              color: "rgba(255,255,255,0.72)",
-              fontSize: "1.15rem",
-              lineHeight: 1.75,
-              transitionDelay: "360ms",
-            }}
-          >
-            Boutique sunset jeep rides, evening bazaar walks, and dawn
-            explorations of the Pink City — crafted by a local storyteller for
-            travellers who want more than monuments.
-          </p>
-
-          {/* CTA row */}
-          <div
-            className={`flex flex-wrap gap-4 transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-            style={{ transitionDelay: "480ms" }}
-          >
-            <Link
-              href="/experiences"
-              className="group flex items-center gap-2.5 px-7 py-4 text-sm font-semibold transition-all duration-200"
-              style={{ background: "#c9943a", color: "#1e1b3a", letterSpacing: "0.04em" }}
-              onMouseEnter={e => e.currentTarget.style.background = "#e2b86a"}
-              onMouseLeave={e => e.currentTarget.style.background = "#c9943a"}
-            >
-              Explore Experiences
-              <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
-            </Link>
-            <Link
-              href="/contact"
-              className="flex items-center gap-2 px-7 py-4 text-sm font-semibold transition-all duration-200"
-              style={{ border: "1.5px solid rgba(255,255,255,0.55)", color: "rgba(255,255,255,0.9)" }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor = "white"; e.currentTarget.style.background = "rgba(255,255,255,0.08)"; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.55)"; e.currentTarget.style.background = "transparent"; }}
-            >
-              Book an Enquiry
-            </Link>
-          </div>
-
-          {/* Trust row */}
-          <div
-            className={`flex flex-wrap gap-6 mt-12 transition-all duration-700 ${loaded ? "opacity-100" : "opacity-0"}`}
-            style={{ transitionDelay: "640ms" }}
-          >
-            {["Small Groups Only", "Local Storyteller", "10+ Years Experience"].map((t) => (
-              <div key={t} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full" style={{ background: "#c9943a" }} />
-                <span style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.75rem", letterSpacing: "0.04em" }}>{t}</span>
-              </div>
-            ))}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", marginTop: "52px", ...anim(700) }}>
+              {["Small Groups Only", "No Forced Shopping", "Local Storytelling", "Slow Travel"].map((t) => (
+                <div key={t} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div style={{ width: "4px", height: "4px", borderRadius: "50%", background: "#B07D3E" }} />
+                  <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.72rem", color: "rgba(240,237,232,0.48)", letterSpacing: "0.06em" }}>{t}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* ── Bottom fade to parchment ── */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-28 pointer-events-none"
-        style={{ background: "linear-gradient(to top, #fdf6ed, transparent)" }}
-      />
-    </section>
+        <div style={{ position: "absolute", bottom: "36px", left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", opacity: vis ? 0.5 : 0, transition: "opacity 1s ease 1.2s" }}>
+          <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.58rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "rgba(240,237,232,0.6)" }}>Scroll</span>
+          <ChevronDown size={16} style={{ color: "#B07D3E", animation: "bounce 2s infinite" }} />
+        </div>
+
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "120px", background: "linear-gradient(to top, #F2F0EC, transparent)", pointerEvents: "none" }} />
+      </section>
+    </>
   );
 }
