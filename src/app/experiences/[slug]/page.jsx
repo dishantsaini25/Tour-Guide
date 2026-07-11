@@ -7,8 +7,8 @@ import {
 } from "lucide-react";
 import { experiences, getExperienceBySlug, getRelatedExperiences } from "@/data/experiences";
 import FAQAccordion from "@/components/FAQAccordion";
-import ExperienceCard from "@/components/ExperienceCard";
 import GallerySlider from "./GallerySlider";
+import RelatedSlider from "./RelatedSlider";
 
 export async function generateStaticParams() {
   return experiences.map(e => ({ slug: e.slug }));
@@ -440,9 +440,8 @@ export default async function ExperienceDetailPage({ params }) {
                 You Might Also Love
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {related.map(e => <ExperienceCard key={e.slug} experience={e} />)}
-            </div>
+            {/* Desktop grid + mobile auto-slider via RelatedSlider */}
+            <RelatedSlider experiences={related} />
           </div>
         </div>
       )}

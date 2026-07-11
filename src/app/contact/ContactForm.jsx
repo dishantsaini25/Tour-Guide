@@ -69,10 +69,10 @@ const onBlur  = (e) => {
 };
 
 /* ── Field wrapper ── */
-function Field({ id, label, required, children }) {
+function Field({ id, label, required, labelClass = "", children }) {
   return (
     <div>
-      <label htmlFor={id} style={lbl}>
+      <label htmlFor={id} style={lbl} className={labelClass}>
         {label}{required && <span style={{ color:"#FF8C00", marginLeft:"3px" }}>*</span>}
       </label>
       {children}
@@ -81,7 +81,9 @@ function Field({ id, label, required, children }) {
 }
 
 function FormInner() {
-  const params = useSearchParams();
+  const params  = useSearchParams();
+  const today   = new Date().toISOString().split("T")[0]; // YYYY-MM-DD for today
+
   const [form, setForm] = useState({
     name: "", email: "", phone: "",
     country: "", city: "",
@@ -97,6 +99,14 @@ function FormInner() {
     e.preventDefault();
     setStatus("loading");
     setErrMsg("");
+
+    // Client-side: reject manually-typed past dates
+    if (form.date && form.date < today) {
+      setStatus("error");
+      setErrMsg("Please select today or a future date for your experience.");
+      return;
+    }
+
     try {
       const res  = await fetch("/api/contact", {
         method: "POST",
@@ -171,7 +181,7 @@ function FormInner() {
             0 0 24px rgba(255,140,0,0.50),
             0 10px 28px rgba(255,140,0,0.28);
         }
-        .cf-sub:active { transform: translateY(0) scale(1); }
+        .cf-sub:active  { transform: translateY(0) scale(1); }
         .cf-sub:focus-visible { outline: 2px solid #FF8C00; outline-offset: 3px; }
         .cf-sub:disabled { opacity: 0.6; cursor: not-allowed; }
 
@@ -183,73 +193,112 @@ function FormInner() {
           padding-right: 40px !important;
           cursor: pointer;
         }
+
+        /* ── Mobile overrides (<768px) ── */
+        @media (max-width: 767px) {
+          /* Tighter gaps between field rows */
+          .cf-form { gap: 13px !important; }
+
+          /* Smaller field padding + font on mobile */
+          .cf-field {
+            padding: 9px 12px !important;
+            font-size: 0.82rem !important;
+            border-radius: 10px !important;
+          }
+
+          /* Smaller label */
+          .cf-lbl {
+            font-size: 0.56rem !important;
+            margin-bottom: 4px !important;
+            letter-spacing: 0.14em !important;
+          }
+
+          /* Tighter grid gaps */
+          .cf-row { gap: 10px !important; }
+
+          /* Textarea shorter on mobile */
+          .cf-textarea { min-height: 88px !important; }
+
+          /* Submit button compact */
+          .cf-sub {
+            padding: 13px 24px !important;
+            font-size: 0.8rem !important;
+          }
+
+          /* Select arrow adjustment */
+          .cf-select { padding-right: 36px !important; }
+        }
       `}</style>
 
-      <form onSubmit={submit} noValidate style={{ display:"flex", flexDirection:"column", gap:"20px" }}>
+      <form onSubmit={submit} noValidate
+        className="cf-form"
+        style={{ display:"flex", flexDirection:"column", gap:"20px" }}
+      >
 
         {/* Row 1: Name + Email */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <Field id="name" label="Full Name" required>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
+          <Field id="name" label="Full Name" required labelClass="cf-lbl">
             <input id="name" name="name" type="text" placeholder="Your full name"
               required value={form.name} onChange={change}
-              style={fldBase} onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
-          <Field id="email" label="Email Address" required>
+          <Field id="email" label="Email Address" required labelClass="cf-lbl">
             <input id="email" name="email" type="email" placeholder="your@email.com"
               required value={form.email} onChange={change}
-              style={fldBase} onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
         </div>
 
         {/* Row 2: Phone + Date */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <Field id="phone" label="Phone / WhatsApp">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
+          <Field id="phone" label="Phone / WhatsApp" labelClass="cf-lbl">
             <input id="phone" name="phone" type="tel" placeholder="+91 or international"
               value={form.phone} onChange={change}
-              style={fldBase} onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
-          <Field id="date" label="Preferred Date">
+          <Field id="date" label="Preferred Date" labelClass="cf-lbl">
             <input id="date" name="date" type="date"
+              min={today}
               value={form.date} onChange={change}
-              style={fldBase} onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
         </div>
 
         {/* Row 3: Country (select) + City (text) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <Field id="country" label="Country">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
+          <Field id="country" label="Country" labelClass="cf-lbl">
             <select id="country" name="country"
               value={form.country} onChange={change}
-              style={fldBase} className="cf-select"
+              style={fldBase} className="cf-field cf-select"
               onFocus={onFocus} onBlur={onBlur}
             >
               <option value="">Select your country</option>
               {countries.map(c => <option key={c} value={c}>{c}</option>)}
             </select>
           </Field>
-          <Field id="city" label="City">
+          <Field id="city" label="City" labelClass="cf-lbl">
             <input id="city" name="city" type="text" placeholder="Your city"
               value={form.city} onChange={change}
-              style={fldBase} onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
         </div>
 
         {/* Row 4: Experience + Group size */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <Field id="experience" label="Preferred Experience" required>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
+          <Field id="experience" label="Preferred Experience" required labelClass="cf-lbl">
             <select id="experience" name="experience" required
               value={form.experience} onChange={change}
-              style={fldBase} className="cf-select"
+              style={fldBase} className="cf-field cf-select"
               onFocus={onFocus} onBlur={onBlur}
             >
               <option value="">Select an experience</option>
               {expOptions.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
           </Field>
-          <Field id="guests" label="Number of Guests" required>
+          <Field id="guests" label="Number of Guests" required labelClass="cf-lbl">
             <select id="guests" name="guests" required
               value={form.guests} onChange={change}
-              style={fldBase} className="cf-select"
+              style={fldBase} className="cf-field cf-select"
               onFocus={onFocus} onBlur={onBlur}
             >
               <option value="">Select group size</option>
@@ -261,11 +310,12 @@ function FormInner() {
         </div>
 
         {/* Row 5: Message */}
-        <Field id="message" label="Message / Special Requests">
+        <Field id="message" label="Message / Special Requests" labelClass="cf-lbl">
           <textarea id="message" name="message" rows={5}
             value={form.message} onChange={change}
             placeholder="Any specific interests, dietary preferences, or questions?"
             style={{ ...fldBase, resize:"vertical", minHeight:"120px" }}
+            className="cf-field cf-textarea"
             onFocus={onFocus} onBlur={onBlur}
           />
         </Field>

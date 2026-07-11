@@ -145,9 +145,12 @@ export default function ContactPage() {
                 background: "linear-gradient(145deg, #FFFBF0 0%, #FFF7E4 100%)",
                 border: "1px solid rgba(255,216,155,0.55)",
                 borderRadius: "24px",
-                padding: "36px 32px 40px",
                 boxShadow: "0 4px 24px rgba(255,140,0,0.08), 0 1px 4px rgba(0,0,0,0.04)",
-              }}>
+              }} className="cf-card-pad">
+                <style>{`
+                  .cf-card-pad { padding: 36px 32px 40px; }
+                  @media (max-width: 767px) { .cf-card-pad { padding: 20px 16px 24px !important; } }
+                `}</style>
                 <h2 style={{ fontFamily:PF, fontWeight:700, fontSize:"1.6rem", color:"#1A1209", marginBottom:"8px" }}>
                   Booking Enquiry Form
                 </h2>
