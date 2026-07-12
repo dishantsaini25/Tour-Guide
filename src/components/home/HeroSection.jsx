@@ -155,7 +155,7 @@ export default function HeroSection() {
                     fontFamily: "DM Sans, system-ui, sans-serif",
                     fontSize: "0.75rem",
                     fontWeight: 900,
-                    color: "#fff",
+                    color: "#000000",
                     letterSpacing: "0.04em",
                     whiteSpace: "nowrap",
                   }}>{t}</span>
