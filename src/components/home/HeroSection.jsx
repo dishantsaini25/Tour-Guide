@@ -149,11 +149,11 @@ export default function HeroSection() {
             {/* ── Feature tags ── */}
             <div className="h-tags" style={{ ...anim(700) }}>
               {["Small Groups Only", "No Forced Shopping", "Local Storytelling", "Slow Travel"].map((t) => (
-                <div key={t} style={{ display: "flex", alignItems: "center", gap: "8px", flexShrink: 0 }}>
+                <div key={t} style={{ display: "flex", alignItems: "center", gap: "8px", flexShrink: 0}}>
                   <div style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#F5A623", flexShrink: 0 }} />
                   <span className="h-tag-text" style={{
                     fontFamily: "DM Sans, system-ui, sans-serif",
-                    fontSize: "0.75rem",
+                    fontSize: "15px",
                     fontWeight: 900,
                     color: "#000000",
                     letterSpacing: "0.04em",
