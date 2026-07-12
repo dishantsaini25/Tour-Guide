@@ -14,14 +14,13 @@ export default function WhatsAppButton({ message = MSG }) {
   return (
     <>
       <style>{`
-        /* On mobile: float above any sticky bottom bars on other pages */
+        /* On mobile: keep at a comfortable standard position */
         @media (max-width: 767px) {
           .wa-btn {
-            bottom: 110px !important;
+            bottom: 48px !important;
             right: 20px !important;
           }
-          /* Hide completely on mobile when on experience detail pages —
-             this rule is more specific than .wa-btn so it wins */
+          /* Hide completely on mobile when on experience detail pages */
           .wa-btn-hide-mobile {
             display: none !important;
           }

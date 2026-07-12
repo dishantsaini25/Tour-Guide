@@ -5,26 +5,27 @@ import { useState, useEffect, useRef, useCallback } from "react";
  * MobileSlider
  * – Auto-slides every `interval` ms, infinite loop
  * – Touch/swipe to navigate (pauses auto-slide while swiping)
- * – No arrows, no dots — clean, distraction-free
+ * – Pagination dots: clickable, synced with current slide
  * – On desktop (≥768px) renders children as-is; parent grid takes over
  */
 export default function MobileSlider({
   children,
-  autoPlay = true,
-  interval = 3500,
-  ariaLabel = "Card slider",
+  autoPlay    = true,
+  interval    = 3500,
+  ariaLabel   = "Card slider",
+  accentColor = "#FF8C00",
 }) {
   const items = Array.isArray(children) ? children : [children];
   const total = items.length;
 
-  const [idx, setIdx]         = useState(0);
+  const [idx, setIdx]           = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  const [paused, setPaused]   = useState(false);
-  const timerRef              = useRef(null);
-  const touchStartX           = useRef(null);
-  const isSwiping             = useRef(false);
+  const [paused, setPaused]     = useState(false);
+  const timerRef                = useRef(null);
+  const touchStartX             = useRef(null);
+  const isSwiping               = useRef(false);
 
-  /* ── Responsive detection (post-mount, avoids SSR mismatch) ── */
+  /* ── Responsive detection ── */
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
     setIsMobile(mq.matches);
@@ -33,8 +34,12 @@ export default function MobileSlider({
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  const next = useCallback(() => setIdx((i) => (i + 1) % total), [total]);
-  const prev = useCallback(() => setIdx((i) => (i - 1 + total) % total), [total]);
+  const goTo = useCallback((i) => {
+    setIdx(((i % total) + total) % total);
+  }, [total]);
+
+  const next = useCallback(() => goTo(idx + 1), [idx, goTo]);
+  const prev = useCallback(() => goTo(idx - 1), [idx, goTo]);
 
   /* ── Auto-advance ── */
   useEffect(() => {
@@ -47,7 +52,7 @@ export default function MobileSlider({
   const onTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
     isSwiping.current   = true;
-    setPaused(true); // pause while user is touching
+    setPaused(true);
   };
   const onTouchEnd = (e) => {
     isSwiping.current = false;
@@ -55,7 +60,6 @@ export default function MobileSlider({
     const delta = touchStartX.current - e.changedTouches[0].clientX;
     if (Math.abs(delta) > 40) delta > 0 ? next() : prev();
     touchStartX.current = null;
-    // resume after a short grace period
     setTimeout(() => setPaused(false), 800);
   };
   const onTouchCancel = () => {
@@ -70,7 +74,7 @@ export default function MobileSlider({
     if (e.key === "ArrowRight") { e.preventDefault(); next(); }
   };
 
-  /* Desktop: pass through, let parent grid handle */
+  /* Desktop: pass-through */
   if (!isMobile) return <>{children}</>;
 
   return (
@@ -85,7 +89,7 @@ export default function MobileSlider({
       onTouchCancel={onTouchCancel}
       style={{ outline: "none", userSelect: "none", WebkitUserSelect: "none" }}
     >
-      {/* Viewport — clips overflowing slides */}
+      {/* ── Slide viewport ── */}
       <div style={{ overflow: "hidden", borderRadius: "20px" }}>
         <div
           aria-live="polite"
@@ -110,6 +114,72 @@ export default function MobileSlider({
           ))}
         </div>
       </div>
+
+      {/* ── Pagination dots ── */}
+      {total > 1 && (
+        <div
+          role="tablist"
+          aria-label="Slide navigation"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "7px",
+            marginTop: "16px",
+            paddingBottom: "4px",
+          }}
+        >
+          {items.map((_, i) => {
+            const isActive = i === idx;
+            return (
+              <button
+                key={i}
+                role="tab"
+                aria-selected={isActive}
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => {
+                  setPaused(true);
+                  goTo(i);
+                  setTimeout(() => setPaused(false), 1200);
+                }}
+                style={{
+                  /* Active dot: wider pill; inactive: small circle */
+                  width:        isActive ? "22px" : "7px",
+                  height:       "7px",
+                  borderRadius: "9999px",
+                  background:   isActive
+                    ? accentColor
+                    : `rgba(${hexToRgb(accentColor)}, 0.28)`,
+                  border:  "none",
+                  padding: 0,
+                  cursor:  "pointer",
+                  flexShrink: 0,
+                  transition: "width 0.3s ease, background 0.3s ease",
+                  /* Remove default button outline — we use focus-visible instead */
+                  outline: "none",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.outline = `2px solid ${accentColor}`;
+                  e.currentTarget.style.outlineOffset = "2px";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.outline = "none";
+                }}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
+}
+
+/* ── Utility: convert hex color to "r, g, b" string for rgba() ── */
+function hexToRgb(hex) {
+  const clean = hex.replace("#", "");
+  const full  = clean.length === 3
+    ? clean.split("").map(c => c + c).join("")
+    : clean;
+  const n = parseInt(full, 16);
+  return `${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}`;
 }
