@@ -107,6 +107,7 @@ export default function ExperienceCard({ experience }) {
             src={img} alt={title} fill
             className="object-cover object-top ec-img"
             sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw"
+            onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
           />
           {/* Dark gradient overlay */}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(20,10,0,0.86) 0%, rgba(20,10,0,0.1) 52%, transparent 100%)" }} />
