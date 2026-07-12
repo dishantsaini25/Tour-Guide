@@ -6,7 +6,6 @@
  *   EMAIL_PASS      → 16-char Gmail App Password (no spaces)
  *   RECEIVER_EMAIL  → kartikmaru2001@gmail.com
  */
-
 import nodemailer from "nodemailer";
 
 export async function POST(request) {

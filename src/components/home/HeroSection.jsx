@@ -154,8 +154,8 @@ export default function HeroSection() {
                   <span className="h-tag-text" style={{
                     fontFamily: "DM Sans, system-ui, sans-serif",
                     fontSize: "0.75rem",
-                    fontWeight: 600,
-                    color: "rgba(255,255,255,0.92)",
+                    fontWeight: 900,
+                    color: "#fff",
                     letterSpacing: "0.04em",
                     whiteSpace: "nowrap",
                   }}>{t}</span>
