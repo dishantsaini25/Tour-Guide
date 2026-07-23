@@ -8,32 +8,49 @@ import SectionHeading from "@/components/SectionHeading";
 import Link from "next/link";
 import { ArrowRight, SlidersHorizontal, X } from "lucide-react";
 
-const filters = ["All","Morning","Evening","Night","Heritage","Food","Rural","Culture","Hiking"];
+const filters = ["All", "Morning", "Evening", "Night"];
 
 /* ── Combo card icons keyed by experience slug ── */
 const EXP_ICONS = {
   "jaipur-at-dawn":        "🌅",
-  "ridge-and-ramparts":   "🏔️",
-  "the-blue-hour":        "🌃",
-  "beyond-the-pink":      "🏮",
-  "farm-and-fire":        "🔥",
-  "cosmic-imperial-triad":"🔭",
-  "living-walled-city":   "🏰",
+  "ridge-and-ramparts":    "🏔️",
+  "the-blue-hour":         "🌃",
+  "beyond-the-pink":       "🏮",
+  "farm-and-fire":         "🔥",
+  "cosmic-imperial-triad": "🔭",
+  "living-walled-city":    "🏰",
+  "the-lost-kingdom":      "🌿",
+  "artisans-jaipur":       "🖨️",
 };
 
 /* Title label for each combo experience slug */
 const EXP_LABELS = {
   "jaipur-at-dawn":        "Jaipur at Dawn",
-  "ridge-and-ramparts":   "Ridge & Ramparts",
-  "the-blue-hour":        "The Blue Hour",
-  "beyond-the-pink":      "Beyond the Pink",
-  "farm-and-fire":        "The Farm & Fire",
-  "cosmic-imperial-triad":"Cosmic & Imperial Triad",
-  "living-walled-city":   "The Living Walled City",
+  "ridge-and-ramparts":    "Ridge & Ramparts",
+  "the-blue-hour":         "The Blue Hour",
+  "beyond-the-pink":       "Beyond the Pink",
+  "farm-and-fire":         "The Farm & Fire",
+  "cosmic-imperial-triad": "Cosmic & Imperial Triad",
+  "living-walled-city":    "The Living Walled City",
+  "the-lost-kingdom":      "The Lost Kingdom",
+  "artisans-jaipur":       "The Artisan's Jaipur",
+};
+
+/* ── Time-of-day label per slug ── */
+const EXP_TIME = {
+  "jaipur-at-dawn":        "Morning",
+  "the-lost-kingdom":      "Morning",
+  "ridge-and-ramparts":    "Afternoon",
+  "beyond-the-pink":       "Evening",
+  "the-blue-hour":         "Evening",
+  "farm-and-fire":         "Evening",
+  "cosmic-imperial-triad": "Flexible",
+  "living-walled-city":    "Flexible",
+  "artisans-jaipur":       "Afternoon",
 };
 
 function ComboCard({ combo }) {
-  const [exp1, exp2] = combo.experiences;
+  const slugs = combo.experiences;
   return (
     <div className="combo-card">
       {/* Tag pill */}
@@ -56,15 +73,27 @@ function ComboCard({ combo }) {
       {/* Title */}
       <h3 style={{
         fontFamily: "Fraunces, Georgia, serif",
-        fontSize: "1.22rem",
+        fontSize: "1.28rem",
         fontWeight: 700,
         color: "#1A1209",
-        lineHeight: 1.22,
-        marginBottom: "10px",
+        lineHeight: 1.2,
+        marginBottom: "4px",
       }}>{combo.title}</h3>
 
+      {/* Subtitle */}
+      {combo.subtitle && (
+        <p style={{
+          fontFamily: "DM Sans, system-ui, sans-serif",
+          fontSize: "0.72rem",
+          fontWeight: 600,
+          color: "#FF8C00",
+          letterSpacing: "0.02em",
+          marginBottom: "12px",
+        }}>{combo.subtitle}</p>
+      )}
+
       {/* Accent rule */}
-      <div style={{ width: "28px", height: "2px", background: "linear-gradient(to right,#FF8C00,#F5A623)", borderRadius: "2px", marginBottom: "12px" }} />
+      <div style={{ width: "28px", height: "2px", background: "linear-gradient(to right,#FF8C00,#F5A623)", borderRadius: "2px", marginBottom: "14px" }} />
 
       {/* Description */}
       <p style={{
@@ -73,13 +102,13 @@ function ComboCard({ combo }) {
         color: "#6B5B2E",
         lineHeight: 1.78,
         fontWeight: 300,
-        marginBottom: "18px",
+        marginBottom: "20px",
         flex: 1,
       }}>{combo.description}</p>
 
-      {/* Experience chips */}
+      {/* Experience chips — flow of the day */}
       <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "22px" }}>
-        {[exp1, exp2].map((slug) => (
+        {slugs.map((slug, i) => (
           <span key={slug} style={{
             display: "inline-flex",
             alignItems: "center",
@@ -93,8 +122,15 @@ function ComboCard({ combo }) {
             fontWeight: 600,
             color: "#3D2E0E",
           }}>
+            <span style={{ fontSize: "0.85em", opacity: 0.7, color: "#9C8550" }}>
+              {EXP_TIME[slug] || ""}
+            </span>
             <span>{EXP_ICONS[slug] || "✦"}</span>
             {EXP_LABELS[slug] || slug}
+            {/* Arrow between chips (not after last) */}
+            {i < slugs.length - 1 && (
+              <span style={{ marginLeft: "4px", color: "#F5A623", fontSize: "0.75em" }}>→</span>
+            )}
           </span>
         ))}
       </div>
@@ -431,8 +467,8 @@ export default function ExperiencesPage() {
       <SectionWrapper variant="main">
         <SectionHeading
           label="Curated Combinations"
-          title="Two Experiences, One Extraordinary Day"
-          subtitle="Our most popular pairings — crafted for travellers who want to go deeper."
+          title="Deeper Jaipur, One Perfect Day"
+          subtitle="Three handcrafted itineraries — each pairing experiences for a seamless journey through the city's layers."
         />
 
         {/* Desktop grid */}

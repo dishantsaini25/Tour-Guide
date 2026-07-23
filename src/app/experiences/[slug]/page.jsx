@@ -56,6 +56,46 @@ export default async function ExperienceDetailPage({ params }) {
         }
         .back-link:hover { color:#FFFFFF !important; }
 
+        /* ── Hero theme badge — glassmorphism pill over the hero image ── */
+        .hero-theme-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(255, 248, 220, 0.14);
+          backdrop-filter: blur(10px) saturate(140%);
+          -webkit-backdrop-filter: blur(10px) saturate(140%);
+          border: 1px solid rgba(245, 166, 35, 0.35);
+          border-radius: 9999px;
+          padding: 6px 16px 6px 10px;
+          margin-bottom: 18px;
+          max-width: 100%;
+        }
+        .hero-theme-badge::before {
+          content: '';
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: ${GO};
+          flex-shrink: 0;
+        }
+        .hero-theme-badge span {
+          font-family: ${IN};
+          font-size: 0.68rem;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: rgba(255, 232, 150, 0.95);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
+        @media (max-width: 767px) {
+          .hero-theme-badge { max-width: calc(100vw - 40px); }
+          .hero-theme-badge span { white-space: normal; }
+        }
+
         /* ── Sidebar Book button — pill, gradient, glow-only hover ── */
         .sb-book {
           display: flex; align-items: center; justify-content: center; gap: 7px;
@@ -199,10 +239,11 @@ export default async function ExperienceDetailPage({ params }) {
         </div>
 
         <div style={{ position:"relative", zIndex:10, maxWidth:"1320px", margin:"0 auto", padding:"0 20px 52px", width:"100%", paddingTop:"140px" }} className="inner-pad">
-          <div style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"14px" }}>
-            <div style={{ width:"28px", height:"1px", background:GO }} />
-            <span style={LABEL}>{exp.theme}</span>
+          {/* Theme badge */}
+          <div className="hero-theme-badge">
+            <span>{exp.theme}</span>
           </div>
+
           <h1 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(2.4rem,6.5vw,5.5rem)", color:"#FFFFFF", lineHeight:1.05, marginBottom:"12px" }}>
             {exp.title}
           </h1>
@@ -286,6 +327,20 @@ export default async function ExperienceDetailPage({ params }) {
                     </div>
                   ))}
                 </div>
+                
+                {/* Additional bulleted highlights if provided */}
+                {exp.secondaryHighlights && exp.secondaryHighlights.length > 0 && (
+                  <div style={{ marginTop:"28px", paddingTop:"24px", borderTop:`1px solid ${PH}` }}>
+                    <ul style={{ display:"flex", flexDirection:"column", gap:"10px" }}>
+                      {exp.secondaryHighlights.map((item, i) => (
+                        <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"10px" }}>
+                          <CheckCircle2 size={14} style={{ color:GO, marginTop:"3px", flexShrink:0 }} />
+                          <span style={{ fontFamily:IN, color:MU, fontSize:"0.875rem", lineHeight:1.7, fontWeight:300 }}>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
               {/* Ideal for */}

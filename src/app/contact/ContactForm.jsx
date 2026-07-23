@@ -1,7 +1,11 @@
 "use client";
-import { useState, Suspense } from "react";
+import { useState, /*useEffect, useRef, useMemo,*/ Suspense, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
+// GOOGLE CALENDAR START — imports commented out; re-enable when calendar sync is back
+// import { validateTimeSlot, getEventsForDate, getAvailableStartSlots, getAvailableEndSlots } from "@/lib/calendarUtils";
+// import { Clock, CalendarX, CheckCircle } from "lucide-react";
+// GOOGLE CALENDAR END
 
 /* ── Experience options ── */
 const expOptions = [
@@ -12,13 +16,15 @@ const expOptions = [
   "The Farm & Fire (Countryside Cooking Masterclass)",
   "The Cosmic & Imperial Triad (Hawa Mahal, Jantar Mantar & City Palace)",
   "The Living Walled City",
-  "Combo: Jaipur at Dawn + The Ridge & Ramparts",
-  "Combo: Beyond the Pink + The Blue Hour",
-  "Combo: The Cosmic & Imperial Triad + The Farm & Fire",
+  "The Lost Kingdom (Weekend Wilderness Trail)",
+  "The Artisan's Jaipur (Craft Lanes Walk)",
+  "Combo: Soul of Jaipur — Jaipur at Dawn + Beyond the Pink",
+  "Combo: Nature & Kingdom — Lost Kingdom + Ridge & Ramparts",
+  "Combo: Jaipur Through Time — Dawn + Amber + Blue Hour",
   "Custom / Not Sure Yet",
 ];
 
-/* ── Country list (common travel origins) ── */
+/* ── Country list ── */
 const countries = [
   "India","United States","United Kingdom","Australia","Canada","Germany",
   "France","Italy","Spain","Netherlands","Switzerland","Austria","Belgium",
@@ -32,38 +38,25 @@ const countries = [
 const IN = "DM Sans, system-ui, sans-serif";
 const PF = "Fraunces, Georgia, serif";
 
-/* ── Shared field styles ── */
 const fldBase = {
-  width: "100%",
-  padding: "12px 16px",
-  fontFamily: IN,
-  fontSize: "0.9rem",
-  color: "#1A1209",
-  background: "#FFFFFF",
-  border: "1.5px solid #FFD89B",
-  borderRadius: "12px",
-  outline: "none",
+  width: "100%", padding: "12px 16px", fontFamily: IN, fontSize: "0.9rem",
+  color: "#1A1209", background: "#FFFFFF", border: "1.5px solid #FFD89B",
+  borderRadius: "12px", outline: "none",
   transition: "border-color 0.2s ease, box-shadow 0.2s ease",
-  appearance: "none",
-  WebkitAppearance: "none",
+  appearance: "none", WebkitAppearance: "none",
 };
 
 const lbl = {
-  display: "block",
-  fontFamily: IN,
-  fontSize: "0.62rem",
-  letterSpacing: "0.18em",
-  textTransform: "uppercase",
-  fontWeight: 700,
-  color: "#6B5B2E",
-  marginBottom: "7px",
+  display: "block", fontFamily: IN, fontSize: "0.62rem",
+  letterSpacing: "0.18em", textTransform: "uppercase",
+  fontWeight: 700, color: "#6B5B2E", marginBottom: "7px",
 };
 
 const onFocus = (e) => {
   e.target.style.borderColor = "#FF8C00";
   e.target.style.boxShadow   = "0 0 0 3px rgba(255,140,0,0.14)";
 };
-const onBlur  = (e) => {
+const onBlur = (e) => {
   e.target.style.borderColor = "#FFD89B";
   e.target.style.boxShadow   = "none";
 };
@@ -73,50 +66,176 @@ function Field({ id, label, required, labelClass = "", children }) {
   return (
     <div>
       <label htmlFor={id} style={lbl} className={labelClass}>
-        {label}{required && <span style={{ color:"#FF8C00", marginLeft:"3px" }}>*</span>}
+        {label}{required && <span style={{ color: "#FF8C00", marginLeft: "3px" }}>*</span>}
       </label>
       {children}
     </div>
   );
 }
 
-function FormInner() {
-  const params  = useSearchParams();
-  const today   = new Date().toISOString().split("T")[0]; // YYYY-MM-DD for today
+/* ─────────────────────────────────────────────────── */
 
+/* ── Match a URL query param to the closest expOption ──
+   Tries exact match first, then case-insensitive substring match. */
+function resolveExperience(param) {
+  if (!param) return "";
+  // 1. Exact match
+  if (expOptions.includes(param)) return param;
+  // 2. Case-insensitive exact
+  const lower = param.toLowerCase();
+  const exact = expOptions.find(o => o.toLowerCase() === lower);
+  if (exact) return exact;
+  // 3. Substring: expOption starts with the param string (e.g. "Jaipur at Dawn" → "Jaipur at Dawn (Morning Walk & Breakfast)")
+  const starts = expOptions.find(o => o.toLowerCase().startsWith(lower));
+  if (starts) return starts;
+  // 4. Substring: param is contained in an expOption
+  const contains = expOptions.find(o => o.toLowerCase().includes(lower));
+  if (contains) return contains;
+  return "";
+}
+
+function FormInner() {
+  const params = useSearchParams();
+  const today  = new Date().toISOString().split("T")[0];
+
+  /* ── Form state ── */
   const [form, setForm] = useState({
-    name: "", email: "", phone: "",
-    country: "", city: "",
-    experience: params.get("experience") || "",
-    date: "", guests: "", message: "",
+    name: "", email: "", phone: "", country: "", city: "",
+    experience: resolveExperience(params.get("experience")),
+    date: "", startTime: "", endTime: "",
+    guests: "", message: "",
   });
   const [status, setStatus] = useState("idle");
   const [errMsg, setErrMsg] = useState("");
 
-  const change = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+  // GOOGLE CALENDAR START — calendar state; re-enable to restore availability checking
+  // const [calEvents,  setCalEvents]  = useState([]);
+  // const [calLoading, setCalLoading] = useState(true);
+  // const [calError,   setCalError]   = useState(false);
+  // const calEventsRef = useRef([]);
+  // useEffect(() => { calEventsRef.current = calEvents; }, [calEvents]);
+  // const [timeError, setTimeError] = useState("");
 
+  // ── Fetch calendar events once on mount ──
+  // useEffect(() => {
+  //   let cancelled = false;
+  //   (async () => {
+  //     try {
+  //       const res  = await fetch("/api/booked-dates");
+  //       const data = await res.json();
+  //       if (!cancelled) {
+  //         const evs = data.events || [];
+  //         calEventsRef.current = evs;
+  //         setCalEvents(evs);
+  //         setCalError(false);
+  //       }
+  //     } catch {
+  //       if (!cancelled) setCalError(true);
+  //     } finally {
+  //       if (!cancelled) setCalLoading(false);
+  //     }
+  //   })();
+  //   return () => { cancelled = true; };
+  // }, []);
+
+  // ── Events on the selected date ──
+  // const eventsOnDate = useMemo(
+  //   () => getEventsForDate(calEvents, form.date),
+  //   [calEvents, form.date]
+  // );
+  // const hasAllDayEvent = useMemo(
+  //   () => eventsOnDate.some(ev => ev.allDay),
+  //   [eventsOnDate]
+  // );
+
+  // ── Real-time validation ──
+  // useEffect(() => {
+  //   if (!form.date || !form.startTime || !form.endTime) { setTimeError(""); return; }
+  //   const result = validateTimeSlot(form.date, form.startTime, form.endTime, calEvents);
+  //   setTimeError(result.valid ? "" : result.reason);
+  // }, [form.date, form.startTime, form.endTime, calEvents]);
+
+  // ── Available slot memos ──
+  // const SLOT_INTERVAL = 30;
+  // const availableStartSlots = useMemo(
+  //   () => hasAllDayEvent ? [] : getAvailableStartSlots(form.date, eventsOnDate, SLOT_INTERVAL),
+  //   [form.date, eventsOnDate, hasAllDayEvent]
+  // );
+  // const availableEndSlots = useMemo(
+  //   () => hasAllDayEvent ? [] : getAvailableEndSlots(form.date, form.startTime, eventsOnDate, SLOT_INTERVAL),
+  //   [form.date, form.startTime, eventsOnDate, hasAllDayEvent]
+  // );
+  // GOOGLE CALENDAR END
+
+  /* ── Field change handler ── */
+  const change = useCallback((e) => {
+    const { name, value } = e.target;
+    setForm(p => {
+      const next = { ...p, [name]: value };
+      // GOOGLE CALENDAR START — reset dependent time fields on date/startTime change
+      // if (name === "startTime") next.endTime = "";
+      // if (name === "date") { next.startTime = ""; next.endTime = ""; }
+      // GOOGLE CALENDAR END
+      return next;
+    });
+  }, []);
+
+  /* ── Submit handler ── */
   const submit = async (e) => {
     e.preventDefault();
-    setStatus("loading");
     setErrMsg("");
 
-    // Client-side: reject manually-typed past dates
+    /* Past-date guard — always active */
     if (form.date && form.date < today) {
       setStatus("error");
       setErrMsg("Please select today or a future date for your experience.");
       return;
     }
 
+    // GOOGLE CALENDAR START — time-slot overlap gates; re-enable when calendar sync is active
+    // /* GATE 2: All-day event blocks entire day */
+    // const currentDayEvents = getEventsForDate(calEventsRef.current, form.date);
+    // if (form.date && currentDayEvents.some(ev => ev.allDay)) {
+    //   setStatus("error");
+    //   setErrMsg("This date is fully booked. Please choose a different date.");
+    //   return;
+    // }
+    // /* GATE 3: Time-slot overlap — unconditional, uses ref not state */
+    // if (form.date) {
+    //   if (!form.startTime || !form.endTime) {
+    //     setStatus("error");
+    //     setErrMsg("Please enter your preferred start and end time for the experience.");
+    //     return;
+    //   }
+    //   const freshResult = validateTimeSlot(
+    //     form.date, form.startTime, form.endTime, calEventsRef.current
+    //   );
+    //   if (!freshResult.valid) {
+    //     setStatus("error");
+    //     setErrMsg(freshResult.reason);
+    //     document.getElementById("startTime")?.focus();
+    //     return;
+    //   }
+    // }
+    // GOOGLE CALENDAR END
+
+    /* ── All validation passed — submit ── */
+    setStatus("loading");
+
     try {
       const res  = await fetch("/api/contact", {
-        method: "POST",
+        method:  "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body:    JSON.stringify(form), // date, startTime, endTime sent as plain text in email
       });
       const data = await res.json();
       if (res.ok && data.success) {
         setStatus("success");
-        setForm({ name:"", email:"", phone:"", country:"", city:"", experience:"", date:"", guests:"", message:"" });
+        setForm({
+          name:"", email:"", phone:"", country:"", city:"",
+          experience:"", date:"", startTime:"", endTime:"",
+          guests:"", message:"",
+        });
       } else {
         setStatus("error");
         setErrMsg(data.message || "Something went wrong. Please try WhatsApp.");
@@ -126,6 +245,11 @@ function FormInner() {
       setErrMsg("Network error. Please try WhatsApp.");
     }
   };
+
+  /* ── Submit button disabled only while actively submitting ── */
+  // GOOGLE CALENDAR START — was also disabled on: calLoading || !!timeError || hasAllDayEvent
+  const submitDisabled = status === "loading";
+  // GOOGLE CALENDAR END
 
   /* ── Success state ── */
   if (status === "success") return (
@@ -137,13 +261,9 @@ function FormInner() {
       <p style={{ fontFamily:IN, color:"#6B5B2E", lineHeight:1.75, maxWidth:"360px", margin:"0 auto", fontSize:"0.9rem", fontWeight:300 }}>
         We'll personally review your message and respond within 24 hours.
       </p>
-      <p style={{ fontFamily:PF, color:"#FF8C00", fontStyle:"italic", marginTop:"14px", fontSize:"0.9rem" }}>
-        — Raah India Experiences
-      </p>
-      <button
-        onClick={() => setStatus("idle")}
-        style={{ marginTop:"24px", color:"#FF8C00", background:"none", border:"1px solid rgba(255,140,0,0.3)", borderRadius:"9999px", cursor:"pointer", fontFamily:IN, fontSize:"0.78rem", fontWeight:600, padding:"8px 20px", transition:"all .2s" }}
-      >
+      <p style={{ fontFamily:PF, color:"#FF8C00", fontStyle:"italic", marginTop:"14px", fontSize:"0.9rem" }}>— Raah India Experiences</p>
+      <button onClick={() => setStatus("idle")}
+        style={{ marginTop:"24px", color:"#FF8C00", background:"none", border:"1px solid rgba(255,140,0,0.3)", borderRadius:"9999px", cursor:"pointer", fontFamily:IN, fontSize:"0.78rem", fontWeight:600, padding:"8px 20px", transition:"all .2s" }}>
         Send another enquiry
       </button>
     </div>
@@ -152,88 +272,40 @@ function FormInner() {
   return (
     <>
       <style>{`
-        /* ── Submit button ── */
         .cf-sub {
-          width: 100%;
-          background: linear-gradient(135deg, #FF8C00 0%, #E07800 55%, #C45E00 100%);
-          color: #FFFFFF;
-          font-family: 'DM Sans', system-ui, sans-serif;
-          font-size: 0.88rem;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          border: none;
-          border-radius: 9999px;
-          padding: 16px 32px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-          cursor: pointer;
-          box-shadow: 0 4px 18px rgba(255,140,0,0.30);
-          transition: box-shadow 0.3s ease, transform 0.3s ease;
+          width:100%; background:linear-gradient(135deg,#FF8C00 0%,#E07800 55%,#C45E00 100%);
+          color:#FFFFFF; font-family:'DM Sans',system-ui,sans-serif;
+          font-size:.88rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+          border:none; border-radius:9999px; padding:16px 32px;
+          display:flex; align-items:center; justify-content:center; gap:10px;
+          cursor:pointer; box-shadow:0 4px 18px rgba(255,140,0,.30);
+          transition:box-shadow .3s ease,transform .3s ease;
         }
-        .cf-sub:hover:not(:disabled), .cf-sub:focus-visible:not(:disabled) {
-          color: #FFFFFF;
-          transform: translateY(-2px) scale(1.02);
-          box-shadow:
-            0 0 0 4px rgba(255,140,0,0.14),
-            0 0 24px rgba(255,140,0,0.50),
-            0 10px 28px rgba(255,140,0,0.28);
+        .cf-sub:hover:not(:disabled),.cf-sub:focus-visible:not(:disabled){
+          color:#FFFFFF; transform:translateY(-2px) scale(1.02);
+          box-shadow:0 0 0 4px rgba(255,140,0,.14),0 0 24px rgba(255,140,0,.50),0 10px 28px rgba(255,140,0,.28);
         }
-        .cf-sub:active  { transform: translateY(0) scale(1); }
-        .cf-sub:focus-visible { outline: 2px solid #FF8C00; outline-offset: 3px; }
-        .cf-sub:disabled { opacity: 0.6; cursor: not-allowed; }
-
-        /* ── Select arrow ── */
-        .cf-select {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23FF8C00' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-          background-repeat: no-repeat;
-          background-position: right 14px center;
-          padding-right: 40px !important;
-          cursor: pointer;
+        .cf-sub:active{transform:translateY(0) scale(1);}
+        .cf-sub:focus-visible{outline:2px solid #FF8C00;outline-offset:3px;}
+        .cf-sub:disabled{opacity:.6;cursor:not-allowed;}
+        .cf-select{
+          background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23FF8C00' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+          background-repeat:no-repeat;background-position:right 14px center;
+          padding-right:40px!important;cursor:pointer;
         }
-
-        /* ── Mobile overrides (<768px) ── */
-        @media (max-width: 767px) {
-          /* Tighter gaps between field rows */
-          .cf-form { gap: 13px !important; }
-
-          /* Smaller field padding + font on mobile */
-          .cf-field {
-            padding: 9px 12px !important;
-            font-size: 0.82rem !important;
-            border-radius: 10px !important;
-          }
-
-          /* Smaller label */
-          .cf-lbl {
-            font-size: 0.56rem !important;
-            margin-bottom: 4px !important;
-            letter-spacing: 0.14em !important;
-          }
-
-          /* Tighter grid gaps */
-          .cf-row { gap: 10px !important; }
-
-          /* Textarea shorter on mobile */
-          .cf-textarea { min-height: 88px !important; }
-
-          /* Submit button compact */
-          .cf-sub {
-            padding: 13px 24px !important;
-            font-size: 0.8rem !important;
-          }
-
-          /* Select arrow adjustment */
-          .cf-select { padding-right: 36px !important; }
+        @media(max-width:767px){
+          .cf-form{gap:13px!important;}
+          .cf-field{padding:9px 12px!important;font-size:.82rem!important;border-radius:10px!important;}
+          .cf-lbl{font-size:.56rem!important;margin-bottom:4px!important;letter-spacing:.14em!important;}
+          .cf-row{gap:10px!important;}
+          .cf-textarea{min-height:88px!important;}
+          .cf-sub{padding:13px 24px!important;font-size:.8rem!important;}
+          .cf-select{padding-right:36px!important;}
         }
       `}</style>
 
-      <form onSubmit={submit} noValidate
-        className="cf-form"
-        style={{ display:"flex", flexDirection:"column", gap:"20px" }}
-      >
+      <form onSubmit={submit} noValidate className="cf-form"
+        style={{ display:"flex", flexDirection:"column", gap:"20px" }}>
 
         {/* Row 1: Name + Email */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
@@ -256,22 +328,52 @@ function FormInner() {
               value={form.phone} onChange={change}
               style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
           </Field>
+
           <Field id="date" label="Preferred Date" labelClass="cf-lbl">
+            {/* Date field — unrestricted (min only prevents past dates) */}
+            {/* GOOGLE CALENDAR START — was: disabled={calLoading} + availability panel below */}
             <input id="date" name="date" type="date"
               min={today}
               value={form.date} onChange={change}
-              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur} />
+              style={fldBase}
+              className="cf-field" onFocus={onFocus} onBlur={onBlur}
+            />
+            {/* Availability panel removed — re-enable with calendar sync:
+            {calLoading && <p>Checking availability…</p>}
+            {!calLoading && !calError && form.date && (
+              <div className="booked-slots-panel">...</div>
+            )} */}
+            {/* GOOGLE CALENDAR END */}
           </Field>
         </div>
 
-        {/* Row 3: Country (select) + City (text) */}
+        {/* Row 3: Start Time + End Time */}
+        {/* GOOGLE CALENDAR START — was: only shown when form.date && !hasAllDayEvent,
+            with filtered <select> dropdowns showing only available slots.
+            Now: always shown as unrestricted <input type="time"> fields. */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
+          <Field id="startTime" label="Preferred Start Time" labelClass="cf-lbl">
+            <input id="startTime" name="startTime" type="time"
+              value={form.startTime} onChange={change}
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur}
+            />
+          </Field>
+          <Field id="endTime" label="Preferred End Time" labelClass="cf-lbl">
+            <input id="endTime" name="endTime" type="time"
+              value={form.endTime} onChange={change}
+              style={fldBase} className="cf-field" onFocus={onFocus} onBlur={onBlur}
+            />
+          </Field>
+        </div>
+        {/* GOOGLE CALENDAR END */}
+
+        {/* Row 4: Country + City */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
           <Field id="country" label="Country" labelClass="cf-lbl">
             <select id="country" name="country"
               value={form.country} onChange={change}
               style={fldBase} className="cf-field cf-select"
-              onFocus={onFocus} onBlur={onBlur}
-            >
+              onFocus={onFocus} onBlur={onBlur}>
               <option value="">Select your country</option>
               {countries.map(c => <option key={c} value={c}>{c}</option>)}
             </select>
@@ -283,14 +385,13 @@ function FormInner() {
           </Field>
         </div>
 
-        {/* Row 4: Experience + Group size */}
+        {/* Row 5: Experience + Guests */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 cf-row">
           <Field id="experience" label="Preferred Experience" required labelClass="cf-lbl">
             <select id="experience" name="experience" required
               value={form.experience} onChange={change}
               style={fldBase} className="cf-field cf-select"
-              onFocus={onFocus} onBlur={onBlur}
-            >
+              onFocus={onFocus} onBlur={onBlur}>
               <option value="">Select an experience</option>
               {expOptions.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
@@ -299,8 +400,7 @@ function FormInner() {
             <select id="guests" name="guests" required
               value={form.guests} onChange={change}
               style={fldBase} className="cf-field cf-select"
-              onFocus={onFocus} onBlur={onBlur}
-            >
+              onFocus={onFocus} onBlur={onBlur}>
               <option value="">Select group size</option>
               {["1 guest","2 guests","3 guests","4 guests","5 guests","6 guests","7+ guests (private group)"].map(n =>
                 <option key={n} value={n}>{n}</option>
@@ -309,29 +409,26 @@ function FormInner() {
           </Field>
         </div>
 
-        {/* Row 5: Message */}
+        {/* Row 6: Message */}
         <Field id="message" label="Message / Special Requests" labelClass="cf-lbl">
           <textarea id="message" name="message" rows={5}
             value={form.message} onChange={change}
             placeholder="Any specific interests, dietary preferences, or questions?"
             style={{ ...fldBase, resize:"vertical", minHeight:"120px" }}
             className="cf-field cf-textarea"
-            onFocus={onFocus} onBlur={onBlur}
-          />
+            onFocus={onFocus} onBlur={onBlur} />
         </Field>
 
-        {/* Error block */}
+        {/* Global error block */}
         {status === "error" && (
           <div style={{ background:"#FFFDE7", border:"1px solid #FFD89B", borderRadius:"14px", padding:"16px 18px" }}>
             <div style={{ display:"flex", alignItems:"flex-start", gap:"10px", marginBottom:"12px" }}>
               <AlertCircle size={15} style={{ color:"#FF8C00", flexShrink:0, marginTop:"2px" }} />
               <p style={{ fontFamily:IN, color:"#6B5B2E", fontSize:"0.875rem" }}>{errMsg}</p>
             </div>
-            <a
-              href="https://wa.me/919876543210?text=Hello%2C+I%27d+like+to+book+a+Raah+India+Experience."
+            <a href="https://wa.me/919928026539?text=Hello%2C+I%27d+like+to+book+a+Raah+India+Experience."
               target="_blank" rel="noopener noreferrer"
-              style={{ display:"inline-flex", alignItems:"center", gap:"6px", background:"#25D366", color:"white", padding:"9px 18px", fontFamily:IN, fontSize:"0.78rem", fontWeight:700, textDecoration:"none", borderRadius:"9999px" }}
-            >
+              style={{ display:"inline-flex", alignItems:"center", gap:"6px", background:"#25D366", color:"white", padding:"9px 18px", fontFamily:IN, fontSize:"0.78rem", fontWeight:700, textDecoration:"none", borderRadius:"9999px" }}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               WhatsApp Us Instead
             </a>
@@ -339,7 +436,7 @@ function FormInner() {
         )}
 
         {/* Submit */}
-        <button type="submit" disabled={status === "loading"} className="cf-sub">
+        <button type="submit" disabled={submitDisabled} className="cf-sub">
           {status === "loading"
             ? <><Loader2 size={16} className="animate-spin" /> Sending…</>
             : <><Send size={15} /> Send Booking Enquiry</>}

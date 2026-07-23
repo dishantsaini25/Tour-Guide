@@ -55,9 +55,9 @@ export default function HeroSection() {
         }
         .h-cta2:active { transform: translateY(0px) !important; }
 
-        /* ── Feature tags — tighten on mobile ── */
+        /* ── Feature tags — layout handled entirely by Tailwind on the container ── */
+        /* display: flex intentionally omitted — Tailwind's hidden/md:flex controls visibility */
         .h-tags {
-          display: flex;
           flex-wrap: wrap;
           gap: 20px;
           margin-top: 44px;
@@ -69,6 +69,40 @@ export default function HeroSection() {
           }
           .h-tag-text {
             font-size: 0.68rem !important;
+          }
+        }
+
+        /* ── Hero content padding — extra bottom space on mobile so buttons
+           sit above the section-merge fade and are never clipped ── */
+        .hero-content-pad {
+          padding: clamp(56px,7vh,80px) 20px clamp(100px,12vh,130px);
+        }
+        @media (max-width: 767px) {
+          .hero-content-pad {
+            padding-bottom: clamp(160px, 22vh, 200px);
+          }
+        }
+
+        /* ── Bottom dark overlay — extends higher on mobile so buttons
+           always sit against a dark image, not the cream fade ── */
+        .hero-bottom-overlay {
+          background: linear-gradient(to top, rgba(20,10,0,0.62) 0%, transparent 60%);
+        }
+        @media (min-width: 768px) {
+          .hero-bottom-overlay {
+            background: linear-gradient(to top, rgba(20,10,0,0.55) 0%, transparent 40%);
+          }
+        }
+
+        /* ── Section-merge fade — taller on mobile, standard on desktop ── */
+        .hero-merge-fade {
+          height: 220px;
+          background: linear-gradient(to top, #FFFDE7 0%, rgba(255,253,231,0.85) 28%, rgba(255,253,231,0.35) 60%, transparent 100%);
+        }
+        @media (min-width: 768px) {
+          .hero-merge-fade {
+            height: 160px;
+            background: linear-gradient(to top, #FFFDE7 0%, rgba(255,253,231,0.85) 30%, rgba(255,253,231,0.4) 65%, transparent 100%);
           }
         }
       `}</style>
@@ -87,14 +121,14 @@ export default function HeroSection() {
           }} />
           {/* Main directional overlay */}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg, rgba(20,10,0,0.78) 0%, rgba(20,10,0,0.42) 55%, rgba(20,10,0,0.2) 100%)" }} />
-          {/* Bottom dark overlay — stops at 40% so cream fade blends with the image tone, not pure black */}
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(20,10,0,0.55) 0%, transparent 40%)" }} />
+          {/* Bottom dark overlay — responsive: 60% on mobile to keep buttons readable, 40% on desktop */}
+          <div className="hero-bottom-overlay" style={{ position: "absolute", inset: 0 }} />
           {/* Warm orange radial accent */}
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 15% 60%, rgba(255,140,0,0.12) 0%, transparent 55%)" }} />
         </div>
 
         {/* ── Content ── */}
-        <div style={{ position: "relative", zIndex: 10, maxWidth: "1320px", margin: "0 auto", padding: "clamp(56px,7vh,80px) 20px clamp(100px,12vh,130px)", width: "100%" }} className="inner-pad">
+        <div style={{ position: "relative", zIndex: 10, maxWidth: "1320px", margin: "0 auto", width: "100%" }} className="inner-pad hero-content-pad">
           <div style={{ maxWidth: "700px" }}>
 
             {/* Eyebrow label */}
@@ -146,8 +180,11 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            {/* ── Feature tags ── */}
-            <div className="h-tags" style={{ ...anim(700) }}>
+            {/* ── Feature tags — hidden on mobile, shown md+ ── */}
+            <div
+              className="hidden md:flex h-tags"
+              style={{ ...anim(700) }}
+            >
               {["Small Groups Only", "No Forced Shopping", "Local Storytelling", "Slow Travel"].map((t) => (
                 <div key={t} style={{ display: "flex", alignItems: "center", gap: "8px", flexShrink: 0}}>
                   <div style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#F5A623", flexShrink: 0 }} />
@@ -175,12 +212,10 @@ export default function HeroSection() {
         </div>
 
         {/* ── Section-merge fade — blends hero into the cream (#FFFDE7) background below ──
-             Two-stop gradient: fully opaque cream at bottom → transparent at top.
-             Height 160px gives a generous, smooth blend without eating hero content. */}
-        <div style={{
+             On mobile: taller (220px) and starts later so it never overlaps the buttons.
+             On desktop: 160px is sufficient. */}
+        <div className="hero-merge-fade" style={{
           position: "absolute", bottom: 0, left: 0, right: 0,
-          height: "160px",
-          background: "linear-gradient(to top, #FFFDE7 0%, rgba(255,253,231,0.85) 30%, rgba(255,253,231,0.4) 65%, transparent 100%)",
           pointerEvents: "none",
         }} />
       </section>

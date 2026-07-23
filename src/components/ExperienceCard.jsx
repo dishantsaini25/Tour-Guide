@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Clock, Gauge, ArrowUpRight } from "lucide-react";
 
 export default function ExperienceCard({ experience }) {
-  const { slug, title, subtitle, question, theme, duration, difficulty, cardImage, heroImage, filters } = experience;
+  const { slug, title, subtitle, question, theme, duration, difficulty, cardImage, heroImage, filters, whatIncludes } = experience;
   const img = cardImage || heroImage;
 
   return (
@@ -30,23 +30,55 @@ export default function ExperienceCard({ experience }) {
         .ec-img { transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
         .ec-root:hover .ec-img { transform: scale(1.07); }
 
-        /* ── Category badge (pill chip) ── */
-        .ec-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          background: linear-gradient(135deg, rgba(255,140,0,0.92) 0%, rgba(224,120,0,0.95) 100%);
-          color: #FFFFFF;
+        /* ── "What's Included" overlay label — on the image ── */
+        .ec-includes {
+          display: inline-block;
           font-family: 'DM Sans', system-ui, sans-serif;
-          font-size: 0.62rem;
+          font-size: 0.60rem;
           font-weight: 700;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          padding: 5px 12px;
+          color: #1A1209;
+          background: rgba(255, 247, 220, 0.88);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          padding: 4px 10px;
           border-radius: 9999px;
-          backdrop-filter: blur(6px);
-          -webkit-backdrop-filter: blur(6px);
-          box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+          border: 1px solid rgba(255, 200, 80, 0.55);
+          box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+          text-shadow: none;
+        }
+
+        /* ── Theme badge — appears in card body below subtitle ── */
+        .ec-theme-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: linear-gradient(135deg, rgba(255,248,230,0.95) 0%, rgba(255,237,190,0.90) 100%);
+          border: 1px solid rgba(245,166,35,0.40);
+          border-radius: 8px;
+          padding: 5px 11px;
+          margin-bottom: 14px;
+          max-width: 100%;
+        }
+        .ec-theme-badge span {
+          font-family: 'DM Sans', system-ui, sans-serif;
+          font-size: 0.68rem;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+          color: #7A4A00;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .ec-theme-badge::before {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #FF8C00;
+          flex-shrink: 0;
         }
 
         /* ── Primary action: View Experience ──
@@ -104,18 +136,20 @@ export default function ExperienceCard({ experience }) {
         {/* ── Thumbnail ── */}
         <div style={{ position: "relative", height: "224px", overflow: "hidden", borderRadius: "20px 20px 0 0" }}>
           <Image
-            src={img} alt={title} fill
-            className="object-cover object-top ec-img"
+            src={img}
+            alt={title}
+            fill
+            className="object-cover object-center ec-img"
             sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw"
             onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
           />
           {/* Dark gradient overlay */}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(20,10,0,0.86) 0%, rgba(20,10,0,0.1) 52%, transparent 100%)" }} />
 
-          {/* Category pill badge */}
+          {/* What's Included — overlay label on image */}
           <div style={{ position: "absolute", top: "14px", left: "14px" }}>
-            <span className="ec-badge">
-              {filters?.[0] || theme?.split("·")[0].trim()}
+            <span className="ec-includes">
+              {whatIncludes || (filters?.[0] || theme?.split("·")[0].trim())}
             </span>
           </div>
 
@@ -135,16 +169,21 @@ export default function ExperienceCard({ experience }) {
 
         {/* ── Body ── */}
         <div style={{ padding: "22px 22px 18px", display: "flex", flexDirection: "column", flex: 1 }}>
-          {/* Theme label */}
-          <p style={{
-            fontFamily: "DM Sans, system-ui, sans-serif",
-            fontSize: "0.58rem",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "#FF8C00",
-            fontWeight: 700,
-            marginBottom: "8px",
-          }}>{theme}</p>
+          {/* What's Included — prominent label with left-border accent */}
+          {whatIncludes && (
+            <p style={{
+              fontFamily: "DM Sans, system-ui, sans-serif",
+              fontSize: "0.68rem",
+              fontWeight: 700,
+              letterSpacing: "0.10em",
+              textTransform: "uppercase",
+              color: "#1A1209",              /* deep charcoal — high contrast on white card */
+              marginBottom: "10px",
+              paddingLeft: "10px",
+              borderLeft: "2.5px solid #FF8C00",
+              lineHeight: 1.5,
+            }}>{whatIncludes}</p>
+          )}
 
           {/* Title */}
           <h3 style={{
@@ -162,8 +201,15 @@ export default function ExperienceCard({ experience }) {
             fontSize: "0.88rem",
             fontStyle: "italic",
             color: "#6B5B2E",
-            marginBottom: "16px",
+            marginBottom: "12px",
           }}>{subtitle}</p>
+
+          {/* Theme badge */}
+          {theme && (
+            <div className="ec-theme-badge">
+              <span title={theme}>{theme}</span>
+            </div>
+          )}
 
           {/* Accent rule */}
           <div style={{ width: "32px", height: "2px", background: "linear-gradient(to right, #FF8C00, #F5A623)", borderRadius: "2px", marginBottom: "14px" }} />

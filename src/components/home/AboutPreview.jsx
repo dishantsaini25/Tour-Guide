@@ -6,7 +6,7 @@ export default function AboutPreview() {
   return (
     <>
       <style>{`
-        /* ── Primary button — pill, solid orange, glow on hover ── */
+        /* ── Primary CTA — pill, gradient, glow hover ── */
         .ap1 {
           background: linear-gradient(135deg, #FF8C00 0%, #E07800 55%, #C45E00 100%);
           color: #FFFFFF !important;
@@ -24,7 +24,7 @@ export default function AboutPreview() {
         }
         .ap1:active { transform: translateY(0) scale(1); }
 
-        /* ── Secondary button — pill, outline, glow on hover ── */
+        /* ── Secondary CTA — pill, outline, glow hover ── */
         .ap2 {
           border: 2px solid #FF8C00 !important;
           color: #FF8C00 !important;
@@ -43,65 +43,129 @@ export default function AboutPreview() {
         }
         .ap2:active { transform: translateY(0) scale(1); }
 
-        /* ── About image — responsive size ── */
+        /* ── Shobhit image — responsive sizing ── */
         .ap-img-wrap {
           position: relative;
           overflow: hidden;
           border: 1px solid #FFD89B;
-          /* default (mobile): constrained width, centred */
+          border-radius: 18px;
           width: 100%;
-          max-width: 320px;
+          max-width: 300px;
           margin: 0 auto;
           aspect-ratio: 4/5;
+          box-shadow: 0 8px 32px rgba(255,140,0,0.12);
         }
-        @media (min-width: 640px) { .ap-img-wrap { max-width: 400px; } }
-        @media (min-width: 1024px) {
-          /* desktop: full-width column, no max-width cap */
-          .ap-img-wrap { max-width: none; margin: 0; }
+        @media (min-width: 640px)  { .ap-img-wrap { max-width: 380px; } }
+        @media (min-width: 1024px) { .ap-img-wrap { max-width: none; margin: 0; } }
+
+        /* ── Blockquote ── */
+        .ap-blockquote {
+          border-left: 3px solid #FF8C00;
+          padding: 14px 18px 14px 22px;
+          background: rgba(255,140,0,0.04);
+          border-radius: 0 12px 12px 0;
+          margin: 0;
+        }
+        .ap-blockquote p {
+          font-family: 'Fraunces', Georgia, serif;
+          font-size: clamp(1rem, 2vw, 1.15rem);
+          font-style: italic;
+          color: #1A1209;
+          line-height: 1.72;
+          font-weight: 400;
+          margin: 0 0 8px;
+        }
+        .ap-blockquote cite {
+          font-family: 'DM Sans', system-ui, sans-serif;
+          font-size: 0.72rem;
+          font-style: normal;
+          font-weight: 700;
+          color: #FF8C00;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
         }
       `}</style>
 
       <SectionWrapper variant="soft">
+        {/* ── Section heading — centred above the two-column grid ── */}
+        <div style={{ textAlign: "center", marginBottom: "56px" }}>
+          <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: "#FF8C00", marginBottom: "10px" }}>
+            THE RAAH PHILOSOPHY
+          </p>
+          <div style={{ width: "40px", height: "2px", background: "linear-gradient(to right, #FF8C00, #F5A623)", margin: "0 auto 18px" }} />
+          <h2 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2rem,4vw,3rem)", color: "#1A1209", lineHeight: 1.1 }}>
+            Story Behind Raah
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* ── Image column ── */}
-          <div style={{ position: "relative" }}>
+          {/* ── Image column — first in JSX → on top on mobile ── */}
+          <div style={{ position: "relative" }} className="lg:order-last">
             <div className="ap-img-wrap">
               <Image
-                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=900&q=85"
-                alt="Jaipur at dusk"
+                src="/images/WhatsApp Image 2026-07-23 at 2.47.33 PM.jpeg"
+                alt="Shobhit — founder of Raah India Experiences"
                 fill
                 className="object-cover object-center"
-                sizes="(max-width:640px) 320px, (max-width:1024px) 400px, 50vw"
+                sizes="(max-width:640px) 300px, (max-width:1024px) 380px, 50vw"
               />
             </div>
-            {/* Desktop-only decorative elements */}
-            <div style={{ position: "absolute", bottom: "-12px", right: "-12px", width: "90px", height: "90px", border: "2px solid rgba(255,140,0,0.4)" }} className="hidden lg:block" />
-            <div style={{ position: "absolute", top: "24px", right: "-20px", background: "#FFFFFF", border: "1px solid #FFD89B", padding: "14px 18px", textAlign: "center", boxShadow: "0 4px 20px rgba(255,140,0,0.15)" }} className="hidden lg:block">
-              <span style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "1.8rem", fontWeight: 700, color: "#FF8C00", display: "block", lineHeight: 1 }}>10+</span>
-              <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#6B5B2E", fontWeight: 500 }}>Years</span>
-            </div>
+            {/* Desktop decorative corner squares */}
+            <div style={{ position: "absolute", bottom: "-14px", right: "-14px", width: "80px", height: "80px", border: "2px solid rgba(255,140,0,0.35)", borderRadius: "4px" }} className="hidden lg:block" />
+            <div style={{ position: "absolute", top: "-14px", left: "-14px", width: "48px", height: "48px", border: "2px solid rgba(255,216,155,0.5)", borderRadius: "4px" }} className="hidden lg:block" />
           </div>
 
           {/* ── Text column ── */}
-          <div>
-            <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: "#FF8C00", marginBottom: "10px" }}>The Curator</p>
-            <div style={{ width: "40px", height: "2px", background: "linear-gradient(to right, #FF8C00, #F5A623)", marginBottom: "22px" }} />
-            <h2 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(2rem,3.5vw,3.2rem)", fontWeight: 700, color: "#1A1209", lineHeight: 1.08, marginBottom: "24px" }}>
-              Born in Jaipur.<br />
-              <em style={{ color: "#FF8C00", fontStyle: "italic", fontWeight: 600 }}>Storyteller by calling.</em>
-            </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.95rem", color: "#6B5B2E", lineHeight: 1.85, fontWeight: 300, marginBottom: "32px" }}>
-              <p>For years, I watched travellers arrive in Jaipur filled with excitement and leave with photographs of forts and palaces — yet having never experienced the city that locals know and cherish.</p>
-              <p>One guest quietly said: <em style={{ color: "#1A1209", fontWeight: 500, fontFamily: "Fraunces, Georgia, serif" }}>"The monuments were beautiful, but I wish I had met the people who give this city its soul."</em></p>
-              <p>That single sentence became the foundation of Raah India Experiences.</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "22px" }}>
+
+            {/* Welcome heading */}
+            <div>
+              <h3 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(1.6rem,3.5vw,2.4rem)", color: "#1A1209", lineHeight: 1.15, marginBottom: "6px" }}>
+                Welcome to{" "}
+                <em style={{ color: "#FF8C00", fontStyle: "italic" }}>Raah India</em>
+              </h3>
+              <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.72rem", fontWeight: 600, color: "#FF8C00", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                Meet Shobhit — Your Local Guide &amp; Storyteller
+              </p>
             </div>
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              <Link href="/about" className="ap1" style={{ padding: "13px 28px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
-                Our Philosophy
+
+            {/* Narrative paragraphs */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "14px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.95rem", color: "#6B5B2E", lineHeight: 1.85, fontWeight: 300 }}>
+              <p>
+                Raah India was born from a simple but powerful conviction — that the most meaningful travel happens not between monuments, but between people. That real discovery lives in the fragrance of marigolds before sunrise, in a family recipe shared over a wood fire, in the laughter of a chai-wallah who has known this lane his entire life.
+              </p>
+              <p>
+                Shobhit grew up in Jaipur — not the postcard version, but the living, breathing city of narrow lanes, neighbourhood temples, and generations of artisans who never made it into any guidebook. After years of watching travellers leave with photographs but without stories, he made a decision: to share the city he actually knows.
+              </p>
+              <p>
+                Every Raah experience is personally walked, researched, and refined. Every stop is chosen for its authenticity. Every group is kept small enough for real connection. Because travel, at its best, is not a transaction — it is a conversation.
+              </p>
+            </div>
+
+            {/* Shobhit's quote */}
+            <blockquote className="ap-blockquote">
+              <p>
+                "I don't want you to see Jaipur. I want you to feel it — in the heat of a temple courtyard at dawn, in the weight of a freshly made bangle, in the silence between the call to prayer and the first street vendor's voice. That is the Jaipur I grew up in. That is the Jaipur I want to share with you."
+              </p>
+              <cite>— Shobhit, Founder · Raah India Experiences</cite>
+            </blockquote>
+
+            {/* CTAs */}
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", paddingTop: "6px" }}>
+              <Link
+                href="/about"
+                className="ap1"
+                style={{ padding: "13px 28px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
+              >
+                Read Full Philosophy
               </Link>
-              <Link href="/experiences" className="ap2" style={{ padding: "13px 28px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none" }}>
-                See All Experiences
+              <Link
+                href="/experiences"
+                className="ap2"
+                style={{ padding: "13px 28px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none" }}
+              >
+                Explore Experiences
               </Link>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 
-const PHONE = "919876543210";
+const PHONE = "919928026539";
 const MSG   = "Hello! I'd like to enquire about a Raah India Experience.";
 
 export default function WhatsAppButton({ message = MSG }) {

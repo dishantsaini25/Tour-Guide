@@ -48,9 +48,10 @@ export default function GallerySlider({ images, title }) {
               src={img.src}
               alt={img.alt || `${title} — moment ${i + 1}`}
               fill
-              className="object-cover gal-img"
+              className="object-cover object-center gal-img"
               sizes="(max-width:1024px) 33vw, 22vw"
               loading="lazy"
+              onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
             />
           </div>
         ))}
@@ -65,9 +66,10 @@ export default function GallerySlider({ images, title }) {
                 src={img.src}
                 alt={img.alt || `${title} — moment ${i + 1}`}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="90vw"
                 loading="lazy"
+                onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
               />
             </div>
           ))}
