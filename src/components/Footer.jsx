@@ -152,7 +152,7 @@ export default function Footer() {
                   {[
                     { Icon: MapPin, text: "Jaipur, Rajasthan, India", href: null },
                     { Icon: Phone,  text: "+91 98765 43210",          href: "tel:+919876543210" },
-                    { Icon: Mail,   text: "hello@raahindia.com",      href: "mailto:hello@raahindia.com" },
+                    { Icon: Mail,   text: "raahindiaexperiences@gmail.com",      href: "mailto:raahindiaexperiences@gmail.com" },
                   ].map(({ Icon, text, href }) => (
                     <li key={text} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                       <Icon size={13} style={{ color: ACC, marginTop: "3px", flexShrink: 0 }} />
@@ -230,7 +230,7 @@ export default function Footer() {
                   {[
                     { Icon: MapPin, text: "Jaipur, Rajasthan, India", href: null },
                     { Icon: Phone,  text: "+91  99280 26539",         href: "tel:+91 99280 26539" },
-                    { Icon: Mail,   text: "hello@raahindia.com",      href: "mailto:hello@raahindia.com" },
+                    { Icon: Mail,   text: "raahindiaexperiences@gmail.com", href: "mailto:raahindiaexperiences@gmail.com" },
                   ].map(({ Icon, text, href }) => (
                     <li key={text} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                       <Icon size={13} style={{ color: ACC, marginTop: "3px", flexShrink: 0 }} />

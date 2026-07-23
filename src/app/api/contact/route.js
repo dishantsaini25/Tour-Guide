@@ -2,9 +2,9 @@
  * /api/contact — Nodemailer email handler
  *
  * Required .env.local variables (restart dev server after editing):
- *   EMAIL_USER      → kartikmaru2001@gmail.com
+ *   EMAIL_USER      → raahindiaexperiences@gmail.com
  *   EMAIL_PASS      → 16-char Gmail App Password (no spaces)
- *   RECEIVER_EMAIL  → kartikmaru2001@gmail.com
+ *   RECEIVER_EMAIL  → raahindiaexperiences@gmail.com
  */
 import nodemailer from "nodemailer";
 

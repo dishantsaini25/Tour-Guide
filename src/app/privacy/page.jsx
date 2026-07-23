@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <h2 style={H2}>4. Cookies</h2>
           <p>This website does not use tracking cookies or analytics platforms that collect personal data beyond standard server logs.</p>
           <h2 style={H2}>5. Contact</h2>
-          <p>For privacy questions, email <a href="mailto:hello@raahindia.com" style={{ color:OR, textDecoration:"underline" }}>hello@raahindia.com</a>.</p>
+          <p>For privacy questions, email <a href="mailto:raahindiaexperiences@gmail.com" style={{ color:OR, textDecoration:"underline" }}>raahindiaexperiences@gmail.com</a>.</p>
           <div style={{ marginTop:"44px", paddingTop:"32px", borderTop:"1px solid #FFD89B" }}>
             <Link href="/" style={{ background:OR, color:"#FFFFFF", padding:"12px 26px", fontFamily:IN, fontSize:"0.8rem", fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", textDecoration:"none" }} className="pp-back">Back to Home</Link>
           </div>

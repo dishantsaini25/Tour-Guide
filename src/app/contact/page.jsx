@@ -100,7 +100,7 @@ export default function ContactPage() {
                 {[
                   { Icon:MapPin, label:"Location",         value:"Jaipur, Rajasthan, India", href:null },
                   { Icon:Phone,  label:"Phone / WhatsApp", value:"+91 98765 43210",           href:"tel:+919876543210" },
-                  { Icon:Mail,   label:"Email",             value:"hello@raahindia.com",       href:"mailto:hello@raahindia.com" },
+                  { Icon:Mail,   label:"Email",             value:"raahindiaexperiences@gmail.com", href:"mailto:raahindiaexperiences@gmail.com" },
                   { Icon:Clock,  label:"Response Time",    value:"Within 24 hours",            href:null },
                 ].map(({ Icon, label, value, href }) => (
                   <li key={label} style={{ display:"flex", alignItems:"flex-start", gap:"14px" }}>
