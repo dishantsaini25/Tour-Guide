@@ -48,7 +48,7 @@ const testimonials = [
     name: "Mónica Miyasato",
     from: "Perú",
     initials: "MM",
-    rating: 4.5,
+    rating: 4.6,
     text: "Ha sido un inmenso placer conocer Jaipur con la mejor compañía de un excelente ciudadano y guía, Shobhit. Aprendimos mucho, y llevamos muchos momentos inolvidables de Jaipur contigo.",
   },
   {
@@ -69,14 +69,14 @@ const testimonials = [
     name: "Leva Kuode",
     from: "Lithuania",
     initials: "LK",
-    rating: 3.8,
+    rating: 5.0,
     text: "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail. Highly recommended your professional and bespoke services.",
   },
   {
     name: "Julian Peter Berton",
     from: "London, UK",
     initials: "JP",
-    rating: 4,
+    rating: 4.8,
     text: "Thank you so much for the last two days when you showed me the wonderful awe inspiring city of Jaipur and some of its treasures through your curated experiences. I had a wonderful time and hope we meet again some time. Best Wishes.",
   },
   {
