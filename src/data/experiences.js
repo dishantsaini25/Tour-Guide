@@ -644,44 +644,129 @@ export const combos = [
 // ── Journal Articles ─────────────────────────────────────────────
 export const journalArticles = [
   {
-    slug: "jaipur-before-sunrise",
-    title: "Why Jaipur is Best Experienced Before Sunrise",
-    excerpt: "There is a version of Jaipur that most visitors never see — serene, fragrant, and entirely unhurried. It exists only in the hour before the city wakes.",
-    category: "Dawn Jaipur",
-    readTime: "5 min read",
-    image: "/images/placeholder.jpg",
-  },
-  {
-    slug: "five-conversations",
-    title: "Five Conversations I Will Never Forget as a Guide",
-    excerpt: "After years of walking Jaipur with travellers from across the world, certain exchanges stay with you long after the walk ends.",
+    slug: "why-i-created-raah",
+    title: "Why I Created Raah",
+    excerpt: "Sometimes, the right path appears only when you choose to leave the familiar one. A journey beyond the monuments into the living streets of the Pink City.",
     category: "From the Curator",
-    readTime: "6 min read",
-    image: "/images/IMG-20251222-WA0002 (1).jpg",
+    readTime: "4 min read",
+    image: "/images/60ab29a94b1a370d8d8b9c37bd03be6c.jpg",
+    body: `Sometimes, the right path appears only when you choose to leave the familiar one.
+
+For years, I have walked alongside travellers through Jaipur's magnificent forts, palaces, and several monuments. Like many journeys, our days were carefully planned, every stop accounted for, every place visited.
+
+Yet, I couldn't ignore the moment when the day came to an end and guests would request me — "What else is there to see in Jaipur besides historical sites?" That simple question took me beyond the monumental trail.
+
+I began taking them through the Jaipur I was curious for — old city back lanes, bustling bazaars, hidden temples, family-run businesses, and everyday things taking place in the living streets of Pink City. We wandered calmly, paused for conversations, discovered forgotten corners, and experienced the city as a true Jaipurite does in everyday life.
+
+Those unplanned moments soon became the most memorable part of every journey.
+
+That journey of exploration eventually became Raah.
+
+The appreciation & praise of each guest as "This is the Jaipur every tourist would wish to experience" influenced me to create unique experiences in Jaipur. Their words inspired me to keep exploring Jaipur beyond monuments — not just for myself, but for every traveller who wanted to feel the city as if it actually belonged to them.
+
+With every walk, I discovered new stories, hidden places, and meaningful encounters that deserved to be shared.
+
+In Hindi, Raah means "a path." For me, it represents a different way of discovering Jaipur — not through a checklist of attractions, but through its people, traditions, hidden corners, and the stories that bring them to life.`,
   },
   {
-    slug: "forgotten-stories-gates",
-    title: "The Forgotten Stories Behind Jaipur's Gates",
-    excerpt: "Every gate in the walled city was built with intention. Understanding what those intentions were changes how you see the entire city.",
+    slug: "hidden-temples-amber-valley",
+    title: "The Hidden Temples of Amber Valley",
+    excerpt: "Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells.",
     category: "Heritage",
-    readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
-  },
-  {
-    slug: "flower-garland-women",
-    title: "The Women Who Still Make Jaipur's Flower Garlands",
-    excerpt: "Every morning before sunrise, they arrive. Every evening, the city wears what they made. Their story is older than the monuments.",
-    category: "Living Heritage",
-    readTime: "5 min read",
-    image: "/images/65b7913d1fe17fd9f50f64c4ee8fd84a.jpg",
-  },
-  {
-    slug: "breakfast-rajasthan",
-    title: "A Breakfast That Explains Rajasthan Better Than Any Museum",
-    excerpt: "Dal baati churma. Pyaz kachori. Masala chai. One meal, one table, centuries of culture. Some things cannot be learned — only tasted.",
-    category: "Food & Culture",
     readTime: "6 min read",
-    image: "/images/a5526d1f70ad9bc886e5c9ecacb5f7c4.jpg",
+    image: "/experiances/The lost kingdom/temples-of-amer-town-ambikeshwar-mahadev-lord-shiva-jaipur-near-panna-meena-kund-jaipurthrumylens.webp",
+    body: `"Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells."
+
+Most visitors leave Amber with the feeling of having seen its greatest treasure — the Amber Fort. Yet behind these magnificent forts & palace lies a different world: the world of quiet shrines, centuries-old temples, forgotten rituals, and local devotion that has continued uninterrupted for generations.
+
+By walking through the old streets of Amber, you'll come across places that rarely appear in guidebooks but remain deeply woven into the lives of the community.
+
+**Ambikeshwar Temple**
+
+Hidden beneath the shadow of Amber Fort, Ambikeshwar Temple remains one of the kingdom's oldest living places of worship. While thousands pass nearby on their way to the palace, few pause to notice the quiet devotion that continues here every single day. The temple gets flooded with water in monsoon season, making it inaccessible even for locals. Ambikeshwar temple dates back to the 10th century, supposedly built by King Kakil Dev, one of the earliest rulers of the Kachhawaha Dynasty.
+
+**Bihari Ji Temple**
+
+A stone's throw away from Ambikeshwar Temple lies this forgotten temple — one of the kingdom's hidden architectural treasures. Allegedly home to Lord Vishnu and his consort Goddess Lakshmi, it now stands abandoned yet captivating, with its mysterious open-domed roof and the silent echoes of Amber's forgotten past.
+
+**Badri Narayan Temple (Silawaton Ka Mandir)**
+
+Perched gracefully on the hillside overlooking Amber, the Laxmi Narayan Temple is one of those landmarks that almost every visitor notices, yet surprisingly few take the time to explore. Known locally as Silawaton Ka Mandir — the Temple of the Stone Carvers — it quietly stands as a testament to the devotion and craftsmanship of the community that shaped much of Amber's architectural heritage.
+
+**Jagat Shiromani Temple**
+
+Beyond Amber's bustling palace lies a sanctuary where history, art, and devotion come together in perfect harmony. The Jagat Shiromani Temple — fondly called the Meera Temple — is not merely a place of worship; it is a monument to a mother's love, built by Queen Kanakwati in honour of Prince Jagat Singh. Its beautifully sculpted gateways, delicate marble work, and centuries-old legends surrounding Meera Bai's idol make it one of Amber's greatest architectural treasures.
+
+**Narsingh Ji Temple**
+
+Hidden within the original 13th century palace of Amber stands the temple of Narsingh Ji — a revered black stone idol of Lord Narsingh, the man-lion incarnation of Lord Vishnu. For centuries, the deity has been regarded as the divine guardian of the Kachhawaha rulers. A well-known local saying reflects this belief: "Jab tak Narsingh gaddi mein, tab tak raaj hatheli main."
+
+"Amber's greatest stories are often found far away from its most celebrated monuments."`,
+  },
+  {
+    slug: "why-jaipur-was-built",
+    title: "Why Jaipur Was Built",
+    excerpt: "Most people believe Jaipur was built simply because Amber had become overcrowded. The true story is far more extraordinary.",
+    category: "History",
+    readTime: "5 min read",
+    image: "/experiances/The Cosmic & Imperial Triad/IMG20251009160204.jpg",
+    body: `A City Born from the Vision of a King Who Looked Beyond His Time.
+
+Most people believe Jaipur was built simply because Amber had become overcrowded or faced a growing shortage of water. While these challenges certainly influenced the decision, they tell only part of the story.
+
+The true inspiration behind Jaipur was Sawai Jai Singh II — a remarkable ruler, scholar, astronomer, and visionary whose ambitions extended far beyond building another royal capital.
+
+The title "Sawai," meaning "one and a quarter" (or 1¼ times greater than an ordinary man), was bestowed upon him in recognition of his exceptional intellect and abilities.
+
+Unlike many kings of his time, Jai Singh II was deeply fascinated by science, mathematics, architecture, astronomy, and urban planning. He dreamed of creating a city that would not only serve as the new capital of his kingdom but also become a centre of learning, trade, innovation, and scientific exploration.
+
+His greatest passion was astronomy. Unsatisfied with the inaccuracies of existing astronomical tables, he commissioned the construction of five astronomical observatories — known today as the Jantar Mantars — in Delhi, Jaipur, Ujjain, Varanasi, and Mathura. These monumental instruments reflected his relentless pursuit of precision.
+
+Jaipur became the canvas upon which he brought all these ideas together. Designed according to the ancient principles of Vastu Shastra and planned on a rational grid unlike any other Indian city of its time, Jaipur was conceived as a city where science, commerce, governance, culture, and spirituality could coexist in perfect harmony.
+
+More than three centuries later, Jaipur continues to embody the vision of the extraordinary king who dared to imagine a city a century ahead of its time.
+
+Jaipur was never built simply to replace Amber. It was built to realise the vision of a ruler who believed that knowledge, planning, and progress could shape the future of an entire kingdom.`,
+  },
+  {
+    slug: "why-jaigarh-was-never-conquered",
+    title: "Why Jaigarh Was Never Conquered",
+    excerpt: "Crowning the hills above Amber Fort, Jaigarh isn't remembered for the battles it fought — but for the battles it never lost.",
+    category: "Heritage",
+    readTime: "5 min read",
+    image: "/experiances/Ridge and ramparts/thumbnail.jpg",
+    body: `Crowning the rugged Aravalli Hills, the fortress was designed to be practically impregnable. Its strategic position allowed soldiers to spot approaching armies long before they reached the gates, while the surrounding hills formed a natural ring of defence.
+
+Yet Jaigarh's greatest strength lay within its walls. Decades before sustainable construction entered mainstream thinking, the fortress was engineered to withstand lengthy sieges. An ingenious network of aqueducts, filtration tanks, and massive rainwater reservoirs ensured a dependable water supply throughout the year. Many reservoirs were even covered to prevent evaporation under Rajasthan's scorching sun, allowing the fort to remain self-sufficient for prolonged periods.
+
+Though the foundations of Jaigarh are attributed to Raja Kakil Dev in the 11th century, it was Sawai Jai Singh II who transformed it into one of India's greatest military fortresses. A visionary ruler with a passion for science, engineering, and astronomy, he strengthened its defences and established it as the kingdom's military headquarters.
+
+Jaigarh also became the principal cannon foundry of the Mughal Empire, where skilled craftsmen forged some of the finest artillery of their time. Its most celebrated creation, the Jaivana Cannon, remains one of the largest wheeled cannons ever built — with a reputed firing range of nearly 22 miles (35 km). A remarkable engineering achievement that still captures the imagination.
+
+Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by towering walls or mighty cannons — it was protected by exceptional planning, self-reliance, and a strategic vision that was centuries ahead of its time.`,
+  },
+  {
+    slug: "why-cows-are-sacred",
+    title: "Why Cows are Sacred in India",
+    excerpt: "In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow.",
+    category: "Culture",
+    readTime: "4 min read",
+    image: "/images/0c3ebf6399eb81670a60fd3f96aa2fe4.jpg",
+    body: `In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow. Hence, it is the responsibility of every Hindu to accord her respect — and everyone abides by this. For most religious ceremonies, the cow is essential.
+
+As per ancient texts, cows are pure and auspicious animals. Looking after a cow and doing all the daily chores for her — like bathing, feeding, and providing water — are considered commendable acts. In fact, cow dung and urine are said to have medicinal properties. Whosoever offers a morsel of food to a cow before having a meal is said to attain salvation. With respect to this, every Hindu household prepares at least two chapatis to offer to a cow before any meal.
+
+Besides, the charity of a cow benefits the whole family in all disciplines. The touch and care of her absolves one's sins. The produce of a cow — milk, ghee, curd, and butter — are used in religious ceremonies.
+
+In the Atharva Veda, it is mentioned: "The cow is the mother of Rudras, daughter of the Vasus and sister of Surya. She is the producer of ghee which acts like a celestial nectar."
+
+It is also said that cow's milk helps overcome infirmity and regain lost mental and physical health. It stimulates the intellect.
+
+In ancient times, cows were offered to gods and given as gifts as a sign of esteem. They were considered a symbol of wealth and prosperity, and one's status would be determined by the number of cows one possessed.
+
+In another religious text, it is said that the world depends upon the cow. The back is identical to Rig-Veda, the body of Yajur-Veda, the mouth of Sam-Veda, the neck of good deeds, and the soft body hair are like Mantras.
+
+Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, symbolising wealth, prosperity, intellect, nutrition, and abundance. The sacred animal is linked with Hindu deities like Lord Krishna, further deepening its significance in Hindu beliefs and rituals.`,
   },
 ];
 

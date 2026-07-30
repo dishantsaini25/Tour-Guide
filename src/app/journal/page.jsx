@@ -13,72 +13,115 @@ export default function JournalPage() {
   return (
     <>
       <style>{`
-        /* ── Journal page hero ── */
+        /* ── Journal hero ── */
         .jp-hero {
-          background: #FFFDE7;
-          padding-top: 110px;
-          padding-bottom: 72px;
-          text-align: center;
-          border-bottom: 1px solid #FFD89B;
           position: relative;
+          min-height: 56vh;
+          display: flex;
+          align-items: flex-end;
           overflow: hidden;
         }
-        /* Soft decorative radial behind the heading */
-        .jp-hero::before {
-          content: '';
+        .jp-hero-bg {
           position: absolute;
-          top: -60px; left: 50%;
-          transform: translateX(-50%);
-          width: 600px; height: 400px;
-          border-radius: 50%;
-          background: radial-gradient(ellipse, rgba(255,140,0,0.08) 0%, transparent 70%);
+          inset: 0;
+          background-image: url('/experiances/Beyond the pink/thumbnail.jpg');
+          background-size: cover;
+          background-position: center 35%;
+        }
+        /* Dark gradient — heavier at bottom for text legibility */
+        .jp-hero-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to top,
+            rgba(10,5,0,0.92) 0%,
+            rgba(10,5,0,0.55) 42%,
+            rgba(10,5,0,0.20) 70%,
+            transparent 100%
+          );
+        }
+        /* Warm amber radial accent */
+        .jp-hero-accent {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse at 12% 75%, rgba(255,140,0,0.12) 0%, transparent 55%);
+        }
+        /* Section-merge fade into white content below */
+        .jp-hero-fade {
+          position: absolute;
+          bottom: 0; left: 0; right: 0;
+          height: 80px;
+          background: linear-gradient(to top, #FFFFFF, transparent);
           pointer-events: none;
+        }
+        .jp-hero-content {
+          position: relative;
+          z-index: 10;
+          max-width: 1320px;
+          margin: 0 auto;
+          padding: 120px 24px 52px;
+          width: 100%;
+        }
+        @media (min-width: 768px) {
+          .jp-hero-content { padding: 140px 32px 64px; }
+          .jp-hero { min-height: 60vh; }
         }
       `}</style>
 
-      {/* ── Page header ── */}
+      {/* ── Premium hero ── */}
       <section className="jp-hero">
-        <div style={{ maxWidth: "680px", margin: "0 auto", padding: "0 20px", position: "relative", zIndex: 1 }}>
+        <div className="jp-hero-bg" />
+        <div className="jp-hero-overlay" />
+        <div className="jp-hero-accent" />
+        <div className="jp-hero-fade" />
+
+        <div className="jp-hero-content">
           {/* Eyebrow */}
-          <p style={{
-            fontFamily: IN, fontSize: "0.6rem", letterSpacing: "0.28em",
-            textTransform: "uppercase", fontWeight: 700, color: OR, marginBottom: "10px",
-          }}>
-            The Raah Journal
-          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "18px" }}>
+            <div style={{ width: "32px", height: "1px", background: GO }} />
+            <p style={{
+              fontFamily: IN, fontSize: "0.58rem", letterSpacing: "0.32em",
+              textTransform: "uppercase", fontWeight: 700, color: GO,
+            }}>
+              Raah India · Jaipur
+            </p>
+          </div>
 
-          {/* Rule */}
-          <div style={{
-            width: "36px", height: "2px",
-            background: `linear-gradient(to right, ${OR}, ${GO})`,
-            borderRadius: "2px", margin: "0 auto 20px",
-          }} />
-
-          {/* Heading */}
+          {/* Main heading */}
           <h1 style={{
             fontFamily: PF, fontWeight: 700,
-            fontSize: "clamp(3rem,7vw,5rem)",
-            color: "#1A1209", lineHeight: 1.08, marginBottom: "18px",
+            fontSize: "clamp(2.8rem,7vw,6rem)",
+            color: "#FFFFFF", lineHeight: 1.0,
+            marginBottom: "20px",
+            textShadow: "0 2px 24px rgba(0,0,0,0.4)",
+            letterSpacing: "-0.01em",
           }}>
-            Stories From<br />
-            <em style={{ color: OR, fontStyle: "italic" }}>the City</em>
+            The Raah<br />
+            <em style={{ color: OR, fontStyle: "italic" }}>Journal</em>
           </h1>
+
+          {/* Divider */}
+          <div style={{
+            width: "44px", height: "2px",
+            background: `linear-gradient(to right,${OR},${GO})`,
+            borderRadius: "2px", marginBottom: "18px",
+          }} />
 
           {/* Intro */}
           <p style={{
-            fontFamily: IN, color: "#6B5B2E",
-            fontSize: "1rem", lineHeight: 1.82, fontWeight: 300,
-            maxWidth: "520px", margin: "0 auto",
+            fontFamily: IN, color: "rgba(255,255,255,0.72)",
+            fontSize: "clamp(0.9rem,1.8vw,1.05rem)",
+            lineHeight: 1.78, fontWeight: 300,
+            maxWidth: "480px",
           }}>
-            Our journal is where Jaipur speaks for itself — through conversations
-            overheard in narrow lanes, observations from markets before sunrise,
-            and stories no guidebook contains.
+            Stories, observations, and conversations from the lanes of Jaipur —
+            written when the city gives them.
           </p>
         </div>
       </section>
 
-      {/* ── Articles (client component handles slider + interactivity) ── */}
-      <section style={{ background: "#FFFFFF", padding: "72px 0 88px" }}>
+      {/* ── Articles ── */}
+      <section style={{ background: "#FFFFFF", padding: "60px 0 88px" }}>
         <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 24px" }}>
           <JournalClient />
         </div>
