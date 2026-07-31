@@ -40,6 +40,12 @@ export default function JournalPage() {
             transparent 100%
           );
         }
+        /* Flat dark overlay for overall contrast boost */
+        .jp-hero-dark {
+          position: absolute;
+          inset: 0;
+          background: rgba(0,0,0,0.32);
+        }
         /* Warm amber radial accent */
         .jp-hero-accent {
           position: absolute;
@@ -71,6 +77,7 @@ export default function JournalPage() {
       {/* ── Premium hero ── */}
       <section className="jp-hero">
         <div className="jp-hero-bg" />
+        <div className="jp-hero-dark" />
         <div className="jp-hero-overlay" />
         <div className="jp-hero-accent" />
         <div className="jp-hero-fade" />

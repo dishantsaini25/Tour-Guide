@@ -381,6 +381,22 @@ export default async function ExperienceDetailPage({ params }) {
                 </div>
               </div>
 
+              {/* Optional Add-Ons — rendered only when the field is present */}
+              {exp.optionalAddOns && exp.optionalAddOns.length > 0 && (
+                <div style={{ background:`rgba(255,140,0,0.04)`, border:`1px solid ${PH}`, borderLeft:`4px solid ${OR}`, borderRadius:"0 14px 14px 0", padding:"22px 24px" }}>
+                  <p style={LABEL}>Optional Add-Ons</p>
+                  <div style={{ width:"36px", height:"2px", background:OR, borderRadius:"2px", margin:"8px 0 16px" }} />
+                  <ul style={{ display:"flex", flexDirection:"column", gap:"10px" }}>
+                    {exp.optionalAddOns.map(item => (
+                      <li key={item} style={{ display:"flex", alignItems:"flex-start", gap:"10px" }}>
+                        <span style={{ fontSize:"0.9rem", marginTop:"1px", flexShrink:0 }}>✦</span>
+                        <span style={{ fontFamily:IN, color:MU, fontSize:"0.875rem", fontWeight:300 }}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Practical Info */}
               <div>
                 <p style={LABEL}>Practical Info</p>
