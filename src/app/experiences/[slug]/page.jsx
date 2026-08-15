@@ -397,21 +397,42 @@ export default async function ExperienceDetailPage({ params }) {
                 </div>
               )}
 
-              {/* Practical Info */}
+              {/* Experience at a Glance — glancePoints (new rich bullet list) */}
+              {exp.glancePoints && exp.glancePoints.length > 0 && (
+                <div style={{ background:CR, border:`1px solid ${PH}`, borderLeft:`4px solid ${OR}`, borderRadius:"0 16px 16px 0", padding:"28px 28px 28px 24px" }}>
+                  <p style={LABEL}>Experience at a Glance</p>
+                  <div style={{ width:"36px", height:"2px", background:OR, borderRadius:"2px", margin:"10px 0 20px" }} />
+                  <h2 style={{ fontFamily:PF, fontSize:"1.5rem", fontWeight:700, color:CH, marginBottom:"20px" }}>What Awaits You</h2>
+                  <ul style={{ display:"flex", flexDirection:"column", gap:"12px" }}>
+                    {exp.glancePoints.map((item, i) => (
+                      <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"12px" }}>
+                        <span style={{ color:OR, fontWeight:700, fontSize:"1rem", flexShrink:0, marginTop:"1px" }}>◆</span>
+                        <span style={{ fontFamily:IN, color:MU, fontSize:"0.9rem", lineHeight:1.75, fontWeight:300 }}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Practical Info / Before You Come */}
               <div>
                 <p style={LABEL}>Practical Info</p>
                 <div style={RULE} />
                 <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Before You Come</h2>
                 <div style={{ border:`1px solid ${PH}`, borderRadius:"16px", overflow:"hidden" }}>
                   {[
-                    ["Duration",         exp.duration],
-                    ["Start Time",       exp.startTime],
-                    ["Walking Distance", exp.distance],
-                    ["Difficulty",       exp.difficulty],
-                    ["Group Size",       exp.groupSize],
-                    ["Languages",        Array.isArray(exp.languages) ? exp.languages.join(", ") : exp.languages],
-                    ["Meeting Point",    exp.meetingPoint],
-                  ].map(([k, v], i, arr) => (
+                    ["Duration",         exp.beforeYouCome?.duration  || exp.duration],
+                    ["Start Time",       exp.beforeYouCome?.startTime || exp.startTime],
+                    ["Walking Distance", exp.beforeYouCome?.distance  || exp.distance],
+                    ["Difficulty",       exp.beforeYouCome?.difficulty|| exp.difficulty],
+                    ["Group Size",       exp.beforeYouCome?.groupSize || exp.groupSize],
+                    ["Languages",        exp.beforeYouCome?.languages || (Array.isArray(exp.languages) ? exp.languages.join(", ") : exp.languages)],
+                    ["Experience Type",  exp.beforeYouCome?.experienceType || null],
+                    ["Meeting Point",    exp.beforeYouCome?.meetingPoint || exp.meetingPoint],
+                    ["Host",             exp.beforeYouCome?.host || null],
+                    ["Cuisine",          exp.beforeYouCome?.cuisine || null],
+                    ["Transport",        exp.beforeYouCome?.transport || null],
+                  ].filter(([, v]) => v).map(([k, v], i, arr) => (
                     <div key={k} className="info-row" style={{ borderBottom: i < arr.length - 1 ? `1px solid ${PH}` : "none" }}>
                       <div className="info-key">{k}</div>
                       <div className="info-val">{v}</div>
