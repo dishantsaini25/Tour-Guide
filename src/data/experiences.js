@@ -905,7 +905,7 @@ In Hindi, Raah means "a path." For me, it represents a different way of discover
     excerpt: "Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells.",
     category: "Heritage",
     readTime: "6 min read",
-    image: "/journal Images/Amber.jpg",
+    image: "/journal Images/hidden valleys.png",
     body: `"Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells."
 
 Most visitors leave Amber with the feeling of having seen its greatest treasure — the Amber Fort. Yet behind these magnificent forts & palace lies a different world: the world of quiet shrines, centuries-old temples, forgotten rituals, and local devotion that has continued uninterrupted for generations.
@@ -940,7 +940,7 @@ Hidden within the original 13th century palace of Amber stands the temple of Nar
     excerpt: "Most people believe Jaipur was built simply because Amber had become overcrowded. The true story is far more extraordinary.",
     category: "History",
     readTime: "5 min read",
-    image: "/journal Images/jaipur.jpg",
+    image: "/journal Images/why jaipur built.png",
     body: `A City Born from the Vision of a King Who Looked Beyond His Time.
 
 Most people believe Jaipur was built simply because Amber had become overcrowded or faced a growing shortage of water. While these challenges certainly influenced the decision, they tell only part of the story.
@@ -965,7 +965,7 @@ Jaipur was never built simply to replace Amber. It was built to realise the visi
     excerpt: "Crowning the hills above Amber Fort, Jaigarh isn't remembered for the battles it fought — but for the battles it never lost.",
     category: "Heritage",
     readTime: "5 min read",
-    image: "/journal Images/jaigarh.jpg",
+    image: "/journal Images/why jaigarh.png",
     body: `Crowning the rugged Aravalli Hills, the fortress was designed to be practically impregnable. Its strategic position allowed soldiers to spot approaching armies long before they reached the gates, while the surrounding hills formed a natural ring of defence.
 
 Yet Jaigarh's greatest strength lay within its walls. Decades before sustainable construction entered mainstream thinking, the fortress was engineered to withstand lengthy sieges. An ingenious network of aqueducts, filtration tanks, and massive rainwater reservoirs ensured a dependable water supply throughout the year. Many reservoirs were even covered to prevent evaporation under Rajasthan's scorching sun, allowing the fort to remain self-sufficient for prolonged periods.
@@ -982,7 +982,7 @@ Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by t
     excerpt: "In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow.",
     category: "Culture",
     readTime: "4 min read",
-    image: "/journal Images/cow.jpg",
+    image: "/journal Images/cow.png",
     body: `In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow. Hence, it is the responsibility of every Hindu to accord her respect — and everyone abides by this. For most religious ceremonies, the cow is essential.
 
 As per ancient texts, cows are pure and auspicious animals. Looking after a cow and doing all the daily chores for her — like bathing, feeding, and providing water — are considered commendable acts. In fact, cow dung and urine are said to have medicinal properties. Whosoever offers a morsel of food to a cow before having a meal is said to attain salvation. With respect to this, every Hindu household prepares at least two chapatis to offer to a cow before any meal.
@@ -1005,7 +1005,7 @@ Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, s
     excerpt: "If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up.",
     category: "Dawn Jaipur",
     readTime: "4 min read",
-    image: "/journal Images/sunrise.jpg",
+    image: "/journal Images/sunset.png",
     body: `Jaipur At Dawn: A City That Awakens in Gold
 
 If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up. Jaipur before sunrise belongs to a different world — it seems to be peaceful, slow-paced, and even more beautiful than at its usual hours.
@@ -1026,7 +1026,7 @@ Hence, if you ever come to Jaipur, do not forget to explore it in its golden hou
     excerpt: "Leading a tour through Jaipur is always joyful, but there are few unplanned conversations that stay with me forever.",
     category: "From the Curator",
     readTime: "5 min read",
-    image: "/with guests/IMG20241225114250.jpg",
+    image: "/journal Images/few conversation.png",
     body: `Leading a tour through Jaipur is always joyful — full of stories, laughter, and memorable moments that we both cherish at the end of the tour. But there are a few conversations that stay with me forever, ones I still think of. Those conversations were never planned — yet they happened in fleeting moments, leaving a lasting imprint on my heart.
 
 **The Voices of Wonder**
