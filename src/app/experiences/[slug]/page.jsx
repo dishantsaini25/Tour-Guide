@@ -483,12 +483,46 @@ export default async function ExperienceDetailPage({ params }) {
                     </p>
                   </div>
                   <div style={{ padding:"22px 24px" }}>
-                    {[["Duration",exp.duration],["Start Time",exp.startTime],["Group Size",exp.groupSize]].map(([k, v]) => (
-                      <div key={k} style={{ display:"flex", justifyContent:"space-between", paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
-                        <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300 }}>{k}</span>
-                        <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600 }}>{v}</span>
+                    {/* Duration row */}
+                    <div style={{ display:"flex", justifyContent:"space-between", paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
+                      <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300 }}>Duration</span>
+                      <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600 }}>{exp.duration}</span>
+                    </div>
+
+                    {/* Price row — shown only when priceUSD or priceINR exists */}
+                    {(exp.priceUSD || exp.priceINR) && (
+                      <div style={{ paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
+                        <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
+                          <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300 }}>Price</span>
+                          <div style={{ textAlign:"right" }}>
+                            <span style={{ fontFamily:IN, color:OR, fontSize:"0.88rem", fontWeight:700 }}>
+                              {exp.priceUSD ? `USD ${exp.priceUSD}` : ""}
+                              {exp.priceUSD && exp.priceINR ? " / " : ""}
+                              {exp.priceINR ? `INR ${exp.priceINR.toLocaleString("en-IN")}` : ""}
+                              {" per person"}
+                            </span>
+                            {exp.priceNote && (
+                              <p style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.68rem", fontWeight:500, marginTop:"2px" }}>
+                                {exp.priceNote}
+                              </p>
+                            )}
+                          </div>
+                        </div>
                       </div>
-                    ))}
+                    )}
+
+                    {/* Start Time row */}
+                    <div style={{ display:"flex", justifyContent:"space-between", paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
+                      <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300 }}>Start Time</span>
+                      <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600 }}>{exp.startTime}</span>
+                    </div>
+
+                    {/* Group Size row */}
+                    <div style={{ display:"flex", justifyContent:"space-between", paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
+                      <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300 }}>Group Size</span>
+                      <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600 }}>{exp.groupSize}</span>
+                    </div>
+
                     <div style={{ display:"flex", flexDirection:"column", gap:"10px", marginTop:"8px" }}>
                       <Link href={`/contact?experience=${encodeURIComponent(exp.title)}`} className="sb-book">
                         Send Booking Enquiry <ArrowRight size={13} />

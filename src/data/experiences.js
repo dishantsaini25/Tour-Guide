@@ -131,6 +131,9 @@ export const experiences = [
   // ── 1. Jaipur at Dawn ───────────────────────────────────────────
   {
     slug: "jaipur-at-dawn",
+    priceUSD: 30,
+    priceINR: 2500,
+    priceNote: null,
     title: "Jaipur at Dawn",
     subtitle: "Jaipur Whispers Before It Speaks",
     question: "How does Jaipur wake up?",
@@ -212,6 +215,9 @@ export const experiences = [
   // ── 2. The Ridge & Ramparts ──────────────────────────────────────
   {
     slug: "ridge-and-ramparts",
+    priceUSD: 30,
+    priceINR: 2500,
+    priceNote: null,
     title: "The Ridge & Ramparts",
     subtitle: "Beyond the Fort, Into the Kingdom",
     question: "What made Amber a kingdom, not just a fort?",
@@ -294,6 +300,9 @@ export const experiences = [
   // ── 3. The Cosmic & Imperial Triad ──────────────────────────────
   {
     slug: "cosmic-imperial-triad",
+    priceUSD: null,
+    priceINR: null,
+    priceNote: null,
     title: "The Crown of Jaipur — The Royal Heart of Pink City",
     subtitle: "Where Science, Royalty & Architecture Converge",
     question: "What kind of mind could imagine a city like Jaipur?",
@@ -380,6 +389,9 @@ export const experiences = [
   // ── 4. The Blue Hour ────────────────────────────────────────────
   {
     slug: "the-blue-hour",
+    priceUSD: 70,
+    priceINR: 6300,
+    priceNote: "Minimum 2 pax",
     title: "The Blue Hour",
     subtitle: "Where the Pink City Glows After Sunset",
     question: "How does Jaipur transform after sunset?",
@@ -460,6 +472,9 @@ export const experiences = [
   // ── 5. Beyond the Pink ──────────────────────────────────────────
   {
     slug: "beyond-the-pink",
+    priceUSD: 30,
+    priceINR: 2500,
+    priceNote: null,
     title: "Beyond the Pink",
     subtitle: "Where Every Street Tells a Story",
     question: "How do people truly live in the Pink City?",
@@ -544,6 +559,9 @@ export const experiences = [
   // ── 6. The Farm & Fire ──────────────────────────────────────────
   {
     slug: "farm-and-fire",
+    priceUSD: 45,
+    priceINR: 4000,
+    priceNote: null,
     title: "The Farm & Fire",
     subtitle: "A Taste of Rajasthan, From Soil to Soul",
     question: "How does Rajasthan tell its story through food?",
@@ -680,6 +698,9 @@ export const experiences = [
   // ── 8. The Lost Kingdom ─────────────────────────────────────────
   {
     slug: "the-lost-kingdom",
+    priceUSD: 40,
+    priceINR: 3500,
+    priceNote: null,
     title: "The Lost Kingdom",
     subtitle: "Trails Through Amber's Forgotten Wilderness",
     question: "What secrets lie hidden in the hills beyond the fort?",
@@ -767,6 +788,9 @@ export const experiences = [
   // ── 9. The Artisan's Jaipur ──────────────────────────────────────
   {
     slug: "artisans-jaipur",
+    priceUSD: 30,
+    priceINR: 2500,
+    priceNote: null,
     title: "The Artisan's Jaipur",
     subtitle: "Beyond Souvenirs, Into Craftsmanship",
     question: "Who are the hands that shaped the Pink City?",
