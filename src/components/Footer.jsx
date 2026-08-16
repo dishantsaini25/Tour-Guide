@@ -27,7 +27,6 @@ const navLinks = [
   ["/experiences", "All Experiences"],
   ["/about",       "About & Philosophy"],
   ["/journal",     "The Raah Journal"],
-  ["/gallery",     "Gallery"],
   ["/contact",     "Book an Experience"],
   ["/privacy",     "Privacy Policy"],
   ["/terms",       "Terms & Conditions"],
