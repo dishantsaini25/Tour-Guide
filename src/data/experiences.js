@@ -300,8 +300,8 @@ export const experiences = [
   // ── 3. The Cosmic & Imperial Triad ──────────────────────────────
   {
     slug: "cosmic-imperial-triad",
-    priceUSD: null,
-    priceINR: null,
+    priceUSD: 30,
+    priceINR: 2500,
     priceNote: null,
     title: "The Crown of Jaipur — The Royal Heart of Pink City",
     subtitle: "Where Science, Royalty & Architecture Converge",
@@ -898,7 +898,7 @@ export const combos = [
   {
     collection: "signature",
     title:       "Jaipur Through Time",
-    subtitle:    "The Heart of the Pink City (Afternoon) + Beyond the Pink (Evening)",
+    subtitle:    "The Crown of Jaipur (Afternoon) + Beyond the Pink (Evening)",
     description: "Trace Jaipur's royal story from its grandest monuments to its living streets. Explore Hawa Mahal, Jantar Mantar, and the City Palace through the lens of the king who imagined them — understanding how astronomy shaped architecture and science guided governance. As evening falls, step into the walled city's illuminated bazaars, artisan lanes, and legendary food stops. Science, sovereignty, and street life — all in one day.",
     experiences: ["cosmic-imperial-triad", "beyond-the-pink"],
     tag:         "Heritage & Culture",
