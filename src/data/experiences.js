@@ -919,7 +919,7 @@ export const combos = [
   // ── Collection 2: Full-Day Premium Journeys ──────────────────────
   {
     collection: "premium",
-    title:       "Jaipur at Dawn + The Heart of Pink City + Beyond the Pink",
+    title:       "Jaipur at Dawn + The Crown of Jaipur + Beyond the Pink",
     subtitle:    "Morning Rituals · Royal Monuments · Evening Bazaars",
     description: "The most complete one-day journey through Jaipur. Begin before sunrise in the living streets of the Old City — temple rituals, flower markets, and a legendary breakfast. Continue to the royal precinct in the afternoon, uncovering the science, astronomy, and vision behind Jaipur's greatest monuments. As the city lights up at dusk, walk through the walled city's illuminated lanes, artisan workshops, and iconic street food stops. Three experiences. One extraordinary day.",
     experiences: ["jaipur-at-dawn", "cosmic-imperial-triad", "beyond-the-pink"],
@@ -929,7 +929,7 @@ export const combos = [
   },
   {
     collection: "premium",
-    title:       "The Heart of Pink City + Artisan's Jaipur + Blue Hour",
+    title:       "The Crown of Jaipur + Artisan's Jaipur + Blue Hour",
     subtitle:    "Royal Architecture · Living Crafts · Evening Illumination",
     description: "A full day dedicated to Jaipur's visual and intellectual brilliance. Begin at the royal precinct — Hawa Mahal, Jantar Mantar, and City Palace through a connected narrative. Move into the artisan quarters in the afternoon, meeting master craftspeople whose skills have defined Jaipur's identity for generations. As evening arrives, board an open jeep for the Blue Hour — watching the city's monuments glow against the darkening sky from Nahargarh to Patrika Gate.",
     experiences: ["cosmic-imperial-triad", "artisans-jaipur", "the-blue-hour"],
