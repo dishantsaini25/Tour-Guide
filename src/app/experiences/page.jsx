@@ -135,6 +135,56 @@ function ComboCard({ combo }) {
         ))}
       </div>
 
+      {/* Price display */}
+      {(combo.priceINR || combo.priceUSD) && (
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          marginBottom: "20px",
+          padding: "10px 14px",
+          background: "rgba(255,255,255,0.7)",
+          border: "1px solid rgba(255,216,155,0.6)",
+          borderRadius: "12px",
+        }}>
+          <span style={{
+            fontFamily: "Fraunces, Georgia, serif",
+            fontSize: "1.05rem",
+            fontWeight: 700,
+            color: "#1A1209",
+          }}>
+            ₹{combo.priceINR?.toLocaleString("en-IN")}
+          </span>
+          <span style={{
+            fontFamily: "DM Sans, system-ui, sans-serif",
+            fontSize: "0.7rem",
+            color: "#9C8550",
+            fontWeight: 400,
+          }}>
+            /
+          </span>
+          <span style={{
+            fontFamily: "DM Sans, system-ui, sans-serif",
+            fontSize: "0.85rem",
+            fontWeight: 600,
+            color: "#6B5B2E",
+          }}>
+            USD {combo.priceUSD}
+          </span>
+          <span style={{
+            marginLeft: "auto",
+            fontFamily: "DM Sans, system-ui, sans-serif",
+            fontSize: "0.6rem",
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            color: "#9C8550",
+            fontWeight: 500,
+          }}>
+            per group
+          </span>
+        </div>
+      )}
+
       {/* CTA — pinned to bottom via flex layout on parent */}
       <div style={{ marginTop: "auto" }}>
         <Link
@@ -162,9 +212,12 @@ function ComboCard({ combo }) {
 }
 
 export default function ExperiencesPage() {
-  const [active, setActive]         = useState("All");
-  const [filterOpen, setFilterOpen] = useState(false);
-  const filtered = active === "All" ? experiences : experiences.filter(e => e.filters.includes(active));
+  const [active, setActive]                   = useState("All");
+  const [filterOpen, setFilterOpen]           = useState(false);
+  const [activeCollection, setActiveCollection] = useState("signature"); // tab state
+
+  const filtered      = active === "All" ? experiences : experiences.filter(e => e.filters.includes(active));
+  const filteredCombos = combos.filter(c => c.collection === activeCollection);
 
   const applyFilter = (f) => { setActive(f); setFilterOpen(false); };
 
@@ -312,9 +365,8 @@ export default function ExperiencesPage() {
 
         /* ─── Combo desktop grid / mobile hidden ──────── */
         .combo-grid {
-          display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+          display: grid; grid-template-columns: repeat(2,1fr); gap: 24px;
         }
-        @media (max-width:1023px) { .combo-grid { grid-template-columns: repeat(2,1fr); } }
         @media (max-width:767px)  { .combo-grid { display: none; } }
         .combo-slider { display: none; }
         @media (max-width:767px) { .combo-slider { display: block; } }
@@ -466,20 +518,56 @@ export default function ExperiencesPage() {
       {/* ── Combo cards ── */}
       <SectionWrapper variant="main">
         <SectionHeading
-          label="Curated Combinations"
-          title="Deeper Jaipur, One Perfect Day"
-          subtitle="Three handcrafted itineraries — each pairing experiences for a seamless journey through the city's layers."
+          label="Curated Experience Collections"
+          title="Signature & Premium Journeys"
+          subtitle="Handcrafted combinations that pair our experiences into one seamless, unforgettable day."
         />
+
+        {/* ── Collection tabs ── */}
+        <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap", marginBottom: "44px" }}>
+          {[
+            { id: "signature", label: "One Day Signature Journeys" },
+            { id: "premium",   label: "Full-Day Premium Journeys"  },
+          ].map(tab => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveCollection(tab.id)}
+              aria-pressed={activeCollection === tab.id}
+              className={`fc${activeCollection === tab.id ? " fc-active" : ""}`}
+              style={{ padding: "10px 24px", fontSize: "0.78rem" }}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        {/* ── Collection badge ── */}
+        <div style={{ textAlign: "center", marginBottom: "32px" }}>
+          <span style={{
+            fontFamily: "DM Sans, system-ui, sans-serif",
+            fontSize: "0.6rem",
+            letterSpacing: "0.16em",
+            textTransform: "uppercase",
+            fontWeight: 700,
+            color: "#FF8C00",
+            background: "rgba(255,140,0,0.10)",
+            border: "1px solid rgba(255,140,0,0.22)",
+            borderRadius: "9999px",
+            padding: "5px 16px",
+          }}>
+            {activeCollection === "signature" ? "One Day Signature Journeys — 4 Combos" : "Full-Day Premium Journeys — 4 Combos"}
+          </span>
+        </div>
 
         {/* Desktop grid */}
         <div className="combo-grid">
-          {combos.map((c, i) => <ComboCard key={i} combo={c} />)}
+          {filteredCombos.map((c, i) => <ComboCard key={i} combo={c} />)}
         </div>
 
         {/* Mobile auto-slider */}
         <div className="combo-slider">
           <MobileSlider autoPlay interval={4200} ariaLabel="Combo experience cards">
-            {combos.map((c, i) => <ComboCard key={i} combo={c} />)}
+            {filteredCombos.map((c, i) => <ComboCard key={i} combo={c} />)}
           </MobileSlider>
         </div>
       </SectionWrapper>
