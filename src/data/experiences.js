@@ -42,7 +42,7 @@ const IMAGE_INVENTORY = {
     "IMG-20250315-WA0195.jpg",
     "IMG20250125120947.jpg",
     "IMG20251222131716.jpg",
-    // "IMG20241225100919.jpg",
+    "IMG20241225100919.jpg",
     "IMG20260211161321.jpg",
     "ridge1.jpeg",
     "ridge2.jpeg"
@@ -95,6 +95,7 @@ const IMAGE_INVENTORY = {
     
   ],
   "The lost kingdom": [
+    "thumbnail.JPG",
     "IMG_20260124_161109.JPG",
     "IMG_20260124_161756.JPG",
     "IMG_20260606_111700.jpg",
