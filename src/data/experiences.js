@@ -75,8 +75,7 @@ const IMAGE_INVENTORY = {
     "7c9cd63b6ca2f0a402c01768a32822d3.jpg",
     "ef0d31548ed88c0be44085fc235aa9a7.jpg",
     "image.jpg",
-    "IMG20251002174332.jpg",
-    "IMG20251003103022.jpg",
+    
   ],
   "The lost kingdom": [
     "thumbnail.JPG",
@@ -228,7 +227,7 @@ export const experiences = [
     startTime: "9:00 AM – 11:30 AM",
     whatIncludes: "Fort trails + royal history",
     distance: "Approx. 5–6 km (with elevation)",
-    difficulty: "Hard",
+    difficulty: "Moderate",
     groupSize: "Up to 8 guests",
     languages: ["English", "Spanish"],
     location: "Amber Town & Fort, Jaipur",
@@ -645,56 +644,129 @@ export const experiences = [
   },
 
   // ── 7. The Living Walled City ───────────────────────────────────
-  {
-    slug: "living-walled-city",
-    title: "The Living Walled City",
-    subtitle: "Beyond the Markets, Into the Soul of Jaipur",
-    question: "How do people truly live inside the Pink City?",
-    tagline: "Beyond monuments and markets lies a city still shaped by tradition, craft, faith, and community.",
-    theme: "Old City · People · Traditions · Craft · Living Heritage",
-    filters: ["Morning", "Evening", "Heritage", "Culture", "Immersive"],
-    duration: "2.5–3 hrs",
-    startTime: "Morning or evening (flexible)",
-    whatIncludes: "Artisan lanes + living heritage",
-    distance: "Approx. 3 km",
-    difficulty: "Easy to Moderate",
-    groupSize: "Up to 8 guests",
-    languages: ["English", "Spanish"],
-    location: "Walled City, Jaipur",
-    meetingPoint: "Confirmed on booking",
-    ...getExperienceImages("living-walled-city"),
-    idealFor: ["Deep culture seekers", "Repeat Jaipur visitors", "Documentary & street photographers", "Those who have done the monuments and want more"],
-    inclusions: ["Expert local storyteller", "Neighbourhood exploration", "Craft interaction stops", "Tea/chai at a local spot"],
-    exclusions: ["Transport to/from meeting point", "Purchases at markets"],
-    story: `Every street in the old city has a story. Every doorway holds a memory. Every neighbourhood carries traditions that have shaped Jaipur for three centuries.\n\nThe Living Walled City was designed for travellers who have already seen the monuments and want to go deeper — into the neighbourhoods, the communities, the crafts, and the daily rhythms that give those monuments their context and meaning.\n\nThis is not a walk through history. It is a walk through the present — where history is still alive, practiced, and very much at home.`,
-    whatYouExperience: [
-      "Explore neighbourhoods organised by ancient guild traditions — each with its own character",
-      "Visit working artisans: block printers, marble carvers, textile dyers, and jewellers",
-      "Discover religious diversity within the old city — temples, mosques, and Jain shrines side by side",
-      "Walk through hidden residential mohallas (quarters) where daily life continues unchanged",
-      "Understand Jaipur's extraordinary urban planning through the grid of the walled city",
-      "Share chai with local shopkeepers and hear stories that no guidebook contains",
-    ],
-    highlights: [
-      { icon: "🏘️", text: "Residential mohallas & hidden lanes" },
-      { icon: "🖨️", text: "Working artisan workshops" },
-      { icon: "🕌", text: "Multi-faith heritage sites" },
-      { icon: "📐", text: "Jaipur's urban planning revealed" },
-      { icon: "🫖", text: "Chai with local voices" },
-      { icon: "📸", text: "Authentic street photography" },
-      { icon: "📖", text: "Community storytelling" },
-      { icon: "👥", text: "Small intimate group" },
-    ],
-    curatorNote: "This walk was born from a conversation with a guest who said: 'I've seen all the monuments — now I want to meet the city.' The Living Walled City is exactly that.",
-    faqs: [
-      { q: "Is this different from Beyond the Pink?", a: "Yes. Beyond the Pink is focused on the evening food trail and illuminated old city. The Living Walled City is a deeper daytime exploration of communities, crafts, and neighbourhoods." },
-      { q: "Can I book privately?", a: "Yes, and private groups get a fully customised routing based on their interests." },
-      { q: "Is it suitable for children?", a: "Yes — the craft visits and neighbourhood exploration are excellent for curious children." },
-      { q: "What should I wear?", a: "Comfortable shoes and modest clothing, as you'll be entering residential and religious spaces." },
-      { q: "Are restrooms available en route?", a: "Yes — we plan stops near facilities." },
-    ],
-  },
+ // ── 7. The Living Walled City ───────────────────────────────────
+{
+  slug: "living-walled-city",
+  title: "The Living Walled City",
+  subtitle: "Meet Jaipur Beyond Its Landmarks",
+  question: "How does Jaipur truly live within its walls?",
+  tagline:
+    "Step beyond Jaipur's celebrated façades and into the neighbourhoods, communities, traditions and everyday businesses that keep the old city alive.",
 
+  theme: "Old City · People · Communities · Local Life · Living Heritage",
+
+  filters: [
+    "Morning",
+    "Late Afternoon",
+    "Heritage",
+    "Culture",
+    "Local Life",
+    "Immersive",
+  ],
+
+  duration: "3–3.5 hrs",
+  startTime: "Morning – 11:00 am or Late afternoon – 4:00 pm",
+  whatIncludes: "Curated walking route + local interactions + masala chai",
+  distance: "Approx. 4–5 km",
+  difficulty: "Easy · Slow Paced",
+  groupSize: "Up to 8 guests",
+  languages: ["English", "Spanish"],
+  location: "Walled City, Jaipur",
+  meetingPoint: "Jaipur's historical Hawa Mahal",
+
+  ...getExperienceImages("living-walled-city"),
+
+  idealFor: [
+    "Deep culture seekers",
+    "Travellers interested in everyday Jaipur",
+    "Repeat Jaipur visitors",
+    "Street & documentary photographers",
+    "Those who want to understand Jaipur beyond its monuments",
+  ],
+
+  inclusions: [
+    "Personally curated interactive walking route",
+    "Professional & dedicated local storyteller",
+    "Local interactions with people of Jaipur, wherever possible",
+    "Exploration of hidden lanes, old shrines, havelis and local businesses",
+    "Photography opportunities in the city's natural everyday setting",
+    "Local refreshment – masala chai",
+  ],
+
+  exclusions: [
+    "Personal expenses or shopping",
+    "Monument entry fees, if any on the route",
+    "Gratuities – entirely at guest's disposal",
+    "Full meal beyond the complimentary refreshment",
+  ],
+
+  story: `Step beyond Jaipur's celebrated façades and into the neighbourhoods that keep the old city alive.
+
+The Living Walled City is an intimate exploration of Jaipur's everyday life — its historic lanes, family-run businesses, neighbourhood shrines, traditional occupations and the people who have shaped these streets across generations.
+
+Rather than moving from one monument to another, we slow down to observe how the city actually works: where people live and work, how communities gather, why certain trades found their home in particular lanes, and how centuries-old traditions continue alongside a rapidly changing Jaipur.
+
+This is not a sightseeing tour. It is a chance to meet Jaipur beyond its landmarks — and understand the city through the people who live within its walls.`,
+
+  whatYouExperience: [
+    "Walk through hidden residential mohallas (quarters) where daily life continues unchanged",
+    "Discover religious diversity within the old city — temples, mosques, and Jain shrines side by side",
+    "Understand Jaipur's extraordinary urban planning through the grid of the walled city",
+    "Wander through lesser-explored lanes that more often belong to the people of Jaipur",
+    "Explore Jaipur's historic markets as a living economic ecosystem rather than simply a commercial stop",
+    "Where possible, strike up friendly conversations with residents, passersby, artisans, shopkeepers and vendors",
+    "Pause at old havelis, doorways and courtyards to understand traditional home design, functionality and social status",
+  ],
+
+  highlights: [
+    { icon: "🏘️", text: "Hidden residential mohallas" },
+    { icon: "🕌", text: "Temples, mosques & Jain shrines" },
+    { icon: "📐", text: "Jaipur's historic urban planning" },
+    { icon: "🏘️", text: "Lesser-explored living lanes" },
+    { icon: "🏪", text: "Historic markets & local businesses" },
+    { icon: "👥", text: "Conversations with local people" },
+    { icon: "🏛️", text: "Havelis, doorways & courtyards" },
+    { icon: "🫖", text: "Local masala chai" },
+  ],
+
+  curatorNote:
+    "The Living Walled City is designed for travellers who want to move beyond Jaipur's famous landmarks and understand how the city actually lives — through its people, communities, businesses, traditions and everyday rhythms.",
+
+  faqs: [
+    {
+      q: "Is The Living Walled City different from Beyond the Pink?",
+      a: "Absolutely. Beyond the Pink is a sensory walking experience where you feel the city. The Living Walled City is about its people, communities and local businesses that keep the city alive. Beyond the Pink is about feeling the city, whereas The Living Walled City is about understanding how the city lives.",
+    },
+    {
+      q: "Is this a sightseeing or monument tour?",
+      a: "No. This is not a conventional sightseeing tour. The experience focuses on everyday life inside Jaipur's walled city — neighbourhoods, people, local businesses, traditional occupations, shrines, havelis and living heritage.",
+    },
+    {
+      q: "How much walking is involved?",
+      a: "The experience covers approximately 4–5 km and is designed to be easy and slow paced, with plenty of opportunities to pause, observe and interact.",
+    },
+    {
+      q: "What time does the experience start?",
+      a: "There are two starting options: 11:00 am in the morning or 4:00 pm in the late afternoon.",
+    },
+    {
+      q: "Can I book privately?",
+      a: "Yes. Private experiences can be arranged for guests who prefer a more personalised exploration of Jaipur's walled city.",
+    },
+    {
+      q: "Is it suitable for children?",
+      a: "Yes. The slow pace, neighbourhood exploration, local interactions and stories of everyday Jaipur can make this an engaging experience for curious children.",
+    },
+    {
+      q: "What should I wear?",
+      a: "Comfortable walking shoes and modest clothing are recommended, particularly because the route may include residential and religious spaces.",
+    },
+    {
+      q: "Are refreshments included?",
+      a: "Yes. A local refreshment, masala chai, is included in the experience.",
+    },
+  ],
+},
   // ── 8. The Lost Kingdom ─────────────────────────────────────────
   {
     slug: "the-lost-kingdom",
