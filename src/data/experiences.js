@@ -45,6 +45,8 @@ const IMAGE_INVENTORY = {
     "IMG20241225100919.jpg",
     "IMG20250201095547.jpg",
     "IMG20260211161321.jpg",
+    "ridge1.jpeg",
+    "ridge2.jpeg"
   ],
   "The Cosmic & Imperial Triad": [
     "thumbnail.jpg",
@@ -64,7 +66,7 @@ const IMAGE_INVENTORY = {
     "IMG20260202185512.jpg",
     "IMG_20260323_133304.jpg",
     "IMG_20260323_133423.jpg",
-    "IMG20260202185502.jpg",
+    
   ],
   "Beyond the pink": [
     "thumbnail.jpg",
@@ -83,6 +85,7 @@ const IMAGE_INVENTORY = {
     "IMG20260108172124 666.jpg",
     "IMG20260802180641.jpg",
     "IMG20260108172109 13.jpg",
+    "farm1.jpeg"
   ],
   "The living walled city": [
     "thumbnail.jpg",
