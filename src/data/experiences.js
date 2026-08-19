@@ -95,7 +95,6 @@ const IMAGE_INVENTORY = {
     
   ],
   "The lost kingdom": [
-    "thumbnail.JPG",
     "IMG_20260124_161109.JPG",
     "IMG_20260124_161756.JPG",
     "IMG_20260606_111700.jpg",
