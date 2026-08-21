@@ -6,7 +6,7 @@ export const metadata = {
   description: "Book a curated Raah India Experience in Jaipur. We respond personally within 24 hours.",
 };
 
-const WA  = "https://wa.me/919876543210?text=Hello%2C+I%27d+like+to+enquire+about+a+Raah+India+Experience.";
+const WA  = "https://wa.me/919928026539?text=Hello%2C+I%27d+like+to+enquire+about+a+Raah+India+Experience.";
 const PF  = "Fraunces, Georgia, serif";
 const IN  = "DM Sans, system-ui, sans-serif";
 
@@ -99,7 +99,7 @@ export default function ContactPage() {
               <ul style={{ listStyle:"none", display:"flex", flexDirection:"column", gap:"18px", marginBottom:"30px" }}>
                 {[
                   { Icon:MapPin, label:"Location",         value:"Jaipur, Rajasthan, India", href:null },
-                  { Icon:Phone,  label:"Phone / WhatsApp", value:"+91 98765 43210",           href:"tel:+919876543210" },
+                  { Icon:Phone,  label:"Phone / WhatsApp", value:"+91 99280 26539",           href:"tel:+919928026539" },
                   { Icon:Mail,   label:"Email",             value:"raahindiaexperiences@gmail.com", href:"mailto:raahindiaexperiences@gmail.com" },
                   { Icon:Clock,  label:"Response Time",    value:"Within 24 hours",            href:null },
                 ].map(({ Icon, label, value, href }) => (
