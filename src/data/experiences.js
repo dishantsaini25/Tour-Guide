@@ -91,7 +91,7 @@ const IMAGE_INVENTORY = {
     "39b952ecb7714efa76ca7338b05d6f38.jpg",
     "7c9cd63b6ca2f0a402c01768a32822d3.jpg",
     "ef0d31548ed88c0be44085fc235aa9a7.jpg",
-    "image.jpg",
+    
     
   ],
   "The lost kingdom": [
@@ -202,12 +202,13 @@ export const experiences = [
     },
     story: `Some cities announce themselves with noise. Jaipur begins with whispers.\n\nBefore the markets awaken and before the streets fill with footsteps, there is a fleeting hour when prayer, preparation, and quiet rituals shape the city's true character. Most visitors arrive after Jaipur has already put on its daytime face — bustling, magnificent, and performative. We wanted to offer something rarer.\n\nThis walk was created after years of watching visitors miss Jaipur's most magical hours. Before sunrise, the city belongs to its people — not to tourists. Flower sellers arrange vibrant marigold garlands by lamplight, milkmen make their rounds through empty lanes, temple bells echo softly through ancient streets, and the first fires of the day are lit in legendary eateries that have fed Jaipur for generations.\n\nWe invite you to experience that Jaipur.`,
     whatYouExperience: [
-      "Witness the morning aarti at Govind Dev Ji — Jaipur's most revered temple",
-      "Wander through the wholesale flower market as vendors arrange marigolds and jasmine by hand",
-      "Watch farmers arrive from surrounding villages with fresh produce at the vegetable market",
-      "Stroll through quiet heritage lanes where the city slowly comes alive",
-      "Begin your day with an act of kindness — feeding stray cows and scattering grain for pigeons",
-      "Savour pyaz kachori and masala chai at a legendary local eatery that has fed Jaipur for generations",
+      "Morning devotion at Govind Dev Ji Temple — temple bells, prayers, devotional songs",
+      "Experience Jaipur before sunrise when it completely belongs to its people",
+      "Immerse yourself in the morning flower market — a sensory symphony of colours, fragrances, and vibrant energy",
+      "Watch Jaipur's soul come alive as milkmen, florists, street vendors & local eateries begin their daily routines",
+      "Marvel at Hawa Mahal as the rising sun transforms its majestic façade into a surreal spectacle",
+      "Discover the old city in its most tranquil hour — quiet streets, golden façades and the first gentle movement of the day",
+      "Indulge in Jaipur's morning flavours — sipping chai & tasting local breakfast at local eateries"
     ],
     highlights: [
       { icon: "🌅", text: "Sunrise photography opportunity" },
@@ -286,13 +287,14 @@ export const experiences = [
     },
     story: `Long before Jaipur became the Pink City, there was Amber. A kingdom embraced by rugged hills, protected by towering ramparts, nourished by tranquil waters, and crowned by magnificent forts that watched over generations of rulers.\n\nWhile countless visitors arrive to admire Amber Fort's famous palace, few venture further to discover the remarkable town that once flourished beneath it — a living royal capital where warriors, artisans, priests, merchants, and royalty shaped a remarkable legacy.\n\nWe created The Ridge & Ramparts for travellers who believe that the soul of a place lies not just in its grandest monument, but in its forgotten pathways, weathered temples, and the everyday lives that gave a kingdom its true character.\n\nWalk beyond the palace gates. The real Amber is waiting.`,
     whatYouExperience: [
+      "Explore the wider landscape of Amber Kingdom beyond the fort — temples, centuries old pathways, weathered havelis & defensive ridges.",
+      "Witness military brilliance at the formidable Jaigarh Fort — home to one of the most efficient cannons of its time",
+      "Understand Amber's dramatic geography as part of its defence against invasions",
       "Begin beside the tranquil Maota Lake — understanding Amber as a planned royal capital, not just a fort",
-      "Wander through historic Amber Town: weathered havelis, ancient temples, and centuries-old guild streets",
-      "Discover Panna Meena ka Kund — one of Rajasthan's finest examples of stepwell architecture",
-      "Visit Ambikeshwar Mahadev, Bihari Ji, and Jagat Shiromani temples — each with extraordinary stories",
+      "Marvel at the engineering of a kingdom with forgotten water systems, reservoirs & stepwells",
       "Ascend to Amber Fort and experience it from a completely different perspective",
-      "Follow the ancient maharaja's passage — the hidden route connecting Amber to Jaigarh Fort",
-      "Understand the strategic brilliance of twin forts and the enduring relationship between power and protection",
+      "Discover lesser-known temples & shrines tucked into landscapes like Bihari Ji Temple, Silawaton Ka Mandir, Rameshwar Ji Temple & many more.",
+      "Walk through the historic tunnel — an escape route for Maharajas--connecting Amber to Jaigarh."
     ],
     highlights: [
       { icon: "🏰", text: "Amber Fort & Jaigarh Fort" },
@@ -376,15 +378,16 @@ export const experiences = [
     },
     story: `Some rulers built palaces. Others built forts. Maharaja Sawai Jai Singh II built an idea.\n\nAn idea where astronomy shaped architecture, science guided urban planning, and royal vision gave birth to one of India's most extraordinary planned cities. Millions of visitors admire Hawa Mahal, wander through the City Palace, and photograph Jantar Mantar — yet many leave without understanding the remarkable thread that binds these three landmarks together.\n\nAt Raah India Experiences, we created The Cosmic & Imperial Triad to change that. Rather than presenting isolated facts, we invite you to explore the ideas behind the architecture — the scientific brilliance hidden within the observatory, the royal traditions preserved inside the palace, and the extraordinary curiosity that inspired one of India's greatest planned capitals.\n\nWhen these three monuments are experienced together, Jaipur begins to tell a completely different story.`,
     whatYouExperience: [
+      "Discover the visionary ruler behind the conception of Jaipur-- Maharaja Sawai Jai Singh II as an avid town planner,  astronomer, and a great ruler.",
+      "Uncover the untold stories of the Maharajas while exploring the remarkable layers of City Palace & its courtyards.",
+      "Understand Jaipur's meticulous town planning & urbanization conceptualized in the early of18th century. ",
       "Hawa Mahal: Discover the architectural genius behind 953 windows — climate, privacy, culture, and royal life intertwined",
       "Jantar Mantar: Stand before the world's largest stone sundial and understand how mathematics became architecture",
       "City Palace: Explore elegant courtyards, royal gateways, and ceremonial spaces revealing a dynasty's living heritage",
-      "Learn how astronomy influenced every aspect of Jaipur's design and urban planning",
-      "Understand Maharaja Sawai Jai Singh II as scientist, astronomer, and visionary city planner",
-      "Optional: Consult a traditional astrologer for a personalised horoscope experience",
+      "Consult a traditional astrologer for a personalized horoscope experience."
     ],
     highlights: [
-      { icon: "🏛️", text: "Three UNESCO-era landmarks, one story" },
+      { icon: "🏛️", text: "Three historial landmarks-one story" },
       { icon: "🔭", text: "World's largest stone sundial" },
       { icon: "🪟", text: "Secrets of Hawa Mahal's 953 windows" },
       { icon: "👑", text: "Royal courtyards of City Palace" },
@@ -457,14 +460,15 @@ export const experiences = [
     },
     story: `There is a brief moment every evening that most travellers unknowingly miss. It arrives quietly, somewhere between the warmth of sunset and the darkness of night. The sky deepens into shades of indigo, the day's energy softens, and Jaipur transforms — forts glow gold, bazaars buzz with a different energy, and familiar landmarks take on an entirely different character.\n\nThis fleeting transition is the Blue Hour.\n\nWe created this experience for travellers who believe that the beauty of a place is not only found in its monuments, but also in its atmosphere. Rather than rushing from one attraction to another, The Blue Hour invites you to savour the changing light, discover hidden perspectives, and experience the Pink City during one of its most enchanting hours.\n\nSome moments are too beautiful to hurry through.`,
     whatYouExperience: [
-      "Nahargarh Fort: Watch Jaipur spread below you as the sun sets in golden panoramic splendour",
-      "Jal Mahal: Witness the Water Palace appear to float on still, dark waters like a glowing jewel",
-      "Hawa Mahal by Night: See its 953 windows brilliantly backlit — a completely different monument after dark",
-      "Albert Hall Museum: Jaipur's most photogenic night landmark, alive in shifting coloured light",
-      "Isarlat: The historic 'Tower of Heaven' glowing elegantly against the night sky",
-      "Birla Temple: Pure white marble radiating a serene, ethereal glow",
+      "Experience spectacular sunset & panoramic views of the Pink City from the top of Nahargarh Fort",
+      "Glimpses of the enchanting Sound & Light Show at Amber Fortl",
+      "Cruise through Jaipur as it begins to reveal its magical character after dark",
+      "Enjoy breathtaking views of illuminated Amber Fort & serene Maota Lake.",
       "Patrika Gate & Toran Dwar: Jaipur's most vibrant modern landmarks as a grand finale",
-      "Glimpses of the enchanting Sound & Light Show at Amber Fort",
+      "Birla Temple: Pure white marble radiating a serene, ethereal glow",
+      "Experience local night life of Jaipur through its bustling bazaars & the vibrant streets",
+      "Witness the Water Palace; Jal Mahal, appear to float on still, dark waters of Man Sagar Lake like a glowing jewel.",
+      "Capture the magic of Jaipur after dark—experience surreal night photography at iconic landmarks like Albert Hall Museum, Isar Laat, Tripolia Gate, Hawa Mahal, and Birla Temple, all glowing in shifting, colorful lights."
     ],
     highlights: [
       { icon: "🌅", text: "Sunset from Nahargarh Fort" },
@@ -546,12 +550,14 @@ export const experiences = [
     },
     story: `Jaipur is often introduced through its forts, palaces, and pink façades. But the city reveals its true character in the evening — when shops glow under warm lights, prayers echo through temples, streets fill with conversation, and legendary food stalls signal the end of a working day.\n\nBeyond the Pink was created for travellers who want to understand Jaipur as a living city, not just a historic one. Every day, thousands of visitors photograph the same iconic landmarks. Very few step sideways into the lanes where lac bangle makers have worked for centuries, where master brass craftsmen shape metal by lamplight, and where the same families have served pyaz kachori from the same spot for generations.\n\nThis experience moves through those lanes. Slowly. With intention.`,
     whatYouExperience: [
-      "Hawa Mahal by evening light — understanding its architecture beyond the famous façade",
-      "Navigate past Tripoliya Darwaza and Isarlat as the walled city illuminates",
-      "Enter the guild lanes: fiery workshops of lac bangle makers and brass & copper craftsmen",
+      "Discover the city beyond the monuments, bustling bazaars, chaotic streets, local life thriving within the old city. ",
+      "Encounter generation-old family businesses — from metalworkers & marble craftsmen to lac bangle makers & traditional traders",
+      "Step into the living kitchens of Jaipur to savor century-old family recipes passed down one generation to another.",
       "Taste the culinary timeline: pani puri, pyaz kachori, artisanal lassi, rabri, and kulfi in clay pots",
-      "Witness evening rituals at neighbourhood temples as dusk settles on the city",
-      "Discover hidden courtyards and havelis that most tourists walk past without noticing",
+      "Discover more about Jaipur over a chai talks at a local tea stall with your tour host. ",
+      "Witness how locals work, worship, commute, eat and interact within the lanes of the old city",
+      "As dusk settles on the city, experience the spirituality and deep devotion of local people during evening rituals at renowned shrines",
+      "Discover hidden courtyards and havelis that most tourists walk past without noticing"
     ],
     highlights: [
       { icon: "🏮", text: "Old City illuminated by evening" },
@@ -634,20 +640,22 @@ export const experiences = [
     },
     story: `Food in Rajasthan is not just sustenance. It is memory, hospitality, history, and identity — all served on one plate.\n\nThe Farm & Fire was created as a genuine invitation into that world. Not a demonstration. Not a tourist kitchen. A real family kitchen, real wood-fired stoves, real recipes passed down through generations — and a meal that you cook yourself, with your own hands, using ingredients harvested that same morning.\n\nHosted at Raah India's private countryside farmhouse, this experience escapes the city's pace entirely. There are no crowds, no schedules that rush you, and no performance. Just the smell of wood smoke, the rhythm of a stone grinder, the warmth of a local family's hospitality, and food that will ruin restaurant dining for you forever.`,
     whatYouExperience: [
-      "Arrive at the countryside farmhouse — breathe, settle, and leave the city behind",
-      "Harvest seasonal vegetables and herbs from the farm with your host",
-      "Learn the philosophy of Rajasthani cooking: spice logic, dal traditions, and regional variation",
-      "Cook a full Rajasthani meal over traditional wood-fired chulhas (stoves)",
-      "Learn family recipes passed down through generations — dal baati churma, sabzis, pickles, chai",
-      "Sit together and eat the meal you prepared — in the shade of trees, as the afternoon slows",
+    "Traditional welcome at countryside farm house--breathe, settle and leave the chaos of the city behind.",
+    "Sip & unveil the simple yet delicious process of making masala chai at home. ",
+    "Understand the secrets of Indian spices — their traditional uses, role and balance in a cuisine.",
+    "Cook a Rajasthani meal over traditional wood-fired chulha (stoves)",
+    "Experience true Indian hospitality over a shared meal prepared by you to discover table etiquettes, Indian dietary habits, daily customs that define an Indian dining experience. ",
+    "Harvest seasonal vegetables and herbs from the farm with your host.",
+    "Learn the generation old recipes and home remedies passed down through generations--pickles, curry, Kaada (traditional Indian medicinal tea).",
+
     ],
     highlights: [
       { icon: "🌾", text: "Farm-to-table ingredient harvesting" },
       { icon: "🔥", text: "Traditional wood-fired cooking" },
       { icon: "👩‍🍳", text: "Family recipes, generations old" },
-      { icon: "🍛", text: "Full Rajasthani meal you cook" },
+      { icon: "🍛", text: "Enjoy a vegetarian feast, prepared together and shared with your host family" },
       { icon: "🌿", text: "Countryside farmhouse setting" },
-      { icon: "🚐", text: "Hotel pick-up & drop included" },
+      { icon: "🚐", text: "An invitation to Indian home" },
       { icon: "🫖", text: "Welcome chai & refreshments" },
       { icon: "👥", text: "Intimate small group" },
     ],
@@ -661,11 +669,11 @@ export const experiences = [
     ],
   },
 
-  // ── 7. The Living Walled City ───────────────────────────────────
+
  // ── 7. The Living Walled City ───────────────────────────────────
 {
   slug: "living-walled-city",
-  title: "The Living Walled City",
+  title: "Living the walled city",
   subtitle: "Meet Jaipur Beyond Its Landmarks",
   question: "How does Jaipur truly live within its walls?",
   tagline:
@@ -856,8 +864,8 @@ This is not a sightseeing tour. It is a chance to meet Jaipur beyond its landmar
     highlights: [
       { icon: "🏔️", text: "Hike through hidden valleys and forest trails surrounding the historic Kingdom of Amber" },
       { icon: "🌊", text: "Begin your journey beside the tranquil waters of Sagar Lake" },
-      { icon: "🐒", text: "Visit the secluded Lord Hanuman temple, known mainly to local residents" },
-      { icon: "🛕", text: "Explore the peaceful Lord Shiva Temple, nestled within the Aravalli Hills" },
+      { icon: "🐒", text: "Experience surreal Amber beyond the touristic trail, known mainly to local residents" },
+      { icon: "🛕", text: "Explore the peaceful & secluded shrines nestled in the heart of Amber Valley. " },
       { icon: "🏚️", text: "Discover forgotten ruins, ancient fortifications, and abandoned pathways beyond the tourist trail" },
       { icon: "📖", text: "Learn how the surrounding landscape protected and sustained the Kingdom of Amber" },
       { icon: "🌄", text: "Enjoy breathtaking viewpoints overlooking Amber Fort, Jaigarh Fort, the defensive walls, and surrounding valleys" },
@@ -944,11 +952,12 @@ This is not a sightseeing tour. It is a chance to meet Jaipur beyond its landmar
     highlights: [
       { icon: "🏘️", text: "Wander through Jaipur's historic artisan lanes and traditional craft districts" },
       { icon: "👁️", text: "Observe craftsmen at work in their natural surroundings" },
-      { icon: "📖", text: "Discover the stories behind family-run trades and generational businesses" },
+      { icon: "📖", text: "Hear the stories of family businesses that have survived for generations" },
       { icon: "🏆", text: "Learn how Jaipur became one of India's most celebrated craft capitals" },
       { icon: "🔨", text: "Understand traditional techniques rather than simply admiring finished products" },
       { icon: "✨", text: "Appreciate the patience, precision, and artistry behind handmade creations" },
       { icon: "🤝", text: "Meet the people who continue to preserve Jaipur's living heritage through their craft" },
+      { icon: "⭐", text: "Capture Jaipur in its most raw, authentic and living element." },
     ],
     curatorNote: "I grew up watching my neighbours practice crafts that the rest of the world has largely forgotten. Every time I see a visitor buy a mass-produced souvenir two streets away from where the real thing is being made, I feel we've failed them. The Artisan's Jaipur is my attempt to fix that.",
     faqs: [
