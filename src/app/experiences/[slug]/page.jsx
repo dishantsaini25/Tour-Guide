@@ -397,23 +397,6 @@ export default async function ExperienceDetailPage({ params }) {
                 </div>
               )}
 
-              {/* Experience at a Glance — glancePoints (new rich bullet list) */}
-              {exp.glancePoints && exp.glancePoints.length > 0 && (
-                <div style={{ background:CR, border:`1px solid ${PH}`, borderLeft:`4px solid ${OR}`, borderRadius:"0 16px 16px 0", padding:"28px 28px 28px 24px" }}>
-                  <p style={LABEL}>Experience at a Glance</p>
-                  <div style={{ width:"36px", height:"2px", background:OR, borderRadius:"2px", margin:"10px 0 20px" }} />
-                  <h2 style={{ fontFamily:PF, fontSize:"1.5rem", fontWeight:700, color:CH, marginBottom:"20px" }}>What Awaits You</h2>
-                  <ul style={{ display:"flex", flexDirection:"column", gap:"12px" }}>
-                    {exp.glancePoints.map((item, i) => (
-                      <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"12px" }}>
-                        <span style={{ color:OR, fontWeight:700, fontSize:"1rem", flexShrink:0, marginTop:"1px" }}>◆</span>
-                        <span style={{ fontFamily:IN, color:MU, fontSize:"0.9rem", lineHeight:1.75, fontWeight:300 }}>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
               {/* Practical Info / Before You Come */}
               <div>
                 <p style={LABEL}>Practical Info</p>
