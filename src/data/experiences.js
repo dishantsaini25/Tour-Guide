@@ -45,7 +45,8 @@ const IMAGE_INVENTORY = {
     "IMG20241225100919.jpg",
     "IMG20250201095547.jpg",
     "ridge1.jpeg",
-    "ridge2.jpeg"
+    "ridge2.jpeg",
+    "ridge3.jpg",
   ],
   "The Cosmic & Imperial Triad": [
     "thumbnail.jpg",
@@ -76,6 +77,7 @@ const IMAGE_INVENTORY = {
     "IMG20250203161213.jpg",
     "IMG20260224115654.jpg",
     "IMG20260202172637.jpg",
+    "Beyond1.jpg"
   ],
   "Farm and fire": [
     "thumbnail.jpg",
@@ -91,6 +93,11 @@ const IMAGE_INVENTORY = {
     "39b952ecb7714efa76ca7338b05d6f38.jpg",
     "7c9cd63b6ca2f0a402c01768a32822d3.jpg",
     "ef0d31548ed88c0be44085fc235aa9a7.jpg",
+    "living1.jpg",
+    "living2.jpg",
+    "living3.jpg",
+    "living4.jpg",
+    "living5.jpg",
     
     
   ],
