@@ -57,6 +57,9 @@ const IMAGE_INVENTORY = {
     "IMG20260313110321_01.jpg",
     "IMG20251009160204.jpg",
     "IMG20251009160807.jpg",
+    "crown3.jpg",
+    "crown4.jpg"
+
   ],
   "The blue hour": [
     "thumbnail.jpg",
@@ -66,6 +69,8 @@ const IMAGE_INVENTORY = {
     "IMG20260202185512.jpg",
     "IMG_20260323_133304.jpg",
     "IMG_20260323_133423.jpg",
+    "blue1.jpg",
+    "blue2.jpg"
     
   ],
   "Beyond the pink": [
@@ -116,6 +121,7 @@ const IMAGE_INVENTORY = {
     "IMG20251120111217.jpg",
     "IMG20260206173707.jpg",
     "IMG20260415180143.jpg",
+    "Artisan1.jpg"
   ],
 };
 
