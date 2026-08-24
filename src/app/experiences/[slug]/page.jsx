@@ -42,7 +42,7 @@ export default async function ExperienceDetailPage({ params }) {
 
   const related = getRelatedExperiences(exp.slug, 3);
   const waMsg   = `Hello! I'd like to enquire about "${exp.title}" by Raah India Experiences.`;
-  const waUrl   = `https://wa.me/919876543210?text=${encodeURIComponent(waMsg)}`;
+  const waUrl   = `https://wa.me/919929992539?text=${encodeURIComponent(waMsg)}`;
 
   return (
     <>

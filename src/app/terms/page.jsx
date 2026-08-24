@@ -230,8 +230,8 @@ export default function TermsPage() {
             </p>
             <p style={{ ...para, marginBottom: 0 }}>
               Phone:{" "}
-              <a href="tel:+919928026539" style={{ color: OR, textDecoration: "underline" }}>
-                +91 99280 26539
+              <a href="tel:+919929992539" style={{ color: OR, textDecoration: "underline" }}>
+                +91 99299 92539
               </a>
             </p>
           </div>
