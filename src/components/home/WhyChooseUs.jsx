@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useRef, useState } from "react";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import MobileSlider from "@/components/MobileSlider";
@@ -108,6 +109,39 @@ function WCUCard({ icon, title, desc }) {
   );
 }
 
+function PhilosophyBanner() {
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVis(true); },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="wcu-philosophy" ref={ref}>
+      <div className={`wcu-philosophy-num${vis ? " wcu-ph-vis" : ""}`}>1</div>
+      <div className="wcu-philosophy-divider" />
+      <div className={`wcu-philosophy-text${vis ? " wcu-ph-vis" : ""}`}>
+        <span className="wcu-philosophy-eyebrow">Guiding Philosophy</span>
+        <h3 className="wcu-philosophy-headline">
+          Travel Beyond the{" "}
+          <em>Ordinary</em>
+        </h3>
+        <p className="wcu-philosophy-sub">
+          One clear purpose — to help you experience Jaipur not as a tourist, but as someone who truly belongs here, even for a day.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function WhyChooseUs() {
   return (
     <>
@@ -173,6 +207,101 @@ export default function WhyChooseUs() {
         /* ── Mobile slider wrapper ── */
         .wcu-slider-mobile { display: none; }
         @media (max-width: 767px) { .wcu-slider-mobile { display: block; } }
+
+        /* ── Guiding Philosophy Banner ── */
+        .wcu-philosophy {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          padding: 32px 36px;
+          margin-bottom: 52px;
+          background: linear-gradient(135deg, #1A1209 0%, #2C1D07 60%, #1A1209 100%);
+          border-radius: 20px;
+          border: 1px solid rgba(245,166,35,0.25);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.14), inset 0 1px 0 rgba(245,166,35,0.12);
+          position: relative;
+          overflow: hidden;
+        }
+        .wcu-philosophy::before {
+          content: '';
+          position: absolute;
+          top: -40px; right: -40px;
+          width: 200px; height: 200px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(255,140,0,0.12) 0%, transparent 70%);
+          pointer-events: none;
+        }
+        .wcu-philosophy-num {
+          font-family: Fraunces, Georgia, serif;
+          font-size: clamp(3.5rem, 7vw, 5.5rem);
+          font-weight: 700;
+          color: #FF8C00;
+          line-height: 1;
+          letter-spacing: -0.04em;
+          flex-shrink: 0;
+          opacity: 0;
+          transform: translateY(16px);
+          transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+        }
+        .wcu-philosophy-num.wcu-ph-vis {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .wcu-philosophy-divider {
+          width: 1px;
+          height: 64px;
+          background: linear-gradient(to bottom, transparent, rgba(245,166,35,0.40), transparent);
+          flex-shrink: 0;
+        }
+        .wcu-philosophy-text {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          opacity: 0;
+          transform: translateY(14px);
+          transition: opacity 0.7s ease 0.22s, transform 0.7s ease 0.22s;
+        }
+        .wcu-philosophy-text.wcu-ph-vis {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .wcu-philosophy-eyebrow {
+          font-family: DM Sans, system-ui, sans-serif;
+          font-size: 0.58rem;
+          font-weight: 700;
+          color: rgba(245,166,35,0.75);
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+        }
+        .wcu-philosophy-headline {
+          font-family: Fraunces, Georgia, serif;
+          font-size: clamp(1.3rem, 2.8vw, 2rem);
+          font-weight: 700;
+          color: #FFFFFF;
+          line-height: 1.15;
+        }
+        .wcu-philosophy-headline em {
+          color: #FF8C00;
+          font-style: italic;
+        }
+        .wcu-philosophy-sub {
+          font-family: DM Sans, system-ui, sans-serif;
+          font-size: 0.85rem;
+          font-weight: 300;
+          color: rgba(255,253,231,0.55);
+          line-height: 1.6;
+          margin-top: 6px;
+        }
+        @media (max-width: 640px) {
+          .wcu-philosophy {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 24px 22px;
+          }
+          .wcu-philosophy-divider { display: none; }
+          .wcu-philosophy-num { font-size: 3.2rem; }
+        }
       `}</style>
 
       <SectionWrapper variant="main">
@@ -181,6 +310,9 @@ export default function WhyChooseUs() {
           title="A Different Way to Travel"
           subtitle="We don't collect destinations. We create connections."
         />
+
+        {/* Guiding Philosophy Banner */}
+        <PhilosophyBanner />
 
         {/* Desktop grid */}
         <div className="wcu-grid">

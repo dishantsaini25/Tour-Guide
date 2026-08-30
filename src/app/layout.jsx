@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import EnquiryPopup from "@/components/EnquiryPopup";
 
 export const metadata = {
   title: { default: "Raah India Experiences — Curated Walking Tours in Jaipur", template: "%s | Raah India Experiences" },
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+        <EnquiryPopup />
       </body>
     </html>
   );

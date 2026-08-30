@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionWrapper from "@/components/SectionWrapper";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const PF = "Fraunces, Georgia, serif";
 const IN = "DM Sans, system-ui, sans-serif";
@@ -73,6 +74,54 @@ export default function AboutPreview() {
           width:6px; height:6px; border-radius:50%;
           background:#FF8C00; flex-shrink:0; margin-top:7px;
         }
+        /* ── 300+ heritage badge ── */
+        .ap-heritage-badge {
+          position:absolute;
+          bottom: -24px;
+          left: -24px;
+          z-index: 10;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #1A1209 0%, #2C1D07 100%);
+          border: 2px solid rgba(245,166,35,0.55);
+          box-shadow: 0 8px 28px rgba(0,0,0,0.30), 0 0 0 4px rgba(245,166,35,0.10);
+          text-align: center;
+          padding: 8px;
+        }
+        .ap-heritage-badge-num {
+          font-family:'Fraunces',Georgia,serif;
+          font-size: 1.75rem;
+          font-weight: 700;
+          color: #FF8C00;
+          line-height: 1;
+          letter-spacing: -0.02em;
+        }
+        .ap-heritage-badge-text {
+          font-family:'DM Sans',system-ui,sans-serif;
+          font-size: 0.52rem;
+          font-weight: 600;
+          color: rgba(255,253,231,0.70);
+          letter-spacing: 0.10em;
+          text-transform: uppercase;
+          line-height: 1.35;
+          margin-top: 4px;
+        }
+        @media (max-width: 639px) {
+          .ap-heritage-badge {
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 90px;
+          }
+          .ap-heritage-badge-num { font-size: 1.4rem; }
+          .ap-heritage-badge-text { font-size: 0.44rem; }
+        }
       `}</style>
 
       <SectionWrapper variant="soft">
@@ -99,6 +148,13 @@ export default function AboutPreview() {
                 fill className="object-cover object-center"
                 sizes="(max-width:640px) 300px,(max-width:1024px) 380px,50vw"
               />
+            </div>
+            {/* 300+ years heritage badge */}
+            <div className="ap-heritage-badge">
+              <div className="ap-heritage-badge-num">
+                <AnimatedCounter target={300} suffix="+" duration={2200} />
+              </div>
+              <div className="ap-heritage-badge-text">Years of<br />City's Rich<br />Legacy</div>
             </div>
             <div style={{ position:"absolute", bottom:"-14px", right:"-14px", width:"80px", height:"80px", border:"2px solid rgba(255,140,0,0.35)", borderRadius:"4px" }} className="hidden lg:block" />
             <div style={{ position:"absolute", top:"-14px", left:"-14px", width:"48px", height:"48px", border:"2px solid rgba(255,216,155,0.5)", borderRadius:"4px" }} className="hidden lg:block" />

@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import ContinuousCounter from "@/components/ContinuousCounter";
 
 export default function FinalCTA() {
   return (
@@ -42,6 +44,50 @@ export default function FinalCTA() {
           transform: translateY(-2px);
         }
         .fc2:active { transform: translateY(0); }
+
+        /* ── Endless Counter Block ── */
+        .fc-endless-wrap {
+          margin-bottom: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+        }
+
+        /* The big number */
+        .fc-endless-num {
+          font-family: Fraunces, Georgia, serif;
+          font-size: clamp(5rem, 14vw, 10rem);
+          font-weight: 700;
+          line-height: 0.9;
+          letter-spacing: -0.04em;
+          /* Gradient text — orange to gold */
+          background: linear-gradient(135deg, #FF8C00 0%, #F5A623 60%, #FFD47A 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          /* Subtle glow */
+          filter: drop-shadow(0 0 24px rgba(255,140,0,0.35));
+          user-select: none;
+        }
+
+        /* The thin separator line */
+        .fc-endless-rule {
+          width: 60px;
+          height: 1px;
+          background: linear-gradient(to right, transparent, rgba(245,166,35,0.55), transparent);
+          margin: 14px auto;
+        }
+
+        /* "Endless Ways to Discover Jaipur" label */
+        .fc-endless-label {
+          font-family: DM Sans, system-ui, sans-serif;
+          font-size: clamp(0.7rem, 1.4vw, 0.82rem);
+          font-weight: 600;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: rgba(255,253,231,0.55);
+        }
       `}</style>
 
       <section style={{ position: "relative", padding: "110px 0", overflow: "hidden" }}>
@@ -50,6 +96,16 @@ export default function FinalCTA() {
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(255,140,0,0.18) 0%, transparent 65%)" }} />
 
         <div style={{ position: "relative", zIndex: 10, maxWidth: "720px", margin: "0 auto", padding: "0 20px", textAlign: "center" }}>
+
+          {/* ── Continuous Counter ── */}
+          <div className="fc-endless-wrap">
+            <div className="fc-endless-num">
+              <ContinuousCounter cycleDuration={5000} padded={true} />
+            </div>
+            <div className="fc-endless-rule" />
+            <p className="fc-endless-label">Endless Ways to Discover Jaipur</p>
+          </div>
+
           <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "#F5A623", fontWeight: 700, marginBottom: "18px" }}>
             Start Your Journey
           </p>

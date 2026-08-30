@@ -1,6 +1,8 @@
 import HeroSection from "@/components/home/HeroSection";
+import StatsStrip from "@/components/home/StatsStrip";
 import FeaturedExperiences from "@/components/home/FeaturedExperiences";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
+import JaipurInANutshell from "@/components/home/JaipurInANutshell";
 import AboutPreview from "@/components/home/AboutPreview";
 import Testimonials from "@/components/home/Testimonials";
 import JournalPreview from "@/components/home/JournalPreview";
@@ -15,8 +17,10 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <StatsStrip />
       <FeaturedExperiences />
       <WhyChooseUs />
+      <JaipurInANutshell />
       <AboutPreview />
       <Testimonials />
       <JournalPreview />
