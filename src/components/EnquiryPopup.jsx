@@ -130,6 +130,17 @@ export default function EnquiryPopup() {
     closedAtRef.current = Date.now();
   }, []);
 
+  /* ── External trigger: "Book Now" button in Navbar dispatches this event ── */
+  useEffect(() => {
+    const handler = () => {
+      // Force-open regardless of session guards — user explicitly clicked Book Now
+      triggeredRef.current = true;
+      setOpen(true);
+    };
+    window.addEventListener("raah:open-enquiry", handler);
+    return () => window.removeEventListener("raah:open-enquiry", handler);
+  }, []);
+
   /* ─────────────────────────────────────────────────────
      TRIGGER LOGIC
   ───────────────────────────────────────────────────── */

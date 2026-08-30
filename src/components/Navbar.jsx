@@ -307,9 +307,12 @@ export default function Navbar() {
                   }}
                 >{l.label}</Link>
               ))}
-              <Link href="/contact" className="nb"
-                style={{ padding: "10px 24px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", color: "#FFFFFF" }}
-              >Book Now</Link>
+              {/* Book Now — opens enquiry popup, does NOT navigate to /contact */}
+              <button
+                onClick={() => window.dispatchEvent(new Event("raah:open-enquiry"))}
+                className="nb"
+                style={{ padding: "10px 24px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#FFFFFF", border: "none", cursor: "pointer" }}
+              >Book Now</button>
             </nav>
 
             {/* Hamburger toggle — mobile only (md:hidden hides it at ≥768px) */}
@@ -418,9 +421,17 @@ export default function Navbar() {
 
         {/* CTA at bottom */}
         <div style={{ padding: "28px 24px 36px" }}>
-          <Link href="/contact" className="mob-book">
+          {/* Book an Experience — closes drawer then opens enquiry popup */}
+          <button
+            className="mob-book"
+            onClick={() => {
+              handleClose();   // close the drawer first
+              // Small delay so drawer animation completes before popup appears
+              setTimeout(() => window.dispatchEvent(new Event("raah:open-enquiry")), 320);
+            }}
+          >
             Book an Experience
-          </Link>
+          </button>
         </div>
       </div>
     </>
