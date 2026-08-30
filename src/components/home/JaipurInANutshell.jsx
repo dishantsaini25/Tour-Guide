@@ -1,92 +1,39 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import {
+  Palette, Map, Telescope, Clock, Grid3X3,
+  Gem, Scissors, Wind, Castle, BookOpen,
+  Camera, Sparkles,
+} from "lucide-react";
 
 /* ─────────────────────────────────────────────────────────────────
    HIGHLIGHT DATA — 12 client-provided facts
 ───────────────────────────────────────────────────────────────── */
 const HIGHLIGHTS = [
-  {
-    id:    "01",
-    icon:  "🌸",
-    title: "A Colour Born of Welcome & Hospitality",
-    desc:  "The terracotta Pink-hued City",
-  },
-  {
-    id:    "02",
-    icon:  "🗺️",
-    title: "A City Drawn in a Grid Pattern",
-    desc:  "India's first planned city",
-  },
-  {
-    id:    "03",
-    icon:  "🪐",
-    title: "Where the Cosmos Became Architecture",
-    desc:  "Jantar Mantar, astronomical observatory",
-  },
-  {
-    id:    "04",
-    icon:  "⏱️",
-    title: "Time Measured in Seconds",
-    desc:  "The world's largest stone sundial — Samrat Yantra",
-  },
-  {
-    id:    "05",
-    icon:  "🔢",
-    title: "A City Built Around Nine",
-    desc:  "The cosmic geometry of Jaipur",
-  },
-  {
-    id:    "06",
-    icon:  "💎",
-    title: "India's Gem Capital",
-    desc:  "A world of gems & jewellery",
-  },
-  {
-    id:    "07",
-    icon:  "🧵",
-    title: "A City That Still Makes",
-    desc:  "Centuries-old crafts & living traditions",
-  },
-  {
-    id:    "08",
-    icon:  "🌬️",
-    title: "A Symphony of Wind",
-    desc:  "The iconic Hawa Mahal",
-  },
-  {
-    id:    "09",
-    icon:  "🏰",
-    title: "A Fort That Guards a Giant",
-    desc:  "Jaivana, the legendary cannon & the impregnable Jaigarh Fort",
-  },
-  {
-    id:    "10",
-    icon:  "🎤",
-    title: "Where the World Comes to Talk",
-    desc:  "Jaipur Literature Festival",
-  },
-  {
-    id:    "11",
-    icon:  "📸",
-    title: "A Photographer's Paradise",
-    desc:  "Colours, geometry, people & light",
-  },
-  {
-    id:    "12",
-    icon:  "🌈",
-    title: "The Vibrant Colors of the City",
-    desc:  "People, festivals, culture & cuisine",
-  },
+  { id: "01", icon: Palette,  title: "A Colour Born of Welcome & Hospitality", desc: "The terracotta Pink-hued City"                                              },
+  { id: "02", icon: Map,      title: "A City Drawn in a Grid Pattern",         desc: "India's first planned city"                                                },
+  { id: "03", icon: Telescope,title: "Where the Cosmos Became Architecture",   desc: "Jantar Mantar, astronomical observatory"                                   },
+  { id: "04", icon: Clock,    title: "Time Measured in Seconds",               desc: "The world's largest stone sundial — Samrat Yantra"                         },
+  { id: "05", icon: Grid3X3,  title: "A City Built Around Nine",               desc: "The cosmic geometry of Jaipur"                                             },
+  { id: "06", icon: Gem,      title: "India's Gem Capital",                    desc: "A world of gems & jewellery"                                               },
+  { id: "07", icon: Scissors, title: "A City That Still Makes",                desc: "Centuries-old crafts & living traditions"                                  },
+  { id: "08", icon: Wind,     title: "A Symphony of Wind",                     desc: "The iconic Hawa Mahal"                                                     },
+  { id: "09", icon: Castle,   title: "A Fort That Guards a Giant",             desc: "Jaivana, the legendary cannon & the impregnable Jaigarh Fort"              },
+  { id: "10", icon: BookOpen, title: "Where the World Comes to Talk",          desc: "Jaipur Literature Festival"                                                },
+  { id: "11", icon: Camera,   title: "A Photographer's Paradise",              desc: "Colours, geometry, people & light"                                         },
+  { id: "12", icon: Sparkles, title: "The Vibrant Colors of the City",         desc: "People, festivals, culture & cuisine"                                      },
 ];
 
 /* ─────────────────────────────────────────────────────────────────
    SINGLE HIGHLIGHT CARD — column layout for equal height
 ───────────────────────────────────────────────────────────────── */
-function HighlightCard({ icon, title, desc }) {
+function HighlightCard({ icon: Icon, title, desc }) {
   return (
     <div className="jin-card" aria-label={`${title} — ${desc}`}>
-      {/* Icon badge */}
-      <span className="jin-icon" aria-hidden="true">{icon}</span>
+      {/* Icon badge — SVG Lucide component */}
+      <div className="jin-icon" aria-hidden="true">
+        <Icon size={26} strokeWidth={1.6} aria-hidden="true" />
+      </div>
       {/* Title — flex: 1 fills the middle, absorbs any line-count variation */}
       <p className="jin-title">{title}</p>
       {/* Description — always anchored at bottom by flex column layout */}
@@ -263,19 +210,19 @@ export default function JaipurInANutshell() {
 
         /* ── Icon badge ── */
         .jin-icon {
-          font-size: 1.35rem;
-          line-height: 1;
           flex-shrink: 0;
           width: 40px;
           height: 40px;
           border-radius: 10px;
-          /* Same gold badge as StatsStrip icon halos elsewhere in the design system */
+          /* Same gold badge treatment as the rest of the design system */
           background: linear-gradient(135deg, rgba(255,232,176,0.18) 0%, rgba(255,212,122,0.12) 100%);
           border: 1px solid rgba(245,166,35,0.30);
           display: flex;
           align-items: center;
           justify-content: center;
           margin-bottom: 12px;
+          /* SVG inherits this colour via currentColor */
+          color: #FF8C00;
         }
 
         /* ── Title — flex-grow so it pushes desc to the bottom ── */
@@ -340,7 +287,6 @@ export default function JaipurInANutshell() {
           .jin-icon {
             width: 34px; height: 34px;
             border-radius: 8px;
-            font-size: 1.1rem;
             margin-bottom: 9px;
           }
           .jin-title { font-size: 0.80rem; }

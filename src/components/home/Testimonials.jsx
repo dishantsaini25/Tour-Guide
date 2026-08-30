@@ -143,14 +143,20 @@ function StarRating({ rating }) {
           <Star
             key={`f${i}`}
             size={14}
-            style={{ color: "#F5A623", fill: "#F5A623" }}
+            fill="#F5A623"
+            stroke="#000000"
+            strokeWidth={1.5}
+            style={{ color: "#F5A623" }}
           />
         ))}
 
         {showHalf && (
           <StarHalf
             size={14}
-            style={{ color: "#F5A623", fill: "#F5A623" }}
+            fill="#F5A623"
+            stroke="#000000"
+            strokeWidth={1.5}
+            style={{ color: "#F5A623" }}
           />
         )}
 
@@ -158,7 +164,10 @@ function StarRating({ rating }) {
           <Star
             key={`e${i}`}
             size={14}
-            style={{ color: "#D6D3D1", fill: "#D6D3D1" }}
+            fill="#D6D3D1"
+            stroke="#000000"
+            strokeWidth={1.5}
+            style={{ color: "#D6D3D1" }}
           />
         ))}
       </div>
