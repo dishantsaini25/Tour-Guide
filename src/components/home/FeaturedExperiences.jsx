@@ -7,7 +7,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-const featured = experiences.slice(0, 3);
+const featured = experiences.slice(0, 6);
 
 export default function FeaturedExperiences() {
   return (
