@@ -1,6 +1,6 @@
 // ── Production base URL ───────────────────────────────────────────
 // Keep in sync with app/sitemap.js
-const BASE_URL = "https://www.raahindia.com";
+const BASE_URL = "https://www.raahexperiences.in";
 
 export default function robots() {
   return {
