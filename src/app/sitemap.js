@@ -1,8 +1,8 @@
-import { experiences, journalArticles } from "@/data/experiences";
+import { experiences } from "@/data/experiences";
 
 // ── Production base URL ───────────────────────────────────────────
 // Update this if the domain changes.
-const BASE_URL = "https://www.raahindia.com";
+const BASE_URL = "https://www.raahexperiences.in";
 
 export default function sitemap() {
   // ── Static pages ────────────────────────────────────────────────
