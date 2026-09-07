@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { journalArticles } from "@/data/experiences";
 import { ArrowRight, Clock, BookOpen, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { cloudImg } from "@/lib/cloudinaryImage";
 
 const PF = "Fraunces, Georgia, serif";
 const IN = "DM Sans, system-ui, sans-serif";
@@ -68,7 +69,7 @@ function ArticleModal({ article, onClose }) {
       }}>
         {/* ── Compact hero image ── */}
         <div className="jmodal-img" style={{ position: "relative", height: "170px", flexShrink: 0, overflow: "hidden" }}>
-          <Image src={article.image} alt={article.title} fill
+          <Image src={cloudImg(article.image)} alt={article.title} fill
             className="object-cover object-center" sizes="660px" priority
             onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
           />
@@ -135,7 +136,7 @@ function JournalCard({ article, onOpen }) {
       aria-label={`Read: ${article.title}`} style={{ cursor: "pointer" }}
     >
       <div className="jcard-img-wrap">
-        <Image src={article.image} alt={article.title} fill
+        <Image src={cloudImg(article.image)} alt={article.title} fill
           className="object-cover object-center jcard-img" sizes="(max-width:768px) 88vw, 25vw"
           onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}
         />
@@ -320,7 +321,7 @@ function FeaturedCycler({ articles, onOpen }) {
         <div className="jc-featured-grid" onClick={() => onOpen(article)} style={{ cursor: "pointer" }}>
           {/* Image pane */}
           <div className="jc-featured-img">
-            <Image src={article.image} alt={article.title} fill
+            <Image src={cloudImg(article.image)} alt={article.title} fill
               className="object-cover object-center jc-featured-img-inner"
               sizes="(max-width:767px) 100vw, 50vw" priority
               onError={(e) => { e.currentTarget.src = "/images/placeholder.jpg"; }}

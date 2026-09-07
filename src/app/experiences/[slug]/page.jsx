@@ -6,6 +6,7 @@ import {
   CheckCircle2, XCircle, ArrowRight, MessageCircle, ArrowLeft,
 } from "lucide-react";
 import { experiences, getExperienceBySlug, getRelatedExperiences } from "@/data/experiences";
+import { cloudImg } from "@/lib/cloudinaryImage";
 import FAQAccordion from "@/components/FAQAccordion";
 import GallerySlider from "./GallerySlider";
 import RelatedSlider from "./RelatedSlider";
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${exp.title} — ${exp.subtitle}`,
     description: exp.tagline,
-    openGraph: { images: [exp.heroImage] },
+    openGraph: { images: [cloudImg(exp.heroImage)] },
   };
 }
 
@@ -227,7 +228,7 @@ export default async function ExperienceDetailPage({ params }) {
 
       {/* ── Hero ── */}
       <section style={{ position:"relative", minHeight:"65vh", display:"flex", alignItems:"flex-end", overflow:"hidden" }}>
-        <Image src={exp.heroImage} alt={exp.title} fill className="object-cover object-center" priority sizes="100vw" />
+        <Image src={cloudImg(exp.heroImage)} alt={exp.title} fill className="object-cover object-center" priority sizes="100vw" />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(20,10,0,0.92) 0%,rgba(20,10,0,0.22) 50%,transparent 100%)" }} />
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 15% 80%,rgba(255,140,0,0.12) 0%,transparent 55%)" }} />
 
@@ -438,7 +439,7 @@ export default async function ExperienceDetailPage({ params }) {
                   <p style={LABEL}>Gallery</p>
                   <div style={RULE} />
                   <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Moments From This Experience</h2>
-                  <GallerySlider images={exp.gallery} title={exp.title} />
+                  <GallerySlider images={exp.gallery.map(g => ({ ...g, src: cloudImg(g.src) }))} title={exp.title} />
                 </div>
               )}
 

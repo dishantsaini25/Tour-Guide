@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionWrapper from "@/components/SectionWrapper";
+import { cloudImg } from "@/lib/cloudinaryImage";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
 const PF = "Fraunces, Georgia, serif";
@@ -143,7 +144,7 @@ export default function AboutPreview() {
           <div style={{ position:"relative" }} className="lg:order-last">
             <div className="ap-img-wrap">
               <Image
-                src="/images/WhatsApp Image 2026-07-23 at 2.47.33 PM.jpeg"
+                src={cloudImg("/images/WhatsApp Image 2026-07-23 at 2.47.33 PM.jpeg")}
                 alt="Shobhit — Founder of Raah India Experiences"
                 fill className="object-cover object-center"
                 sizes="(max-width:640px) 300px,(max-width:1024px) 380px,50vw"

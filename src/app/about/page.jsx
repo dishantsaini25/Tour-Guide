@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AboutValuesSlider from "./AboutClient";
+import urlMap from "../../../cloudinary-urls.json";
 
 export const metadata = {
   title: "About & Philosophy",
@@ -15,6 +16,8 @@ const RULE_C = { width: "36px", height: "2px", background: `linear-gradient(to r
 const LABEL = { fontFamily: IN, fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: OR };
 
 export default function AboutPage() {
+  const aboutHero = urlMap["/images/8c213b3328e704cdcb7aca874adfe1c1.jpg"]
+    || "/images/8c213b3328e704cdcb7aca874adfe1c1.jpg";
   return (
     <>
       <style>{`
@@ -100,7 +103,7 @@ export default function AboutPage() {
       `}</style>
 
       {/* ── Hero ── */}
-      <section style={{ position: "relative", minHeight: "58vh", display: "flex", alignItems: "flex-end", backgroundImage: "url('/images/8c213b3328e704cdcb7aca874adfe1c1.jpg')", backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
+      <section style={{ position: "relative", minHeight: "58vh", display: "flex", alignItems: "flex-end", backgroundImage: `url('${aboutHero}')`, backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg,rgba(20,10,0,0.75) 0%,rgba(20,10,0,0.38) 55%,rgba(20,10,0,0.15) 100%)" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top,rgba(20,10,0,0.82) 0%,transparent 55%)" }} />
         <div style={{ position: "relative", zIndex: 10, maxWidth: "1320px", margin: "0 auto", padding: "160px 20px 64px", width: "100%" }}>

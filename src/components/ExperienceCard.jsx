@@ -2,10 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Clock, Gauge, ArrowUpRight } from "lucide-react";
+import { cloudImg } from "@/lib/cloudinaryImage";
 
 export default function ExperienceCard({ experience }) {
   const { slug, title, subtitle, question, theme, duration, difficulty, cardImage, heroImage, filters, whatIncludes } = experience;
-  const img = cardImage || heroImage;
+  const img = cloudImg(cardImage || heroImage);
 
   return (
     <>

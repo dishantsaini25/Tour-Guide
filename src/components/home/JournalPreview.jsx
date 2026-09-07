@@ -6,6 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 import MobileSlider from "@/components/MobileSlider";
 import { journalArticles } from "@/data/experiences";
 import { ArrowUpRight } from "lucide-react";
+import { cloudImg } from "@/lib/cloudinaryImage";
 
 function JournalCard({ a }) {
   return (
@@ -13,7 +14,7 @@ function JournalCard({ a }) {
       {/* Thumbnail */}
       <div style={{ position: "relative", height: "196px", overflow: "hidden", borderRadius: "16px 16px 0 0" }}>
         <Image
-          src={a.image}
+          src={cloudImg(a.image)}
           alt={a.title}
           fill
           className="object-cover object-top jc-img"
