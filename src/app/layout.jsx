@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import EnquiryPopup from "@/components/EnquiryPopup";
 
 export const metadata = {
-  title: { default: "Raah India Experiences — Curated Walking Tours in Jaipur", template: "%s | Raah India Experience" },
+  title: { default: "Raah India Experiences — Curated Walking Tours in Jaipur", template: "%s | Raah India Experiences" },
   description: "Boutique curated walking tours & cultural experiences in Jaipur. Sunrise temple walks, heritage jeep rides, street food trails — led by a local storyteller.",
   keywords: ["Jaipur walking tour", "Raah India", "heritage walk Jaipur", "Jaipur food tour"],
   openGraph: {
