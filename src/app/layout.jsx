@@ -5,13 +5,31 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import EnquiryPopup from "@/components/EnquiryPopup";
 
 export const metadata = {
-  title: { default: "Raah India Experiences — Curated Walking Tours in Jaipur", template: "%s | Raah India Experiences" },
-  description: "Boutique curated walking tours & cultural experiences in Jaipur. Sunrise temple walks, heritage jeep rides, street food trails — led by a local storyteller.",
-  keywords: ["Jaipur walking tour", "Raah India", "heritage walk Jaipur", "Jaipur food tour"],
+  metadataBase: new URL("https://www.raahexperiences.in"),
+  title: {
+    default: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+    template: "%s | Raah Experiences",
+  },
+  description:
+    "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Raah India Experiences — Curated Walking Tours in Jaipur",
-    description: "Walk slowly through Jaipur's stories, rituals, flavours, forts, markets, and hidden corners.",
-    images: ["https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&q=80"],
+    title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+    description:
+      "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+    url: "https://www.raahexperiences.in",
+    siteName: "Raah Experiences",
+    type: "website",
+   images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+    description:
+      "Boutique Jaipur city tours with an English-speaking local guide.",
   },
 };
 
@@ -19,10 +37,52 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    <meta name="google-site-verification" content="0xOYCIdIz9rmJGreskRMlRuZrrxMIkkbt7RYOEkoSls" />
+        <meta name="google-site-verification" content="0xOYCIdIz9rmJGreskRMlRuZrrxMIkkbt7RYOEkoSls" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "@id": "https://www.raahexperiences.in/#organization",
+              name: "Raah Experiences",
+              url: "https://www.raahexperiences.in",
+              description:
+                "Boutique curated walking tours & cultural experiences in Jaipur, led by a local storyteller.",
+              image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
+              telephone: "+91-9929992539",
+              email: "raahindiaexperiences@gmail.com",
+              priceRange: "₹₹",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Jaipur",
+                addressRegion: "Rajasthan",
+                addressCountry: "IN",
+              },
+              areaServed: {
+                "@type": "City",
+                name: "Jaipur",
+              },
+              sameAs: [
+                "https://www.instagram.com/raah.experiences",
+                "https://www.facebook.com/profile.php?id=61586556497302",
+              ],
+              /* Still missing — fill in once you have real numbers, never fabricate:
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "REAL_VALUE",
+                reviewCount: "REAL_COUNT"
+              },
+              */
+            }),
+          }}
+        />
       </head>
       <body>
         <Navbar />

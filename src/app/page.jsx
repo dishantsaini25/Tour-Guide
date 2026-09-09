@@ -9,8 +9,26 @@ import JournalPreview from "@/components/home/JournalPreview";
 import FinalCTA from "@/components/home/FinalCTA";
 
 export const metadata = {
-  title: "Raah India Experiences — Curated Walking Tours in Jaipur",
-  description: "Boutique walking tours & cultural experiences in Jaipur. Sunrise temples, heritage jeep rides, street food trails — led by a local storyteller.",
+  title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+  description:
+    "Boutique Jaipur city tours with an English-speaking local guide. Small groups, sunrise heritage walks, food trails & hidden stories of the Pink City.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in",
+  },
+  openGraph: {
+    title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+    description:
+      "Boutique Jaipur city tours with an English-speaking local guide. Small groups, sunrise heritage walks, food trails & hidden stories of the Pink City.",
+    url: "https://www.raahexperiences.in",
+    type: "website",
+    images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+    description:
+      "Boutique Jaipur city tours with an English-speaking local guide.",
+  },
 };
 
 export default function HomePage() {
