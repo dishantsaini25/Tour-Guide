@@ -4,8 +4,20 @@ import AboutValuesSlider from "./AboutClient";
 import urlMap from "../../../cloudinary-urls.json";
 
 export const metadata = {
-  title: "About & Philosophy",
-  description: "The story behind Raah India Experiences.",
+  title: "Meet Your Jaipur Tour Guide | Raah Experiences",
+  description:
+    "Personally guided Jaipur heritage tours by a local storyteller. Slow, immersive walks that go beyond monuments — for travelers who want to understand the city, not just see it.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in/about",
+  },
+  openGraph: {
+    title: "Meet Your Jaipur Tour Guide | Raah Experiences",
+    description:
+      "Personally guided Jaipur heritage tours by a local storyteller. Slow, immersive walks that go beyond monuments.",
+    url: "https://www.raahexperiences.in/about",
+    type: "website",
+    images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
+  },
 };
 
 const PF = "Fraunces, Georgia, serif";
@@ -20,6 +32,24 @@ export default function AboutPage() {
     || "/images/8c213b3328e704cdcb7aca874adfe1c1.jpg";
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "@id": "https://www.raahexperiences.in/about#webpage",
+            url: "https://www.raahexperiences.in/about",
+            name: "Meet Your Jaipur Tour Guide | Raah Experiences",
+            description:
+              "Personally guided Jaipur heritage tours by a local storyteller.",
+            mainEntity: {
+              "@id": "https://www.raahexperiences.in/#organization",
+            },
+          }),
+        }}
+      />
+
       <style>{`
         /* ── Primary button — pill, gradient, glow-only hover ── */
         .ab1 {
@@ -120,9 +150,6 @@ export default function AboutPage() {
       <section style={{ background: "#FFFFFF", padding: "88px 0" }}>
         <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Image 1 — elephant ride at Amer Fort
-                • mobile: renders first → appears ABOVE the text
-                • desktop: lg:order-last pushes it to the right column visually */}
             <div style={{ position: "relative" }} className="lg:order-last">
               <div className="ab-img-wrap ab-img-wrap-43">
                 <Image
@@ -136,7 +163,6 @@ export default function AboutPage() {
               <div style={{ position: "absolute", bottom: "-12px", right: "-12px", width: "90px", height: "90px", border: "2px solid rgba(255,140,0,0.35)" }} className="hidden lg:block" />
             </div>
 
-            {/* Text column — rendered second in JSX, but first visually on desktop */}
             <div>
               <p style={LABEL}>Our Philosophy</p>
               <div style={RULE} />
@@ -163,7 +189,6 @@ export default function AboutPage() {
         <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-            {/* Image 2 — curator / Jaipur */}
             <div style={{ position: "relative" }}>
               <div className="ab-img-wrap ab-img-wrap-34">
                 <Image
@@ -186,6 +211,7 @@ export default function AboutPage() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", fontFamily: IN, fontSize: "0.95rem", color: MU, lineHeight: 1.85, fontWeight: 300, marginBottom: "30px" }}>
                 <p style={{fontWeight: "bold"}}>Mine began while guiding travellers through Jaipur.</p>
+                <p>As a licensed, English-speaking guide, I've spent years walking these streets with visitors from across the world.</p>
                 <p>For years, I watched visitors leave with stunning photographs of forts and palaces, yet many never experienced the Jaipur that locals truly know and love. One guest summed it up perfectly:</p>
                 <blockquote style={{ fontFamily: PF, fontSize: "1.05rem", fontStyle: "italic", color: CH, borderLeft: `3px solid ${OR}`, paddingLeft: "18px", fontWeight: 400 }}>
                   "The monuments were beautiful, but I wish I had met the people who give this city its soul."
@@ -220,7 +246,6 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Grid (desktop) + MobileSlider (mobile) — rendered by client component */}
           <AboutValuesSlider />
         </div>
       </section>
