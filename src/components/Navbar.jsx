@@ -457,10 +457,10 @@ export default function Navbar() {
               <Image
                 src={LOGO_URL}
                 alt="Raah India"
-                width={200}
-                height={72}
+                width={280}
+                height={100}
                 style={{
-                  height: solid ? "52px" : "64px",
+                  height: solid ? "68px" : "80px",
                   width: "auto",
                   objectFit: "contain",
                   transition: "height 0.4s ease",
