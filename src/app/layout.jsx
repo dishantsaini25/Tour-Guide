@@ -12,6 +12,14 @@ export const metadata = {
   },
   description:
     "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+  icons: {
+    // favicon.ico handles legacy browsers; logo.png gives modern browsers a sharp icon
+    icon:  [
+      { url: "/favicon.ico",  sizes: "any" },
+      { url: "/logo.png",     type: "image/png", sizes: "192x192" },
+    ],
+    apple: { url: "/logo.png", type: "image/png", sizes: "180x180" },
+  },
   robots: {
     index: true,
     follow: true,
