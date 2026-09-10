@@ -5,10 +5,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { experiences } from "@/data/experiences";
-import { cloudImg } from "@/lib/cloudinaryImage";
 
-// ── Raah India logo (Cloudinary-hosted) ──────────────────────────
-const LOGO_URL = cloudImg("/Gemini_Generated_Image_bkyrx3bkyrx3bkyr.png");
+// ── Raah India logo — local public/logo.jpeg ─────────────────────
+const LOGO_URL = "/logo.jpeg";
 
 // ── Static nav links ─────────────────────────────────────────────
 const links = [
