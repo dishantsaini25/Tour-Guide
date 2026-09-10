@@ -454,19 +454,31 @@ export default function Navbar() {
 
             {/* ── Logo ── */}
             <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-              <Image
-                src={LOGO_URL}
-                alt="Raah India"
-                width={280}
-                height={100}
-                style={{
-                  height: solid ? "68px" : "80px",
-                  width: "auto",
-                  objectFit: "contain",
-                  transition: "height 0.4s ease",
-                }}
-                priority
-              />
+              {/* Cream backdrop: visible on transparent header, fades away on solid white */}
+              <span style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: solid ? "transparent" : "rgba(255,248,235,0.92)",
+                borderRadius: "11px",
+                padding: solid ? "0" : "6px 10px",
+                boxShadow: solid ? "none" : "0 2px 10px rgba(26,18,9,0.08)",
+                transition: "background 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease",
+              }}>
+                <Image
+                  src={LOGO_URL}
+                  alt="Raah India"
+                  width={280}
+                  height={100}
+                  style={{
+                    height: solid ? "56px" : "72px",
+                    width: "auto",
+                    objectFit: "contain",
+                    transition: "height 0.4s ease",
+                  }}
+                  priority
+                />
+              </span>
             </Link>
 
             {/* ── Desktop nav ── */}
