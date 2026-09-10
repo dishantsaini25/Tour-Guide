@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { experiences } from "@/data/experiences";
 
-// ── Raah India logo — local public/logo.jpeg ─────────────────────
-const LOGO_URL = "/logo.jpeg";
+// ── Raah India logo — local public/logo.png ─────────────────────
+const LOGO_URL = "/logo.png";
 
 // ── Static nav links ─────────────────────────────────────────────
 const links = [
@@ -457,10 +457,10 @@ export default function Navbar() {
               <Image
                 src={LOGO_URL}
                 alt="Raah India"
-                width={120}
-                height={48}
+                width={200}
+                height={72}
                 style={{
-                  height: solid ? "40px" : "48px",
+                  height: solid ? "52px" : "64px",
                   width: "auto",
                   objectFit: "contain",
                   transition: "height 0.4s ease",
