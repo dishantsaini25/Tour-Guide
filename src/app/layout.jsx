@@ -4,6 +4,10 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import EnquiryPopup from "@/components/EnquiryPopup";
 
+// ── Raah India logo — reused as favicon (same Cloudinary asset as Navbar) ──
+const LOGO_CLOUDINARY_URL =
+  "https://res.cloudinary.com/wnmdgqiz/image/upload/v1788793698/raah-india/gemini-generated-image-bkyrx3bkyrx3bkyr.png";
+
 export const metadata = {
   metadataBase: new URL("https://www.raahexperiences.in"),
   title: {
@@ -12,6 +16,11 @@ export const metadata = {
   },
   description:
     "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+  icons: {
+    icon:        LOGO_CLOUDINARY_URL,
+    shortcut:    LOGO_CLOUDINARY_URL,
+    apple:       LOGO_CLOUDINARY_URL,
+  },
   robots: {
     index: true,
     follow: true,
