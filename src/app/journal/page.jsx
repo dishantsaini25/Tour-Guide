@@ -1,8 +1,20 @@
 import JournalClient from "./JournalClient";
 
 export const metadata = {
-  title: "The Raah Journal",
-  description: "Stories, observations, and conversations from the lanes of Jaipur.",
+  title: "Jaipur Travel Blog | Stories of the Pink City by Raah Experiences",
+  description:
+    "The Raah Journal — a Jaipur travel blog exploring the Pink City through heritage stories, royal history, and local culture. Curated by Raah Experiences.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in/journal",
+  },
+  openGraph: {
+    title: "Jaipur Travel Blog | Stories of the Pink City by Raah Experiences",
+    description:
+      "A Jaipur travel blog exploring the Pink City through heritage stories, royal history, and local culture.",
+    url: "https://www.raahexperiences.in/journal",
+    type: "website",
+    images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
+  },
 };
 
 const PF = "Fraunces, Georgia, serif";
@@ -12,6 +24,23 @@ const OR = "#FF8C00", GO = "#F5A623";
 export default function JournalPage() {
   return (
     <>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://www.raahexperiences.in/journal#webpage",
+      url: "https://www.raahexperiences.in/journal",
+      name: "Jaipur Travel Blog | Stories of the Pink City by Raah Experiences",
+      description:
+        "A Jaipur travel blog exploring the Pink City through heritage stories, royal history, and local culture, curated by Raah Experiences.",
+      mainEntity: {
+        "@id": "https://www.raahexperiences.in/#organization",
+      },
+    }),
+  }}
+/>
       <style>{`
         /* ── Journal hero ── */
         .jp-hero {
