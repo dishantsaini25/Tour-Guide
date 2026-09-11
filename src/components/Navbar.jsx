@@ -7,27 +7,31 @@ import { ChevronDown } from "lucide-react";
 import { experiences } from "@/data/experiences";
 
 // ── Raah India logo — local public/logo.png ─────────────────────
-const LOGO_URL = "/logo.png";
+const LOGO_URL = "/rahhLogo7.png";
 
 // ── Static nav links ─────────────────────────────────────────────
 const links = [
-  { href: "/",            label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/experiences", label: "Experiences", hasDropdown: true },
-  { href: "/about",       label: "About" },
-  { href: "/journal",     label: "The Journal" },
-  { href: "/contact",     label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/journal", label: "The Journal" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
-  const [scrolled,       setScrolled]       = useState(false);
-  const [open,           setOpen]           = useState(false);   // mobile drawer
-  const [dropdownOpen,   setDropdownOpen]   = useState(false);   // desktop dropdown
-  const [expMobileOpen,  setExpMobileOpen]  = useState(false);   // mobile exp accordion
-  const pathname  = usePathname();
-  const isHome    = pathname === "/";
-  const menuRef   = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false); // mobile drawer
+  const [dropdownOpen, setDropdownOpen] = useState(false); // desktop dropdown
+  const [expMobileOpen, setExpMobileOpen] = useState(false); // mobile exp accordion
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const menuRef = useRef(null);
   const toggleRef = useRef(null);
-  const dropRef   = useRef(null);
+  const dropRef = useRef(null);
+  // Timer ref to delay closing the dropdown — prevents flicker when cursor
+  // moves from the trigger label into the dropdown panel.
+  const closeTimerRef = useRef(null);
 
   /* ── Scroll detection ── */
   useEffect(() => {
@@ -46,10 +50,12 @@ export default function Navbar() {
   /* ── Prevent body scroll when mobile drawer open ── */
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
-  /* ── ESC closes both mobile drawer and desktop dropdown ── */
+  /* ── ESC closes mobile drawer and desktop dropdown ── */
   const handleClose = useCallback(() => {
     setOpen(false);
     setDropdownOpen(false);
@@ -58,41 +64,64 @@ export default function Navbar() {
 
   useEffect(() => {
     if (!open && !dropdownOpen) return;
-    const onKey = (e) => { if (e.key === "Escape") handleClose(); };
+    const onKey = (e) => {
+      if (e.key === "Escape") handleClose();
+    };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, [open, dropdownOpen, handleClose]);
 
-  /* ── Close desktop dropdown when clicking outside ── */
-  useEffect(() => {
-    if (!dropdownOpen) return;
-    const onClick = (e) => {
-      if (dropRef.current && !dropRef.current.contains(e.target)) {
-        setDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", onClick);
-    return () => document.removeEventListener("mousedown", onClick);
-  }, [dropdownOpen]);
-
   /* ── Focus trap inside mobile drawer ── */
   useEffect(() => {
     if (!open || !menuRef.current) return;
-    const focusable = menuRef.current.querySelectorAll('a[href], button:not([disabled])');
+    const focusable = menuRef.current.querySelectorAll(
+      "a[href], button:not([disabled])",
+    );
     const first = focusable[0];
-    const last  = focusable[focusable.length - 1];
+    const last = focusable[focusable.length - 1];
     first?.focus();
     const trap = (e) => {
       if (e.key !== "Tab") return;
       if (e.shiftKey) {
-        if (document.activeElement === first) { e.preventDefault(); last?.focus(); }
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last?.focus();
+        }
       } else {
-        if (document.activeElement === last)  { e.preventDefault(); first?.focus(); }
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first?.focus();
+        }
       }
     };
     document.addEventListener("keydown", trap);
     return () => document.removeEventListener("keydown", trap);
   }, [open]);
+
+  /* ── Desktop dropdown hover handlers ── */
+  // Opening is immediate; closing uses a short delay so the cursor
+  // can travel from the nav item into the dropdown panel without it
+  // disappearing (the "dead zone" flicker problem).
+  const handleDropEnter = useCallback(() => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setDropdownOpen(true);
+  }, []);
+
+  const handleDropLeave = useCallback(() => {
+    closeTimerRef.current = setTimeout(() => {
+      setDropdownOpen(false);
+    }, 120);
+  }, []);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    };
+  }, []);
 
   const solid = scrolled || !isHome;
 
@@ -137,15 +166,8 @@ export default function Navbar() {
         }
         .nb:active { transform: translateY(0); }
 
-        /* ── Experiences desktop dropdown trigger ── */
-        .exp-trigger {
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          cursor: pointer;
-          background: none;
-          border: none;
-          padding: 0;
+        /* ── Experiences desktop dropdown trigger label ── */
+        .exp-trigger-label {
           font-family: 'DM Sans', system-ui, sans-serif;
           font-size: 0.82rem;
           font-weight: 700;
@@ -153,7 +175,7 @@ export default function Navbar() {
           position: relative;
           transition: color 0.25s ease;
         }
-        .exp-trigger::after {
+        .exp-trigger-label::after {
           content: '';
           position: absolute;
           bottom: -4px; left: 0;
@@ -162,27 +184,26 @@ export default function Navbar() {
           border-radius: 2px;
           transition: width 0.3s ease;
         }
-        .exp-trigger:hover { color: #FF8C00 !important; }
-        .exp-trigger:hover::after,
-        .exp-trigger.is-open::after { width: 100%; }
-        .exp-trigger.nl-active::after { width: 100%; }
+        .exp-trigger-label:hover { color: #FF8C00 !important; }
+        .exp-trigger-label:hover::after,
+        .exp-trigger-wrap:hover .exp-trigger-label::after,
+        .exp-trigger-label.nl-active::after { width: 100%; }
 
         /* ── Desktop dropdown panel ── */
         .exp-dropdown {
           position: absolute;
-          top: calc(100% + 12px);
+          top: calc(100% + 8px);
           left: 50%;
-          transform: translateX(-50%);
-          min-width: 640px;
+          transform: translateX(-50%) translateY(-6px);
+          min-width: 240px;
           background: rgba(255,255,255,0.99);
           border-radius: 14px;
           box-shadow: 0 8px 40px rgba(26,18,9,0.14), 0 2px 8px rgba(26,18,9,0.06);
           border: 1px solid rgba(255,216,155,0.5);
-          padding: 20px 20px 16px;
+          padding: 12px 8px 10px;
           z-index: 10100;
           opacity: 0;
           pointer-events: none;
-          transform: translateX(-50%) translateY(-8px);
           transition: opacity 0.22s ease, transform 0.22s ease;
         }
         .exp-dropdown.is-open {
@@ -191,15 +212,16 @@ export default function Navbar() {
           transform: translateX(-50%) translateY(0);
         }
 
-        /* ── Dropdown grid items ── */
+        /* ── Dropdown items — single column ── */
         .exp-drop-item {
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 9px 12px;
+          padding: 9px 14px;
           border-radius: 8px;
           text-decoration: none !important;
           transition: background 0.18s ease;
+          width: 100%;
         }
         .exp-drop-item:hover {
           background: rgba(255,140,0,0.07);
@@ -208,31 +230,38 @@ export default function Navbar() {
           color: #FF8C00 !important;
         }
         .exp-drop-dot {
-          width: 6px;
-          height: 6px;
+          width: 5px;
+          height: 5px;
           border-radius: 50%;
           background: #FF8C00;
           flex-shrink: 0;
-          opacity: 0.5;
+          opacity: 0.45;
           transition: opacity 0.18s ease;
         }
         .exp-drop-item:hover .exp-drop-dot { opacity: 1; }
         .exp-drop-title {
           font-family: 'DM Sans', system-ui, sans-serif;
-          font-size: 0.78rem;
+          font-size: 0.8rem;
           font-weight: 600;
           color: #3D2E0E;
           transition: color 0.18s ease;
           white-space: nowrap;
         }
 
-        /* ── Dropdown "View All" footer link ── */
+        /* ── Dropdown "View All" footer ── */
+        .exp-drop-footer {
+          margin-top: 6px;
+          padding-top: 8px;
+          border-top: 1px solid rgba(255,216,155,0.5);
+          padding-left: 14px;
+          padding-right: 14px;
+        }
         .exp-drop-all {
           display: inline-flex;
           align-items: center;
           gap: 6px;
           font-family: 'DM Sans', system-ui, sans-serif;
-          font-size: 0.72rem;
+          font-size: 0.7rem;
           font-weight: 700;
           letter-spacing: 0.06em;
           text-transform: uppercase;
@@ -424,6 +453,9 @@ export default function Navbar() {
           border-radius: 9999px;
           box-shadow: 0 4px 16px rgba(255,140,0,0.30);
           transition: box-shadow 0.3s ease, transform 0.3s ease;
+          border: none;
+          cursor: pointer;
+          width: 100%;
         }
         .mob-book:hover, .mob-book:focus-visible {
           color: #FFFFFF !important;
@@ -435,136 +467,209 @@ export default function Navbar() {
       `}</style>
 
       {/* ── Fixed header bar ── */}
-      <header style={{
-        position: "fixed", top: 0, left: 0, right: 0,
-        zIndex: 10000,
-        background: (solid || open) ? "rgba(255,255,255,0.98)" : "transparent",
-        backdropFilter: (solid || open) ? "blur(16px)" : "none",
-        WebkitBackdropFilter: (solid || open) ? "blur(16px)" : "none",
-        borderBottom: "none",
-        boxShadow: (solid || open) ? "0 4px 24px rgba(0,0,0,0.08)" : "none",
-        transition: "background 0.3s ease, box-shadow 0.3s ease",
-      }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }} className="inner-pad">
-          <div style={{
-            display: "flex", alignItems: "center", justifyContent: "space-between",
-            height: solid ? "68px" : "80px",
-            transition: "height 0.4s ease",
-          }}>
-
-            {/* ── Logo ── */}
-            <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-              {/* Cream backdrop: visible on transparent header, fades away on solid white */}
-              <span style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: solid ? "transparent" : "rgba(255,248,235,0.92)",
-                borderRadius: "11px",
-                padding: solid ? "0" : "6px 10px",
-                boxShadow: solid ? "none" : "0 2px 10px rgba(26,18,9,0.08)",
-                transition: "background 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease",
-              }}>
-                <Image
-                  src={LOGO_URL}
-                  alt="Raah India"
-                  width={280}
-                  height={100}
-                  style={{
-                    height: solid ? "56px" : "72px",
-                    width: "auto",
-                    objectFit: "contain",
-                    transition: "height 0.4s ease",
-                  }}
-                  priority
-                />
-              </span>
-            </Link>
+      <header
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 10000,
+          background: solid || open ? "rgba(255,255,255,0.98)" : "transparent",
+          backdropFilter: solid || open ? "blur(16px)" : "none",
+          WebkitBackdropFilter: solid || open ? "blur(16px)" : "none",
+          borderBottom: "none",
+          boxShadow: solid || open ? "0 4px 24px rgba(0,0,0,0.08)" : "none",
+          transition: "background 0.3s ease, box-shadow 0.3s ease",
+        }}
+      >
+        <div
+          style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 20px" }}
+          className="inner-pad"
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              height: solid ? "68px" : "80px",
+              transition: "height 0.4s ease",
+            }}
+          >
+        {/* ── Logo ── */}
+<Link
+  href="/"
+  style={{
+    textDecoration: "none",
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+  }}
+>
+  <Image
+    src={LOGO_URL}
+    alt="Raah India"
+    width={220}
+    height={100}
+    style={{
+      height: solid ? "68px" : "76px",
+      width: "auto",
+      objectFit: "contain",
+      display: "block",
+      transition: "height 0.4s ease",
+    }}
+    priority
+  />
+</Link>
 
             {/* ── Desktop nav ── */}
-            <nav className="hidden md:flex" style={{ alignItems: "center", gap: "32px" }}>
+            <nav
+              className="hidden md:flex"
+              style={{ alignItems: "center", gap: "28px" }}
+            >
               {links.map((l) => {
-                const isActive = pathname === l.href || (l.hasDropdown && pathname.startsWith("/experiences"));
+                const isActive =
+                  pathname === l.href ||
+                  (l.hasDropdown && pathname.startsWith("/experiences"));
 
                 if (l.hasDropdown) {
                   return (
-                    <div key={l.href} ref={dropRef} style={{ position: "relative" }}>
-                      {/* Trigger: clicking navigates to /experiences; chevron toggles dropdown */}
-                      <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+                    // Hover zone wraps both the trigger and the panel.
+                    // onMouseEnter opens immediately; onMouseLeave starts
+                    // the close timer. The panel's own onMouseEnter cancels
+                    // the timer if the cursor moves into it before 120ms.
+                    <div
+                      key={l.href}
+                      ref={dropRef}
+                      onMouseEnter={handleDropEnter}
+                      onMouseLeave={handleDropLeave}
+                      style={{ position: "relative" }}
+                    >
+                      {/* Trigger row: label + chevron (purely decorative on desktop) */}
+                      <div
+                        className="exp-trigger-wrap"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "2px",
+                        }}
+                      >
                         <Link
                           href={l.href}
-                          className={`nl${isActive ? " nl-active" : ""}`}
+                          className={`exp-trigger-label${isActive ? " nl-active" : ""}`}
                           style={{
-                            fontFamily: "DM Sans, system-ui, sans-serif",
-                            fontSize: "0.82rem", fontWeight: 700,
-                            color: isActive ? "#FF8C00" : solid ? "#3D2E0E" : "rgba(255,255,255,0.88)",
-                            textDecoration: "none", transition: "color 0.25s ease",
+                            color: isActive
+                              ? "#FF8C00"
+                              : solid
+                                ? "#3D2E0E"
+                                : "rgba(255,255,255,0.88)",
                           }}
+                          aria-haspopup="true"
+                          aria-expanded={dropdownOpen}
                         >
                           {l.label}
                         </Link>
-                        <button
-                          onClick={() => setDropdownOpen(o => !o)}
-                          aria-expanded={dropdownOpen}
-                          aria-label="Toggle experiences menu"
+                        {/* Chevron — decorative; shows open state visually */}
+                        <span
+                          aria-hidden="true"
                           style={{
-                            background: "none", border: "none", cursor: "pointer",
-                            padding: "2px 2px 0",
-                            color: isActive ? "#FF8C00" : solid ? "#3D2E0E" : "rgba(255,255,255,0.88)",
-                            display: "flex", alignItems: "center",
+                            color: isActive
+                              ? "#FF8C00"
+                              : solid
+                                ? "#3D2E0E"
+                                : "rgba(255,255,255,0.88)",
+                            display: "flex",
+                            alignItems: "center",
                             transition: "color 0.25s ease",
+                            lineHeight: 1,
+                            paddingTop: "1px",
                           }}
                         >
                           <ChevronDown
                             size={14}
                             style={{
                               transition: "transform 0.25s ease",
-                              transform: dropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
+                              transform: dropdownOpen
+                                ? "rotate(180deg)"
+                                : "rotate(0deg)",
                             }}
                           />
-                        </button>
+                        </span>
                       </div>
 
-                      {/* ── Dropdown panel ── */}
-                      <div className={`exp-dropdown${dropdownOpen ? " is-open" : ""}`}>
-                        {/* Header row */}
-                        <div style={{
-                          display: "flex", alignItems: "center", justifyContent: "space-between",
-                          marginBottom: "12px", paddingBottom: "10px",
-                          borderBottom: "1px solid rgba(255,216,155,0.5)",
-                        }}>
-                          <span style={{
-                            fontFamily: "DM Sans, system-ui, sans-serif",
-                            fontSize: "0.58rem", letterSpacing: "0.28em",
-                            textTransform: "uppercase", fontWeight: 700, color: "#FF8C00",
-                          }}>
+                      {/* ── Dropdown panel — single vertical column ── */}
+                      <div
+                        className={`exp-dropdown${dropdownOpen ? " is-open" : ""}`}
+                        // Keep the close timer cancelled while inside the panel
+                        onMouseEnter={handleDropEnter}
+                        onMouseLeave={handleDropLeave}
+                        role="menu"
+                        aria-label="Experiences menu"
+                      >
+                        {/* Header */}
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            padding: "4px 14px 10px",
+                            borderBottom: "1px solid rgba(255,216,155,0.5)",
+                            marginBottom: "6px",
+                          }}
+                        >
+                          <span
+                            style={{
+                              fontFamily: "DM Sans, system-ui, sans-serif",
+                              fontSize: "0.56rem",
+                              letterSpacing: "0.28em",
+                              textTransform: "uppercase",
+                              fontWeight: 700,
+                              color: "#FF8C00",
+                            }}
+                          >
                             All Experiences
                           </span>
-                          <Link href="/experiences" className="exp-drop-all" onClick={() => setDropdownOpen(false)}>
-                            View All
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                          </Link>
                         </div>
 
-                        {/* Experience grid — 2 columns */}
-                        <div style={{
-                          display: "grid",
-                          gridTemplateColumns: "1fr 1fr",
-                          gap: "2px",
-                        }}>
+                        {/* Single-column experience list */}
+                        <div style={{ display: "flex", flexDirection: "column" }}>
                           {experiences.map((exp) => (
                             <Link
                               key={exp.slug}
                               href={`/experiences/${exp.slug}`}
                               className="exp-drop-item"
+                              role="menuitem"
                               onClick={() => setDropdownOpen(false)}
                             >
                               <span className="exp-drop-dot" />
-                              <span className="exp-drop-title">{exp.title}</span>
+                              <span className="exp-drop-title">
+                                {exp.title}
+                              </span>
                             </Link>
                           ))}
+                        </div>
+
+                        {/* Footer "View All" link */}
+                        <div className="exp-drop-footer">
+                          <Link
+                            href="/experiences"
+                            className="exp-drop-all"
+                            onClick={() => setDropdownOpen(false)}
+                          >
+                            View All Experiences
+                            <svg
+                              width="11"
+                              height="11"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              aria-hidden="true"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -572,46 +677,85 @@ export default function Navbar() {
                 }
 
                 return (
-                  <Link key={l.href} href={l.href}
+                  <Link
+                    key={l.href}
+                    href={l.href}
                     className={`nl${pathname === l.href ? " nl-active" : ""}`}
                     style={{
                       fontFamily: "DM Sans, system-ui, sans-serif",
-                      fontSize: "0.82rem", fontWeight: 700,
-                      color: pathname === l.href ? "#FF8C00" : solid ? "#3D2E0E" : "rgba(255,255,255,0.88)",
-                      textDecoration: "none", transition: "color 0.25s ease",
+                      fontSize: "0.82rem",
+                      fontWeight: 700,
+                      color:
+                        pathname === l.href
+                          ? "#FF8C00"
+                          : solid
+                            ? "#3D2E0E"
+                            : "rgba(255,255,255,0.88)",
+                      textDecoration: "none",
+                      transition: "color 0.25s ease",
                     }}
-                  >{l.label}</Link>
+                    aria-current={pathname === l.href ? "page" : undefined}
+                  >
+                    {l.label}
+                  </Link>
                 );
               })}
 
               {/* Book Now */}
               <button
-                onClick={() => window.dispatchEvent(new Event("raah:open-enquiry"))}
+                onClick={() =>
+                  window.dispatchEvent(new Event("raah:open-enquiry"))
+                }
                 className="nb"
-                style={{ padding: "10px 24px", fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#FFFFFF", border: "none", cursor: "pointer" }}
-              >Book Now</button>
+                style={{
+                  padding: "10px 24px",
+                  fontFamily: "DM Sans, system-ui, sans-serif",
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  color: "#FFFFFF",
+                  border: "none",
+                  cursor: "pointer",
+                }}
+              >
+                Book Now
+              </button>
             </nav>
 
             {/* ── Hamburger toggle — mobile only ── */}
             <button
               ref={toggleRef}
-              onClick={() => setOpen(o => !o)}
+              onClick={() => setOpen((o) => !o)}
               className="md:hidden hb-btn"
-              aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+              aria-label={
+                open ? "Close navigation menu" : "Open navigation menu"
+              }
               aria-expanded={open}
               aria-controls="mobile-nav-drawer"
               style={{
-                position: "relative", zIndex: 10001,
-                background: open ? "rgba(255,140,0,0.15)" : solid ? "rgba(255,140,0,0.08)" : "rgba(255,255,255,0.12)",
+                position: "relative",
+                zIndex: 10001,
+                background: open
+                  ? "rgba(255,140,0,0.15)"
+                  : solid
+                    ? "rgba(255,140,0,0.08)"
+                    : "rgba(255,255,255,0.12)",
                 border: `1.5px solid ${open ? "#FF8C00" : solid ? "rgba(255,140,0,0.25)" : "rgba(255,255,255,0.30)"}`,
                 color: open ? "#FF8C00" : solid ? "#FF8C00" : "#FFFFFF",
-                padding: "10px 12px", borderRadius: "8px",
-                cursor: "pointer", flexShrink: 0,
-                transition: "background 0.3s ease, border-color 0.3s ease, color 0.3s ease",
+                padding: "10px 12px",
+                borderRadius: "8px",
+                cursor: "pointer",
+                flexShrink: 0,
+                transition:
+                  "background 0.3s ease, border-color 0.3s ease, color 0.3s ease",
                 outline: "none",
               }}
             >
-              <span className={`hb-wrap${open ? " is-open" : ""}`} aria-hidden="true">
+              <span
+                className={`hb-wrap${open ? " is-open" : ""}`}
+                aria-hidden="true"
+              >
                 <span className="hb-line" />
                 <span className="hb-line" />
                 <span className="hb-line" />
@@ -639,24 +783,46 @@ export default function Navbar() {
         aria-hidden={!open}
       >
         {/* Drawer header */}
-        <div style={{
-          display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "16px 20px",
-          background: "#FFFFFF",
-          borderBottom: "1px solid rgba(255,216,155,0.6)",
-          flexShrink: 0, minHeight: "64px",
-        }}>
-          <span style={{
-            fontFamily: "DM Sans, system-ui, sans-serif",
-            fontSize: "0.58rem", letterSpacing: "0.28em",
-            textTransform: "uppercase", fontWeight: 700, color: "#FF8C00",
-          }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "16px 20px",
+            background: "#FFFFFF",
+            borderBottom: "1px solid rgba(255,216,155,0.6)",
+            flexShrink: 0,
+            minHeight: "64px",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "DM Sans, system-ui, sans-serif",
+              fontSize: "0.58rem",
+              letterSpacing: "0.28em",
+              textTransform: "uppercase",
+              fontWeight: 700,
+              color: "#FF8C00",
+            }}
+          >
             Navigation
           </span>
-          <button className="mob-close" onClick={handleClose} aria-label="Close navigation menu">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-              <line x1="18" y1="6" x2="6" y2="18"/>
-              <line x1="6" y1="6" x2="18" y2="18"/>
+          <button
+            className="mob-close"
+            onClick={handleClose}
+            aria-label="Close navigation menu"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
         </div>
@@ -664,7 +830,9 @@ export default function Navbar() {
         {/* Nav links */}
         <nav style={{ flex: 1, padding: "8px 24px 0", overflowY: "auto" }}>
           {links.map((l) => {
-            const isActive = pathname === l.href || (l.hasDropdown && pathname.startsWith("/experiences"));
+            const isActive =
+              pathname === l.href ||
+              (l.hasDropdown && pathname.startsWith("/experiences"));
 
             if (l.hasDropdown) {
               return (
@@ -672,7 +840,7 @@ export default function Navbar() {
                   {/* Accordion trigger */}
                   <button
                     className={`mob-exp-trigger${isActive || expMobileOpen ? " is-active" : ""}`}
-                    onClick={() => setExpMobileOpen(o => !o)}
+                    onClick={() => setExpMobileOpen((o) => !o)}
                     aria-expanded={expMobileOpen}
                   >
                     <span>{l.label}</span>
@@ -683,12 +851,18 @@ export default function Navbar() {
                   </button>
 
                   {/* Experience sub-links */}
-                  <div className={`mob-exp-list${expMobileOpen ? " is-open" : ""}`}>
+                  <div
+                    className={`mob-exp-list${expMobileOpen ? " is-open" : ""}`}
+                  >
                     {/* "All experiences" shortcut */}
                     <Link
                       href="/experiences"
                       className="mob-exp-sub-link"
-                      style={{ fontWeight: 700, color: "#FF8C00", borderBottom: "1px solid rgba(255,216,155,0.4)" }}
+                      style={{
+                        fontWeight: 700,
+                        color: "#FF8C00",
+                        borderBottom: "1px solid rgba(255,216,155,0.4)",
+                      }}
                     >
                       View All Experiences →
                     </Link>
@@ -725,7 +899,10 @@ export default function Navbar() {
             className="mob-book"
             onClick={() => {
               handleClose();
-              setTimeout(() => window.dispatchEvent(new Event("raah:open-enquiry")), 320);
+              setTimeout(
+                () => window.dispatchEvent(new Event("raah:open-enquiry")),
+                320,
+              );
             }}
           >
             Book an Experience
