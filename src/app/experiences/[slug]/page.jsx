@@ -19,10 +19,29 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const exp = getExperienceBySlug(slug);
   if (!exp) return {};
+
+  const title = exp.metaTitle || `${exp.title} — ${exp.subtitle} | Raah Experiences`;
+  const description = exp.metaDescription || exp.tagline;
+  const url = `https://www.raahexperiences.in/experiences/${exp.slug}`;
+  const image = cloudImg(exp.heroImage);
+
   return {
-    title: `${exp.title} — ${exp.subtitle}`,
-    description: exp.tagline,
-    openGraph: { images: [cloudImg(exp.heroImage)] },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
   };
 }
 
@@ -44,9 +63,76 @@ export default async function ExperienceDetailPage({ params }) {
   const related = getRelatedExperiences(exp.slug, 3);
   const waMsg   = `Hello! I'd like to enquire about "${exp.title}" by Raah India Experiences.`;
   const waUrl   = `https://wa.me/919929992539?text=${encodeURIComponent(waMsg)}`;
+  const pageUrl = `https://www.raahexperiences.in/experiences/${exp.slug}`;
 
   return (
     <>
+      {/* ── TouristTrip schema ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            "@id": `${pageUrl}#trip`,
+            name: exp.title,
+            description: exp.tagline,
+            url: pageUrl,
+            touristType: "International tourists, heritage travellers",
+            itinerary: {
+              "@type": "ItemList",
+              itemListElement: (exp.glancePoints || []).map((point, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                name: point,
+              })),
+            },
+            offers: (exp.priceUSD || exp.priceINR) ? {
+              "@type": "Offer",
+              price: exp.priceUSD || exp.priceINR,
+              priceCurrency: exp.priceUSD ? "USD" : "INR",
+              availability: "https://schema.org/InStock",
+              url: pageUrl,
+            } : undefined,
+            provider: { "@id": "https://www.raahexperiences.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* ── FAQPage schema ── */}
+      {exp.faqs && exp.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: exp.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }}
+        />
+      )}
+
+      {/* ── BreadcrumbList schema ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.raahexperiences.in" },
+              { "@type": "ListItem", position: 2, name: "Experiences", item: "https://www.raahexperiences.in/experiences" },
+              { "@type": "ListItem", position: 3, name: exp.title, item: pageUrl },
+            ],
+          }),
+        }}
+      />
+
       <style>{`
         /* ── Back link ── */
         .back-link {
