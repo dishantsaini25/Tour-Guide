@@ -339,7 +339,7 @@ metaDescription: "Experience Jaipur's most authentic hours with a sunrise walkin
 
   // ── 3. The Cosmic & Imperial Triad ──────────────────────────────
   {
-    slug: "cosmic-imperial-triad",
+    slug: "the-crown-of-jaipur",
     metaTitle: "Jaipur Heritage Walking Tour | Hawa Mahal & Jantar Mantar Tour — The Crown of Jaipur",
     metaDescription: "A Jaipur heritage walking tour connecting Hawa Mahal, Jantar Mantar and City Palace through one remarkable royal story. Discover the City Palace Jaipur tour experience, guided by local storytellers at Raah Experiences.",
     priceUSD: 30,
