@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 import { experiences } from "@/data/experiences";
 
 // ── Raah India logo — local public/logo.png ─────────────────────
-const LOGO_URL = "/rahhLogo7.png";
+const LOGO_URL = "/rahhLogo.png";
 
 // ── Static nav links ─────────────────────────────────────────────
 const links = [
