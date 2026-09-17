@@ -517,14 +517,14 @@ metaDescription: "Experience Jaipur's most authentic hours with a sunrise walkin
   // ── 5. Beyond the Pink ──────────────────────────────────────────
   {
     slug: "beyond-the-pink",
-metaTitle: "Pink City Tour Jaipur | Old City Walking Tour & Street Food — Beyond the Pink",
-metaDescription: "Step into Jaipur's living streets with this Pink City tour — an old city walking tour through artisan lanes, evening bazaars, and a curated Jaipur street food tour. Guided by local storytellers at Raah Experiences.",
+    metaTitle: "Pink City Tour Jaipur | Street Food Walk – Beyond the Pink",
+    metaDescription: "Step into Jaipur's living streets on this Pink City tour — artisan lanes, evening bazaars, and a curated street food trail with local storytellers",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
     title: "Beyond the Pink",
     subtitle: "Where Every Street Tells a Story",
-    question: "How do people truly live in the Pink City?",
+    question: "How do people truly live in Jaipur, the Pink City?",
     tagline: "Step past the postcards into the living, breathing heart of a 300-year-old walled city.",
     theme: "Evening Heritage · Street Food · Old City Bazaars · Living Culture",
     filters: ["Evening", "Heritage", "Food"],
@@ -536,7 +536,7 @@ metaDescription: "Step into Jaipur's living streets with this Pink City tour —
     groupSize: "Up to 8 guests",
     languages: ["English", "Spanish"],
     location: "Walled City, Jaipur",
-    meetingPoint: "Main Entry Gate, Hawa Mahal",
+    meetingPoint: "Main Entry Gate, Hawa Mahal", // ⚠️ conflicts with beforeYouCome.meetingPoint below — needs client confirmation, not an SEO fix
     ...getExperienceImages("beyond-the-pink"),
     idealFor: ["Food enthusiasts", "Culture & heritage travellers", "Street photography lovers", "Those seeking authentic over touristic", "Return visitors wanting depth"],
     inclusions: [
@@ -572,19 +572,19 @@ metaDescription: "Step into Jaipur's living streets with this Pink City tour —
       groupSize: "Small & Intimate (up to 8 guests)",
       languages: "English & Spanish",
       experienceType: "Heritage · Bazaars · Local Life · Street Food",
-      meetingPoint: "Chandni Chowk, City Palace Complex",
+      meetingPoint: "Chandni Chowk, City Palace Complex", // ⚠️ see note above
     },
-    story: `Jaipur is often introduced through its forts, palaces, and pink façades. But the city reveals its true character in the evening — when shops glow under warm lights, prayers echo through temples, streets fill with conversation, and legendary food stalls signal the end of a working day.\n\nBeyond the Pink was created for travellers who want to understand Jaipur as a living city, not just a historic one. Every day, thousands of visitors photograph the same iconic landmarks. Very few step sideways into the lanes where lac bangle makers have worked for centuries, where master brass craftsmen shape metal by lamplight, and where the same families have served pyaz kachori from the same spot for generations.\n\nThis experience moves through those lanes. Slowly. With intention.`,
+    story: `Jaipur, the Pink City, is renowned for the distinctive terracotta hue painted across its historic facades — a living celebration of royal heritage. Beyond its majestic architectural wonders, Jaipur is also celebrated for its colourful bazaars, vibrant streets, rich traditions & festive culture steeped in centuries of folklore. But have you ever wondered what lies beyond the pink facades?\n\nBeyond the Pink welcomes you to experience a different world where the city's heart beats faster — wander through narrow lanes, discover centuries-old havelis and family-owned businesses, serene shrines tucked off the major streets, and vibrant markets buzzing with local eateries serving secret family recipes. The journey winds through the major markets of Jaipur, uncovering landmarks like Hawa Mahal, Tripoliya Darwaza & Ishwari Laat. From there, the walk gently passes through narrow lanes where the city's true character unveils — a vibrant mix of energy, chaotic charm, and fast-paced local life offering an unfiltered glimpse into Jaipur.\n\nThe walk begins with an understanding of the city's meticulous 18th-century planning by the founder of Jaipur, who created India's best-planned city. The magnificent grid pattern connects major streets with narrow lanes cutting at 90-degree angles, offering hassle-free movement without the fear of getting lost. Uncover the mysteries behind each public square, which acts as a point of intersection for streets running north to south and east to west. Continuing ahead, discover fascinating facts about Jaipur's iconic landmark, Hawa Mahal — the Palace of Winds — which features 953 small, intricate windows giving it the shape of a honeycomb structure.\n\nFrom there, discover Jaipur's busiest market, Purohit Ji Ka Katla — a commercial hub for daily needs, costumes, and wedding outfits. There are several other markets to uncover as part of the experience. Winding through the narrow lanes, marvel at a small cluster of centuries-old houses restored to their former glory under the "Smart City" project. This part of the city reveals its true character, taking you back in time to visualise how Jaipur looked, felt, and flourished before it was painted its pink hue. Alongside, explore centuries-old artisan lanes — in particular, Maniharon Ka Rasta, home to the lac-bangle-making community whose beautiful bangles adorn the hands of married women across the city.\n\nOur route leads to Jaipur's safest and most iconic local eateries, where you can savour authentic Indian delicacies — from crispy pani puri and flavourful kachoris to sweet jalebi, refreshing lassi, and piping-hot chai. Throughout the journey, we take you to handpicked spots renowned for their exceptional taste, traditional recipes, and warm local hospitality.\n\nWe invite you to experience Jaipur beyond its famous pink walls — discovering the city at its finest, and experiencing it in its most authentic form.`,
     whatYouExperience: [
-      "Discover the city beyond the monuments, bustling bazaars, chaotic streets, local life thriving within the old city. ",
-      "Encounter generation-old family businesses — from metalworkers & marble craftsmen to lac bangle makers & traditional traders",
-      "Step into the living kitchens of Jaipur to savor century-old family recipes passed down one generation to another.",
-      "Taste the culinary timeline: pani puri, pyaz kachori, artisanal lassi, rabri, and kulfi in clay pots",
-      "Discover more about Jaipur over a chai talks at a local tea stall with your tour host. ",
-      "Witness how locals work, worship, commute, eat and interact within the lanes of the old city",
-      "As dusk settles on the city, experience the spirituality and deep devotion of local people during evening rituals at renowned shrines",
-      "Discover hidden courtyards and havelis that most tourists walk past without noticing"
-    ],
+  "Discover the city beyond the monuments — wander through bustling bazaars like Purohit Ji Ka Katla, chaotic streets, and local life thriving within the old city. ",
+  "Encounter generation-old family businesses along Maniharon Ka Rasta — from metalworkers & marble craftsmen to lac bangle makers & traditional traders",
+  "Step into the living kitchens of Jaipur to savor century-old family recipes passed down one generation to another.",
+  "Taste the culinary timeline: pani puri, pyaz kachori, artisanal lassi, rabri, and kulfi in clay pots",
+  "Discover more about Jaipur over a chai talks at a local tea stall with your tour host. ",
+  "Witness how locals work, worship, commute, eat and interact within the lanes of the old city",
+  "As dusk settles on the city, experience the spirituality and deep devotion of local people during evening rituals at renowned shrines",
+  "Discover hidden courtyards and havelis that most tourists walk past without noticing"
+],
     highlights: [
       { icon: "🏮", text: "Old City illuminated by evening" },
       { icon: "💍", text: "Lac bangle maker workshops" },
@@ -602,6 +602,8 @@ metaDescription: "Step into Jaipur's living streets with this Pink City tour —
       { q: "How much walking is involved?", a: "Approximately 3–4 km at a relaxed pace with many stops. Comfortable shoes are strongly recommended." },
       { q: "Is it suitable for children?", a: "Yes — children who enjoy exploring and trying new foods tend to love this walk." },
       { q: "Can I book privately?", a: "Yes, private bookings are available and highly recommended for a more personalised experience." },
+      { q: "Is this Pink City tour safe for solo travellers?", a: "Yes — every Raah experience is led personally by a licensed guide who stays with the group throughout, and routes are planned through well-populated parts of the old city. Groups are capped at 8 guests." },
+      { q: "Is an evening walking tour in Jaipur safe?", a: "Yes. Beyond the Pink moves through illuminated, well-frequented parts of the old city rather than isolated back lanes, with your guide present throughout." },
     ],
   },
 
