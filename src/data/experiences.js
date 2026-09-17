@@ -161,8 +161,8 @@ export const experiences = [
   // ── 1. Jaipur at Dawn ───────────────────────────────────────────
  {
     slug: "jaipur-at-dawn",
-metaTitle: "Jaipur Sunrise Walking Tour | Morning Heritage Walk — Jaipur at Dawn",
-metaDescription: "Experience Jaipur's most authentic hours with a sunrise walking tour through temples, flower markets and local eateries. An early morning Jaipur tour for travellers who want to see the city before the crowds — with Raah Experiences.",
+metaTitle: "Jaipur Sunrise Walking Tour | Jaipur at Dawn",
+metaDescription: "A sunrise walking tour through Jaipur's temples, flower markets and local eateries — see the old city before the crowds arrive, with Raah Experiences.",
   priceUSD: 30,
   priceINR: 2500,
   priceNote: null,
@@ -250,8 +250,8 @@ metaDescription: "Experience Jaipur's most authentic hours with a sunrise walkin
   // ── 2. The Ridge & Ramparts ──────────────────────────────────────
   {
     slug: "ridge-and-ramparts",
-    metaTitle: "Amber Fort Walking Tour | Jaigarh Fort Trek — The Ridge & Ramparts",
-    metaDescription: "Discover Amber beyond the palace with a guided Amber Fort walking tour — hidden temples, ancient stepwells, and a Jaigarh Fort trek through the maharaja's secret passage. Amber Fort hiking for small groups with Raah Experiences.",
+    metaTitle: "Amber to Jaigarh Fort Trek | The Ridge & Ramparts",
+    metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwells, and the maharaja's secret tunnel on this guided Ridge & Ramparts trek with Raah Experiences.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
@@ -340,8 +340,8 @@ metaDescription: "Experience Jaipur's most authentic hours with a sunrise walkin
   // ── 3. The Cosmic & Imperial Triad ──────────────────────────────
   {
     slug: "the-crown-of-jaipur",
-    metaTitle: "Jaipur Heritage Walking Tour | Hawa Mahal & Jantar Mantar Tour — The Crown of Jaipur",
-    metaDescription: "A Jaipur heritage walking tour connecting Hawa Mahal, Jantar Mantar and City Palace through one remarkable royal story. Discover the City Palace Jaipur tour experience, guided by local storytellers at Raah Experiences.",
+    metaTitle: "Hawa Mahal & Jantar Mantar Tour | Crown of Jaipur",
+    metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one royal story spanning astronomy, architecture and history, with Raah Experiences.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
