@@ -4,7 +4,7 @@ import Link from "next/link";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import MobileSlider from "@/components/MobileSlider";
-import { journalArticles } from "@/data/experiences";
+import { journalArticles } from "@/data/journal";
 import { ArrowUpRight } from "lucide-react";
 import { cloudImg } from "@/lib/cloudinaryImage";
 

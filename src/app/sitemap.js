@@ -1,4 +1,5 @@
 import { experiences } from "@/data/experiences";
+import { journalArticles } from "@/data/journal";
 
 // ── Production base URL ───────────────────────────────────────────
 // Update this if the domain changes.
@@ -67,16 +68,13 @@ export default function sitemap() {
   }));
 
   // ── Dynamic journal article pages ────────────────────────────────
-  // Journal articles are currently rendered on a single /journal page
-  // (no individual slug routes exist), so they are not included here.
-  // If individual article pages are added in the future, uncomment:
-  //
-  // const journalPages = journalArticles.map((article) => ({
-  //   url: `${BASE_URL}/journal/${article.slug}`,
-  //   lastModified: new Date(),
-  //   changeFrequency: "monthly",
-  //   priority: 0.6,
-  // }));
+  // Individual article routes exist at /journal/[slug].
+  const journalPages = journalArticles.map((article) => ({
+    url: `${BASE_URL}/journal/${article.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
 
-  return [...staticPages, ...experiencePages];
+  return [...staticPages, ...experiencePages, ...journalPages];
 }
