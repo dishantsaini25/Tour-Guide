@@ -4,6 +4,7 @@
  */
 
 export const journalArticles = [
+  
      // How Many Days Do You Need in Jaipur?
   {
     slug: "how-many-days-in-jaipur",
@@ -11,7 +12,7 @@ export const journalArticles = [
     excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
     category: "Jaipur Guide",
     readTime: "8 min read",
-    image: "/experiances/Ridge and ramparts/thumbnail.jpg", // TODO: swap for a dedicated hero image if you have one
+    image: "/images/IMG-20251222-WA0002 (1).jpg", // TODO: swap for a dedicated hero image if you have one
     relatedExperiences: [
       "the-crown-of-jaipur",
       "jaipur-at-dawn",
@@ -82,7 +83,7 @@ Trip length changes what you see, but it shouldn't change how safe you feel doin
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
     category: "Jaipur Guide",
     readTime: "10 min read",
-    image: "/experiances/Jaipur at down/thumbnail.jpg",
+    image: "/experiances/Ridge and ramparts/ridge1.jpeg",
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-blue-hour",
