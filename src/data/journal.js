@@ -4,6 +4,77 @@
  */
 
 export const journalArticles = [
+     // How Many Days Do You Need in Jaipur?
+  {
+    slug: "how-many-days-in-jaipur",
+    title: "How Many Days Do You Need in Jaipur?",
+    excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
+    category: "Jaipur Guide",
+    readTime: "8 min read",
+    image: "/experiances/Ridge and ramparts/thumbnail.jpg", // TODO: swap for a dedicated hero image if you have one
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-at-dawn",
+      "ridge-and-ramparts",
+      "beyond-the-pink",
+      "the-blue-hour",
+      "farm-and-fire",
+      "the-lost-kingdom",
+      "living-walled-city",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+      { q: "Is 2 days enough for Jaipur?", a: "Yes — enough to combine 2–3 experiences and see both the city's quiet early hours and its lively evenings." },
+      { q: "Is 1 day enough to see Jaipur properly?", a: "Enough for a genuine impression through one well-chosen experience, though not enough to see everything Jaipur offers." },
+      { q: "Can I combine two experiences on the same day?", a: "In some cases, yes — Jaipur at Dawn and The Ridge & Ramparts sit close together in the morning. Beyond the Pink and The Blue Hour are both evening options, but function as alternatives to each other rather than a same-day pairing." },
+      { q: "Which single experience should I choose with only one day?", a: "The Crown of Jaipur offers the most complete single-day option. For early risers, pairing Jaipur at Dawn with The Ridge & Ramparts covers even more ground — together, these experiences touch on most of what makes Jaipur worth understanding." },
+      { q: "Do I need to book in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for weekend-only experiences like The Lost Kingdom." },
+      { q: "Are these experiences suitable for children?", a: "Most welcome families, though age recommendations vary — Jaipur at Dawn suits children 7 and above, while The Lost Kingdom and The Ridge & Ramparts, involving more walking, are better suited to children 12–14 and older." },
+      { q: "What languages are the experiences conducted in?", a: "English and Spanish." },
+    ],
+    body: `There's no universal answer to this — it depends entirely on how you want to experience the city. What matters more than the number itself is understanding what each additional day actually buys you, so you can decide with your own priorities in mind rather than guessing.
+
+## 1. Day in Jaipur
+
+One day means choosing depth over breadth. Rather than splitting your time across several short visits, the better use of a single day is committing fully to one experience that gives you a complete arc — a beginning, a story, and a natural end point.
+
+[The Crown of Jaipur](/experiences/the-crown-of-jaipur) works well here — it moves through three of Jaipur's most iconic landmarks as one connected narrative rather than three separate stops, so you leave with a coherent sense of the city rather than a scattered list of photos.
+
+For early risers wanting to cover more ground, [Jaipur at Dawn](/experiences/jaipur-at-dawn) followed directly by [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth considering — the two sit close together on the clock, running from 5:00 AM through to 11:30 AM, with a clean one-hour gap in between for the short drive out to Amber. Done this way, a single day can stretch to cover both the old city at sunrise and Amber's fort and ridge trail.
+
+## 2. Days in Jaipur
+
+Two days is enough to see Jaipur in more than one mood — its stillness at dawn, its depth at midday, its energy after dark.
+
+A dependable structure: open day one with [Jaipur at Dawn](/experiences/jaipur-at-dawn), spend the afternoon at [The Crown of Jaipur](/experiences/the-crown-of-jaipur) or [Artisan's Jaipur](/experiences/artisans-jaipur), then close day two with [Beyond the Pink](/experiences/beyond-the-pink) as the old city's bazaars light up for the evening. Prefer to see the city from a jeep rather than on foot after dark? [The Blue Hour](/experiences/the-blue-hour) makes a strong substitute for that evening slot, running through illuminated forts and bazaars in open-air comfort.
+
+The choice between Beyond the Pink and The Blue Hour really comes down to pace — one is a walk through living streets, the other a scenic drive past lit-up monuments. Neither is objectively better; they simply answer different moods.
+
+## 3. Days in Jaipur
+
+Three days is where a trip stops feeling like a checklist and starts feeling like a genuine visit — enough time to move through heritage, food, and nature without repeating ground.
+
+**Day 1** — [Jaipur at Dawn](/experiences/jaipur-at-dawn), then [Beyond the Pink](/experiences/beyond-the-pink) in the evening
+**Day 2** — [The Ridge & Ramparts](/experiences/ridge-and-ramparts) in the morning, [Farm & Fire](/experiences/farm-and-fire) in the evening — a shift from monuments to something more personal, an evening inside a local family's home and kitchen
+**Day 3** — [The Lost Kingdom](/experiences/the-lost-kingdom) if it falls on a weekend, since this hiking experience through the Aravalli Hills only runs Saturdays and Sundays. On a weekday, [Living the Walled City](/experiences/living-walled-city) is the natural alternative — a slower walk through the city's residential lanes and everyday rhythms.
+
+This is also the point where a trip starts to feel intentional rather than reactive — you're not squeezing in whatever fits, you're building a sequence that makes sense.
+
+## More Than 3 Days
+
+Beyond three days, the smart move is prioritizing the experiences built for depth rather than headline sights — [Living the Walled City](/experiences/living-walled-city) and [Artisan's Jaipur](/experiences/artisans-jaipur), if you haven't already, both reward the kind of unhurried attention that shorter trips don't allow.
+
+A longer stay also opens the door to Jaipur's surroundings — a day at Ranthambore National Park, a half-day in Pushkar, or a few hours at the Jhalana Leopard Reserve, one of very few places where leopards can be reliably spotted minutes from a major city. None of these need a full guided day to justify — even a half-day addition changes the shape of a longer trip meaningfully. We cover more of these independent add-ons in our [complete Jaipur guide](/journal/things-to-do-in-jaipur-complete-guide).
+
+## Whatever the Length, Safety Isn't a Variable
+
+Trip length changes what you see, but it shouldn't change how safe you feel doing it. Every Raah experience is personally led by a licensed guide throughout, with routes kept to well-populated parts of the city — including the early morning and evening walks. Groups stay capped at 8 guests, and private bookings are available for solo travellers who'd prefer it.`,
+  },
     //   Things to Do in Jaipur: The Complete Guide
   {
     slug: "things-to-do-in-jaipur-complete-guide",
@@ -109,6 +180,7 @@ On the ground, every Raah experience is led personally by a licensed guide who s
 
 "We had a list of things to do and in one day with Shobhit we were able to do most of it. He also took us to some lesser known but equally as beautiful places in Jaipur which was such a great addition." — Diyva Mowji, USA`,
   },
+ 
     // Why I Created Raah
   {
     slug: "why-i-created-raah",
