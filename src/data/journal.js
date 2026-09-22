@@ -4,8 +4,269 @@
  */
 
 export const journalArticles = [
-  
-     // How Many Days Do You Need in Jaipur?
+//     // Best English & Spanish-Speaking Guide in Jaipur Blog 5
+//   {
+//     slug: "english-spanish-speaking-guide-jaipur",
+//     title: "Best English & Spanish-Speaking Guide in Jaipur",
+//     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
+//     category: "Booking Guide", // TODO: same guess as Blog 4 — confirm category naming
+//     readTime: "8 min read",
+//     image: "/journal Images/raah-client-image-1.webp", // TODO: placeholder — confirm or swap
+//     relatedExperiences: [
+//       "ridge-and-ramparts",
+//     ],
+//     images: [
+//       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+//     ],
+//     faqs: [
+//       { q: "Are all experiences available in Spanish, or only some?", a: "All experiences are conducted in both English and Spanish as standard, with no additional charge for either language." },
+//       { q: "Is the guide a native Spanish speaker?", a: "Not by birth, but functionally close to it. Shobhit studied Spanish at the University of Salamanca in Spain, which shaped both his fluency and his accent to the point that Spanish-speaking guests routinely ask where he learned the language, whether he's actually Indian, and often remark that — having met other Spanish-speaking guides before — he's the first one who sounds genuinely native. His team also includes a guide with more than 40 years of experience leading large groups specifically in Spanish." },
+//       { q: "Can I request a guide who speaks a language other than English or Spanish?", a: "Yes — guides fluent in Italian, German, Russian, or Japanese can be arranged on request, subject to availability, with independent pricing that can run up to an additional $30. It's best to mention any specific language requirement at the time of booking so availability can be checked and confirmed in advance." },
+//       { q: "Do private bookings cost more for a specific language?", a: "No — English and Spanish are both included at standard experience pricing, with no language-based surcharge." },
+//       { q: "Can I book directly if I only speak Spanish?", a: "Yes — enquiries can be made via WhatsApp or the Contact page, and the entire booking process can be handled in Spanish from start to finish." },
+//     ],
+//     body: `A guide's job isn't just knowing the history of a place — it's being able to actually communicate that history in a way that lands. For English and Spanish-speaking travellers visiting Jaipur, that often narrows the real question down to something more specific: not "who knows the most about Amber Fort," but "who can actually make that knowledge feel alive in your own language." Here's what to look for, and what guests who've actually booked bilingual guides in Jaipur have said about the experience.
+
+// ## Why Language Matters on a Heritage Walk
+
+// A heritage walk is fundamentally a storytelling experience, not a fact-delivery service. The difference between a guide who translates information on the fly and one who's genuinely fluent shows up in the small details — timing a joke correctly, catching a question mid-sentence before it's even finished, explaining nuance and cultural context rather than reciting a memorized script word for word.
+
+// This matters more in Jaipur specifically than in many other tourist cities, because much of what makes the city interesting isn't written on a plaque anywhere. It's oral history, local sayings, family stories, and cultural context that only comes through in real, unscripted conversation. A guide working comfortably in a second or third language, rather than reading from a fixed script, can adapt naturally when a guest asks something unexpected — which happens constantly on a walk built around spontaneous conversation rather than a rehearsed routine.
+
+// ## Meet Your Guide: Background & Fluency
+
+// Raah's experiences are led by Shobhit, who holds a Jaipur Regional Level Government Approved Tour Guide license and a Pan India Incredible India Tour Guide (IITG) certification — the same credentials we cover in more depth in [how to find a reputable tour guide in Jaipur](/journal/reputable-tour-guide-jaipur) — and conducts every experience in both English and Spanish as standard, not as a paid add-on reserved for guests willing to pay extra.
+
+// His Spanish fluency has a specific origin worth mentioning: he studied Spanish at the University of Salamanca in Spain, which gives him both an accent and a level of fluency that consistently surprises Spanish-speaking guests. It's common enough that guests ask him directly where he learned his Spanish, whether he's actually Indian, and — perhaps the most telling reaction — remark that they've met plenty of Spanish-speaking guides before, but he's the first one who sounds like an actual native speaker.
+
+// Beyond Shobhit himself, one of his team members brings more than 40 years of experience leading high-strength groups specifically in Spanish, meaning Raah's Spanish-language capability isn't dependent on a single person's schedule.
+
+// ## What Guests Say: English & Spanish Reviews
+
+// Rather than take fluency on faith, it's worth looking at what real guests, writing unprompted and in their own language, have actually said.
+
+// **In English:**
+
+// > "I wholeheartedly recommend this Guide's services. He was the most professional, knowledgeable and engaging storyteller we have ever met. My mother and I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all. His English is excellent, and his communication with clients is outstanding."
+// > — Viktorija Satkauskienė, Lithuania
+
+// That comparison carries extra weight since Jaipur wasn't her first stop on a three-week trip — she had several other guides to measure the experience against.
+
+// > "Your English delivery was excellent as was your priority to keep us safe at all times. You taught us many aspects and kept the right balance between too much and too little information, which is very important."
+// > — John Collins, United Kingdom
+
+// > "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail."
+// > — Leva Kuode, Lithuania
+
+// **In Spanish:**
+
+// > "I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences."
+// > — Maria Campos, México
+
+// Edith Maria Hoyos, from El Salvador, wrote an entire review in Spanish praising both the guiding and the language fluency, closing with simply:
+
+// > "¡¡Muy buen español!!"
+// > — Edith Maria Hoyos, El Salvador
+
+// > "Nuestra experiencia con Shobhit ha sido maravillosa. Nos ha demostrado un gran conocimiento de cada lugar visitado. Siempre muy amable y pendiente en todo momento de nosotros."
+// > — Marcela Padilla, México
+
+// What stands out across both language groups isn't simply "he spoke the language well" — it's that guests specifically and repeatedly call out communication and clarity as a highlight of the entire trip, which is a considerably stronger signal than fluency alone would be.
+
+// ## Which Experiences Work Best in Each Language
+
+// Every Raah experience — [Jaipur at Dawn](/experiences/jaipur-at-dawn), [The Crown of Jaipur](/experiences/the-crown-of-jaipur), [The Ridge & Ramparts](/experiences/ridge-and-ramparts), and the rest — is conducted equally well in English or Spanish, so the choice really comes down to personal preference rather than any experience being better suited to one language over another.
+
+// That said, [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth calling out specifically for Spanish-speaking travellers, since it's the experience most directly tied to Amber Fort — a landmark with genuinely strong search interest among Spanish-speaking visitors researching Jaipur, through terms like *fuerte amber* and *fort d'amber*. That makes it a natural starting point if you're coming from a Spanish-speaking country and want the most complete Amber experience available in your own language.
+
+// Ready to book in your language? [Meet your guide](/about), or head straight to [The Ridge & Ramparts](/experiences/ridge-and-ramparts) if Amber is top of your list.`,
+//   },
+
+//    // How to Find a Reputable Tour Guide in Jaipur Blog 4
+//   {
+//     slug: "reputable-tour-guide-jaipur",
+//     title: "How to Find a Reputable Tour Guide in Jaipur",
+//     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
+//     category: "Booking Guide", // TODO: confirm — doesn't match existing categories, guessed
+//     readTime: "8 min read",
+//     image: "/experiances/The blue hour/blueH1.jpg", // TODO: no hero image specified — placeholder, confirm or swap
+//     relatedExperiences: [], // TODO: no specific experiences named in this content — confirm if you want any shown
+//     images: [
+//       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+//       { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+//     ],
+//     faqs: [
+//          { q: "Is this guide's license real?", a: "Yes — Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification. Both are official, government-issued credentials, not self-claimed titles." },
+//       { q: "Are unlicensed guides always untrustworthy?", a: "Not necessarily — but licensing remains the clearest external signal available to a traveller who otherwise has no independent way to verify a stranger's actual expertise. It meaningfully reduces risk, even though it can't guarantee a perfect experience on its own." },
+//       { q: "Why do some guides push shopping stops so heavily?", a: "Many operate on a commission model, where shops quietly pay guides or drivers a fee for every tourist brought through the door — a cost that inevitably gets passed on to you through inflated prices once you're inside." },
+//       { q: "Does Raah's guide work alone, or are there other guides on the team?", a: "Raah is a family-led concept rather than a solo operation. Founder Shobhit and his mentor and father both personally lead walking tours, built specifically to go beyond the standard, checklist-style itinerary most visitors default to. The goal has always been showing guests the real Jaipur, not steering them toward shopping stops — though if you're genuinely looking for honest local recommendations, they're happy to help with that too." },
+//       { q: "Can I request a private, one-on-one experience?", a: "Yes — every Raah experience can be booked privately for couples, families, or small groups who'd prefer a more personalized pace." },
+//     ],
+//     body: `Jaipur has no shortage of people offering to show you around — outside every major fort, in every hotel lobby, on every street corner near a monument. Some are excellent. Many aren't. The difference usually isn't obvious until you're already midway through a tour that's turned into three unplanned stops at "family-run" shops with suspiciously enthusiastic recommendations, or a rushed walk through the main sights that leaves you with photos but no real understanding of what you actually saw. Knowing what actually separates a reputable guide from an opportunistic one can save your trip — not just your budget, but the entire experience of a city that rewards genuine local knowledge far more than a quick photo stop ever could.
+
+// This matters more in Jaipur specifically than it might elsewhere, because the city's real depth — its craft traditions, its layered history, the way its 18th-century planning still shapes daily life — isn't something you pick up by simply walking past monuments. It requires someone who actually knows the place, has earned the right credentials, and is invested in showing it to you honestly rather than steering you toward wherever pays the best commission. For a full picture of what a Jaipur trip with Raah looks like, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide).
+
+// ## What Makes a Guide "Licensed" in India
+
+// Tour guiding in India isn't an unregulated free-for-all, even though it can feel that way on the ground when you're approached by half a dozen self-described "guides" outside a single monument. The Ministry of Tourism and individual state governments issue formal guide licenses, and these come at two distinct levels, each meaning something different.
+
+// - **Regional-level license** — issued by a specific state, in this case Jaipur and Rajasthan, authorizing a guide to operate within that particular region
+// - **National-level certification** — the Incredible India Tour Guide (IITG) credential, a considerably more rigorous, government-administered certification that qualifies a guide to work across the entire country, not just one city, requiring a broader depth of training to obtain
+
+// Both of these require passing formal training and a real examination process. They are not self-issued titles, something a person can simply claim, or a line printed on a hastily made business card. A guide who holds both a state-level license and the national IITG certification has demonstrably gone through meaningfully more vetting than someone who has simply memorized a handful of facts about Amber Fort and positioned themselves outside the entrance, waiting for tourists who don't know better.
+
+// **Raah's founder, Shobhit, holds a Jaipur Regional Level Government Approved Tour Guide license alongside the Pan India Incredible India Tour Guide (IITG) certification** — both official, government-recognized credentials rather than informal or self-appointed titles. This dual credentialing means he's qualified not just to guide within Jaipur specifically, but has met the national standard that very few local, informally operating guides ever pursue.
+
+// ## Red Flags: Unlicensed Guides & Forced Shopping Stops
+
+// The most common complaint from travellers touring India isn't actually about the sights themselves — it's about guides who quietly steer every itinerary toward specific shops, workshops, or so-called "cooperatives" that pay a commission for every tourist walked through the door. This isn't a rare, isolated occurrence you might get unlucky with once. It's a well-documented pattern across popular Indian tourist destinations, repeated so consistently across cities and guides that it's worth understanding the mechanics behind it, not just the symptom.
+
+// Here's typically how it works: a driver or guide receives a flat fee, or a percentage of whatever you spend, simply for bringing you into a particular shop. That cost doesn't disappear — it gets built directly into the inflated prices you're quoted once you're inside, meaning you effectively pay for your own guide's commission without ever being told that's what's happening.
+
+// A few specific patterns are worth watching for:
+
+// - **Unplanned detours to shops** described as being conveniently "on the way," especially ones the guide seems unusually invested in you actually entering
+// - **Pressure or guilt if you decline to browse or buy anything** — a good guide respects a simple "no thank you" without repeating the offer three more times
+// - **Guides who approach you directly at monuments**, with no prior booking and no verifiable reviews you can check independently — this carries more risk since there's no accountability trail if something goes wrong
+// - **Vague or evasive answers when you ask about licensing specifically** — a genuinely credentialed guide will name their exact license and issuing authority without hesitation, because it's a real, checkable fact rather than something they'd rather you not look into too closely
+
+// None of this means every independent, informally operating guide is dishonest — plenty aren't. But it does mean the burden of verification realistically falls on you, the traveller, before you book, not after you're already several hours into a day together and it's too late to easily change course.
+
+// ## How Raah Is Structured Differently
+
+// Raah is built specifically around avoiding this model entirely, rather than simply claiming to be different while operating the same way underneath. There are no commission-based shopping stops built into any experience — the walks go wherever the story genuinely goes, not wherever a partnership fee happens to lead.
+
+// Raah's walking experiences are led personally by Shobhit and his mentor and father, rather than being outsourced to a rotating pool of guides once a booking is confirmed online. This is a small, deliberately family-led model, built specifically to promote thoughtful walking tours that go well beyond a standard, checklist-style itinerary — which means the credentials and depth of knowledge you're actually vetting before booking belong to the exact people who show up on the day, not some substitute assigned last-minute.
+
+// Group sizes are also capped at 8 guests across every single experience Raah runs. This isn't just a nice-to-have detail — a group that small makes a shopping-commission model commercially pointless in the first place, since the entire format is built around depth, conversation, and storytelling rather than volume. You can't meaningfully run a high-commission tourist-shop pipeline through groups of 8 people at a time; the economics simply don't support it, which is itself a structural reason to trust the model rather than just a stated intention.
+
+// As one guest put it plainly: *"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. No one had ever shared the city's history with such passion and enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding."* That guest, Viktorija Satkauskienė, had already travelled with several different guides across a three-week trip before reaching Jaipur — which makes the comparison meaningful, since it wasn't her only reference point.
+
+// Language fluency matters here too — see our [guide to finding an English or Spanish-speaking guide in Jaipur](/journal/english-spanish-speaking-guide-jaipur) for what past guests have said specifically about communication.
+
+// ## Questions to Ask Before Booking
+
+// Whether you end up booking with Raah or with anyone else in Jaipur, a handful of questions are worth asking any guide before you commit to a full day together:
+
+// ## What to Expect When You Book With Raah
+
+// If you're weighing Raah against another option in Jaipur, Here's what you'd find out if you asked :
+
+// - **License and issuing authority:** Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification — both government-issued, both verifiable, neither self-claimed.
+// - **Who actually guides you:** Every walking experience is led personally by Shobhit or his mentor and father — never outsourced to a rotating pool of guides assigned once your booking is confirmed. The person you're reading reviews about is the person who shows up.
+// - **Commission-based stops:** None. No experience includes a scheduled shop, workshop, or "cooperative" stop built around a commission arrangement — the route goes where the story goes.
+// - **Reviews from past guests:** Available directly on the site's experience pages and journal, sourced from guests Raah doesn't select or filter.
+// - **Rescheduling and weather:** Light rain rarely changes plans — the old city has its own charm in the rain. In case of heavy weather, experiences are rescheduled at no charge, handled directly with your guide rather than a call center or booking platform.
+
+// That's the standard worth holding any guide to, whether you book with Raah or someone else.
+
+// A guide who is genuinely confident in their own credentials and the way their business is structured will answer all five of these questions without hesitation or deflection. That confidence, more than any single credential on its own, is often the clearest signal of all.
+
+// Want to meet your guide before you book? [Learn more about Shobhit and Raah's story](/about).`,
+//   },
+    // Best 3-Day Jaipur Itinerary for First-Time Visitors Blog 3
+  {
+    slug: "3-day-jaipur-itinerary",
+    title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
+    excerpt: "A complete day-by-day plan for a first visit — built around Raah's own experiences, with practical guidance on where to stay and how to get around.",
+    category: "Jaipur Guide",
+    readTime: "9 min read",
+     image: "/experiances/Farm and fire/IMG20241231193438.jpg",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-crown-of-jaipur",
+      "beyond-the-pink",
+      "ridge-and-ramparts",
+      "living-walled-city",
+      "artisans-jaipur",
+      "the-blue-hour",
+      "the-lost-kingdom",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+      { q: "Is 3 days enough to see Jaipur properly?", a: "Yes — three days is enough to cover the old city, Amber, and at least one of Jaipur's more off-the-beaten-path experiences without rushing between them." },
+      { q: "What if my 3 days don't include a weekend?", a: "The Lost Kingdom runs Saturdays and Sundays only. If your visit falls entirely on weekdays, Living the Walled City is a strong alternative for Day 3 that covers similarly authentic ground." },
+      { q: "Do I need to book these experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, and earlier for weekend-only experiences like The Lost Kingdom given limited group sizes." },
+      { q: "Can this itinerary be adjusted for private groups or families?", a: "Yes — every experience in this itinerary can be booked privately, and timing can often be adjusted to suit families or groups with specific needs." },
+      { q: "What should I pack for this itinerary?", a: "Comfortable walking shoes are essential across all three days. For Day 3's Lost Kingdom hike specifically, sturdy trekking shoes, light layers, and sun protection are recommended given the uneven terrain." },
+      { q: "Does Raah arrange transport between experiences?", a: "Yes, at an additional cost depending on group size — let your guide know in advance if you'd like pick-up, drop-off, or full-day transport arranged." },
+    ],
+    body: `Three days is the ideal window for a first visit to Jaipur — enough time to move through the city's history, its streets, and its surrounding hills without feeling rushed, but tight enough to keep the trip focused. For a broader overview of what Jaipur offers beyond this specific plan, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide). Below is a complete day-by-day plan built around Raah's own experiences, plus practical guidance on where to base yourself and how to get around.
+
+## Day 1: Morning to Evening Flow
+
+Start early. Jaipur's most atmospheric hours happen before most visitors are even awake, and building your first day around them sets the tone for the rest of the trip.
+
+**Morning (5:00 AM – 7:30 AM, or 8:00 AM – 10:30 AM): [Jaipur at Dawn](/experiences/jaipur-at-dawn)**
+Begin at the flower and vegetable market as it comes to life, move through the milk market as countryside vendors arrive by bicycle, and join the morning rituals at Govind Dev Ji Temple — one of the city's most revered shrines. The walk passes Hawa Mahal just as the first light hits its façade, ending with breakfast and chai at a local eatery. Two starting windows are available, so you can choose the earlier, quieter option or a slightly later start depending on your own schedule — either way, you'll still have the whole day ahead.
+
+**Midday: Rest, or a Second Heritage Walk**
+Use the late morning to recover, grab lunch, and explore independently — Bapu Bazaar and Johari Bazaar are both within the old city and worth a slow wander for textiles, jewelry, and traditional footwear. If you'd rather stay in guided mode, this slot also works well for [The Crown of Jaipur](/experiences/the-crown-of-jaipur) (3–3.5 hrs), which connects Hawa Mahal, Jantar Mantar, and City Palace into one continuous story about the city's founder.
+
+**Evening (5:00 PM – 7:30 PM): [Beyond the Pink](/experiences/beyond-the-pink)**
+As the day cools down, the old city's character shifts. This walk moves through the bazaars and artisan lanes as shops light up for the evening, with a curated street food trail — pani puri, kachori, jalebi, lassi, and kulfi — running throughout. It's a natural way to close a long first day: slower pace, lower light, and a genuine taste of the city rather than another landmark to photograph.
+
+## Day 2: Heritage & Amber
+
+Day two moves out of the old city and into Amber — the seat of Jaipur's former rulers, and a very different landscape from day one's markets and temples.
+
+**Morning (9:00 AM – 12:00 PM): [The Ridge & Ramparts](/experiences/ridge-and-ramparts)**
+Meeting at the Photo Point in front of Amber Fort, this walk goes well beyond the fort itself — into the town of Amber, past the 16th-century Jagat Shiromani Temple, ancient stepwells once used as a neighborhood gathering point, and through a historic tunnel once reserved for the royal family, ending at Jaigarh Fort and its enormous cannon.
+
+**Afternoon: Lunch, Then Living the Walled City or Artisan's Jaipur**
+Amber town has a handful of local eateries worth stopping at after the morning walk. If you have the energy, a short visit to Jal Mahal (the Water Palace) on the way back into the city is a worthwhile photo stop — it sits directly on your route back from Amber and needs no separate booking.
+
+Back in the city, choose between two very different afternoons depending on your interests. [Living the Walled City](/experiences/living-walled-city) shows you how Jaipur actually lives — its people, places, street vibe, markets, residential lanes, hidden neighborhoods, and the transition between old and new Jaipur. [Artisan's Jaipur](/experiences/artisans-jaipur), by contrast, introduces you to the city's craft world — understanding how Jaipur stands among the world's finest shopping centers through the artisans who make it so.
+
+**Evening (4:30 PM – 7:30 PM in winter, 5:30 PM – 8:30 PM in summer): [The Blue Hour](/experiences/the-blue-hour)**
+Starting at Jal Mahal, this experience covers the city from an open-air jeep as the light fades — past illuminated Nahargarh Fort, Amber Fort, and the central bazaars. After a full day on foot, this is a comfortable, scenic way to end day two without more walking. In the rare event of rain, the jeeps switch to a covered roof, so this runs reliably regardless of season.
+
+## Day 3: Culture & Departure
+
+Your third day depends partly on the calendar — one of the best experiences in Jaipur only runs on weekends.
+
+**If your third day falls on a Saturday or Sunday: [The Lost Kingdom](/experiences/the-lost-kingdom) (6:00 AM – 10:00 AM)**
+Meeting at Kheri Gate near the Anokhi Museum, this is a genuine hike through the Aravalli Hills surrounding Amber — past forgotten fortifications, a hillside shrine to Lord Hanuman, and a secluded Shiva temple, ending at a viewpoint overlooking Amber Fort and the valley below. It's the most physically active of Raah's experiences and a strong way to see a side of Jaipur that most three-day visitors never find.
+
+**If your third day falls on a weekday: [Living the Walled City](/experiences/living-walled-city)**
+An alternative that doesn't depend on the weekend — a walk through Sireh Deori Bazaar, past centuries-old temples, the restored Sawai Man Singh townhall, and the residential lanes where Jaipur's everyday life continues largely unseen by tourists.
+
+**Afternoon: [Artisan's Jaipur](/experiences/artisans-jaipur) or Free Time**
+If your flight or onward travel isn't until evening, Artisan's Jaipur is a good final activity — a walk through the workshops behind the city's craft traditions, including block printing, gem cutting, marble carving, lac bangle making, and blue pottery. If your schedule is tighter, this slot works just as well as buffer time for packing, last-minute shopping, or a relaxed lunch before departure.
+
+## Where to Stay in Jaipur
+
+For a walking-and-experience-focused itinerary like this one, staying within or close to the old walled city puts you nearest to Jaipur at Dawn, Beyond the Pink, and Living the Walled City's meeting points, cutting down on travel time each morning and evening. Well-located options include Jas Vilas and Shahpura House in Bani Park, Jai Mahal Palace in Civil Lines, Rambagh Palace, Man Singh Palace, Narayan Niwas on J.L.N. Marg, Golden Tulip on M.I. Road, and ITC Rajputana in Gopalbari — along with Johri, Abode, and Padma, all within the walled city itself.
+
+If you'd prefer easier access to Amber for Day 2's early start, some travellers base themselves closer to that side of the city instead — options like Taj Amer, Leela Palace, Raffles, ITC Mementos, and Khasbagh, alongside more budget-friendly choices nearby — though this typically means more travel time back into the old city for Day 1 and Day 3's experiences, a trade-off worth weighing against your own priorities.
+
+**Trending boutique stays:** Abode, Padma, Johri, Lalee, Narayan Niwas, Royal Heritage Haveli, 28 Kothi, Samode Haveli, Villa Paladio, Dilip Kothi (A Royal Boutique Luxury Suites), Namli Haus, and Niravi.
+
+**Best budget-class hotels:** Jas Vilas, Umaid Bhawan (A Royal Heritage Style Boutique Hotel), Alisar Haveli, Jai Niwas, Hyatt Place Malviya Nagar, V Sarovar Portico on M.I. Road, Surya Villa, Shahpura House, Dera Rawatsar, and Brij Castle.
+
+**Top super-luxury brands:** Rambagh Palace, Raj Vilas, Raffles, ITC Mementos, Leela Palace, Raj Palace, RAAS Raj Mahal Palace, Sawai Man Singh Mahal, Taj Amer, and ITC Rajputana.
+
+If three days doesn't quite match your schedule, see our [guide to how many days you actually need in Jaipur](/journal/how-many-days-in-jaipur) for shorter and longer alternatives built the same way.
+
+## Getting Around: Transport Tips
+
+Raah can arrange transport between meeting points at an additional cost, depending on group size — it's worth flagging this in advance if you'd like hotel pick-up and drop-off, or transport for the full day.
+
+Outside of that, auto-rickshaws are the most common way to get around Jaipur for short distances, and ride-hailing apps (Uber and Ola both operate in the city) offer a more predictable, fixed-fare alternative if you're not comfortable negotiating an auto fare directly. For the distances in this itinerary — particularly the trip out to Amber on Day 2 — a pre-booked cab or ride-hailing app is generally more comfortable than an auto-rickshaw given the distance involved.
+
+Ready to plan your trip? [Get in touch](/contact) and we'll help you build the right itinerary for your dates.`,
+  },
+     // How Many Days Do You Need in Jaipur? Blog 2
   {
     slug: "how-many-days-in-jaipur",
     title: "How Many Days Do You Need in Jaipur?",
@@ -76,7 +337,7 @@ A longer stay also opens the door to Jaipur's surroundings — a day at Ranthamb
 
 Trip length changes what you see, but it shouldn't change how safe you feel doing it. Every Raah experience is personally led by a licensed guide throughout, with routes kept to well-populated parts of the city — including the early morning and evening walks. Groups stay capped at 8 guests, and private bookings are available for solo travellers who'd prefer it.`,
   },
-    //   Things to Do in Jaipur: The Complete Guide
+    //   Things to Do in Jaipur: The Complete Guide Blog 1
   {
     slug: "things-to-do-in-jaipur-complete-guide",
     title: "Things to Do in Jaipur: The Complete Guide",
