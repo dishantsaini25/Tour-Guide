@@ -4,171 +4,171 @@
  */
 
 export const journalArticles = [
-//     // Best English & Spanish-Speaking Guide in Jaipur Blog 5
-//   {
-//     slug: "english-spanish-speaking-guide-jaipur",
-//     title: "Best English & Spanish-Speaking Guide in Jaipur",
-//     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
-//     category: "Booking Guide", // TODO: same guess as Blog 4 — confirm category naming
-//     readTime: "8 min read",
-//     image: "/journal Images/raah-client-image-1.webp", // TODO: placeholder — confirm or swap
-//     relatedExperiences: [
-//       "ridge-and-ramparts",
-//     ],
-//     images: [
-//       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
-//     ],
-//     faqs: [
-//       { q: "Are all experiences available in Spanish, or only some?", a: "All experiences are conducted in both English and Spanish as standard, with no additional charge for either language." },
-//       { q: "Is the guide a native Spanish speaker?", a: "Not by birth, but functionally close to it. Shobhit studied Spanish at the University of Salamanca in Spain, which shaped both his fluency and his accent to the point that Spanish-speaking guests routinely ask where he learned the language, whether he's actually Indian, and often remark that — having met other Spanish-speaking guides before — he's the first one who sounds genuinely native. His team also includes a guide with more than 40 years of experience leading large groups specifically in Spanish." },
-//       { q: "Can I request a guide who speaks a language other than English or Spanish?", a: "Yes — guides fluent in Italian, German, Russian, or Japanese can be arranged on request, subject to availability, with independent pricing that can run up to an additional $30. It's best to mention any specific language requirement at the time of booking so availability can be checked and confirmed in advance." },
-//       { q: "Do private bookings cost more for a specific language?", a: "No — English and Spanish are both included at standard experience pricing, with no language-based surcharge." },
-//       { q: "Can I book directly if I only speak Spanish?", a: "Yes — enquiries can be made via WhatsApp or the Contact page, and the entire booking process can be handled in Spanish from start to finish." },
-//     ],
-//     body: `A guide's job isn't just knowing the history of a place — it's being able to actually communicate that history in a way that lands. For English and Spanish-speaking travellers visiting Jaipur, that often narrows the real question down to something more specific: not "who knows the most about Amber Fort," but "who can actually make that knowledge feel alive in your own language." Here's what to look for, and what guests who've actually booked bilingual guides in Jaipur have said about the experience.
+    // Best English & Spanish-Speaking Guide in Jaipur Blog 5
+  {
+    slug: "english-spanish-speaking-guide-jaipur",
+    title: "Best English & Spanish-Speaking Guide in Jaipur",
+    excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
+    category: "Booking Guide", // TODO: same guess as Blog 4 — confirm category naming
+    readTime: "8 min read",
+    image: "/journal Images/raah-client-image-1.webp", // TODO: placeholder — confirm or swap
+    relatedExperiences: [
+      "ridge-and-ramparts",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+      { q: "Are all experiences available in Spanish, or only some?", a: "All experiences are conducted in both English and Spanish as standard, with no additional charge for either language." },
+      { q: "Is the guide a native Spanish speaker?", a: "Not by birth, but functionally close to it. Shobhit studied Spanish at the University of Salamanca in Spain, which shaped both his fluency and his accent to the point that Spanish-speaking guests routinely ask where he learned the language, whether he's actually Indian, and often remark that — having met other Spanish-speaking guides before — he's the first one who sounds genuinely native. His team also includes a guide with more than 40 years of experience leading large groups specifically in Spanish." },
+      { q: "Can I request a guide who speaks a language other than English or Spanish?", a: "Yes — guides fluent in Italian, German, Russian, or Japanese can be arranged on request, subject to availability, with independent pricing that can run up to an additional $30. It's best to mention any specific language requirement at the time of booking so availability can be checked and confirmed in advance." },
+      { q: "Do private bookings cost more for a specific language?", a: "No — English and Spanish are both included at standard experience pricing, with no language-based surcharge." },
+      { q: "Can I book directly if I only speak Spanish?", a: "Yes — enquiries can be made via WhatsApp or the Contact page, and the entire booking process can be handled in Spanish from start to finish." },
+    ],
+    body: `A guide's job isn't just knowing the history of a place — it's being able to actually communicate that history in a way that lands. For English and Spanish-speaking travellers visiting Jaipur, that often narrows the real question down to something more specific: not "who knows the most about Amber Fort," but "who can actually make that knowledge feel alive in your own language." Here's what to look for, and what guests who've actually booked bilingual guides in Jaipur have said about the experience.
 
-// ## Why Language Matters on a Heritage Walk
+## Why Language Matters on a Heritage Walk
 
-// A heritage walk is fundamentally a storytelling experience, not a fact-delivery service. The difference between a guide who translates information on the fly and one who's genuinely fluent shows up in the small details — timing a joke correctly, catching a question mid-sentence before it's even finished, explaining nuance and cultural context rather than reciting a memorized script word for word.
+A heritage walk is fundamentally a storytelling experience, not a fact-delivery service. The difference between a guide who translates information on the fly and one who's genuinely fluent shows up in the small details — timing a joke correctly, catching a question mid-sentence before it's even finished, explaining nuance and cultural context rather than reciting a memorized script word for word.
 
-// This matters more in Jaipur specifically than in many other tourist cities, because much of what makes the city interesting isn't written on a plaque anywhere. It's oral history, local sayings, family stories, and cultural context that only comes through in real, unscripted conversation. A guide working comfortably in a second or third language, rather than reading from a fixed script, can adapt naturally when a guest asks something unexpected — which happens constantly on a walk built around spontaneous conversation rather than a rehearsed routine.
+This matters more in Jaipur specifically than in many other tourist cities, because much of what makes the city interesting isn't written on a plaque anywhere. It's oral history, local sayings, family stories, and cultural context that only comes through in real, unscripted conversation. A guide working comfortably in a second or third language, rather than reading from a fixed script, can adapt naturally when a guest asks something unexpected — which happens constantly on a walk built around spontaneous conversation rather than a rehearsed routine.
 
-// ## Meet Your Guide: Background & Fluency
+## Meet Your Guide: Background & Fluency
 
-// Raah's experiences are led by Shobhit, who holds a Jaipur Regional Level Government Approved Tour Guide license and a Pan India Incredible India Tour Guide (IITG) certification — the same credentials we cover in more depth in [how to find a reputable tour guide in Jaipur](/journal/reputable-tour-guide-jaipur) — and conducts every experience in both English and Spanish as standard, not as a paid add-on reserved for guests willing to pay extra.
+Raah's experiences are led by Shobhit, who holds a Jaipur Regional Level Government Approved Tour Guide license and a Pan India Incredible India Tour Guide (IITG) certification — the same credentials we cover in more depth in [how to find a reputable tour guide in Jaipur](/journal/reputable-tour-guide-jaipur) — and conducts every experience in both English and Spanish as standard, not as a paid add-on reserved for guests willing to pay extra.
 
-// His Spanish fluency has a specific origin worth mentioning: he studied Spanish at the University of Salamanca in Spain, which gives him both an accent and a level of fluency that consistently surprises Spanish-speaking guests. It's common enough that guests ask him directly where he learned his Spanish, whether he's actually Indian, and — perhaps the most telling reaction — remark that they've met plenty of Spanish-speaking guides before, but he's the first one who sounds like an actual native speaker.
+His Spanish fluency has a specific origin worth mentioning: he studied Spanish at the University of Salamanca in Spain, which gives him both an accent and a level of fluency that consistently surprises Spanish-speaking guests. It's common enough that guests ask him directly where he learned his Spanish, whether he's actually Indian, and — perhaps the most telling reaction — remark that they've met plenty of Spanish-speaking guides before, but he's the first one who sounds like an actual native speaker.
 
-// Beyond Shobhit himself, one of his team members brings more than 40 years of experience leading high-strength groups specifically in Spanish, meaning Raah's Spanish-language capability isn't dependent on a single person's schedule.
+Beyond Shobhit himself, one of his team members brings more than 40 years of experience leading high-strength groups specifically in Spanish, meaning Raah's Spanish-language capability isn't dependent on a single person's schedule.
 
-// ## What Guests Say: English & Spanish Reviews
+## What Guests Say: English & Spanish Reviews
 
-// Rather than take fluency on faith, it's worth looking at what real guests, writing unprompted and in their own language, have actually said.
+Rather than take fluency on faith, it's worth looking at what real guests, writing unprompted and in their own language, have actually said.
 
-// **In English:**
+**In English:**
 
-// > "I wholeheartedly recommend this Guide's services. He was the most professional, knowledgeable and engaging storyteller we have ever met. My mother and I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all. His English is excellent, and his communication with clients is outstanding."
-// > — Viktorija Satkauskienė, Lithuania
+> "I wholeheartedly recommend this Guide's services. He was the most professional, knowledgeable and engaging storyteller we have ever met. My mother and I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all. His English is excellent, and his communication with clients is outstanding."
+> — Viktorija Satkauskienė, Lithuania
 
-// That comparison carries extra weight since Jaipur wasn't her first stop on a three-week trip — she had several other guides to measure the experience against.
+That comparison carries extra weight since Jaipur wasn't her first stop on a three-week trip — she had several other guides to measure the experience against.
 
-// > "Your English delivery was excellent as was your priority to keep us safe at all times. You taught us many aspects and kept the right balance between too much and too little information, which is very important."
-// > — John Collins, United Kingdom
+> "Your English delivery was excellent as was your priority to keep us safe at all times. You taught us many aspects and kept the right balance between too much and too little information, which is very important."
+> — John Collins, United Kingdom
 
-// > "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail."
-// > — Leva Kuode, Lithuania
+> "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail."
+> — Leva Kuode, Lithuania
 
-// **In Spanish:**
+**In Spanish:**
 
-// > "I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences."
-// > — Maria Campos, México
+> "I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences."
+> — Maria Campos, México
 
-// Edith Maria Hoyos, from El Salvador, wrote an entire review in Spanish praising both the guiding and the language fluency, closing with simply:
+Edith Maria Hoyos, from El Salvador, wrote an entire review in Spanish praising both the guiding and the language fluency, closing with simply:
 
-// > "¡¡Muy buen español!!"
-// > — Edith Maria Hoyos, El Salvador
+> "¡¡Muy buen español!!"
+> — Edith Maria Hoyos, El Salvador
 
-// > "Nuestra experiencia con Shobhit ha sido maravillosa. Nos ha demostrado un gran conocimiento de cada lugar visitado. Siempre muy amable y pendiente en todo momento de nosotros."
-// > — Marcela Padilla, México
+> "Nuestra experiencia con Shobhit ha sido maravillosa. Nos ha demostrado un gran conocimiento de cada lugar visitado. Siempre muy amable y pendiente en todo momento de nosotros."
+> — Marcela Padilla, México
 
-// What stands out across both language groups isn't simply "he spoke the language well" — it's that guests specifically and repeatedly call out communication and clarity as a highlight of the entire trip, which is a considerably stronger signal than fluency alone would be.
+What stands out across both language groups isn't simply "he spoke the language well" — it's that guests specifically and repeatedly call out communication and clarity as a highlight of the entire trip, which is a considerably stronger signal than fluency alone would be.
 
-// ## Which Experiences Work Best in Each Language
+## Which Experiences Work Best in Each Language
 
-// Every Raah experience — [Jaipur at Dawn](/experiences/jaipur-at-dawn), [The Crown of Jaipur](/experiences/the-crown-of-jaipur), [The Ridge & Ramparts](/experiences/ridge-and-ramparts), and the rest — is conducted equally well in English or Spanish, so the choice really comes down to personal preference rather than any experience being better suited to one language over another.
+Every Raah experience — [Jaipur at Dawn](/experiences/jaipur-at-dawn), [The Crown of Jaipur](/experiences/the-crown-of-jaipur), [The Ridge & Ramparts](/experiences/ridge-and-ramparts), and the rest — is conducted equally well in English or Spanish, so the choice really comes down to personal preference rather than any experience being better suited to one language over another.
 
-// That said, [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth calling out specifically for Spanish-speaking travellers, since it's the experience most directly tied to Amber Fort — a landmark with genuinely strong search interest among Spanish-speaking visitors researching Jaipur, through terms like *fuerte amber* and *fort d'amber*. That makes it a natural starting point if you're coming from a Spanish-speaking country and want the most complete Amber experience available in your own language.
+That said, [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth calling out specifically for Spanish-speaking travellers, since it's the experience most directly tied to Amber Fort — a landmark with genuinely strong search interest among Spanish-speaking visitors researching Jaipur, through terms like *fuerte amber* and *fort d'amber*. That makes it a natural starting point if you're coming from a Spanish-speaking country and want the most complete Amber experience available in your own language.
 
-// Ready to book in your language? [Meet your guide](/about), or head straight to [The Ridge & Ramparts](/experiences/ridge-and-ramparts) if Amber is top of your list.`,
-//   },
+Ready to book in your language? [Meet your guide](/about), or head straight to [The Ridge & Ramparts](/experiences/ridge-and-ramparts) if Amber is top of your list.`,
+  },
 
-//    // How to Find a Reputable Tour Guide in Jaipur Blog 4
-//   {
-//     slug: "reputable-tour-guide-jaipur",
-//     title: "How to Find a Reputable Tour Guide in Jaipur",
-//     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
-//     category: "Booking Guide", // TODO: confirm — doesn't match existing categories, guessed
-//     readTime: "8 min read",
-//     image: "/experiances/The blue hour/blueH1.jpg", // TODO: no hero image specified — placeholder, confirm or swap
-//     relatedExperiences: [], // TODO: no specific experiences named in this content — confirm if you want any shown
-//     images: [
-//       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
-//       { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
-//     ],
-//     faqs: [
-//          { q: "Is this guide's license real?", a: "Yes — Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification. Both are official, government-issued credentials, not self-claimed titles." },
-//       { q: "Are unlicensed guides always untrustworthy?", a: "Not necessarily — but licensing remains the clearest external signal available to a traveller who otherwise has no independent way to verify a stranger's actual expertise. It meaningfully reduces risk, even though it can't guarantee a perfect experience on its own." },
-//       { q: "Why do some guides push shopping stops so heavily?", a: "Many operate on a commission model, where shops quietly pay guides or drivers a fee for every tourist brought through the door — a cost that inevitably gets passed on to you through inflated prices once you're inside." },
-//       { q: "Does Raah's guide work alone, or are there other guides on the team?", a: "Raah is a family-led concept rather than a solo operation. Founder Shobhit and his mentor and father both personally lead walking tours, built specifically to go beyond the standard, checklist-style itinerary most visitors default to. The goal has always been showing guests the real Jaipur, not steering them toward shopping stops — though if you're genuinely looking for honest local recommendations, they're happy to help with that too." },
-//       { q: "Can I request a private, one-on-one experience?", a: "Yes — every Raah experience can be booked privately for couples, families, or small groups who'd prefer a more personalized pace." },
-//     ],
-//     body: `Jaipur has no shortage of people offering to show you around — outside every major fort, in every hotel lobby, on every street corner near a monument. Some are excellent. Many aren't. The difference usually isn't obvious until you're already midway through a tour that's turned into three unplanned stops at "family-run" shops with suspiciously enthusiastic recommendations, or a rushed walk through the main sights that leaves you with photos but no real understanding of what you actually saw. Knowing what actually separates a reputable guide from an opportunistic one can save your trip — not just your budget, but the entire experience of a city that rewards genuine local knowledge far more than a quick photo stop ever could.
+   // How to Find a Reputable Tour Guide in Jaipur Blog 4
+  {
+    slug: "reputable-tour-guide-jaipur",
+    title: "How to Find a Reputable Tour Guide in Jaipur",
+    excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
+    category: "Booking Guide", // TODO: confirm — doesn't match existing categories, guessed
+    readTime: "8 min read",
+    image: "/experiances/The blue hour/blueH1.jpg", // TODO: no hero image specified — placeholder, confirm or swap
+    relatedExperiences: [], // TODO: no specific experiences named in this content — confirm if you want any shown
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+         { q: "Is this guide's license real?", a: "Yes — Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification. Both are official, government-issued credentials, not self-claimed titles." },
+      { q: "Are unlicensed guides always untrustworthy?", a: "Not necessarily — but licensing remains the clearest external signal available to a traveller who otherwise has no independent way to verify a stranger's actual expertise. It meaningfully reduces risk, even though it can't guarantee a perfect experience on its own." },
+      { q: "Why do some guides push shopping stops so heavily?", a: "Many operate on a commission model, where shops quietly pay guides or drivers a fee for every tourist brought through the door — a cost that inevitably gets passed on to you through inflated prices once you're inside." },
+      { q: "Does Raah's guide work alone, or are there other guides on the team?", a: "Raah is a family-led concept rather than a solo operation. Founder Shobhit and his mentor and father both personally lead walking tours, built specifically to go beyond the standard, checklist-style itinerary most visitors default to. The goal has always been showing guests the real Jaipur, not steering them toward shopping stops — though if you're genuinely looking for honest local recommendations, they're happy to help with that too." },
+      { q: "Can I request a private, one-on-one experience?", a: "Yes — every Raah experience can be booked privately for couples, families, or small groups who'd prefer a more personalized pace." },
+    ],
+    body: `Jaipur has no shortage of people offering to show you around — outside every major fort, in every hotel lobby, on every street corner near a monument. Some are excellent. Many aren't. The difference usually isn't obvious until you're already midway through a tour that's turned into three unplanned stops at "family-run" shops with suspiciously enthusiastic recommendations, or a rushed walk through the main sights that leaves you with photos but no real understanding of what you actually saw. Knowing what actually separates a reputable guide from an opportunistic one can save your trip — not just your budget, but the entire experience of a city that rewards genuine local knowledge far more than a quick photo stop ever could.
 
-// This matters more in Jaipur specifically than it might elsewhere, because the city's real depth — its craft traditions, its layered history, the way its 18th-century planning still shapes daily life — isn't something you pick up by simply walking past monuments. It requires someone who actually knows the place, has earned the right credentials, and is invested in showing it to you honestly rather than steering you toward wherever pays the best commission. For a full picture of what a Jaipur trip with Raah looks like, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide).
+This matters more in Jaipur specifically than it might elsewhere, because the city's real depth — its craft traditions, its layered history, the way its 18th-century planning still shapes daily life — isn't something you pick up by simply walking past monuments. It requires someone who actually knows the place, has earned the right credentials, and is invested in showing it to you honestly rather than steering you toward wherever pays the best commission. For a full picture of what a Jaipur trip with Raah looks like, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide).
 
-// ## What Makes a Guide "Licensed" in India
+## What Makes a Guide "Licensed" in India
 
-// Tour guiding in India isn't an unregulated free-for-all, even though it can feel that way on the ground when you're approached by half a dozen self-described "guides" outside a single monument. The Ministry of Tourism and individual state governments issue formal guide licenses, and these come at two distinct levels, each meaning something different.
+Tour guiding in India isn't an unregulated free-for-all, even though it can feel that way on the ground when you're approached by half a dozen self-described "guides" outside a single monument. The Ministry of Tourism and individual state governments issue formal guide licenses, and these come at two distinct levels, each meaning something different.
 
-// - **Regional-level license** — issued by a specific state, in this case Jaipur and Rajasthan, authorizing a guide to operate within that particular region
-// - **National-level certification** — the Incredible India Tour Guide (IITG) credential, a considerably more rigorous, government-administered certification that qualifies a guide to work across the entire country, not just one city, requiring a broader depth of training to obtain
+- **Regional-level license** — issued by a specific state, in this case Jaipur and Rajasthan, authorizing a guide to operate within that particular region
+- **National-level certification** — the Incredible India Tour Guide (IITG) credential, a considerably more rigorous, government-administered certification that qualifies a guide to work across the entire country, not just one city, requiring a broader depth of training to obtain
 
-// Both of these require passing formal training and a real examination process. They are not self-issued titles, something a person can simply claim, or a line printed on a hastily made business card. A guide who holds both a state-level license and the national IITG certification has demonstrably gone through meaningfully more vetting than someone who has simply memorized a handful of facts about Amber Fort and positioned themselves outside the entrance, waiting for tourists who don't know better.
+Both of these require passing formal training and a real examination process. They are not self-issued titles, something a person can simply claim, or a line printed on a hastily made business card. A guide who holds both a state-level license and the national IITG certification has demonstrably gone through meaningfully more vetting than someone who has simply memorized a handful of facts about Amber Fort and positioned themselves outside the entrance, waiting for tourists who don't know better.
 
-// **Raah's founder, Shobhit, holds a Jaipur Regional Level Government Approved Tour Guide license alongside the Pan India Incredible India Tour Guide (IITG) certification** — both official, government-recognized credentials rather than informal or self-appointed titles. This dual credentialing means he's qualified not just to guide within Jaipur specifically, but has met the national standard that very few local, informally operating guides ever pursue.
+**Raah's founder, Shobhit, holds a Jaipur Regional Level Government Approved Tour Guide license alongside the Pan India Incredible India Tour Guide (IITG) certification** — both official, government-recognized credentials rather than informal or self-appointed titles. This dual credentialing means he's qualified not just to guide within Jaipur specifically, but has met the national standard that very few local, informally operating guides ever pursue.
 
-// ## Red Flags: Unlicensed Guides & Forced Shopping Stops
+## Red Flags: Unlicensed Guides & Forced Shopping Stops
 
-// The most common complaint from travellers touring India isn't actually about the sights themselves — it's about guides who quietly steer every itinerary toward specific shops, workshops, or so-called "cooperatives" that pay a commission for every tourist walked through the door. This isn't a rare, isolated occurrence you might get unlucky with once. It's a well-documented pattern across popular Indian tourist destinations, repeated so consistently across cities and guides that it's worth understanding the mechanics behind it, not just the symptom.
+The most common complaint from travellers touring India isn't actually about the sights themselves — it's about guides who quietly steer every itinerary toward specific shops, workshops, or so-called "cooperatives" that pay a commission for every tourist walked through the door. This isn't a rare, isolated occurrence you might get unlucky with once. It's a well-documented pattern across popular Indian tourist destinations, repeated so consistently across cities and guides that it's worth understanding the mechanics behind it, not just the symptom.
 
-// Here's typically how it works: a driver or guide receives a flat fee, or a percentage of whatever you spend, simply for bringing you into a particular shop. That cost doesn't disappear — it gets built directly into the inflated prices you're quoted once you're inside, meaning you effectively pay for your own guide's commission without ever being told that's what's happening.
+Here's typically how it works: a driver or guide receives a flat fee, or a percentage of whatever you spend, simply for bringing you into a particular shop. That cost doesn't disappear — it gets built directly into the inflated prices you're quoted once you're inside, meaning you effectively pay for your own guide's commission without ever being told that's what's happening.
 
-// A few specific patterns are worth watching for:
+A few specific patterns are worth watching for:
 
-// - **Unplanned detours to shops** described as being conveniently "on the way," especially ones the guide seems unusually invested in you actually entering
-// - **Pressure or guilt if you decline to browse or buy anything** — a good guide respects a simple "no thank you" without repeating the offer three more times
-// - **Guides who approach you directly at monuments**, with no prior booking and no verifiable reviews you can check independently — this carries more risk since there's no accountability trail if something goes wrong
-// - **Vague or evasive answers when you ask about licensing specifically** — a genuinely credentialed guide will name their exact license and issuing authority without hesitation, because it's a real, checkable fact rather than something they'd rather you not look into too closely
+- **Unplanned detours to shops** described as being conveniently "on the way," especially ones the guide seems unusually invested in you actually entering
+- **Pressure or guilt if you decline to browse or buy anything** — a good guide respects a simple "no thank you" without repeating the offer three more times
+- **Guides who approach you directly at monuments**, with no prior booking and no verifiable reviews you can check independently — this carries more risk since there's no accountability trail if something goes wrong
+- **Vague or evasive answers when you ask about licensing specifically** — a genuinely credentialed guide will name their exact license and issuing authority without hesitation, because it's a real, checkable fact rather than something they'd rather you not look into too closely
 
-// None of this means every independent, informally operating guide is dishonest — plenty aren't. But it does mean the burden of verification realistically falls on you, the traveller, before you book, not after you're already several hours into a day together and it's too late to easily change course.
+None of this means every independent, informally operating guide is dishonest — plenty aren't. But it does mean the burden of verification realistically falls on you, the traveller, before you book, not after you're already several hours into a day together and it's too late to easily change course.
 
-// ## How Raah Is Structured Differently
+## How Raah Is Structured Differently
 
-// Raah is built specifically around avoiding this model entirely, rather than simply claiming to be different while operating the same way underneath. There are no commission-based shopping stops built into any experience — the walks go wherever the story genuinely goes, not wherever a partnership fee happens to lead.
+Raah is built specifically around avoiding this model entirely, rather than simply claiming to be different while operating the same way underneath. There are no commission-based shopping stops built into any experience — the walks go wherever the story genuinely goes, not wherever a partnership fee happens to lead.
 
-// Raah's walking experiences are led personally by Shobhit and his mentor and father, rather than being outsourced to a rotating pool of guides once a booking is confirmed online. This is a small, deliberately family-led model, built specifically to promote thoughtful walking tours that go well beyond a standard, checklist-style itinerary — which means the credentials and depth of knowledge you're actually vetting before booking belong to the exact people who show up on the day, not some substitute assigned last-minute.
+Raah's walking experiences are led personally by Shobhit and his mentor and father, rather than being outsourced to a rotating pool of guides once a booking is confirmed online. This is a small, deliberately family-led model, built specifically to promote thoughtful walking tours that go well beyond a standard, checklist-style itinerary — which means the credentials and depth of knowledge you're actually vetting before booking belong to the exact people who show up on the day, not some substitute assigned last-minute.
 
-// Group sizes are also capped at 8 guests across every single experience Raah runs. This isn't just a nice-to-have detail — a group that small makes a shopping-commission model commercially pointless in the first place, since the entire format is built around depth, conversation, and storytelling rather than volume. You can't meaningfully run a high-commission tourist-shop pipeline through groups of 8 people at a time; the economics simply don't support it, which is itself a structural reason to trust the model rather than just a stated intention.
+Group sizes are also capped at 8 guests across every single experience Raah runs. This isn't just a nice-to-have detail — a group that small makes a shopping-commission model commercially pointless in the first place, since the entire format is built around depth, conversation, and storytelling rather than volume. You can't meaningfully run a high-commission tourist-shop pipeline through groups of 8 people at a time; the economics simply don't support it, which is itself a structural reason to trust the model rather than just a stated intention.
 
-// As one guest put it plainly: *"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. No one had ever shared the city's history with such passion and enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding."* That guest, Viktorija Satkauskienė, had already travelled with several different guides across a three-week trip before reaching Jaipur — which makes the comparison meaningful, since it wasn't her only reference point.
+As one guest put it plainly: *"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. No one had ever shared the city's history with such passion and enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding."* That guest, Viktorija Satkauskienė, had already travelled with several different guides across a three-week trip before reaching Jaipur — which makes the comparison meaningful, since it wasn't her only reference point.
 
-// Language fluency matters here too — see our [guide to finding an English or Spanish-speaking guide in Jaipur](/journal/english-spanish-speaking-guide-jaipur) for what past guests have said specifically about communication.
+Language fluency matters here too — see our [guide to finding an English or Spanish-speaking guide in Jaipur](/journal/english-spanish-speaking-guide-jaipur) for what past guests have said specifically about communication.
 
-// ## Questions to Ask Before Booking
+## Questions to Ask Before Booking
 
-// Whether you end up booking with Raah or with anyone else in Jaipur, a handful of questions are worth asking any guide before you commit to a full day together:
+Whether you end up booking with Raah or with anyone else in Jaipur, a handful of questions are worth asking any guide before you commit to a full day together:
 
-// ## What to Expect When You Book With Raah
+## What to Expect When You Book With Raah
 
-// If you're weighing Raah against another option in Jaipur, Here's what you'd find out if you asked :
+If you're weighing Raah against another option in Jaipur, Here's what you'd find out if you asked :
 
-// - **License and issuing authority:** Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification — both government-issued, both verifiable, neither self-claimed.
-// - **Who actually guides you:** Every walking experience is led personally by Shobhit or his mentor and father — never outsourced to a rotating pool of guides assigned once your booking is confirmed. The person you're reading reviews about is the person who shows up.
-// - **Commission-based stops:** None. No experience includes a scheduled shop, workshop, or "cooperative" stop built around a commission arrangement — the route goes where the story goes.
-// - **Reviews from past guests:** Available directly on the site's experience pages and journal, sourced from guests Raah doesn't select or filter.
-// - **Rescheduling and weather:** Light rain rarely changes plans — the old city has its own charm in the rain. In case of heavy weather, experiences are rescheduled at no charge, handled directly with your guide rather than a call center or booking platform.
+- **License and issuing authority:** Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification — both government-issued, both verifiable, neither self-claimed.
+- **Who actually guides you:** Every walking experience is led personally by Shobhit or his mentor and father — never outsourced to a rotating pool of guides assigned once your booking is confirmed. The person you're reading reviews about is the person who shows up.
+- **Commission-based stops:** None. No experience includes a scheduled shop, workshop, or "cooperative" stop built around a commission arrangement — the route goes where the story goes.
+- **Reviews from past guests:** Available directly on the site's experience pages and journal, sourced from guests Raah doesn't select or filter.
+- **Rescheduling and weather:** Light rain rarely changes plans — the old city has its own charm in the rain. In case of heavy weather, experiences are rescheduled at no charge, handled directly with your guide rather than a call center or booking platform.
 
-// That's the standard worth holding any guide to, whether you book with Raah or someone else.
+That's the standard worth holding any guide to, whether you book with Raah or someone else.
 
-// A guide who is genuinely confident in their own credentials and the way their business is structured will answer all five of these questions without hesitation or deflection. That confidence, more than any single credential on its own, is often the clearest signal of all.
+A guide who is genuinely confident in their own credentials and the way their business is structured will answer all five of these questions without hesitation or deflection. That confidence, more than any single credential on its own, is often the clearest signal of all.
 
-// Want to meet your guide before you book? [Learn more about Shobhit and Raah's story](/about).`,
-//   },
+Want to meet your guide before you book? [Learn more about Shobhit and Raah's story](/about).`,
+  },
     // Best 3-Day Jaipur Itinerary for First-Time Visitors Blog 3
   {
     slug: "3-day-jaipur-itinerary",
