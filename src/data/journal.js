@@ -4,6 +4,105 @@
  */
 
 export const journalArticles = [
+    // How Much Does a Trip to Jaipur Cost? Blog 6
+  {
+    slug: "jaipur-trip-cost",
+    title: "How Much Does a Trip to Jaipur Cost?",
+    excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
+    category: "Jaipur Guide",
+    readTime: "9 min read",
+    image: "/experiances/Ridge and ramparts/ridge1.jpeg", 
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-crown-of-jaipur",
+      "beyond-the-pink",
+      "ridge-and-ramparts",
+      "artisans-jaipur",
+      "the-lost-kingdom",
+      "farm-and-fire",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+      { q: "How much does a 3-day trip to Jaipur cost?", a: "Using the mid-range daily estimate above, roughly ₹5,600 to ₹6,000 per day, a 3-day trip for one person lands around ₹17,000 to ₹18,000, or $200 to $210, before international flights." },
+      { q: "How much does a 4-day trip to Jaipur cost?", a: "At the same mid-range pace, expect roughly ₹22,000 to ₹24,000, or $260 to $280, for four days — though the daily cost often drops slightly on longer trips as you settle into a routine and shop around less." },
+      { q: "Is Jaipur cheaper than Delhi?", a: "For overall daily spending, generally yes, particularly for mid-range travellers, largely due to lower private transport and dining costs. Monument entry fees themselves aren't necessarily lower, though — Amber Fort's foreign entry fee actually runs higher than the Red Fort's." },
+      { q: "What's the biggest hidden cost people forget to budget for?", a: "Camera and video fees at monuments, along with the 12 to 18 percent GST added to most hotel bills — both are easy to underestimate when planning from a quoted room rate alone." },
+      { q: "Do guided experiences replace the need for a private cab?", a: "Not entirely. Raah's walking experiences cover their respective areas on foot, but you'll still want transport between experiences — particularly from the old city out to Amber — and for any independent exploring in between." },
+    ],
+    body: `Jaipur is genuinely one of the more affordable major destinations in India to visit — but "how much" still depends heavily on what kind of trip you're planning. Here's a realistic breakdown across accommodation, food, transport, and guided experiences, using both published cost data and Raah's own confirmed pricing, so you can build a budget that actually matches how you want to travel.
+
+## Accommodation Costs: Budget to Luxury
+
+Jaipur offers a genuine range across price tiers, though it's worth setting realistic expectations rather than assuming everything comes at bargain rates.
+
+**Budget (₹500–₹800/night):** Basic rooms and guesthouses. Jaipur isn't heavily set up for the dorm-hostel scene the way some Indian backpacker hubs are, so a simple private room is the realistic entry point rather than a shared dorm bed. Reasonable options in this range include Jas Vilas, Alisar Haveli, Jai Niwas, Surya Villa, Shahpura House in Bani Park, and Dera Rawatsar.
+
+**Mid-range (₹1,500–₹3,000/night):** Hotels with air conditioning and reliable service — this is where most first-time visitors comfortably land. This tier isn't a discount option, it's a fair, standard rate for a well-located, well-serviced room. Boutique stays worth considering here include Abode, Padma, Johri, Lalee, Narayan Niwas, and 28 Kothi, several of which sit within the walled city itself.
+
+**Luxury (₹5,000–₹8,000+/night, higher October–March):** Heritage havelis and 4- to 5-star hotels. Genuine luxury properties like Rambagh Palace, Raj Vilas, Raffles, Leela Palace, Raj Palace, and Taj Amer sit well above this, priced in line with world-class heritage hotels anywhere in India.
+
+The overall picture: Jaipur has an accessible budget floor, but it isn't a destination where good accommodation comes unusually cheap across the board — pricing scales up meaningfully with comfort and location, much as it would in any major tourist city.
+
+## Daily Food & Local Expenses
+
+Food is one of the areas where Jaipur genuinely rewards a lower budget without sacrificing quality — some of the best food in the city is also the cheapest.
+
+- **Street food and small dhabas:** ₹100–₹150 per meal, ₹200–₹400 per person per day across all three meals
+- **Sit-down cafés and family restaurants:** ₹300–₹500 per meal
+- **Mid-range restaurants serving full Rajasthani thalis:** ₹500–₹1,000 per person
+- **Rooftop restaurants and palace-hotel dining:** ₹2,000–₹5,000 per person
+
+Worth budgeting for separately: monument entry fees, camera fees at some sites — usually somewhere between ₹100 and ₹500 depending on whether it's a photo or video permit — and small recurring costs like shoe-keeping fees, around ₹20, at temples. None of these are large individually, but they add up across a multi-day trip and are easy to forget when budgeting from a quoted daily rate alone.
+
+## Local Transport Costs
+
+Getting around Jaipur is inexpensive relative to most global destinations.
+
+- **Autos and e-rickshaws:** ₹10–₹30 for short distances
+- **Ride-hailing apps (Ola, Uber):** ₹100–₹250 depending on distance — a good middle option if you'd rather not negotiate a fare directly
+- **Full-day private cabs for sightseeing:** ₹1,500–₹2,500, cost-effective if you're travelling as a family or small group splitting the fare
+
+For getting out to Amber specifically, which sits a meaningful distance from the old city, a pre-booked cab or ride-hailing app is generally the most comfortable option given the distance involved. Raah can also arrange transport between meeting points directly, at an additional cost depending on group size — worth mentioning at the time of booking if you'd like pick-up and drop-off included rather than arranging it independently.
+
+## Guided Experience Pricing
+
+Beyond independent sightseeing, guided experiences add real depth to a Jaipur trip without dramatically changing your overall budget.
+
+- **[Jaipur at Dawn](/experiences/jaipur-at-dawn), [The Crown of Jaipur](/experiences/the-crown-of-jaipur), [Beyond the Pink](/experiences/beyond-the-pink), [The Ridge & Ramparts](/experiences/ridge-and-ramparts), [Artisan's Jaipur](/experiences/artisans-jaipur):** $30 / ₹2,500
+- **[The Lost Kingdom](/experiences/the-lost-kingdom):** $40 / ₹3,500
+- **[The Farm & Fire](/experiences/farm-and-fire):** $45 / ₹4,000
+- **[The Blue Hour](/experiences/the-blue-hour):** $70 / ₹6,300 (private open-jeep evening tour, minimum two people)
+
+For travellers wanting to combine multiple experiences into a single day, combo packages range from $45 (₹4,050) for a signature one-day pairing, up to $95 (₹8,550) for the most comprehensive full-day combination of three experiences together.
+
+## Jaipur vs. Delhi: Where Your Money Goes Further
+
+Comparing Jaipur's flagship monument against Delhi's isn't the slam-dunk value story it might seem — entry to Amber Fort runs around ₹1,000 for foreign visitors, noticeably higher than the ₹550 charged at Delhi's Red Fort, so Jaipur doesn't have an edge on entry pricing at its single most iconic site.
+
+Where Jaipur pulls ahead is everything around the monument, not the ticket itself. Overall daily costs in Jaipur tend to run meaningfully lower than in Delhi, largely because private transport and dining are less expensive here — a day in Jaipur averaging in the $90s compares favorably against Delhi's higher costs for the same category of travel.
+
+A local guide at Amber Fort typically runs ₹400 to ₹1,000 for an hour to ninety minutes, and independent reviewers who've done both consistently flag the guide as the difference between "seeing a fort" and actually understanding what you're looking at — the Suhag Mandir's lattice screens or the Sukh Niwas water-cooling system aren't self-explanatory without someone to walk you through them.
+
+**The honest takeaway:** don't expect Jaipur's flagship sights to cost less than Delhi's on paper — some, like Amber Fort's entry fee, actually run higher. Expect the day around those sights — food, transport, and overall pace — to stretch your budget noticeably further instead.
+
+## Sample Daily Budget Breakdown
+
+Putting the pieces together, here's roughly what a full day in Jaipur costs at three different travel styles:
+
+- **Budget traveller** (guesthouse, street food, autos): ₹1,200–₹1,500/day, roughly $14–$18
+- **Mid-range traveller** (comfortable hotel, cafés and restaurants, ride-hailing apps, one guided experience): ₹5,600–₹6,000/day, roughly $65–$70
+- **Comfort/luxury traveller** (heritage hotel, upscale dining, private cab, premium combo experience): ₹15,000+/day, upward of $175
+
+These are working estimates built from real, published cost data and Raah's own confirmed pricing — not a guarantee, since actual spending varies by season, personal habits, and how much shopping or extra activity gets added in along the way.
+
+For a broader view of how these costs fit into your overall trip, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or explore our [full range of experiences](/experiences).`,
+  },
     // Best English & Spanish-Speaking Guide in Jaipur Blog 5
   {
     slug: "english-spanish-speaking-guide-jaipur",
