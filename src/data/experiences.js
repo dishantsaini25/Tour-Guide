@@ -206,7 +206,7 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
     "Sit at a local tea stall for a deep conversation about Jaipur's history, culture & people, with breakfast at local eateries",
   ],
   beforeYouCome: {
-    duration: "2.5",
+    duration: "2.5 hrs",
     startTime: "Before Sunrise (around 5:00 AM) / After Sunrise (around 8:00 AM)",
     distance: "3–4 km",
     difficulty: "Easy — slow paced walking",
@@ -390,7 +390,7 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
     ],
     beforeYouCome: {
       duration: "2.5 hrs",
-      startTime: "11:00 AM & 1:30 PM",
+      startTime: "11:00 AM - 1:30 PM",
       distance: "2–3 km",
       difficulty: "Easy",
       groupSize: "Small & Intimate (up to 8 guests)",
@@ -878,8 +878,8 @@ metaDescription: "An offbeat Jaipur tour through forgotten trails, ruins and sec
       "Marvel at sweeping vistas of Amber Fort & rugged hills from secret hilltop viewpoints",
     ],
     beforeYouCome: {
-      duration: "2.5 hrs",
-      startTime: "Mid Afternoon 1.00 PM - 3.30 PM",
+      duration: "4 hrs",
+      startTime: "Morning 6:00 AM - 10:00 AM",
       distance: "6–8 km",
       difficulty: "Moderate — walking on rugged terrain",
       groupSize: "Small & Intimate (up to 8 guests)",
@@ -970,7 +970,7 @@ metaDescription: "Meet Jaipur's master craftsmen on this artisan tour — block 
     ],
     beforeYouCome: {
       duration: "2.5–3 hrs",
-      startTime: "Mid-afternoon 1:00 PM",
+      startTime: "Mid-afternoon 1:00 PM - 3:30 PM",
       distance: "4–5 km",
       difficulty: "Easy — slow paced",
       groupSize: "Small & Intimate (up to 8 guests)",
