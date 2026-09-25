@@ -8,6 +8,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { journalArticles, getRelatedJournalArticles } from "@/data/journal";
 import { getExperienceBySlug } from "@/data/experiences";
 import JournalImageGrid from "@/components/JournalImageGrid";
+import SetPageLang from "@/components/SetPageLang";
 
 export async function generateStaticParams() {
   return journalArticles.map((a) => ({ slug: a.slug }));
@@ -26,13 +27,17 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: article.lang === "es" ? { es: url } : undefined,
+    },
     openGraph: {
       title,
       description,
       url,
       type: "article",
       images: [image],
+      locale: article.lang === "es" ? "es_ES" : "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -60,6 +65,7 @@ export default async function JournalArticlePage({ params }) {
 
   return (
     <>
+       <SetPageLang lang={article.lang} />
       {/* ── BlogPosting schema ── */}
       <script
         type="application/ld+json"

@@ -4,6 +4,72 @@
  */
 
 export const journalArticles = [
+    // Fuerte Amber: Guía Completa Blog 7
+  {
+    slug: "fuerte-amber-guia-completa",
+    title: "Fuerte Amber: Guía Completa",
+    excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
+    category: "Jaipur Guide", // TODO: confirm — same open question as other articles
+    readTime: "6 min read",
+    lang: "es", // used by generateMetadata for hreflang; also passed to body wrapper
+    image: "/experiances/Ridge and ramparts/thumbnail.jpg",
+    relatedExperiences: [
+      "ridge-and-ramparts",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
+    ],
+    faqs: [
+      { q: "¿Cuánto dura la experiencia The Ridge & Ramparts?", a: "Aproximadamente 2.5 horas, con un recorrido de 5 a 6 kilómetros que incluye cierto desnivel." },
+      { q: "¿Es necesario tener buena condición física?", a: "Se recomienda una condición física moderada, ya que hay tramos con desnivel en la caminata por la cresta." },
+      { q: "¿Se puede reservar de forma privada?", a: "Sí, las reservas privadas están disponibles para cualquier tamaño de grupo." },
+      { q: "¿La experiencia se realiza completamente en español?", a: "Sí — cada experiencia de Raah, incluyendo The Ridge & Ramparts, se ofrece tanto en inglés como en español como parte del precio estándar, sin cargo adicional." },
+      { q: "¿Qué debo llevar?", a: "Zapatos cómodos para caminar, capas ligeras, y protección solar, ya que algunos tramos de la cresta están expuestos al sol." },
+    ],
+    body: `Pocos lugares en la India logran combinar historia, arquitectura e ingeniería militar de la forma en que lo hace el Fuerte Amber, a las afueras de Jaipur. Antes de reservar una visita, esta guía cubre lo esencial: su historia, qué ver, cómo llegar, y por qué recorrerlo con un guía local marca una diferencia real frente a visitarlo por cuenta propia.
+
+## Historia del Fuerte Amber
+
+El Fuerte Amber fue la sede de los antiguos gobernantes de Jaipur antes de que la ciudad misma fuera fundada. El pueblo de Amber, a los pies del fuerte, alberga templos centenarios, havelis tradicionales y pozos escalonados que formaban parte de la vida cotidiana mucho antes de que el fuerte se convirtiera en un destino turístico. Dentro del propio Fuerte Amber, cuatro patios distintos combinan elementos de arquitectura hindú y mogol — entre ellos el Ganesh Pol, el Sattais Kacheri, el Diwan-e-Aam, y el famoso Jai Mandir, conocido como el Palacio de los Espejos.
+
+## Qué Hacer en el Fuerte Amber
+
+Más allá del fuerte principal, la zona ofrece bastante más de lo que la mayoría de los visitantes llega a ver en una visita rápida. El Templo Jagat Shiromani, una maravilla arquitectónica del siglo XVI, destaca por su puerta de arco tallada en una sola pieza de mármol blanco. Los antiguos pozos escalonados de Amber, hoy en gran parte olvidados por el turismo convencional, eran verdaderos centros sociales donde las mujeres locales se reunían mientras realizaban sus tareas diarias.
+
+Para quienes buscan algo más allá de lo evidente, existe un túnel histórico que conecta el Fuerte Amber con el Fuerte Jaigarh, utilizado antiguamente por la familia real. Este túnel conduce hasta el cañón Jaivana, el cañón más grande y pesado jamás construido, con un peso de 150 toneladas.
+
+## Cómo Llegar y Cuándo Visitar
+
+El Fuerte Amber se encuentra a unos 20-30 minutos en coche desde el centro de Jaipur, dependiendo del tráfico. La mayoría de los visitantes llegan en taxi privado o mediante aplicaciones como Uber u Ola, ya que ofrecen tarifas más predecibles que negociar con un auto-rickshaw para trayectos de esta distancia.
+
+En cuanto al mejor momento para visitar, las mañanas son preferibles — no solo por las temperaturas más frescas, sino porque los grupos guiados suelen comenzar temprano, antes de que lleguen las multitudes del mediodía.
+
+## La Experiencia Guiada de Raah: [The Ridge & Ramparts](/experiences/ridge-and-ramparts)
+
+Raah Experiences ofrece [The Ridge & Ramparts](/experiences/ridge-and-ramparts), una experiencia guiada de 2.5 horas que va mucho más allá del recorrido estándar por el fuerte. El punto de encuentro es el Photo Point frente al Fuerte Amber, y el recorrido incluye el pueblo de Amber, el Templo Jagat Shiromani, los antiguos pozos escalonados, y el túnel histórico hacia el Fuerte Jaigarh — terminando junto al cañón Jaivana.
+
+Lo que distingue esta experiencia es el idioma: cada recorrido se realiza tanto en inglés como en español, sin cargo adicional por el idioma. El guía principal, Shobhit, estudió español en la Universidad de Salamanca, lo cual le da una fluidez y un acento que sorprende constantemente a los visitantes hispanohablantes. Varios huéspedes de países de habla hispana lo han confirmado directamente en sus reseñas:
+
+> "Quiero destacar a Shobhit, quien fue el mejor guía, educado, bien vestido, amable, y hablaba muy buen español. Las experiencias que ofrece en Jaipur son la mejor forma de conocer la ciudad."
+> — María Campos, México
+
+> "Nuestra experiencia con Shobhit ha sido maravillosa. Nos ha demostrado un gran conocimiento de cada lugar visitado. Siempre muy amable y pendiente en todo momento de nosotros."
+> — Marcela Padilla, México
+
+> "¡¡Muy buen español!!"
+> — Edith Maria Hoyos, El Salvador
+
+Para más detalles sobre la experiencia bilingüe de Raah, puede consultar nuestra guía completa sobre el mejor guía en inglés y español en Jaipur *(disponible en inglés)*.
+
+## Precios en EUR
+
+The Ridge & Ramparts tiene un precio de $30 USD (₹2,500), lo que equivale aproximadamente a €26, según el tipo de cambio actual. *(Nota: el tipo de cambio varía diariamente; esta cifra es una referencia aproximada, no un precio fijo en euros.)*
+
+Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts) hoy mismo.`,
+  },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {
     slug: "jaipur-trip-cost",
