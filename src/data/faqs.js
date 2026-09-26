@@ -1,16 +1,9 @@
 /**
- * faqs.js — Raah India FAQ Data
- * Central data source for the FAQ page.
- *
  * Each entry has:
  *   id       — unique number
  *   question — the question string
  *   answer   — the answer string (plain text; keep accurate to site content)
  *   category — one of: "General" | "Experiences" | "Booking" | "Practical Information"
- *
- * Policy note: answers are intentionally directed toward enquiry/contact wherever
- * exact policies (pricing, cancellation terms, payment methods) are not publicly
- * committed to on the website, to avoid inventing details.
  */
 
 export const faqs = [
@@ -30,18 +23,41 @@ export const faqs = [
       "All our experiences are currently based in and around Jaipur, Rajasthan. We cover the Old City (walled city), Amber Town, the Aravalli ridgeline, and the Jaipur countryside. Each experience has its own specific meeting point — confirmed at the time of booking.",
   },
   {
-    id: 3,
-    category: "General",
-    question: "What languages are the experiences conducted in?",
-    answer:
-      "All Raah experiences are conducted in English and Spanish. If you require a different language, please reach out to us via the enquiry form or WhatsApp and we will do our best to accommodate your group.",
-  },
+  id: 3,
+  category: "General",
+  question: "What languages are the experiences conducted in?",
+  answer:
+    "All Raah experiences are conducted in English and Spanish as standard, with no additional charge for either language. For other languages (Italian, German, Russian, or Japanese), guides can sometimes be arranged on request, subject to availability. Please reach out via the enquiry form or WhatsApp and we will do our best to accommodate your group.",
+  linkText: "More on our guide's language background",
+  linkHref: "/journal/best-english-spanish-guide-jaipur",
+},
   {
     id: 4,
     category: "General",
     question: "How do I contact Raah?",
     answer:
       "The fastest way to reach us is via WhatsApp at +91 99299 92539 — we're available 9 AM to 9 PM IST, seven days a week. You can also fill in the enquiry form on our Contact page or email us at raahindiaexperiences@gmail.com. We respond personally to every message, usually within 24 hours.",
+  },
+  {
+    id: 26,
+    category: "General",
+    question: "Who is the best tour guide or operator in Jaipur?",
+    answer:
+      "Rather than claim to be \"the best,\" what genuinely sets Raah apart: every experience is personally led (not outsourced to rotating guides), groups are capped at 8 people, no stop on any experience is commission-based or forced shopping, and the guide holds both Jaipur Regional and Pan India (IITG) government tourism licenses.",
+  },
+  {
+    id: 27,
+    category: "General",
+    question: "Is Raah a traditional travel agency?",
+    answer:
+      "No — Raah is a boutique, single-guide-led experience company rather than a traditional travel agency. If you're looking for a personal, storytelling-led alternative to large group tours, this is what Raah is built around.",
+  },
+  {
+    id: 28,
+    category: "General",
+    question: "Are Raah's experiences designed for international or foreign visitors?",
+    answer:
+      "Yes — every experience is conducted in English and Spanish, kept to small groups, and built around storytelling rather than a standard checklist of monuments. Guest reviews come from travellers across more than ten countries.",
   },
 
   // ── Experiences ───────────────────────────────────────────────────────────
@@ -159,6 +175,13 @@ export const faqs = [
     answer:
       "Light rain rarely stops a Raah experience — the old city and heritage sites have their own charm in the rain. In the case of severe weather that makes the experience unsafe or impractical, we will reschedule at no charge. We will always communicate proactively if there is a weather concern.",
   },
+  {
+    id: 29,
+    category: "Booking",
+    question: "Can I get a full-day guided tour cost estimate for a foreign visitor?",
+    answer:
+      "Full-day combo experiences range from ₹4,050 (approximately $45) for a One Day Signature Journey up to ₹8,550 (approximately $95) for the most comprehensive Full-Day Premium Journey, which combines three experiences into a single day.",
+  },
 
   // ── Practical Information ─────────────────────────────────────────────────
   {
@@ -180,7 +203,7 @@ export const faqs = [
     category: "Practical Information",
     question: "Is it safe for solo female travellers?",
     answer:
-      "Yes. Your guide accompanies the group throughout, and all routes stay within well-populated areas of the city — even during the early morning experiences. We take the comfort and safety of all guests seriously.",
+      "Yes. Every Raah experience is led personally by a licensed guide who stays with the group throughout, and all routes are planned through well-populated parts of the city — even during early morning and evening walks. Groups are also kept small, capped at 8 guests, so your guide can look after everyone properly. Standard precautions worth knowing regardless of destination: save local emergency numbers on arrival (100 for police, 181 for India's women's helpline), use registered transport or ride-hailing apps rather than hailing an unmarked vehicle, and keep someone informed of your day's plans. If you'd feel more comfortable with a fully private setting, private bookings are available for solo travellers too.",
   },
   {
     id: 24,
@@ -196,10 +219,18 @@ export const faqs = [
     answer:
       "Food is included in experiences where it is listed as an inclusion — for example, Jaipur at Dawn includes local breakfast and street food tastings. All food served on Raah experiences is vegetarian by default. If you have specific dietary requirements or allergies, please let us know at the time of booking.",
   },
+  {
+  id: 30,
+  category: "Practical Information",
+  question: "How much does a trip to Jaipur cost?",
+  answer:
+    "Costs vary widely by travel style. A budget traveller can expect roughly $14–18 per day, a mid-range traveller around $65–70 per day, and a luxury traveller $175 or more per day, covering accommodation, food, local transport, and one guided experience.",
+  linkText: "See our full cost breakdown",
+  linkHref: "/journal/how-much-does-a-jaipur-trip-cost",
+},
 ];
 
 /**
- * Returns a deduplicated, sorted list of all categories present in the faqs array.
  * Order: General → Experiences → Booking → Practical Information
  */
 const CATEGORY_ORDER = ["General", "Experiences", "Booking", "Practical Information"];

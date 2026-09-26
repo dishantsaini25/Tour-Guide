@@ -89,7 +89,7 @@ function FAQItem({ item, isOpen, onToggle, index }) {
           transition: "max-height 0.4s ease, opacity 0.3s ease",
         }}
       >
-        <p
+                <p
           style={{
             fontFamily: IN,
             fontSize: "0.92rem",
@@ -102,6 +102,23 @@ function FAQItem({ item, isOpen, onToggle, index }) {
         >
           {item.answer}
         </p>
+
+        {item.linkHref && (
+          <Link
+            href={item.linkHref}
+            style={{
+              fontFamily: IN,
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              color: "#FF8C00",
+              textDecoration: "underline",
+              display: "inline-block",
+              paddingBottom: "22px",
+            }}
+          >
+            {item.linkText} →
+          </Link>
+        )}
       </div>
     </div>
   );
