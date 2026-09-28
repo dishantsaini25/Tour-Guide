@@ -7,6 +7,7 @@ export const journalArticles = [
     // Fuerte Amber: Guía Completa Blog 7
   {
     slug: "fuerte-amber-guia-completa",
+    datePublished: "2026-09-25",
     title: "Fuerte Amber: Guía Completa",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
     category: "Jaipur Guide", // TODO: confirm — same open question as other articles
@@ -73,6 +74,7 @@ Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {
     slug: "jaipur-trip-cost",
+    datePublished: "2026-09-24",
     title: "How Much Does a Trip to Jaipur Cost?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
     category: "Jaipur Guide",
@@ -172,6 +174,7 @@ For a broader view of how these costs fit into your overall trip, see our [compl
     // Best English & Spanish-Speaking Guide in Jaipur Blog 5
   {
     slug: "english-spanish-speaking-guide-jaipur",
+    datePublished: "2026-09-23",
     title: "Best English & Spanish-Speaking Guide in Jaipur",
     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
     category: "Booking Guide", // TODO: same guess as Blog 4 — confirm category naming
@@ -253,6 +256,7 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
    // How to Find a Reputable Tour Guide in Jaipur Blog 4
   {
     slug: "reputable-tour-guide-jaipur",
+    datePublished: "2026-09-23",
     title: "How to Find a Reputable Tour Guide in Jaipur",
     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
     category: "Booking Guide", // TODO: confirm — doesn't match existing categories, guessed
@@ -337,6 +341,7 @@ Want to meet your guide before you book? [Learn more about Shobhit and Raah's st
     // Best 3-Day Jaipur Itinerary for First-Time Visitors Blog 3
   {
     slug: "3-day-jaipur-itinerary",
+    datePublished: "2026-09-22",
     title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
     excerpt: "A complete day-by-day plan for a first visit — built around Raah's own experiences, with practical guidance on where to stay and how to get around.",
     category: "Jaipur Guide",
@@ -434,6 +439,7 @@ Ready to plan your trip? [Get in touch](/contact) and we'll help you build the r
      // How Many Days Do You Need in Jaipur? Blog 2
   {
     slug: "how-many-days-in-jaipur",
+    datePublished: "2026-09-21",
     title: "How Many Days Do You Need in Jaipur?",
     excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
     category: "Jaipur Guide",
@@ -505,6 +511,7 @@ Trip length changes what you see, but it shouldn't change how safe you feel doin
     //   Things to Do in Jaipur: The Complete Guide Blog 1
   {
     slug: "things-to-do-in-jaipur-complete-guide",
+    datePublished: "2026-09-19",
     title: "Things to Do in Jaipur: The Complete Guide",
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
     category: "Jaipur Guide",

@@ -52,6 +52,7 @@ const PF = "Fraunces, Georgia, serif";
 const IN = "DM Sans, system-ui, sans-serif";
 const OR = "#FF8C00", GO = "#F5A623";
 const CH = "#1A1209", MU = "#6B5B2E", CR = "#FFFDE7", PH = "#FFD89B";
+const ORG = { "@id": "https://www.raahexperiences.in/#organization" };
 
 export default async function JournalArticlePage({ params }) {
   const { slug } = await params;
@@ -65,7 +66,8 @@ export default async function JournalArticlePage({ params }) {
 
   return (
     <>
-       <SetPageLang lang={article.lang} />
+      <SetPageLang lang={article.lang} />
+
       {/* ── BlogPosting schema ── */}
       <script
         type="application/ld+json"
@@ -74,12 +76,18 @@ export default async function JournalArticlePage({ params }) {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "@id": `${pageUrl}#article`,
+            mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
             headline: article.title,
             description: article.excerpt,
             image: cloudImg(article.image),
             url: pageUrl,
-            author: { "@id": "https://www.raahexperiences.in/#organization" },
-            publisher: { "@id": "https://www.raahexperiences.in/#organization" },
+            inLanguage: article.lang || "en",
+            author: article.author
+              ? { "@type": "Person", name: article.author, url: "https://www.raahexperiences.in/about" }
+              : ORG,
+            publisher: ORG,
+            ...(article.datePublished && { datePublished: article.datePublished }),
+            ...(article.dateModified && { dateModified: article.dateModified }),
           }),
         }}
       />
@@ -112,22 +120,30 @@ export default async function JournalArticlePage({ params }) {
         </div>
 
         <div style={{ position: "relative", zIndex: 10, maxWidth: "900px", margin: "0 auto", padding: "140px 20px 52px", width: "100%" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
-              <Clock size={11} style={{ color: OR }} />{article.readTime}
-            </span>
-            <span style={{ color: "rgba(255,255,255,0.4)" }}>·</span>
-            <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
-              <BookOpen size={11} style={{ color: OR }} />The Raah Journal
-            </span>
-          </div>
+        <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: "10px", marginBottom: "16px" }}>
+  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
+    <Clock size={11} style={{ color: OR }} />{article.readTime}
+  </span>
+  <span style={{ color: "rgba(255,255,255,0.4)" }}>·</span>
+  <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
+    <BookOpen size={11} style={{ color: OR }} />The Raah Journal
+  </span>
+  {article.datePublished && (
+    <>
+      <span style={{ color: "rgba(255,255,255,0.4)" }}>·</span>
+      <time dateTime={article.datePublished} style={{ fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
+        {new Date(article.datePublished).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Kolkata" })}
+      </time>
+    </>
+  )}
+</div>
           <h1 style={{ fontFamily: PF, fontWeight: 700, fontSize: "clamp(2rem,5vw,3.4rem)", color: "#FFFFFF", lineHeight: 1.1 }}>
             {article.title}
           </h1>
         </div>
       </section>
 
-           {/* ── Body ── */}
+      {/* ── Body ── */}
       <div style={{ background: "#FFFFFF", padding: "52px 0 80px" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 20px" }}>
           <JournalBody text={article.body} />
@@ -141,14 +157,14 @@ export default async function JournalArticlePage({ params }) {
             </div>
           )}
 
-         {article.images && article.images.length > 0 && (
-  <div style={{ marginTop: "40px" }}>
-    <h2 style={{ fontFamily: PF, fontSize: "1.35rem", fontWeight: 700, color: CH, marginBottom: "16px" }}>
-      From Our Guests
-    </h2>
-    <JournalImageGrid images={article.images} />
-  </div>
-)}
+          {article.images && article.images.length > 0 && (
+            <div style={{ marginTop: "40px" }}>
+              <h2 style={{ fontFamily: PF, fontSize: "1.35rem", fontWeight: 700, color: CH, marginBottom: "16px" }}>
+                From Our Guests
+              </h2>
+              <JournalImageGrid images={article.images} />
+            </div>
+          )}
 
           <div style={{ marginTop: "36px", paddingTop: "22px", borderTop: `1px solid ${PH}` }}>
             <p style={{ fontFamily: PF, fontStyle: "italic", fontSize: "0.9rem", color: MU }}>
