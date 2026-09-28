@@ -30,7 +30,7 @@ const EXP_LABELS = {
   "the-blue-hour":         "The Blue Hour",
   "beyond-the-pink":       "Beyond the Pink",
   "farm-and-fire":         "The Farm & Fire",
-  "cosmic-imperial-triad": "Cosmic & Imperial Triad",
+  "cosmic-imperial-triad": "The Crown of Jaipur",
   "living-walled-city":    "The Living Walled City",
   "the-lost-kingdom":      "The Lost Kingdom",
   "artisans-jaipur":       "The Artisan's Jaipur",

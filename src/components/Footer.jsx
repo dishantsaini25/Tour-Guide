@@ -15,11 +15,13 @@ const IN  = "DM Sans, system-ui, sans-serif";
 const expLinks = [
   ["/experiences/jaipur-at-dawn",        "Jaipur at Dawn"],
   ["/experiences/ridge-and-ramparts",    "The Ridge & Ramparts"],
-  ["/experiences/the-blue-hour",         "The Blue Hour"],
+  ["/experiences/the-crown-of-jaipur", "The Crown of Jaipur"],
+   ["/experiences/the-blue-hour",         "The Blue Hour"],
   ["/experiences/beyond-the-pink",       "Beyond the Pink"],
-  ["/experiences/farm-and-fire",         "The Farm & Fire"],
-  ["/experiences/cosmic-imperial-triad", "The Cosmic & Imperial Triad"],
-  ["/experiences/living-walled-city",    "The Living Walled City"],
+   ["/experiences/farm-and-fire",         "The Farm & Fire"],
+  ["/experiences/living-walled-city", "The Living Walled City"],
+  ["/experiences/the-lost-kingdom", "The Lost Kingdom"],
+["/experiences/artisans-jaipur", "The Artisan's Jaipur"],
 ];
 
 const navLinks = [
