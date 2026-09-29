@@ -29,7 +29,7 @@ export const faqs = [
   answer:
     "All Raah experiences are conducted in English and Spanish as standard, with no additional charge for either language. For other languages (Italian, German, Russian, or Japanese), guides can sometimes be arranged on request, subject to availability. Please reach out via the enquiry form or WhatsApp and we will do our best to accommodate your group.",
   linkText: "More on our guide's language background",
-  linkHref: "/journal/best-english-spanish-guide-jaipur",
+  linkHref: "/journal/english-spanish-speaking-guide-jaipur",
 },
   {
     id: 4,
@@ -226,7 +226,7 @@ export const faqs = [
   answer:
     "Costs vary widely by travel style. A budget traveller can expect roughly $14–18 per day, a mid-range traveller around $65–70 per day, and a luxury traveller $175 or more per day, covering accommodation, food, local transport, and one guided experience.",
   linkText: "See our full cost breakdown",
-  linkHref: "/journal/how-much-does-a-jaipur-trip-cost",
+  linkHref: "/journal/jaipur-trip-cost",
 },
 ];
 
