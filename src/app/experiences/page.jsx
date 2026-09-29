@@ -3,7 +3,7 @@ import { cloudImg } from "@/lib/cloudinaryImage";
 import ExperiencesPageClient from "./ExperiencesPageClient";
 
 export const metadata = {
-  title: "Jaipur City Sightseeing Tours — Raah Experiences",
+title: { absolute: "Jaipur City Sightseeing Tours — Raah Experiences" },
   description:
     "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
   alternates: {

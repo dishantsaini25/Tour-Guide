@@ -4,7 +4,7 @@ import AboutValuesSlider from "./AboutClient";
 import urlMap from "../../../cloudinary-urls.json";
 
 export const metadata = {
-  title: "Meet Your Jaipur Tour Guide | Raah Experiences",
+title: { absolute: "Meet Your Jaipur Tour Guide | Raah Experiences" },
   description:
     "Personally guided Jaipur heritage tours by a local storyteller. Slow, immersive walks that go beyond monuments — for travelers who want to understand the city, not just see it.",
   alternates: {

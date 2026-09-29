@@ -9,7 +9,7 @@ import JournalPreview from "@/components/home/JournalPreview";
 import FinalCTA from "@/components/home/FinalCTA";
 
 export const metadata = {
-  title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
+  title: { absolute: "Jaipur City Tour | Heritage Walks by Raah Experiences" },
   description:
     "Boutique Jaipur city tours with an English-speaking local guide. Small groups, sunrise heritage walks, food trails & hidden stories of the Pink City.",
   alternates: {
