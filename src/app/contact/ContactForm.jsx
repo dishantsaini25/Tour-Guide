@@ -14,7 +14,7 @@ const expOptions = [
   "The Blue Hour (Evening Jeep Experience)",
   "Beyond the Pink (Evening Heritage & Food Walk)",
   "The Farm & Fire (Countryside Cooking Masterclass)",
-  "The Cosmic & Imperial Triad (Hawa Mahal, Jantar Mantar & City Palace)",
+  "the-crown-of-jaipur (Hawa Mahal, Jantar Mantar & City Palace)",
   "The Living Walled City",
   "The Lost Kingdom (Weekend Wilderness Trail)",
   "The Artisan's Jaipur (Craft Lanes Walk)",
