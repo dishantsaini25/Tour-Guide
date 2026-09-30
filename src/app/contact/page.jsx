@@ -2,8 +2,11 @@ import ContactForm from "./ContactForm";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Book an Experience",
-  description: "Book a curated Raah India Experience in Jaipur. We respond personally within 24 hours.",
+  title: { absolute: "Book a Jaipur Walking Tour | Raah Experiences" },
+  description: "Book a Jaipur walking tour with an English & Spanish-speaking guide — Jaipur Regional Level Govt. Approved & Pan India IITG certified. We respond personally within 24 hours.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in/contact",
+  },
 };
 
 const WA  = "https://wa.me/919929992539?text=Hello%2C+I%27d+like+to+enquire+about+a+Raah+India+Experience.";

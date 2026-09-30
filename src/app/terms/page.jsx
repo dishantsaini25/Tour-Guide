@@ -1,8 +1,11 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms & Conditions | Raah India Experiences",
+  title: { absolute: "Terms & Conditions | Raah India Experiences" },
   description: "Terms and Conditions for Raah India Experiences — the rules and policies governing our curated walking tours in Jaipur.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in/terms",
+  },
 };
 
 const PF = "Fraunces, Georgia, serif";

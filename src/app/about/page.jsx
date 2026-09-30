@@ -5,15 +5,15 @@ import urlMap from "../../../cloudinary-urls.json";
 
 export const metadata = {
 title: { absolute: "Meet Your Jaipur Tour Guide | Raah Experiences" },
-  description:
-    "Personally guided Jaipur heritage tours by a local storyteller. Slow, immersive walks that go beyond monuments — for travelers who want to understand the city, not just see it.",
+description:
+  "Personally guided Jaipur heritage tours by an English & Spanish-speaking, government-certified local guide.",
   alternates: {
     canonical: "https://www.raahexperiences.in/about",
   },
   openGraph: {
     title: "Meet Your Jaipur Tour Guide | Raah Experiences",
     description:
-      "Personally guided Jaipur heritage tours by a local storyteller. Slow, immersive walks that go beyond monuments.",
+  "Personally guided Jaipur heritage tours by an English & Spanish-speaking, government-certified local guide.",
     url: "https://www.raahexperiences.in/about",
     type: "website",
     images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
@@ -211,7 +211,7 @@ export default function AboutPage() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px", fontFamily: IN, fontSize: "0.95rem", color: MU, lineHeight: 1.85, fontWeight: 300, marginBottom: "30px" }}>
                 <p style={{fontWeight: "bold"}}>Mine began while guiding travellers through Jaipur.</p>
-                <p>As a licensed, English-speaking guide, I've spent years walking these streets with visitors from across the world.</p>
+               <p>As an English & Spanish-speaking guide — holding a Jaipur Regional Level Govt. Approved Tour Guide licence and Pan India Incredible India Tour Guide (IITG) certification — I've spent years walking these streets with visitors from across the world.</p>
                 <p>For years, I watched visitors leave with stunning photographs of forts and palaces, yet many never experienced the Jaipur that locals truly know and love. One guest summed it up perfectly:</p>
                 <blockquote style={{ fontFamily: PF, fontSize: "1.05rem", fontStyle: "italic", color: CH, borderLeft: `3px solid ${OR}`, paddingLeft: "18px", fontWeight: 400 }}>
                   "The monuments were beautiful, but I wish I had met the people who give this city its soul."

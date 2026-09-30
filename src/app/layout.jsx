@@ -52,45 +52,46 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "TravelAgency",
-              "@id": "https://www.raahexperiences.in/#organization",
-              name: "Raah Experiences",
-              url: "https://www.raahexperiences.in",
-              description:
-                "Boutique curated walking tours & cultural experiences in Jaipur, led by a local storyteller.",
-              image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
-              telephone: "+91-9929992539",
-              email: "raahindiaexperiences@gmail.com",
-              priceRange: "₹₹",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Jaipur",
-                addressRegion: "Rajasthan",
-                addressCountry: "IN",
-              },
-              areaServed: {
-                "@type": "City",
-                name: "Jaipur",
-              },
-              sameAs: [
-                "https://www.instagram.com/raah.experiences",
-                "https://www.facebook.com/profile.php?id=61586556497302",
-              ],
-              /* Still missing — fill in once you have real numbers, never fabricate:
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "REAL_VALUE",
-                reviewCount: "REAL_COUNT"
-              },
-              */
-            }),
-          }}
-        />
+       <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "@id": "https://www.raahexperiences.in/#organization",
+      name: "Raah Experiences",
+      url: "https://www.raahexperiences.in",
+      description:
+        "Boutique curated walking tours & cultural experiences in Jaipur, led by an English & Spanish-speaking, government-certified local guide.",
+      image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
+      telephone: "+91-9929992539",
+      email: "raahindiaexperiences@gmail.com",
+      priceRange: "₹₹",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Jaipur",
+        addressRegion: "Rajasthan",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Jaipur",
+      },
+      knowsLanguage: ["en", "es"],
+      sameAs: [
+        "https://www.instagram.com/raah.experiences",
+        "https://www.facebook.com/profile.php?id=61586556497302",
+      ],
+      /* Still missing — fill in once you have real numbers, never fabricate:
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "REAL_VALUE",
+        reviewCount: "REAL_COUNT"
+      },
+      */
+    }),
+  }}
+/>
       </head>
       <body>
         <Navbar />

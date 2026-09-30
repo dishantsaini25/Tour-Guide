@@ -1,8 +1,11 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy | Raah India Experiences",
+  title: { absolute: "Privacy Policy | Raah India Experiences" },
   description: "Privacy Policy for Raah India Experiences — how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "https://www.raahexperiences.in/privacy",
+  },
 };
 
 const PF = "Fraunces, Georgia, serif";
