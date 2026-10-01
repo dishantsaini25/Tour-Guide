@@ -10,9 +10,9 @@ export const journalArticles = [
     datePublished: "2026-10-01",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
-    category: "Jaipur Guide", // TODO: same open naming question as other articles
+    category: "Jaipur Guide", 
     readTime: "7 min read",
-    image: "/experiances/Beyond the pink/thumbnail.jpg", // TODO: placeholder — confirm or swap
+    image: "/experiances/Ridge and ramparts/IMG-20250315-WA0195.jpg",
     relatedExperiences: [
       "beyond-the-pink",
       "the-blue-hour",
