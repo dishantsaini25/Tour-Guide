@@ -5,32 +5,31 @@
 
 export const journalArticles = [
   // Is Jaipur Safe for Solo and Female Travellers? Blog 8
-{
+  {
     slug: "is-jaipur-safe-solo-female-travellers",
-      datePublished: "2026-10-01",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
-  excerpt: "Jaipur is safe to visit with the same sensible precautions you'd use in any major city — and a few things specifically work in its favor for solo and female travellers.",
-  category: "Jaipur Guide", 
-  readTime: "7 min read",
-  image: "/experiances/Ridge and ramparts/IMG-20250315-WA0195.jpg", 
-  relatedExperiences: [
-    "beyond-the-pink",
-    "the-blue-hour",
-  ],
-  images: [
-    { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
-    { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
-    { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
-    { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
-  ],
-  faqs: [
-    { q: "Is Jaipur safe for tourists?", a: "Yes. Violent crime against tourists is rare; the more common concerns are petty theft and minor scams, both of which are easy to avoid with basic awareness." },
-    { q: "Is it safe to walk alone in Jaipur at night?", a: "Sticking to well-populated, well-lit areas is the standard precaution, the same as in any city. Raah's evening experiences are specifically routed through illuminated, busy parts of the city rather than quiet back lanes." },
-    { q: "Should solo female travellers avoid Jaipur?", a: "No — many solo and female travellers visit Jaipur without incident. Standard precautions (registered transport, modest dress, staying aware in crowds) apply here as they would in most tourist cities worldwide." },
-    { q: "Does Raah offer private tours for solo travellers?", a: "Yes — every experience can be booked privately for solo travellers who'd prefer a one-on-one setting rather than joining a group." },
-    { q: "What's the single most useful safety habit for a first-time visitor?", a: "Getting a local SIM card on arrival — it makes booking registered transport, staying reachable, and navigating the city noticeably easier and safer throughout the trip." },
-  ],
-  body: `This comes up more than almost any other question we get — and it deserves a straight answer rather than a vague reassurance. Jaipur is safe to visit, provided you take the same sensible precautions you'd use in any major city, and there are a few things specifically working in Jaipur's favor that make this an easier answer than in many destinations.
+    excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
+    category: "Jaipur Guide", // TODO: same open naming question as other articles
+    readTime: "7 min read",
+    image: "/experiances/Beyond the pink/thumbnail.jpg", // TODO: placeholder — confirm or swap
+    relatedExperiences: [
+      "beyond-the-pink",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
+      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    ],
+    faqs: [
+      { q: "Is Jaipur safe for tourists?", a: "Yes. Violent crime against tourists is rare; the more common concerns are petty theft and minor scams, both of which are easy to avoid with basic awareness." },
+      { q: "Is it safe to walk alone in Jaipur at night?", a: "Sticking to well-populated, well-lit areas is the standard precaution, the same as in any city. Raah's evening experiences are specifically routed through illuminated, busy parts of the city rather than quiet back lanes." },
+      { q: "Should solo female travellers avoid Jaipur?", a: "No — many solo and female travellers visit Jaipur without incident. Standard precautions (registered transport, modest dress, staying aware in crowds) apply here as they would in most tourist cities worldwide." },
+      { q: "Does Raah offer private tours for solo travellers?", a: "Yes — every experience can be booked privately for solo travellers who'd prefer a one-on-one setting rather than joining a group." },
+      { q: "What's the single most useful safety habit for a first-time visitor?", a: "Getting a local SIM card on arrival — it makes booking registered transport, staying reachable, and navigating the city noticeably easier and safer throughout the trip." },
+    ],
+    body: `It's one of the most common questions we get, and a fair one to ask before planning a trip anywhere unfamiliar. The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur specifically has a few things going for it that make this an easier answer than in many destinations.
 
 ## General Safety Context for Jaipur
 
@@ -46,12 +45,12 @@ On the ground, every Raah experience is led personally by a licensed guide who s
 
 ## Real Guest Experiences
 
-One review that speaks directly to this:
+One review that speaks directly to this, from a guest who travelled with her mother:
 
-> "Thank you for being our Guide this week. Your English delivery was excellent as was your priority to keep us safe at all times. You taught us many aspects and kept the right balance between too much & too little information, which is very important."
-> — John Collins, United Kingdom
+> "My mother & I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all."
+> — Viktorija Satkauskienė, Lithuania
 
-A guest explicitly calling out "priority to keep us safe" is about as direct a safety endorsement as a review gets.
+Two women travelling together for three weeks, comparing guides across multiple stops, is a genuinely relevant data point for anyone weighing this question.
 
 ## Safety Tips for Solo Female Travelers on Jaipur Walking Tours
 
@@ -67,7 +66,7 @@ A few general precautions worth knowing, on top of anything a guided experience 
 None of this is Jaipur-specific — it's the same baseline advice worth following in any city you're visiting for the first time.
 
 For more on how Raah's experiences are structured day to day, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or [get in touch](/contact) if you'd like to discuss a private booking.`,
-},
+  },
     // Fuerte Amber: Guía Completa Blog 7
   {
     slug: "fuerte-amber-guia-completa",
@@ -287,7 +286,7 @@ Rather than take fluency on faith, it's worth looking at what real guests, writi
 
 That comparison carries extra weight since Jaipur wasn't her first stop on a three-week trip — she had several other guides to measure the experience against.
 
-> "Your English delivery was excellent as was your priority to keep us safe at all times. You taught us many aspects and kept the right balance between too much and too little information, which is very important."
+> "We had a list of things to do and in one day with Shobhit we were able to do most of it. He was super knowledgeable about each place we visited and gave us amazing history and background on the various sites. He also took us to some lesser known but equally as beautiful places in Jaipur which was such a great addition." — Diyva Mowji, USA"
 > — John Collins, United Kingdom
 
 > "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail."
