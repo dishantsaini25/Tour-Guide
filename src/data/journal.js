@@ -7,6 +7,7 @@ export const journalArticles = [
   // Is Jaipur Safe for Solo and Female Travellers? Blog 8
   {
     slug: "is-jaipur-safe-solo-female-travellers",
+    datePublished: "2026-10-01",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
     category: "Jaipur Guide", // TODO: same open naming question as other articles
