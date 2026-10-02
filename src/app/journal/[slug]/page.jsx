@@ -19,8 +19,8 @@ export async function generateMetadata({ params }) {
   const article = journalArticles.find((a) => a.slug === slug);
   if (!article) return {};
 
-  const title = `${article.title} | The Raah Journal`;
-  const description = article.excerpt;
+   const title = article.metaTitle || article.title;
+  const description = article.metaDescription || article.excerpt;
   const url = `https://www.raahexperiences.in/journal/${article.slug}`;
   const image = cloudImg(article.image);
 
@@ -78,7 +78,7 @@ export default async function JournalArticlePage({ params }) {
             "@id": `${pageUrl}#article`,
             mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
             headline: article.title,
-            description: article.excerpt,
+                     description: article.metaDescription || article.excerpt,
             image: cloudImg(article.image),
             url: pageUrl,
             inLanguage: article.lang || "en",

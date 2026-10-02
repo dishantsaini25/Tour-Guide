@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   const exp = getExperienceBySlug(slug);
   if (!exp) return {};
 
-  const title = exp.metaTitle || `${exp.title} — ${exp.subtitle} | Raah Experiences`;
+  const title = exp.metaTitle || `${exp.title} — ${exp.subtitle}`;
   const description = exp.metaDescription || exp.tagline;
   const url = `https://www.raahexperiences.in/experiences/${exp.slug}`;
   const image = cloudImg(exp.heroImage);
@@ -77,7 +77,8 @@ export default async function ExperienceDetailPage({ params }) {
             "@id": `${pageUrl}#trip`,
             name: exp.title,
             description: exp.tagline,
-            url: pageUrl,
+                        url: pageUrl,
+            image: cloudImg(exp.heroImage),
             touristType: "International tourists, heritage travellers",
             itinerary: {
               "@type": "ItemList",
@@ -314,7 +315,7 @@ export default async function ExperienceDetailPage({ params }) {
 
       {/* ── Hero ── */}
       <section style={{ position:"relative", minHeight:"65vh", display:"flex", alignItems:"flex-end", overflow:"hidden" }}>
-        <Image src={cloudImg(exp.heroImage)} alt={exp.title} fill className="object-cover object-center" priority sizes="100vw" />
+                <Image src={cloudImg(exp.heroImage)} alt={exp.seoName ? `${exp.title} – ${exp.seoName}` : exp.title} fill className="object-cover object-center" priority sizes="100vw" />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(20,10,0,0.92) 0%,rgba(20,10,0,0.22) 50%,transparent 100%)" }} />
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 15% 80%,rgba(255,140,0,0.12) 0%,transparent 55%)" }} />
 
@@ -331,8 +332,13 @@ export default async function ExperienceDetailPage({ params }) {
             <span>{exp.theme}</span>
           </div>
 
-          <h1 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(2.4rem,6.5vw,5.5rem)", color:"#FFFFFF", lineHeight:1.05, marginBottom:"12px" }}>
+                  <h1 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(2.4rem,6.5vw,5.5rem)", color:"#FFFFFF", lineHeight:1.05, marginBottom:"12px" }}>
             {exp.title}
+            {exp.seoName && (
+              <span style={{ display:"block", fontFamily:IN, fontSize:"0.28em", fontWeight:500, fontStyle:"normal", letterSpacing:"0.04em", color:"rgba(255,255,255,0.82)", marginTop:"12px" }}>
+                {exp.seoName}
+              </span>
+            )}
           </h1>
           <p style={{ fontFamily:PF, fontSize:"clamp(1rem,2vw,1.5rem)", fontStyle:"italic", color:"rgba(255,255,255,0.72)", marginBottom:"10px" }}>
             {exp.subtitle}
@@ -390,7 +396,7 @@ export default async function ExperienceDetailPage({ params }) {
               <div>
                 <p style={LABEL}>The Journey</p>
                 <div style={RULE} />
-                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>What You&apos;ll Experience</h2>
+                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>What You&apos;ll Experience{exp.seoName ? ` on This ${exp.seoName}` : ""}</h2>
                 <ul style={{ display:"flex", flexDirection:"column", gap:"14px" }}>
                   {exp.whatYouExperience.map((item, i) => (
                     <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"12px" }}>
@@ -525,7 +531,7 @@ export default async function ExperienceDetailPage({ params }) {
                   <p style={LABEL}>Gallery</p>
                   <div style={RULE} />
                   <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Moments From This Experience</h2>
-                  <GallerySlider images={exp.gallery.map(g => ({ ...g, src: cloudImg(g.src) }))} title={exp.title} />
+                 <GallerySlider images={exp.gallery.map((g, i) => ({ ...g, src: cloudImg(g.src), alt: `${exp.title} – ${exp.seoName || "Jaipur experience"} – photo ${i + 1}` }))} title={exp.title} />
                 </div>
               )}
 

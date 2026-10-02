@@ -1,14 +1,6 @@
 /**
  * experiences.js — Raah India Experiences
  * Central data source for all experience pages and cards.
- *
- * ── Image folder location ─────────────────────────────────────────
- * public/experiances/<folder>/thumbnail.jpg   → hero & card image
- * public/experiances/<folder>/<file>          → gallery images
- *
- * All paths are served from the public root, so they begin with
- * /experiances/... (no URL-encoding needed for spaces — Next.js
- * handles encoding automatically when the string is used as an href).
  */
 
 // ── Slug → public folder name ─────────────────────────────────────
@@ -24,9 +16,6 @@ const FOLDER_MAP = {
   "artisans-jaipur":       "the artisian jaipur",
 };
 
-// ── Ground-truth image inventory (filenames verified against disk) ─
-// thumbnail.jpg is always first and used as heroImage / cardImage.
-// All other entries populate the gallery (thumbnail excluded).
 const IMAGE_INVENTORY = {
   "Jaipur at down": [
     "thumbnail.jpg",
@@ -125,11 +114,6 @@ const IMAGE_INVENTORY = {
   ],
 };
 
-// ── Path generator ────────────────────────────────────────────────
-/**
- * Returns heroImage, cardImage, and gallery for a given slug.
- * Falls back to /images/placeholder.jpg for any missing config.
- */
 function getExperienceImages(slug) {
   const PLACEHOLDER = "/images/placeholder.jpg";
   const folderName  = FOLDER_MAP[slug];
@@ -159,9 +143,10 @@ function getExperienceImages(slug) {
 
 export const experiences = [
   // ── 1. Jaipur at Dawn ───────────────────────────────────────────
- {
-    slug: "jaipur-at-dawn",
-metaTitle: "Jaipur Sunrise Walking Tour | Jaipur at Dawn",
+    {
+     slug: "jaipur-at-dawn",
+    seoName: "Jaipur Sunrise Walking Tour",
+    metaTitle: "Jaipur Sunrise Walking Tour | Jaipur at Dawn",
 metaDescription: "A sunrise walking tour through Jaipur's temples, flower markets and local eateries — see the old city before the crowds arrive, with Raah Experiences.",
   priceUSD: 30,
   priceINR: 2500,
@@ -250,8 +235,9 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
   // ── 2. The Ridge & Ramparts ──────────────────────────────────────
   {
     slug: "ridge-and-ramparts",
-    metaTitle: "Amber to Jaigarh Fort Trek | The Ridge & Ramparts",
-    metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwells, and the maharaja's secret tunnel on this guided Ridge & Ramparts trek with Raah Experiences.",
+seoName: "Amber to Jaigarh Fort Heritage Trek",
+metaTitle: "Amber to Jaigarh Fort Trek | The Ridge & Ramparts",
+metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwells and the maharaja's secret tunnel on this guided heritage trek with Raah Experiences.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
@@ -339,9 +325,10 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
 
   // ── 3. The Cosmic & Imperial Triad ──────────────────────────────
   {
-    slug: "the-crown-of-jaipur",
-    metaTitle: "Hawa Mahal & Jantar Mantar Tour | Crown of Jaipur",
-    metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one royal story spanning astronomy, architecture and history, with Raah Experiences.",
+   slug: "the-crown-of-jaipur",
+seoName: "Hawa Mahal, Jantar Mantar & City Palace Tour",
+metaTitle: "Hawa Mahal & Jantar Mantar Tour | Crown of Jaipur",
+metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one royal story spanning astronomy, architecture and history, with Raah Experiences.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
@@ -430,9 +417,10 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
 
   // ── 4. The Blue Hour ────────────────────────────────────────────
   {
-    slug: "the-blue-hour",
-    metaTitle: "Jaipur Night Tour | Evening Jeep Ride — The Blue Hour",
-    metaDescription: "An open-jeep Jaipur night tour through illuminated forts, glowing bazaars and sunset views from Nahargarh. A safe, small-group Jaipur evening tour for couples, families and first-time visitors with Raah Experiences.",
+   slug: "the-blue-hour",
+seoName: "Jaipur Night Tour by Open Jeep",
+metaTitle: "Jaipur Night Tour | Evening Jeep Ride — The Blue Hour",
+metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber Fort's light show, then Jal Mahal, Hawa Mahal and Albert Hall glowing after dark.",
     priceUSD: 70,
     priceINR: 6300,
     priceNote: "Minimum 2 pax",
@@ -509,16 +497,17 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
       { q: "Is this suitable for elderly guests?", a: "Absolutely. This is a drive-based experience — very comfortable for guests of all ages." },
       { q: "Can we stop for dinner after?", a: "Yes — we finish near excellent restaurants and can recommend the best spots for the evening." },
       { q: "Can I book privately?", a: "Yes, and private bookings are particularly popular for couples and families." },
-      { q: "What camera settings work best?", a: "Night mode or manual low-light settings work best. We time our stops to Up to 8ise the best light at each location." },
+      { q: "What camera settings work best?", a: "Night mode or manual low-light settings work best. We time our stops to make the most of the light at each location." },
       { q: "Can we choose our own food stop at the end of the drive?", a: "Yes — before dropping you off, we can schedule a stop at a handpicked, trending local spot to enjoy snacks & drinks. Just let your guide know your preference." },
     ],
   },
 
   // ── 5. Beyond the Pink ──────────────────────────────────────────
   {
-    slug: "beyond-the-pink",
-    metaTitle: "Pink City Tour Jaipur | Street Food Walk – Beyond the Pink",
-    metaDescription: "Step into Jaipur's living streets on this Pink City tour — artisan lanes, evening bazaars, and a curated street food trail with local storytellers",
+   slug: "beyond-the-pink",
+seoName: "Jaipur Street Food Tour",
+metaTitle: "Jaipur Street Food Tour | Beyond the Pink",
+metaDescription: "An evening Pink City walk through Jaipur's old bazaars and artisan lanes, with 6–8 street food tastings — pani puri, kachori, lassi and kulfi.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
@@ -609,9 +598,10 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
 
   // ── 6. The Farm & Fire ──────────────────────────────────────────
   {
-    slug: "farm-and-fire",
-metaTitle: "Jaipur Food Tour | Rajasthani Cooking Experience — The Farm & Fire",
-metaDescription: "A countryside Jaipur food tour where you cook a traditional Rajasthani meal over a wood-fired stove with a local family. A hands-on Rajasthani cooking experience for food lovers, hosted by Raah Experiences.",
+   slug: "farm-and-fire",
+seoName: "Rajasthani Cooking Class in Jaipur",
+metaTitle: "Rajasthani Cooking Class Jaipur | Farm & Fire",
+metaDescription: "Cook a traditional Rajasthani vegetarian meal over a wood-fired chulha with a local family at a countryside farmhouse, 30 minutes from Jaipur.",
     priceUSD: 45,
     priceINR: 4000,
     priceNote: null,
@@ -702,13 +692,14 @@ metaDescription: "A countryside Jaipur food tour where you cook a traditional Ra
 
  // ── 7. The Living Walled City ───────────────────────────────────
 {
-  slug: "living-walled-city",
-metaTitle: "Walled City Jaipur Tour | UNESCO Heritage Walk — The Living Walled City",
-  metaDescription: "Explore Jaipur's UNESCO-listed walled city beyond its landmarks — neighbourhoods, shrines, and everyday life on this immersive Jaipur old city walking tour with Raah Experiences.",
+slug: "living-walled-city",
+seoName: "Jaipur Old City Walking Tour",
+metaTitle: "Jaipur Old City Walk | Living the Walled City",
+metaDescription: "Walk Jaipur's UNESCO-listed walled city beyond its monuments — hidden mohallas, temples, mosques, havelis and the people who keep it alive.",
   priceUSD: 30,
   priceINR: 2500,
   priceNote: null,
-  title: "Living the walled city",
+  title: "Living the Walled City",
   subtitle: "Meet Jaipur Beyond Its Landmarks",
   question: "How does Jaipur truly live within its walls?",
   tagline:
@@ -830,9 +821,10 @@ This is not a sightseeing tour. It is a chance to meet Jaipur beyond its landmar
 },
   // ── 8. The Lost Kingdom ─────────────────────────────────────────
   {
-    slug: "the-lost-kingdom",
-metaTitle: "Jaipur Hidden Heritage Tour | Offbeat Amber Trek — The Lost Kingdom",
-metaDescription: "An offbeat Jaipur tour through forgotten trails, ruins and secret shrines in the Aravalli Hills. This hidden heritage hike uncovers Jaipur's secret places, away from the tourist crowds, with Raah Experiences.",
+   slug: "the-lost-kingdom",
+seoName: "Aravalli Hills Hike near Amber",
+metaTitle: "Aravalli Hills Trek, Jaipur | The Lost Kingdom",
+metaDescription: "A weekend sunrise hike in the Aravalli Hills around Amber — forgotten ruins, secluded shrines and views over Amber Fort, away from the crowds.",
     priceUSD: 40,
     priceINR: 3500,
     priceNote: null,
@@ -923,8 +915,9 @@ metaDescription: "An offbeat Jaipur tour through forgotten trails, ruins and sec
   // ── 9. The Artisan's Jaipur ──────────────────────────────────────
   {
     slug: "artisans-jaipur",
-metaTitle: "Jaipur Artisan Tour | Block Printing & Handicraft Workshops — The Artisan's Jaipur",
-metaDescription: "Meet Jaipur's master craftsmen on this artisan tour — block printing workshops, lac bangle makers, and generations-old handicraft traditions. A hands-on Jaipur handicraft tour with Raah Experiences.",
+seoName: "Jaipur Artisan Workshop Tour",
+metaTitle: "Jaipur Artisan Workshop Tour | Artisan's Jaipur",
+metaDescription: "Meet Jaipur's master craftsmen at work — lac bangle makers, marble carvers, jewellers and block printers — in the old city's artisan lanes.",
     priceUSD: 30,
     priceINR: 2500,
     priceNote: null,
@@ -1038,7 +1031,7 @@ export const combos = [
     title:       "Jaipur Through Time",
     subtitle:    "The Crown of Jaipur (Afternoon) + Beyond the Pink (Evening)",
     description: "Trace Jaipur's royal story from its grandest monuments to its living streets. Explore Hawa Mahal, Jantar Mantar, and the City Palace through the lens of the king who imagined them — understanding how astronomy shaped architecture and science guided governance. As evening falls, step into the walled city's illuminated bazaars, artisan lanes, and legendary food stops. Science, sovereignty, and street life — all in one day.",
-    experiences: ["cosmic-imperial-triad", "beyond-the-pink"],
+   experiences: ["the-crown-of-jaipur", "beyond-the-pink"],
     tag:         "Heritage & Culture",
     priceINR:    4050,
     priceUSD:    45,
@@ -1060,7 +1053,7 @@ export const combos = [
     title:       "Jaipur at Dawn + The Crown of Jaipur + Beyond the Pink",
     subtitle:    "Morning Rituals · Royal Monuments · Evening Bazaars",
     description: "The most complete one-day journey through Jaipur. Begin before sunrise in the living streets of the Old City — temple rituals, flower markets, and a legendary breakfast. Continue to the royal precinct in the afternoon, uncovering the science, astronomy, and vision behind Jaipur's greatest monuments. As the city lights up at dusk, walk through the walled city's illuminated lanes, artisan workshops, and iconic street food stops. Three experiences. One extraordinary day.",
-    experiences: ["jaipur-at-dawn", "cosmic-imperial-triad", "beyond-the-pink"],
+   experiences: ["jaipur-at-dawn", "the-crown-of-jaipur", "beyond-the-pink"],
     tag:         "The Complete Jaipur",
     priceINR:    5850,
     priceUSD:    65,
@@ -1070,7 +1063,7 @@ export const combos = [
     title:       "The Crown of Jaipur + Artisan's Jaipur + Blue Hour",
     subtitle:    "Royal Architecture · Living Crafts · Evening Illumination",
     description: "A full day dedicated to Jaipur's visual and intellectual brilliance. Begin at the royal precinct — Hawa Mahal, Jantar Mantar, and City Palace through a connected narrative. Move into the artisan quarters in the afternoon, meeting master craftspeople whose skills have defined Jaipur's identity for generations. As evening arrives, board an open jeep for the Blue Hour — watching the city's monuments glow against the darkening sky from Nahargarh to Patrika Gate.",
-    experiences: ["cosmic-imperial-triad", "artisans-jaipur", "the-blue-hour"],
+  experiences: ["the-crown-of-jaipur", "artisans-jaipur", "the-blue-hour"],
     tag:         "Art, Science & Light",
     priceINR:    8550,
     priceUSD:    95,

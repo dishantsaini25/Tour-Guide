@@ -191,7 +191,7 @@ const DOT_COUNT = MAX_IDX + 1;                 // 13 dots
 function TestimonialCard({ t }) {
   return (
     <div className="tc-card">
-      <StarRating rating={t.rating} />
+      {/* <StarRating rating={t.rating} /> */}
 
       {/* Review text — scrollable on desktop if very long */}
       <div className="tc-card-body">

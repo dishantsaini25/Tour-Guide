@@ -10,6 +10,7 @@ export const journalArticles = [
     datePublished: "2026-10-01",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
+    metaDescription: "Is Jaipur safe for solo and female travellers? An honest local guide's answer — real risks, common scams and practical safety tips.",
     category: "Jaipur Guide", 
     readTime: "7 min read",
     image: "/experiances/Ridge and ramparts/IMG-20250315-WA0195.jpg",
@@ -141,6 +142,7 @@ Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts
     datePublished: "2026-09-24",
     title: "How Much Does a Trip to Jaipur Cost?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
+    metaDescription: "How much does a Jaipur trip cost? Realistic prices for hotels, food, transport and guided tours, with sample daily budgets in ₹ and $.",
     category: "Jaipur Guide",
     readTime: "9 min read",
     image: "/experiances/Ridge and ramparts/ridge1.jpeg", 
@@ -241,9 +243,10 @@ For a broader view of how these costs fit into your overall trip, see our [compl
     datePublished: "2026-09-23",
     title: "Best English & Spanish-Speaking Guide in Jaipur",
     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
-    category: "Booking Guide", // TODO: same guess as Blog 4 — confirm category naming
+    metaDescription: "Looking for an English or Spanish-speaking guide in Jaipur? Meet a government-licensed bilingual guide and read what past guests say.",
+    category: "Booking Guide", 
     readTime: "8 min read",
-    image: "/journal Images/raah-client-image-1.webp", // TODO: placeholder — confirm or swap
+    image: "/journal Images/raah-client-image-1.webp", 
     relatedExperiences: [
       "ridge-and-ramparts",
     ],
@@ -287,8 +290,8 @@ Rather than take fluency on faith, it's worth looking at what real guests, writi
 
 That comparison carries extra weight since Jaipur wasn't her first stop on a three-week trip — she had several other guides to measure the experience against.
 
-> "We had a list of things to do and in one day with Shobhit we were able to do most of it. He was super knowledgeable about each place we visited and gave us amazing history and background on the various sites. He also took us to some lesser known but equally as beautiful places in Jaipur which was such a great addition." — Diyva Mowji, USA"
-> — John Collins, United Kingdom
+> "We had a wonderful tour in Jaipur with Shobhit. He was super knowledgeable about each place we visited and gave us amazing history and background on the various sites. He also took us to some lesser known but equally as beautiful places in Jaipur. I highly recommend booking a tour with him if you're visiting Jaipur."
+> — Diyva Mowji, USA
 
 > "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail."
 > — Leva Kuode, Lithuania
@@ -323,10 +326,11 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
     datePublished: "2026-09-23",
     title: "How to Find a Reputable Tour Guide in Jaipur",
     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
-    category: "Booking Guide", // TODO: confirm — doesn't match existing categories, guessed
+    metaDescription: "How to find a reputable tour guide in Jaipur — check licences, spot commission-driven shopping stops and know what to ask before booking.",
+    category: "Booking Guide",
     readTime: "8 min read",
-    image: "/experiances/The blue hour/blueH1.jpg", // TODO: no hero image specified — placeholder, confirm or swap
-    relatedExperiences: [], // TODO: no specific experiences named in this content — confirm if you want any shown
+    image: "/experiances/The blue hour/blueH1.jpg", 
+    relatedExperiences: [], 
     images: [
       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
       { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
@@ -378,7 +382,7 @@ Raah's walking experiences are led personally by Shobhit and his mentor and fath
 
 Group sizes are also capped at 8 guests across every single experience Raah runs. This isn't just a nice-to-have detail — a group that small makes a shopping-commission model commercially pointless in the first place, since the entire format is built around depth, conversation, and storytelling rather than volume. You can't meaningfully run a high-commission tourist-shop pipeline through groups of 8 people at a time; the economics simply don't support it, which is itself a structural reason to trust the model rather than just a stated intention.
 
-As one guest put it plainly: *"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. No one had ever shared the city's history with such passion and enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding."* That guest, Viktorija Satkauskienė, had already travelled with several different guides across a three-week trip before reaching Jaipur — which makes the comparison meaningful, since it wasn't her only reference point.
+As one guest put it plainly: *"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. … No one had ever shared the city's history with such passion and enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding."* That guest, Viktorija Satkauskienė, had already travelled with several different guides across a three-week trip before reaching Jaipur — which makes the comparison meaningful, since it wasn't her only reference point.
 
 Language fluency matters here too — see our [guide to finding an English or Spanish-speaking guide in Jaipur](/journal/english-spanish-speaking-guide-jaipur) for what past guests have said specifically about communication.
 
@@ -386,9 +390,7 @@ Language fluency matters here too — see our [guide to finding an English or Sp
 
 Whether you end up booking with Raah or with anyone else in Jaipur, a handful of questions are worth asking any guide before you commit to a full day together:
 
-## What to Expect When You Book With Raah
-
-If you're weighing Raah against another option in Jaipur, Here's what you'd find out if you asked :
+If you're weighing Raah against another option in Jaipur, here's what you'd find out if you asked:
 
 - **License and issuing authority:** Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification — both government-issued, both verifiable, neither self-claimed.
 - **Who actually guides you:** Every walking experience is led personally by Shobhit or his mentor and father — never outsourced to a rotating pool of guides assigned once your booking is confirmed. The person you're reading reviews about is the person who shows up.
@@ -408,6 +410,7 @@ Want to meet your guide before you book? [Learn more about Shobhit and Raah's st
     datePublished: "2026-09-22",
     title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
     excerpt: "A complete day-by-day plan for a first visit — built around Raah's own experiences, with practical guidance on where to stay and how to get around.",
+    metaDescription: "A 3-day Jaipur itinerary for first-time visitors — day-by-day plans, where to stay and how to get around, from a licensed local guide.",
     category: "Jaipur Guide",
     readTime: "9 min read",
      image: "/experiances/Farm and fire/IMG20241231193438.jpg",
@@ -506,6 +509,7 @@ Ready to plan your trip? [Get in touch](/contact) and we'll help you build the r
     datePublished: "2026-09-21",
     title: "How Many Days Do You Need in Jaipur?",
     excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
+    metaDescription: "How many days in Jaipur is enough? What 1, 2 or 3 days let you see, with sample plans built around a local guide's experiences.",
     category: "Jaipur Guide",
     readTime: "8 min read",
     image: "/images/IMG-20251222-WA0002 (1).jpg", // TODO: swap for a dedicated hero image if you have one
@@ -578,6 +582,7 @@ Trip length changes what you see, but it shouldn't change how safe you feel doin
     datePublished: "2026-09-19",
     title: "Things to Do in Jaipur: The Complete Guide",
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
+    metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
     category: "Jaipur Guide",
     readTime: "10 min read",
     image: "/experiances/Ridge and ramparts/ridge1.jpeg",
@@ -674,9 +679,9 @@ On the ground, every Raah experience is led personally by a licensed guide who s
 
 "I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences." — Maria Campos, México
 
-"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. No one had ever shared the city's history with such passion & enthusiasm the way he did." — Viktorija Satkauskienė, Lithuania
+"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. … No one had ever shared the city's history with such passion & enthusiasm the way he did." — Viktorija Satkauskienė, Lithuania
 
-"We had a list of things to do and in one day with Shobhit we were able to do most of it. He also took us to some lesser known but equally as beautiful places in Jaipur which was such a great addition." — Diyva Mowji, USA`,
+"We had a wonderful tour in Jaipur with Shobhit. He also took us to some lesser known but equally as beautiful places in Jaipur." — Diyva Mowji, USA`,
   },
  
     // Why I Created Raah
@@ -719,23 +724,23 @@ Most visitors leave Amber with the feeling of having seen its greatest treasure 
 
 By walking through the old streets of Amber, you'll come across places that rarely appear in guidebooks but remain deeply woven into the lives of the community.
 
-**Ambikeshwar Temple**
+## Ambikeshwar Temple
 
 Hidden beneath the shadow of Amber Fort, Ambikeshwar Temple remains one of the kingdom's oldest living places of worship. While thousands pass nearby on their way to the palace, few pause to notice the quiet devotion that continues here every single day. The temple gets flooded with water in monsoon season, making it inaccessible even for locals. Ambikeshwar temple dates back to the 10th century, supposedly built by King Kakil Dev, one of the earliest rulers of the Kachhawaha Dynasty.
 
-**Bihari Ji Temple**
+## Bihari Ji Temple
 
 A stone's throw away from Ambikeshwar Temple lies this forgotten temple — one of the kingdom's hidden architectural treasures. Allegedly home to Lord Vishnu and his consort Goddess Lakshmi, it now stands abandoned yet captivating, with its mysterious open-domed roof and the silent echoes of Amber's forgotten past.
 
-**Badri Narayan Temple (Silawaton Ka Mandir)**
+## Badri Narayan Temple (Silawaton Ka Mandir)
 
 Perched gracefully on the hillside overlooking Amber, the Laxmi Narayan Temple is one of those landmarks that almost every visitor notices, yet surprisingly few take the time to explore. Known locally as Silawaton Ka Mandir — the Temple of the Stone Carvers — it quietly stands as a testament to the devotion and craftsmanship of the community that shaped much of Amber's architectural heritage.
 
-**Jagat Shiromani Temple**
+## Jagat Shiromani Temple
 
 Beyond Amber's bustling palace lies a sanctuary where history, art, and devotion come together in perfect harmony. The Jagat Shiromani Temple — fondly called the Meera Temple — is not merely a place of worship; it is a monument to a mother's love, built by Queen Kanakwati in honour of Prince Jagat Singh. Its beautifully sculpted gateways, delicate marble work, and centuries-old legends surrounding Meera Bai's idol make it one of Amber's greatest architectural treasures.
 
-**Narsingh Ji Temple**
+## Narsingh Ji Temple
 
 Hidden within the original 13th century palace of Amber stands the temple of Narsingh Ji — a revered black stone idol of Lord Narsingh, the man-lion incarnation of Lord Vishnu. For centuries, the deity has been regarded as the divine guardian of the Kachhawaha rulers. A well-known local saying reflects this belief: "Jab tak Narsingh gaddi mein, tab tak raaj hatheli main."
 
@@ -775,13 +780,23 @@ Jaipur was never built simply to replace Amber. It was built to realise the visi
     category: "Heritage",
     readTime: "5 min read",
     image: "/journal Images/why jaigarh.png",
-    body: `Crowning the rugged Aravalli Hills, the fortress was designed to be practically impregnable. Its strategic position allowed soldiers to spot approaching armies long before they reached the gates, while the surrounding hills formed a natural ring of defence.
+    body: `## A Fortress Built Into the Aravalli Hills
+
+Crowning the rugged Aravalli Hills, the fortress was designed to be practically impregnable. Its strategic position allowed soldiers to spot approaching armies long before they reached the gates, while the surrounding hills formed a natural ring of defence.
+
+## Engineered to Survive a Siege
 
 Yet Jaigarh's greatest strength lay within its walls. Decades before sustainable construction entered mainstream thinking, the fortress was engineered to withstand lengthy sieges. An ingenious network of aqueducts, filtration tanks, and massive rainwater reservoirs ensured a dependable water supply throughout the year. Many reservoirs were even covered to prevent evaporation under Rajasthan's scorching sun, allowing the fort to remain self-sufficient for prolonged periods.
 
+## Sawai Jai Singh II and the Cannon Foundry
+
 Though the foundations of Jaigarh are attributed to Raja Kakil Dev in the 11th century, it was Sawai Jai Singh II who transformed it into one of India's greatest military fortresses. A visionary ruler with a passion for science, engineering, and astronomy, he strengthened its defences and established it as the kingdom's military headquarters.
 
+## The Jaivana Cannon
+
 Jaigarh also became the principal cannon foundry of the Mughal Empire, where skilled craftsmen forged some of the finest artillery of their time. Its most celebrated creation, the Jaivana Cannon, remains one of the largest wheeled cannons ever built — with a reputed firing range of nearly 22 miles (35 km). A remarkable engineering achievement that still captures the imagination.
+
+## Why Jaigarh Was Never Conquered
 
 Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by towering walls or mighty cannons — it was protected by exceptional planning, self-reliance, and a strategic vision that was centuries ahead of its time.`,
     },
@@ -841,13 +856,13 @@ Hence, if you ever come to Jaipur, do not forget to explore it in its golden hou
     image: "/journal Images/few conversation.png",
     body: `Leading a tour through Jaipur is always joyful — full of stories, laughter, and memorable moments that we both cherish at the end of the tour. But there are a few conversations that stay with me forever, ones I still think of. Those conversations were never planned — yet they happened in fleeting moments, leaving a lasting imprint on my heart.
 
-**The Voices of Wonder**
+## The Voices of Wonder
 
 One day, when we were wandering through the narrow streets of Jaipur, a couple travelling with me paused in the middle of the street and asked: "Why does Jaipur have so many temples in every corner?" After a detailed explanation of the spiritual importance in the life of an individual, he said something that stayed with me — that instead of appearing to be a commercial city, Jaipur made him feel more like a spiritual centre.
 
 In that moment, I no longer saw Jaipur merely as the capital city, but as a living sanctuary — a place where devotion, connection, and belonging flow through people gathered in worship, binding the city's soul together.
 
-**"I Will Remember the Walk, Not the Fort"**
+## "I Will Remember the Walk, Not the Fort"
 
 I met a family from France at Amber Fort who could also speak Spanish and were looking for a guide. I stumbled upon them looking lost and ended up introducing myself to help out. As they were new to the town and hadn't seen much yet, after the fort visit I gently asked if they'd like me to show them something beyond the fort — something they would probably like.
 
@@ -855,7 +870,7 @@ The magical experience they had was expressed in their gratitude, a warm hug, an
 
 That line stayed with me ever since. I began to show everyone something beyond the forts and palaces. That is how the idea of Raah was born.
 
-**Banter Over Chai**
+## Banter Over Chai
 
 One evening, after our walk ended in the old city, we sat together at an old tea stall. It was a group of young friends from the USA. The conversation started from the experience we'd shared throughout the day — and it drifted from culture, food, and family traditions to some genuinely funny moments.
 

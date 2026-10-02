@@ -140,15 +140,16 @@ export default function HeroSection() {
             </div>
 
             {/* Heading — reduced mobile font-size to prevent overlap with navbar */}
-            <h1 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2.6rem,8vw,7.5rem)", lineHeight: 1.05, color: "#FFFFFF", marginBottom: "24px", ...anim(220) }}>
+                      
+            <p style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2.6rem,8vw,7.5rem)", lineHeight: 1.05, color: "#FFFFFF", marginBottom: "24px", ...anim(220) }}>
               Raah India<br />
               <em style={{ color: "#FF8C00", fontStyle: "italic", fontWeight: 600 }}>Experiences</em>
-            </h1>
-
-            {/* Subtitle */}
-            <p style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.1rem,2.2vw,1.5rem)", color: "rgba(255,255,255,0.88)", lineHeight: 1.65, marginBottom: "10px", fontStyle: "italic", fontWeight: 400, ...anim(360) }}>
-              Curated Walking Tours & Cultural Experiences in Jaipur
             </p>
+
+            {/* H1 — keyword line for SEO */}
+            <h1 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.1rem,2.2vw,1.5rem)", color: "rgba(255,255,255,0.88)", lineHeight: 1.65, marginBottom: "10px", fontStyle: "italic", fontWeight: 400, ...anim(360) }}>
+              Curated Walking Tours & Cultural Experiences in Jaipur
+            </h1>
             <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: "40px", maxWidth: "540px", fontWeight: 300, ...anim(440) }}>
               Walk slowly through Jaipur's stories, rituals, flavours, forts, markets, and hidden corners — with someone who calls this city home.
             </p>
