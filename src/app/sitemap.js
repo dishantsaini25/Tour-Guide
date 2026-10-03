@@ -2,79 +2,45 @@ import { experiences } from "@/data/experiences";
 import { journalArticles } from "@/data/journal";
 
 // ── Production base URL ───────────────────────────────────────────
-// Update this if the domain changes.
 const BASE_URL = "https://www.raahexperiences.in";
+
+const HOME_UPDATED        = "2026-10-02";
+const EXPERIENCES_UPDATED = "2026-10-02";
+const JOURNAL_UPDATED     = "2026-10-02";
+
+function withDate(entry, date) {
+  return date ? { ...entry, lastModified: new Date(date) } : entry;
+}
 
 export default function sitemap() {
   // ── Static pages ────────────────────────────────────────────────
   const staticPages = [
-    {
-      url: BASE_URL,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: `${BASE_URL}/experiences`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/gallery`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/journal`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${BASE_URL}/privacy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/terms`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+    withDate({ url: BASE_URL, changeFrequency: "weekly", priority: 1.0 }, HOME_UPDATED),
+    withDate({ url: `${BASE_URL}/experiences`, changeFrequency: "weekly", priority: 0.9 }, EXPERIENCES_UPDATED),
+    withDate({ url: `${BASE_URL}/journal`, changeFrequency: "weekly", priority: 0.7 }, JOURNAL_UPDATED),
+    { url: `${BASE_URL}/about`,   changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/faq`,     changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/gallery`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/contact`, changeFrequency: "yearly",  priority: 0.5 },
+    { url: `${BASE_URL}/privacy`, changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${BASE_URL}/terms`,   changeFrequency: "yearly",  priority: 0.3 },
   ];
 
-  // ── Dynamic experience/tour detail pages ─────────────────────────
-  // Slugs are sourced directly from the experiences data file.
-  const experiencePages = experiences.map((exp) => ({
-    url: `${BASE_URL}/experiences/${exp.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  // ── Experience pages ────────────────────────────────────────────
+  const experiencePages = experiences.map((exp) =>
+    withDate(
+      { url: `${BASE_URL}/experiences/${exp.slug}`, changeFrequency: "monthly", priority: 0.8 },
+      exp.dateModified || EXPERIENCES_UPDATED
+    )
+  );
 
-  // ── Dynamic journal article pages ────────────────────────────────
-  // Individual article routes exist at /journal/[slug].
-  const journalPages = journalArticles.map((article) => ({
-    url: `${BASE_URL}/journal/${article.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  // ── Journal articles ────────────────────────────────────────────
+  const journalPages = journalArticles.map((article) =>
+    withDate(
+      { url: `${BASE_URL}/journal/${article.slug}`, changeFrequency: "monthly", priority: 0.6 },
+      article.dateModified || article.datePublished
+    )
+  );
 
   return [...staticPages, ...experiencePages, ...journalPages];
 }

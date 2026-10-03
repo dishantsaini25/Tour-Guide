@@ -241,6 +241,7 @@ For a broader view of how these costs fit into your overall trip, see our [compl
   {
     slug: "english-spanish-speaking-guide-jaipur",
     datePublished: "2026-09-23",
+    dateModified: "2026-10-02",
     title: "Best English & Spanish-Speaking Guide in Jaipur",
     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
     metaDescription: "Looking for an English or Spanish-speaking guide in Jaipur? Meet a government-licensed bilingual guide and read what past guests say.",
@@ -324,6 +325,7 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
   {
     slug: "reputable-tour-guide-jaipur",
     datePublished: "2026-09-23",
+    dateModified: "2026-10-02",
     title: "How to Find a Reputable Tour Guide in Jaipur",
     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
     metaDescription: "How to find a reputable tour guide in Jaipur — check licences, spot commission-driven shopping stops and know what to ask before booking.",
@@ -580,6 +582,7 @@ Trip length changes what you see, but it shouldn't change how safe you feel doin
   {
     slug: "things-to-do-in-jaipur-complete-guide",
     datePublished: "2026-09-19",
+    dateModified: "2026-10-02",
     title: "Things to Do in Jaipur: The Complete Guide",
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
     metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
@@ -687,6 +690,7 @@ On the ground, every Raah experience is led personally by a licensed guide who s
     // Why I Created Raah
   {
     slug: "why-i-created-raah",
+    datePublished: "2026-07-30",
     title: "Why I Created Raah",
     excerpt: "Sometimes, the right path appears only when you choose to leave the familiar one. A journey beyond the monuments into the living streets of the Pink City.",
     category: "From the Curator",
@@ -713,6 +717,8 @@ In Hindi, Raah means "a path." For me, it represents a different way of discover
 //   The Hidden Temples of Amber Valley
   {
     slug: "hidden-temples-amber-valley",
+    datePublished: "2026-07-30",
+    dateModified: "2026-10-02",
     title: "The Hidden Temples of Amber Valley",
     excerpt: "Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells.",
     category: "Heritage",
@@ -749,6 +755,7 @@ Hidden within the original 13th century palace of Amber stands the temple of Nar
 //   Why Jaipur Was Built
   {
     slug: "why-jaipur-was-built",
+    datePublished: "2026-07-30",
     title: "Why Jaipur Was Built",
     excerpt: "Most people believe Jaipur was built simply because Amber had become overcrowded. The true story is far more extraordinary.",
     category: "History",
@@ -775,6 +782,8 @@ Jaipur was never built simply to replace Amber. It was built to realise the visi
 //   Why Jaigarh Was Never Conquered
   {
     slug: "why-jaigarh-was-never-conquered",
+    datePublished: "2026-07-30",
+    dateModified: "2026-10-02",
     title: "Why Jaigarh Was Never Conquered",
     excerpt: "Crowning the hills above Amber Fort, Jaigarh isn't remembered for the battles it fought — but for the battles it never lost.",
     category: "Heritage",
@@ -803,6 +812,7 @@ Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by t
 //   Why Cows are Sacred in India
   {
     slug: "why-cows-are-sacred",
+    datePublished: "2026-07-30",
     title: "Why Cows are Sacred in India",
     excerpt: "In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow.",
     category: "Culture",
@@ -827,6 +837,7 @@ Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, s
 //   Why Jaipur is Best Experienced Before Sunrise
   {
     slug: "jaipur-before-sunrise",
+    datePublished: "2026-07-11",
     title: "Why Jaipur is Best Experienced Before Sunrise",
     excerpt: "If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up.",
     category: "Dawn Jaipur",
@@ -849,6 +860,8 @@ Hence, if you ever come to Jaipur, do not forget to explore it in its golden hou
 //   Few Conversations That I Will Never Forget as a Guide
   {
     slug: "conversations-as-a-guide",
+    datePublished: "2026-07-31",
+    dateModified: "2026-10-02",
     title: "Few Conversations That I Will Never Forget as a Guide",
     excerpt: "Leading a tour through Jaipur is always joyful, but there are few unplanned conversations that stay with me forever.",
     category: "From the Curator",
