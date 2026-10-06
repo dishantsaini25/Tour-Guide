@@ -83,17 +83,14 @@ const IMAGE_INVENTORY = {
     "farm1.jpeg"
   ],
   "The living walled city": [
-    "thumbnail.jpg",
+    "living1.jpg",
     "39b952ecb7714efa76ca7338b05d6f38.jpg",
     "7c9cd63b6ca2f0a402c01768a32822d3.jpg",
     "ef0d31548ed88c0be44085fc235aa9a7.jpg",
-    "living1.jpg",
     "living2.jpg",
     "living3.jpg",
     "living4.jpg",
     "living5.jpg",
-    
-    
   ],
   "The lost kingdom": [
     "thumbnail.jpg",
@@ -127,12 +124,13 @@ function getExperienceImages(slug) {
   const encodedFolder = encodeURIComponent(folderName);
   const basePath      = `/experiances/${encodedFolder}`;
   const files         = IMAGE_INVENTORY[folderName];
-  const thumbnail     = files.includes("thumbnail.jpg")
-    ? `${basePath}/thumbnail.jpg`
+  const thumbnailFile = files.includes("thumbnail.jpg") ? "thumbnail.jpg" : files[0];
+  const thumbnail     = thumbnailFile
+    ? `${basePath}/${encodeURIComponent(thumbnailFile)}`
     : PLACEHOLDER;
 
   const gallery = files
-    .filter(f => f !== "thumbnail.jpg")
+    .filter(f => f !== thumbnailFile)
     .map(f => ({
       src: `${basePath}/${encodeURIComponent(f)}`,
       alt: `${slug} — ${f.replace(/\.[^.]+$/, "")}`,
