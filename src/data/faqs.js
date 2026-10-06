@@ -44,6 +44,8 @@ export const faqs = [
     question: "Who is the best tour guide or operator in Jaipur?",
     answer:
       "Rather than claim to be \"the best,\" what genuinely sets Raah apart: every experience is personally led (not outsourced to rotating guides), groups are capped at 8 people, no stop on any experience is commission-based or forced shopping, and the guide holds both Jaipur Regional and Pan India (IITG) government tourism licenses.",
+    linkText: "How to find a reputable guide in Jaipur",
+    linkHref: "/journal/reputable-tour-guide-jaipur",
   },
   {
     id: 27,
@@ -66,28 +68,30 @@ export const faqs = [
     category: "Experiences",
     question: "What kind of experiences does Raah offer?",
     answer:
-      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking masterclass, a walled city community walk, a weekend wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer combination packages for guests who want to go deeper into the city.",
+      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking experience, a walled city community walk, a weekend wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer combination packages for guests who want to go deeper into the city.",
+    linkText: "Browse all experiences",
+    linkHref: "/experiences",
   },
   {
     id: 6,
     category: "Experiences",
     question: "How long do the experiences usually last?",
     answer:
-      "Duration varies by experience. Walking experiences typically run 2.5–3.5 hours. The evening jeep experience (The Blue Hour) runs approximately 4 hours. The Ridge & Ramparts trek is 4–5 hours. Exact timings are listed on each experience page and confirmed at booking.",
+      "Most experiences last 2.5–3 hours. The Blue Hour (evening jeep drive) runs about 3–3.5 hours, The Farm & Fire about 3–3.5 hours, and The Lost Kingdom hike about 4 hours. Exact timings are listed on each experience page and confirmed at booking.",
   },
   {
     id: 7,
     category: "Experiences",
     question: "Where does the experience start?",
     answer:
-      "Each experience has its own meeting point — for example, Jaleb Chowk for Jaipur at Dawn, Maota Lake for the Ridge & Ramparts, and hotel pick-up within city limits for The Blue Hour. The exact meeting point is confirmed when you book. We recommend arriving 10 minutes early.",
+      "Each experience has its own meeting point — for example, Jaleb Chowk for Jaipur at Dawn and Maota Lake for The Ridge & Ramparts. The exact meeting point is confirmed when you book. We recommend arriving 10 minutes early.",
   },
   {
     id: 8,
     category: "Experiences",
     question: "Is transportation included in the experiences?",
     answer:
-      "Transportation is included in The Blue Hour, which is conducted in a private open-air 4x4 Jeep. Walking experiences take place entirely on foot. For Jaipur at Dawn, the route covers approximately 3–4 km at a gentle pace. Please check the individual experience page for transport details.",
+      "Transportation is included in The Blue Hour, which is conducted in a private open-air 4x4 Jeep, and The Crown of Jaipur ends with a short tuk-tuk ride. Walking experiences take place entirely on foot. For Jaipur at Dawn, the route covers approximately 3–4 km at a gentle pace. Transport to and from meeting points can be arranged on request at an additional cost. Please check the individual experience page for transport details.",
   },
   {
     id: 9,
@@ -138,6 +142,15 @@ export const faqs = [
     answer:
       "Comfortable walking shoes are essential for all walking experiences. For morning experiences, light layers work well as Jaipur mornings can be cool, especially in winter. For the Ridge & Ramparts trek, trekking shoes and sun protection are recommended as some sections are exposed. A camera is always a good idea. Specific recommendations are listed on each experience page under 'Before You Come'.",
   },
+  {
+    id: 31,
+    category: "Experiences",
+    question: "How many days do I need in Jaipur?",
+    answer:
+      "Three days is ideal for a first visit — enough to see the old city, Amber and at least one off-the-beaten-path experience without rushing. With one day, choose a single complete experience such as The Crown of Jaipur; with two days, pair a sunrise walk like Jaipur at Dawn with an evening experience like Beyond the Pink or The Blue Hour.",
+    linkText: "How many days you need in Jaipur",
+    linkHref: "/journal/how-many-days-in-jaipur",
+  },
 
   // ── Booking ───────────────────────────────────────────────────────────────
   {
@@ -152,7 +165,7 @@ export const faqs = [
     category: "Booking",
     question: "How far in advance should I book?",
     answer:
-      "We recommend booking at least 24–48 hours in advance to ensure your preferred date and time is available, especially during peak seasons (October–March). Last-minute requests are sometimes possible — drop us a WhatsApp message and we'll do our best to accommodate you.",
+      "We recommend booking at least 24–48 hours in advance to ensure your preferred date and time is available, especially during peak seasons (October–March). Weekend-only experiences such as The Lost Kingdom are best booked earlier. Last-minute requests are sometimes possible — drop us a WhatsApp message and we'll do our best to accommodate you.",
   },
   {
     id: 18,
@@ -160,6 +173,15 @@ export const faqs = [
     question: "What is the group size for each experience?",
     answer:
       "Most Raah experiences accommodate up to 8 guests per group, keeping the experience small, intimate, and personal. The Blue Hour has a minimum of 2 guests. If you have a larger group, please contact us — we may be able to arrange a dedicated booking for you.",
+  },
+  {
+    id: 32,
+    category: "Booking",
+    question: "How much do Raah experiences cost?",
+    answer:
+      "Prices are per person. Most experiences cost ₹2,500 (about $30); The Lost Kingdom is ₹3,500 (about $40), The Farm & Fire ₹4,000 (about $45), and The Blue Hour ₹6,300 (about $70, minimum 2 guests). Combo journeys that pair two or more experiences in a day are also available, and group pricing can be arranged on request.",
+    linkText: "See all experiences and prices",
+    linkHref: "/experiences",
   },
   {
     id: 19,
@@ -180,7 +202,9 @@ export const faqs = [
     category: "Booking",
     question: "Can I get a full-day guided tour cost estimate for a foreign visitor?",
     answer:
-      "Full-day combo experiences range from ₹4,050 (approximately $45) for a One Day Signature Journey up to ₹8,550 (approximately $95) for the most comprehensive Full-Day Premium Journey, which combines three experiences into a single day.",
+      "Full-day combo journeys start from ₹4,280 (about $45) per person for a One Day Signature Journey that pairs two experiences, with Full-Day Premium Journeys combining three experiences in a single day. Group pricing is available on request.",
+    linkText: "See all combo journeys",
+    linkHref: "/experiences",
   },
 
   // ── Practical Information ─────────────────────────────────────────────────
@@ -189,7 +213,7 @@ export const faqs = [
     category: "Practical Information",
     question: "Are the walking experiences physically demanding?",
     answer:
-      "Most walking experiences are rated Easy and are suitable for most fitness levels — they are slow-paced and cover 3–4 km. The Ridge & Ramparts (Amber heritage trek) is rated Moderate, covering 5–7 km with some elevation gain, and is recommended for guests who are comfortable with moderate walking. Difficulty levels are listed on each experience page.",
+      "Most walking experiences are rated Easy and are suitable for most fitness levels — they are slow-paced and cover 3–4 km. The Ridge & Ramparts (Amber heritage trek) and The Lost Kingdom (Aravalli hills hike) are rated Moderate, with some elevation gain, and are recommended for guests who are comfortable with moderate walking. Difficulty levels are listed on each experience page.",
   },
   {
     id: 22,
@@ -204,6 +228,8 @@ export const faqs = [
     question: "Is it safe for solo female travellers?",
     answer:
       "Yes. Every Raah experience is led personally by a licensed guide who stays with the group throughout, and all routes are planned through well-populated parts of the city — even during early morning and evening walks. Groups are also kept small, capped at 8 guests, so your guide can look after everyone properly. Standard precautions worth knowing regardless of destination: save local emergency numbers on arrival (100 for police, 181 for India's women's helpline), use registered transport or ride-hailing apps rather than hailing an unmarked vehicle, and keep someone informed of your day's plans. If you'd feel more comfortable with a fully private setting, private bookings are available for solo travellers too.",
+    linkText: "Is Jaipur safe for solo and female travellers?",
+    linkHref: "/journal/is-jaipur-safe-solo-female-travellers",
   },
   {
     id: 24,

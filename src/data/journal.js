@@ -8,6 +8,7 @@ export const journalArticles = [
   {
     slug: "is-jaipur-safe-solo-female-travellers",
     datePublished: "2026-10-01",
+    dateModified: "2026-10-06",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
     metaDescription: "Is Jaipur safe for solo and female travellers? An honest local guide's answer — real risks, common scams and practical safety tips.",
@@ -67,12 +68,15 @@ A few general precautions worth knowing, on top of anything a guided experience 
 
 None of this is Jaipur-specific — it's the same baseline advice worth following in any city you're visiting for the first time.
 
-For more on how Raah's experiences are structured day to day, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or [get in touch](/contact) if you'd like to discuss a private booking.`,
+For more on how Raah's experiences are structured day to day, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or [get in touch](/contact) if you'd like to discuss a private booking.
+
+To see how each walk is structured, [explore all Raah experiences](/experiences).`,
   },
     // Fuerte Amber: Guía Completa Blog 7
   {
     slug: "fuerte-amber-guia-completa",
     datePublished: "2026-09-25",
+    dateModified: "2026-10-06",
     title: "Fuerte Amber: Guía Completa",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
     category: "Jaipur Guide", // TODO: confirm — same open question as other articles
@@ -134,12 +138,15 @@ Para más detalles sobre la experiencia bilingüe de Raah, puede consultar nuest
 
 The Ridge & Ramparts tiene un precio de $30 USD (₹2,500), lo que equivale aproximadamente a €26, según el tipo de cambio actual. *(Nota: el tipo de cambio varía diariamente; esta cifra es una referencia aproximada, no un precio fijo en euros.)*
 
-Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts) hoy mismo.`,
+Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts) hoy mismo.
+
+Consulte también [todas las experiencias de Raah en Jaipur](/experiences).`,
   },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
+    dateModified: "2026-10-03",
     title: "How Much Does a Trip to Jaipur Cost?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
     metaDescription: "How much does a Jaipur trip cost? Realistic prices for hotels, food, transport and guided tours, with sample daily budgets in ₹ and $.",
@@ -325,7 +332,7 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
   {
     slug: "reputable-tour-guide-jaipur",
     datePublished: "2026-09-23",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-06",
     title: "How to Find a Reputable Tour Guide in Jaipur",
     excerpt: "The difference between a reputable guide and an opportunistic one usually isn't obvious until you're already midway through a tour. Here's what to check before you book.",
     metaDescription: "How to find a reputable tour guide in Jaipur — check licences, spot commission-driven shopping stops and know what to ask before booking.",
@@ -404,12 +411,15 @@ That's the standard worth holding any guide to, whether you book with Raah or so
 
 A guide who is genuinely confident in their own credentials and the way their business is structured will answer all five of these questions without hesitation or deflection. That confidence, more than any single credential on its own, is often the clearest signal of all.
 
-Want to meet your guide before you book? [Learn more about Shobhit and Raah's story](/about).`,
+Want to meet your guide before you book? [Learn more about Shobhit and Raah's story](/about).
+
+You can also [browse the experiences Raah offers](/experiences) to see exactly what each walk includes.`,
   },
     // Best 3-Day Jaipur Itinerary for First-Time Visitors Blog 3
   {
     slug: "3-day-jaipur-itinerary",
     datePublished: "2026-09-22",
+    dateModified: "2026-10-06",
     title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
     excerpt: "A complete day-by-day plan for a first visit — built around Raah's own experiences, with practical guidance on where to stay and how to get around.",
     metaDescription: "A 3-day Jaipur itinerary for first-time visitors — day-by-day plans, where to stay and how to get around, from a licensed local guide.",
@@ -503,12 +513,15 @@ Raah can arrange transport between meeting points at an additional cost, dependi
 
 Outside of that, auto-rickshaws are the most common way to get around Jaipur for short distances, and ride-hailing apps (Uber and Ola both operate in the city) offer a more predictable, fixed-fare alternative if you're not comfortable negotiating an auto fare directly. For the distances in this itinerary — particularly the trip out to Amber on Day 2 — a pre-booked cab or ride-hailing app is generally more comfortable than an auto-rickshaw given the distance involved.
 
-Ready to plan your trip? [Get in touch](/contact) and we'll help you build the right itinerary for your dates.`,
+Ready to plan your trip? [Get in touch](/contact) and we'll help you build the right itinerary for your dates.
+
+You can also [compare all experiences and combo journeys](/experiences) before you write to us.`,
   },
      // How Many Days Do You Need in Jaipur? Blog 2
   {
     slug: "how-many-days-in-jaipur",
     datePublished: "2026-09-21",
+    dateModified: "2026-10-06",
     title: "How Many Days Do You Need in Jaipur?",
     excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
     metaDescription: "How many days in Jaipur is enough? What 1, 2 or 3 days let you see, with sample plans built around a local guide's experiences.",
@@ -576,13 +589,15 @@ A longer stay also opens the door to Jaipur's surroundings — a day at Ranthamb
 
 ## Whatever the Length, Safety Isn't a Variable
 
-Trip length changes what you see, but it shouldn't change how safe you feel doing it. Every Raah experience is personally led by a licensed guide throughout, with routes kept to well-populated parts of the city — including the early morning and evening walks. Groups stay capped at 8 guests, and private bookings are available for solo travellers who'd prefer it.`,
+Trip length changes what you see, but it shouldn't change how safe you feel doing it. Every Raah experience is personally led by a licensed guide throughout, with routes kept to well-populated parts of the city — including the early morning and evening walks. Groups stay capped at 8 guests, and private bookings are available for solo travellers who'd prefer it.
+
+Whatever the length of your trip, you can [see every experience with its timings](/experiences) to plan your days.`,
   },
     //   Things to Do in Jaipur: The Complete Guide Blog 1
   {
     slug: "things-to-do-in-jaipur-complete-guide",
     datePublished: "2026-09-19",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-06",
     title: "Things to Do in Jaipur: The Complete Guide",
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
     metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
@@ -684,13 +699,16 @@ On the ground, every Raah experience is led personally by a licensed guide who s
 
 "By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. … No one had ever shared the city's history with such passion & enthusiasm the way he did." — Viktorija Satkauskienė, Lithuania
 
-"We had a wonderful tour in Jaipur with Shobhit. He also took us to some lesser known but equally as beautiful places in Jaipur." — Diyva Mowji, USA`,
+"We had a wonderful tour in Jaipur with Shobhit. He also took us to some lesser known but equally as beautiful places in Jaipur." — Diyva Mowji, USA
+
+Ready to plan your days? [Browse all Raah experiences](/experiences) and choose the ones that fit your trip.`,
   },
  
     // Why I Created Raah
   {
     slug: "why-i-created-raah",
     datePublished: "2026-07-30",
+    dateModified: "2026-10-06",
     title: "Why I Created Raah",
     excerpt: "Sometimes, the right path appears only when you choose to leave the familiar one. A journey beyond the monuments into the living streets of the Pink City.",
     category: "From the Curator",
@@ -712,13 +730,15 @@ The appreciation & praise of each guest as "This is the Jaipur every tourist wou
 
 With every walk, I discovered new stories, hidden places, and meaningful encounters that deserved to be shared.
 
-In Hindi, Raah means "a path." For me, it represents a different way of discovering Jaipur — not through a checklist of attractions, but through its people, traditions, hidden corners, and the stories that bring them to life.`,
+In Hindi, Raah means "a path." For me, it represents a different way of discovering Jaipur — not through a checklist of attractions, but through its people, traditions, hidden corners, and the stories that bring them to life.
+
+Today, every Raah walk follows that same path. [Explore the experiences](/experiences).`,
     },
 //   The Hidden Temples of Amber Valley
   {
     slug: "hidden-temples-amber-valley",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-06",
     title: "The Hidden Temples of Amber Valley",
     excerpt: "Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells.",
     category: "Heritage",
@@ -750,12 +770,15 @@ Beyond Amber's bustling palace lies a sanctuary where history, art, and devotion
 
 Hidden within the original 13th century palace of Amber stands the temple of Narsingh Ji — a revered black stone idol of Lord Narsingh, the man-lion incarnation of Lord Vishnu. For centuries, the deity has been regarded as the divine guardian of the Kachhawaha rulers. A well-known local saying reflects this belief: "Jab tak Narsingh gaddi mein, tab tak raaj hatheli main."
 
-"Amber's greatest stories are often found far away from its most celebrated monuments."`,
+"Amber's greatest stories are often found far away from its most celebrated monuments."
+
+You can visit the Jagat Shiromani Temple and the old temples of Amber town on [The Ridge & Ramparts](/experiences/ridge-and-ramparts), or [explore all experiences](/experiences).`,
     },
 //   Why Jaipur Was Built
   {
     slug: "why-jaipur-was-built",
     datePublished: "2026-07-30",
+    dateModified: "2026-10-06",
     title: "Why Jaipur Was Built",
     excerpt: "Most people believe Jaipur was built simply because Amber had become overcrowded. The true story is far more extraordinary.",
     category: "History",
@@ -777,13 +800,15 @@ Jaipur became the canvas upon which he brought all these ideas together. Designe
 
 More than three centuries later, Jaipur continues to embody the vision of the extraordinary king who dared to imagine a city a century ahead of its time.
 
-Jaipur was never built simply to replace Amber. It was built to realise the vision of a ruler who believed that knowledge, planning, and progress could shape the future of an entire kingdom.`,
+Jaipur was never built simply to replace Amber. It was built to realise the vision of a ruler who believed that knowledge, planning, and progress could shape the future of an entire kingdom.
+
+The story of Sawai Jai Singh II's vision comes alive on [The Crown of Jaipur](/experiences/the-crown-of-jaipur), which connects Hawa Mahal, Jantar Mantar and City Palace.`,
     },
 //   Why Jaigarh Was Never Conquered
   {
     slug: "why-jaigarh-was-never-conquered",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-06",
     title: "Why Jaigarh Was Never Conquered",
     excerpt: "Crowning the hills above Amber Fort, Jaigarh isn't remembered for the battles it fought — but for the battles it never lost.",
     category: "Heritage",
@@ -807,12 +832,15 @@ Jaigarh also became the principal cannon foundry of the Mughal Empire, where ski
 
 ## Why Jaigarh Was Never Conquered
 
-Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by towering walls or mighty cannons — it was protected by exceptional planning, self-reliance, and a strategic vision that was centuries ahead of its time.`,
+Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by towering walls or mighty cannons — it was protected by exceptional planning, self-reliance, and a strategic vision that was centuries ahead of its time.
+
+You can walk the historic route from Amber to Jaigarh Fort and see the Jaivana cannon on [The Ridge & Ramparts](/experiences/ridge-and-ramparts).`,
     },
 //   Why Cows are Sacred in India
   {
     slug: "why-cows-are-sacred",
     datePublished: "2026-07-30",
+    dateModified: "2026-10-06",
     title: "Why Cows are Sacred in India",
     excerpt: "In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow.",
     category: "Culture",
@@ -832,12 +860,15 @@ In ancient times, cows were offered to gods and given as gifts as a sign of este
 
 In another religious text, it is said that the world depends upon the cow. The back is identical to Rig-Veda, the body of Yajur-Veda, the mouth of Sam-Veda, the neck of good deeds, and the soft body hair are like Mantras.
 
-Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, symbolising wealth, prosperity, intellect, nutrition, and abundance. The sacred animal is linked with Hindu deities like Lord Krishna, further deepening its significance in Hindu beliefs and rituals.`,
+Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, symbolising wealth, prosperity, intellect, nutrition, and abundance. The sacred animal is linked with Hindu deities like Lord Krishna, further deepening its significance in Hindu beliefs and rituals.
+
+To see Jaipur's temples and morning rituals first-hand, join [Jaipur at Dawn](/experiences/jaipur-at-dawn), a sunrise walk through the old city.`,
     },
 //   Why Jaipur is Best Experienced Before Sunrise
   {
     slug: "jaipur-before-sunrise",
     datePublished: "2026-07-11",
+    dateModified: "2026-10-06",
     title: "Why Jaipur is Best Experienced Before Sunrise",
     excerpt: "If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up.",
     category: "Dawn Jaipur",
@@ -855,13 +886,15 @@ Watching the everyday scenes of locals setting up generations-old eateries, hear
 
 The beauty of Jaipur does not lie only in its magnificent forts and palaces, vibrant culture, and rich architecture — it lies in these delicate and timeless moments. Experiencing Jaipur before sunrise is not about sightseeing. It is all about intimacy — where you feel the city literally belongs to you.
 
-Hence, if you ever come to Jaipur, do not forget to explore it in its golden hours.`,
+Hence, if you ever come to Jaipur, do not forget to explore it in its golden hours.
+
+To experience it for yourself, join [Jaipur at Dawn](/experiences/jaipur-at-dawn), a sunrise walk through the old city.`,
     },
 //   Few Conversations That I Will Never Forget as a Guide
   {
     slug: "conversations-as-a-guide",
     datePublished: "2026-07-31",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-06",
     title: "Few Conversations That I Will Never Forget as a Guide",
     excerpt: "Leading a tour through Jaipur is always joyful, but there are few unplanned conversations that stay with me forever.",
     category: "From the Curator",
@@ -889,7 +922,9 @@ One evening, after our walk ended in the old city, we sat together at an old tea
 
 Though a guide would never become too familiar due to professional ethics, that day they drew me into the conversation in such a way that we ended up becoming real friends — and they are still in touch with me.
 
-We laughed over unusual things we encountered in everyday life, grew serious on some topics, and shared our honest opinions on each other's personal interests. Those moments remind me: travelling is not about visiting a place — it is about building a connection with the people around you.`,
+We laughed over unusual things we encountered in everyday life, grew serious on some topics, and shared our honest opinions on each other's personal interests. Those moments remind me: travelling is not about visiting a place — it is about building a connection with the people around you.
+
+If you'd like to share a walk, and perhaps a conversation like these, [explore the experiences](/experiences).`,
     },
 ];
 
