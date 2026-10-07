@@ -5,7 +5,7 @@ import { journalArticles } from "@/data/journal";
 const BASE_URL = "https://www.raahexperiences.in";
 
 const HOME_UPDATED        = "2026-10-02";
-const EXPERIENCES_UPDATED = "2026-10-02";
+const EXPERIENCES_UPDATED = "2026-10-07";
 const JOURNAL_UPDATED     = "2026-10-02";
 
 function withDate(entry, date) {
