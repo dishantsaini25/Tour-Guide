@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import HighlightIcon from "@/components/HighlightIcon";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -413,9 +414,11 @@ export default async function ExperienceDetailPage({ params }) {
                 <div style={{ width:"36px", height:"2px", background:OR, borderRadius:"2px", margin:"10px 0 20px" }} />
                 <h2 style={{ fontFamily:PF, fontSize:"1.7rem", fontWeight:700, color:CH, marginBottom:"24px" }}>Experience at a Glance</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {exp.highlights.map((h, i) => (
+                                    {exp.highlights.map((h, i) => (
                     <div key={i} style={{ display:"flex", alignItems:"center", gap:"12px" }}>
-                      <span style={{ fontSize:"1.3rem" }}>{h.icon}</span>
+                      <span style={{ width:"34px", height:"34px", borderRadius:"10px", background:"linear-gradient(135deg,#FFF3DC,#FFE8B0)", border:"1px solid rgba(255,216,155,0.6)", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
+                        <HighlightIcon name={h.icon} size={16} style={{ color:OR }} />
+                      </span>
                       <span style={{ fontFamily:IN, color:MU, fontSize:"0.875rem", fontWeight:300 }}>{h.text}</span>
                     </div>
                   ))}
