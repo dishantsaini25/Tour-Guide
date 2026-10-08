@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="0xOYCIdIz9rmJGreskRMlRuZrrxMIkkbt7RYOEkoSls" />
-        {/* Opens the connection to the homepage hero image host early */}
+        <meta name="msvalidate.01" content="0CCB0A1597111DBD4D9520285B11FE6E" />
         <link rel="preconnect" href="https://images.pexels.com" />
         <script
           type="application/ld+json"
@@ -93,13 +93,6 @@ export default function RootLayout({ children }) {
                 "https://www.instagram.com/raah.experiences",
                 "https://www.facebook.com/profile.php?id=61586556497302",
               ],
-              /* Still missing — fill in once you have real numbers, never fabricate:
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "REAL_VALUE",
-                reviewCount: "REAL_COUNT"
-              },
-              */
             }),
           }}
         />
