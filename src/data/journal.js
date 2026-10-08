@@ -76,7 +76,7 @@ To see how each walk is structured, [explore all Raah experiences](/experiences)
   {
     slug: "fuerte-amber-guia-completa",
     datePublished: "2026-09-25",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-08",
     title: "Fuerte Amber: Guía Completa",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
     category: "Jaipur Guide", // TODO: confirm — same open question as other articles
@@ -136,7 +136,7 @@ Para más detalles sobre la experiencia bilingüe de Raah, puede consultar nuest
 
 ## Precios en EUR
 
-The Ridge & Ramparts tiene un precio de $30 USD (₹2,500), lo que equivale aproximadamente a €26, según el tipo de cambio actual. *(Nota: el tipo de cambio varía diariamente; esta cifra es una referencia aproximada, no un precio fijo en euros.)*
+The Ridge & Ramparts tiene un precio de $32 USD (₹2,800), lo que equivale aproximadamente a €28, según el tipo de cambio actual. *(Nota: el tipo de cambio varía diariamente; esta cifra es una referencia aproximada, no un precio fijo en euros.)*
 
 Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts) hoy mismo.
 
@@ -146,7 +146,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).`,
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-10-03",
+    dateModified: "2026-10-08",
     title: "How Much Does a Trip to Jaipur Cost?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
     metaDescription: "How much does a Jaipur trip cost? Realistic prices for hotels, food, transport and guided tours, with sample daily budgets in ₹ and $.",
@@ -215,12 +215,15 @@ For getting out to Amber specifically, which sits a meaningful distance from the
 
 Beyond independent sightseeing, guided experiences add real depth to a Jaipur trip without dramatically changing your overall budget.
 
-- **[Jaipur at Dawn](/experiences/jaipur-at-dawn), [The Crown of Jaipur](/experiences/the-crown-of-jaipur), [Beyond the Pink](/experiences/beyond-the-pink), [The Ridge & Ramparts](/experiences/ridge-and-ramparts), [Artisan's Jaipur](/experiences/artisans-jaipur):** $30 / ₹2,500
+- **[Jaipur at Dawn](/experiences/jaipur-at-dawn), [Artisan's Jaipur](/experiences/artisans-jaipur), [Living the Walled City](/experiences/living-walled-city):** $30 / ₹2,500
+- **[The Crown of Jaipur](/experiences/the-crown-of-jaipur), [Beyond the Pink](/experiences/beyond-the-pink), [The Ridge & Ramparts](/experiences/ridge-and-ramparts):** $32 / ₹2,800
 - **[The Lost Kingdom](/experiences/the-lost-kingdom):** $40 / ₹3,500
 - **[The Farm & Fire](/experiences/farm-and-fire):** $45 / ₹4,000
-- **[The Blue Hour](/experiences/the-blue-hour):** $70 / ₹6,300 (private open-jeep evening tour, minimum two people)
+- **[The Blue Hour](/experiences/the-blue-hour):** about $85 / ₹7,500 for two people (private open-jeep evening tour, minimum two, up to four per jeep)
 
-For travellers wanting to combine multiple experiences into a single day, combo packages start from $45 (₹4,280) per person for a signature one-day pairing, with full-day combinations of three experiences also available. Group pricing is available on request — see all combos on our [experiences page](/experiences).
+Per-person rates drop for groups of three or more.
+
+For travellers wanting to combine multiple experiences into a single day, combo packages pair two or three experiences at a lower price than booking them separately — see all combos and current prices on our [experiences page](/experiences).
 
 ## Jaipur vs. Delhi: Where Your Money Goes Further
 
@@ -419,7 +422,7 @@ You can also [browse the experiences Raah offers](/experiences) to see exactly w
   {
     slug: "3-day-jaipur-itinerary",
     datePublished: "2026-09-22",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-08",
     title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
     excerpt: "A complete day-by-day plan for a first visit — built around Raah's own experiences, with practical guidance on where to stay and how to get around.",
     metaDescription: "A 3-day Jaipur itinerary for first-time visitors — day-by-day plans, where to stay and how to get around, from a licensed local guide.",
@@ -444,8 +447,8 @@ You can also [browse the experiences Raah offers](/experiences) to see exactly w
     ],
     faqs: [
       { q: "Is 3 days enough to see Jaipur properly?", a: "Yes — three days is enough to cover the old city, Amber, and at least one of Jaipur's more off-the-beaten-path experiences without rushing between them." },
-      { q: "What if my 3 days don't include a weekend?", a: "The Lost Kingdom runs Saturdays and Sundays only. If your visit falls entirely on weekdays, Living the Walled City is a strong alternative for Day 3 that covers similarly authentic ground." },
-      { q: "Do I need to book these experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, and earlier for weekend-only experiences like The Lost Kingdom given limited group sizes." },
+      { q: "Can I do The Lost Kingdom on a weekday?", a: "Yes. The Lost Kingdom runs daily on request. Book at least 48 hours ahead, as the trail needs extra guide preparation." },
+      { q: "Do I need to book these experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, and earlier for The Lost Kingdom, which needs extra guide preparation." },
       { q: "Can this itinerary be adjusted for private groups or families?", a: "Yes — every experience in this itinerary can be booked privately, and timing can often be adjusted to suit families or groups with specific needs." },
       { q: "What should I pack for this itinerary?", a: "Comfortable walking shoes are essential across all three days. For Day 3's Lost Kingdom hike specifically, sturdy trekking shoes, light layers, and sun protection are recommended given the uneven terrain." },
       { q: "Does Raah arrange transport between experiences?", a: "Yes, at an additional cost depending on group size — let your guide know in advance if you'd like pick-up, drop-off, or full-day transport arranged." },
@@ -460,9 +463,9 @@ Start early. Jaipur's most atmospheric hours happen before most visitors are eve
 Begin at the flower and vegetable market as it comes to life, move through the milk market as countryside vendors arrive by bicycle, and join the morning rituals at Govind Dev Ji Temple — one of the city's most revered shrines. The walk passes Hawa Mahal just as the first light hits its façade, ending with breakfast and chai at a local eatery. Two starting windows are available, so you can choose the earlier, quieter option or a slightly later start depending on your own schedule — either way, you'll still have the whole day ahead.
 
 **Midday: Rest, or a Second Heritage Walk**
-Use the late morning to recover, grab lunch, and explore independently — Bapu Bazaar and Johari Bazaar are both within the old city and worth a slow wander for textiles, jewelry, and traditional footwear. If you'd rather stay in guided mode, this slot also works well for [The Crown of Jaipur](/experiences/the-crown-of-jaipur) (3–3.5 hrs), which connects Hawa Mahal, Jantar Mantar, and City Palace into one continuous story about the city's founder.
+Use the late morning to recover, grab lunch, and explore independently — Bapu Bazaar and Johari Bazaar are both within the old city and worth a slow wander for textiles, jewelry, and traditional footwear. If you'd rather stay in guided mode, this slot also works well for [The Crown of Jaipur](/experiences/the-crown-of-jaipur) (10:30 AM – 1:00 PM), which connects Hawa Mahal, Jantar Mantar, and City Palace into one continuous story about the city's founder.
 
-**Evening (5:00 PM – 7:30 PM): [Beyond the Pink](/experiences/beyond-the-pink)**
+**Evening (4:00 PM – 7:00 PM): [Beyond the Pink](/experiences/beyond-the-pink)**
 As the day cools down, the old city's character shifts. This walk moves through the bazaars and artisan lanes as shops light up for the evening, with a curated street food trail — pani puri, kachori, jalebi, lassi, and kulfi — running throughout. It's a natural way to close a long first day: slower pace, lower light, and a genuine taste of the city rather than another landmark to photograph.
 
 ## Day 2: Heritage & Amber
@@ -472,26 +475,26 @@ Day two moves out of the old city and into Amber — the seat of Jaipur's former
 **Morning (9:00 AM – 12:00 PM): [The Ridge & Ramparts](/experiences/ridge-and-ramparts)**
 Meeting at the Photo Point in front of Amber Fort, this walk goes well beyond the fort itself — into the town of Amber, past the 16th-century Jagat Shiromani Temple, ancient stepwells once used as a neighborhood gathering point, and through a historic tunnel once reserved for the royal family, ending at Jaigarh Fort and its enormous cannon.
 
-**Afternoon: Lunch, Then Living the Walled City or Artisan's Jaipur**
+**Afternoon: Lunch, Then Artisan's Jaipur or Rest**
 Amber town has a handful of local eateries worth stopping at after the morning walk. If you have the energy, a short visit to Jal Mahal (the Water Palace) on the way back into the city is a worthwhile photo stop — it sits directly on your route back from Amber and needs no separate booking.
 
-Back in the city, choose between two very different afternoons depending on your interests. [Living the Walled City](/experiences/living-walled-city) shows you how Jaipur actually lives — its people, places, street vibe, markets, residential lanes, hidden neighborhoods, and the transition between old and new Jaipur. [Artisan's Jaipur](/experiences/artisans-jaipur), by contrast, introduces you to the city's craft world — understanding how Jaipur stands among the world's finest shopping centers through the artisans who make it so.
+Back in the city, [Artisan's Jaipur](/experiences/artisans-jaipur) (1:30 PM – 4:00 PM) introduces you to the city's craft world — understanding how Jaipur stands among the world's finest shopping centers through the artisans who make it so.
 
-**Evening (4:30 PM – 7:30 PM in winter, 5:30 PM – 8:30 PM in summer): [The Blue Hour](/experiences/the-blue-hour)**
+**Evening (4:30 PM – 8:30 PM, October–March): [The Blue Hour](/experiences/the-blue-hour)**
 Starting at Jal Mahal, this experience covers the city from an open-air jeep as the light fades — past illuminated Nahargarh Fort, Amber Fort, and the central bazaars. After a full day on foot, this is a comfortable, scenic way to end day two without more walking. In the rare event of rain, the jeeps switch to a covered roof, so this runs reliably regardless of season.
 
 ## Day 3: Culture & Departure
 
-Your third day depends partly on the calendar — one of the best experiences in Jaipur only runs on weekends.
+Your third day starts in the hills around Amber and ends in the lanes of the old city.
 
-**If your third day falls on a Saturday or Sunday: [The Lost Kingdom](/experiences/the-lost-kingdom) (6:00 AM – 10:00 AM)**
+**Morning (6:00 AM – 10:30 AM): [The Lost Kingdom](/experiences/the-lost-kingdom)**
 Meeting at Kheri Gate near the Anokhi Museum, this is a genuine hike through the Aravalli Hills surrounding Amber — past forgotten fortifications, a hillside shrine to Lord Hanuman, and a secluded Shiva temple, ending at a viewpoint overlooking Amber Fort and the valley below. It's the most physically active of Raah's experiences and a strong way to see a side of Jaipur that most three-day visitors never find.
 
-**If your third day falls on a weekday: [Living the Walled City](/experiences/living-walled-city)**
-An alternative that doesn't depend on the weekend — a walk through Sireh Deori Bazaar, past centuries-old temples, the restored Sawai Man Singh townhall, and the residential lanes where Jaipur's everyday life continues largely unseen by tourists.
+**Afternoon: Free Time**
+Use the afternoon as buffer time for packing, last-minute shopping, or a relaxed lunch. If you skipped it on Day 2, [Artisan's Jaipur](/experiences/artisans-jaipur) (1:30 PM – 4:00 PM) fits here too — a walk through the lanes of Jaipur's jewellers, brass and copper workers, lac bangle makers and marble carvers.
 
-**Afternoon: [Artisan's Jaipur](/experiences/artisans-jaipur) or Free Time**
-If your flight or onward travel isn't until evening, Artisan's Jaipur is a good final activity — a walk through the workshops behind the city's craft traditions, including block printing, gem cutting, marble carving, lac bangle making, and blue pottery. If your schedule is tighter, this slot works just as well as buffer time for packing, last-minute shopping, or a relaxed lunch before departure.
+**Evening (5:00 PM – 7:30 PM): [Living the Walled City](/experiences/living-walled-city)**
+If you're staying one more night, close your trip with a walk through Sireh Deori Bazaar, past centuries-old temples, the restored Sawai Man Singh townhall, and the residential lanes where Jaipur's everyday life continues largely unseen by tourists.
 
 ## Where to Stay in Jaipur
 
@@ -521,7 +524,7 @@ You can also [compare all experiences and combo journeys](/experiences) before y
   {
     slug: "how-many-days-in-jaipur",
     datePublished: "2026-09-21",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-08",
     title: "How Many Days Do You Need in Jaipur?",
     excerpt: "There's no universal answer — what matters is understanding what each additional day actually buys you, so you can decide with your own priorities in mind.",
     metaDescription: "How many days in Jaipur is enough? What 1, 2 or 3 days let you see, with sample plans built around a local guide's experiences.",
@@ -549,7 +552,7 @@ You can also [compare all experiences and combo journeys](/experiences) before y
       { q: "Is 1 day enough to see Jaipur properly?", a: "Enough for a genuine impression through one well-chosen experience, though not enough to see everything Jaipur offers." },
       { q: "Can I combine two experiences on the same day?", a: "In some cases, yes — Jaipur at Dawn and The Ridge & Ramparts sit close together in the morning. Beyond the Pink and The Blue Hour are both evening options, but function as alternatives to each other rather than a same-day pairing." },
       { q: "Which single experience should I choose with only one day?", a: "The Crown of Jaipur offers the most complete single-day option. For early risers, pairing Jaipur at Dawn with The Ridge & Ramparts covers even more ground — together, these experiences touch on most of what makes Jaipur worth understanding." },
-      { q: "Do I need to book in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for weekend-only experiences like The Lost Kingdom." },
+      { q: "Do I need to book in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for The Lost Kingdom, which needs extra guide preparation." },
       { q: "Are these experiences suitable for children?", a: "Most welcome families, though age recommendations vary — Jaipur at Dawn suits children 7 and above, while The Lost Kingdom and The Ridge & Ramparts, involving more walking, are better suited to children 12–14 and older." },
       { q: "What languages are the experiences conducted in?", a: "English and Spanish." },
     ],
@@ -561,7 +564,7 @@ One day means choosing depth over breadth. Rather than splitting your time acros
 
 [The Crown of Jaipur](/experiences/the-crown-of-jaipur) works well here — it moves through three of Jaipur's most iconic landmarks as one connected narrative rather than three separate stops, so you leave with a coherent sense of the city rather than a scattered list of photos.
 
-For early risers wanting to cover more ground, [Jaipur at Dawn](/experiences/jaipur-at-dawn) followed directly by [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth considering — the two sit close together on the clock, running from 5:00 AM through to 11:30 AM, with a clean one-hour gap in between for the short drive out to Amber. Done this way, a single day can stretch to cover both the old city at sunrise and Amber's fort and ridge trail.
+For early risers wanting to cover more ground, [Jaipur at Dawn](/experiences/jaipur-at-dawn) followed directly by [The Ridge & Ramparts](/experiences/ridge-and-ramparts) is worth considering — the two sit close together on the clock, running from 5:00 AM through to 12:00 PM, with a 90-minute gap in between for breakfast and the short drive out to Amber. Done this way, a single day can stretch to cover both the old city at sunrise and Amber's fort and ridge trail.
 
 ## 2. Days in Jaipur
 
@@ -577,7 +580,7 @@ Three days is where a trip stops feeling like a checklist and starts feeling lik
 
 **Day 1** — [Jaipur at Dawn](/experiences/jaipur-at-dawn), then [Beyond the Pink](/experiences/beyond-the-pink) in the evening
 **Day 2** — [The Ridge & Ramparts](/experiences/ridge-and-ramparts) in the morning, [Farm & Fire](/experiences/farm-and-fire) in the evening — a shift from monuments to something more personal, an evening inside a local family's home and kitchen
-**Day 3** — [The Lost Kingdom](/experiences/the-lost-kingdom) if it falls on a weekend, since this hiking experience through the Aravalli Hills only runs Saturdays and Sundays. On a weekday, [Living the Walled City](/experiences/living-walled-city) is the natural alternative — a slower walk through the city's residential lanes and everyday rhythms.
+**Day 3** — [The Lost Kingdom](/experiences/the-lost-kingdom) in the morning — a hike through the Aravalli Hills, available daily on request — then [Living the Walled City](/experiences/living-walled-city) in the evening, a slower walk through the city's residential lanes and everyday rhythms.
 
 This is also the point where a trip starts to feel intentional rather than reactive — you're not squeezing in whatever fits, you're building a sequence that makes sense.
 
@@ -597,7 +600,7 @@ Whatever the length of your trip, you can [see every experience with its timings
   {
     slug: "things-to-do-in-jaipur-complete-guide",
     datePublished: "2026-09-19",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-08",
     title: "Things to Do in Jaipur: The Complete Guide",
     excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
     metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
@@ -619,7 +622,7 @@ Whatever the length of your trip, you can [see every experience with its timings
     ],
     faqs: [
       { q: "How many days are enough to visit Jaipur?", a: "At least three days and two nights is recommended to experience Jaipur properly — enough time to cover its heritage, food, and off-the-beaten-path side without rushing." },
-      { q: "Do I need to book experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for weekend-only experiences like The Lost Kingdom." },
+      { q: "Do I need to book experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for The Lost Kingdom, which needs extra guide preparation." },
       { q: "Are these experiences suitable for children?", a: "Most experiences welcome families, though recommendations vary by age. Jaipur at Dawn suits children 7 and above. The Lost Kingdom and The Ridge & Ramparts involve more walking on uneven terrain, so children 12–14 and older are better suited to these two." },
       { q: "What languages are the experiences conducted in?", a: "All experiences are conducted in English and Spanish." },
     ],
@@ -631,15 +634,15 @@ This guide moves through Jaipur the way the city itself does — by time of day 
 
 Before 7 AM, Jaipur still belongs almost entirely to the people who live there.
 
-[Jaipur at Dawn](/experiences/jaipur-at-dawn) ($30 / ₹2,500, 3 hours, 5:00–8:00 AM) opens with the flower and vegetable market coming to life, followed by the milk market as countryside vendors arrive by bicycle, and the morning aarti at Govind Dev Ji Temple — one of the city's most revered shrines. We've written more about why [mornings are Jaipur's best-kept secret](/journal/jaipur-before-sunrise) — the walk passes Hawa Mahal just as the sun catches its façade, ending with breakfast and chai at a local eatery.
+[Jaipur at Dawn](/experiences/jaipur-at-dawn) ($30 / ₹2,500, 2.5 hours, 5:00–7:30 AM or 8:00–10:30 AM) opens with the flower and vegetable market coming to life, followed by the milk market as countryside vendors arrive by bicycle, and the morning aarti at Govind Dev Ji Temple — one of the city's most revered shrines. We've written more about why [mornings are Jaipur's best-kept secret](/journal/jaipur-before-sunrise) — the walk passes Hawa Mahal just as the sun catches its façade, ending with breakfast and chai at a local eatery.
 
-[The Ridge & Ramparts](/experiences/ridge-and-ramparts) ($30 / ₹2,500, 2.5 hours, 8:30–11:30 AM, meeting at the Photo Point in front of Amber Fort) picks up where the old city leaves off, moving into Amber town and along the ridge connecting it to Jaigarh Fort. Along the way: the 16th-century Jagat Shiromani Temple, centuries-old stepwells that once doubled as neighborhood gathering spots, Asiatic elephants living alongside the local community, and a historic tunnel once reserved for the royal family, ending at the Jaivana cannon — [the largest cannon ever built, and the reason Jaigarh was never conquered](/journal/why-jaigarh-was-never-conquered).
+[The Ridge & Ramparts](/experiences/ridge-and-ramparts) ($32 / ₹2,800, 3 hours, 7:00–10:00 AM or 9:00 AM–12:00 PM, meeting at the Photo Point in front of Amber Fort) picks up where the old city leaves off, moving into Amber town and along the ridge connecting it to Jaigarh Fort. Along the way: the 16th-century Jagat Shiromani Temple, centuries-old stepwells that once doubled as neighborhood gathering spots, Asiatic elephants living alongside the local community, and a historic tunnel once reserved for the royal family, ending at the Jaivana cannon — [the largest cannon ever built, and the reason Jaigarh was never conquered](/journal/why-jaigarh-was-never-conquered).
 
 ## Afternoon Heritage & Culture Walks
 
 Midday is when Jaipur's layers of history reward slower attention.
 
-[The Crown of Jaipur](/experiences/the-crown-of-jaipur) ($30 / ₹2,500, 3–3.5 hours) links three of the city's most iconic landmarks — Hawa Mahal, Jantar Mantar, and City Palace — into one continuous story about Jaipur's founder, Sawai Jai Singh II. Along the way, you'll learn that Hawa Mahal's famous face is actually the back of the palace, see the Virat Samrat Yantra (the largest stone sundial in the world), and walk through City Palace's courtyards and museums before closing with a tuk-tuk ride through the everyday bustle of the old city.
+[The Crown of Jaipur](/experiences/the-crown-of-jaipur) ($32 / ₹2,800, 2.5 hours, 10:30 AM–1:00 PM or 1:30–4:00 PM) links three of the city's most iconic landmarks — Hawa Mahal, Jantar Mantar, and City Palace — into one continuous story about Jaipur's founder, Sawai Jai Singh II. Along the way, you'll learn that Hawa Mahal's famous face is actually the back of the palace, see the Virat Samrat Yantra (the largest stone sundial in the world), and walk through City Palace's courtyards and museums before closing with a tuk-tuk ride through the everyday bustle of the old city.
 
 [The Artisan's Jaipur](/experiences/artisans-jaipur) takes a different route entirely — into the workshops where the city's craft traditions are still practiced by hand. Block printing, brasswork and coppersmithing, gem cutting, marble carving, lac bangle making, and blue pottery are all part of this walk, with visits to family workshops that have carried these techniques across generations.
 
@@ -647,9 +650,9 @@ Midday is when Jaipur's layers of history reward slower attention.
 
 As the temperature drops, Jaipur's old city shifts into its most social hours.
 
-[Beyond the Pink](/experiences/beyond-the-pink) ($30 / ₹2,500, 2.5 hours, 5:00–7:30 PM) winds through the old city's bazaars and artisan lanes as shops light up for the evening — past Hawa Mahal, Tripoliya Darwaza, and Ishwari Laat, into lanes most visitors never find, like Purohit Ji Ka Katla market and Maniharon Ka Rasta, home to generations of lac bangle makers. The walk includes a curated street food trail — pani puri, kachori, jalebi, lassi, and kulfi served in clay pots.
+[Beyond the Pink](/experiences/beyond-the-pink) ($32 / ₹2,800, 3 hours, 4:00–7:00 PM) winds through the old city's bazaars and artisan lanes as shops light up for the evening — past Hawa Mahal, Tripoliya Darwaza, and Ishwari Laat, into lanes most visitors never find, like Purohit Ji Ka Katla market and Maniharon Ka Rasta, home to generations of lac bangle makers. The walk includes a curated street food trail — pani puri, kachori, jalebi, lassi, and kulfi served in clay pots.
 
-[The Blue Hour](/experiences/the-blue-hour) (starting at Jal Mahal — 4:30–7:30 PM October to March, 5:30–8:30 PM April to September) takes a different pace entirely: an open-air jeep ride past illuminated Nahargarh Fort, Amber Fort, and the central bazaars as the city lights up after dark. It's the closest thing Jaipur offers to a nightlife tour, and on rainy evenings, the open jeeps switch to a covered roof so the experience runs regardless of season.
+[The Blue Hour](/experiences/the-blue-hour) (₹7,500 for two, starting at Jal Mahal — 4:30–8:30 PM, October to March) takes a different pace entirely: an open-air jeep ride past illuminated Nahargarh Fort, Amber Fort, and the central bazaars as the city lights up after dark. It's the closest thing Jaipur offers to a nightlife tour, and on rainy evenings, the open jeeps switch to a covered roof so the experience runs regardless of season.
 
 [The Farm & Fire](/experiences/farm-and-fire) moves the food theme into the countryside. It isn't structured as a cooking class — it's closer to being welcomed into a local Hindu family's home, sharing a meal, and understanding the culture behind the food rather than just the recipe.
 
@@ -657,7 +660,7 @@ As the temperature drops, Jaipur's old city shifts into its most social hours.
 
 For travellers who've already covered the forts and palaces, or simply want a side of Jaipur most visitors never encounter.
 
-[The Lost Kingdom](/experiences/the-lost-kingdom) ($40 / ₹3,500, 4 hours, weekends only, 6:00–10:00 AM, meeting at Kheri Gate near the Anokhi Museum) is a genuine hike, not a walking tour — through the Aravalli Hills surrounding Amber, past forgotten fortifications, a hillside shrine to Lord Hanuman, and a secluded Shiva temple, ending at a viewpoint over Amber Fort and the valley below. We go deeper into what's hidden along this route in [The Hidden Temples of Amber Valley](/journal/hidden-temples-amber-valley). It runs weekends only to keep groups small and guide preparation thorough.
+[The Lost Kingdom](/experiences/the-lost-kingdom) ($40 / ₹3,500, 4.5 hours, 6:00–10:30 AM, daily on request, meeting at Kheri Gate near the Anokhi Museum) is a genuine hike, not a walking tour — through the Aravalli Hills surrounding Amber, past forgotten fortifications, a hillside shrine to Lord Hanuman, and a secluded Shiva temple, ending at a viewpoint over Amber Fort and the valley below. We go deeper into what's hidden along this route in [The Hidden Temples of Amber Valley](/journal/hidden-temples-amber-valley). It runs on request, with at least 48 hours' notice, to keep groups small and guide preparation thorough.
 
 [Living the Walled City](/experiences/living-walled-city) approaches the old city from a different angle than Beyond the Pink — less about bazaars and food, more about the rhythm of everyday life within Jaipur's historic walls. The walk begins near the city's central heart with context on Jaipur's 18th-century layout and planning, then passes through Sireh Deori Bazaar and centuries-old temples like Kalki and Ramchandra Mandir. Along the way is the restored Sawai Man Singh townhall, once the seat of the city's local government, and lattice-carved windows that allowed royal women to watch festivals and processions from behind the wall.
 

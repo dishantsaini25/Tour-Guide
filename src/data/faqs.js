@@ -68,7 +68,7 @@ export const faqs = [
     category: "Experiences",
     question: "What kind of experiences does Raah offer?",
     answer:
-      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking experience, a walled city community walk, a weekend wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer combination packages for guests who want to go deeper into the city.",
+      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking experience, a walled city community walk, a sunrise wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer combination packages for guests who want to go deeper into the city.",
     linkText: "Browse all experiences",
     linkHref: "/experiences",
   },
@@ -77,7 +77,7 @@ export const faqs = [
     category: "Experiences",
     question: "How long do the experiences usually last?",
     answer:
-      "Most experiences last 2.5–3 hours. The Blue Hour (evening jeep drive) runs about 3–3.5 hours, The Farm & Fire about 3–3.5 hours, and The Lost Kingdom hike about 4 hours. Exact timings are listed on each experience page and confirmed at booking.",
+      "Most experiences last 2.5–3 hours. The Blue Hour (evening jeep drive) runs about 4 hours and The Lost Kingdom hike about 4.5 hours. Timings on each experience page are for October–March; they are flexible and confirmed at booking.",
   },
   {
     id: 7,
@@ -165,21 +165,21 @@ export const faqs = [
     category: "Booking",
     question: "How far in advance should I book?",
     answer:
-      "We recommend booking at least 24–48 hours in advance to ensure your preferred date and time is available, especially during peak seasons (October–March). Weekend-only experiences such as The Lost Kingdom are best booked earlier. Last-minute requests are sometimes possible — drop us a WhatsApp message and we'll do our best to accommodate you.",
+      "We recommend booking at least 24–48 hours in advance to ensure your preferred date and time is available, especially during peak seasons (October–March). The Lost Kingdom hike runs on request and is best booked at least 48 hours ahead. Last-minute requests are sometimes possible — drop us a WhatsApp message and we'll do our best to accommodate you.",
   },
   {
     id: 18,
     category: "Booking",
     question: "What is the group size for each experience?",
     answer:
-      "Most Raah experiences accommodate up to 8 guests per group, keeping the experience small, intimate, and personal. The Blue Hour has a minimum of 2 guests. If you have a larger group, please contact us — we may be able to arrange a dedicated booking for you.",
+      "Most Raah experiences accommodate up to 8 guests per group, keeping the experience small, intimate, and personal. The Blue Hour runs in open jeeps of 2–4 guests each (minimum 2); larger groups travel in multiple jeeps. If you have a larger group, please contact us — we may be able to arrange a dedicated booking for you.",
   },
   {
     id: 32,
     category: "Booking",
     question: "How much do Raah experiences cost?",
     answer:
-      "Prices are per person. Most experiences cost ₹2,500 (about $30); The Lost Kingdom is ₹3,500 (about $40), The Farm & Fire ₹4,000 (about $45), and The Blue Hour ₹6,300 (about $70, minimum 2 guests). Combo journeys that pair two or more experiences in a day are also available, and group pricing can be arranged on request.",
+      "Prices are per person, with lower per-person rates for groups. Jaipur at Dawn, Artisan's Jaipur and Living the Walled City cost ₹2,500 (about $30); The Ridge & Ramparts, The Crown of Jaipur and Beyond the Pink ₹2,800 (about $32); The Lost Kingdom ₹3,500 (about $40); The Farm & Fire ₹4,000 (about $45); and The Blue Hour ₹7,500 for two guests (minimum 2, up to 4 per jeep). Combo journeys that pair two or more experiences in a day are also available.",
     linkText: "See all experiences and prices",
     linkHref: "/experiences",
   },
@@ -202,7 +202,7 @@ export const faqs = [
     category: "Booking",
     question: "Can I get a full-day guided tour cost estimate for a foreign visitor?",
     answer:
-      "Full-day combo journeys start from ₹4,280 (about $45) per person for a One Day Signature Journey that pairs two experiences, with Full-Day Premium Journeys combining three experiences in a single day. Group pricing is available on request.",
+      "Combo journeys pair two experiences (One Day Signature Journeys) or three experiences (Full-Day Premium Journeys) in a single day, priced lower than booking each experience separately. Current combo prices are listed on our experiences page, and group pricing is available on request.",
     linkText: "See all combo journeys",
     linkHref: "/experiences",
   },
