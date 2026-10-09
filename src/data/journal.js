@@ -223,7 +223,7 @@ Beyond independent sightseeing, guided experiences add real depth to a Jaipur tr
 
 Per-person rates drop for groups of three or more.
 
-For travellers wanting to combine multiple experiences into a single day, combo packages pair two or three experiences at a lower price than booking them separately — see all combos and current prices on our [experiences page](/experiences).
+For travellers wanting to combine multiple experiences into a single day, combo packages pair two or three experiences in a single day — see all combos and current prices on our [experiences page](/experiences).
 
 ## Jaipur vs. Delhi: Where Your Money Goes Further
 

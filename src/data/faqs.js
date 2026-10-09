@@ -202,7 +202,7 @@ export const faqs = [
     category: "Booking",
     question: "Can I get a full-day guided tour cost estimate for a foreign visitor?",
     answer:
-      "Combo journeys pair two experiences (One Day Signature Journeys) or three experiences (Full-Day Premium Journeys) in a single day, priced lower than booking each experience separately. Current combo prices are listed on our experiences page, and group pricing is available on request.",
+      "Combo journeys pair two experiences (One Day Signature Journeys) or three experiences (Full-Day Premium Journeys) in a single day. Current combo prices are listed on our experiences page, and group pricing is available on request.",
     linkText: "See all combo journeys",
     linkHref: "/experiences",
   },
