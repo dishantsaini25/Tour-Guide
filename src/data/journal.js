@@ -4,6 +4,127 @@
  */
 
 export const journalArticles = [
+  // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
+  {
+    slug: "forts-in-jaipur",
+    datePublished: "2026-10-10",
+    dateModified: "2026-10-10",
+    title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
+    excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
+    metaDescription: "Amer, Jaigarh or Nahargarh? A local guide compares Jaipur's three hill forts: history, what to see, how long to spend and the best order to visit.",
+    category: "Jaipur Guide",
+    readTime: "8 min read",
+    image: "/experiances/Ridge and ramparts/ridge1.jpeg",
+    relatedExperiences: [
+      "ridge-and-ramparts",
+      "the-blue-hour",
+      "the-crown-of-jaipur",
+    ],
+    images: [
+      { src: "/experiances/Ridge and ramparts/ridge1.jpeg", alt: "Amer Fort reflected in Maota Lake, Jaipur" },
+      { src: "/experiances/Ridge and ramparts/ridge1.jpg", alt: "Raah guests on the steps of Ganesh Pol, the painted gateway of Amer Fort" },
+      { src: "/experiances/Ridge and ramparts/ridge2.jpeg", alt: "Musician playing the flute in a pillared hall inside Amer Fort" },
+      { src: "/experiances/Ridge and ramparts/IMG20241225100919.jpg", alt: "Carved marble gateway of the 16th-century Jagat Shiromani Temple in Amer town" },
+      { src: "/experiances/The blue hour/IMG_20260123_141626.jpg", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort, Jaipur" },
+      { src: "/experiances/The blue hour/IMG_20260323_133423.jpg", alt: "Painted room in Nahargarh Fort with a window looking over Jaipur" },
+      { src: "/experiances/The blue hour/IMG20250124175844.jpg", alt: "Sunset over Jaipur city seen from Nahargarh Fort" },
+    ],
+    faqs: [
+      { q: "Which is the most famous fort in Jaipur?", a: "Amer (Amber) Fort. It's the oldest of the three as a royal seat, the most architecturally detailed, and part of a UNESCO World Heritage Site." },
+      { q: "Which fort in Jaipur is best for sunset?", a: "Nahargarh Fort. It sits right on the edge of the ridge above the city, so you watch the sun go down over the whole of Jaipur." },
+      { q: "How much time do you need at Amer Fort?", a: "About two hours for the palace. If you want to see the town, temples and stepwells around it as well, plan for three." },
+      { q: "Is there a tunnel between Amer Fort and Jaigarh Fort?", a: "Yes. A historic passage built for the royal family connects the two, and it's still walkable today. It's part of the route on The Ridge & Ramparts." },
+    ],
+    body: `Jaipur has three hill forts, and they all sit on the same stretch of the Aravalli hills, joined by walls that run along the ridge. If you only have time for one, go to Amer. If you want the best sunset in the city, go to Nahargarh. If you're curious about how a kingdom actually defended itself, Jaigarh is the one that will stay with you.
+
+That's the short answer. Most guests I walk with end up asking a better question though: not "which fort is best?" but "what was each one built for?" Once you know that, choosing becomes easy.
+
+## How Many Forts Are There in Jaipur?
+
+There are three main forts most visitors mean when they say "the forts of Jaipur": **Amer (Amber) Fort, Jaigarh Fort and Nahargarh Fort**. Amer was the palace, Jaigarh was the military stronghold protecting it, and Nahargarh was built later to guard the new city of Jaipur on the plains below.
+
+There are a few smaller ones too. Amagarh sits on the hills near Galta and is mostly ruins today. Moti Doongri, near Birla Mandir, looks like a small castle but is private property, so you can only see it from outside.
+
+## Amer (Amber) Fort
+
+You'll see it spelled both ways, Amer and Amber. Same place. Amer was the capital of the Kachhawaha rulers long before Jaipur existed, and the fort you see today was largely built from 1592 under Raja Man Singh I. It's part of the UNESCO World Heritage listing for the hill forts of Rajasthan, and it sits about 11 km north of the old city.
+
+**What to see inside:** The palace is laid out around four courtyards, each one more private than the last. You enter through the public spaces and move inward towards the royal apartments:
+
+- **Ganesh Pol:** the painted gateway into the private palace
+- **Diwan-e-Aam:** the hall where the king met the public
+- **Sattais Kacheri:** the old administrative offices
+- **Jai Mandir (Sheesh Mahal):** the mirror palace, the room everyone comes to photograph
+- **Sukh Niwas and Suhag Mandir:** the cooler, quieter quarters of the royal family
+
+The architecture mixes Hindu and Mughal styles, and you can see it change as you move from one courtyard to the next.
+
+**What most people miss:** Amer isn't only a fort. There's a whole town below it, with small and large temples, old havelis, wells and stepwells, and families who have lived there for generations. The Jagat Shiromani Temple from the 16th century has a doorway (toran dwar) carved from a single piece of white marble. Almost nobody who arrives by car goes there.
+
+**How long you need:** Around two hours for the palace alone. Add another hour if you walk the town.
+
+**Local tip:** Go early. In the morning the light on the fort from Maota Lake is soft, the crowds haven't arrived, and you'll often see the elephants of Amber walking with their keepers through the town. These families have kept elephants here for generations, and it's one of the few places where you see wildlife and daily life sharing the same streets so closely.
+
+Instead of taking a car or jeep, walk. It gives you the chance to explore the hidden corners of the town and see local life up close.
+
+## Jaigarh Fort
+
+Look up from Amer and you'll see a long line of walls on the hill above it. That's Jaigarh. It was never meant to be beautiful. It was built to make sure Amer could never be taken.
+
+Its foundations go back to Raja Kakil Dev in the 11th century, but it was Sawai Jai Singh II who turned it into the kingdom's military headquarters. He was the same ruler who later founded Jaipur and built the Jantar Mantar observatory. Jaigarh became a cannon foundry, and its most famous product is still sitting there: the **Jaivana cannon**, one of the largest wheeled cannons ever made. It's said to have been fired only once.
+
+What impresses me most about Jaigarh isn't the cannon, though. It's the water. The fort was engineered to survive long sieges, with aqueducts, filtration tanks and huge rainwater reservoirs, many of them covered to stop the water from evaporating in the Rajasthan heat. A fort that can't be starved of water is very hard to defeat, and Jaigarh never was. I've written more about this in [Why Jaigarh Was Never Conquered](/journal/why-jaigarh-was-never-conquered).
+
+**The tunnel:** Amer and Jaigarh are connected by a passage built for the royal family, so they could move between the palace and the fortress without being seen. You can still walk it today.
+
+**Don't miss:** The charbagh garden at the top. From there you see Amber Fort, Sagar Lake and the forested hills all at once. It's the view that finally makes the whole layout of the kingdom make sense.
+
+**How long you need:** About 1 to 1.5 hours.
+
+## Nahargarh Fort
+
+Nahargarh stands on the edge of the ridge directly above the city. Sawai Jai Singh II built it in 1734 to defend his new capital, Jaipur, which had been laid out on the plains below just a few years earlier.
+
+Today people come here for one reason above all: the view. From the walls you can see the whole Pink City spread out underneath you, and at sunset it's the most popular spot in Jaipur.
+
+Inside, look for Madhavendra Bhawan, a set of nine apartments built by the king for his nine queens. Each suite was designed so the king could visit any of them without the others knowing. It says a lot about palace life in very few rooms.
+
+**How long you need:** 1.5 to 2 hours. Plan to arrive at least an hour before sunset.
+
+**Local tip:** The drive up through the valley is half the experience. Once the sun goes down, you can continue on to Amer and catch the Sound & Light Show in front of the fort, then come back into the city as the monuments light up.
+
+## Amer vs Jaigarh vs Nahargarh: Which Is Better?
+
+They aren't really competing with each other, because each one does something different.
+
+**Amer Fort:** Built as the royal palace. Best for architecture, palace rooms and the Sheesh Mahal (Mirror Palace). Plan 2–3 hours, go early in the morning, and expect moderate effort with steps and slopes.
+
+**Jaigarh Fort:** Built as the military fortress. Best for history, the Jaivana cannon, engineering and its deep water reservoirs. Plan 1–1.5 hours, go late morning, and expect a moderate uphill walk.
+
+**Nahargarh Fort:** Built to defend the city. Best for city views and sunset. Plan 1.5–2 hours, go late afternoon to sunset, and it's easy, since you can drive to the top.
+
+If you only have one day for forts, do Amer in the morning and Nahargarh for sunset. If you love history, don't skip Jaigarh. It gives you the "why" behind everything you saw at Amer.
+
+## Can You Visit All Three in One Day?
+
+Yes, and the order matters:
+
+- **Amer in the morning**, before the crowds and the heat
+- **Jaigarh late morning**, either by road or through the tunnel from Amer
+- **Nahargarh in the evening**, timed for sunset
+
+On tickets: the government composite ticket covers several monuments, including Amer and Nahargarh, but Jaigarh is managed separately and needs its own ticket. Prices and timings change, so check the official [Rajasthan Tourism booking portal](https://obms-tourist.rajasthan.gov.in) before you go.
+
+If you also want to see where the royal family lived after they moved down from the hills, the City Palace in the old city completes the story. We cover it in [The Crown of Jaipur](/experiences/the-crown-of-jaipur).
+
+## Exploring the Forts With a Local Guide
+
+You can visit all three on your own. But most people see Amber Fort, take their photos and leave, and miss the town, the temples and the tunnel that explain why it was built there in the first place.
+
+That's why I designed [The Ridge & Ramparts](/experiences/ridge-and-ramparts). It's a 3-hour walk that starts at the Maota Lake viewpoint early in the morning and goes through Amber town, the Jagat Shiromani Temple and the old stepwells, then into Amber Fort, and finally through the royal tunnel up to Jaigarh and the Jaivana cannon. It's a moderate walk with some climbing, in small groups of up to 8 people, in English or Spanish.
+
+For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experiences/the-blue-hour) takes you up in an open-air jeep and back down through the illuminated city.`,
+  },
   // Is Jaipur Safe for Solo and Female Travellers? Blog 8
   {
     slug: "is-jaipur-safe-solo-female-travellers",
@@ -93,7 +214,7 @@ To see how each walk is structured, [explore all Raah experiences](/experiences)
       { src: "/journal Images/raah-testimonial-2.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
     ],
     faqs: [
-      { q: "¿Cuánto dura la experiencia The Ridge & Ramparts?", a: "Aproximadamente 2.5 horas, con un recorrido de 5 a 6 kilómetros que incluye cierto desnivel." },
+      { q: "¿Cuánto dura la experiencia The Ridge & Ramparts?", a: "Aproximadamente 3 horas, con un recorrido de 5 a 6 kilómetros que incluye cierto desnivel." },
       { q: "¿Es necesario tener buena condición física?", a: "Se recomienda una condición física moderada, ya que hay tramos con desnivel en la caminata por la cresta." },
       { q: "¿Se puede reservar de forma privada?", a: "Sí, las reservas privadas están disponibles para cualquier tamaño de grupo." },
       { q: "¿La experiencia se realiza completamente en español?", a: "Sí — cada experiencia de Raah, incluyendo The Ridge & Ramparts, se ofrece tanto en inglés como en español como parte del precio estándar, sin cargo adicional." },
@@ -119,7 +240,7 @@ En cuanto al mejor momento para visitar, las mañanas son preferibles — no sol
 
 ## La Experiencia Guiada de Raah: [The Ridge & Ramparts](/experiences/ridge-and-ramparts)
 
-Raah Experiences ofrece [The Ridge & Ramparts](/experiences/ridge-and-ramparts), una experiencia guiada de 2.5 horas que va mucho más allá del recorrido estándar por el fuerte. El punto de encuentro es el Photo Point frente al Fuerte Amber, y el recorrido incluye el pueblo de Amber, el Templo Jagat Shiromani, los antiguos pozos escalonados, y el túnel histórico hacia el Fuerte Jaigarh — terminando junto al cañón Jaivana.
+Raah Experiences ofrece [The Ridge & Ramparts](/experiences/ridge-and-ramparts), una experiencia guiada de 3 horas que va mucho más allá del recorrido estándar por el fuerte. El punto de encuentro es el Photo Point frente al Fuerte Amber, y el recorrido incluye el pueblo de Amber, el Templo Jagat Shiromani, los antiguos pozos escalonados, y el túnel histórico hacia el Fuerte Jaigarh — terminando junto al cañón Jaivana.
 
 Lo que distingue esta experiencia es el idioma: cada recorrido se realiza tanto en inglés como en español, sin cargo adicional por el idioma. El guía principal, Shobhit, estudió español en la Universidad de Salamanca, lo cual le da una fluidez y un acento que sorprende constantemente a los visitantes hispanohablantes. Varios huéspedes de países de habla hispana lo han confirmado directamente en sus reseñas:
 
@@ -836,6 +957,8 @@ Jaigarh also became the principal cannon foundry of the Mughal Empire, where ski
 ## Why Jaigarh Was Never Conquered
 
 Perhaps that is why Jaigarh was never conquered. It wasn't simply protected by towering walls or mighty cannons — it was protected by exceptional planning, self-reliance, and a strategic vision that was centuries ahead of its time.
+
+Wondering how Jaigarh compares with Amer and Nahargarh? See our guide to [the forts of Jaipur](/journal/forts-in-jaipur).
 
 You can walk the historic route from Amber to Jaigarh Fort and see the Jaivana cannon on [The Ridge & Ramparts](/experiences/ridge-and-ramparts).`,
     },
