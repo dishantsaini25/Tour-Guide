@@ -7,6 +7,7 @@ export const journalArticles = [
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {
     slug: "forts-in-jaipur",
+    metaTitle: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh",
     datePublished: "2026-10-10",
     dateModified: "2026-10-10",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
@@ -542,6 +543,7 @@ You can also [browse the experiences Raah offers](/experiences) to see exactly w
     // Best 3-Day Jaipur Itinerary for First-Time Visitors Blog 3
   {
     slug: "3-day-jaipur-itinerary",
+    metaTitle: "3-Day Jaipur Itinerary for First-Time Visitors",
     datePublished: "2026-09-22",
     dateModified: "2026-10-08",
     title: "Best 3-Day Jaipur Itinerary for First-Time Visitors",
@@ -1019,6 +1021,7 @@ To experience it for yourself, join [Jaipur at Dawn](/experiences/jaipur-at-dawn
 //   Few Conversations That I Will Never Forget as a Guide
   {
     slug: "conversations-as-a-guide",
+    metaTitle: "Conversations I'll Never Forget as a Guide",
     datePublished: "2026-07-31",
     dateModified: "2026-10-06",
     title: "Few Conversations That I Will Never Forget as a Guide",

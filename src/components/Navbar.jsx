@@ -507,7 +507,7 @@ export default function Navbar() {
 >
   <Image
     src={LOGO_URL}
-    alt="Raah India"
+    alt="Raah Experiences"
     width={220}
     height={100}
     style={{

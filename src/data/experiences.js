@@ -417,7 +417,7 @@ metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one r
   {
    slug: "the-blue-hour",
 seoName: "Jaipur Night Tour by Open Jeep",
-metaTitle: "Jaipur Night Tour | Evening Jeep Ride — The Blue Hour",
+metaTitle: "Jaipur Night Tour by Open Jeep | The Blue Hour",
 metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber Fort's light show, then Jal Mahal, Hawa Mahal and Albert Hall glowing after dark.",
     priceUSD: 43,
     priceINR: 3750,

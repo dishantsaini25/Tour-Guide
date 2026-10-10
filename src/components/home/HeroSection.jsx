@@ -106,7 +106,7 @@ export default function HeroSection() {
             src={`${HERO_BASE}&w=1280`}
             srcSet={HERO_SRCSET}
             sizes="100vw"
-            alt=""
+            alt="Jaipur, the Pink City of India"
             fetchPriority="high"
             decoding="async"
             style={{
