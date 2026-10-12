@@ -1,9 +1,136 @@
 /**
  * journal.js — The Raah Journal
- * All journal article content, separated from experiences.js.
  */
 
 export const journalArticles = [
+    // Qué ver en Jaipur: guía de un guía local (Month 2, Blog 2, ES)
+  {
+    slug: "que-ver-en-jaipur",
+    datePublished: "2026-10-12",
+    title: "Qué ver en Jaipur: guía de un guía local",
+    metaTitle: "Qué ver en Jaipur: guía de un guía local",
+    excerpt: "Qué ver en Jaipur, en qué orden y a qué hora: Hawa Mahal, Palacio de la Ciudad, Jantar Mantar, Fuerte Amber, los bazares y dónde comer, contado por un guía local.",
+    metaDescription: "Qué ver en Jaipur en 1 o 2 días: Hawa Mahal, Fuerte Amber, Jantar Mantar, bazares y dónde comer, contado por un guía local que habla español.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    lang: "es",
+    image: "/experiances/The blue hour/thumbnail.jpg",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-crown-of-jaipur",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/experiances/The blue hour/IMG20260202185502.jpg", alt: "El Hawa Mahal (Palacio de los Vientos) iluminado de noche en Jaipur" },
+      { src: "/experiances/The Cosmic & Imperial Triad/crown4.jpg", alt: "Chandra Mahal en el Palacio de la Ciudad de Jaipur" },
+      { src: "/experiances/Ridge and ramparts/ridge1.jpeg", alt: "El Fuerte Amber reflejado en el lago Maota, Jaipur" },
+      { src: "/experiances/Ridge and ramparts/IMG20241225100919.jpg", alt: "Puerta de mármol del templo Jagat Shiromani, del siglo XVI, en el pueblo de Amber" },
+      { src: "/experiances/Beyond the pink/IMG_20260123_140614.jpg", alt: "Mujeres con saris de colores caminando por la ciudad vieja de Jaipur" },
+      { src: "/experiances/Jaipur at down/IMG_20250914_132635_152.jpg", alt: "Flores de cempasúchil en el mercado de flores de Jaipur al amanecer" },
+      { src: "/experiances/Beyond the pink/IMG_20260213_143023.jpg", alt: "Cocinero friendo kachoris en un puesto de comida callejera de Jaipur" },
+      { src: "/experiances/The blue hour/IMG20250124175844.jpg", alt: "Atardecer sobre Jaipur desde el Fuerte Nahargarh" },
+    ],
+    faqs: [
+      { q: "¿Qué ver en Jaipur en un día?", a: "Organiza el día según la luz: al amanecer el Hawa Mahal, el templo Govind Dev Ji y el mercado de flores; a media mañana el Jantar Mantar y el Palacio de la Ciudad; y por la tarde el atardecer en el Fuerte Nahargarh y los monumentos iluminados." },
+      { q: "¿Cuántos días se necesitan para ver Jaipur?", a: "Con dos días puedes ver lo esencial sin prisas: un día para la ciudad vieja (Hawa Mahal, Jantar Mantar, Palacio de la Ciudad y los bazares) y otro para el Fuerte Amber, el pueblo de Amber y el Fuerte Jaigarh. Con un tercer día puedes añadir una caminata por las colinas o una cena con una familia local." },
+      { q: "¿Por qué Jaipur es la Ciudad Rosa?", a: "En 1876, el maharajá Ram Singh II mandó pintar la ciudad vieja de rosa para recibir al Príncipe de Gales, porque en la cultura rajput el rosa es el color de la hospitalidad. Desde entonces se conserva ese color en las fachadas del casco antiguo." },
+      { q: "¿Cuál es la mejor época para visitar Jaipur?", a: "De octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y de julio a septiembre es temporada de monzones." },
+      { q: "¿Hay tours en español en Jaipur?", a: "Sí. Todas las experiencias de Raah se hacen en español sin coste adicional, en grupos pequeños de un máximo de 8 personas, con un guía que aprendió español en Salamanca." },
+    ],
+    body: `Jaipur es una ciudad que se suele ver con prisa. Muchos viajeros llegan desde Delhi o Agra, pasan un día, hacen fotos del Hawa Mahal y del Fuerte Amber y siguen la ruta. Lo entiendo, pero cada vez que acompaño a alguien por aquí pienso lo mismo: lo mejor de Jaipur no está en la lista de monumentos, está en lo que pasa entre ellos.
+
+Soy guía en Jaipur desde hace años y aprendí español en Salamanca. En esta guía te cuento qué ver en Jaipur, en qué orden y a qué hora merece la pena visitar cada lugar, y qué es lo que casi todo el mundo se pierde.
+
+## ¿Por qué Jaipur es la Ciudad Rosa?
+
+Jaipur fue fundada en 1727 por el maharajá Sawai Jai Singh II, un rey fascinado por la astronomía, las matemáticas y el urbanismo. La planificó sobre una cuadrícula de nueve sectores siguiendo los principios del Vastu Shastra, algo muy poco común en las ciudades indias de su época. El sector central quedó reservado para la familia real, los templos y la administración.
+
+El color rosa llegó más tarde. En 1876, el maharajá Ram Singh II mandó pintar la ciudad vieja de este tono para recibir al Príncipe de Gales, porque en la cultura rajput el rosa es el color de la hospitalidad. Desde entonces se mantiene, y hoy es obligatorio por ley conservar ese color en las fachadas del casco antiguo. Por eso la llaman la "ciudad rosa de la India".
+
+## Qué ver en Jaipur: los imprescindibles
+
+### 1. El Palacio de los Vientos (Hawa Mahal)
+
+Es la imagen más famosa de Jaipur y, sin embargo, casi nadie sabe que lo que fotografía es la parte trasera del palacio. Su fachada de cinco pisos y cientos de pequeñas ventanas se construyó para que las mujeres de la corte pudieran ver la vida de la calle y las procesiones sin ser vistas.
+
+**Mi consejo:** ven al amanecer. Cuando sale el sol, la fachada cambia de color en pocos minutos y la calle todavía está en silencio. A las diez de la mañana ya es otra ciudad.
+
+### 2. El Palacio de la Ciudad (City Palace)
+
+El Palacio de Jaipur sigue siendo hoy la residencia de la familia real, y una parte funciona como museo. Merece la pena recorrer sus patios, sus puertas decoradas y sus galerías con calma, porque cada espacio cuenta algo de cómo vivían y gobernaban los antiguos maharajás.
+
+### 3. Jantar Mantar
+
+Es el observatorio astronómico que Jai Singh II construyó con instrumentos de piedra a escala gigante. El más impresionante es el Virat Samrat Yantra, el reloj de sol más grande del mundo, que todavía marca la hora local con una precisión sorprendente. Sin explicación parece un parque de esculturas raras. Con alguien que te cuente cómo funciona cada instrumento, es uno de los lugares más fascinantes de la India.
+
+### 4. El Fuerte Amber y el pueblo de Amber
+
+A unos 11 km del centro, el Fuerte Amber fue la capital del reino antes de que existiera Jaipur, y es Patrimonio de la Humanidad. Dentro verás el Ganesh Pol, el Diwan-e-Aam y el Sheesh Mahal, el palacio de los espejos.
+
+Lo que casi nadie visita es el pueblo que hay a sus pies, con templos, havelis y antiguos pozos escalonados. El Templo Jagat Shiromani, del siglo XVI, tiene una puerta tallada en una sola pieza de mármol blanco. Si quieres más detalles, tengo una [guía completa del Fuerte Amber](/journal/fuerte-amber-guia-completa).
+
+### 5. El Fuerte Jaigarh y el Fuerte Nahargarh
+
+Sobre Amber está el Fuerte Jaigarh, la fortaleza militar que protegía el palacio y que nunca fue conquistada. Allí está el cañón Jaivana, uno de los cañones sobre ruedas más grandes jamás construidos. Desde Amber se puede llegar por un túnel histórico que usaba la familia real.
+
+El Fuerte Nahargarh, en cambio, se asoma directamente sobre la ciudad. Es el mejor lugar de Jaipur para ver el atardecer.
+
+### 6. Los bazares de la ciudad vieja
+
+Para mí, aquí es donde está el verdadero Jaipur. Familias que llevan generaciones trabajando el metal, el mármol o las pulseras de laca, mercados de flores y verduras, puestos de chai en cada esquina. Pasear por los bazares sin prisa te enseña más sobre la ciudad que cualquier monumento.
+
+### 7. Jal Mahal y Jaipur de noche
+
+El Jal Mahal, el palacio que parece flotar sobre el lago Man Sagar, se ve mejor al anochecer. Cuando se encienden las luces del Hawa Mahal, del Albert Hall Museum y de la Patrika Gate, Jaipur se convierte en una ciudad completamente distinta.
+
+## Qué ver en Jaipur en un día
+
+Si solo tienes un día, organízalo según la luz y no según el mapa:
+
+- **Al amanecer:** el Hawa Mahal con el primer sol, el templo Govind Dev Ji durante la ceremonia de la mañana y el mercado de flores.
+- **A media mañana:** Jantar Mantar y el Palacio de la Ciudad, antes de que apriete el calor.
+- **Por la tarde:** el atardecer en Nahargarh y después el recorrido por los monumentos iluminados.
+
+Si quieres hacerlo con nosotros, [Jaipur at Dawn](/experiences/jaipur-at-dawn) cubre la mañana en la ciudad vieja y [The Blue Hour](/experiences/the-blue-hour) cubre el atardecer y la noche en un jeep descubierto. Juntas forman nuestra combinación [Soul of Jaipur](/experiences), pensada justamente para quien tiene un solo día.
+
+## Qué ver en Jaipur en 2 días
+
+Con dos días puedes separar la ciudad vieja de Amber, que es lo ideal:
+
+**Día 1: La ciudad vieja**
+
+- Amanecer en el casco antiguo con [Jaipur at Dawn](/experiences/jaipur-at-dawn)
+- Hawa Mahal, Jantar Mantar y el Palacio de la Ciudad con [The Crown of Jaipur](/experiences/the-crown-of-jaipur)
+- Bazares y comida callejera al atardecer con [Beyond the Pink](/experiences/beyond-the-pink)
+
+**Día 2: Amber y las colinas**
+
+- Fuerte Amber, el pueblo y el túnel hasta Jaigarh por la mañana con [The Ridge & Ramparts](/experiences/ridge-and-ramparts)
+- Por la tarde, cena con una familia en el campo con [The Farm & Fire](/experiences/farm-and-fire), o atardecer en Nahargarh con [The Blue Hour](/experiences/the-blue-hour)
+
+## Dónde comer en Jaipur
+
+La comida de Jaipur es una de las grandes razones para quedarse más de un día. Algunas cosas que no deberías irte sin probar:
+
+- **Pyaaz kachori:** una masa frita rellena de cebolla especiada. Es el desayuno típico de la ciudad.
+- **Dal baati churma:** el plato más tradicional de Rajastán, con lentejas, bolas de trigo horneadas y un dulce de trigo con ghee.
+- **Lassi:** el yogur batido que se sirve en vasos de barro.
+- **Chai:** el té con especias de los puestos callejeros. Es también la mejor excusa para sentarse a hablar con la gente.
+
+Mi recomendación es comer donde comen los locales, en negocios familiares con recetas de hace generaciones. En [Beyond the Pink](/experiences/beyond-the-pink) hacemos entre 6 y 8 degustaciones por los bazares de la ciudad vieja. Si prefieres cocinar, en [The Farm & Fire](/experiences/farm-and-fire) preparamos una cena vegetariana tradicional con una familia, sobre un fogón de leña.
+
+## ¿Cuándo visitar Jaipur?
+
+La mejor época es de octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y en julio, agosto y septiembre llegan los monzones. Si viajas en verano, que es cuando muchos españoles tienen vacaciones, organiza las visitas a primera hora de la mañana y al atardecer, y deja las horas centrales del día para descansar.
+
+## Visitar Jaipur con un guía local en español
+
+Se puede ver Jaipur por tu cuenta, pero hay una diferencia entre ver los monumentos y entenderlos. Todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur), en grupos pequeños de un máximo de 8 personas. Muchos de nuestros viajeros vienen de España, México, Perú y El Salvador.
+
+Como escribió Rocío, de España: *"Excelentes días en Jaipur, atendidos maravillosamente por Shobhit. Un gran guía."*
+
+Puedes ver todas las experiencias en nuestra [página de experiencias](/experiences) o escribirnos directamente por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
+  },
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {
     slug: "forts-in-jaipur",
@@ -262,7 +389,9 @@ The Ridge & Ramparts tiene un precio de $32 USD (₹2,800), lo que equivale apro
 
 Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts) hoy mismo.
 
-Consulte también [todas las experiencias de Raah en Jaipur](/experiences).`,
+Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
+
+¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.`,
   },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {
