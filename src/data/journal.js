@@ -142,20 +142,20 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
     metaDescription: "Amer, Jaigarh or Nahargarh? A local guide compares Jaipur's three hill forts: history, what to see, how long to spend and the best order to visit.",
     category: "Jaipur Guide",
     readTime: "8 min read",
-    image: "/experiances/Ridge and ramparts/ridge1.jpeg",
+    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
     relatedExperiences: [
       "ridge-and-ramparts",
       "the-blue-hour",
       "the-crown-of-jaipur",
     ],
     images: [
-      { src: "/experiances/Ridge and ramparts/ridge1.jpeg", alt: "Amer Fort reflected in Maota Lake, Jaipur" },
-      { src: "/experiances/Ridge and ramparts/ridge1.jpg", alt: "Raah guests on the steps of Ganesh Pol, the painted gateway of Amer Fort" },
-      { src: "/experiances/Ridge and ramparts/ridge2.jpeg", alt: "Musician playing the flute in a pillared hall inside Amer Fort" },
-      { src: "/experiances/Ridge and ramparts/IMG20241225100919.jpg", alt: "Carved marble gateway of the 16th-century Jagat Shiromani Temple in Amer town" },
-      { src: "/experiances/The blue hour/IMG_20260123_141626.jpg", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort, Jaipur" },
-      { src: "/experiances/The blue hour/IMG_20260323_133423.jpg", alt: "Painted room in Nahargarh Fort with a window looking over Jaipur" },
-      { src: "/experiances/The blue hour/IMG20250124175844.jpg", alt: "Sunset over Jaipur city seen from Nahargarh Fort" },
+      { src: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", alt: "Amer Fort reflected in Maota Lake, Jaipur" },
+      { src: "/experiences/ridge-and-ramparts/raah-guests-ganesh-pol-amer-fort.webp", alt: "Raah guests on the steps of Ganesh Pol, the painted gateway of Amer Fort" },
+      { src: "/experiences/ridge-and-ramparts/flute-player-pillared-hall-amer-fort.webp", alt: "Musician playing the flute in a pillared hall inside Amer Fort" },
+      { src: "/experiences/ridge-and-ramparts/jagat-shiromani-temple-marble-gateway-amer.webp", alt: "Carved marble gateway of the 16th-century Jagat Shiromani Temple in Amer town" },
+      { src: "/experiences/the-blue-hour/nahargarh-fort-madhavendra-bhawan-courtyard.webp", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort, Jaipur" },
+      { src: "/experiences/the-blue-hour/nahargarh-fort-painted-room.webp", alt: "Painted room in Nahargarh Fort with a window looking over Jaipur" },
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Sunset over Jaipur city seen from Nahargarh Fort" },
     ],
     faqs: [
       { q: "Which is the most famous fort in Jaipur?", a: "Amer (Amber) Fort. It's the oldest of the three as a royal seat, the most architecturally detailed, and part of a UNESCO World Heritage Site." },
@@ -263,7 +263,7 @@ For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experien
     metaDescription: "Is Jaipur safe for solo and female travellers? An honest local guide's answer — real risks, common scams and practical safety tips.",
     category: "Jaipur Guide", 
     readTime: "7 min read",
-    image: "/experiances/Ridge and ramparts/IMG-20250315-WA0195.jpg",
+    image: "/experiences/ridge-and-ramparts/guest-with-nataraja-statue-amer.webp",
     relatedExperiences: [
       "beyond-the-pink",
       "the-blue-hour",
@@ -331,7 +331,7 @@ To see how each walk is structured, [explore all Raah experiences](/experiences)
     category: "Jaipur Guide", // TODO: confirm — same open question as other articles
     readTime: "6 min read",
     lang: "es", // used by generateMetadata for hreflang; also passed to body wrapper
-    image: "/experiances/Ridge and ramparts/thumbnail.jpg",
+    image: "/experiences/ridge-and-ramparts/amer-carved-temple-doorway.webp",
     relatedExperiences: [
       "ridge-and-ramparts",
     ],
@@ -403,7 +403,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
     metaDescription: "How much does a Jaipur trip cost? Realistic prices for hotels, food, transport and guided tours, with sample daily budgets in ₹ and $.",
     category: "Jaipur Guide",
     readTime: "9 min read",
-    image: "/experiances/Ridge and ramparts/ridge1.jpeg", 
+    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", 
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-crown-of-jaipur",
@@ -592,7 +592,7 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
     metaDescription: "How to find a reputable tour guide in Jaipur — check licences, spot commission-driven shopping stops and know what to ask before booking.",
     category: "Booking Guide",
     readTime: "8 min read",
-    image: "/experiances/The blue hour/blueH1.jpg", 
+    image: "/experiences/the-blue-hour/raah-guests-city-palace-gate-night.webp", 
     relatedExperiences: [], 
     images: [
       { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
@@ -680,7 +680,7 @@ You can also [browse the experiences Raah offers](/experiences) to see exactly w
     metaDescription: "A 3-day Jaipur itinerary for first-time visitors — day-by-day plans, where to stay and how to get around, from a licensed local guide.",
     category: "Jaipur Guide",
     readTime: "9 min read",
-     image: "/experiances/Farm and fire/IMG20241231193438.jpg",
+     image: "/experiences/farm-and-fire/raah-guests-home-cooked-dinner.webp",
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-crown-of-jaipur",
@@ -858,7 +858,7 @@ Whatever the length of your trip, you can [see every experience with its timings
     metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
     category: "Jaipur Guide",
     readTime: "10 min read",
-    image: "/experiances/Ridge and ramparts/ridge1.jpeg",
+    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-blue-hour",

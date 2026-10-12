@@ -316,7 +316,7 @@ export default async function ExperienceDetailPage({ params }) {
 
       {/* ── Hero ── */}
       <section style={{ position:"relative", minHeight:"65vh", display:"flex", alignItems:"flex-end", overflow:"hidden" }}>
-                <Image src={cloudImg(exp.heroImage)} alt={exp.seoName ? `${exp.title} – ${exp.seoName}` : exp.title} fill className="object-cover object-center" priority sizes="100vw" />
+                <Image src={cloudImg(exp.heroImage)} alt={exp.heroAlt || exp.title} fill className="object-cover object-center" priority sizes="100vw" />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(20,10,0,0.92) 0%,rgba(20,10,0,0.22) 50%,transparent 100%)" }} />
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 15% 80%,rgba(255,140,0,0.12) 0%,transparent 55%)" }} />
 
@@ -534,7 +534,7 @@ export default async function ExperienceDetailPage({ params }) {
                   <p style={LABEL}>Gallery</p>
                   <div style={RULE} />
                   <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Moments From This Experience</h2>
-                 <GallerySlider images={exp.gallery.map((g, i) => ({ ...g, src: cloudImg(g.src), alt: `${exp.title} – ${exp.seoName || "Jaipur experience"} – photo ${i + 1}` }))} title={exp.title} />
+                 <GallerySlider images={exp.gallery.map((g, i) => ({ ...g, src: cloudImg(g.src), alt: g.alt || `${exp.title} – photo ${i + 1}` }))} title={exp.title} />
                 </div>
               )}
 

@@ -53,7 +53,7 @@ export default function JournalPage() {
         .jp-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('/experiances/Beyond the pink/thumbnail.jpg');
+          background-image: url('/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp');
           background-size: cover;
           background-position: center 35%;
         }

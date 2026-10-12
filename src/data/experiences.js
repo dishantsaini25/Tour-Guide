@@ -3,140 +3,139 @@
  * Central data source for all experience pages and cards.
  */
 
-// ── Slug → public folder name ─────────────────────────────────────
+// ── Slug → folder inside public/experiences ──────────────────────
 const FOLDER_MAP = {
-  "jaipur-at-dawn":        "Jaipur at down",
-  "ridge-and-ramparts":    "Ridge and ramparts",
-  "cosmic-imperial-triad": "The Cosmic & Imperial Triad",
-  "the-blue-hour":         "The blue hour",
-  "beyond-the-pink":       "Beyond the pink",
-  "farm-and-fire":         "Farm and fire",
-  "living-walled-city":    "The living walled city",
-  "the-lost-kingdom":      "The lost kingdom",
-  "artisans-jaipur":       "the artisian jaipur",
+  "jaipur-at-dawn":          "jaipur-at-dawn",
+  "ridge-and-ramparts":      "ridge-and-ramparts",
+  "cosmic-imperial-triad":   "crown-of-jaipur",
+  "the-blue-hour":           "the-blue-hour",
+  "beyond-the-pink":         "beyond-the-pink",
+  "farm-and-fire":           "farm-and-fire",
+  "living-walled-city":      "living-the-walled-city",
+  "the-lost-kingdom":        "the-lost-kingdom",
+  "artisans-jaipur":         "artisans-jaipur",
 };
 
+// First image in each list = hero & card image. Every image has its own alt text.
 const IMAGE_INVENTORY = {
-  "Jaipur at down": [
-    "thumbnail.jpg",
-    "image1.jpeg",
-    "IMG20250731114958.jpg",
-    "IMG_20250914_132635_152.jpg",
-    "IMG20251105100216.jpg",
-    "IMG_20250914_132635_252.jpg",
-    "IMG20251125084223.jpg",
+  "jaipur-at-dawn": [
+    { file: "marigold-flowers-phool-mandi-jaipur.webp", alt: "Sacks of orange marigolds at the phool mandi, Jaipur's flower market, at dawn" },
+    { file: "women-entering-haveli-doorway-jaipur.webp", alt: "Women stepping through a carved haveli doorway in Jaipur's old city" },
+    { file: "old-city-gateway-jaipur.webp", alt: "Historic gateway into Jaipur's walled old city" },
+    { file: "marigold-heap-flower-market-jaipur.webp", alt: "Heap of marigold flowers on a cloth at the Jaipur flower market" },
+    { file: "rose-and-marigold-petals-flower-market-jaipur.webp", alt: "Sacks of rose and marigold petals at the Jaipur flower market" },
+    { file: "orange-and-yellow-marigolds-jaipur.webp", alt: "Orange and yellow marigolds in open sacks, Jaipur flower market" },
+    { file: "old-wooden-door-walled-city-jaipur.webp", alt: "Weathered wooden door of an old house in Jaipur's walled city" },
   ],
-  "Ridge and ramparts": [
-    "thumbnail.jpg",
-    "IMG-20250315-WA0195.jpg",
-    "IMG20250125120947.jpg",
-    "IMG20251222131716.jpg",
-    "IMG20241225100919.jpg",
-    "IMG20250201095547.jpg",
-    "ridge1.jpeg",
-    "ridge2.jpeg",
-    "ridge3.jpg",
+  "ridge-and-ramparts": [
+    { file: "amer-carved-temple-doorway.webp", alt: "Carved arched doorway of an old temple in Amer town" },
+    { file: "amer-fort-reflection-maota-lake.webp", alt: "Amer Fort reflected in Maota Lake, Jaipur" },
+    { file: "jagat-shiromani-temple-marble-gateway-amer.webp", alt: "Carved marble gateway of the 16th-century Jagat Shiromani Temple, Amer" },
+    { file: "jagat-shiromani-temple-shikhara-amer.webp", alt: "Carved stone spire of the Jagat Shiromani Temple in Amer" },
+    { file: "guest-at-old-temple-amer-town.webp", alt: "Guest standing in the doorway of an old temple in Amer town" },
+    { file: "amer-fort-sketch-guest.webp", alt: "Guest holding a pencil sketch of Amer Fort with the fort behind" },
+    { file: "guest-with-nataraja-statue-amer.webp", alt: "Guest posing beside a bronze Nataraja statue in Amer" },
+    { file: "raah-guests-ganesh-pol-amer-fort.webp", alt: "Raah guests on the steps of Ganesh Pol, Amer Fort" },
+    { file: "raah-group-ganesh-pol-amer-fort.webp", alt: "Group of Raah guests in front of the painted Ganesh Pol, Amer Fort" },
+    { file: "flute-player-pillared-hall-amer-fort.webp", alt: "Musician playing the flute in a pillared hall inside Amer Fort" },
+    { file: "goat-on-rock-amer-hills.webp", alt: "Goat standing on a rock above Amer town in the Aravalli hills" },
   ],
-  "The Cosmic & Imperial Triad": [
-    "thumbnail.jpg",
-    "IMG20251009153818.jpg",
-    "IMG20251009155510.jpg",
-    "IMG20251009155525.jpg",
-    "IMG20251009160028.jpg",
-    "IMG20260313110321_01.jpg",
-    "IMG20251009160204.jpg",
-    "IMG20251009160807.jpg",
-    "crown3.jpg",
-    "crown4.jpg"
-
+  "crown-of-jaipur": [
+    { file: "musician-blue-room-city-palace-jaipur.webp", alt: "Musician in a red turban in the blue painted room of the City Palace, Jaipur" },
+    { file: "chandra-mahal-city-palace-jaipur.webp", alt: "Chandra Mahal with the royal flag, City Palace Jaipur" },
+    { file: "mirror-room-city-palace-jaipur.webp", alt: "Mirror and glass-inlay room inside the City Palace, Jaipur" },
+    { file: "palace-attendant-city-palace-jaipur.webp", alt: "Palace attendant in a red turban inside the City Palace, Jaipur" },
+    { file: "painted-doorway-city-palace-jaipur.webp", alt: "Painted arched doorway inside the City Palace, Jaipur" },
+    { file: "pillared-hall-city-palace-jaipur.webp", alt: "Pillared hall with scalloped arches, City Palace Jaipur" },
+    { file: "blue-floral-fresco-city-palace.webp", alt: "Blue and white floral fresco in the City Palace, Jaipur" },
+    { file: "blue-fresco-detail-city-palace.webp", alt: "Detail of a blue fresco with painted figures, City Palace Jaipur" },
+    { file: "mirror-ceiling-city-palace-jaipur.webp", alt: "Mirror-work ceiling inside the City Palace, Jaipur" },
+    { file: "art-gallery-city-palace-jaipur.webp", alt: "Visitor viewing an artwork in a gallery at the City Palace, Jaipur" },
   ],
-  "The blue hour": [
-    "thumbnail.jpg",
-    "213039bef03f1dadfc0916266d707085.jpg",
-    "IMG_20260123_141626.jpg",
-    "IMG20250124175844.jpg",
-    "IMG20260202185512.jpg",
-    "IMG_20260323_133304.jpg",
-    "IMG_20260323_133423.jpg",
-    "blue1.jpg",
-    "blue2.jpg"
-    
+  "the-blue-hour": [
+    { file: "hawa-mahal-sunset-jaipur.webp", alt: "Hawa Mahal at sunset, Jaipur" },
+    { file: "raah-guests-city-palace-gate-night.webp", alt: "Raah guests at an illuminated City Palace gateway at night" },
+    { file: "jaipur-sunset-sky-old-city.webp", alt: "Golden sunset sky over Jaipur's old city" },
+    { file: "sunset-over-jaipur-from-nahargarh.webp", alt: "Sun setting over Jaipur seen from Nahargarh Fort" },
+    { file: "nahargarh-fort-madhavendra-bhawan-courtyard.webp", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort" },
+    { file: "nahargarh-fort-fresco-arch.webp", alt: "Floral fresco above an arch inside Nahargarh Fort" },
+    { file: "nahargarh-fort-painted-room.webp", alt: "Painted room in Nahargarh Fort with a window over Jaipur" },
+    { file: "hawa-mahal-illuminated-night.webp", alt: "Hawa Mahal lit up at night, Jaipur" },
+    { file: "hawa-mahal-night-crowd.webp", alt: "Crowds in front of the illuminated Hawa Mahal at night" },
+    { file: "chandra-mahal-city-palace-evening.webp", alt: "Chandra Mahal at the City Palace lit up in the evening" },
+    { file: "chandra-mahal-city-palace-night.webp", alt: "Chandra Mahal, City Palace Jaipur, illuminated after dark" },
   ],
-  "Beyond the pink": [
-    "thumbnail.jpg",
-    "5aab880dcc61f7b35c49547113b089a3.jpg",
-    "bfdab2ecd0d338903a3c75d3e1cc1934.jpg",
-    "IMG_20260123_140614.jpg",
-    "IMG_20260213_143023.jpg",
-    "IMG20250203161213.jpg",
-    "IMG20260224115654.jpg",
-    "IMG20260202172637.jpg",
-    "Beyond1.jpg"
+  "beyond-the-pink": [
+    { file: "pink-city-bazaar-cycle-rickshaw-jaipur.webp", alt: "Cycle rickshaw passing pink buildings in Jaipur's old city bazaar" },
+    { file: "kachori-maker-street-stall-jaipur.webp", alt: "Cook frying kachoris at a street food stall in Jaipur" },
+    { file: "dal-baati-churma-plate.webp", alt: "Plate of dal baati churma, a traditional Rajasthani meal" },
+    { file: "gulab-ji-chai-wale-jaipur.webp", alt: "Gulab Ji Chai Wale, a famous tea stall in Jaipur" },
+    { file: "lassi-street-stall-jaipur-night.webp", alt: "Glass of lassi at a street stall in Jaipur at night" },
+    { file: "dried-red-chillies-market-jaipur.webp", alt: "Sacks of dried red chillies at a Jaipur spice market" },
+    { file: "old-tailor-shop-walled-city-jaipur.webp", alt: "Old tailor shop in the walled city of Jaipur" },
+    { file: "locals-at-haveli-doorway-jaipur.webp", alt: "Locals sitting at an old haveli doorway in Jaipur" },
+    { file: "women-in-sarees-old-city-jaipur.webp", alt: "Women in colourful sarees walking through Jaipur's old city" },
   ],
-  "Farm and fire": [
-    "thumbnail.jpg",
-    "4ac0c64e55c7d32bfd39a762565815fe.jpg",
-    "IMG20241231193438.jpg",
-    "IMG20260108172124 666.jpg",
-    "IMG20260802180641.jpg",
-    "IMG20260108172109 13.jpg",
-    "farm1.jpeg"
+  "farm-and-fire": [
+    { file: "rajasthani-thali-leaf-plate.webp", alt: "Rajasthani vegetarian thali served on a leaf plate" },
+    { file: "raah-guests-home-cooked-dinner.webp", alt: "Raah guests sharing a home-cooked Rajasthani dinner" },
+    { file: "roti-cooking-on-chulha.webp", alt: "Roti cooking on a wood-fired chulha" },
+    { file: "roti-on-iron-tawa-chulha.webp", alt: "Roti on an iron tawa over a wood fire" },
+    { file: "fresh-roti-brass-plate.webp", alt: "Fresh roti on a brass plate at a home cooking session" },
+    { file: "rolling-roti-dough-brass-plate.webp", alt: "Rolling roti dough on a brass plate" },
+    { file: "baati-roasting-on-coals.webp", alt: "Baati being roasted on hot coals" },
+    { file: "baati-on-coals-hand.webp", alt: "Baati roasting on coals, turned by hand" },
+    { file: "rajasthani-thali-spread.webp", alt: "Spread of Rajasthani dishes on a thali" },
+    { file: "buttermilk-and-rajasthani-thali.webp", alt: "Buttermilk being poured beside a Rajasthani thali" },
   ],
-  "The living walled city": [
-    "living1.jpg",
-    "39b952ecb7714efa76ca7338b05d6f38.jpg",
-    "7c9cd63b6ca2f0a402c01768a32822d3.jpg",
-    "ef0d31548ed88c0be44085fc235aa9a7.jpg",
-    "living2.jpg",
-    "living3.jpg",
-    "living4.jpg",
-    "living5.jpg",
+  "living-the-walled-city": [
+    { file: "guest-e-rickshaw-old-city-jaipur.webp", alt: "Guest on an e-rickshaw ride through Jaipur's old city" },
+    { file: "haveli-above-bazaar-old-city-jaipur.webp", alt: "Historic haveli above jewellery shops in Jaipur's old city" },
+    { file: "guest-with-street-musicians-jaipur.webp", alt: "Guest with street musicians in Jaipur's old city" },
+    { file: "marigold-garland-stalls-jaipur.webp", alt: "Marigold garland stalls at a Jaipur flower market" },
+    { file: "guest-henna-mehndi-jaipur.webp", alt: "Guest getting henna done by a local artist in Jaipur" },
+    { file: "dried-chillies-sacks-bazaar-jaipur.webp", alt: "Dried red chillies sold by weight in a Jaipur bazaar" },
+    { file: "embroidered-potli-bags-bazaar-jaipur.webp", alt: "Embroidered potli bags hanging at a Jaipur bazaar" },
   ],
-  "The lost kingdom": [
-    "thumbnail.jpg",
-    "IMG_20260124_161109.JPG",
-    "IMG_20260124_161756.JPG",
-    "IMG_20260606_111700.jpg",
-    "IMG20260124104705.jpg",
-    "IMG20250722192821.jpg",
+  "the-lost-kingdom": [
+    { file: "rocky-trail-aravalli-hills-amer.webp", alt: "Rocky hiking trail through the Aravalli hills near Amber" },
+    { file: "aravalli-hills-amber-valley.webp", alt: "Aravalli hills around Amber valley" },
+    { file: "aravalli-ridge-wall-watchtower.webp", alt: "Fortification wall and watchtower on an Aravalli ridge at dusk" },
+    { file: "old-wooden-door-ruins-amber-hills.webp", alt: "Weathered wooden door in a ruined structure in the Amber hills" },
+    { file: "tree-at-hill-shrine-amber.webp", alt: "Large tree in the courtyard of a hill shrine near Amber" },
+    { file: "bare-trees-aravalli-forest.webp", alt: "Bare winter trees in the Aravalli forest near Amber" },
   ],
-  "the artisian jaipur": [
-    "thumbnail.jpg",
-    "IMG20251004115634.jpg",
-    "IMG20251004115720.jpg",
-    "IMG20251120111217.jpg",
-    "IMG20260206173707.jpg",
-    "IMG20260415180143.jpg",
-    "Artisan1.jpg"
+  "artisans-jaipur": [
+    { file: "rajasthani-kathputli-puppets.webp", alt: "Pair of Rajasthani kathputli puppets" },
+    { file: "hand-block-printing-workshop-jaipur.webp", alt: "Guest trying hand block printing at a workshop near Jaipur" },
+    { file: "block-printed-fabric-drying.webp", alt: "Block-printed fabrics drying in the sun near Jaipur" },
+    { file: "wooden-printing-block-leaf-motif.webp", alt: "Hand-carved wooden printing block with a leaf motif" },
+    { file: "wooden-printing-block-floral.webp", alt: "Hand-carved wooden printing block with a floral pattern" },
+    { file: "brass-craftsman-old-city-jaipur.webp", alt: "Brass craftsman shaping metal in Jaipur's old city" },
+    { file: "lac-bangle-makers-jaipur.webp", alt: "Artisans making lac bangles in a Jaipur workshop" },
   ],
 };
 
 function getExperienceImages(slug) {
   const PLACEHOLDER = "/images/placeholder.jpg";
   const folderName  = FOLDER_MAP[slug];
+  const files       = folderName && IMAGE_INVENTORY[folderName];
 
-  if (!folderName || !IMAGE_INVENTORY[folderName]) {
+  if (!files || files.length === 0) {
     console.warn(`[experiences.js] No image config for slug: "${slug}"`);
-    return { heroImage: PLACEHOLDER, cardImage: PLACEHOLDER, gallery: [] };
+    return { heroImage: PLACEHOLDER, cardImage: PLACEHOLDER, heroAlt: "", gallery: [] };
   }
 
-  // Encode folder name for URL (handles spaces and & correctly)
-  const encodedFolder = encodeURIComponent(folderName);
-  const basePath      = `/experiances/${encodedFolder}`;
-  const files         = IMAGE_INVENTORY[folderName];
-  const thumbnailFile = files.includes("thumbnail.jpg") ? "thumbnail.jpg" : files[0];
-  const thumbnail     = thumbnailFile
-    ? `${basePath}/${encodeURIComponent(thumbnailFile)}`
-    : PLACEHOLDER;
+  const basePath = `/experiences/${folderName}`;
+  const [hero, ...rest] = files;
+  const heroImage = `${basePath}/${hero.file}`;
 
-  const gallery = files
-    .filter(f => f !== thumbnailFile)
-    .map(f => ({
-      src: `${basePath}/${encodeURIComponent(f)}`,
-      alt: `${slug} — ${f.replace(/\.[^.]+$/, "")}`,
-    }));
-
-  return { heroImage: thumbnail, cardImage: thumbnail, gallery };
+  return {
+    heroImage,
+    cardImage: heroImage,
+    heroAlt: hero.alt,
+    gallery: rest.map((img) => ({ src: `${basePath}/${img.file}`, alt: img.alt })),
+  };
 }
 
 export const experiences = [
