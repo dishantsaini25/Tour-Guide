@@ -1,36 +1,65 @@
 /**
  * src/lib/cloudinaryImage.js
  *
- * Resolves any local image path to its Cloudinary URL.
- * Falls back silently to the original local path if not found —
- * so nothing ever breaks and public/ images remain a safety net.
+ * Centralised image URL resolver for Raah India Experiences.
  *
- * Usage (client OR server components):
+ * Converts any local public/ path → its Cloudinary secure_url.
+ * Falls back to the original local path if no mapping entry exists,
+ * so nothing breaks when a new image has not been synced yet.
+ *
+ * Mapping formats supported:
+ *   Legacy  : { "/path/img.jpg": "https://res.cloudinary.com/…" }
+ *   Current : { "/path/img.jpg": { url: "https://…", publicId: "…", hash: "…", status: "uploaded" } }
+ *
+ * Usage (client OR server components, App Router or Pages Router):
  *   import { cloudImg } from "@/lib/cloudinaryImage";
- *   <Image src={cloudImg(exp.heroImage)} ... />
+ *   <Image src={cloudImg(exp.heroImage)} … />
+ *   style={{ backgroundImage: `url(${cloudImg("/images/hero.webp")})` }}
+ *
+ * Rules:
+ *   • Never expose Cloudinary API credentials — this file is safe to import anywhere.
+ *   • Never fabricate a URL — return the local path as-is if the mapping has no entry.
+ *   • Already-external URLs (https://…) are returned unchanged.
+ *   • Encoded paths (/journal%20Images/…) are decoded before lookup.
  */
 
-// Static import of the URL map — bundled at build time, zero runtime I/O
+// Bundled at build time — zero runtime I/O, works in both RSC and client components.
 import urlMap from "../../cloudinary-urls.json";
 
 /**
- * Returns the Cloudinary secure_url for a local public/ path,
- * or the original path unchanged if no mapping exists.
+ * Resolve a local public/ image path to its Cloudinary URL.
  *
- * @param {string|null|undefined} localPath  e.g. "/experiances/Farm and fire/thumbnail.jpg"
+ * @param {string|null|undefined} localPath
+ *   A public/-relative path, e.g. "/experiences/jaipur-at-dawn/hero.webp"
  * @returns {string}
+ *   The Cloudinary secure_url, or the original path when no mapping exists.
  */
 export function cloudImg(localPath) {
-  // Already a full URL (Cloudinary, Unsplash, Pexels, etc.) — return as-is
-  if (!localPath || localPath.startsWith("http")) return localPath || "";
+  // Pass external URLs straight through
+  if (!localPath || localPath.startsWith("http")) return localPath ?? "";
 
-  // Normalise: ensure leading slash, decode %20 etc.
+  // Normalise: ensure leading slash; decode percent-encoded characters
   let key = localPath.startsWith("/") ? localPath : `/${localPath}`;
-  try { key = decodeURIComponent(key); } catch (_) { /* keep original */ }
+  try { key = decodeURIComponent(key); } catch (_) { /* keep original on malformed input */ }
 
-  // Look up in the JSON map
-  if (urlMap[key]) return urlMap[key];
+  const entry = urlMap[key];
+  if (!entry) return localPath;           // not yet synced — fall back to local file
 
-  // Fallback: return original local path so public/ image is used
-  return localPath;
+  // Support both legacy string format and current object format
+  if (typeof entry === "string") return entry;
+  if (entry.url)                 return entry.url;
+
+  return localPath;                       // malformed entry — fail safe
+}
+
+/**
+ * Return true if the path is already served from Cloudinary.
+ * Useful for conditional rendering or debugging.
+ *
+ * @param {string|null|undefined} localPath
+ * @returns {boolean}
+ */
+export function isOnCloudinary(localPath) {
+  const resolved = cloudImg(localPath);
+  return resolved.startsWith("https://res.cloudinary.com/");
 }

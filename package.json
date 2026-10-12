@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "upload:images": "node scripts/upload-to-cloudinary.js"
+    "upload:images": "node scripts/upload-to-cloudinary.js",
+    "images:migrate": "node --experimental-vm-modules scripts/cloudinary-images.mjs migrate",
+    "images:sync": "node --experimental-vm-modules scripts/cloudinary-images.mjs sync",
+    "images:check": "node --experimental-vm-modules scripts/cloudinary-images.mjs check",
+    "images:dry-run": "node --experimental-vm-modules scripts/cloudinary-images.mjs dry-run"
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.3.0",
