@@ -25,8 +25,26 @@
 .env.production
 .env.production.local
 .env.staging
-# Catch-all for any other .env variants
 .env*.local
+
+# ─── Public image folders — served from Cloudinary ───────────
+# These folders are large and all images are hosted on Cloudinary.
+# Run `npm run images:sync` to upload new images.
+# Old misspelled folder (replaced by /experiences/)
+public/experiances/
+# New experiences image folder
+public/experiences/
+# Raw guest photos (uploaded to Cloudinary)
+public/with guests/
+# Journal images (uploaded to Cloudinary)
+public/journal Images/
+
+# ─── Cloudinary migration temp files ─────────────────────────
+cloudinary-urls.json.tmp.*
+*.tmp.*
+
+# ─── Large / generated files ─────────────────────────────────
+project_dump.txt
 
 # ─── Testing ─────────────────────────────────────────────────
 /coverage
