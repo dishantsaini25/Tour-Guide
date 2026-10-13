@@ -7,46 +7,47 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import Link from "next/link";
 import { ArrowRight, SlidersHorizontal, X } from "lucide-react";
+import HighlightIcon from "@/components/HighlightIcon";
 
-const filters = ["All", "Morning", "Evening", "Night"];
+const filters = ["All", "Morning", "Afternoon", "Evening", "Night"];
 
-/* ── Combo card icons keyed by experience slug ── */
+/* ── Combo card icons keyed by experience slug (Lucide names, see HighlightIcon) ── */
 const EXP_ICONS = {
-  "jaipur-at-dawn":        "🌅",
-  "ridge-and-ramparts":    "🏔️",
-  "the-blue-hour":         "🌃",
-  "beyond-the-pink":       "🏮",
-  "farm-and-fire":         "🔥",
-  "cosmic-imperial-triad": "🔭",
-  "living-walled-city":    "🏰",
-  "the-lost-kingdom":      "🌿",
-  "artisans-jaipur":       "🖨️",
+  "jaipur-at-dawn":      "Sunrise",
+  "ridge-and-ramparts":  "Mountain",
+  "the-blue-hour":       "Sunset",
+  "beyond-the-pink":     "Store",
+  "farm-and-fire":       "Flame",
+  "the-crown-of-jaipur": "Crown",
+  "living-walled-city":  "Landmark",
+  "the-lost-kingdom":    "Trees",
+  "artisans-jaipur":     "Palette",
 };
 
 /* Title label for each combo experience slug */
 const EXP_LABELS = {
-  "jaipur-at-dawn":        "Jaipur at Dawn",
-  "ridge-and-ramparts":    "Ridge & Ramparts",
-  "the-blue-hour":         "The Blue Hour",
-  "beyond-the-pink":       "Beyond the Pink",
-  "farm-and-fire":         "The Farm & Fire",
-  "cosmic-imperial-triad": "The Crown of Jaipur",
-  "living-walled-city":    "The Living Walled City",
-  "the-lost-kingdom":      "The Lost Kingdom",
-  "artisans-jaipur":       "The Artisan's Jaipur",
+  "jaipur-at-dawn":      "Jaipur at Dawn",
+  "ridge-and-ramparts":  "Ridge & Ramparts",
+  "the-blue-hour":       "The Blue Hour",
+  "beyond-the-pink":     "Beyond the Pink",
+  "farm-and-fire":       "The Farm & Fire",
+  "the-crown-of-jaipur": "The Crown of Jaipur",
+  "living-walled-city":  "Living the Walled City",
+  "the-lost-kingdom":    "The Lost Kingdom",
+  "artisans-jaipur":     "The Artisan's Jaipur",
 };
 
-/* ── Time-of-day label per slug ── */
+/* ── Time-of-day label per slug (Oct–Mar timings) ── */
 const EXP_TIME = {
-  "jaipur-at-dawn":        "Morning",
-  "the-lost-kingdom":      "Morning",
-  "ridge-and-ramparts":    "Afternoon",
-  "beyond-the-pink":       "Evening",
-  "the-blue-hour":         "Evening",
-  "farm-and-fire":         "Evening",
-  "cosmic-imperial-triad": "Flexible",
-  "living-walled-city":    "Flexible",
-  "artisans-jaipur":       "Afternoon",
+  "jaipur-at-dawn":      "Sunrise",
+  "ridge-and-ramparts":  "Morning",
+  "the-crown-of-jaipur": "Late morning",
+  "artisans-jaipur":     "Afternoon",
+  "beyond-the-pink":     "Evening",
+  "the-blue-hour":       "Sunset",
+  "farm-and-fire":       "Evening",
+  "living-walled-city":  "Evening",
+  "the-lost-kingdom":    "Sunrise",
 };
 
 function ComboCard({ combo }) {
@@ -125,7 +126,7 @@ function ComboCard({ combo }) {
             <span style={{ fontSize: "0.85em", opacity: 0.7, color: "#9C8550" }}>
               {EXP_TIME[slug] || ""}
             </span>
-            <span>{EXP_ICONS[slug] || "✦"}</span>
+            <HighlightIcon name={EXP_ICONS[slug]} size={13} style={{ color: "#C8610A" }} />
             {EXP_LABELS[slug] || slug}
             {/* Arrow between chips (not after last) */}
             {i < slugs.length - 1 && (
