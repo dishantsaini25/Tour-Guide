@@ -412,12 +412,12 @@ metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one r
     ],
   },
 
-  // ── 4. The Blue Hour ────────────────────────────────────────────
+    // ── 4. The Blue Hour ────────────────────────────────────────────
   {
-   slug: "the-blue-hour",
-seoName: "Jaipur Night Tour by Open Jeep",
-metaTitle: "Jaipur Night Tour by Open Jeep | The Blue Hour",
-metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber Fort's light show, then Jal Mahal, Hawa Mahal and Albert Hall glowing after dark.",
+    slug: "the-blue-hour",
+    seoName: "Jaipur Night Tour by Open Jeep",
+    metaTitle: "Jaipur Night Tour by Open Jeep | The Blue Hour",
+    metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber Fort's light show, then Jal Mahal, Hawa Mahal and Albert Hall glowing after dark.",
     priceUSD: 43,
     priceINR: 3750,
     priceNote: "Minimum 2 · ₹7,500 for 2 · ₹13,000 for 4 · max 4 per jeep",
@@ -435,7 +435,7 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
     groupSize: "2–4 per jeep",
     languages: ["English", "Spanish"],
     location: "Across Jaipur",
-       meetingPoint: "Air Force Station, Jal Mahal",
+    meetingPoint: "Air Force Station, Jal Mahal",
     ...getExperienceImages("the-blue-hour"),
     idealFor: ["Couples & honeymooners", "Photography enthusiasts", "First-time Jaipur visitors", "Those who love cinematic experiences"],
     inclusions: [
@@ -443,18 +443,17 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
       "Sunset & visit at Nahargarh Fort",
       "Photo stops at iconic monuments",
       "Glimpses of the enchanting Sound & Light Show at Amber Fort",
-      "Refreshments at the end of the tour",
     ],
     exclusions: ["Monument entry tickets", "Meals & beverages", "Personal expenses", "Gratuities (only at guest's discretion)"],
     glancePoints: [
       "Watch the sunset from Nahargarh Fort, the most happening hilltop spot in Jaipur",
       "Ride through a scenic verdant valley in an open-air jeep to reach Madhavendra Bhawan — the nine-apartment mansion built for the king's nine queens",
-      "Enjoy a cool drink and glimpses of the Sound & Light Show in front of the majestic Amber Fort & Palace",
+      "Enjoy glimpses of the Sound & Light Show in front of the majestic Amber Fort & Palace",
       "Stop for photos at Jal Mahal, reflecting in the shimmering waters of Man Sagar Lake",
       "Drive past Hawa Mahal and uncover facts that make its façade even more fascinating",
       "Witness Ishwari Laat — the tallest minaret in Jaipur — and the Albert Hall Museum, home to Rajasthan's finest artefact collection",
       "Conclude at Patrika Gate & Toran Dwar, two gateways famous for their craftsmanship and colour",
-      "End the evening with a stop at a handpicked, trending local spot for snacks & drinks",
+      "End the evening with an optional stop at a handpicked, trending local spot for snacks & drinks (at your own cost)",
     ],
     beforeYouCome: {
       duration: "Approximately 4 hrs",
@@ -467,16 +466,16 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
       meetingPoint: "Air Force Station, Jal Mahal",
       transport: "Private open-air Jeep",
     },
-    story: `While most visitors stick to standard daytime sightseeing, "The Blue Hour" offers something unique & beyond imagination. Designed to unlock the city by night, it reveals a captivating side of Jaipur that most people completely miss. The Blue Hour journey starts with experiencing the sunset from Nahargarh Fort, the most happening place in Jaipur. Situated atop a hill, the fort offers not only the best panoramic views of the city but also a memorable evening that one can spend with loved ones.\n\nThe open-air jeep takes you through the scenic, verdant valley to reach the top before sunset to visit the Madhvendra Bhawan, a set of 9 apartments built by the king for his nine queens. These apartments are contemporaries of the havelis where nobles, artisans, merchants and people of high status used to live. After a cool drink & a romantic sunset, the experience continues to unfold in front of the majestic Amber Fort & Palace, where we can enjoy glimpses of the resplendent Sound & Light Show. Since the experience is entirely private, you can also choose to watch the complete show sitting in the amphitheatre. Perched majestically atop the Aravalli Hills, Amber Fort & Palace is a UNESCO World Heritage Site, renowned for its imposing hilltop location, magnificent Rajput-Mughal architecture & centuries-old rich history.\n\nFrom there, our journey continues into the heart of the city, passing through its iconic illuminated landmarks, including Jal Mahal, Hawa Mahal, the Albert Hall Museum and Birla Temple, before concluding at Patrika Gate & Toran Dwar.\n\nAs we approach the city, stop for a photo at Jal Mahal to enjoy a fresh & cool evening against the perfect backdrop of the water palace reflecting in the shimmering waters of Man Sagar Lake. The drive then weaves through different doorways & streets to showcase the true beauty of Jaipur. Marvel at Hawa Mahal as we drive past & unveil some of the interesting facts that make its façade even more beautiful than it looks.\n\nThe route continues ahead to Ishwari Laat, the tallest minaret in Jaipur, built to commemorate the victory of the then ruler over his stepbrother. Just a moment away, we stop at the Albert Hall Museum, renowned as the State Museum of Rajasthan for its impressive collection of Indian & international artefacts spanning centuries.\n\nFrom there, the journey unfolds towards Patrika Gate & Toran Dwar, two impressive gateways famous for their unique craftsmanship, striking colours & stunning backdrop.\n\nCruising in an open jeep offers the ultimate way to experience Jaipur's vibrant energy. You will pass through bustling streets, lively markets and colourful architecture, all set against the city's signature chaotic charm. As evening sets in, the air comes alive with the scent of fresh incense, the chime of temple bells and the irresistible aromas of street food being prepared along the way. We'll also make thoughtful stops wherever possible to soak in & photograph the vibrant energy of each place.\n\nBefore dropping you off, if you would like to try some delicious Jaipur cuisine, we can schedule a stop at handpicked & trending places to enjoy delicious snacks & drinks.`,
+    story: `While most visitors stick to standard daytime sightseeing, "The Blue Hour" offers something unique & beyond imagination. Designed to unlock the city by night, it reveals a captivating side of Jaipur that most people completely miss. The Blue Hour journey starts with experiencing the sunset from Nahargarh Fort, the most happening place in Jaipur. Situated atop a hill, the fort offers not only the best panoramic views of the city but also a memorable evening that one can spend with loved ones.\n\nThe open-air jeep takes you through the scenic, verdant valley to reach the top before sunset to visit the Madhvendra Bhawan, a set of 9 apartments built by the king for his nine queens. These apartments are contemporaries of the havelis where nobles, artisans, merchants and people of high status used to live. After a romantic sunset, the experience continues to unfold in front of the majestic Amber Fort & Palace, where we can enjoy glimpses of the resplendent Sound & Light Show. Since the experience is entirely private, you can also choose to watch the complete show sitting in the amphitheatre. Perched majestically atop the Aravalli Hills, Amber Fort & Palace is a UNESCO World Heritage Site, renowned for its imposing hilltop location, magnificent Rajput-Mughal architecture & centuries-old rich history.\n\nFrom there, our journey continues into the heart of the city, passing through its iconic illuminated landmarks, including Jal Mahal, Hawa Mahal, the Albert Hall Museum and Birla Temple, before concluding at Patrika Gate & Toran Dwar.\n\nAs we approach the city, stop for a photo at Jal Mahal to enjoy a fresh & cool evening against the perfect backdrop of the water palace reflecting in the shimmering waters of Man Sagar Lake. The drive then weaves through different doorways & streets to showcase the true beauty of Jaipur. Marvel at Hawa Mahal as we drive past & unveil some of the interesting facts that make its façade even more beautiful than it looks.\n\nThe route continues ahead to Ishwari Laat, the tallest minaret in Jaipur, built to commemorate the victory of the then ruler over his stepbrother. Just a moment away, we stop at the Albert Hall Museum, renowned as the State Museum of Rajasthan for its impressive collection of Indian & international artefacts spanning centuries.\n\nFrom there, the journey unfolds towards Patrika Gate & Toran Dwar, two impressive gateways famous for their unique craftsmanship, striking colours & stunning backdrop.\n\nCruising in an open jeep offers the ultimate way to experience Jaipur's vibrant energy. You will pass through bustling streets, lively markets and colourful architecture, all set against the city's signature chaotic charm. As evening sets in, the air comes alive with the scent of fresh incense, the chime of temple bells and the irresistible aromas of street food being prepared along the way. We'll also make thoughtful stops wherever possible to soak in & photograph the vibrant energy of each place.\n\nBefore dropping you off, if you would like to try some delicious Jaipur cuisine, we can schedule a stop at handpicked & trending places to enjoy delicious snacks & drinks at your own cost.`,
     whatYouExperience: [
       "Watch the sunset from Nahargarh Fort, the most happening hilltop spot in Jaipur",
       "Ride through a scenic verdant valley in an open-air jeep to reach Madhavendra Bhawan — the nine-apartment mansion built for the king's nine queens",
-      "Enjoy a cool drink and glimpses of the Sound & Light Show in front of the majestic Amber Fort & Palace",
+      "Enjoy glimpses of the Sound & Light Show in front of the majestic Amber Fort & Palace",
       "Stop for photos at Jal Mahal, reflecting in the shimmering waters of Man Sagar Lake",
       "Drive past Hawa Mahal and uncover facts that make its façade even more fascinating",
       "Witness Ishwari Laat — the tallest minaret in Jaipur — and the Albert Hall Museum, home to Rajasthan's finest artefact collection",
       "Conclude at Patrika Gate & Toran Dwar, two gateways famous for their craftsmanship and colour",
-      "End the evening with a stop at a handpicked, trending local spot for snacks & drinks",
+      "End the evening with an optional stop at a handpicked, trending local spot for snacks & drinks (at your own cost)",
     ],
     highlights: [
       { icon: "Sunset", text: "Sunset from Nahargarh Fort" },
@@ -486,7 +485,7 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
       { icon: "Waves", text: "Jal Mahal on Man Sagar Lake" },
       { icon: "Building2", text: "Ishwari Laat & Albert Hall Museum" },
       { icon: "Palette", text: "Patrika Gate & Toran Dwar" },
-      { icon: "UtensilsCrossed", text: "Local snacks & drinks stop" },
+      { icon: "UtensilsCrossed", text: "Optional local snacks stop" },
     ],
     curatorNote: "Jaipur during the day is beautiful. Jaipur during the Blue Hour is unforgettable. I designed this experience because I wanted visitors to see the city the way I have always loved it — glowing, unhurried, and extraordinarily alive.",
     faqs: [
@@ -495,8 +494,8 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
       { q: "Can we stop for dinner after?", a: "Yes — we finish near excellent restaurants and can recommend the best spots for the evening." },
       { q: "Can I book privately?", a: "Yes, and private bookings are particularly popular for couples and families." },
       { q: "What camera settings work best?", a: "Night mode or manual low-light settings work best. We time our stops to make the most of the light at each location." },
-            { q: "Do you offer hotel pick-up for The Blue Hour?", a: "Yes. The meeting point is Air Force Station, Jal Mahal, but hotel pick-up and drop-off can be arranged at an additional cost. Just mention it when you book." },
-      { q: "Can we choose our own food stop at the end of the drive?", a: "Yes — before dropping you off, we can schedule a stop at a handpicked, trending local spot to enjoy snacks & drinks. Just let your guide know your preference." },
+      { q: "Do you offer hotel pick-up for The Blue Hour?", a: "Yes. The meeting point is Air Force Station, Jal Mahal, but hotel pick-up and drop-off can be arranged at an additional cost. Just mention it when you book." },
+      { q: "Are food and drinks included in The Blue Hour?", a: "No. Food and drinks are not included in the price. Before dropping you off, we can stop at a handpicked, trending local spot where you can buy snacks & drinks. Just let your guide know your preference." },
     ],
   },
 
