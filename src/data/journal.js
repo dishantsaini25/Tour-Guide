@@ -3,6 +3,110 @@
  */
 
 export const journalArticles = [
+    // Things to Do in Jaipur at Night (Month 2, Blog 3, EN)
+  {
+    slug: "things-to-do-in-jaipur-at-night",
+    datePublished: "2026-10-13",
+    dateModified: "2026-10-13",
+    title: "Things to Do in Jaipur at Night: A Local's Guide to the City After Dark",
+    metaTitle: "Things to Do in Jaipur at Night: Local Guide",
+    excerpt: "Sunset at Nahargarh, Hawa Mahal lit up, the Amber light show, evening bazaars and dinner with a local family. How a local guide would spend an evening in Jaipur.",
+    metaDescription: "Sunset at Nahargarh, Hawa Mahal lit up, evening bazaars and dinner with a local family. The best things to do in Jaipur at night, from a local guide.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    image: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp",
+    relatedExperiences: [
+      "the-blue-hour",
+      "living-walled-city",
+      "beyond-the-pink",
+    ],
+    images: [
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Sunset over Jaipur seen from Nahargarh Fort" },
+      { src: "/experiences/the-blue-hour/nahargarh-fort-madhavendra-bhawan-courtyard.webp", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-night-crowd.webp", alt: "Evening crowds in front of the illuminated Hawa Mahal, Jaipur" },
+      { src: "/experiences/the-blue-hour/raah-guests-city-palace-gate-night.webp", alt: "Raah guests at an illuminated gateway in Jaipur at night" },
+      { src: "/experiences/living-the-walled-city/marigold-garland-stalls-jaipur.webp", alt: "Marigold garland stalls in Jaipur's old city in the evening" },
+      { src: "/experiences/beyond-the-pink/kachori-maker-street-stall-jaipur.webp", alt: "Kachoris being fried at a street food stall in Jaipur" },
+      { src: "/experiences/beyond-the-pink/lassi-street-stall-jaipur-night.webp", alt: "Glass of lassi at a street stall in Jaipur at night" },
+      { src: "/experiences/farm-and-fire/roti-cooking-on-chulha.webp", alt: "Roti cooking on a wood-fired chulha at a farmhouse near Jaipur" },
+    ],
+    faqs: [
+      { q: "What is the best thing to do in Jaipur at night?", a: "Watch the sunset from Nahargarh Fort, then see Hawa Mahal, Jal Mahal and Albert Hall Museum lit up after dark." },
+      { q: "Is Nahargarh Fort open in the evening?", a: "Yes, Nahargarh is the most popular sunset spot in Jaipur. Check current timings on the official Rajasthan Tourism website before you go." },
+      { q: "What time is the Amber Fort light and sound show?", a: "From October to February the English show is at 6:30 PM and the Hindi show at 7:30 PM. Timings move later in summer, so check the official Rajasthan Tourism website before you go." },
+      { q: "Can you see Hawa Mahal at night?", a: "Yes. The façade is lit up after dark, and the street in front of it is busy and lively in the evening." },
+      { q: "Is there a night tour in Jaipur?", a: "Yes. The Blue Hour is a private 4-hour evening tour in an open-air jeep, covering the sunset at Nahargarh and the city's lit monuments." },
+    ],
+    body: `Most visitors treat Jaipur as a daytime city. They see the forts in the morning, the palaces before lunch, and by evening they are back at the hotel, tired and done. That is a pity, because Jaipur after sunset is a different place. The heat drops, the stone turns gold and then blue, the monuments light up one by one, and the old city fills with people who were indoors all afternoon.
+
+If you are wondering what to do in Jaipur at night, here is how I would spend an evening, sorted by what kind of night you want.
+
+## Watch the Sunset From a Hill
+
+The single best thing to do in Jaipur in the evening is to get above the city before the sun goes down.
+
+Nahargarh Fort sits on the edge of the ridge right above the old city. From its walls you see the whole Pink City spread out below you, and as the light fades you can watch the streets start to glow. It is the most popular sunset spot in Jaipur for a reason. Inside, Madhavendra Bhawan, the set of nine apartments built for the king's nine queens, is worth a walk before the light goes. If you are still deciding which of the city's hill forts to visit, our guide to [the forts of Jaipur](/journal/forts-in-jaipur) compares all three.
+
+Go at least an hour before sunset. The drive up through the valley is beautiful, but the road gets busy on weekends, and the best spots on the walls fill up early.
+
+## See Jaipur's Monuments Lit Up at Night
+
+Once it is dark, Jaipur's best-known buildings are floodlit, and several of them look better at night than in the day.
+
+- **Hawa Mahal:** the honeycomb façade of the Palace of Winds turns warm gold under the lights. The street in front is lively in the evening, so it is a good place to stop, look up and watch the city go by.
+- **Jal Mahal:** the palace standing in Man Sagar Lake reflects in the still water after dark. You cannot go inside, but the lakeside promenade is where locals come for an evening walk and a snack.
+- **Albert Hall Museum:** Jaipur's state museum is a striking Indo-Saracenic building, and the lighting brings out every arch and dome. Even if the museum is closed, the building is worth seeing from outside at night.
+- **Patrika Gate:** the colourful gateway at Jawahar Circle is covered in painted panels, and it photographs well after dark too.
+- **Birla Temple:** this Hindu temple dedicated to Lord Vishnu and Goddess Lakshmi is built entirely of white marble. It lights up brilliantly against the evening sky and has a calm, peaceful atmosphere for evening visitors.
+- **Ishwari Laat:** the tall minaret near Tripolia Gate, built to mark a victory, stands out against the night sky in the old city.
+
+Seeing all of these on foot in one evening is hard, because they are spread across the city. A car, a tuk-tuk or an open jeep makes it easy to link them in one loop.
+
+## Catch the Amber Fort Light and Sound Show
+
+In the evening, Amber Fort hosts a Sound & Light Show that tells the story of the fort and the Kachhawaha rulers, with the walls lit in changing colours. The timings change with the season:
+
+- **October to February:** 6:30 PM in English, 7:30 PM in Hindi
+- **March to April:** 7:00 PM in English, 8:00 PM in Hindi
+- **May to September:** 7:30 PM in English, 8:30 PM in Hindi
+
+Timings can change, so check the schedule on the official Rajasthan Tourism website before you go. Even if you do not sit through the whole show, seeing Amber Fort lit up above Maota Lake is one of the best night views in Jaipur.
+
+## Walk the Old City in the Evening
+
+The walled city is at its liveliest between 5 and 8 PM. Shops that were shuttered in the afternoon heat open again, temple bells ring for the evening aarti, and families come out to shop and eat.
+
+An evening walk through the bazaars is one of the best free things to do in Jaipur at night. Go slowly, stop for chai, and step into a temple courtyard during the evening prayers if you are welcome. If you want someone to show you the lanes most visitors miss, [Living the Walled City](/experiences/living-walled-city) is a slow evening walk that starts at Hawa Mahal and follows the old city's daily life as the lights come on.
+
+## Eat Your Way Through the Evening
+
+Night is when Jaipur's street food comes alive. Look out for:
+
+- **Pyaaz kachori** and **mirchi vada**, fried fresh in front of you
+- **Lassi** in a clay cup
+- **Kulfi**, the dense Indian ice cream, sold from carts after dark
+- **Chai**, which you will drink more of than you plan to
+
+The safest rule is simple: eat at busy stalls where the food is cooked fresh and the turnover is high. [Beyond the Pink](/experiences/beyond-the-pink) takes you through the old city's bazaars in the late afternoon and evening, with 6 to 8 tastings at family-run places and a stop at the evening temple rituals.
+
+## Have Dinner With a Local Family
+
+If you would rather leave the city for the evening, cooking dinner with a family in the countryside is one of the most memorable things to do near Jaipur. On [The Farm & Fire](/experiences/farm-and-fire), you cook a vegetarian Rajasthani meal over a wood-fired chulha at a farmhouse outside the city, learn how the spices are used, and then sit down to eat what you made together with your hosts.
+
+## Jaipur Night Tour: Do It All in One Evening
+
+If you only have one evening, the easiest way to see Jaipur at night is to combine a sunset viewpoint with a loop of the lit monuments.
+
+That is exactly what [The Blue Hour](/experiences/the-blue-hour) does. It is a private 4-hour drive in an open-air jeep, from 4:30 to 8:30 PM between October and March. You watch the sunset from Nahargarh Fort, see Madhavendra Bhawan, catch a glimpse of the Sound & Light Show at Amber, and then drive back through the city past Jal Mahal, Hawa Mahal, Ishwari Laat, Albert Hall and Patrika Gate. It is guided in English or Spanish, with 2 to 4 guests per jeep.
+
+## Is Jaipur Safe at Night?
+
+The main tourist areas, the monuments above and the busy bazaars are lively and well lit in the evening, and most visitors walk around them without any problem. Use the same common sense you would in any big city: stick to busy streets, use ride-hailing apps for longer distances, agree on the fare before you get into a tuk-tuk, and keep your phone and bag close in crowds. For more detail, read our guide on [whether Jaipur is safe for solo and female travellers](/journal/is-jaipur-safe-solo-female-travellers).
+
+## When to Go
+
+From October to March, evenings in Jaipur are cool and comfortable, which makes this the best season for sunset viewpoints and walking the old city after dark. In December and January it can get properly cold once the sun goes down, so bring a warm layer. From April to June, the evenings are the only comfortable part of the day, so plan everything outdoors for after 5 PM.`,
+  },
     // Qué ver en Jaipur: guía de un guía local (Month 2, Blog 2, ES)
   {
     slug: "que-ver-en-jaipur",
@@ -14,21 +118,21 @@ export const journalArticles = [
     category: "Jaipur Guide",
     readTime: "7 min read",
     lang: "es",
-    image: "/experiances/The blue hour/thumbnail.jpg",
+    image: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp",
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-crown-of-jaipur",
       "the-blue-hour",
     ],
     images: [
-      { src: "/experiances/The blue hour/IMG20260202185502.jpg", alt: "El Hawa Mahal (Palacio de los Vientos) iluminado de noche en Jaipur" },
-      { src: "/experiances/The Cosmic & Imperial Triad/crown4.jpg", alt: "Chandra Mahal en el Palacio de la Ciudad de Jaipur" },
-      { src: "/experiances/Ridge and ramparts/ridge1.jpeg", alt: "El Fuerte Amber reflejado en el lago Maota, Jaipur" },
-      { src: "/experiances/Ridge and ramparts/IMG20241225100919.jpg", alt: "Puerta de mármol del templo Jagat Shiromani, del siglo XVI, en el pueblo de Amber" },
-      { src: "/experiances/Beyond the pink/IMG_20260123_140614.jpg", alt: "Mujeres con saris de colores caminando por la ciudad vieja de Jaipur" },
-      { src: "/experiances/Jaipur at down/IMG_20250914_132635_152.jpg", alt: "Flores de cempasúchil en el mercado de flores de Jaipur al amanecer" },
-      { src: "/experiances/Beyond the pink/IMG_20260213_143023.jpg", alt: "Cocinero friendo kachoris en un puesto de comida callejera de Jaipur" },
-      { src: "/experiances/The blue hour/IMG20250124175844.jpg", alt: "Atardecer sobre Jaipur desde el Fuerte Nahargarh" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp", alt: "El Hawa Mahal (Palacio de los Vientos) iluminado de noche en Jaipur" },
+      { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "Chandra Mahal en el Palacio de la Ciudad de Jaipur" },
+      { src: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", alt: "El Fuerte Amber reflejado en el lago Maota, Jaipur" },
+      { src: "/experiences/ridge-and-ramparts/jagat-shiromani-temple-marble-gateway-amer.webp", alt: "Puerta de mármol del templo Jagat Shiromani, del siglo XVI, en el pueblo de Amber" },
+      { src: "/experiences/beyond-the-pink/women-in-sarees-old-city-jaipur.webp", alt: "Mujeres con saris de colores caminando por la ciudad vieja de Jaipur" },
+      { src: "/experiences/jaipur-at-dawn/marigold-heap-flower-market-jaipur.webp", alt: "Flores de cempasúchil en el mercado de flores de Jaipur al amanecer" },
+      { src: "/experiences/beyond-the-pink/kachori-maker-street-stall-jaipur.webp", alt: "Cocinero friendo kachoris en un puesto de comida callejera de Jaipur" },
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Atardecer sobre Jaipur desde el Fuerte Nahargarh" },
     ],
     faqs: [
       { q: "¿Qué ver en Jaipur en un día?", a: "Organiza el día según la luz: al amanecer el Hawa Mahal, el templo Govind Dev Ji y el mercado de flores; a media mañana el Jantar Mantar y el Palacio de la Ciudad; y por la tarde el atardecer en el Fuerte Nahargarh y los monumentos iluminados." },
@@ -368,7 +472,7 @@ En cuanto al mejor momento para visitar, las mañanas son preferibles — no sol
 
 ## La Experiencia Guiada de Raah: [The Ridge & Ramparts](/experiences/ridge-and-ramparts)
 
-Raah Experiences ofrece [The Ridge & Ramparts](/experiences/ridge-and-ramparts), una experiencia guiada de 3 horas que va mucho más allá del recorrido estándar por el fuerte. El punto de encuentro es el Photo Point frente al Fuerte Amber, y el recorrido incluye el pueblo de Amber, el Templo Jagat Shiromani, los antiguos pozos escalonados, y el túnel histórico hacia el Fuerte Jaigarh — terminando junto al cañón Jaivana.
+Raah Experiences ofrece [The Ridge & Ramparts](/experiences/ridge-and-ramparts), una experiencia guiada de 3 horas que va mucho más allá del recorrido estándar por el fuerte. El punto de encuentro es el mirador del Fuerte Amber, junto al lago Maota, y el recorrido incluye el pueblo de Amber, el Templo Jagat Shiromani, los antiguos pozos escalonados, y el túnel histórico hacia el Fuerte Jaigarh — terminando junto al cañón Jaivana.
 
 Lo que distingue esta experiencia es el idioma: cada recorrido se realiza tanto en inglés como en español, sin cargo adicional por el idioma. El guía principal, Shobhit, estudió español en la Universidad de Salamanca, lo cual le da una fluidez y un acento que sorprende constantemente a los visitantes hispanohablantes. Varios huéspedes de países de habla hispana lo han confirmado directamente en sus reseñas:
 
@@ -725,7 +829,7 @@ As the day cools down, the old city's character shifts. This walk moves through 
 Day two moves out of the old city and into Amber — the seat of Jaipur's former rulers, and a very different landscape from day one's markets and temples.
 
 **Morning (9:00 AM – 12:00 PM): [The Ridge & Ramparts](/experiences/ridge-and-ramparts)**
-Meeting at the Photo Point in front of Amber Fort, this walk goes well beyond the fort itself — into the town of Amber, past the 16th-century Jagat Shiromani Temple, ancient stepwells once used as a neighborhood gathering point, and through a historic tunnel once reserved for the royal family, ending at Jaigarh Fort and its enormous cannon.
+Meeting at the Amber Fort View Point by Maota Lake, this walk goes well beyond the fort itself — into the town of Amber, past the 16th-century Jagat Shiromani Temple, ancient stepwells once used as a neighborhood gathering point, and through a historic tunnel once reserved for the royal family, ending at Jaigarh Fort and its enormous cannon.
 
 **Afternoon: Lunch, Then Artisan's Jaipur or Rest**
 Amber town has a handful of local eateries worth stopping at after the morning walk. If you have the energy, a short visit to Jal Mahal (the Water Palace) on the way back into the city is a worthwhile photo stop — it sits directly on your route back from Amber and needs no separate booking.
@@ -888,7 +992,7 @@ Before 7 AM, Jaipur still belongs almost entirely to the people who live there.
 
 [Jaipur at Dawn](/experiences/jaipur-at-dawn) ($30 / ₹2,500, 2.5 hours, 5:00–7:30 AM or 8:00–10:30 AM) opens with the flower and vegetable market coming to life, followed by the milk market as countryside vendors arrive by bicycle, and the morning aarti at Govind Dev Ji Temple — one of the city's most revered shrines. We've written more about why [mornings are Jaipur's best-kept secret](/journal/jaipur-before-sunrise) — the walk passes Hawa Mahal just as the sun catches its façade, ending with breakfast and chai at a local eatery.
 
-[The Ridge & Ramparts](/experiences/ridge-and-ramparts) ($32 / ₹2,800, 3 hours, 7:00–10:00 AM or 9:00 AM–12:00 PM, meeting at the Photo Point in front of Amber Fort) picks up where the old city leaves off, moving into Amber town and along the ridge connecting it to Jaigarh Fort. Along the way: the 16th-century Jagat Shiromani Temple, centuries-old stepwells that once doubled as neighborhood gathering spots, Asiatic elephants living alongside the local community, and a historic tunnel once reserved for the royal family, ending at the Jaivana cannon — [the largest cannon ever built, and the reason Jaigarh was never conquered](/journal/why-jaigarh-was-never-conquered).
+[The Ridge & Ramparts](/experiences/ridge-and-ramparts) ($32 / ₹2,800, 3 hours, 7:00–10:00 AM or 9:00 AM–12:00 PM, meeting at the Amber Fort View Point, Maota Lake) picks up where the old city leaves off, moving into Amber town and along the ridge connecting it to Jaigarh Fort. Along the way: the 16th-century Jagat Shiromani Temple, centuries-old stepwells that once doubled as neighborhood gathering spots, Asiatic elephants living alongside the local community, and a historic tunnel once reserved for the royal family, ending at the Jaivana cannon — [the largest cannon ever built, and the reason Jaigarh was never conquered](/journal/why-jaigarh-was-never-conquered).
 
 ## Afternoon Heritage & Culture Walks
 

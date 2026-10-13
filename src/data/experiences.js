@@ -252,7 +252,7 @@ metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwel
     groupSize: "Up to 8 guests",
     languages: ["English", "Spanish"],
     location: "Amber Town & Fort, Jaipur",
-    meetingPoint: "Maota Lake, Amber",
+    meetingPoint: "Amber Fort View Point, Maota Lake",
     ...getExperienceImages("ridge-and-ramparts"),
     idealFor: ["History enthusiasts", "Trekkers & hikers", "Architecture lovers", "Photographers", "Those seeking depth beyond the obvious"],
     inclusions: [
