@@ -435,7 +435,7 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
     groupSize: "2–4 per jeep",
     languages: ["English", "Spanish"],
     location: "Across Jaipur",
-    meetingPoint: "Hotel pick-up within city limits",
+       meetingPoint: "Air Force Station, Jal Mahal",
     ...getExperienceImages("the-blue-hour"),
     idealFor: ["Couples & honeymooners", "Photography enthusiasts", "First-time Jaipur visitors", "Those who love cinematic experiences"],
     inclusions: [
@@ -495,6 +495,7 @@ metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber F
       { q: "Can we stop for dinner after?", a: "Yes — we finish near excellent restaurants and can recommend the best spots for the evening." },
       { q: "Can I book privately?", a: "Yes, and private bookings are particularly popular for couples and families." },
       { q: "What camera settings work best?", a: "Night mode or manual low-light settings work best. We time our stops to make the most of the light at each location." },
+            { q: "Do you offer hotel pick-up for The Blue Hour?", a: "Yes. The meeting point is Air Force Station, Jal Mahal, but hotel pick-up and drop-off can be arranged at an additional cost. Just mention it when you book." },
       { q: "Can we choose our own food stop at the end of the drive?", a: "Yes — before dropping you off, we can schedule a stop at a handpicked, trending local spot to enjoy snacks & drinks. Just let your guide know your preference." },
     ],
   },
