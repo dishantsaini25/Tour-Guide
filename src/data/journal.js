@@ -3,6 +3,128 @@
  */
 
 export const journalArticles = [
+    // La mejor época para viajar a la India (Month 2, Blog 4, ES)
+  {
+    slug: "mejor-epoca-para-viajar-a-la-india",
+    datePublished: "2026-10-14",
+    dateModified: "2026-10-14",
+    title: "La mejor época para viajar a la India (y a Rajastán): guía de un guía local",
+    metaTitle: "Mejor época para viajar a la India y Rajastán",
+    excerpt: "Cuándo viajar a la India y a Rajastán: el clima de cada estación, qué esperar si solo puedes ir en agosto, festivales y el tiempo en Jaipur mes a mes.",
+    metaDescription: "La mejor época para viajar a la India es de octubre a marzo. Un guía de Jaipur explica el clima de Rajastán mes a mes y cómo viajar en agosto.",
+    category: "Travel Planning",
+    readTime: "6 min read",
+    lang: "es",
+    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-lost-kingdom",
+      "farm-and-fire",
+    ],
+    images: [
+      { src: "/experiences/the-blue-hour/jaipur-sunset-sky-old-city.webp", alt: "Cielo dorado al atardecer sobre la ciudad vieja de Jaipur" },
+      { src: "/experiences/the-lost-kingdom/aravalli-hills-amber-valley.webp", alt: "Colinas de los Aravalli con vegetación verde cerca de Amber, Jaipur" },
+      { src: "/experiences/jaipur-at-dawn/marigold-flowers-phool-mandi-jaipur.webp", alt: "Sacos de cempasúchil en el mercado de flores de Jaipur a primera hora de la mañana" },
+      { src: "/experiences/living-the-walled-city/marigold-garland-stalls-jaipur.webp", alt: "Puestos de guirnaldas de flores en un mercado de Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-night.webp", alt: "El Chandra Mahal del Palacio de la Ciudad de Jaipur iluminado de noche" },
+      { src: "/experiences/jaipur-at-dawn/old-city-gateway-jaipur.webp", alt: "Puerta histórica de la ciudad amurallada de Jaipur" },
+    ],
+    faqs: [
+      { q: "¿Cuál es la mejor época para viajar a la India?", a: "Para el norte del país, incluido Rajastán, de octubre a marzo. De noviembre a febrero es la temporada alta." },
+      { q: "¿Es buena idea viajar a la India en agosto?", a: "Se puede, pero es temporada de monzón: hace calor, hay humedad y lluvias. Si solo puedes ir en agosto, organiza las visitas temprano por la mañana y al atardecer." },
+      { q: "¿Llueve todo el día durante el monzón en Rajastán?", a: "No. En Jaipur las lluvias suelen llegar en forma de chaparrones fuertes y cortos, así que normalmente se puede aprovechar buena parte del día." },
+      { q: "¿Cuándo hace frío en Jaipur?", a: "En diciembre y enero, sobre todo de madrugada y por la noche. Lleva una chaqueta ligera." },
+      { q: "¿Cuál es la temporada baja en la India?", a: "En el norte, de abril a septiembre, por el calor y el monzón. Hay menos turistas y precios más bajos." },
+    ],
+    body: `Cada semana alguien me escribe con la misma pregunta: "¿Cuándo es mejor ir a la India?". La respuesta corta es de octubre a marzo. Pero la India es enorme, y la mejor época depende de a qué parte del país vayas y de qué tipo de viaje quieras hacer.
+
+Soy guía en Jaipur y trabajo con viajeros de España y Latinoamérica todo el año. Aquí te cuento cuándo viajar a la India, con el foco en Rajastán, y qué esperar en cada estación, incluida la pregunta que más me hacen: "Solo puedo ir en agosto, ¿merece la pena?".
+
+## La mejor época para viajar a la India: la respuesta corta
+
+Para el norte de la India, donde están Delhi, Agra y Rajastán, la mejor época para viajar es de octubre a marzo. Los días son templados y secos, las mañanas y las noches frescas, y se puede caminar con comodidad todo el día.
+
+Dentro de esos meses:
+
+- **De noviembre a febrero** es la temporada alta. El clima es el mejor, pero también hay más turistas y los hoteles suben de precio.
+- **Octubre y marzo** son buenos meses intermedios, con menos gente y temperaturas todavía agradables.
+
+## Las tres estaciones de Rajastán
+
+En Rajastán no se habla de cuatro estaciones como en Europa. Aquí el año se divide en tres.
+
+### Invierno (octubre a marzo): la temporada ideal
+
+Es la época perfecta para recorrer fuertes, palacios y bazares. En Jaipur los días son soleados y agradables. En diciembre y enero las madrugadas y las noches son frías, así que lleva una chaqueta ligera si vas a madrugar para ver el amanecer.
+
+### Verano (abril a junio): calor intenso
+
+Las temperaturas suben mucho, y en mayo y junio el calor en Rajastán puede ser extremo. Se puede viajar, pero hay que organizar el día de otra forma: visitas a primera hora de la mañana y al atardecer, y descanso en las horas centrales.
+
+### Monzón (julio a septiembre): lluvia y verde
+
+Llegan las lluvias. En Rajastán llueve menos que en el sur o en el este del país, pero hay días de tormenta, humedad y calor. A cambio, el paisaje se vuelve verde y hay menos turistas.
+
+## ¿Y si solo puedo viajar en agosto?
+
+Esta es la pregunta más común entre los viajeros de España, porque agosto es el mes de vacaciones. Mi respuesta honesta: sí se puede, y suele salir bien si organizamos el día según tus intereses. Aunque llueva, se puede aprovechar el día con un buen recorrido. Hace menos calor que en mayo y junio, el paisaje se vuelve verde, los monumentos, recién restaurados, están más tranquilos, y la gente vuelve a trabajar con mucho entusiasmo y energía. Así que, si tienes planes de viajar a Jaipur en agosto, no dudes en hacerlo.
+
+### Lo que vas a encontrar en agosto en Jaipur
+
+- **Calor y humedad.** No es el calor seco de mayo, pero el ambiente es pesado.
+- **Lluvias**, a menudo en forma de chaparrones fuertes y cortos. No llueve todo el día.
+- **Menos turistas** y monumentos más tranquilos.
+- **Paisajes verdes** en las colinas de Amber y alrededor de los lagos, algo que en invierno no se ve.
+
+### Cómo aprovecharlo
+
+- **Empieza temprano.** Las primeras horas del día son las más agradables.
+- **Deja el mediodía** para descansar o para visitas bajo techo.
+- **Lleva ropa ligera** que se seque rápido y un paraguas pequeño.
+- **Elige actividades por la mañana y por la tarde.** Un paseo al amanecer por la ciudad vieja, como [Jaipur at Dawn](/experiences/jaipur-at-dawn), funciona muy bien con el calor.
+
+Si tienes flexibilidad, cambiar agosto por octubre o finales de marzo transforma el viaje. Si no la tienes, ve en agosto igualmente, con estas precauciones.
+
+## La mejor época según la región de la India
+
+Si tu viaje incluye otras zonas del país, ten en cuenta que cada región tiene su propio calendario:
+
+- **Norte (Delhi, Agra, Rajastán, Varanasi):** de octubre a marzo.
+- **Sur (Kerala, Goa, Tamil Nadu):** de noviembre a marzo. El clima es cálido y húmedo todo el año.
+- **Himalaya (Ladakh, Himachal Pradesh):** de junio a septiembre, justo cuando el resto del país está en pleno monzón.
+
+Por eso, si solo puedes viajar en verano, una opción es combinar unos días en el norte con el Himalaya.
+
+## Festivales: un motivo para elegir fecha
+
+Viajar durante un festival te da una India muy distinta. Estos son algunos de los más especiales en Jaipur y Rajastán:
+
+- **Diwali (octubre o noviembre, según el año):** la fiesta de las luces. La ciudad entera se ilumina y los bazares se llenan.
+- **Makar Sankranti (14 de enero):** el festival de las cometas. En Jaipur el cielo se llena de cometas desde todas las terrazas.
+- **Holi (marzo):** la fiesta de los colores.
+- **Gangaur y Teej:** festivales tradicionales de Rajastán, con procesiones que salen por la Tripolia Gate, en la ciudad vieja. Gangaur se celebra en marzo o abril, y Teej en pleno monzón, en julio o agosto.
+
+Las fechas de muchos festivales cambian cada año porque siguen el calendario lunar. Confírmalas antes de reservar los vuelos.
+
+## Clima en Jaipur mes a mes, en resumen
+
+- **Enero y febrero:** días agradables y noches frías. Muy buena época.
+- **Marzo:** se calienta, pero todavía es cómodo. Buen mes, con Holi.
+- **Abril a junio:** mucho calor. Solo mañanas y tardes.
+- **Julio a septiembre:** monzón, humedad, paisajes verdes.
+- **Octubre:** vuelve el buen tiempo y empieza la temporada.
+- **Noviembre y diciembre:** temporada alta y clima ideal.
+
+## ¿Cuántos días dedicar a Jaipur?
+
+Con dos o tres días puedes ver Jaipur sin prisas: un día para la ciudad vieja, otro para el [Fuerte Amber](/journal/fuerte-amber-guia-completa) y sus alrededores, y un tercero para algo diferente, como una [caminata por las colinas](/experiences/the-lost-kingdom) o una [cena con una familia local](/experiences/farm-and-fire). Lo explico con más detalle en [qué ver en Jaipur](/journal/que-ver-en-jaipur).
+
+## Viajar a Jaipur con un guía en español
+
+Todas las experiencias de Raah se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur) y en grupos pequeños. En temporada alta (de noviembre a febrero) conviene reservar con antelación. En verano y en monzón ajustamos los horarios a las horas más frescas del día.
+
+Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
+  },
     // Things to Do in Jaipur at Night (Month 2, Blog 3, EN)
   {
     slug: "things-to-do-in-jaipur-at-night",
@@ -225,7 +347,7 @@ Mi recomendación es comer donde comen los locales, en negocios familiares con r
 
 ## ¿Cuándo visitar Jaipur?
 
-La mejor época es de octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y en julio, agosto y septiembre llegan los monzones. Si viajas en verano, que es cuando muchos españoles tienen vacaciones, organiza las visitas a primera hora de la mañana y al atardecer, y deja las horas centrales del día para descansar.
+La mejor época es de octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y en julio, agosto y septiembre llegan los monzones. Si viajas en verano, que es cuando muchos españoles tienen vacaciones, organiza las visitas a primera hora de la mañana y al atardecer, y deja las horas centrales del día para descansar. Lo explico mes a mes en [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).
 
 ## Visitar Jaipur con un guía local en español
 
