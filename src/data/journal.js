@@ -15,19 +15,19 @@ export const journalArticles = [
     category: "Travel Planning",
     readTime: "6 min read",
     lang: "es",
-    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
+       image: "/experiences/living-the-walled-city/guest-e-rickshaw-old-city-jaipur.webp",
     relatedExperiences: [
       "jaipur-at-dawn",
       "the-lost-kingdom",
       "farm-and-fire",
     ],
     images: [
-      { src: "/experiences/the-blue-hour/jaipur-sunset-sky-old-city.webp", alt: "Cielo dorado al atardecer sobre la ciudad vieja de Jaipur" },
+      { src: "/experiences/ridge-and-ramparts/raah-group-ganesh-pol-amer-fort.webp", alt: "Grupo de viajeros de Raah frente al Ganesh Pol del Fuerte Amber, Jaipur" },
+      { src: "/experiences/living-the-walled-city/guest-with-street-musicians-jaipur.webp", alt: "Viajera con músicos callejeros en la ciudad vieja de Jaipur" },
       { src: "/experiences/the-lost-kingdom/aravalli-hills-amber-valley.webp", alt: "Colinas de los Aravalli con vegetación verde cerca de Amber, Jaipur" },
-      { src: "/experiences/jaipur-at-dawn/marigold-flowers-phool-mandi-jaipur.webp", alt: "Sacos de cempasúchil en el mercado de flores de Jaipur a primera hora de la mañana" },
+      { src: "/experiences/living-the-walled-city/guest-henna-mehndi-jaipur.webp", alt: "Viajera haciéndose un dibujo de henna con una artista local en Jaipur" },
       { src: "/experiences/living-the-walled-city/marigold-garland-stalls-jaipur.webp", alt: "Puestos de guirnaldas de flores en un mercado de Jaipur" },
       { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-night.webp", alt: "El Chandra Mahal del Palacio de la Ciudad de Jaipur iluminado de noche" },
-      { src: "/experiences/jaipur-at-dawn/old-city-gateway-jaipur.webp", alt: "Puerta histórica de la ciudad amurallada de Jaipur" },
     ],
     faqs: [
       { q: "¿Cuál es la mejor época para viajar a la India?", a: "Para el norte del país, incluido Rajastán, de octubre a marzo. De noviembre a febrero es la temporada alta." },
