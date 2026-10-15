@@ -90,8 +90,8 @@ export default async function JournalArticlePage({ params }) {
             inLanguage: article.lang || "en",
             author: AUTHOR,
             publisher: ORG,
-            ...(article.datePublished && { datePublished: article.datePublished }),
-            ...(article.dateModified && { dateModified: article.dateModified }),
+                       ...(article.datePublished && { datePublished: `${article.datePublished}T00:00:00+05:30` }),
+            ...(article.dateModified && { dateModified: `${article.dateModified}T00:00:00+05:30` }),
           }),
         }}
       />

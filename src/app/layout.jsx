@@ -74,7 +74,8 @@ export default function RootLayout({ children }) {
               url: "https://www.raahexperiences.in",
               description:
                 "Boutique curated walking tours & cultural experiences in Jaipur, led by an English & Spanish-speaking, government-certified local guide.",
-              image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
+                            image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
+              logo: "https://www.raahexperiences.in/logo.png",
               telephone: "+91-9929992539",
               email: "raahindiaexperiences@gmail.com",
               priceRange: "₹₹",
