@@ -89,6 +89,7 @@ export default function RootLayout({ children }) {
                 name: "Jaipur",
               },
               knowsLanguage: ["en", "es"],
+              founder: { "@id": "https://www.raahexperiences.in/about#shobhit-sankhla" },
               sameAs: [
                 "https://www.instagram.com/raah.experiences",
                 "https://www.facebook.com/profile.php?id=61586556497302",

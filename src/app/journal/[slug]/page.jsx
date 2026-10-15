@@ -53,6 +53,12 @@ const IN = "DM Sans, system-ui, sans-serif";
 const OR = "#FF8C00", GO = "#F5A623";
 const CH = "#1A1209", MU = "#6B5B2E", CR = "#FFFDE7", PH = "#FFD89B";
 const ORG = { "@id": "https://www.raahexperiences.in/#organization" };
+const AUTHOR = {
+  "@type": "Person",
+  "@id": "https://www.raahexperiences.in/about#shobhit-sankhla",
+  name: "Shobhit Sankhla",
+  url: "https://www.raahexperiences.in/about",
+};
 
 export default async function JournalArticlePage({ params }) {
   const { slug } = await params;
@@ -82,9 +88,7 @@ export default async function JournalArticlePage({ params }) {
             image: cloudImg(article.image),
             url: pageUrl,
             inLanguage: article.lang || "en",
-            author: article.author
-              ? { "@type": "Person", name: article.author, url: "https://www.raahexperiences.in/about" }
-              : ORG,
+            author: AUTHOR,
             publisher: ORG,
             ...(article.datePublished && { datePublished: article.datePublished }),
             ...(article.dateModified && { dateModified: article.dateModified }),
@@ -128,6 +132,10 @@ export default async function JournalArticlePage({ params }) {
   <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)" }}>
     <BookOpen size={11} style={{ color: OR }} />The Raah Journal
   </span>
+  <span style={{ color: "rgba(255,255,255,0.4)" }}>·</span>
+  <Link href="/about" style={{ fontFamily: IN, fontSize: "0.72rem", color: "rgba(255,255,255,0.65)", textDecoration: "none" }}>
+    By Shobhit Sankhla
+  </Link>
   {article.datePublished && (
     <>
       <span style={{ color: "rgba(255,255,255,0.4)" }}>·</span>

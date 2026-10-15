@@ -37,15 +37,52 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "@id": "https://www.raahexperiences.in/about#webpage",
-            url: "https://www.raahexperiences.in/about",
-            name: "Meet Your Jaipur Tour Guide | Raah Experiences",
-            description:
-              "Personally guided Jaipur heritage tours by a local storyteller.",
-            mainEntity: {
-              "@id": "https://www.raahexperiences.in/#organization",
-            },
+            "@graph": [
+              {
+                "@type": "AboutPage",
+                "@id": "https://www.raahexperiences.in/about#webpage",
+                url: "https://www.raahexperiences.in/about",
+                name: "Meet Your Jaipur Tour Guide | Raah Experiences",
+                description:
+                  "Personally guided Jaipur heritage tours by a local storyteller.",
+                mainEntity: { "@id": "https://www.raahexperiences.in/about#shobhit-sankhla" },
+                about: { "@id": "https://www.raahexperiences.in/#organization" },
+              },
+              {
+                "@type": "Person",
+                "@id": "https://www.raahexperiences.in/about#shobhit-sankhla",
+                name: "Shobhit Sankhla",
+                jobTitle: "Founder & Government-Approved Tour Guide",
+                description:
+                  "Founder of Raah Experiences and a government-approved tour guide in Jaipur, leading walking tours and cultural experiences in English and Spanish.",
+                url: "https://www.raahexperiences.in/about",
+                image: "https://res.cloudinary.com/inttzt45/image/upload/v1791788878/raah-india/images/whatsapp-image-2026-07-23-at-2-47-33-pm.jpg",
+                worksFor: { "@id": "https://www.raahexperiences.in/#organization" },
+                homeLocation: { "@type": "Place", name: "Jaipur, Rajasthan, India" },
+                knowsLanguage: ["en", "es"],
+                knowsAbout: [
+                  "Jaipur history",
+                  "Rajasthan heritage",
+                  "Amber Fort",
+                  "Jantar Mantar",
+                  "Jaipur walking tours",
+                ],
+                alumniOf: { "@type": "CollegeOrUniversity", name: "University of Salamanca" },
+                hasCredential: [
+                  {
+                    "@type": "EducationalOccupationalCredential",
+                    name: "Jaipur Regional Level Government Approved Tour Guide licence",
+                    credentialCategory: "license",
+                  },
+                  {
+                    "@type": "EducationalOccupationalCredential",
+                    name: "Incredible India Tour Guide (IITG) certification, Pan India",
+                    credentialCategory: "certification",
+                    recognizedBy: { "@type": "GovernmentOrganization", name: "Ministry of Tourism, Government of India" },
+                  },
+                ],
+              },
+            ],
           }),
         }}
       />
@@ -220,6 +257,7 @@ export default function AboutPage() {
                 <p>Every experience is personally curated to go beyond the landmarks—introducing you to local traditions, hidden streets, authentic flavours, and the stories that bring Jaipur to life.</p>
                 <p>As your curator, my goal is simple: to help you experience India not as a tourist, but as a welcomed guest.</p>
                 <p style={{ fontWeight: 500, color: CH }}>Welcome to the Jaipur I proudly call home.</p>
+                <p style={{ fontFamily: PF, fontStyle: "italic", color: CH }}>— Shobhit Sankhla, Founder & Government-Approved Tour Guide</p>
               </div>
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
                 <Link href="/experiences" className="ab1" style={{ padding: "13px 28px", fontFamily: IN, fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
