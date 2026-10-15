@@ -3,6 +3,119 @@
  */
 
 export const journalArticles = [
+    // One Day in Jaipur: A Local Guide's Itinerary (Month 2, Blog 5, EN)
+  {
+    slug: "one-day-in-jaipur",
+    datePublished: "2026-10-15",
+    dateModified: "2026-10-15",
+    title: "One Day in Jaipur: A Local Guide's Itinerary",
+    metaTitle: "One Day in Jaipur Itinerary: A Local's Plan",
+    excerpt: "Only 24 hours in Jaipur? A local guide's one-day route: Amber Fort early, the old city at midday, sunset at Nahargarh and the city lit up after dark.",
+    metaDescription: "A one-day Jaipur itinerary from a local guide: Amber Fort before the crowds, City Palace and Hawa Mahal at midday, sunset at Nahargarh.",
+    category: "Travel Planning",
+    readTime: "7 min read",
+    image: "/experiences/ridge-and-ramparts/raah-guests-ganesh-pol-amer-fort.webp",
+    relatedExperiences: [
+      "ridge-and-ramparts",
+      "the-crown-of-jaipur",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/experiences/ridge-and-ramparts/amer-fort-sketch-guest.webp", alt: "Guest holding a pencil sketch of Amer Fort with the fort behind her" },
+      { src: "/experiences/crown-of-jaipur/musician-blue-room-city-palace-jaipur.webp", alt: "Musician in a red turban in the blue room of the City Palace, Jaipur" },
+      { src: "/experiences/beyond-the-pink/dal-baati-churma-plate.webp", alt: "Plate of dal baati churma, a Rajasthani lunch in Jaipur's old city" },
+      { src: "/experiences/living-the-walled-city/haveli-above-bazaar-old-city-jaipur.webp", alt: "Historic haveli above the shops of a bazaar in Jaipur's walled city" },
+      { src: "/experiences/the-blue-hour/nahargarh-fort-painted-room.webp", alt: "Painted room in Nahargarh Fort with a window looking over Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-evening.webp", alt: "Chandra Mahal at the City Palace lit up in the evening, Jaipur" },
+    ],
+    faqs: [
+      { q: "Is one day enough to see Jaipur?", a: "One day is enough to see the highlights: Amber Fort, City Palace, Jantar Mantar, Hawa Mahal and a sunset at Nahargarh. It is a full day, though. If you want time for the old city's markets, food and everyday life, two or three days is more comfortable." },
+      { q: "Can I see Amber Fort and City Palace on the same day?", a: "Yes. Visit Amber first thing in the morning, then drive back to the old city for City Palace, Jantar Mantar and Hawa Mahal, which are within walking distance of each other." },
+      { q: "What is the best order to see Jaipur in one day?", a: "North to south, then up the hill: Amber Fort in the morning, Jal Mahal on the way back, the old city monuments at midday, the bazaars in the afternoon, and Nahargarh Fort for sunset." },
+      { q: "Can I visit Jaipur as a day trip from Delhi?", a: "You can, but it is a long day. The journey is around five hours by road each way, which leaves little time in the city. If possible, stay at least one night." },
+      { q: "When is the best time of year for one day in Jaipur?", a: "October to March. The days are cool enough to walk comfortably, and the evenings are pleasant for sunset at Nahargarh and the night drive through the city." },
+    ],
+    body: `If you only have one day in Jaipur, you can't see everything, so the order you see things in matters more than the list. The forts are on the hills to the north. The palace, the observatory and Hawa Mahal are in the old city. The best views come at sunset. Get the order wrong and you will spend the day in traffic, or reach places like Amber Fort when they are crowded and hotter than usual.
+
+This one-day Jaipur itinerary is the route I recommend to guests who have only a single day. It starts early at Amber, comes down to the old city by late morning, and ends on a hill above the city as the lights come on.
+
+## One day in Jaipur at a glance
+
+| Time | Where | Why then |
+|---|---|---|
+| 7:30–10:30 AM | Amber Fort (and Jaigarh if you have energy) | Cooler, quieter, softer light |
+| 10:45 AM | Jal Mahal photo stop | It is on the road back to the city |
+| 11:30 AM–2:00 PM | City Palace, Jantar Mantar, Hawa Mahal | All three are within walking distance of each other |
+| 2:00–3:00 PM | Lunch in the old city | Out of the midday sun |
+| 3:00–5:00 PM | Bazaars of the walled city | Shops are open and the lanes are busy |
+| 5:00 PM–sunset | Nahargarh Fort | The best view over Jaipur |
+| After dark | Albert Hall, Patrika Gate, street food | The city is lit up and cooler |
+
+Timings are for October to March. In summer, start earlier and keep the middle of the day for indoor stops.
+
+## Morning: Amber Fort before the crowds
+
+Amber is about 11 km north of the old city, so leave your hotel by 7:30 AM. Arriving early makes a real difference. Before about 10 AM the courtyards are quiet, the stone is still cool and you can stand in the Sheesh Mahal without being pushed along.
+
+Walk up from Maota Lake instead of taking a jeep to the top. The climb is short, and the view of the fort over the lake on the way up is the one most people take home. Inside, give yourself time in the four courtyards: Diwan-e-Aam, Ganesh Pol, the mirror work of Jai Mandir, and the women's quarters at the back.
+
+If you can manage a steeper walk, the old royal passage from Amber leads up to Jaigarh Fort and the Jaivana cannon. Most visitors skip Jaigarh. I think that's a mistake: it explains why Amber was built where it was. Our [forts in Jaipur guide](/journal/forts-in-jaipur) compares Amber, Jaigarh and Nahargarh if you are deciding between them.
+
+**With a guide:** [The Ridge & Ramparts walk](/experiences/ridge-and-ramparts) covers Amber town, Amber Fort and the tunnel up to Jaigarh in three hours, starting at 7 AM.
+
+## Late morning: Jal Mahal on the way back
+
+On the drive back to the city, stop for ten minutes at Jal Mahal, the palace in the middle of Man Sagar Lake. You can't go inside, so a photo from the promenade is all you need. Don't spend more time here than that. Your next stops need it more.
+
+## Midday: City Palace, Jantar Mantar and Hawa Mahal
+
+These three sit next to each other in the centre of the old city, so this is the easiest part of the day to plan. Walk between them.
+
+**City Palace.** The royal family of Jaipur still lives in part of it. The public section has museums of costumes and arms, painted gateways in the Pritam Niwas Chowk courtyard, and a lot of history about the people who built the city. Plan for about an hour.
+
+**Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat.
+
+**Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road.
+
+**With a guide:** [The Crown of Jaipur](/experiences/the-crown-of-jaipur) covers all three in two and a half hours. It ties them together as one story about how the city was planned.
+
+## Afternoon: lunch and the old city bazaars
+
+Eat in the old city. Dal baati churma, kachori and a glass of lassi are all close by, and you will need the break after a morning on your feet.
+
+After lunch, walk the bazaars inside the walls. Johari Bazaar is for jewellery. Bapu Bazaar is for textiles and juttis (embroidered shoes). The smaller lanes around Tripolia are full of brass, lac bangles and spices. The walled city is laid out on a grid, so it is harder to get lost than it looks. The main streets cross at right angles and every square connects to the next.
+
+If shopping is not your thing, use this time to rest at your hotel. The evening is the best part of the day, so save your energy for it.
+
+## Sunset: Nahargarh Fort
+
+Get to Nahargarh by 5 PM. In winter the sun sets roughly between 5:30 and 6:15 PM, and the road up is slow. The fort sits on the ridge directly above the city, so you look down over Jaipur as it turns gold and then blue.
+
+Inside, Madhavendra Bhawan is worth a look: nine matching apartments built for nine queens, joined by corridors. Then find a spot on the walls and stay until the lights come on below you.
+
+## After dark: Jaipur lit up
+
+Jaipur looks very different at night. Albert Hall Museum, Patrika Gate and Hawa Mahal are all illuminated. The roads are quieter than in the day, and the old city's food stalls are at their busiest. Our guide to [things to do in Jaipur at night](/journal/things-to-do-in-jaipur-at-night) has the full list, including the Amber Fort light and sound show if you want to go back north.
+
+**With a guide:** [The Blue Hour](/experiences/the-blue-hour) is a private open-jeep drive covering the evening half of this plan: sunset at Nahargarh, the Amber show, then the lit-up monuments of the city.
+
+## If you want a slower day
+
+You don't have to see everything. Two other versions work well:
+
+- **Old city only.** Skip Amber. Start at dawn with the flower market and temple aarti, spend the late morning at the palace and observatory, and the evening on a [street food walk](/experiences/beyond-the-pink). You will see less, but you'll get a better feel for how people actually live in Jaipur.
+- **Forts only.** Amber and Jaigarh in the morning, rest in the afternoon, Nahargarh at sunset. This suits travellers who care more about architecture and views than shopping.
+
+If you can add a second day, read our [3-day Jaipur itinerary](/journal/3-day-jaipur-itinerary) or [how many days in Jaipur](/journal/how-many-days-in-jaipur) before you decide what to cut.
+
+## Practical tips for one day in Jaipur
+
+- **Book a car for the day.** Amber and Nahargarh are outside the old city. A driver for the full day saves you from bargaining for each ride.
+- **Ask about the composite ticket.** One ticket covers several state-run monuments, including Amber Fort, Hawa Mahal, Jantar Mantar, Nahargarh and Albert Hall. City Palace is privately run and needs its own ticket.
+- **Dress for temples and heat.** Light clothes that cover your shoulders and knees, shoes you can slip off, and a scarf.
+- **Carry cash.** Small stalls and tuk-tuks often don't take cards.
+- **Don't over-plan.** Sticking to fewer places at a relaxed pace is better than rushing through ten.`,
+  },
     // La mejor época para viajar a la India (Month 2, Blog 4, ES)
   {
     slug: "mejor-epoca-para-viajar-a-la-india",
@@ -1038,7 +1151,7 @@ You can also [compare all experiences and combo journeys](/experiences) before y
 
 ## 1. Day in Jaipur
 
-One day means choosing depth over breadth. Rather than splitting your time across several short visits, the better use of a single day is committing fully to one experience that gives you a complete arc — a beginning, a story, and a natural end point.
+One day means choosing depth over breadth. Rather than splitting your time across several short visits, the better use of a single day is committing fully to one experience that gives you a complete arc — a beginning, a story, and a natural end point. If you want an hour-by-hour plan instead, here is my [one day in Jaipur itinerary](/journal/one-day-in-jaipur).
 
 [The Crown of Jaipur](/experiences/the-crown-of-jaipur) works well here — it moves through three of Jaipur's most iconic landmarks as one connected narrative rather than three separate stops, so you leave with a coherent sense of the city rather than a scattered list of photos.
 

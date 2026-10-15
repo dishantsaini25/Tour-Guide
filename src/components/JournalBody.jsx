@@ -46,6 +46,23 @@ export default function JournalBody({ text }) {
               {children}
             </li>
           ),
+                    table: ({ children }) => (
+            <div style={{ overflowX: "auto", margin: "18px 0 22px", borderRadius: "12px", border: "1px solid #EADFC8" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "520px", fontFamily: IN, fontSize: "0.9rem" }}>
+                {children}
+              </table>
+            </div>
+          ),
+          th: ({ children }) => (
+            <th style={{ textAlign: "left", padding: "10px 14px", background: "#FFF4E2", color: CH, fontWeight: 700, borderBottom: "1px solid #EADFC8" }}>
+              {children}
+            </th>
+          ),
+          td: ({ children }) => (
+            <td style={{ padding: "10px 14px", color: MU, fontWeight: 300, lineHeight: 1.6, borderBottom: "1px solid #F1E8D6", verticalAlign: "top" }}>
+              {children}
+            </td>
+          ),
           img: ({ src, alt }) => (
             <img
               src={src}
