@@ -11,14 +11,14 @@ import FinalCTA from "@/components/home/FinalCTA";
 export const metadata = {
   title: { absolute: "Jaipur City Tour | Heritage Walks by Raah Experiences" },
   description:
-    "Boutique Jaipur city tours with an English-speaking local guide. Small groups, sunrise heritage walks, food trails & hidden stories of the Pink City.",
+    "Boutique Jaipur city tours with an English & Spanish-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
   alternates: {
     canonical: "https://www.raahexperiences.in",
   },
   openGraph: {
     title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
     description:
-      "Boutique Jaipur city tours with an English-speaking local guide. Small groups, sunrise heritage walks, food trails & hidden stories of the Pink City.",
+      "Boutique Jaipur city tours with an English & Spanish-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
     url: "https://www.raahexperiences.in",
     type: "website",
     images: ["https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg"],
@@ -27,7 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
     description:
-      "Boutique Jaipur city tours with an English-speaking local guide.",
+      "Boutique Jaipur city tours with an English & Spanish-speaking local guide.",
   },
 };
 

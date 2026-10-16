@@ -242,7 +242,7 @@ Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos p
   {
     slug: "things-to-do-in-jaipur-at-night",
     datePublished: "2026-10-13",
-    dateModified: "2026-10-13",
+    dateModified: "2026-10-16",
     title: "Things to Do in Jaipur at Night: A Local's Guide to the City After Dark",
     metaTitle: "Things to Do in Jaipur at Night: Local Guide",
     excerpt: "Sunset at Nahargarh, Hawa Mahal lit up, the Amber light show, evening bazaars and dinner with a local family. How a local guide would spend an evening in Jaipur.",
@@ -258,7 +258,7 @@ Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos p
     images: [
       { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Sunset over Jaipur seen from Nahargarh Fort" },
       { src: "/experiences/the-blue-hour/nahargarh-fort-madhavendra-bhawan-courtyard.webp", alt: "Courtyard of Madhavendra Bhawan inside Nahargarh Fort" },
-      { src: "/experiences/the-blue-hour/hawa-mahal-night-crowd.webp", alt: "Evening crowds in front of the illuminated Hawa Mahal, Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-night.webp", alt: "Chandra Mahal at the City Palace, Jaipur, lit up after dark" },
       { src: "/experiences/the-blue-hour/raah-guests-city-palace-gate-night.webp", alt: "Raah guests at an illuminated gateway in Jaipur at night" },
       { src: "/experiences/living-the-walled-city/marigold-garland-stalls-jaipur.webp", alt: "Marigold garland stalls in Jaipur's old city in the evening" },
       { src: "/experiences/beyond-the-pink/kachori-maker-street-stall-jaipur.webp", alt: "Kachoris being fried at a street food stall in Jaipur" },
@@ -596,10 +596,11 @@ For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experien
   {
     slug: "is-jaipur-safe-solo-female-travellers",
     datePublished: "2026-10-01",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-16",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
+    metaTitle: "Is Jaipur Safe for Tourists and Solo Women?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
-    metaDescription: "Is Jaipur safe for solo and female travellers? An honest local guide's answer — real risks, common scams and practical safety tips.",
+    metaDescription: "Yes, Jaipur is safe for tourists, including solo women. A licensed local guide explains real risks, common scams and habits that keep you safe.",
     category: "Jaipur Guide", 
     readTime: "7 min read",
     image: "/experiences/ridge-and-ramparts/guest-with-nataraja-statue-amer.webp",
@@ -736,8 +737,9 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-10-08",
+    dateModified: "2026-10-16",
     title: "How Much Does a Trip to Jaipur Cost?",
+    metaTitle: "Jaipur Trip Cost: Is Jaipur Expensive?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
     metaDescription: "How much does a Jaipur trip cost? Realistic prices for hotels, food, transport and guided tours, with sample daily budgets in ₹ and $.",
     category: "Jaipur Guide",
@@ -762,6 +764,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
     faqs: [
       { q: "How much does a 3-day trip to Jaipur cost?", a: "Using the mid-range daily estimate above, roughly ₹5,600 to ₹6,000 per day, a 3-day trip for one person lands around ₹17,000 to ₹18,000, or $200 to $210, before international flights." },
       { q: "How much does a 4-day trip to Jaipur cost?", a: "At the same mid-range pace, expect roughly ₹22,000 to ₹24,000, or $260 to $280, for four days — though the daily cost often drops slightly on longer trips as you settle into a routine and shop around less." },
+      { q: "Is Jaipur expensive?", a: "Not compared with most major Indian destinations. Street food costs around ₹100 to ₹150 a meal and mid-range hotels ₹1,500 to ₹3,000 a night, so a comfortable mid-range trip works out at roughly ₹5,600 to ₹6,000 per person per day." },
       { q: "Is Jaipur cheaper than Delhi?", a: "For overall daily spending, generally yes, particularly for mid-range travellers, largely due to lower private transport and dining costs. Monument entry fees are broadly similar between the two cities, though Jaipur's composite ticket makes multi-monument days better value." },
       { q: "What's the biggest hidden cost people forget to budget for?", a: "Camera and video fees at monuments, along with the 12 to 18 percent GST added to most hotel bills — both are easy to underestimate when planning from a quoted room rate alone." },
       { q: "Do guided experiences replace the need for a private cab?", a: "Not entirely. Raah's walking experiences cover their respective areas on foot, but you'll still want transport between experiences — particularly from the old city out to Amber — and for any independent exploring in between." },
@@ -1530,6 +1533,53 @@ export function getJournalArticleBySlug(slug) {
   return journalArticles.find((a) => a.slug === slug) || null;
 }
 
+// Related articles for the "Keep Reading" block at the end of each post.
+// Picks posts in the same language that share an experience or category,
+// and spreads links evenly so no article is left without internal links.
+function hashStr(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+let relatedMapCache = null;
+
+function buildRelatedMap(count) {
+  const inbound = {};
+  journalArticles.forEach((a) => { inbound[a.slug] = 0; });
+  const map = {};
+  const order = [...journalArticles].sort((x, y) => hashStr(x.slug) - hashStr(y.slug));
+
+  for (const cur of order) {
+    const lang = cur.lang || "en";
+    const exps = new Set(cur.relatedExperiences || []);
+    const candidates = journalArticles
+      .filter((a) => a.slug !== cur.slug && (a.lang || "en") === lang)
+      .map((a) => {
+        const sharesExperience = (a.relatedExperiences || []).some((e) => exps.has(e));
+        return { a, score: (sharesExperience ? 2 : 0) + (a.category === cur.category ? 1 : 0) };
+      });
+
+    const picks = [];
+    for (let i = 0; i < count && candidates.length; i++) {
+      candidates.sort(
+        (x, y) =>
+          (y.score - inbound[y.a.slug] * 1.5) - (x.score - inbound[x.a.slug] * 1.5) ||
+          hashStr(cur.slug + y.a.slug) - hashStr(cur.slug + x.a.slug)
+      );
+      const pick = candidates.shift();
+      picks.push(pick.a);
+      inbound[pick.a.slug]++;
+    }
+    map[cur.slug] = picks;
+  }
+  return map;
+}
+
 export function getRelatedJournalArticles(currentSlug, count = 3) {
-  return journalArticles.filter((a) => a.slug !== currentSlug).slice(0, count);
+  if (!relatedMapCache) relatedMapCache = buildRelatedMap(count);
+  return relatedMapCache[currentSlug] || [];
 }

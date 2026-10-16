@@ -61,7 +61,6 @@ const IMAGE_INVENTORY = {
     { file: "nahargarh-fort-fresco-arch.webp", alt: "Floral fresco above an arch inside Nahargarh Fort" },
     { file: "nahargarh-fort-painted-room.webp", alt: "Painted room in Nahargarh Fort with a window over Jaipur" },
     { file: "hawa-mahal-illuminated-night.webp", alt: "Hawa Mahal lit up at night, Jaipur" },
-    { file: "hawa-mahal-night-crowd.webp", alt: "Crowds in front of the illuminated Hawa Mahal at night" },
     { file: "chandra-mahal-city-palace-evening.webp", alt: "Chandra Mahal at the City Palace lit up in the evening" },
     { file: "chandra-mahal-city-palace-night.webp", alt: "Chandra Mahal, City Palace Jaipur, illuminated after dark" },
   ],
@@ -409,6 +408,9 @@ metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one r
       { q: "Can I book privately?", a: "Yes, private bookings are available and particularly popular for families and couples." },
       { q: "What should I bring?", a: "Comfortable shoes, sun protection (Jantar Mantar has minimal shade), a camera, and curiosity." },
       { q: "Is the tuk-tuk ride included in the price?", a: "Yes, the tuk-tuk ride at the end of the walk is included as part of the experience — a fun way to soak in the city's everyday street life before we say goodbye." },
+      { q: "Who built Hawa Mahal?", a: "Hawa Mahal was built in 1799 by Maharaja Sawai Pratap Singh, the grandson of Jaipur's founder. It was designed so the royal women could watch street life and processions without being seen." },
+      { q: "How many windows does Hawa Mahal have?", a: "Hawa Mahal has 953 small windows (jharokhas) across its five-storey façade, which gives it its famous honeycomb look and lets cool air flow through the building." },
+      { q: "Can you go inside Hawa Mahal?", a: "Yes. Hawa Mahal is open to visitors with an entry ticket (it is also covered by the composite monument ticket). On The Crown of Jaipur we stop outside to explain the façade and its story, and you are welcome to go in afterwards." },
     ],
   },
 

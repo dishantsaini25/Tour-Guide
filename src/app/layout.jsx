@@ -26,7 +26,7 @@ export const metadata = {
     template: "%s | Raah Experiences",
   },
   description:
-    "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+    "Boutique Jaipur city tours with an English & Spanish-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
   icons: {
     // favicon.ico handles legacy browsers; logo.png gives modern browsers a sharp icon
     icon:  [
@@ -42,7 +42,7 @@ export const metadata = {
   openGraph: {
     title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
     description:
-      "Boutique Jaipur city tours with an English-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
+      "Boutique Jaipur city tours with an English & Spanish-speaking local guide. Sunrise heritage walks, food trails & hidden stories of the Pink City.",
     url: "https://www.raahexperiences.in",
     siteName: "Raah Experiences",
     type: "website",
@@ -52,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Jaipur City Tour | Heritage Walks by Raah Experiences",
     description:
-      "Boutique Jaipur city tours with an English-speaking local guide.",
+      "Boutique Jaipur city tours with an English & Spanish-speaking local guide.",
   },
 };
 

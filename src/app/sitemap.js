@@ -4,9 +4,9 @@ import { journalArticles } from "@/data/journal";
 // ── Production base URL ───────────────────────────────────────────
 const BASE_URL = "https://www.raahexperiences.in";
 
-const HOME_UPDATED        = "2026-10-08";
-const EXPERIENCES_UPDATED = "2026-10-13";
-const JOURNAL_UPDATED     = "2026-10-15";
+const HOME_UPDATED        = "2026-10-16";
+const EXPERIENCES_UPDATED = "2026-10-16";
+const JOURNAL_UPDATED     = "2026-10-16";
 
 function withDate(entry, date) {
   return date ? { ...entry, lastModified: new Date(date) } : entry;
