@@ -232,7 +232,7 @@ metaDescription: "A sunrise walking tour through Jaipur's temples, flower market
   {
     slug: "ridge-and-ramparts",
 seoName: "Amber to Jaigarh Fort Heritage Trek",
-metaTitle: "Amber to Jaigarh Fort Trek | The Ridge & Ramparts",
+metaTitle: "Amber to Jaigarh Fort Trek, Jaipur",
 metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwells and the maharaja's secret tunnel on this guided heritage trek with Raah Experiences.",
     priceUSD: 32,
     priceINR: 2800,
@@ -323,7 +323,7 @@ metaDescription: "From Amber Fort to Jaigarh — hidden temples, ancient stepwel
   {
    slug: "the-crown-of-jaipur",
 seoName: "Hawa Mahal, Jantar Mantar & City Palace Tour",
-metaTitle: "Hawa Mahal & Jantar Mantar Tour | Crown of Jaipur",
+metaTitle: "Hawa Mahal & Jantar Mantar Tour, Jaipur",
 metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one royal story spanning astronomy, architecture and history, with Raah Experiences.",
     priceUSD: 32,
     priceINR: 2800,
@@ -418,7 +418,7 @@ metaDescription: "Walk from Hawa Mahal to Jantar Mantar to City Palace — one r
   {
     slug: "the-blue-hour",
     seoName: "Jaipur Night Tour by Open Jeep",
-    metaTitle: "Jaipur Night Tour by Open Jeep | The Blue Hour",
+    metaTitle: "Jaipur Night Tour by Open Jeep",
     metaDescription: "Open-jeep Jaipur night tour: sunset at Nahargarh Fort, Amber Fort's light show, then Jal Mahal, Hawa Mahal and Albert Hall glowing after dark.",
     priceUSD: 43,
     priceINR: 3750,
@@ -599,7 +599,7 @@ metaDescription: "An evening Pink City walk through Jaipur's old bazaars and art
   {
    slug: "farm-and-fire",
 seoName: "Rajasthani Cooking Class in Jaipur",
-metaTitle: "Rajasthani Cooking Class Jaipur | Farm & Fire",
+metaTitle: "Rajasthani Cooking Class in Jaipur",
 metaDescription: "Cook a traditional Rajasthani vegetarian meal over a wood-fired chulha with a local family at a countryside farmhouse, 30 minutes from Jaipur.",
     priceUSD: 45,
     priceINR: 4000,
@@ -908,7 +908,7 @@ metaDescription: "A sunrise hike in the Aravalli Hills around Amber — forgotte
   {
     slug: "artisans-jaipur",
 seoName: "Jaipur Artisan Workshop Tour",
-metaTitle: "Jaipur Artisan Workshop Tour | Artisan's Jaipur",
+metaTitle: "Jaipur Block Printing & Artisan Tour",
 metaDescription: "Meet Jaipur's master craftsmen at work — lac bangle makers, marble carvers, jewellers and block printers — in the old city's artisan lanes.",
     priceUSD: 30,
     priceINR: 2500,
