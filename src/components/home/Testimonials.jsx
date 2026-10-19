@@ -5,194 +5,122 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import MobileSlider from "@/components/MobileSlider";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Star, StarHalf } from "lucide-react";
 
-/* ── 15 real guest testimonials ─────────────────────────────── */
+/* ── Real guest testimonials (from guests' own messages) ────── */
 const testimonials = [
   {
     name: "Edith Maria Hoyos",
     from: "El Salvador",
     initials: "EH",
-    rating: 5.0,
     text: "¡¡Muy buenos días!! Mil gracias Shobhit por tu ayuda y compañía. Para nosotros fuiste el mejor guía!!! Nos ayudaste con todo y resolviste muy bien todas nuestras inquietudes!!! Hemos explorado y conocido Jaipur de la manera excepcional. Los servicios eran impecables y seguro te vamos a recomendar a nuestros amigos a conocer Jaipur de una manera creativa. ¡¡Muy buen español!!",
   },
   {
     name: "James & Bernadette",
     from: "Ireland",
     initials: "JB",
-    rating: 4.7,
     text: "Had a really great day on this tour with our very knowledgeable local expert Shobhit. We covered a lot of interesting and varied sights, scenes and experiences which made this Jaipur experience very memorable and remarkable. Thanks a lot to our Guide Shobhit. I would highly recommend them to explore the best version of Jaipur!!!",
   },
   {
     name: "Ignacio Rojas Marcos",
     from: "México",
     initials: "IR",
-    rating: 5,
     text: "Hemos pasado muy buen tiempo en Jaipur, atendidos excelentemente por Shobhit. La experiencia de Jaipur a través de sus servicios es extraordinaria. Gracias por todo. Muy ilusionado con todo lo que nos ha mostrado.",
   },
   {
     name: "Rocío Albert",
     from: "Spain",
     initials: "RA",
-    rating: 4.8,
     text: "Excelentes días en Jaipur atendidos maravillosamente por Shobhit. Un gran guía.",
   },
   {
     name: "Viktorija Satkauskienė",
     from: "Lithuania",
     initials: "VS",
-    rating: 5.0,
-    text: "I wholeheartedly recommend this Guide's services. He was the most professional, knowledgeable and engaging storyteller we have ever met. My mother & I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all. No one had ever shared the city's history with such passion & enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding. I sincerely recommend him, as you will have the best experience possible.",
+    text: "I wholeheartedly recommend this Guide's services. He was the most professional, knowledgeable and engaging storyteller we have ever met. My mother & I travelled for three weeks and had various experiences with different guides. By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. However, meeting this guide turned our day into the best one of all. No one had ever shared the city's history with such passion & enthusiasm the way he did. His English is excellent, and his communication with clients is outstanding. I sincerely recommend him, as you will have the best experience possible. Although we are back in our country, we remember our guide with love and great respect! The most sincere person we met in India!",
   },
   {
     name: "Mónica Miyasato",
     from: "Perú",
     initials: "MM",
-    rating: 4.6,
     text: "Ha sido un inmenso placer conocer Jaipur con la mejor compañía de un excelente ciudadano y guía, Shobhit. Aprendimos mucho, y llevamos muchos momentos inolvidables de Jaipur contigo.",
   },
   {
     name: "Maria Campos",
     from: "México",
     initials: "MC",
-    rating: 5.0,
     text: "I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences.",
   },
   {
     name: "Marcela Padilla",
     from: "México",
     initials: "MP",
-    rating: 5.0,
     text: "Nuestra experiencia con Shobhit ha sido maravillosa. Nos ha demostrado un gran conocimiento de cada lugar visitado. Siempre muy amable y pendiente en todo momento de nosotros. Sin duda, un gran profesional. Recomendable sus servicios 100%. Gracias.",
   },
   {
-    name: "Leva Kuode",
+    name: "Ieva Kuode",
     from: "Lithuania",
-    initials: "LK",
-    rating: 5.0,
-    text: "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail. Highly recommended your professional and bespoke services.",
+    initials: "IK",
+    text: "Thanks a lot to you for showing me your beautiful city. I truly enjoyed it and really appreciate your knowledge and ability to explain in great detail.",
   },
   {
     name: "Julian Peter Berton",
     from: "London, UK",
     initials: "JP",
-    rating: 4.8,
     text: "Thank you so much for the last two days when you showed me the wonderful awe inspiring city of Jaipur and some of its treasures through your curated experiences. I had a wonderful time and hope we meet again some time. Best Wishes.",
   },
   {
     name: "John Collins",
     from: "United Kingdom",
     initials: "JC",
-    rating: 5.0,
-    text: "Thank you for being our Guide this week. Your advice about priorities was excellent. There is so much to see and little time to see it. You demonstrated a wide breadth of knowledge which you easily shared with us. Your explanation of Jantar Mantar, City Palace & Amber Fort was first class. Well done! I can't wait to recommend you highly enough. All the best. See you next time in Jaipur.",
+    text: "Thank you for being our Guide this week. Your advice about priorities was excellent. There is so much to see and little time to see it. You demonstrated a wide breadth of knowledge which you easily shared with us. Your explanation of Jantar Mantar, City Palace & Amber Fort was first class. Well done! I cannot recommend you highly enough. All the best. See you next time in Jaipur.",
+  },
+  {
+    name: "Anne",
+    from: "",
+    initials: "A",
+    text: "He is the best guide while you are visiting Amber Palace in Jaipur! Me and my friends got really lucky to stumble on Shobhit. Amber Palace, Panna Meena ka Kund (step well) and one little temple he showed us got much more \"alive\" with the knowledge he shared with us!",
+  },
+  {
+    name: "Kate Laufert",
+    from: "",
+    initials: "KL",
+    text: "We had a great time, and all agreed you are a wonderful tour guide. You really did everything to make us comfortable and give us the best experience. I am happy to recommend you to whoever asks.",
   },
   {
     name: "Robyn Lester",
     from: "Australia",
     initials: "RL",
-    rating: 5.0,
     text: "Thank you Shobhit for the excellent Tour. You were a fantastic guide & I so appreciate your amazing pictures and efforts to help me resolve matters. A Diplomat!! See you again in the future. Wishing you all the best ahead!!",
   },
   {
     name: "Diyva Mowji",
     from: "USA",
     initials: "DM",
-    rating: 5.0,
     text: "We had a wonderful tour in Jaipur with Shobhit. He was super knowledgeable about each place we visited and gave us amazing history and background on the various sites. He also took us to some lesser known but equally as beautiful places in Jaipur. I highly recommend booking a tour with him if you're visiting Jaipur.",
   },
   {
     name: "Fernando & Leticia",
     from: "Brazil",
     initials: "FL",
-    rating: 5.0,
     text: "Amazing Tour! His level of knowledge of the History of the city was outstanding. Also, he provided high level tips for food, drinks, and other locations. I recommend hiring him for an exceptional experience in Jaipur.",
   },
   {
     name: "John & Carol",
     from: "Australia",
     initials: "JC",
-    rating: 4.6,
     text: "A truly exceptional experience in Jaipur. Shobhit's warmth, depth of knowledge, and genuine passion for his city made every moment memorable. We came as tourists and left feeling like we truly understood Jaipur. Couldn't recommend more highly.",
   },
 ];
 
-/* ── Star renderer — full, half, empty stars + numerical score ── */
-function StarRating({ rating }) {
-  const full = Math.floor(rating);
-  const half = rating % 1 >= 0.25 && rating % 1 < 0.75;
-  const nearFull = rating % 1 >= 0.75;
-  const fullCount = nearFull ? full + 1 : full;
-  const showHalf = half;
-  const empty = 5 - fullCount - (showHalf ? 1 : 0);
-
-  const display = rating.toFixed(1);
-
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        gap: "10px",
-        marginBottom: "18px",
-      }}
-    >
-      {/* Stars */}
-      <div style={{ display: "flex", gap: "3px", alignItems: "center" }}>
-        {[...Array(fullCount)].map((_, i) => (
-          <Star
-            key={`f${i}`}
-            size={14}
-            fill="#F5A623"
-            stroke="#000000"
-            strokeWidth={1.5}
-            style={{ color: "#F5A623" }}
-          />
-        ))}
-
-        {showHalf && (
-          <StarHalf
-            size={14}
-            fill="#F5A623"
-            stroke="#000000"
-            strokeWidth={1.5}
-            style={{ color: "#F5A623" }}
-          />
-        )}
-
-        {[...Array(Math.max(0, empty))].map((_, i) => (
-          <Star
-            key={`e${i}`}
-            size={14}
-            fill="#D6D3D1"
-            stroke="#000000"
-            strokeWidth={1.5}
-            style={{ color: "#D6D3D1" }}
-          />
-        ))}
-      </div>
-
-      {/* Rating */}
-      <div className="inline-flex items-center bg-amber-50/80 rounded-md px-2.5 py-1">
-        <span className="text-sm font-bold text-amber-700">
-          {display}
-        </span>
-      </div>
-    </div>
-  );
-}
-
 /* ── Desktop slider constants ── */
 const SHOW = 3;
-const MAX_IDX = testimonials.length - SHOW; // 15 - 3 = 12
-const DOT_COUNT = MAX_IDX + 1;                 // 13 dots
+const MAX_IDX = testimonials.length - SHOW; 
+const DOT_COUNT = MAX_IDX + 1;                 
 
 /* ── Single card ─────────────────────────────────────────────── */
 function TestimonialCard({ t }) {
   return (
     <div className="tc-card">
-      {/* <StarRating rating={t.rating} /> */}
-
       {/* Review text — scrollable on desktop if very long */}
       <div className="tc-card-body">
         <p className="tc-card-quote" style={{
@@ -285,7 +213,7 @@ function DesktopSlider() {
         </button>
       </div>
 
-      {/* Dots — 13 for 15 cards */}
+      {/* Dots */}
       <div role="tablist" aria-label="Testimonial navigation" className="tc-dots">
         {Array.from({ length: DOT_COUNT }).map((_, i) => (
           <button key={i} role="tab" aria-selected={i === idx}

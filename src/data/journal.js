@@ -3,6 +3,119 @@
  */
 
 export const journalArticles = [
+    // Best Time to Visit Jaipur (Month 2, Blog 6, EN)
+  {
+    slug: "best-time-to-visit-jaipur",
+    datePublished: "2026-10-19",
+    dateModified: "2026-10-19",
+    title: "Best Time to Visit Jaipur: A Local Guide's Month-by-Month Answer",
+    metaTitle: "Best Time to Visit Jaipur, Month by Month",
+    excerpt: "The best time to visit Jaipur is October to March, but the right month depends on your trip. A local guide on weather, festivals and crowds, month by month.",
+    metaDescription: "The best time to visit Jaipur is October to March. A local guide explains each month's weather, festivals and crowds, and how to plan around them.",
+    category: "Travel Planning",
+    readTime: "6 min read",
+    image: "/experiences/living-the-walled-city/guest-with-street-musicians-jaipur.webp",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "ridge-and-ramparts",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/experiences/ridge-and-ramparts/guest-at-old-temple-amer-town.webp", alt: "Guest at an old carved temple in Amer town on a sunny winter morning" },
+      { src: "/experiences/the-lost-kingdom/aravalli-hills-amber-valley.webp", alt: "Green Aravalli hills around Amber after the monsoon rains, Jaipur" },
+      { src: "/experiences/the-lost-kingdom/rocky-trail-aravalli-hills-amer.webp", alt: "Dry rocky trail through the Aravalli hills near Amer before the monsoon" },
+      { src: "/experiences/jaipur-at-dawn/rose-and-marigold-petals-flower-market-jaipur.webp", alt: "Sacks of rose and marigold petals at Jaipur's flower market, busiest in festival season" },
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Sunset over Jaipur seen from Nahargarh Fort" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp", alt: "Hawa Mahal lit up at night in Jaipur" },
+    ],
+    faqs: [
+      { q: "What is the best month to visit Jaipur?", a: "November to February has the best weather. February and November are often the most comfortable, with sunny days and mornings that are cool but not cold." },
+      { q: "Is Jaipur too hot in April?", a: "April is hot, especially in the afternoons. You can still visit comfortably if you go out early in the morning and again in the evening, and rest in the middle of the day." },
+      { q: "Is it worth visiting Jaipur in the monsoon?", a: "Yes, if you don't mind humidity. The rain usually comes in short showers, the landscape turns green and the monuments are much quieter than in winter." },
+      { q: "How cold does Jaipur get in winter?", a: "Days are mild and sunny, but early mornings and nights in December and January are cold enough for a jacket." },
+      { q: "When is Jaipur most crowded?", a: "Late December to early January, Diwali, and winter weekends. If you travel then, book early and visit the big monuments first thing in the morning." },
+    ],
+    body: `The best time to visit Jaipur is from October to March. That is the short answer, and it is the one I give most guests. But the right month for you depends on what you want from the trip: the most comfortable weather, a festival, quieter monuments or lower hotel prices.
+
+I guide in Jaipur all year round, so here is how each season and each month actually feels on the ground, and how to plan your days around it.
+
+## The short answer
+
+- **Best weather: November to February.** Sunny, dry days that are comfortable for walking.
+- **Best balance of weather and crowds: October and March.** Still pleasant, a little warmer, and less busy.
+- **Quietest and cheapest: April to September.** You trade comfort for space, with heat from April to June and rain from July to September.
+
+## Jaipur's three seasons
+
+### Winter (October to March): the main season
+
+This is the time to walk the forts, the old city and the bazaars without watching the clock. Days are sunny and dry. In December and January the early mornings and nights are properly cold, so carry a warm layer for sunrise walks and evening drives.
+
+Winter is also the peak season. Hotels fill up and the big monuments get busy by late morning, so book early and start your days early.
+
+### Summer (April to June): hot and dry
+
+The heat builds quickly from April, and in May and June the afternoons are extremely hot. Jaipur is still possible in summer if you change the shape of your day: go out at sunrise, stay indoors from about noon to 4 PM, and go back out for the evening. The upside is fewer visitors and lower hotel rates.
+
+### Monsoon (July to September): rain and green hills
+
+The rains usually arrive as short, heavy showers rather than all-day rain. It is humid, but the hills around Amber turn green, the lakes fill up and the monuments are at their quietest. If you like a calmer city and don't mind getting a little wet, it is an underrated time to come.
+
+## Jaipur month by month
+
+| Month | What it feels like | Worth knowing |
+|---|---|---|
+| January | Sunny days, cold mornings and nights | Kite festival on 14 January; the Jaipur Literature Festival usually takes place in January |
+| February | Pleasant and warming up | One of the most comfortable months of the year |
+| March | Warm afternoons | Holi; Gangaur in March or April |
+| April | Hot | Plan for mornings and evenings only |
+| May and June | Very hot | Quietest monuments and lowest prices |
+| July and August | Monsoon showers, humid | Teej festival; green landscapes around Amber |
+| September | Rain easing, still humid | Good value before the season starts |
+| October | Warm days, cooler evenings | The season begins; Diwali falls in October in some years |
+| November | Ideal weather | Diwali falls in November in some years; busy |
+| December | Cool days, cold nights | Christmas and New Year are the busiest weeks, so book early |
+
+## The best time to visit Jaipur for festivals
+
+A festival can change your whole experience of the city:
+
+- **Makar Sankranti (14 January):** the kite festival. Every rooftop in the old city fills with people and the sky fills with kites.
+- **Jaipur Literature Festival (January):** writers and readers from around the world.
+- **Holi (March):** the festival of colours.
+- **Gangaur (March or April) and Teej (July or August):** traditional Rajasthani festivals with processions through the old city.
+- **Diwali (October or November):** the festival of lights, when the bazaars and buildings are lit up.
+
+Many festival dates follow the lunar calendar and change every year, so check the dates before you book flights.
+
+## The best time of day matters just as much
+
+In Jaipur, the hour you visit a place can matter more than the month. A few rules I follow with guests:
+
+- **Hawa Mahal at sunrise.** The facade faces east, so it catches the first light, and the street in front is still quiet. A [sunrise walk through the old city](/experiences/jaipur-at-dawn) is the easiest way to see it like this.
+- **Amber Fort before 10 AM.** Cooler stone, fewer people and softer light.
+- **Jantar Mantar in the morning.** There is very little shade, so avoid the middle of the day, especially in summer.
+- **Nahargarh Fort at sunset.** The best view over the city. Get there about an hour before the sun goes down.
+- **The monuments after dark.** Albert Hall, Patrika Gate and Hawa Mahal are all lit up at night. Our guide to [things to do in Jaipur at night](/journal/things-to-do-in-jaipur-at-night) has the details.
+
+If you only have a day, my [one day in Jaipur itinerary](/journal/one-day-in-jaipur) puts all of this in order.
+
+## If you can only travel in summer or monsoon
+
+Go anyway, but plan around the weather:
+
+- Start early and finish late, and keep the hottest hours for rest or indoor visits.
+- Wear light cotton clothes, carry water and use a car with air conditioning between stops.
+- In the monsoon, carry a small umbrella and leave some flexibility in your plans.
+
+With Raah, we adjust the timings of our [experiences](/experiences) in summer and monsoon to the cooler hours of the day.
+
+## Planning around peak season
+
+From November to February, and especially around Christmas, New Year and Diwali, book your hotel and guide well in advance. Prices are higher in these weeks, so if budget matters, our [Jaipur trip cost guide](/journal/jaipur-trip-cost) shows what to expect. If you are still deciding how long to stay, read [how many days in Jaipur](/journal/how-many-days-in-jaipur).
+
+Reading in Spanish? Here is our guide to [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).`,
+  },
     // One Day in Jaipur: A Local Guide's Itinerary (Month 2, Blog 5, EN)
   {
     slug: "one-day-in-jaipur",
@@ -737,7 +850,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-10-16",
+    dateModified: "2026-10-19",
     title: "How Much Does a Trip to Jaipur Cost?",
     metaTitle: "Jaipur Trip Cost: Is Jaipur Expensive?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
@@ -781,7 +894,7 @@ Jaipur offers a genuine range across price tiers, though it's worth setting real
 
 **Luxury (₹5,000–₹8,000+/night, higher October–March):** Heritage havelis and 4- to 5-star hotels. Genuine luxury properties like Rambagh Palace, Raj Vilas, Raffles, Leela Palace, Raj Palace, and Taj Amer sit well above this, priced in line with world-class heritage hotels anywhere in India.
 
-The overall picture: Jaipur has an accessible budget floor, but it isn't a destination where good accommodation comes unusually cheap across the board — pricing scales up meaningfully with comfort and location, much as it would in any major tourist city.
+The overall picture: Jaipur has an accessible budget floor, but it isn't a destination where good accommodation comes unusually cheap across the board — pricing scales up meaningfully with comfort and location, much as it would in any major tourist city. Rates also climb in peak season, so check the [best time to visit Jaipur](/journal/best-time-to-visit-jaipur) before you fix your dates.
 
 ## Daily Food & Local Expenses
 
