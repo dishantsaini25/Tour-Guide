@@ -602,6 +602,14 @@ export default async function ExperienceDetailPage({ params }) {
                       <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600 }}>{exp.groupSize}</span>
                     </div>
 
+                    {/* Meeting Point row */}
+                    {(exp.beforeYouCome?.meetingPoint || exp.meetingPoint) && (
+                      <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", gap:"16px", paddingBottom:"10px", marginBottom:"10px", borderBottom:`1px solid ${PH}` }}>
+                        <span style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.78rem", fontWeight:300, flexShrink:0 }}>Meeting Point</span>
+                        <span style={{ fontFamily:IN, color:CH, fontSize:"0.82rem", fontWeight:600, textAlign:"right" }}>{exp.beforeYouCome?.meetingPoint || exp.meetingPoint}</span>
+                      </div>
+                    )}
+
                     <div style={{ display:"flex", flexDirection:"column", gap:"10px", marginTop:"8px" }}>
                       <Link href={`/contact?experience=${encodeURIComponent(exp.title)}`} className="sb-book">
                         Send Booking Enquiry <ArrowRight size={13} />

@@ -944,6 +944,9 @@ metaDescription: "Meet Jaipur's master craftsmen at work — lac bangle makers, 
       "Gratuities (only at guest's discretion)",
       "Shopping stops",
     ],
+    optionalAddOns: [
+      "Hand block printing session at a workshop outside the old city (extra time, charged extra, book in advance)",
+    ],
     glancePoints: [
       "Discover Jaipur's timeless craft traditions in their living context",
       "Walk through dedicated artisan streets where each lane tells its own story",
