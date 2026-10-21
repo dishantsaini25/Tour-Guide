@@ -6,7 +6,7 @@ const BASE_URL = "https://www.raahexperiences.in";
 
 const HOME_UPDATED        = "2026-10-19";
 const EXPERIENCES_UPDATED = "2026-10-16";
-const JOURNAL_UPDATED     = "2026-10-19";
+const JOURNAL_UPDATED     = "2026-10-21";
 
 function withDate(entry, date) {
   return date ? { ...entry, lastModified: new Date(date) } : entry;

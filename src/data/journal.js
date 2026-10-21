@@ -3,6 +3,121 @@
  */
 
 export const journalArticles = [
+    // Shopping in Jaipur: What to Buy and Where (Month 2, Blog 8, EN)
+  {
+    slug: "shopping-in-jaipur",
+    datePublished: "2026-10-21",
+    dateModified: "2026-10-21",
+    title: "Shopping in Jaipur: What to Buy and Where, From a Local Guide",
+    metaTitle: "Shopping in Jaipur: What to Buy and Where",
+    excerpt: "What to buy in Jaipur, which markets to visit, how to bargain and how to avoid the common shopping scams, from a local guide who walks the bazaars every day.",
+    metaDescription: "Shopping in Jaipur, from a local guide: what to buy, the best markets of Jaipur, how to bargain and how to avoid gem and commission scams.",
+    category: "Jaipur Guide",
+    readTime: "6 min read",
+    image: "/experiences/artisans-jaipur/block-printed-fabric-drying.webp",
+    relatedExperiences: [
+      "artisans-jaipur",
+      "beyond-the-pink",
+      "living-walled-city",
+    ],
+    images: [
+      { src: "/experiences/artisans-jaipur/hand-block-printing-workshop-jaipur.webp", alt: "Printer pressing a carved wooden block onto cotton at a hand block printing workshop" },
+      { src: "/experiences/artisans-jaipur/lac-bangle-makers-jaipur.webp", alt: "Lac bangle makers at work in a workshop in Jaipur's old city" },
+      { src: "/experiences/artisans-jaipur/brass-craftsman-old-city-jaipur.webp", alt: "Craftsman shaping brass sheets in Jaipur's old city" },
+      { src: "/experiences/living-the-walled-city/embroidered-potli-bags-bazaar-jaipur.webp", alt: "Embroidered potli bags for sale in a Jaipur bazaar" },
+      { src: "/experiences/living-the-walled-city/dried-chillies-sacks-bazaar-jaipur.webp", alt: "Sacks of dried red chillies in a Jaipur bazaar" },
+      { src: "/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp", alt: "Cycle rickshaw passing the pink shopfronts of a Jaipur bazaar" },
+    ],
+    faqs: [
+      { q: "What is Jaipur famous for shopping?", a: "Hand block-printed textiles, blue pottery, lac bangles, juttis, tie-dyed fabrics and gemstone jewellery." },
+      { q: "Which is the best market in Jaipur for tourists?", a: "Bapu Bazaar is the easiest for first-time visitors, with textiles, juttis and souvenirs at reasonable prices. Johari Bazaar is the place for jewellery." },
+      { q: "Are Jaipur markets open on Sunday?", a: "The markets don't close completely, but most shopkeepers take Sunday off. Go between Monday and Saturday for the best choice." },
+      { q: "Is it okay to bargain in Jaipur?", a: "Yes. Bargaining is expected in the bazaars. Fixed-price shops and emporiums don't bargain." },
+      { q: "Is it safe to buy gemstones in Jaipur?", a: "Yes, if you buy them for yourself from a reputable shop and get a certificate from a recognised gem testing lab. Never buy gems to resell abroad." },
+      { q: "What can I bring back from Jaipur as a gift?", a: "Block-printed scarves or table linen, blue pottery tiles, lac bangles and juttis are light, easy to pack and made in Jaipur." },
+    ],
+    body: `Shopping in Jaipur is part of the city's history, not a break from it. When Sawai Jai Singh II planned Jaipur in 1727, he gave whole streets to particular crafts and invited artisans from across India to settle in them. Walk through the old city today and you can still tell what a lane sells from its name.
+
+That history is also why shopping here can feel overwhelming. There are hundreds of shops, prices are rarely written down, and some of the people who offer to "show you a good shop" are earning a commission on what you buy. I guide in Jaipur every day, and this is the advice I give guests: what is worth buying, which markets to go to, how much to pay and what to avoid.
+
+## What to buy in Jaipur
+
+**Hand block-printed textiles.** This is the craft Jaipur is best known for. Patterns are stamped onto cotton by hand with carved wooden blocks, one colour at a time. Look for bedcovers, tablecloths, scarves, kurtas and quilts. Much of it is made in the printing towns of Sanganer and Bagru, just outside the city.
+
+**Blue pottery.** Jaipur's blue pottery is made from quartz and glass rather than ordinary clay, and painted in cobalt blue and turquoise. Small tiles, bowls and door knobs are easy to carry home.
+
+**Lac bangles.** These bright bangles are made from lac, a natural resin, and are often decorated with small stones or glass. You can watch them being shaped over a flame in the old city.
+
+**Juttis.** Flat leather shoes with embroidered fronts, made for both men and women. Buy them a little snug, because the leather softens as you wear them.
+
+**Leheriya and bandhej.** Tie-dyed fabrics from Rajasthan. Leheriya has wave-like stripes and bandhej has tiny dots. Both are made by hand.
+
+**Jewellery and gemstones.** Jaipur is one of the world's biggest centres for cutting coloured gemstones, and it is known for kundan and meenakari (enamel) jewellery. It is also where you need to be most careful (see below).
+
+**Brass, marble and wooden crafts.** Brass lamps and figurines, small marble carvings and painted wooden boxes make good gifts that last.
+
+**Rugs and carpets.** Hand-knotted rugs are made in and around Jaipur. They are a serious purchase, so take your time and compare.
+
+## The best markets of Jaipur
+
+Most of Jaipur's markets are inside the walled city and close to each other, so you can see several in one afternoon.
+
+**Johari Bazaar.** The jewellers' market, with gold, silver, gemstones and kundan work, along with textile shops. Busy and colourful, and worth seeing even if you don't buy anything.
+
+**Bapu Bazaar.** The easiest market for first-time visitors. Textiles, juttis, block-printed clothes and souvenirs at reasonable prices. A good place to practise bargaining.
+
+**Nehru Bazaar.** Next to Bapu Bazaar, with more textiles and juttis.
+
+**Tripolia Bazaar.** Brass, ironware and household goods. Lac bangles are made in Maniharon ka Rasta, a lane off Tripolia.
+
+**Chandpole Bazaar and Khajane Walon ka Rasta.** Stone and marble carving. You can watch carvers at work on idols and figures.
+
+**Kishanpole Bazaar.** Textiles and everyday shopping, with fewer tourists.
+
+The old city is laid out on a grid, so the main bazaars run in straight lines and meet at large squares called chaupars. It is easier to find your way than it looks.
+
+If you would rather not bargain at all, Rajasthali, the government emporium on MI Road, sells crafts from across Rajasthan at fixed prices. It is also a useful place to check what things should cost before you shop in the bazaars.
+
+## How to bargain in a Jaipur market
+
+Bargaining is normal in the bazaars, and nobody will be offended if you do it politely. A few rules I share with guests:
+
+- **Know the price first.** Ask in two or three shops before you buy, or check prices at a fixed-price shop.
+- **Start lower, but not insultingly low.** Make an offer, then meet somewhere in the middle.
+- **Smile and stay relaxed.** It is a conversation, not a fight.
+- **Be ready to walk away.** The best price often comes as you are leaving.
+- **Don't bargain for something you don't want.** Once you agree a price, it is polite to buy.
+
+Shops with printed price tags, emporiums and most cafés have fixed prices.
+
+## How to avoid shopping scams in Jaipur
+
+Most shopkeepers in Jaipur are honest, but a few scams target visitors, and it helps to know them.
+
+**The gem resale scam.** Someone friendly, sometimes another traveller, tells you that you can buy gems in Jaipur and sell them for a big profit at home. You can't. If anyone suggests buying stones to resell abroad, or carrying them for someone else, walk away. Buy gemstones only if you want to keep them, and ask for a certificate from a recognised gem testing lab.
+
+**Commission shops.** Some drivers, touts and guides take you to shops that pay them a commission on whatever you spend, and the price you pay includes it. If someone insists on taking you to "their friend's shop", or to a "government shop" that doesn't look like one, be cautious.
+
+**"Pure silk" and "antique" claims.** Much of what is sold as pure silk or antique is neither. Pay what the item is worth to you, not what the label says.
+
+**Shipping home.** Many shops offer to ship your purchases. Get a written receipt that lists exactly what you bought, the price and the shipping cost, and pay by card where you can.
+
+Our guide to whether [Jaipur is safe for tourists](/journal/is-jaipur-safe-solo-female-travellers) covers other common scams too.
+
+## When to go shopping in Jaipur
+
+The bazaars come alive in the late afternoon and evening, when the heat drops and locals come out to shop. Mornings are quieter, and some shops in the old city open later in the day. The markets stay open on Sundays, but most shopkeepers take the day off, so you will find far fewer shops open. For the widest choice, go between Monday and Saturday.
+
+From October to March the weather is comfortable for walking between bazaars. In summer, shop after 5 PM. Our guide to the [best time to visit Jaipur](/journal/best-time-to-visit-jaipur) has the full picture, month by month.
+
+## Shopping in Jaipur with a guide
+
+At Raah, we never take guests to commission shops. Our walks go where the story goes, not where a shop pays us to.
+
+Two of our walks pass through Johari Bazaar and Bapu Bazaar. [The Artisan's Jaipur](/experiences/artisans-jaipur) takes you into the old city's craft lanes to watch lac bangle makers, marble carvers, jewellers and utensil makers at work. If you want to try hand block printing yourself, we can book a session at a printing workshop outside the old city, for extra time and cost. [Beyond the Pink](/experiences/beyond-the-pink) is an evening walk through the bazaars, with lac bangle workshops and street food along the way.
+
+Planning your budget? Our [Jaipur trip cost guide](/journal/jaipur-trip-cost) shows what to expect to spend.`,
+  },
     // Best Time to Visit Jaipur (Month 2, Blog 6, EN)
   {
     slug: "best-time-to-visit-jaipur",
@@ -709,7 +824,7 @@ For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experien
   {
     slug: "is-jaipur-safe-solo-female-travellers",
     datePublished: "2026-10-01",
-    dateModified: "2026-10-16",
+    dateModified: "2026-10-21",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     metaTitle: "Is Jaipur Safe for Tourists and Solo Women?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
@@ -740,7 +855,7 @@ For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experien
 
 Jaipur was named the sixth happiest city in the world in Time Out's 2026 global survey — the only Indian city to make the top 10, ranking ahead of cities like Chicago and Cape Town. That's a genuine, measurable reputation, not just guide reassurance.
 
-That said, no destination is risk-free, and it's worth being realistic rather than only reassuring. Violent crime is rare in Jaipur, but petty theft like pickpocketing can happen in crowded areas, and tourists sometimes encounter local scams involving unauthorized guides, overpriced transport, or shopkeepers inflating prices. None of this is unique to Jaipur — it's standard advice for any well-visited tourist city worldwide — but it's worth knowing rather than assuming a "safe" city means no vigilance is needed at all.
+That said, no destination is risk-free, and it's worth being realistic rather than only reassuring. Violent crime is rare in Jaipur, but petty theft like pickpocketing can happen in crowded areas, and tourists sometimes encounter local scams involving unauthorized guides, overpriced transport, or shopkeepers inflating prices (our guide to [shopping in Jaipur](/journal/shopping-in-jaipur) explains how to avoid these). None of this is unique to Jaipur — it's standard advice for any well-visited tourist city worldwide — but it's worth knowing rather than assuming a "safe" city means no vigilance is needed at all.
 
 Opinions on solo travel in India do vary quite a bit depending on who you ask, and it's worth acknowledging that honestly rather than only presenting one side. Some travellers report feeling completely at ease; others, particularly on older travel forums, describe real discomfort or hesitation about solo travel in India generally. The most consistent, practical advice across sources is the same: be prepared, stay aware of cultural differences, and take standard safety measures — this isn't a Jaipur-specific caution, it's sound advice for solo travel almost anywhere unfamiliar.
 
@@ -850,7 +965,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-10-19",
+    dateModified: "2026-10-21",
     title: "How Much Does a Trip to Jaipur Cost?",
     metaTitle: "Jaipur Trip Cost: Is Jaipur Expensive?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
@@ -949,7 +1064,7 @@ Putting the pieces together, here's roughly what a full day in Jaipur costs at t
 - **Mid-range traveller** (comfortable hotel, cafés and restaurants, ride-hailing apps, one guided experience): ₹5,600–₹6,000/day, roughly $65–$70
 - **Comfort/luxury traveller** (heritage hotel, upscale dining, private cab, premium combo experience): ₹15,000+/day, upward of $175
 
-These are working estimates built from real, published cost data and Raah's own confirmed pricing — not a guarantee, since actual spending varies by season, personal habits, and how much shopping or extra activity gets added in along the way.
+These are working estimates built from real, published cost data and Raah's own confirmed pricing — not a guarantee, since actual spending varies by season, personal habits, and how much [shopping](/journal/shopping-in-jaipur) or extra activity gets added in along the way.
 
 For a broader view of how these costs fit into your overall trip, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or explore our [full range of experiences](/experiences).`,
   },
