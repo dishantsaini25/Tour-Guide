@@ -5,6 +5,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import MobileSlider from "@/components/MobileSlider";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import ReviewImageSlider from "@/components/home/ReviewImageSlider";
 
 /* ── Real guest testimonials (from guests' own messages) ────── */
 const testimonials = [
@@ -321,6 +322,48 @@ export default function Testimonials() {
         }
         .tc-dot-active { width: 18px; background: #FF8C00; }
         .tc-dot:focus-visible { outline: 2px solid #FF8C00; outline-offset: 2px; }
+
+        /* ── Review photos sub-heading ── */
+        .ri-subheading-wrap {
+          text-align: center;
+          margin-top: 60px;
+          margin-bottom: 32px;
+        }
+        .ri-subheading-label {
+          font-family: "DM Sans", system-ui, sans-serif;
+          font-size: 0.6rem;
+          letter-spacing: 0.28em;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #FF8C00;
+          margin-bottom: 10px;
+        }
+        .ri-subheading-line {
+          width: 36px;
+          height: 2px;
+          background: linear-gradient(to right, #FF8C00, #F5A623);
+          margin: 0 auto 16px;
+        }
+        .ri-subheading-title {
+          font-family: "Fraunces", Georgia, serif;
+          font-weight: 700;
+          font-size: clamp(1.4rem, 2.5vw, 2rem);
+          line-height: 1.1;
+          color: #1A1209;
+          margin-bottom: 8px;
+        }
+        .ri-subheading-subtitle {
+          font-family: "DM Sans", system-ui, sans-serif;
+          font-size: 0.92rem;
+          line-height: 1.7;
+          color: #6B5B2E;
+          font-weight: 300;
+          max-width: 560px;
+          margin: 0 auto;
+        }
+        @media (max-width: 767px) {
+          .ri-subheading-wrap { margin-top: 44px; margin-bottom: 24px; }
+        }
       `}</style>
 
       <SectionWrapper variant="soft">
@@ -341,6 +384,18 @@ export default function Testimonials() {
             {testimonials.map((t, i) => <TestimonialCard key={i} t={t} />)}
           </MobileSlider>
         </div>
+
+        {/* ── Review image slider ── */}
+        <div className="ri-subheading-wrap">
+          <p className="ri-subheading-label">Guest Moments</p>
+          <div className="ri-subheading-line" />
+          <h3 className="ri-subheading-title">Smiles from Our Travellers</h3>
+          <p className="ri-subheading-subtitle">
+            Real moments, real memories — captured during our guests' time exploring Jaipur with us.
+          </p>
+        </div>
+
+        <ReviewImageSlider />
       </SectionWrapper>
     </>
   );

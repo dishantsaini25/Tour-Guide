@@ -39,6 +39,8 @@ const IMAGE_INVENTORY = {
     { file: "raah-group-ganesh-pol-amer-fort.webp", alt: "Group of Raah guests in front of the painted Ganesh Pol, Amer Fort" },
     { file: "flute-player-pillared-hall-amer-fort.webp", alt: "Musician playing the flute in a pillared hall inside Amer Fort" },
     { file: "goat-on-rock-amer-hills.webp", alt: "Goat standing on a rock above Amer town in the Aravalli hills" },
+    { file: "guests-jagat-shiromani-temple-amber.webp", alt: "Raah guests at the Jagat Shiromani Temple in Amber" },
+    { file: "raah-guests-amber-aravalli-hills.webp", alt: "Raah guests enjoying views of the Aravalli hills from Amber" },
   ],
   "crown-of-jaipur": [
     { file: "musician-blue-room-city-palace-jaipur.webp", alt: "Musician in a red turban in the blue painted room of the City Palace, Jaipur" },
@@ -51,6 +53,8 @@ const IMAGE_INVENTORY = {
     { file: "blue-fresco-detail-city-palace.webp", alt: "Detail of a blue fresco with painted figures, City Palace Jaipur" },
     { file: "mirror-ceiling-city-palace-jaipur.webp", alt: "Mirror-work ceiling inside the City Palace, Jaipur" },
     { file: "art-gallery-city-palace-jaipur.webp", alt: "Visitor viewing an artwork in a gallery at the City Palace, Jaipur" },
+    { file: "guests-jantar-mantar-rashi-yantra-jaipur.webp", alt: "Raah guests exploring the Jantar Mantar astronomical instruments, Jaipur" },
+    { file: "guests-rajendra-pol-city-palace-jaipur.webp", alt: "Raah guests at Rajendra Pol, the royal gateway of City Palace, Jaipur" },
   ],
   "the-blue-hour": [
     { file: "hawa-mahal-sunset-jaipur.webp", alt: "Hawa Mahal at sunset, Jaipur" },
@@ -63,6 +67,7 @@ const IMAGE_INVENTORY = {
     { file: "hawa-mahal-illuminated-night.webp", alt: "Hawa Mahal lit up at night, Jaipur" },
     { file: "chandra-mahal-city-palace-evening.webp", alt: "Chandra Mahal at the City Palace lit up in the evening" },
     { file: "chandra-mahal-city-palace-night.webp", alt: "Chandra Mahal, City Palace Jaipur, illuminated after dark" },
+    { file: "hawa-mahal-night-crowd.webp", alt: "Hawa Mahal glowing at night with visitors enjoying the view, Jaipur" },
   ],
   "beyond-the-pink": [
     { file: "pink-city-bazaar-cycle-rickshaw-jaipur.webp", alt: "Cycle rickshaw passing pink buildings in Jaipur's old city bazaar" },
@@ -95,6 +100,7 @@ const IMAGE_INVENTORY = {
     { file: "guest-henna-mehndi-jaipur.webp", alt: "Guest getting henna done by a local artist in Jaipur" },
     { file: "dried-chillies-sacks-bazaar-jaipur.webp", alt: "Dried red chillies sold by weight in a Jaipur bazaar" },
     { file: "embroidered-potli-bags-bazaar-jaipur.webp", alt: "Embroidered potli bags hanging at a Jaipur bazaar" },
+    { file: "raah-guests-rooftop-dinner-jaipur.webp", alt: "Raah guests enjoying a rooftop dinner in Jaipur's old city" },
   ],
   "the-lost-kingdom": [
     { file: "rocky-trail-aravalli-hills-amer.webp", alt: "Rocky hiking trail through the Aravalli hills near Amber" },
@@ -108,10 +114,10 @@ const IMAGE_INVENTORY = {
     { file: "rajasthani-kathputli-puppets.webp", alt: "Pair of Rajasthani kathputli puppets" },
     { file: "hand-block-printing-workshop-jaipur.webp", alt: "Guest trying hand block printing at a workshop near Jaipur" },
     { file: "block-printed-fabric-drying.webp", alt: "Block-printed fabrics drying in the sun near Jaipur" },
-    { file: "wooden-printing-block-leaf-motif.webp", alt: "Hand-carved wooden printing block with a leaf motif" },
     { file: "wooden-printing-block-floral.webp", alt: "Hand-carved wooden printing block with a floral pattern" },
     { file: "brass-craftsman-old-city-jaipur.webp", alt: "Brass craftsman shaping metal in Jaipur's old city" },
     { file: "lac-bangle-makers-jaipur.webp", alt: "Artisans making lac bangles in a Jaipur workshop" },
+    { file: "guest-elephant-block-print-jaipur.webp", alt: "Guest admiring an elephant motif in block-printed fabric near Jaipur" },
   ],
 };
 
