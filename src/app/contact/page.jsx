@@ -3,7 +3,7 @@ import { MapPin, Mail, Phone, Clock } from "lucide-react";
 
 export const metadata = {
   title: { absolute: "Book a Jaipur Walking Tour | Raah Experiences" },
-  description: "Book a Jaipur walking tour with an English & Spanish-speaking guide — Jaipur Regional Level Govt. Approved & Pan India IITG certified. We respond personally within 24 hours.",
+  description: "Book a Jaipur walking tour with a licensed English and Spanish-speaking guide. Send an enquiry or WhatsApp us; we reply within 24 hours.",
   alternates: {
     canonical: "https://www.raahexperiences.in/contact",
   },

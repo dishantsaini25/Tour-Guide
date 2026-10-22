@@ -334,7 +334,7 @@ export default async function ExperienceDetailPage({ params }) {
           </div>
 
                   <h1 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(2.4rem,6.5vw,5.5rem)", color:"#FFFFFF", lineHeight:1.05, marginBottom:"12px" }}>
-            {exp.title}
+            {exp.title}{" "}
             {exp.seoName && (
               <span style={{ display:"block", fontFamily:IN, fontSize:"0.28em", fontWeight:500, fontStyle:"normal", letterSpacing:"0.04em", color:"rgba(255,255,255,0.82)", marginTop:"12px" }}>
                 {exp.seoName}

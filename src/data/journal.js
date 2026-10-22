@@ -701,12 +701,12 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {
     slug: "forts-in-jaipur",
-    metaTitle: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh",
+    metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
     datePublished: "2026-10-10",
-    dateModified: "2026-10-10",
+    dateModified: "2026-10-22",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
     excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
-    metaDescription: "Amer, Jaigarh or Nahargarh? A local guide compares Jaipur's three hill forts: history, what to see, how long to spend and the best order to visit.",
+    metaDescription: "Amer, Jaigarh or Nahargarh: which fort is better? A local guide compares Jaipur's three hill forts, what to see in each and how to visit all three.",
     category: "Jaipur Guide",
     readTime: "8 min read",
     image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
@@ -729,6 +729,10 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
       { q: "Which fort in Jaipur is best for sunset?", a: "Nahargarh Fort. It sits right on the edge of the ridge above the city, so you watch the sun go down over the whole of Jaipur." },
       { q: "How much time do you need at Amer Fort?", a: "About two hours for the palace. If you want to see the town, temples and stepwells around it as well, plan for three." },
       { q: "Is there a tunnel between Amer Fort and Jaigarh Fort?", a: "Yes. A historic passage built for the royal family connects the two, and it's still walkable today. It's part of the route on The Ridge & Ramparts." },
+      { q: "Are Amer Fort and Jaigarh Fort the same?", a: "No. They are two separate forts on the same ridge. Amer was the royal palace, and Jaigarh stands on the hill directly above it as the military fortress that protected it. A historic passage connects the two, and each needs its own ticket." },
+      { q: "Are Amer Fort and Amber Fort the same?", a: "Yes. Amer and Amber are two spellings of the same fort and the town around it." },
+      { q: "Which is better, Nahargarh Fort or Jaigarh Fort?", a: "It depends on what you want. Nahargarh is best for views over Jaipur and sunset. Jaigarh is best for history, the Jaivana cannon and the engineering that let the fort survive long sieges. If you have time, see Jaigarh in the morning and Nahargarh at sunset." },
+      { q: "Which is better, Amer Fort or Nahargarh Fort?", a: "Choose Amer Fort for architecture and palace interiors, including the Sheesh Mahal, and Nahargarh for the view over the city at sunset. Most visitors see Amer in the morning and Nahargarh in the evening." },
     ],
     body: `Jaipur has three hill forts, and they all sit on the same stretch of the Aravalli hills, joined by walls that run along the ridge. If you only have time for one, go to Amer. If you want the best sunset in the city, go to Nahargarh. If you're curious about how a kingdom actually defended itself, Jaigarh is the one that will stay with you.
 
@@ -1072,8 +1076,9 @@ For a broader view of how these costs fit into your overall trip, see our [compl
   {
     slug: "english-spanish-speaking-guide-jaipur",
     datePublished: "2026-09-23",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-22",
     title: "Best English & Spanish-Speaking Guide in Jaipur",
+    metaTitle: "English & Spanish-Speaking Guide in Jaipur",
     excerpt: "A guide's job isn't just knowing the history of a place — it's being able to communicate it in a way that lands. Here's what guests who've booked bilingual guides in Jaipur have said.",
     metaDescription: "Looking for an English or Spanish-speaking guide in Jaipur? Meet a government-licensed bilingual guide and read what past guests say.",
     category: "Booking Guide", 
@@ -1533,8 +1538,10 @@ Ready to plan your days? [Browse all Raah experiences](/experiences) and choose 
   {
     slug: "why-i-created-raah",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-22",
     title: "Why I Created Raah",
+    metaTitle: "Why I Created Raah: A Jaipur Guide's Story",
+    metaDescription: "How a question from guests, 'what else is there to see in Jaipur?', led a licensed guide to create Raah and its walks through the old city.",
     excerpt: "Sometimes, the right path appears only when you choose to leave the familiar one. A journey beyond the monuments into the living streets of the Pink City.",
     category: "From the Curator",
     readTime: "4 min read",
@@ -1543,17 +1550,23 @@ Ready to plan your days? [Browse all Raah experiences](/experiences) and choose 
 
 For years, I have walked alongside travellers through Jaipur's magnificent forts, palaces, and several monuments. Like many journeys, our days were carefully planned, every stop accounted for, every place visited.
 
+## The Question That Changed Everything
+
 Yet, I couldn't ignore the moment when the day came to an end and guests would request me — "What else is there to see in Jaipur besides historical sites?" That simple question took me beyond the monumental trail.
 
 I began taking them through the Jaipur I was curious for — old city back lanes, bustling bazaars, hidden temples, family-run businesses, and everyday things taking place in the living streets of Pink City. We wandered calmly, paused for conversations, discovered forgotten corners, and experienced the city as a true Jaipurite does in everyday life.
 
 Those unplanned moments soon became the most memorable part of every journey.
 
+## From Unplanned Walks to Raah
+
 That journey of exploration eventually became Raah.
 
 The appreciation & praise of each guest as "This is the Jaipur every tourist would wish to experience" influenced me to create unique experiences in Jaipur. Their words inspired me to keep exploring Jaipur beyond monuments — not just for myself, but for every traveller who wanted to feel the city as if it actually belonged to them.
 
 With every walk, I discovered new stories, hidden places, and meaningful encounters that deserved to be shared.
+
+## What Raah Means
 
 In Hindi, Raah means "a path." For me, it represents a different way of discovering Jaipur — not through a checklist of attractions, but through its people, traditions, hidden corners, and the stories that bring them to life.
 
@@ -1603,15 +1616,19 @@ You can visit the Jagat Shiromani Temple and the old temples of Amber town on [T
   {
     slug: "why-jaipur-was-built",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-22",
     title: "Why Jaipur Was Built",
+    metaTitle: "Why Was Jaipur Built? Jai Singh II's Vision",
+    metaDescription: "Why was Jaipur built? Not only because Amber was crowded. The story of Sawai Jai Singh II, the astronomer king who planned Jaipur on a grid.",
     excerpt: "Most people believe Jaipur was built simply because Amber had become overcrowded. The true story is far more extraordinary.",
     category: "History",
     readTime: "5 min read",
     image: "/journal Images/why jaipur built.png",
-    body: `A City Born from the Vision of a King Who Looked Beyond His Time.
+    body: `## A City Born from the Vision of a King
 
 Most people believe Jaipur was built simply because Amber had become overcrowded or faced a growing shortage of water. While these challenges certainly influenced the decision, they tell only part of the story.
+
+## Who Was Sawai Jai Singh II?
 
 The true inspiration behind Jaipur was Sawai Jai Singh II — a remarkable ruler, scholar, astronomer, and visionary whose ambitions extended far beyond building another royal capital.
 
@@ -1619,9 +1636,15 @@ The title "Sawai," meaning "one and a quarter" (or 1¼ times greater than an ord
 
 Unlike many kings of his time, Jai Singh II was deeply fascinated by science, mathematics, architecture, astronomy, and urban planning. He dreamed of creating a city that would not only serve as the new capital of his kingdom but also become a centre of learning, trade, innovation, and scientific exploration.
 
+## A King Fascinated by Astronomy
+
 His greatest passion was astronomy. Unsatisfied with the inaccuracies of existing astronomical tables, he commissioned the construction of five astronomical observatories — known today as the Jantar Mantars — in Delhi, Jaipur, Ujjain, Varanasi, and Mathura. These monumental instruments reflected his relentless pursuit of precision.
 
+## A City Planned on a Grid
+
 Jaipur became the canvas upon which he brought all these ideas together. Designed according to the ancient principles of Vastu Shastra and planned on a rational grid unlike any other Indian city of its time, Jaipur was conceived as a city where science, commerce, governance, culture, and spirituality could coexist in perfect harmony.
+
+## Why Jaipur Was Really Built
 
 More than three centuries later, Jaipur continues to embody the vision of the extraordinary king who dared to imagine a city a century ahead of its time.
 
@@ -1667,25 +1690,37 @@ You can walk the historic route from Amber to Jaigarh Fort and see the Jaivana c
   {
     slug: "why-cows-are-sacred",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-22",
     title: "Why Cows are Sacred in India",
+    metaTitle: "Why Are Cows Sacred in India?",
+    metaDescription: "Why are cows sacred in India? What the cow means in Hinduism, what the ancient texts say, and how Gau Mata is honoured in daily life.",
     excerpt: "In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow.",
     category: "Culture",
     readTime: "4 min read",
     image: "/journal Images/cow.png",
-    body: `In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow. Hence, it is the responsibility of every Hindu to accord her respect — and everyone abides by this. For most religious ceremonies, the cow is essential.
+    body: `## What the Cow Means in Hinduism
+
+In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow. Hence, it is the responsibility of every Hindu to accord her respect — and everyone abides by this. For most religious ceremonies, the cow is essential.
+
+## Caring for the Cow in Daily Life
 
 As per ancient texts, cows are pure and auspicious animals. Looking after a cow and doing all the daily chores for her — like bathing, feeding, and providing water — are considered commendable acts. In fact, cow dung and urine are said to have medicinal properties. Whosoever offers a morsel of food to a cow before having a meal is said to attain salvation. With respect to this, every Hindu household prepares at least two chapatis to offer to a cow before any meal.
 
 Besides, the charity of a cow benefits the whole family in all disciplines. The touch and care of her absolves one's sins. The produce of a cow — milk, ghee, curd, and butter — are used in religious ceremonies.
 
+## The Cow in the Ancient Texts
+
 In the Atharva Veda, it is mentioned: "The cow is the mother of Rudras, daughter of the Vasus and sister of Surya. She is the producer of ghee which acts like a celestial nectar."
 
 It is also said that cow's milk helps overcome infirmity and regain lost mental and physical health. It stimulates the intellect.
 
+## A Symbol of Wealth and Prosperity
+
 In ancient times, cows were offered to gods and given as gifts as a sign of esteem. They were considered a symbol of wealth and prosperity, and one's status would be determined by the number of cows one possessed.
 
 In another religious text, it is said that the world depends upon the cow. The back is identical to Rig-Veda, the body of Yajur-Veda, the mouth of Sam-Veda, the neck of good deeds, and the soft body hair are like Mantras.
+
+## Gau Mata: Why the Cow Is Still Revered
 
 Hence, the cow — known as Gau-Mata — holds a revered position in Hinduism, symbolising wealth, prosperity, intellect, nutrition, and abundance. The sacred animal is linked with Hindu deities like Lord Krishna, further deepening its significance in Hindu beliefs and rituals.
 
@@ -1695,23 +1730,31 @@ To see Jaipur's temples and morning rituals first-hand, join [Jaipur at Dawn](/e
   {
     slug: "jaipur-before-sunrise",
     datePublished: "2026-07-11",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-22",
     title: "Why Jaipur is Best Experienced Before Sunrise",
+    metaTitle: "Why Jaipur Is Best Before Sunrise",
+    metaDescription: "Why the best time to see Jaipur is at dawn: temple bells, flower markets and Hawa Mahal in the first light, before the traffic and crowds arrive.",
     excerpt: "If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up.",
     category: "Dawn Jaipur",
     readTime: "4 min read",
     image: "/journal Images/sunset.png",
-    body: `Jaipur At Dawn: A City That Awakens in Gold
+    body: `## Jaipur at Dawn: A City That Awakens in Gold
 
 If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up. Jaipur before sunrise belongs to a different world — it seems to be peaceful, slow-paced, and even more beautiful than at its usual hours.
 
+## What Jaipur Looks Like Before Sunrise
+
 Mornings in Jaipur are different from any other city. It doesn't appear to be a city — rather a canvas that glows before the world wakes up. Watching the sun climbing over Amber Fort, or Hawa Mahal blushing in soft shades of rose and amber, is something that once seen, is never forgotten. When you step out onto the streets, the air is cool, fresh, and crisp — filled with devotion, temple bells, the aroma of incense, fresh flowers, and a delicious morning chai.
+
+## Why Early Morning Shows the Real Jaipur
 
 Experiencing Jaipur in its genuine form is possible only in the early morning, where we witness it in its most vulnerable and authentic state — before the tourist rush, the honking of vehicles, and the chaos of daily life.
 
 Watching the everyday scenes of locals setting up generations-old eateries, hearing the echoes of temple bells, seeing farmers moving fresh vegetables and flowers piled on motorbikes and commercial vehicles, pigeons fluttering across courtyards — all these moments become a surreal experience for first-time travellers.
 
 The beauty of Jaipur does not lie only in its magnificent forts and palaces, vibrant culture, and rich architecture — it lies in these delicate and timeless moments. Experiencing Jaipur before sunrise is not about sightseeing. It is all about intimacy — where you feel the city literally belongs to you.
+
+## How to Experience Jaipur at Dawn
 
 Hence, if you ever come to Jaipur, do not forget to explore it in its golden hours.
 

@@ -71,6 +71,7 @@ export default function RootLayout({ children }) {
               "@type": "TravelAgency",
               "@id": "https://www.raahexperiences.in/#organization",
               name: "Raah Experiences",
+              alternateName: ["Raah India Experiences", "Raah"],
               url: "https://www.raahexperiences.in",
               description:
                 "Boutique curated walking tours & cultural experiences in Jaipur, led by an English & Spanish-speaking, government-certified local guide.",
