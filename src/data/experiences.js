@@ -728,7 +728,7 @@ metaDescription: "Walk Jaipur's UNESCO-listed walled city beyond its monuments â
   groupSize: "Up to 8 guests",
   languages: ["English", "Spanish"],
   location: "Walled City, Jaipur",
-  meetingPoint: "Jaipur's historical Hawa Mahal",
+  meetingPoint: "Chandni Chowk, City Palace Complex",
 
   ...getExperienceImages("living-walled-city"),
 

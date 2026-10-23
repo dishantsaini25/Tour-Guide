@@ -3,6 +3,83 @@
  */
 
 export const journalArticles = [
+    // Why Is Jaipur Called the Pink City? (Month 2, Blog 7, EN)
+  {
+    slug: "why-is-jaipur-called-the-pink-city",
+    datePublished: "2026-10-23",
+    dateModified: "2026-10-23",
+    title: "Why Is Jaipur Called the Pink City? The Story Behind the Colour",
+    metaTitle: "Why Is Jaipur Called the Pink City?",
+    excerpt: "Why is everything in Jaipur's old city pink? The colour came in 1876, almost 150 years after the city was founded, and it came because of a single royal visit.",
+    metaDescription: "Why is Jaipur called the Pink City? In 1876 the old city was painted pink to welcome the Prince of Wales. A local guide tells the full story.",
+    category: "History",
+    readTime: "5 min read",
+    image: "/experiences/living-the-walled-city/haveli-above-bazaar-old-city-jaipur.webp",
+    relatedExperiences: [
+      "beyond-the-pink",
+      "jaipur-at-dawn",
+      "living-walled-city",
+    ],
+    images: [
+      { src: "/experiences/beyond-the-pink/women-in-sarees-old-city-jaipur.webp", alt: "Women in bright sarees walking past the pink arcades of Jaipur's old city" },
+      { src: "/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp", alt: "Pink facades of a Jaipur bazaar with a cycle rickshaw in front" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp", alt: "Hawa Mahal glowing at sunset in the Pink City of Jaipur" },
+      { src: "/experiences/living-the-walled-city/guest-e-rickshaw-old-city-jaipur.webp", alt: "Raah guest on an e-rickshaw ride through the Pink City" },
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "The Pink City of Jaipur seen from Nahargarh Fort at sunset" },
+    ],
+    faqs: [
+      { q: "Why is Jaipur called the Pink City?", a: "Because the old walled city is painted pink. Maharaja Sawai Ram Singh II had the city painted in 1876 to welcome the Prince of Wales, as pink is the colour of hospitality in Rajput culture." },
+      { q: "Who painted Jaipur pink?", a: "Maharaja Sawai Ram Singh II, the ruler of Jaipur, in 1876." },
+      { q: "What colour was Jaipur before it was pink?", a: "According to the writer A.K. Roy, quoted in Aman Nath's book Jaipur: The Last Destination, the city was originally white. Maharaja Ram Singh then tried painting the streets in different colours, such as green and yellow, before pink was adopted for the whole city." },
+      { q: "Is the whole of Jaipur pink?", a: "No. The pink colour is found in the old walled city. The newer parts of Jaipur are not painted in one colour." },
+      { q: "Is Jaipur a UNESCO World Heritage Site?", a: "Yes. The walled city of Jaipur was added to the UNESCO World Heritage list in 2019. Jantar Mantar and Amber Fort have been World Heritage Sites since 2010 and 2013 respectively." },
+      { q: "What is the best way to see the Pink City?", a: "On foot, early in the morning or in the late afternoon, when the light brings out the colour and the streets are easier to walk." },
+    ],
+    body: `Almost every guest I walk with asks me the same thing within the first hour: why is everything pink? It is a fair question. Walk through the old city and every facade, archway and shopfront is painted the same warm shade. The Pink City of Jaipur did not start out this way, though. The colour came almost 150 years after the city was founded, and it came because of a single royal visit.
+
+## The short answer
+
+In 1876, Maharaja Sawai Ram Singh II had the old city painted pink to welcome the Prince of Wales, the future King Edward VII, who was visiting Jaipur. In Rajput culture, pink is the colour of hospitality, so painting the city was a way of greeting an important guest. The colour stayed, and so did the name.
+
+## Jaipur before it was pink
+
+Jaipur was founded in 1727 by Maharaja Sawai Jai Singh II, a king who was fascinated by astronomy, mathematics and planning. With the help of the architect Vidyadhar Bhattacharya, he laid the city out on a grid of large blocks, with wide main streets crossing at right angles. It was one of the first planned cities in India. You can read more about his vision in [why Jaipur was built](/journal/why-jaipur-was-built).
+
+For its first century and a half, Jaipur was already a well-known city. It just wasn't pink.
+
+## What colour was Jaipur before it was pink?
+
+This is the next question most guests ask. According to the writer A.K. Roy, quoted in Aman Nath's book *Jaipur: The Last Destination*, the city was originally white. Maharaja Ram Singh then tried painting the streets in different colours, such as green and yellow, before pink was finally adopted for the whole city.
+
+## 1876: a royal visit and a coat of paint
+
+When the Prince of Wales toured India in 1875–76, Jaipur was on his route. Maharaja Ram Singh II wanted the city to look its best, and he chose the colour that in Rajput tradition says "you are welcome here". The facades of the old city were painted in this shade before the visit.
+
+The visit left another mark on the city too. The foundation stone of the Albert Hall, now the Albert Hall Museum, was laid during the Prince's visit. Today it is one of the most beautiful buildings in Jaipur, especially when it is [lit up at night](/journal/things-to-do-in-jaipur-at-night).
+
+## Is Jaipur actually pink?
+
+Not quite. If you look closely, the colour is closer to terracotta or a soft salmon than to bright pink. It changes through the day: pale and dusty at noon, warm and almost orange at sunrise and sunset. That is why the early morning and the evening are the best times to photograph the old city.
+
+## Why the city is still pink today
+
+The pink is not just tradition. The facades in the old walled city are still required to keep this colour, so new paint and repairs follow the same shade. In 2019, the [walled city of Jaipur](/experiences/living-walled-city) was added to the UNESCO World Heritage list, which recognised its planning and its living heritage. Jantar Mantar and Amber Fort were already on the list.
+
+## Where to see the Pink City at its best
+
+- **Hawa Mahal at sunrise.** The most famous pink facade in the city faces east and glows in the first light. Few people know that what you see from the street is actually the back of the palace.
+- **Johari Bazaar and Bapu Bazaar.** Long rows of pink arcades with shops underneath, best walked in the late afternoon when the bazaars are busy. Our guide to [shopping in Jaipur](/journal/shopping-in-jaipur) covers what to buy there.
+- **Tripolia Bazaar and the lanes around it.** Quieter, older and full of small workshops.
+- **Nahargarh Fort at sunset.** From the walls you can see the whole Pink City spread out below you as the lights come on.
+
+On foot is the best way to see it. A [sunrise walk through the old city](/experiences/jaipur-at-dawn) shows you the pink streets before the traffic arrives, while our [Pink City tour](/experiences/beyond-the-pink) in the evening takes you through the bazaars, the artisan lanes and the food stalls.
+
+## A few things that surprise our guests
+
+- **Only the old city is pink.** Newer parts of Jaipur, outside the walls, are every colour you can imagine.
+- **The city is named after its founder.** Jaipur means "the city of Jai", after Sawai Jai Singh II.
+- **The grid still works.** The main streets of the old city still follow the plan of 1727, which is why it is easier to find your way than it looks.`,
+  },
     // Shopping in Jaipur: What to Buy and Where (Month 2, Blog 8, EN)
   {
     slug: "shopping-in-jaipur",
@@ -1616,7 +1693,7 @@ You can visit the Jagat Shiromani Temple and the old temples of Amber town on [T
   {
     slug: "why-jaipur-was-built",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-22",
+    dateModified: "2026-10-23",
     title: "Why Jaipur Was Built",
     metaTitle: "Why Was Jaipur Built? Jai Singh II's Vision",
     metaDescription: "Why was Jaipur built? Not only because Amber was crowded. The story of Sawai Jai Singh II, the astronomer king who planned Jaipur on a grid.",
@@ -1648,7 +1725,7 @@ Jaipur became the canvas upon which he brought all these ideas together. Designe
 
 More than three centuries later, Jaipur continues to embody the vision of the extraordinary king who dared to imagine a city a century ahead of its time.
 
-Jaipur was never built simply to replace Amber. It was built to realise the vision of a ruler who believed that knowledge, planning, and progress could shape the future of an entire kingdom.
+Jaipur was never built simply to replace Amber. It was built to realise the vision of a ruler who believed that knowledge, planning, and progress could shape the future of an entire kingdom. Its famous colour came much later. Read [why Jaipur is called the Pink City](/journal/why-is-jaipur-called-the-pink-city) for that story.
 
 The story of Sawai Jai Singh II's vision comes alive on [The Crown of Jaipur](/experiences/the-crown-of-jaipur), which connects Hawa Mahal, Jantar Mantar and City Palace.`,
     },

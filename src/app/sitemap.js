@@ -5,8 +5,8 @@ import { journalArticles } from "@/data/journal";
 const BASE_URL = "https://www.raahexperiences.in";
 
 const HOME_UPDATED        = "2026-10-22";
-const EXPERIENCES_UPDATED = "2026-10-16";
-const JOURNAL_UPDATED     = "2026-10-22";
+const EXPERIENCES_UPDATED = "2026-10-23";
+const JOURNAL_UPDATED     = "2026-10-23";
 
 function withDate(entry, date) {
   return date ? { ...entry, lastModified: new Date(date) } : entry;
