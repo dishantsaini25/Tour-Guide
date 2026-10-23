@@ -11,7 +11,7 @@ export const journalArticles = [
     title: "Why Is Jaipur Called the Pink City? The Story Behind the Colour",
     metaTitle: "Why Is Jaipur Called the Pink City?",
     excerpt: "Why is everything in Jaipur's old city pink? The colour came in 1876, almost 150 years after the city was founded, and it came because of a single royal visit.",
-    metaDescription: "Why is Jaipur called the Pink City? In 1876 the old city was painted pink to welcome the Prince of Wales. A local guide tells the full story.",
+    metaDescription: "Why is Jaipur called the Pink City of India? In 1876 the old city was painted pink to welcome the Prince of Wales. A local guide tells the full story.",
     category: "History",
     readTime: "5 min read",
     image: "/experiences/living-the-walled-city/haveli-above-bazaar-old-city-jaipur.webp",
@@ -28,6 +28,7 @@ export const journalArticles = [
       { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "The Pink City of Jaipur seen from Nahargarh Fort at sunset" },
     ],
     faqs: [
+            { q: "Which city is known as the Pink City of India?", a: "Jaipur, the capital of Rajasthan. It is called the Pink City of India because the buildings of its old walled city are painted pink." },
       { q: "Why is Jaipur called the Pink City?", a: "Because the old walled city is painted pink. Maharaja Sawai Ram Singh II had the city painted in 1876 to welcome the Prince of Wales, as pink is the colour of hospitality in Rajput culture." },
       { q: "Who painted Jaipur pink?", a: "Maharaja Sawai Ram Singh II, the ruler of Jaipur, in 1876." },
       { q: "What colour was Jaipur before it was pink?", a: "According to the writer A.K. Roy, quoted in Aman Nath's book Jaipur: The Last Destination, the city was originally white. Maharaja Ram Singh then tried painting the streets in different colours, such as green and yellow, before pink was adopted for the whole city." },
@@ -65,7 +66,7 @@ Not quite. If you look closely, the colour is closer to terracotta or a soft sal
 
 The pink is not just tradition. The facades in the old walled city are still required to keep this colour, so new paint and repairs follow the same shade. In 2019, the [walled city of Jaipur](/experiences/living-walled-city) was added to the UNESCO World Heritage list, which recognised its planning and its living heritage. Jantar Mantar and Amber Fort were already on the list.
 
-## Where to see the Pink City at its best
+## Where to see the Pink City of Jaipur at its best
 
 - **Hawa Mahal at sunrise.** The most famous pink facade in the city faces east and glows in the first light. Few people know that what you see from the street is actually the back of the palace.
 - **Johari Bazaar and Bapu Bazaar.** Long rows of pink arcades with shops underneath, best walked in the late afternoon when the bazaars are busy. Our guide to [shopping in Jaipur](/journal/shopping-in-jaipur) covers what to buy there.
