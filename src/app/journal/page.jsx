@@ -3,7 +3,7 @@ import JournalClient from "./JournalClient";
 export const metadata = {
   title: { absolute: "Jaipur Travel Blog | Stories of the Pink City by Raah Experiences" },
   description:
-    "The Raah Journal — a Jaipur travel blog exploring the Pink City through heritage stories, royal history, and local culture. Curated by Raah Experiences.",
+    "The Raah Journal: a Jaipur travel blog by a licensed local guide, with practical guides, itineraries and stories of the Pink City's history and culture.",
   alternates: {
     canonical: "https://www.raahexperiences.in/journal",
   },

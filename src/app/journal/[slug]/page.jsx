@@ -293,7 +293,7 @@ export default async function JournalArticlePage({ params }) {
                 <Link key={exp.slug} href={`/experiences/${exp.slug}`} style={{ textDecoration: "none" }}>
                   <div style={{ background: "#FFFFFF", border: `1px solid ${PH}`, borderRadius: "18px", overflow: "hidden", height: "100%" }}>
                     <div style={{ position: "relative", height: "160px" }}>
-                      <Image src={cloudImg(exp.cardImage)} alt={exp.title} fill className="object-cover object-center" />
+                      <Image src={cloudImg(exp.cardImage)} alt={exp.title} fill className="object-cover object-center" sizes="(max-width:640px) 100vw,(max-width:1024px) 50vw,33vw" />
                     </div>
                     <div style={{ padding: "18px" }}>
                       <h3 style={{ fontFamily: PF, fontSize: "1.05rem", fontWeight: 700, color: CH, marginBottom: "6px" }}>

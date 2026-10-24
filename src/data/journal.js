@@ -1654,12 +1654,20 @@ Today, every Raah walk follows that same path. [Explore the experiences](/experi
   {
     slug: "hidden-temples-amber-valley",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-23",
     title: "The Hidden Temples of Amber Valley",
+    metaTitle: "Hidden Temples of Amber: 5 Temples to See",
+    metaDescription: "Beyond Amber Fort: five old temples of Amber town, from Ambikeshwar and Jagat Shiromani to Narsingh Ji, and the stories behind them.",
     excerpt: "Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells.",
     category: "Heritage",
     readTime: "6 min read",
     image: "/journal Images/hidden valleys.png",
+    faqs: [
+      { q: "Which old temples can you see in Amber?", a: "Ambikeshwar Temple, Bihari Ji Temple, Silawaton Ka Mandir, Jagat Shiromani Temple and the Narsingh Ji Temple, all in Amber town around the fort." },
+      { q: "Why is Jagat Shiromani Temple called the Meera Temple?", a: "Because of the legends surrounding its idol, which is associated with Meera Bai. The temple was built by Queen Kanakwati in honour of Prince Jagat Singh." },
+      { q: "Can you visit Ambikeshwar Temple all year?", a: "Not always. The temple floods with water during the monsoon, when even locals cannot get inside." },
+      { q: "How can I see the temples of Amber?", a: "Most of them are a short walk from Amber Fort. The Ridge & Ramparts walk passes the Jagat Shiromani Temple and the old temples of Amber town." },
+    ],
     body: `"Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells."
 
 Most visitors leave Amber with the feeling of having seen its greatest treasure — the Amber Fort. Yet behind these magnificent forts & palace lies a different world: the world of quiet shrines, centuries-old temples, forgotten rituals, and local devotion that has continued uninterrupted for generations.
@@ -1702,6 +1710,12 @@ You can visit the Jagat Shiromani Temple and the old temples of Amber town on [T
     category: "History",
     readTime: "5 min read",
     image: "/journal Images/why jaipur built.png",
+    faqs: [
+      { q: "Why was Jaipur built?", a: "Amber had become crowded and was short of water, but the main reason was the vision of Sawai Jai Singh II, who wanted a planned capital that would be a centre of learning, trade and science." },
+      { q: "Who founded Jaipur?", a: "Maharaja Sawai Jai Singh II, a ruler, scholar and astronomer, founded Jaipur in 1727." },
+      { q: "What does Sawai mean?", a: "Sawai means one and a quarter. The title was given to Jai Singh II to say he was one and a quarter times greater than an ordinary man, in recognition of his intellect." },
+      { q: "How many Jantar Mantars did Sawai Jai Singh II build?", a: "Five, in Delhi, Jaipur, Ujjain, Varanasi and Mathura." },
+    ],
     body: `## A City Born from the Vision of a King
 
 Most people believe Jaipur was built simply because Amber had become overcrowded or faced a growing shortage of water. While these challenges certainly influenced the decision, they tell only part of the story.
@@ -1734,12 +1748,20 @@ The story of Sawai Jai Singh II's vision comes alive on [The Crown of Jaipur](/e
   {
     slug: "why-jaigarh-was-never-conquered",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-23",
     title: "Why Jaigarh Was Never Conquered",
+    metaTitle: "Why Jaigarh Fort Was Never Conquered",
+    metaDescription: "Why was Jaigarh Fort never conquered? Its hilltop position, a water system built for long sieges and the Jaivana cannon, from a local guide.",
     excerpt: "Crowning the hills above Amber Fort, Jaigarh isn't remembered for the battles it fought — but for the battles it never lost.",
     category: "Heritage",
     readTime: "5 min read",
     image: "/journal Images/why jaigarh.png",
+    faqs: [
+      { q: "Why was Jaigarh Fort never conquered?", a: "Its position high on the Aravalli hills let soldiers see armies long before they arrived, and its water system of aqueducts, filtration tanks and covered reservoirs let it survive long sieges. Strong walls and its own cannon foundry made it even harder to attack." },
+      { q: "Who built Jaigarh Fort?", a: "Its foundations are attributed to Raja Kakil Dev, but it was Sawai Jai Singh II who strengthened it and made it the kingdom's military headquarters." },
+      { q: "What is the Jaivana cannon?", a: "The Jaivana is one of the largest cannons on wheels ever built. It was made in Jaigarh's own cannon foundry and is said to have had a firing range of about 35 km (22 miles)." },
+      { q: "Is Jaigarh Fort connected to Amber Fort?", a: "Yes. Jaigarh stands on the hill directly above Amber Fort, and a historic passage connects the two. You can walk this route on The Ridge & Ramparts." },
+    ],
     body: `## A Fortress Built Into the Aravalli Hills
 
 Crowning the rugged Aravalli Hills, the fortress was designed to be practically impregnable. Its strategic position allowed soldiers to spot approaching armies long before they reached the gates, while the surrounding hills formed a natural ring of defence.
@@ -1768,7 +1790,7 @@ You can walk the historic route from Amber to Jaigarh Fort and see the Jaivana c
   {
     slug: "why-cows-are-sacred",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-22",
+    dateModified: "2026-10-23",
     title: "Why Cows are Sacred in India",
     metaTitle: "Why Are Cows Sacred in India?",
     metaDescription: "Why are cows sacred in India? What the cow means in Hinduism, what the ancient texts say, and how Gau Mata is honoured in daily life.",
@@ -1776,6 +1798,12 @@ You can walk the historic route from Amber to Jaigarh Fort and see the Jaivana c
     category: "Culture",
     readTime: "4 min read",
     image: "/journal Images/cow.png",
+    faqs: [
+      { q: "Why are cows sacred in India?", a: "In Hinduism, the cow is revered as a mother and is associated with the gods. It is believed that all the gods reside within the body of a cow, so caring for her and treating her with respect is considered a duty." },
+      { q: "What does Gau Mata mean?", a: "Gau Mata means Mother Cow. It is the name given to the cow in Hinduism, where she symbolises wealth, prosperity, intellect, nutrition and abundance." },
+      { q: "Which Hindu god is associated with the cow?", a: "The cow is closely linked with Lord Krishna, who is often shown as a cowherd, and she is honoured in many Hindu rituals." },
+      { q: "Why do Hindu families feed cows before a meal?", a: "Offering food to a cow before eating is considered a sacred act. Many Hindu households set aside chapatis for the cow before the family eats." },
+    ],
     body: `## What the Cow Means in Hinduism
 
 In Hinduism, the cow is highly revered and associated with a mother and the gods. It is strongly believed that all gods reside within the body of a cow. Hence, it is the responsibility of every Hindu to accord her respect — and everyone abides by this. For most religious ceremonies, the cow is essential.
@@ -1808,7 +1836,7 @@ To see Jaipur's temples and morning rituals first-hand, join [Jaipur at Dawn](/e
   {
     slug: "jaipur-before-sunrise",
     datePublished: "2026-07-11",
-    dateModified: "2026-10-22",
+    dateModified: "2026-10-23",
     title: "Why Jaipur is Best Experienced Before Sunrise",
     metaTitle: "Why Jaipur Is Best Before Sunrise",
     metaDescription: "Why the best time to see Jaipur is at dawn: temple bells, flower markets and Hawa Mahal in the first light, before the traffic and crowds arrive.",
@@ -1816,6 +1844,11 @@ To see Jaipur's temples and morning rituals first-hand, join [Jaipur at Dawn](/e
     category: "Dawn Jaipur",
     readTime: "4 min read",
     image: "/journal Images/sunset.png",
+    faqs: [
+      { q: "What is the best time of day to explore Jaipur?", a: "Early morning, before sunrise. The streets are quiet and cool, the temples are holding their morning rituals, and you see the old city before the traffic and the crowds arrive." },
+      { q: "What can you see in Jaipur at dawn?", a: "Temple bells and morning prayers, farmers bringing flowers and vegetables to the markets, locals opening generations-old eateries, and Hawa Mahal glowing in the first light." },
+      { q: "How can I experience Jaipur at sunrise?", a: "Jaipur at Dawn is a 2.5-hour guided walk through the old city at sunrise, starting from Jaleb Chowk in the City Palace complex, with breakfast and chai at a local eatery." },
+    ],
     body: `## Jaipur at Dawn: A City That Awakens in Gold
 
 If anyone would ask me which is the best time to experience Jaipur, I would certainly mention: at Dawn, before anyone wakes up. Jaipur before sunrise belongs to a different world — it seems to be peaceful, slow-paced, and even more beautiful than at its usual hours.
@@ -1843,8 +1876,9 @@ To experience it for yourself, join [Jaipur at Dawn](/experiences/jaipur-at-dawn
     slug: "conversations-as-a-guide",
     metaTitle: "Conversations I'll Never Forget as a Guide",
     datePublished: "2026-07-31",
-    dateModified: "2026-10-06",
+    dateModified: "2026-10-23",
     title: "Few Conversations That I Will Never Forget as a Guide",
+    metaDescription: "Unplanned conversations with travellers that stayed with a Jaipur guide, and how one of them led to the idea of Raah.",
     excerpt: "Leading a tour through Jaipur is always joyful, but there are few unplanned conversations that stay with me forever.",
     category: "From the Curator",
     readTime: "5 min read",
