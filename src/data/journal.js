@@ -781,7 +781,7 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
     slug: "forts-in-jaipur",
     metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
     datePublished: "2026-10-10",
-    dateModified: "2026-10-22",
+    dateModified: "2026-10-26",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
     excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
     metaDescription: "Amer, Jaigarh or Nahargarh: which fort is better? A local guide compares Jaipur's three hill forts, what to see in each and how to visit all three.",
@@ -848,7 +848,7 @@ Instead of taking a car or jeep, walk. It gives you the chance to explore the hi
 
 Look up from Amer and you'll see a long line of walls on the hill above it. That's Jaigarh. It was never meant to be beautiful. It was built to make sure Amer could never be taken.
 
-Its foundations go back to Raja Kakil Dev in the 11th century, but it was Sawai Jai Singh II who turned it into the kingdom's military headquarters. He was the same ruler who later founded Jaipur and built the Jantar Mantar observatory. Jaigarh became a cannon foundry, and its most famous product is still sitting there: the **Jaivana cannon**, one of the largest wheeled cannons ever made. It's said to have been fired only once.
+Its foundations go back to Raja Kakil Dev in the 12th century, but it was Sawai Jai Singh II who turned it into the kingdom's military headquarters. He was the same ruler who later founded Jaipur and built the Jantar Mantar observatory. Jaigarh became a cannon foundry, and its most famous product is still sitting there: the **Jaivana cannon**, one of the largest wheeled cannons ever made. It's said to have been fired only once.
 
 What impresses me most about Jaigarh isn't the cannon, though. It's the water. The fort was engineered to survive long sieges, with aqueducts, filtration tanks and huge rainwater reservoirs, many of them covered to stop the water from evaporating in the Rajasthan heat. A fort that can't be starved of water is very hard to defeat, and Jaigarh never was. I've written more about this in [Why Jaigarh Was Never Conquered](/journal/why-jaigarh-was-never-conquered).
 
@@ -1654,7 +1654,7 @@ Today, every Raah walk follows that same path. [Explore the experiences](/experi
   {
     slug: "hidden-temples-amber-valley",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-23",
+    dateModified: "2026-10-26",
     title: "The Hidden Temples of Amber Valley",
     metaTitle: "Hidden Temples of Amber: 5 Temples to See",
     metaDescription: "Beyond Amber Fort: five old temples of Amber town, from Ambikeshwar and Jagat Shiromani to Narsingh Ji, and the stories behind them.",
@@ -1663,9 +1663,9 @@ Today, every Raah walk follows that same path. [Explore the experiences](/experi
     readTime: "6 min read",
     image: "/journal Images/hidden valleys.png",
     faqs: [
-      { q: "Which old temples can you see in Amber?", a: "Ambikeshwar Temple, Bihari Ji Temple, Silawaton Ka Mandir, Jagat Shiromani Temple and the Narsingh Ji Temple, all in Amber town around the fort." },
+      { q: "Which old temples can you see in Amber?", a: "Ambikeshwar Temple, Bihari Ji Temple, Badri Narayan Temple (Silawaton Ka Mandir), Jagat Shiromani Temple and the Narsingh Ji Temple, all in Amber town around the fort." },
       { q: "Why is Jagat Shiromani Temple called the Meera Temple?", a: "Because of the legends surrounding its idol, which is associated with Meera Bai. The temple was built by Queen Kanakwati in honour of Prince Jagat Singh." },
-      { q: "Can you visit Ambikeshwar Temple all year?", a: "Not always. The temple floods with water during the monsoon, when even locals cannot get inside." },
+      { q: "Can you visit Ambikeshwar Temple all year?", a: "Not always. In the monsoon, when the groundwater rises, the shrine is submerged and cannot be entered, even by locals." },
       { q: "How can I see the temples of Amber?", a: "Most of them are a short walk from Amber Fort. The Ridge & Ramparts walk passes the Jagat Shiromani Temple and the old temples of Amber town." },
     ],
     body: `"Long before tourists arrived to admire Amber Fort, the kingdom awoke not to the sound of cameras, but to the ringing of temple bells."
@@ -1676,7 +1676,7 @@ By walking through the old streets of Amber, you'll come across places that rare
 
 ## Ambikeshwar Temple
 
-Hidden beneath the shadow of Amber Fort, Ambikeshwar Temple remains one of the kingdom's oldest living places of worship. While thousands pass nearby on their way to the palace, few pause to notice the quiet devotion that continues here every single day. The temple gets flooded with water in monsoon season, making it inaccessible even for locals. Ambikeshwar temple dates back to the 10th century, supposedly built by King Kakil Dev, one of the earliest rulers of the Kachhawaha Dynasty.
+Hidden beneath the shadow of Amber Fort, Ambikeshwar Temple remains one of the kingdom's oldest living places of worship. While thousands pass nearby on their way to the palace, few pause to notice the quiet devotion that continues here every single day. The shrine is believed to be around 5,000 years old. Built in the traditional Nagara style and supported on 14 pillars, it houses its principal deity, Lord Shiva, in the form of a natural rock about 22 feet below ground level. In the monsoon, when the groundwater rises, the shrine is submerged, creating a natural jalabhishek, the ritual pouring of water over Lord Shiva. During this time the temple cannot be entered, even by locals.
 
 ## Bihari Ji Temple
 
@@ -1684,7 +1684,7 @@ A stone's throw away from Ambikeshwar Temple lies this forgotten temple — one 
 
 ## Badri Narayan Temple (Silawaton Ka Mandir)
 
-Perched gracefully on the hillside overlooking Amber, the Laxmi Narayan Temple is one of those landmarks that almost every visitor notices, yet surprisingly few take the time to explore. Known locally as Silawaton Ka Mandir — the Temple of the Stone Carvers — it quietly stands as a testament to the devotion and craftsmanship of the community that shaped much of Amber's architectural heritage.
+Perched gracefully on the hillside overlooking Amber, the Badri Narayan Temple, dedicated to Lord Laxmi Narayan, is one of those landmarks that almost every visitor notices, yet surprisingly few take the time to explore. Known locally as Silawaton Ka Mandir — the Temple of the Stone Carvers — it quietly stands as a testament to the devotion and craftsmanship of the community that shaped much of Amber's architectural heritage.
 
 ## Jagat Shiromani Temple
 
@@ -1748,7 +1748,7 @@ The story of Sawai Jai Singh II's vision comes alive on [The Crown of Jaipur](/e
   {
     slug: "why-jaigarh-was-never-conquered",
     datePublished: "2026-07-30",
-    dateModified: "2026-10-23",
+    dateModified: "2026-10-26",
     title: "Why Jaigarh Was Never Conquered",
     metaTitle: "Why Jaigarh Fort Was Never Conquered",
     metaDescription: "Why was Jaigarh Fort never conquered? Its hilltop position, a water system built for long sieges and the Jaivana cannon, from a local guide.",
@@ -1758,7 +1758,7 @@ The story of Sawai Jai Singh II's vision comes alive on [The Crown of Jaipur](/e
     image: "/journal Images/why jaigarh.png",
     faqs: [
       { q: "Why was Jaigarh Fort never conquered?", a: "Its position high on the Aravalli hills let soldiers see armies long before they arrived, and its water system of aqueducts, filtration tanks and covered reservoirs let it survive long sieges. Strong walls and its own cannon foundry made it even harder to attack." },
-      { q: "Who built Jaigarh Fort?", a: "Its foundations are attributed to Raja Kakil Dev, but it was Sawai Jai Singh II who strengthened it and made it the kingdom's military headquarters." },
+      { q: "Who built Jaigarh Fort?", a: "Its foundation is attributed to Raja Kakil Dev in the 12th century. It later became a famous cannon foundry under Raja Man Singh I, and the Jaivana cannon was cast here under Sawai Jai Singh II in 1720." },
       { q: "What is the Jaivana cannon?", a: "The Jaivana is one of the largest cannons on wheels ever built. It was made in Jaigarh's own cannon foundry and is said to have had a firing range of about 35 km (22 miles)." },
       { q: "Is Jaigarh Fort connected to Amber Fort?", a: "Yes. Jaigarh stands on the hill directly above Amber Fort, and a historic passage connects the two. You can walk this route on The Ridge & Ramparts." },
     ],
@@ -1770,9 +1770,11 @@ Crowning the rugged Aravalli Hills, the fortress was designed to be practically 
 
 Yet Jaigarh's greatest strength lay within its walls. Decades before sustainable construction entered mainstream thinking, the fortress was engineered to withstand lengthy sieges. An ingenious network of aqueducts, filtration tanks, and massive rainwater reservoirs ensured a dependable water supply throughout the year. Many reservoirs were even covered to prevent evaporation under Rajasthan's scorching sun, allowing the fort to remain self-sufficient for prolonged periods.
 
-## Sawai Jai Singh II and the Cannon Foundry
+## Jaigarh and the Cannon Foundry
 
-Though the foundations of Jaigarh are attributed to Raja Kakil Dev in the 11th century, it was Sawai Jai Singh II who transformed it into one of India's greatest military fortresses. A visionary ruler with a passion for science, engineering, and astronomy, he strengthened its defences and established it as the kingdom's military headquarters.
+The foundation of Jaigarh Fort is attributed to Raja Kakil Dev, who won the territory in the 12th century and laid the foundation on "Cheel ka Teela", the hill of eagles, a place where eagles once gathered in great numbers.
+
+The fort became a famous cannon foundry under Raja Man Singh I, who took a keen interest in how cannons were made. By 1587, with the help of gun makers and local people, he had begun casting cannons and their accessories here. Some cannons from that period can still be seen at the fort. The most important and prestigious cannon ever cast in this foundry is the giant Jaivana, made under Sawai Jai Singh II in 1720.
 
 ## The Jaivana Cannon
 
