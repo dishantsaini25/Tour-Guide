@@ -3,6 +3,98 @@
  */
 
 export const journalArticles = [
+      // ¿Es seguro viajar a la India? (Month 2, Blog 9, ES)
+  {
+    slug: "es-seguro-viajar-a-la-india",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    title: "¿Es seguro viajar a la India? Lo que de verdad necesitas saber, contado desde Jaipur",
+    metaTitle: "¿Es seguro viajar a la India y a Jaipur?",
+    excerpt: "Sí, viajar a la India es seguro para la mayoría de los viajeros. Un guía oficial de Jaipur explica cuáles son los riesgos reales, cuáles son solo miedos y cómo moverte con tranquilidad.",
+    metaDescription: "¿Es seguro viajar a la India? Un guía oficial de Jaipur explica los riesgos reales, las estafas más comunes y consejos para viajar sola como mujer.",
+    category: "Travel Planning",
+    readTime: "6 min read",
+    lang: "es",
+    image: "/experiences/jaipur-at-dawn/women-entering-haveli-doorway-jaipur.webp",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-crown-of-jaipur",
+      "beyond-the-pink",
+    ],
+    images: [
+      { src: "/experiences/jaipur-at-dawn/old-city-gateway-jaipur.webp", alt: "Puerta de la ciudad vieja de Jaipur con tráfico por la mañana" },
+      { src: "/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp", alt: "Un rickshaw de bicicleta delante de un bazar rosa de Jaipur" },
+      { src: "/experiences/beyond-the-pink/gulab-ji-chai-wale-jaipur.webp", alt: "Puesto de té Gulab Ji Chai Wale en la ciudad vieja de Jaipur" },
+      { src: "/experiences/beyond-the-pink/locals-at-haveli-doorway-jaipur.webp", alt: "Vecinos conversando en la puerta de una haveli en Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-night-crowd.webp", alt: "El Hawa Mahal iluminado de noche con familias locales paseando" },
+    ],
+    faqs: [
+      { q: "¿Es seguro viajar a la India?", a: "Sí, para la mayoría de los viajeros. Los problemas más comunes son pequeñas estafas, el tráfico y el estómago, y casi todos se pueden evitar con información y sentido común." },
+      { q: "¿Es seguro viajar sola a la India siendo mujer?", a: "Muchas mujeres lo hacen sin problemas. Ayuda vestir de forma discreta, usar taxis de aplicación, quedarse en zonas concurridas por la noche y compartir tu ubicación con alguien de confianza." },
+      { q: "¿Es seguro Jaipur para los turistas?", a: "Sí. Jaipur es una de las ciudades más visitadas de la India y está acostumbrada al turismo. Los riesgos principales son las estafas a turistas y el tráfico de la ciudad vieja." },
+      { q: "¿Se puede beber agua del grifo en la India?", a: "No es recomendable. Bebe agua embotellada y evita el hielo en los puestos callejeros." },
+      { q: "¿Funcionan Uber y Ola en Jaipur?", a: "Sí, los dos funcionan bien en Jaipur y son una forma cómoda y segura de moverse por la ciudad." },
+      { q: "¿Cuál es el número de emergencias en la India?", a: "El 112." },
+    ],
+    body: `"¿Es seguro viajar a la India?" es probablemente la pregunta que más me hacen los viajeros de España y Latinoamérica antes de reservar. Muchas veces llega acompañada de otra: "¿Y si viajo sola?".
+
+Soy guía oficial en Jaipur y acompaño a viajeros todos los días, muchos de ellos hispanohablantes. Mi respuesta honesta es que sí, la India es un destino seguro para la gran mayoría de los viajeros, siempre que viajes con el mismo sentido común que usarías en cualquier gran ciudad del mundo. Lo que cambia es el tipo de precauciones. Aquí te cuento cuáles son los riesgos reales, cuáles son solo miedos y cómo moverte con tranquilidad por Jaipur.
+
+## La respuesta corta
+
+Sí, viajar a la India es seguro para la mayoría de los turistas. Los problemas más comunes no son graves: pequeñas estafas, precios inflados, el tráfico y algún malestar de estómago. Con un poco de información, casi todos se pueden evitar.
+
+## Los riesgos reales (y cómo evitarlos)
+
+### Estafas y precios inflados
+
+Es el problema más frecuente. Estos son los casos que veo más a menudo en Jaipur:
+
+- **La estafa de las piedras preciosas.** Alguien muy amable te propone comprar gemas para revenderlas con beneficio en tu país. No funciona así. Si alguien te lo propone, aléjate.
+- **Las tiendas con comisión.** Algunos conductores y guías no oficiales te llevan a tiendas que les pagan una comisión por lo que compras. Ese dinero sale de tu bolsillo.
+- **"Ese monumento está cerrado hoy".** Si alguien te lo dice en la puerta y te ofrece llevarte a otro sitio, compruébalo tú mismo.
+- **Guías sin licencia.** Los guías oficiales llevan una identificación del gobierno. Pídela antes de contratar a alguien en la calle.
+
+### El tráfico
+
+Para muchos viajeros, cruzar la calle es lo más difícil del viaje. El tráfico en la ciudad vieja es intenso y no siempre sigue las reglas que conoces. Cruza despacio y a un ritmo constante, sin correr, y si puedes, hazlo junto a la gente local.
+
+### El estómago
+
+No es peligroso, pero puede estropearte un par de días. Bebe solo agua embotellada, elige puestos de comida con mucha gente local (la comida se renueva constantemente) y, los primeros días, ve poco a poco con el picante. Si quieres algo menos picante, pide "kam mirch" (poco chile).
+
+## ¿Es seguro viajar sola a la India como mujer?
+
+Es una pregunta legítima y merece una respuesta seria. Muchas mujeres viajan solas por la India y por Jaipur sin problemas. Estas son las recomendaciones que doy a mis viajeras:
+
+- **Viste de forma cómoda y discreta.** Ropa holgada que cubra hombros y rodillas llama mucho menos la atención, y además la necesitas para entrar en templos.
+- **Usa taxis de aplicación.** Uber y Ola funcionan bien en Jaipur y son más seguros que negociar con conductores que se te acercan.
+- **Sé educada pero firme.** Un "no, gracias" y seguir caminando funciona mejor que dar explicaciones.
+- **Por la noche, quédate en zonas concurridas.** Los bazares de la ciudad vieja y los monumentos iluminados están llenos de familias locales por la tarde y la noche.
+- **Comparte tu ubicación** con alguien de confianza y guarda en tu teléfono la dirección de tu hotel.
+
+Si los primeros días la ciudad te abruma, un paseo guiado por la ciudad vieja ayuda mucho. Después de una mañana con alguien local, la mayoría de las viajeras se sienten mucho más seguras para explorar por su cuenta.
+
+## Lo que no deberías temer tanto
+
+- **La gente.** En Jaipur la mayoría de las personas son amables y curiosas. Muchos te pedirán una foto o te preguntarán de dónde eres. No es peligro, es curiosidad.
+- **Los monumentos.** Los grandes monumentos de Jaipur, como el [Fuerte Amber](/journal/fuerte-amber-guia-completa), el Palacio de la Ciudad o el Hawa Mahal, son lugares muy visitados y bien organizados.
+- **La comida callejera.** Elegida con un poco de criterio, es una de las mejores partes del viaje.
+
+## Consejos prácticos antes de viajar
+
+- Revisa los requisitos de entrada en la web oficial del gobierno de la India o en el consulado de tu país antes de reservar.
+- Contrata un seguro de viaje que cubra gastos médicos.
+- Guarda el número de emergencias de la India: **112**.
+- Lleva algo de efectivo en billetes pequeños. Muchos puestos y tuk-tuks no aceptan tarjeta.
+- Respeta las costumbres locales en los templos: descálzate y cubre hombros y rodillas.
+
+## Viajar a Jaipur con un guía oficial en español
+
+Una forma sencilla de evitar la mayoría de estos problemas es recorrer la ciudad con un guía con licencia. En Raah todas nuestras experiencias están guiadas por un guía oficial, en grupos pequeños, y [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur). No hacemos paradas en tiendas con comisión: el paseo va donde va la historia, no donde una tienda nos paga.
+
+Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todas nuestras experiencias en Jaipur](/experiences), leer nuestra guía de [qué ver en Jaipur](/journal/que-ver-en-jaipur) o la de [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).`,
+  },
     // Why Is Jaipur Called the Pink City? (Month 2, Blog 7, EN)
   {
     slug: "why-is-jaipur-called-the-pink-city",
@@ -652,6 +744,7 @@ From October to March, evenings in Jaipur are cool and comfortable, which makes 
   {
     slug: "que-ver-en-jaipur",
     datePublished: "2026-10-12",
+        dateModified: "2026-10-27",
     title: "Qué ver en Jaipur: guía de un guía local",
     metaTitle: "Qué ver en Jaipur: guía de un guía local",
     excerpt: "Qué ver en Jaipur, en qué orden y a qué hora: Hawa Mahal, Palacio de la Ciudad, Jantar Mantar, Fuerte Amber, los bazares y dónde comer, contado por un guía local.",
@@ -767,6 +860,10 @@ Mi recomendación es comer donde comen los locales, en negocios familiares con r
 ## ¿Cuándo visitar Jaipur?
 
 La mejor época es de octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y en julio, agosto y septiembre llegan los monzones. Si viajas en verano, que es cuando muchos españoles tienen vacaciones, organiza las visitas a primera hora de la mañana y al atardecer, y deja las horas centrales del día para descansar. Lo explico mes a mes en [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).
+
+Si te preocupa la seguridad, aquí respondo con detalle a la pregunta [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)
+
+## Visitar Jaipur con un guía local en español
 
 ## Visitar Jaipur con un guía local en español
 
@@ -906,7 +1003,7 @@ For Nahargarh at sunset and the forts lit up at night, [The Blue Hour](/experien
   {
     slug: "is-jaipur-safe-solo-female-travellers",
     datePublished: "2026-10-01",
-    dateModified: "2026-10-21",
+        dateModified: "2026-10-27",
     title: "Is Jaipur Safe for Solo and Female Travellers?",
     metaTitle: "Is Jaipur Safe for Tourists and Solo Women?",
     excerpt: "The honest answer: yes, with the same sensible precautions you'd apply in any major city — and Jaipur has a few things going for it that make this an easier answer than in many destinations.",
@@ -969,7 +1066,9 @@ None of this is Jaipur-specific — it's the same baseline advice worth followin
 
 For more on how Raah's experiences are structured day to day, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide), or [get in touch](/contact) if you'd like to discuss a private booking.
 
-To see how each walk is structured, [explore all Raah experiences](/experiences).`,
+To see how each walk is structured, [explore all Raah experiences](/experiences).
+
+Reading in Spanish? Here is our guide: [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)`,
   },
     // Fuerte Amber: Guía Completa Blog 7
   {
