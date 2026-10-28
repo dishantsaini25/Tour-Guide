@@ -1705,115 +1705,183 @@ Trip length changes what you see, but it shouldn't change how safe you feel doin
 
 Whatever the length of your trip, you can [see every experience with its timings](/experiences) to plan your days.`,
   },
-    //   Things to Do in Jaipur: The Complete Guide Blog 1
+    //   Things to Do in Jaipur: pillar guide (rewritten Oct 2026)
   {
     slug: "things-to-do-in-jaipur-complete-guide",
     datePublished: "2026-09-19",
-    dateModified: "2026-10-08",
-    title: "Things to Do in Jaipur: The Complete Guide",
-    excerpt: "Jaipur doesn't reveal itself all at once. This guide moves through the city the way it actually moves — by time of day, not by checklist.",
-    metaDescription: "Things to do in Jaipur, hour by hour — sunrise walks, forts, street food, night tours and hidden places, from a licensed local guide.",
+    dateModified: "2026-10-29",
+    title: "Things to Do in Jaipur: 15 Best Places to See, From a Local Guide",
+    metaTitle: "15 Best Things to Do in Jaipur (Local Guide)",
+    excerpt: "The things to do in Jaipur that a licensed local guide recommends to his own guests, from Hawa Mahal and Amber Fort to the bazaars, street food and day trips, with a tip for each.",
+    metaDescription: "15 things to do and places to see in Jaipur, from Hawa Mahal and Amber Fort to bazaars, street food and day trips, picked by a licensed local guide.",
     category: "Jaipur Guide",
-    readTime: "10 min read",
-    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
+    readTime: "12 min read",
+    image: "/experiences/the-blue-hour/jaipur-sunset-sky-old-city.webp",
     relatedExperiences: [
+      "the-crown-of-jaipur",
       "jaipur-at-dawn",
-      "the-blue-hour",
       "ridge-and-ramparts",
-      "the-lost-kingdom",
-      "artisans-jaipur",
+      "beyond-the-pink",
+      "the-blue-hour",
     ],
-      images: [
-      { src: "/journal Images/raah-client-image-1.webp", alt: "Raah guest experience in Jaipur" },
-      { src: "/journal Images/raah-client-image-2.webp", alt: "Raah guest experience in Jaipur" },
-      { src: "/journal Images/raah-testimonial-1.webp", alt: "Raah guest experience in Jaipur" },
-      { src: "/journal Images/raah-testimonial-2.webp", alt: "Raah guest experience in Jaipur" },
+    images: [
+      { src: "/experiences/crown-of-jaipur/guests-jantar-mantar-rashi-yantra-jaipur.webp", alt: "Raah guests at the Rashi Yantras of Jantar Mantar, Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-evening.webp", alt: "Chandra Mahal at City Palace, Jaipur, in the evening" },
+      { src: "/experiences/ridge-and-ramparts/jagat-shiromani-temple-marble-gateway-amer.webp", alt: "The carved marble gateway of Jagat Shiromani Temple in Amber town" },
+      { src: "/experiences/the-blue-hour/sunset-over-jaipur-from-nahargarh.webp", alt: "Sunset over Jaipur seen from Nahargarh Fort" },
+      { src: "/experiences/jaipur-at-dawn/marigold-heap-flower-market-jaipur.webp", alt: "Marigolds piled high at Jaipur's flower market at dawn" },
+      { src: "/experiences/ridge-and-ramparts/raah-guests-amber-aravalli-hills.webp", alt: "Raah guests in the Aravalli Hills around Amber" },
     ],
     faqs: [
-      { q: "How many days are enough to visit Jaipur?", a: "At least three days and two nights is recommended to experience Jaipur properly — enough time to cover its heritage, food, and off-the-beaten-path side without rushing." },
-      { q: "Do I need to book experiences in advance?", a: "Yes — at least 24–48 hours ahead is recommended, especially for The Lost Kingdom, which needs extra guide preparation." },
-      { q: "Are these experiences suitable for children?", a: "Most experiences welcome families, though recommendations vary by age. Jaipur at Dawn suits children 7 and above. The Lost Kingdom and The Ridge & Ramparts involve more walking on uneven terrain, so children 12–14 and older are better suited to these two." },
-      { q: "What languages are the experiences conducted in?", a: "All experiences are conducted in English and Spanish." },
+      { q: "What are the best things to do in Jaipur?", a: "See Hawa Mahal at sunrise, City Palace, Jantar Mantar and Amber Fort, watch the sunset from Nahargarh Fort, and spend an evening in the old city bazaars eating street food." },
+      { q: "What is Jaipur famous for?", a: "Its pink old city, its forts and palaces, Jantar Mantar, and crafts like block printing, blue pottery and gemstones." },
+      { q: "Is Jaipur worth visiting?", a: "Yes. It has three UNESCO World Heritage Sites (Amber Fort, Jantar Mantar and the walled city) and is one of the easiest Indian cities to explore on foot." },
+      { q: "What can I do in Jaipur in one day?", a: "Start with Hawa Mahal at sunrise, see Jantar Mantar and City Palace in the morning, Amber Fort after lunch, and finish with the sunset at Nahargarh Fort." },
+      { q: "How many days do you need in Jaipur?", a: "Two days for the main sights, three days to add the hills, the food and the countryside without rushing." },
+      { q: "Are these experiences suitable for children?", a: "Most are. Jaipur at Dawn suits children aged 7 and above. The Lost Kingdom and The Ridge & Ramparts involve more walking on uneven ground, so they suit children aged 12 to 14 and above." },
+      { q: "What languages are the experiences in?", a: "All experiences are in English and Spanish." },
     ],
-    body: `Jaipur doesn't reveal itself all at once. Most visitors see it through a car window — Amber Fort in the morning, City Palace by noon, a rushed photo at Hawa Mahal before lunch. That's one way to experience the Pink City. It's rarely the most memorable one.
+    body: `Most people see Jaipur through a car window: Amber Fort in the morning, City Palace by noon, a quick photo at Hawa Mahal and on to the next city. I have been guiding in Jaipur for years, and I can tell you the city gives much more to those who slow down a little.
 
-This guide moves through Jaipur the way the city itself does — by time of day — because what's worth seeing at 6 AM is often gone by 10, and what makes the evening special hasn't even begun by lunchtime.
+Here are the things to do in Jaipur that I recommend to my own guests, from the famous monuments to the places most visitors miss, with a tip for each one. At the end you will find day trips, how to plan your visit and answers to the questions I am asked most often.
 
-## Morning Experiences in Jaipur
+## Top Things to Do in Jaipur
 
-Before 7 AM, Jaipur still belongs almost entirely to the people who live there.
+### 1. See Hawa Mahal at Sunrise
 
-[Jaipur at Dawn](/experiences/jaipur-at-dawn) ($30 / ₹2,500, 2.5 hours, 5:00–7:30 AM or 8:00–10:30 AM) opens with the flower and vegetable market coming to life, followed by the milk market as countryside vendors arrive by bicycle, and the morning aarti at Govind Dev Ji Temple — one of the city's most revered shrines. We've written more about why [mornings are Jaipur's best-kept secret](/journal/jaipur-before-sunrise) — the walk passes Hawa Mahal just as the sun catches its façade, ending with breakfast and chai at a local eatery.
+The Palace of Winds is the most photographed building in Jaipur, and most visitors do not realise that the famous honeycomb façade is actually the back of the palace. It was built in 1799 so that the women of the court could watch processions in the street without being seen.
 
-[The Ridge & Ramparts](/experiences/ridge-and-ramparts) ($32 / ₹2,800, 3 hours, 7:00–10:00 AM or 9:00 AM–12:00 PM, meeting at the Amber Fort View Point, Maota Lake) picks up where the old city leaves off, moving into Amber town and along the ridge connecting it to Jaigarh Fort. Along the way: the 16th-century Jagat Shiromani Temple, centuries-old stepwells that once doubled as neighborhood gathering spots, Asiatic elephants living alongside the local community, and a historic tunnel once reserved for the royal family, ending at the Jaivana cannon — [the largest cannon ever built, and the reason Jaigarh was never conquered](/journal/why-jaigarh-was-never-conquered).
+**Tip:** Hawa Mahal is a monument to admire from the outside. Don't feel you have to go in; enter only if you are curious to see how it feels from behind the windows. Go just after sunrise, when the first light turns the east-facing façade gold and the street in front is still quiet.
 
-## Afternoon Heritage & Culture Walks
+### 2. Walk Through City Palace
 
-Midday is when Jaipur's layers of history reward slower attention.
+City Palace is still home to the royal family of Jaipur, who live in Chandra Mahal. Visitors can walk through the courtyards, the textile and arms galleries, and Pritam Niwas Chowk, the courtyard with four painted gates, each representing a season.
 
-[The Crown of Jaipur](/experiences/the-crown-of-jaipur) ($32 / ₹2,800, 2.5 hours, 10:30 AM–1:00 PM or 1:30–4:00 PM) links three of the city's most iconic landmarks — Hawa Mahal, Jantar Mantar, and City Palace — into one continuous story about Jaipur's founder, Sawai Jai Singh II. Along the way, you'll learn that Hawa Mahal's famous face is actually the back of the palace, see the Virat Samrat Yantra (the largest stone sundial in the world), and walk through City Palace's courtyards and museums before closing with a tuk-tuk ride through the everyday bustle of the old city.
+**Tip:** City Palace is more about opulence and grandeur than a museum. If you are going mainly for the famous Blue Room, know that it is only open on the palace's guided royal tour, which covers almost every corner of the palace at an extra cost.
 
-[The Artisan's Jaipur](/experiences/artisans-jaipur) takes a different route entirely — into the workshops where the city's craft traditions are still practiced by hand. Block printing, brasswork and coppersmithing, gem cutting, marble carving, lac bangle making, and blue pottery are all part of this walk, with visits to family workshops that have carried these techniques across generations.
+### 3. Understand Jantar Mantar
 
-## Evening & Night Experiences
+Built by Sawai Jai Singh II, the founder of Jaipur, this 18th-century observatory is a UNESCO World Heritage Site. The Virat Samrat Yantra is the largest stone sundial in the world and still tells local time to within a few seconds.
 
-As the temperature drops, Jaipur's old city shifts into its most social hours.
+**Tip:** don't make the mistake of visiting Jantar Mantar alone or without a professional guide. Without an explanation, the instruments look like sculptures, and you miss what makes the place remarkable.
 
-[Beyond the Pink](/experiences/beyond-the-pink) ($32 / ₹2,800, 3 hours, 4:00–7:00 PM) winds through the old city's bazaars and artisan lanes as shops light up for the evening — past Hawa Mahal, Tripoliya Darwaza, and Ishwari Laat, into lanes most visitors never find, like Purohit Ji Ka Katla market and Maniharon Ka Rasta, home to generations of lac bangle makers. The walk includes a curated street food trail — pani puri, kachori, jalebi, lassi, and kulfi served in clay pots.
+These first three sit within walking distance of each other. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) links Hawa Mahal, Jantar Mantar and City Palace into one walk about the man who built the city.
 
-[The Blue Hour](/experiences/the-blue-hour) (₹7,500 for two, starting at Jal Mahal — 4:30–8:30 PM, October to March) takes a different pace entirely: an open-air jeep ride past illuminated Nahargarh Fort, Amber Fort, and the central bazaars as the city lights up after dark. It's the closest thing Jaipur offers to a nightlife tour, and on rainy evenings, the open jeeps switch to a covered roof so the experience runs regardless of season.
+### 4. Explore Amber Fort (Amer Fort) and the Town Below It
 
-[The Farm & Fire](/experiences/farm-and-fire) moves the food theme into the countryside. It isn't structured as a cooking class — it's closer to being welcomed into a local Hindu family's home, sharing a meal, and understanding the culture behind the food rather than just the recipe.
+Amber Fort, also spelled Amer Fort and part of the UNESCO-listed Hill Forts of Rajasthan, was the seat of the Kachhawaha kings before Jaipur was built. Don't miss Ganesh Pol and the Sheesh Mahal, the hall of mirrors.
 
-## Off-the-Beaten-Path Jaipur
+Most visitors leave without seeing the old town at the foot of the fort, with the 16th-century Jagat Shiromani Temple and its carved marble gateway, and Panna Meena ka Kund, the stepwell with criss-cross stairs. Read more about the [hidden temples of Amber](/journal/hidden-temples-amber-valley).
 
-For travellers who've already covered the forts and palaces, or simply want a side of Jaipur most visitors never encounter.
+**Tip:** avoid the midday hours and late evening. Amber is at its best in the morning, though it is busy then too, so arrive early and walk down into Amber town afterwards.
 
-[The Lost Kingdom](/experiences/the-lost-kingdom) ($40 / ₹3,500, 4.5 hours, 6:00–10:30 AM, daily on request, meeting at Kheri Gate near the Anokhi Museum) is a genuine hike, not a walking tour — through the Aravalli Hills surrounding Amber, past forgotten fortifications, a hillside shrine to Lord Hanuman, and a secluded Shiva temple, ending at a viewpoint over Amber Fort and the valley below. We go deeper into what's hidden along this route in [The Hidden Temples of Amber Valley](/journal/hidden-temples-amber-valley). It runs on request, with at least 48 hours' notice, to keep groups small and guide preparation thorough.
+### 5. Climb Up to Jaigarh and Nahargarh
 
-[Living the Walled City](/experiences/living-walled-city) approaches the old city from a different angle than Beyond the Pink — less about bazaars and food, more about the rhythm of everyday life within Jaipur's historic walls. The walk begins near the city's central heart with context on Jaipur's 18th-century layout and planning, then passes through Sireh Deori Bazaar and centuries-old temples like Kalki and Ramchandra Mandir. Along the way is the restored Sawai Man Singh townhall, once the seat of the city's local government, and lattice-carved windows that allowed royal women to watch festivals and processions from behind the wall.
+Jaigarh Fort, on the hill above Amber, was the kingdom's cannon foundry and is home to the Jaivana, cast in 1720 and one of the largest cannons on wheels in the world. Nahargarh, on the ridge above the old city, has the best view over Jaipur and Madhavendra Bhawan, the nine apartments built for the king's nine queens.
 
-## Beyond the Guided Walks
+**Tip for Nahargarh:** don't rush up at the last minute to chase the sunset. Leave at least two hours before sunset for the drive up through the green valley, parking, a short walk and exploring the fort, then settle into Padao Restaurant to watch the sunset with food and drinks. Avoid the free sunset points, which get so crowded that you struggle to see anything.
 
-Jaipur rewards independent exploring too, and there's plenty worth adding to a longer stay:
+Read more: [Amer vs Jaigarh vs Nahargarh: which fort to visit](/journal/forts-in-jaipur). [The Ridge & Ramparts](/experiences/ridge-and-ramparts) walk goes from Amber town up to Jaigarh.
 
-- **Galta Kund** — a sacred shrine tucked into a quiet valley outside the city, worth the short hike for its stillness alone
-- **The sound and light show at Amber Fort** — a memorable way to spend an evening under an open sky
-- **A hand block printing workshop in Bagru** — with the Chippa community, widely credited as the originators of the craft
-- **Chand Baori** — Asia's largest stepwell, and a striking piece of architecture in its own right
-- **Pushkar** — roughly half a day away, known for its lake and its camel fair season
-- **Jhalana Leopard Reserve** — one of the very few places in the world where leopards can be reliably spotted in the wild, home to more than 40 leopards, including several cubs
-- **Ranthambore National Park** — a longer day trip, for travellers hoping to spot tigers
-- **A quiet evening at a rooftop café** overlooking the old city skyline
-- **Blue pottery workshops** — learning technique directly from artisans who've spent years perfecting it
+### 6. Wander the Old City Bazaars
 
-## Best Time of Year to Visit Jaipur
+The walled city was planned as a city of trade, and its bazaars are still organised by craft: jewellery in Johari Bazaar, textiles and leather jootis in Bapu Bazaar, and lac bangles in Maniharon ka Rasta, where families have made them for generations.
 
-Like most of Rajasthan, Jaipur is easiest to explore on foot between October and March, when daytime temperatures are milder. Summer (April–June) runs very hot, and the monsoon (July–September) brings humidity and occasional heavy rain.
+For a break with a view, Daagla Rooftop Restaurant in the old city has good food, a great vibe and views over the Pink City.
 
-That said, several experiences work well year-round. [The Blue Hour](/experiences/the-blue-hour) runs comfortably in every season thanks to the covered-roof jeep option. [Jaipur at Dawn](/experiences/jaipur-at-dawn) stays enjoyable no matter the month, since mornings are consistently cooler. [The Farm & Fire](/experiences/farm-and-fire), being an indoor, home-based experience, is equally unaffected by the weather outside.
+Read more: [Shopping in Jaipur: what to buy and where](/journal/shopping-in-jaipur).
 
-## How Many Days Do You Need in Jaipur?
+### 7. Eat Your Way Through Jaipur's Street Food
 
-At least three days and two nights is the sweet spot for experiencing Jaipur properly. A single day can still cover one or two experiences meaningfully, and two days is enough to pair a sunrise walk like [Jaipur at Dawn](/experiences/jaipur-at-dawn) with an evening experience like [The Blue Hour](/experiences/the-blue-hour). Three days allows a complete journey across heritage, food, and nature without repeating ground.
+Pyaaz kachori and mirchi vada fried in front of you, lassi in a clay cup, kulfi from a cart and more chai than you planned. The simple rule: eat where the locals queue and the food is cooked fresh.
 
-## Is Jaipur Safe for Tourists?
+Read more: [What to eat in Jaipur](/journal/what-to-eat-in-jaipur). [Beyond the Pink](/experiences/beyond-the-pink) is an evening walk through the bazaars with tastings at family-run places.
 
-Yes — and increasingly, this isn't just guide reassurance, it's a measurable reputation. In Time Out's 2026 World's Happiest Cities survey, based on responses from more than 24,000 people worldwide, Jaipur was named the sixth happiest city in the world — the only Indian city to make the top 10.
+### 8. Visit the Flower Market at Dawn
 
-On the ground, every Raah experience is led personally by a licensed guide who stays with the group throughout, with routes planned through well-populated parts of the city. Groups are capped at 8 guests, and private bookings are available for solo travellers who'd prefer a more personal setting.
+Before the city wakes up, the phool mandi in the old city is piled high with marigolds and roses being sold for temples and weddings. Nearby, the morning aarti at Govind Dev Ji Temple is one of the most moving things to see in Jaipur.
 
-## What Past Guests Say
+[Jaipur at Dawn](/experiences/jaipur-at-dawn) starts at the flower market and ends with breakfast and chai.
 
-"Had a really great day on this tour with our very knowledgeable local expert Shobhit. We covered a lot of interesting and varied sights, scenes and experiences which made this Jaipur experience very memorable and remarkable." — James & Bernadette, Ireland
+### 9. See Albert Hall Museum and Patrika Gate
 
-"I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish. The experiences that he offers in Jaipur are the best way to experience the city and have immersive experiences." — Maria Campos, México
+Albert Hall, opened in 1887, is the oldest museum in Rajasthan and a striking Indo-Saracenic building, with an Egyptian mummy among its collections. A short drive away, Patrika Gate at Jawahar Circle is covered in painted panels and is one of the most colourful photo spots in the city.
 
-"By the time we arrived in Jaipur, we didn't expect much more than a basic history of the main attractions. … No one had ever shared the city's history with such passion & enthusiasm the way he did." — Viktorija Satkauskienė, Lithuania
+### 10. Visit Galta Ji, the Monkey Temple
 
-"We had a wonderful tour in Jaipur with Shobhit. He also took us to some lesser known but equally as beautiful places in Jaipur." — Diyva Mowji, USA
+Tucked into a valley on the eastern edge of Jaipur, Galta Ji is a temple complex built around natural water tanks where pilgrims bathe. It is known as the Monkey Temple because of the many monkeys that live here.
 
-Ready to plan your days? [Browse all Raah experiences](/experiences) and choose the ones that fit your trip.`,
+**Tip:** keep food out of sight, and carry water for the climb.
+
+### 11. Watch the Sunset and See Jaipur at Night
+
+The best evening in Jaipur starts with sunset from Nahargarh Fort, then the monuments lit up: Hawa Mahal, Jal Mahal reflected in Man Sagar Lake, Albert Hall and Patrika Gate.
+
+Read more: [Things to do in Jaipur at night](/journal/things-to-do-in-jaipur-at-night). [The Blue Hour](/experiences/the-blue-hour) covers all of it in an open-air jeep.
+
+### 12. Watch the Light and Sound Show at Amber Fort
+
+In the evening, the walls of Amber Fort are lit in changing colours while the show tells the story of the fort and its rulers. Shows run in English and Hindi, and timings change with the season, so check before you go.
+
+### 13. Hike the Aravalli Hills
+
+Few visitors know that Amber is surrounded by hills with old fortifications, shrines and viewpoints. An early morning hike gives you Amber Fort from above and a very different, quiet side of Jaipur.
+
+[The Lost Kingdom](/experiences/the-lost-kingdom) is a guided sunrise hike through the hills around Amber.
+
+### 14. Watch Block Printing and Craft Workshops
+
+Jaipur's crafts are still made by hand: block printing, blue pottery, lac bangles and brass work. Watching a printer line up a carved wooden block on fabric, over and over, is one of the most satisfying things to see in Jaipur.
+
+[The Artisan's Jaipur](/experiences/artisans-jaipur) visits family workshops in the old city.
+
+### 15. Have Dinner With a Local Family
+
+If you want to understand Rajasthani food, cook it with the people who make it every day. Eating a home-cooked meal over a wood fire, outside the city, is one of the most memorable things to do near Jaipur.
+
+[The Farm & Fire](/experiences/farm-and-fire) is an evening with a family at a farmhouse outside Jaipur.
+
+## Day Trips From Jaipur
+
+- **Bagru:** a village about 30 km from Jaipur, known for generations of hand block printing.
+- **Abhaneri:** home to Chand Baori, a 9th-century stepwell and one of the deepest and largest stepwells in the world, with around 3,500 steps.
+- **Jhalana Leopard Reserve:** a forest reserve on the edge of the city with a healthy population of around 35 to 40 leopards, one of the few places in the world where you can see leopards in the wild so close to a major city.
+- **Pushkar:** the holy lake town, best known for its Brahma Temple and the camel fair, about a three-hour drive from Jaipur with a break on the highway.
+- **Ranthambore National Park:** a longer trip for travellers hoping to see tigers in the wild.
+- **Keoladeo National Park, Bharatpur:** a UNESCO World Heritage Site and one of the best-known bird sanctuaries in the world.
+
+Raah can also arrange private day trips: a hand block printing session in Bagru, a leopard safari in Jhalana, a guided day trip to Pushkar, and a day at Keoladeo National Park. [Get in touch](/contact) to plan one.
+
+## Plan Your Visit
+
+**Best time to visit:** October to March, when the days are pleasant for walking. April to June is very hot, and July to September is monsoon. Read our month-by-month guide to the [best time to visit Jaipur](/journal/best-time-to-visit-jaipur).
+
+**How many days:** two days covers the main sights, and three days lets you add the hills, the food and the countryside without rushing. See [how many days you need in Jaipur](/journal/how-many-days-in-jaipur) and our [3-day Jaipur itinerary](/journal/3-day-jaipur-itinerary).
+
+**Is Jaipur safe:** yes, for the vast majority of visitors. In 2026, Jaipur was named the sixth happiest city in the world in Time Out's World's Happiest Cities survey, the only Indian city in the top 10. Read our guide to whether [Jaipur is safe for tourists and solo women](/journal/is-jaipur-safe-solo-female-travellers).
+
+## See Jaipur With a Local Guide
+
+All Raah experiences are led by a licensed guide, in English or Spanish, in small groups of up to 8 guests.
+
+- **Sunrise:** [Jaipur at Dawn](/experiences/jaipur-at-dawn) (old city, flower market, temple aarti)
+- **Morning:** [The Ridge & Ramparts](/experiences/ridge-and-ramparts) (Amber town to Jaigarh Fort)
+- **Morning or afternoon:** [The Crown of Jaipur](/experiences/the-crown-of-jaipur) (Hawa Mahal, Jantar Mantar, City Palace)
+- **Afternoon:** [The Artisan's Jaipur](/experiences/artisans-jaipur) (craft workshops)
+- **Evening:** [Beyond the Pink](/experiences/beyond-the-pink) (bazaars and street food), [Living the Walled City](/experiences/living-walled-city) (everyday life in the old city)
+- **Sunset to night:** [The Blue Hour](/experiences/the-blue-hour) (open-air jeep to Nahargarh and the lit monuments)
+- **Dinner:** [The Farm & Fire](/experiences/farm-and-fire) (with a local family outside the city)
+- **Sunrise hike:** [The Lost Kingdom](/experiences/the-lost-kingdom) (Aravalli Hills around Amber)
+
+See [all experiences, with prices and timings](/experiences).
+
+## What Our Guests Say
+
+*"Had a really great day on this tour with our very knowledgeable local expert Shobhit. We covered a lot of interesting and varied sights, scenes and experiences which made this Jaipur experience very memorable and remarkable."* — James & Bernadette, Ireland
+
+*"We had a list of things to do and in one day with Shobhit we were able to do most of it. He also took us to some lesser known but equally as beautiful places in Jaipur which was such a great addition."* — Diyva Mowji, USA
+
+*"I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish."* — Maria Campos, México`,
   },
  
     // Why I Created Raah
