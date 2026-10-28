@@ -3,6 +3,109 @@
  */
 
 export const journalArticles = [
+    // What to Eat in Jaipur (Month 2, Blog 10, EN)
+  {
+    slug: "what-to-eat-in-jaipur",
+    datePublished: "2026-10-28",
+    dateModified: "2026-10-28",
+    title: "What to Eat in Jaipur: A Local Guide's Food List",
+    metaTitle: "What to Eat in Jaipur: Best Food Places",
+    excerpt: "The dishes a local guide tells every traveller to try in Jaipur, from pyaz kachori and dal baati churma to lassi and ghewar, plus where to find them and how to eat street food safely.",
+    metaDescription: "What to eat in Jaipur and the best food places locals love, from pyaz kachori and dal baati churma to lassi and ghewar, from a licensed local guide.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    image: "/experiences/farm-and-fire/rajasthani-thali-spread.webp",
+    relatedExperiences: [
+      "beyond-the-pink",
+      "farm-and-fire",
+      "jaipur-at-dawn",
+    ],
+    images: [
+      { src: "/experiences/beyond-the-pink/dal-baati-churma-plate.webp", alt: "Dal baati churma, the signature dish of Rajasthan, served with dal and chutneys" },
+      { src: "/experiences/beyond-the-pink/kachori-maker-street-stall-jaipur.webp", alt: "A cook frying kachoris at a street stall in Jaipur's old city" },
+      { src: "/experiences/beyond-the-pink/lassi-street-stall-jaipur-night.webp", alt: "A glass of lassi at a street stall in Jaipur at night" },
+      { src: "/experiences/farm-and-fire/baati-roasting-on-coals.webp", alt: "Baati roasting on hot coals for a home-cooked Rajasthani meal" },
+      { src: "/experiences/beyond-the-pink/dried-red-chillies-market-jaipur.webp", alt: "Sacks of dried red chillies at a spice market in Jaipur" },
+    ],
+    faqs: [
+      { q: "What is Jaipur famous for in food?", a: "Dal baati churma, pyaz kachori, mirchi vada, ghewar and lassi are Jaipur's best-known foods." },
+      { q: "What are the best places to eat in Jaipur?", a: "For street food, the old city bazaars around Johari Bazaar, Bapu Bazaar and Tripolia. For a sit-down Rajasthani meal, a traditional restaurant in the old city or on MI Road. Local favourites include Karodiya Kachori, Mahaveer Rabri Bhandar and Lassiwala." },
+      { q: "Is street food in Jaipur safe to eat?", a: "Yes, if you choose busy stalls, eat food that is cooked fresh and served hot, drink bottled water and avoid ice." },
+      { q: "Is Rajasthani food very spicy?", a: "It can be. If you prefer milder food, ask for \"kam mirch\" (less chilli), and most cooks will adjust it for you." },
+      { q: "Is Jaipur good for vegetarians?", a: "Very. Much of the old city is vegetarian, and traditional Rajasthani food has a huge range of vegetarian dishes." },
+      { q: "What is the most famous sweet of Jaipur?", a: "Ghewar, a honeycomb-like sweet soaked in sugar syrup, especially popular during the monsoon festivals of Teej and Raksha Bandhan." },
+      { q: "What should I eat for breakfast in Jaipur?", a: "Pyaz kachori with masala chai, the classic Jaipur breakfast." },
+    ],
+    body: `Jaipur's food is as much a part of the city as its forts. Every morning the old city fills with the smell of frying kachoris and boiling chai, and by evening the bazaars are lined with stalls selling everything from pani puri to kulfi. If you only eat at your hotel, you will miss half of what makes Jaipur special.
+
+I walk the old city with travellers from around the world every day, and these are the dishes I tell them they cannot leave without trying, along with where to find them, how to handle the spice, and how to eat street food safely.
+
+## Rajasthani Food in a Few Words
+
+Rajasthan is a desert state, and its food was shaped by that. Traditional dishes use ingredients that last without refrigeration, like dried beans, millet, lentils and ghee. Much of the old city is vegetarian, and you will find more pure vegetarian restaurants here than almost anywhere else you travel.
+
+Rajasthani food can be spicy. If you are not used to it, ask for your food "kam mirch" (less chilli). Most cooks are happy to make it milder.
+
+## What to Eat in Jaipur: The Dishes You Have to Try
+
+- **Dal baati churma.** The signature dish of Rajasthan. Baati are hard wheat balls baked over a fire, broken up and soaked in ghee, served with spiced lentils (dal) and a sweet crumble called churma. It is filling, so have it for lunch.
+- **Pyaz kachori.** A deep-fried pastry stuffed with spiced onion, and Jaipur's favourite breakfast. You will see queues outside the best kachori shops from early morning.
+- **Mirchi vada.** A large green chilli stuffed with spiced potato, dipped in batter and fried. It is less spicy than it looks.
+- **Gatte ki sabzi.** Gram flour dumplings cooked in a yoghurt curry. A classic home-style dish, often part of a Rajasthani thali.
+- **Ker sangri.** Dried desert beans and berries cooked with spices. It is one of the most traditional foods of Rajasthan and very hard to find outside it.
+- **Rajasthani thali.** If you want to try many dishes at once, order a thali: a large plate with small bowls of dal, vegetables, breads, rice and a sweet.
+- **Laal maas.** For meat eaters, this fiery red mutton curry is Rajasthan's best-known non-vegetarian dish.
+
+## Sweets and Drinks
+
+- **Ghewar.** A round, honeycomb-like sweet made of fried batter soaked in sugar syrup, often topped with cream. It is most popular during the monsoon festivals of Teej and Raksha Bandhan.
+- **Jalebi.** Bright orange spirals of fried batter dipped in syrup, best eaten hot.
+- **Lassi.** A thick, creamy yoghurt drink, served sweet in a clay cup (kulhad). A lassi is the best way to cool down after a hot morning.
+- **Rabri.** Thick, sweetened milk cooked down slowly until it is rich and creamy, often served chilled in a clay bowl. Some of Jaipur's sweet shops are famous for nothing else.
+- **Kulfi.** Dense Indian ice cream, often flavoured with cardamom, saffron or pistachio. A perfect evening treat in the bazaars.
+- **Masala chai.** Sweet, milky tea boiled with spices. In Jaipur, conversations happen over chai, and every street has its favourite stall.
+
+## Where to Eat in Jaipur: Best Food Places Locals Love
+
+**The old city bazaars.** Most of the best street food is inside the walled city, around Johari Bazaar, Bapu Bazaar and the lanes near Tripolia. In the morning, look for kachori and chai. In the evening, the stalls switch to pani puri, chaat and kulfi.
+
+**Traditional restaurants.** For a sit-down meal of dal baati churma or a full thali, choose a traditional Rajasthani restaurant in the old city or on MI Road.
+
+**A home-cooked meal.** The most authentic Rajasthani food is cooked at home, slowly, over a fire. If you want to experience that, it is worth spending an evening with a local family.
+
+### A Few Names Locals Love
+
+Every Jaipurite has a favourite, but these are names you will hear again and again:
+
+- **For kachori:** Karodiya Kachori, Puran Ji Kachori Wale and Sampat Kachori
+- **For rabri:** Mahaveer Rabri Bhandar
+- **For chaat:** Prajeet Chaat Bhandar
+- **For namkeen** (savoury snacks to take home): Khuteta Namkeen Bhandar
+- **For lassi:** Lassiwala
+- **Also worth a stop:** Samrat, G.C. Dairy and Sahu Restaurant
+
+And there are many more. Half the fun is finding your own favourite.
+
+## How to Eat Street Food Safely
+
+Street food in Jaipur is one of the joys of the trip, and most travellers eat it without any problem. A few simple rules help:
+
+- **Eat where the locals queue.** A busy stall means fresh food.
+- **Choose food that is cooked in front of you** and served hot.
+- **Drink bottled water** and avoid ice at street stalls.
+- **Go slowly with spice** in the first few days.
+- **Carry small change,** as most stalls only take cash.
+
+Our guide to [whether Jaipur is safe for tourists](/journal/is-jaipur-safe-solo-female-travellers) has more practical tips.
+
+## Eat Jaipur With a Local Guide
+
+The easiest way to try many of these dishes in one evening is with someone who knows which stall makes the best version of each. [Beyond the Pink](/experiences/beyond-the-pink) is an evening walk through the old city's bazaars and artisan lanes with six to eight street food tastings, including pani puri, kachori, lassi, kulfi in clay pots and more.
+
+For home-style Rajasthani food, [Farm & Fire](/experiences/farm-and-fire) is an evening with a local family outside the city, where you try your hand at cooking a traditional vegetarian meal over a wood-fired chulha, then share it together. And if you are an early riser, [Jaipur at Dawn](/experiences/jaipur-at-dawn) ends with breakfast and masala chai at one of the old city's legendary eateries.
+
+All our experiences are led by a licensed local guide in English or Spanish. While you are in the bazaars, our guide to [shopping in Jaipur](/journal/shopping-in-jaipur) covers what to buy and how to bargain, and our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide) has the rest of the city.`,
+  },
       // ¿Es seguro viajar a la India? (Month 2, Blog 9, ES)
   {
     slug: "es-seguro-viajar-a-la-india",
@@ -177,7 +280,7 @@ On foot is the best way to see it. A [sunrise walk through the old city](/experi
   {
     slug: "shopping-in-jaipur",
     datePublished: "2026-10-21",
-    dateModified: "2026-10-21",
+    dateModified: "2026-10-28",
     title: "Shopping in Jaipur: What to Buy and Where, From a Local Guide",
     metaTitle: "Shopping in Jaipur: What to Buy and Where",
     excerpt: "What to buy in Jaipur, which markets to visit, how to bargain and how to avoid the common shopping scams, from a local guide who walks the bazaars every day.",
@@ -284,7 +387,7 @@ From October to March the weather is comfortable for walking between bazaars. In
 
 At Raah, we never take guests to commission shops. Our walks go where the story goes, not where a shop pays us to.
 
-Two of our walks pass through Johari Bazaar and Bapu Bazaar. [The Artisan's Jaipur](/experiences/artisans-jaipur) takes you into the old city's craft lanes to watch lac bangle makers, marble carvers, jewellers and utensil makers at work. If you want to try hand block printing yourself, we can book a session at a printing workshop outside the old city, for extra time and cost. [Beyond the Pink](/experiences/beyond-the-pink) is an evening walk through the bazaars, with lac bangle workshops and street food along the way.
+Two of our walks pass through Johari Bazaar and Bapu Bazaar. [The Artisan's Jaipur](/experiences/artisans-jaipur) takes you into the old city's craft lanes to watch lac bangle makers, marble carvers, jewellers and utensil makers at work. If you want to try hand block printing yourself, we can book a session at a printing workshop outside the old city, for extra time and cost. [Beyond the Pink](/experiences/beyond-the-pink) is an evening walk through the bazaars, with lac bangle workshops and street food along the way. For what to try along the way, see our guide to [what to eat in Jaipur](/journal/what-to-eat-in-jaipur).
 
 Planning your budget? Our [Jaipur trip cost guide](/journal/jaipur-trip-cost) shows what to expect to spend.`,
   },
@@ -640,7 +743,7 @@ Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos p
   {
     slug: "things-to-do-in-jaipur-at-night",
     datePublished: "2026-10-13",
-    dateModified: "2026-10-16",
+    dateModified: "2026-10-28",
     title: "Things to Do in Jaipur at Night: A Local's Guide to the City After Dark",
     metaTitle: "Things to Do in Jaipur at Night: Local Guide",
     excerpt: "Sunset at Nahargarh, Hawa Mahal lit up, the Amber light show, evening bazaars and dinner with a local family. How a local guide would spend an evening in Jaipur.",
@@ -720,6 +823,8 @@ Night is when Jaipur's street food comes alive. Look out for:
 - **Kulfi**, the dense Indian ice cream, sold from carts after dark
 - **Chai**, which you will drink more of than you plan to
 
+For the full list of dishes and where to find them, see our guide to [what to eat in Jaipur](/journal/what-to-eat-in-jaipur).
+
 The safest rule is simple: eat at busy stalls where the food is cooked fresh and the turnover is high. [Beyond the Pink](/experiences/beyond-the-pink) takes you through the old city's bazaars in the late afternoon and evening, with 6 to 8 tastings at family-run places and a stop at the evening temple rituals.
 
 ## Have Dinner With a Local Family
@@ -738,7 +843,7 @@ The main tourist areas, the monuments above and the busy bazaars are lively and 
 
 ## When to Go
 
-From October to March, evenings in Jaipur are cool and comfortable, which makes this the best season for sunset viewpoints and walking the old city after dark. In December and January it can get properly cold once the sun goes down, so bring a warm layer. From April to June, the evenings are the only comfortable part of the day, so plan everything outdoors for after 5 PM.`,
+From October to March, evenings in Jaipur are cool and comfortable, which makes this the best season for sunset viewpoints and walking the old city after dark. In December and January it can get properly cold once the sun goes down, so bring a warm layer. From April to June, the evenings are the only comfortable part of the day, so plan everything outdoors for after 5 PM. For a month-by-month breakdown, see our guide to the [best time to visit Jaipur](/journal/best-time-to-visit-jaipur).`,
   },
     // Qué ver en Jaipur: guía de un guía local (Month 2, Blog 2, ES)
   {
