@@ -3,6 +3,125 @@
  */
 
 export const journalArticles = [
+      // Amber Fort (Amer Fort) guide (Month 2, Blog 11, EN)
+  {
+    slug: "amber-fort-jaipur-guide",
+    datePublished: "2026-10-30",
+    dateModified: "2026-10-30",
+    title: "Amber Fort (Amer Fort), Jaipur: A Local Guide's Complete Guide",
+    metaTitle: "Amber Fort (Amer Fort), Jaipur: Guide",
+    excerpt: "What to see inside Amber Fort, the old town most visitors miss, the tunnel to Jaigarh and the best time to visit, from a licensed local guide who walks up to Amber almost every week.",
+    metaDescription: "Amber Fort (Amer Fort) in Jaipur: its history, what to see inside, the town below, the tunnel to Jaigarh and the best time to visit, from a local guide.",
+    category: "Jaipur Guide",
+    readTime: "8 min read",
+    hreflang: { en: "amber-fort-jaipur-guide", es: "fuerte-amber-guia-completa" },
+    image: "/experiences/ridge-and-ramparts/raah-group-ganesh-pol-amer-fort.webp",
+    relatedExperiences: [
+      "ridge-and-ramparts",
+      "the-lost-kingdom",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", alt: "Amber Fort (Amer Fort) reflected in Maota Lake, Jaipur" },
+      { src: "/experiences/ridge-and-ramparts/flute-player-pillared-hall-amer-fort.webp", alt: "A musician playing the flute in a pillared hall inside Amber Fort" },
+      { src: "/experiences/ridge-and-ramparts/amer-fort-sketch-guest.webp", alt: "A guest's sketch of Amber Fort held up in front of the palace gardens" },
+      { src: "/experiences/ridge-and-ramparts/jagat-shiromani-temple-shikhara-amer.webp", alt: "The carved shikhara of Jagat Shiromani Temple in Amer town" },
+      { src: "/experiences/ridge-and-ramparts/guest-at-old-temple-amer-town.webp", alt: "A guest at an old temple doorway in Amer town" },
+    ],
+    faqs: [
+      { q: "Are Amber Fort and Amer Fort the same?", a: "Yes. Amber and Amer are two spellings of the same fort near Jaipur." },
+      { q: "Who built Amber Fort?", a: "Raja Man Singh I began the palace at the end of the 16th century, and later Kachhawaha rulers, including Mirza Raja Jai Singh I and Sawai Jai Singh II, added to it." },
+      { q: "How far is Amber Fort from Jaipur?", a: "About 11 km from the old city, a 20 to 30 minute drive." },
+      { q: "How much time do you need at Amber Fort?", a: "Two to three hours for the fort, and an extra hour or two to see the old town of Amer." },
+      { q: "What is the best time to visit Amber Fort?", a: "Early morning, before 10 AM, between October and March. Avoid the midday hours and late evening." },
+      { q: "Is Amber Fort a UNESCO World Heritage Site?", a: "Yes, as part of the Hill Forts of Rajasthan." },
+      { q: "Is Amber Fort connected to Jaigarh Fort?", a: "Yes, by a fortified passage that was once used by the royal family." },
+    ],
+    body: `Amber Fort is the first thing most travellers want to see in Jaipur, and for good reason. Its honey-coloured walls rise above Maota Lake on the edge of the Aravalli Hills, and inside are some of the most beautiful palace rooms in India.
+
+I walk up to Amber with travellers almost every week, and I still find something new each time. In this guide I will explain what the fort is, what to see inside, the old town most visitors miss, and how to plan your visit so you see it at its best.
+
+## Amber Fort or Amer Fort: Are They the Same?
+
+Yes. Amber and Amer are two spellings of the same place. The fort, the palace inside it and the town below all take their name from Amer. You will see both spellings on signs, maps and tickets, and both are correct. The fort is about 11 km from Jaipur's old city.
+
+## A Short History of Amber Fort
+
+Long before Jaipur existed, Amer was the capital of the Kachhawaha Rajputs. The palace we see today was begun by Raja Man Singh I at the end of the 16th century, and later rulers kept adding to it, including Mirza Raja Jai Singh I and Sawai Jai Singh II.
+
+In 1727, Sawai Jai Singh II moved the capital down to the plains and founded Jaipur. Amber stayed behind as a royal fort and, together with other hill forts of Rajasthan, is now a UNESCO World Heritage Site.
+
+## What to See Inside Amber Fort
+
+### Jaleb Chowk and Sila Devi Temple
+
+You enter the fort through Suraj Pol, the Sun Gate, into Jaleb Chowk, the large courtyard where soldiers once gathered. Just off it is the Sila Devi Temple, dedicated to the family goddess of the Kachhawaha kings.
+
+### Diwan-i-Aam
+
+The Hall of Public Audience, with its double row of columns, is where the king met his subjects and heard their petitions.
+
+### Ganesh Pol
+
+The most photographed gateway in the fort, covered in painted patterns, with a figure of Lord Ganesh above the arch. It leads into the private apartments of the king.
+
+### Sheesh Mahal
+
+The Hall of Mirrors is the highlight of Amber. Its walls and ceiling are covered in thousands of small pieces of mirror and glass. It is said that the light of a single candle was enough to make the whole room sparkle.
+
+### Sukh Niwas
+
+Opposite the Sheesh Mahal, the Sukh Niwas was designed to stay cool in the desert heat. Water once ran through channels in the floor, and breezes passing over it cooled the rooms.
+
+### The Palace of Man Singh I
+
+The oldest part of the fort, built around a central pavilion and surrounded by the apartments of the royal women. It is quieter than the rest of the fort and easy to miss.
+
+### Maota Lake and Kesar Kyari
+
+Below the fort, Maota Lake reflects the walls in still water. In the middle of the lake is Kesar Kyari, a geometric garden that, according to tradition, was once planted with saffron.
+
+## Beyond the Fort: The Old Town of Amer
+
+Most visitors drive up to the fort, take their photos and leave. Below it is the old town of Amer, which I think is the most rewarding part of a visit.
+
+- **Jagat Shiromani Temple:** a 16th-century temple with a carved white marble gateway and a beautiful shikhara.
+- **Panna Meena ka Kund:** a stepwell with criss-cross stairs on all sides, one of the most photographed places in Jaipur.
+- **Ambikeshwar Temple:** believed to be around 5,000 years old, built in the Nagara style on 14 pillars, with Lord Shiva in rock form 22 feet below ground level. In the monsoon, when the groundwater rises, the shrine is submerged, a natural "jalabhishek" of the deity.
+
+Read more: [Hidden Temples of Amber: 5 Temples to See](/journal/hidden-temples-amber-valley).
+
+## The Tunnel to Jaigarh Fort
+
+Amber Fort is connected to Jaigarh Fort on the hill above it by a long fortified passage that was reserved for the royal family. Jaigarh was the kingdom's cannon foundry and is home to the Jaivana, cast in 1720. Its foundation is attributed to Raja Kakil Dev in the 12th century.
+
+Read more: [Why Jaigarh Fort Was Never Conquered](/journal/why-jaigarh-was-never-conquered) and [Amer vs Jaigarh vs Nahargarh: which fort to visit](/journal/forts-in-jaipur).
+
+[The Ridge & Ramparts](/experiences/ridge-and-ramparts) is our morning walk from Amber town, past Jagat Shiromani and the stepwells, up to Jaigarh and the Jaivana cannon.
+
+## Best Time to Visit Amber Fort
+
+- **Time of day:** go early. Avoid the midday hours and late evening. Amber is at its best in the morning, though it is busy then too, so arrive as early as you can.
+- **Time of year:** October to March is the most comfortable. From April to June it is very hot, so go as early as possible. See our guide to the [best time to visit Jaipur](/journal/best-time-to-visit-jaipur).
+- **How long:** plan two to three hours for the fort, and another hour or two if you want to explore Amer town.
+- **Tickets:** Amber Fort is included in Jaipur's composite ticket, along with several other monuments. Check current timings and prices on the official Rajasthan Tourism website before you go.
+
+## How to Get to Amber Fort
+
+Amber is about 11 km north of the old city, a 20 to 30 minute drive depending on traffic. You can take a taxi, Uber or Ola, or a tuk-tuk. From the parking area below the fort, you can walk up the ramp to Suraj Pol, which takes about 15 minutes.
+
+## The Light and Sound Show at Amber Fort
+
+In the evening, the walls of Amber are lit in changing colours while the show tells the story of the fort and its rulers. The English show starts at 6:30 PM from October to February, 7:00 PM in March and April, and 7:30 PM from May to September, with a Hindi show an hour later. Timings can change, so check before you go.
+
+Read more: [Things to do in Jaipur at night](/journal/things-to-do-in-jaipur-at-night). [The Blue Hour](/experiences/the-blue-hour) includes a glimpse of the show on its evening drive.
+
+## Visit Amber Fort With a Local Guide
+
+Amber is big, and without someone to explain it, many visitors walk through the most important rooms without knowing what they are looking at. All Raah experiences are led by a licensed local guide, in English or Spanish, in small groups. For more ideas across the city, see our [complete guide to things to do in Jaipur](/journal/things-to-do-in-jaipur-complete-guide).
+
+Reading in Spanish? Here is our [guía completa del Fuerte Amber](/journal/fuerte-amber-guia-completa).`,
+  },
     // What to Eat in Jaipur (Month 2, Blog 10, EN)
   {
     slug: "what-to-eat-in-jaipur",
@@ -983,7 +1102,7 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
     slug: "forts-in-jaipur",
     metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
     datePublished: "2026-10-10",
-    dateModified: "2026-10-26",
+       dateModified: "2026-10-30",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
     excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
     metaDescription: "Amer, Jaigarh or Nahargarh: which fort is better? A local guide compares Jaipur's three hill forts, what to see in each and how to visit all three.",
@@ -1043,6 +1162,8 @@ The architecture mixes Hindu and Mughal styles, and you can see it change as you
 **How long you need:** Around two hours for the palace alone. Add another hour if you walk the town.
 
 **Local tip:** Go early. In the morning the light on the fort from Maota Lake is soft, the crowds haven't arrived, and you'll often see the elephants of Amber walking with their keepers through the town. These families have kept elephants here for generations, and it's one of the few places where you see wildlife and daily life sharing the same streets so closely.
+
+For everything to see inside the fort and in the town below, read our full [Amber Fort guide](/journal/amber-fort-jaipur-guide).
 
 Instead of taking a car or jeep, walk. It gives you the chance to explore the hidden corners of the town and see local life up close.
 
@@ -1179,12 +1300,13 @@ Reading in Spanish? Here is our guide: [¿es seguro viajar a la India?](/journal
   {
     slug: "fuerte-amber-guia-completa",
     datePublished: "2026-09-25",
-    dateModified: "2026-10-08",
+    dateModified: "2026-10-30",
     title: "Fuerte Amber: Guía Completa",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
-    category: "Jaipur Guide", // TODO: confirm — same open question as other articles
+    category: "Jaipur Guide",
     readTime: "6 min read",
-    lang: "es", // used by generateMetadata for hreflang; also passed to body wrapper
+    lang: "es", 
+        hreflang: { en: "amber-fort-jaipur-guide", es: "fuerte-amber-guia-completa" },
     image: "/experiences/ridge-and-ramparts/amer-carved-temple-doorway.webp",
     relatedExperiences: [
       "ridge-and-ramparts",
@@ -1245,7 +1367,9 @@ Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts
 
 Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
 
-¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.`,
+¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.
+
+¿Prefiere leer en inglés? Aquí tiene nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,
   },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {

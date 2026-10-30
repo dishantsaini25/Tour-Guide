@@ -29,7 +29,14 @@ export async function generateMetadata({ params }) {
     description,
     alternates: {
       canonical: url,
-      languages: article.lang === "es" ? { es: url } : undefined,
+           languages: article.hreflang
+        ? {
+            ...Object.fromEntries(
+              Object.entries(article.hreflang).map(([lng, s]) => [lng, `https://www.raahexperiences.in/journal/${s}`])
+            ),
+            "x-default": `https://www.raahexperiences.in/journal/${article.hreflang.en}`,
+          }
+        : article.lang === "es" ? { es: url } : undefined,
     },
     openGraph: {
       title,
