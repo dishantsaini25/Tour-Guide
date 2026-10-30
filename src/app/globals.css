@@ -112,7 +112,6 @@ h1, h2, h3, h4, h5 {
   }
   .quick-info-strip::-webkit-scrollbar { display: none; }
   .quick-info-strip > * { flex-shrink: 0; }
-  .detail-sidebar { display: none !important; }
   .detail-page-content { padding-bottom: 100px; }
   .mobile-book-bar {
     display: flex;
