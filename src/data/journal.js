@@ -3,7 +3,119 @@
  */
 
 export const journalArticles = [
-      // Amber Fort (Amer Fort) guide (Month 2, Blog 11, EN)
+    // Viajar a la India (Month 2, Blog 12, ES)
+  {
+    slug: "viajar-a-la-india",
+    datePublished: "2026-10-31",
+    dateModified: "2026-10-31",
+    title: "Viajar a la India: consejos de un guía local para tu primer viaje",
+    metaTitle: "Viajar a la India: consejos de un guía local",
+    excerpt: "Todo lo que conviene saber antes de viajar a la India por primera vez: la ruta del Triángulo de Oro, cuántos días, la mejor época, qué necesitas y los consejos de un guía oficial de Jaipur.",
+    metaDescription: "Viajar a la India por primera vez: consejos de un guía local en Jaipur sobre la ruta, cuántos días, la mejor época, el dinero y la seguridad.",
+    category: "Travel Planning",
+    readTime: "7 min read",
+    lang: "es",
+    image: "/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp",
+    relatedExperiences: [
+      "jaipur-at-dawn",
+      "the-crown-of-jaipur",
+      "ridge-and-ramparts",
+    ],
+    images: [
+      { src: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp", alt: "El Hawa Mahal de Jaipur al atardecer" },
+      { src: "/experiences/jaipur-at-dawn/old-city-gateway-jaipur.webp", alt: "Una de las puertas de la ciudad vieja de Jaipur" },
+      { src: "/experiences/crown-of-jaipur/guests-jantar-mantar-rashi-yantra-jaipur.webp", alt: "Viajeros de Raah en el observatorio Jantar Mantar de Jaipur" },
+      { src: "/experiences/jaipur-at-dawn/marigold-flowers-phool-mandi-jaipur.webp", alt: "Flores de cempasúchil en el mercado de flores de Jaipur" },
+      { src: "/experiences/beyond-the-pink/dal-baati-churma-plate.webp", alt: "Dal baati churma, el plato típico de Rajastán" },
+    ],
+    faqs: [
+      { q: "¿Cuál es la mejor ruta para un primer viaje a la India?", a: "El Triángulo de Oro: Delhi, Agra y Jaipur. Son tres ciudades muy diferentes, bien conectadas y perfectas para una primera visita." },
+      { q: "¿Cuántos días se necesitan para viajar a la India?", a: "Para el Triángulo de Oro, un mínimo de siete u ocho días. Con dos semanas puedes añadir más ciudades de Rajastán." },
+      { q: "¿Qué necesito para viajar a la India desde España o México?", a: "Pasaporte, visado (muchas nacionalidades pueden pedir el e-Visa por internet) y un seguro de viaje. Consulta siempre los requisitos actualizados en la web oficial." },
+      { q: "¿Se necesita visa para viajar a la India?", a: "Sí, la mayoría de los viajeros la necesitan. Muchas nacionalidades, incluidas la española y la mexicana, pueden solicitar el visado electrónico (e-Visa) por internet. Consulta siempre la web oficial del gobierno de la India." },
+      { q: "¿Es caro viajar a la India?", a: "Una vez allí, la comida, el transporte local y muchos alojamientos son económicos comparados con España o México. El gasto más grande suele ser el vuelo." },
+      { q: "¿Cuál es la mejor época para viajar a la India?", a: "De octubre a marzo, cuando los días son agradables en el norte del país." },
+      { q: "¿Es seguro viajar a la India?", a: "Sí, para la mayoría de los viajeros. Los problemas más comunes son pequeñas estafas, el tráfico y el estómago, y casi todos se pueden evitar con información." },
+      { q: "¿Hay guías en español en Jaipur?", a: "Sí. Todas las experiencias de Raah se hacen en español sin coste adicional, con un guía oficial que aprendió español en Salamanca." },
+    ],
+    body: `Viajar a la India por primera vez impresiona. Hay más colores, más sonidos y más gente de lo que uno imagina, y eso es justamente lo que hace el viaje inolvidable. La clave está en llegar con una idea clara de la ruta, del ritmo y de algunas costumbres básicas.
+
+Soy guía oficial en Jaipur, aprendí español en Salamanca y cada año acompaño a viajeros de España, México y toda Latinoamérica. En esta guía te cuento lo que siempre les recomiendo antes de su viaje a la India.
+
+## Por dónde empezar: el Triángulo de Oro
+
+Para un primer viaje, la ruta más habitual es el Triángulo de Oro: Delhi, Agra y Jaipur. Son tres ciudades muy diferentes entre sí y bien conectadas por carretera y tren, a unas cuatro o cinco horas una de otra.
+
+- **Delhi:** la capital, con la Vieja Delhi, sus mercados y sus mezquitas, y la Nueva Delhi, más moderna.
+- **Agra:** la ciudad del Taj Mahal. Con un día suele ser suficiente.
+- **Jaipur:** la Ciudad Rosa, capital de Rajastán, con sus palacios, fuertes y bazares. Es la ciudad más fácil de recorrer a pie de las tres.
+
+Si tienes más tiempo, desde Jaipur puedes seguir por Rajastán hacia Udaipur, Jodhpur o Pushkar.
+
+## ¿Cuántos días hacen falta?
+
+Para el Triángulo de Oro, recomiendo un mínimo de siete u ocho días: dos en Delhi, uno o dos en Agra y dos o tres en Jaipur. Con dos días en Jaipur ves lo esencial, y con tres puedes añadir las colinas, la gastronomía y el campo sin prisas.
+
+Te lo explico con detalle en [qué ver en Jaipur](/journal/que-ver-en-jaipur).
+
+## La mejor época para viajar a la India
+
+En el norte de la India, la mejor época es de octubre a marzo, cuando los días son agradables para caminar. De abril a junio hace mucho calor, y de julio a septiembre es temporada de monzones. Si viajas en verano, como muchos españoles, organiza las visitas a primera hora de la mañana y al atardecer.
+
+Lo explico mes a mes en [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).
+
+## Qué necesito para viajar a la India
+
+- **Visado:** la mayoría de los viajeros necesitan visado. Muchas nacionalidades, incluidas la española y la mexicana, pueden solicitar el visado electrónico (e-Visa) por internet. Consulta siempre los requisitos actualizados en la web oficial del gobierno de la India antes de reservar.
+- **Pasaporte:** con validez suficiente para todo el viaje.
+- **Seguro de viaje:** que cubra gastos médicos.
+- **Vacunas:** consulta con tu centro de vacunación internacional unas semanas antes de viajar.
+- **Carné de estudiante:** si vas a pedir la entrada de estudiante en los monumentos, lleva un carné que no esté vencido.
+
+## Dinero, transporte y teléfono
+
+- **¿Es caro viajar a la India?** Una vez allí, no: la comida, el transporte local y muchos alojamientos cuestan bastante menos que en España o México. Lo que más pesa en el presupuesto suele ser el vuelo.
+- **Dinero:** la moneda es la rupia india. Lleva siempre efectivo, en billetes pequeños: muchos monumentos públicos, puestos y tuk-tuks no aceptan tarjeta, aunque los lugares privados normalmente sí. Hay cajeros en todas las ciudades.
+- **Transporte:** en las ciudades, Uber y Ola funcionan bien y evitan tener que negociar el precio. Entre ciudades, el tren y el coche con conductor son las opciones más cómodas.
+- **Teléfono:** una tarjeta SIM local o una eSIM te facilita los mapas, las aplicaciones de taxi y estar localizable.
+
+## Mis consejos para viajar a la India
+
+Estos son los consejos que siempre doy a los viajeros que acompaño:
+
+- **Empieza por la comida tradicional en un buen restaurante.** Elige lugares limpios e higiénicos, sobre todo los primeros días: el estómago no está acostumbrado al agua, a la grasa ni a algunos ingredientes. Ve poco a poco con el picante y, si quieres algo más suave, pide "kam mirch" (poco chile).
+- **Bebe solo agua embotellada.**
+- **Contrata solo guías con licencia del gobierno.** Pide la identificación antes de contratar a alguien.
+- **Cuidado con los tuk-tuks que se ofrecen a hacer de guía.** Muchas veces no te dan información relevante y te llevan a tiendas donde ganan una comisión por lo que compras.
+- **Regatea cuando compres en la calle.** En los puestos y bazares, el primer precio suele ser mucho más alto de lo normal. Regatear con amabilidad es parte de la experiencia.
+- **No te fíes solo de las fotos de las redes sociales.** Lugares como Patrika Gate se ven muy distintos en persona: las fotos no muestran la distancia, la cantidad de gente ni lo difícil que puede ser tener tu momento tranquilo en el lugar. Confía en tu guía para elegir dónde y cuándo ir.
+- **Viste de forma cómoda y discreta.** Ropa holgada que cubra hombros y rodillas es más fresca y la necesitas para entrar en los templos. Descálzate en los templos y pregunta antes de hacer fotos a personas.
+
+## ¿Es seguro viajar a la India?
+
+Muchos viajeros me preguntan si es peligroso viajar a la India. Mi respuesta es que sí es seguro para la gran mayoría de los viajeros, siempre que viajes con el mismo sentido común que usarías en cualquier gran ciudad. Los problemas más comunes son pequeñas estafas, el tráfico y el estómago.
+
+Lo respondo con detalle, incluidos consejos para viajar sola, en [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)
+
+## Viajes a la India desde México y España
+
+Desde España, lo habitual es volar con una escala, normalmente en Oriente Medio o en otra ciudad europea, hasta Delhi o Mumbai. Desde México, lo habitual es volar con una escala en Europa, Oriente Medio o Estados Unidos. Delhi es la mejor puerta de entrada para el Triángulo de Oro.
+
+## Jaipur en tu viaje: con un guía en español
+
+En Jaipur, todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur), con un guía oficial y en grupos pequeños de un máximo de 8 personas. Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todas nuestras experiencias en Jaipur](/experiences).
+
+Si quieres conocer el Fuerte Amber a fondo, lee nuestra [guía completa del Fuerte Amber](/journal/fuerte-amber-guia-completa).
+
+Lo que dicen nuestros viajeros:
+
+*"Excelentes días en Jaipur, atendidos maravillosamente por Shobhit. Un gran guía."* — Rocío Albert, España
+
+*"I want to highlight Shobhit who was the best guide, polite, well dressed, friendly and spoke very good Spanish."* — Maria Campos, México
+
+*"Ha sido un inmenso placer conocer Jaipur con la mejor compañía de un excelente ciudadano y guía, Shobhit. Aprendimos mucho."* — Mónica Miyasato, Perú`,
+  },
+    // Amber Fort (Amer Fort) guide (Month 2, Blog 11, EN)
   {
     slug: "amber-fort-jaipur-guide",
     datePublished: "2026-10-30",
@@ -229,7 +341,7 @@ All our experiences are led by a licensed local guide in English or Spanish. Whi
   {
     slug: "es-seguro-viajar-a-la-india",
     datePublished: "2026-10-27",
-    dateModified: "2026-10-27",
+    dateModified: "2026-10-31",
     title: "¿Es seguro viajar a la India? Lo que de verdad necesitas saber, contado desde Jaipur",
     metaTitle: "¿Es seguro viajar a la India y a Jaipur?",
     excerpt: "Sí, viajar a la India es seguro para la mayoría de los viajeros. Un guía oficial de Jaipur explica cuáles son los riesgos reales, cuáles son solo miedos y cómo moverte con tranquilidad.",
@@ -315,7 +427,7 @@ Si los primeros días la ciudad te abruma, un paseo guiado por la ciudad vieja a
 
 Una forma sencilla de evitar la mayoría de estos problemas es recorrer la ciudad con un guía con licencia. En Raah todas nuestras experiencias están guiadas por un guía oficial, en grupos pequeños, y [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur). No hacemos paradas en tiendas con comisión: el paseo va donde va la historia, no donde una tienda nos paga.
 
-Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todas nuestras experiencias en Jaipur](/experiences), leer nuestra guía de [qué ver en Jaipur](/journal/que-ver-en-jaipur) o la de [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).`,
+Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todas nuestras experiencias en Jaipur](/experiences), leer nuestra guía de [qué ver en Jaipur](/journal/que-ver-en-jaipur) o la de [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india). Si estás preparando tu primer viaje, lee también mis [consejos para viajar a la India](/journal/viajar-a-la-india).`,
   },
     // Why Is Jaipur Called the Pink City? (Month 2, Blog 7, EN)
   {
@@ -968,7 +1080,7 @@ From October to March, evenings in Jaipur are cool and comfortable, which makes 
   {
     slug: "que-ver-en-jaipur",
     datePublished: "2026-10-12",
-        dateModified: "2026-10-29",
+        dateModified: "2026-10-31",
     title: "Qué ver en Jaipur: guía de un guía local",
     metaTitle: "Qué ver en Jaipur en 1 o 2 días: guía local",
     excerpt: "Qué ver en Jaipur, en qué orden y a qué hora: Hawa Mahal, Palacio de la Ciudad, Jantar Mantar, Fuerte Amber, los bazares y dónde comer, contado por un guía local.",
@@ -1087,6 +1199,8 @@ La mejor época es de octubre a marzo, cuando las temperaturas son agradables pa
 
 Si te preocupa la seguridad, aquí respondo con detalle a la pregunta [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)
 
+Y si estás preparando tu primer viaje al país, aquí tienes mis [consejos para viajar a la India](/journal/viajar-a-la-india).
+
 ## Visitar Jaipur con un guía local en español
 
 ## Visitar Jaipur con un guía local en español
@@ -1102,7 +1216,7 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
     slug: "forts-in-jaipur",
     metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
     datePublished: "2026-10-10",
-       dateModified: "2026-10-30",
+    dateModified: "2026-10-30",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
     excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
     metaDescription: "Amer, Jaigarh or Nahargarh: which fort is better? A local guide compares Jaipur's three hill forts, what to see in each and how to visit all three.",
@@ -1303,10 +1417,10 @@ Reading in Spanish? Here is our guide: [¿es seguro viajar a la India?](/journal
     dateModified: "2026-10-30",
     title: "Fuerte Amber: Guía Completa",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
-    category: "Jaipur Guide",
+    category: "Jaipur Guide", // TODO: confirm — same open question as other articles
     readTime: "6 min read",
-    lang: "es", 
-        hreflang: { en: "amber-fort-jaipur-guide", es: "fuerte-amber-guia-completa" },
+    lang: "es",
+    hreflang: { en: "amber-fort-jaipur-guide", es: "fuerte-amber-guia-completa" }, // used by generateMetadata for hreflang; also passed to body wrapper
     image: "/experiences/ridge-and-ramparts/amer-carved-temple-doorway.webp",
     relatedExperiences: [
       "ridge-and-ramparts",
@@ -1369,7 +1483,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
 
 ¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.
 
-¿Prefiere leer en inglés? Aquí tiene nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,
+¿Prefieres leer en inglés? Aquí tienes nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,
   },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     description,
     alternates: {
       canonical: url,
-           languages: article.hreflang
+      languages: article.hreflang
         ? {
             ...Object.fromEntries(
               Object.entries(article.hreflang).map(([lng, s]) => [lng, `https://www.raahexperiences.in/journal/${s}`])
