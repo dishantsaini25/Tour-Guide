@@ -1203,8 +1203,6 @@ Y si estás preparando tu primer viaje al país, aquí tienes mis [consejos para
 
 ## Visitar Jaipur con un guía local en español
 
-## Visitar Jaipur con un guía local en español
-
 Se puede ver Jaipur por tu cuenta, pero hay una diferencia entre ver los monumentos y entenderlos. Todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur), en grupos pequeños de un máximo de 8 personas. Muchos de nuestros viajeros vienen de España, México, Perú y El Salvador.
 
 Como escribió Rocío, de España: *"Excelentes días en Jaipur, atendidos maravillosamente por Shobhit. Un gran guía."*
@@ -1483,8 +1481,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
 
 ¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.
 
-¿Prefieres leer en inglés? Aquí tienes nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,
-  },
+¿Prefiere leer en inglés? Aquí tiene nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,  },
     // How Much Does a Trip to Jaipur Cost? Blog 6
   {
     slug: "jaipur-trip-cost",

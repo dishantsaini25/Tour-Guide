@@ -31,9 +31,9 @@ export const metadata = {
     // favicon.ico handles legacy browsers; logo.png gives modern browsers a sharp icon
     icon:  [
       { url: "/favicon.ico",  sizes: "any" },
-      { url: "/logo.png",     type: "image/png", sizes: "192x192" },
+            { url: "/favicon.png",  type: "image/png" },
     ],
-    apple: { url: "/logo.png", type: "image/png", sizes: "180x180" },
+    apple: { url: "/favicon.png", type: "image/png" },
   },
   robots: {
     index: true,
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
               description:
                 "Boutique curated walking tours & cultural experiences in Jaipur, led by an English & Spanish-speaking, government-certified local guide.",
                             image: "https://www.raahexperiences.in/images/6591dcb7cdb1baca2de7cbf18d11b820.jpg",
-              logo: "https://www.raahexperiences.in/logo.png",
+                            logo: "https://www.raahexperiences.in/rahhLogo.png",
               telephone: "+91-9929992539",
               email: "raahindiaexperiences@gmail.com",
               priceRange: "₹₹",
