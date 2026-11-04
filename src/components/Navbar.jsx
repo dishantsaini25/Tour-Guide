@@ -523,7 +523,7 @@ export default function Navbar() {
 
             {/* ── Desktop nav ── */}
             <nav
-              className="hidden md:flex"
+             className="hidden lg:flex"
               style={{ alignItems: "center", gap: "28px" }}
             >
               {links.map((l) => {
@@ -727,7 +727,7 @@ export default function Navbar() {
             <button
               ref={toggleRef}
               onClick={() => setOpen((o) => !o)}
-              className="md:hidden hb-btn"
+             className="lg:hidden hb-btn"
               aria-label={
                 open ? "Close navigation menu" : "Open navigation menu"
               }

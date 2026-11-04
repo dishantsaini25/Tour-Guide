@@ -34,6 +34,20 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.raahexperiences.in/#website",
+            name: "Raah Experiences",
+            alternateName: ["Raah India Experiences", "Raah"],
+            url: "https://www.raahexperiences.in",
+            publisher: { "@id": "https://www.raahexperiences.in/#organization" },
+          }),
+        }}
+      />
       <HeroSection />
       <StatsStrip />
       <FeaturedExperiences />
