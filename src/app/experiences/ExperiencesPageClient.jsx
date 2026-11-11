@@ -48,6 +48,9 @@ const EXP_TIME = {
   "farm-and-fire":       "Evening",
   "living-walled-city":  "Evening",
   "the-lost-kingdom":    "Sunrise",
+  "jaipur-full-day-tour": "Full day",
+  "jaipur-half-day-tour": "Morning",
+  "pushkar-day-trip-from-jaipur": "Day trip",
 };
 
 function ComboCard({ combo }) {
