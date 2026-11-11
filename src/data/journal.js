@@ -3,6 +3,121 @@
  */
 
 export const journalArticles = [
+    // Hawa Mahal (Month 3, Blog 1, EN)
+  {
+    slug: "hawa-mahal-jaipur",
+    datePublished: "2026-11-11",
+    dateModified: "2026-11-11",
+    title: "Hawa Mahal, Jaipur: A Local Guide to the Palace of the Winds",
+    metaTitle: "Hawa Mahal: Palace of the Winds, Jaipur",
+    excerpt: "Why Hawa Mahal's famous façade is actually the back of the palace, why it has 953 windows, what's inside and the best time to see it.",
+    metaDescription: "Hawa Mahal, Jaipur's Palace of the Winds: why it has 953 windows, what's inside, best time to visit and timings, from a licensed local guide.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    image: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp",
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-at-dawn",
+      "living-walled-city",
+    ],
+    images: [
+      { src: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp", alt: "Hawa Mahal, the Palace of the Winds, glowing at sunset in Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp", alt: "Hawa Mahal façade lit up at night, Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-night-crowd.webp", alt: "Evening crowd on the road in front of Hawa Mahal, Jaipur" },
+    ],
+    faqs: [
+      { q: "Who built Hawa Mahal?", a: "Maharaja Sawai Pratap Singh, the fifth ruler of Jaipur, built Hawa Mahal in 1799. It was designed by the architect Lal Chand Ustad." },
+      { q: "Why does Hawa Mahal have 953 windows?", a: "The windows let the royal women watch street life and processions without being seen, and the latticed screens let air move through the building to keep it cool." },
+      { q: "Is the Hawa Mahal façade the front or the back?", a: "Surprisingly, it's the back. The ornamented façade faces the street, and the only entrance is at the rear." },
+      { q: "Can you go inside Hawa Mahal?", a: "Yes. You can go inside with a ticket and climb the ramps to the upper floors, which look out over the old city." },
+      { q: "How long do you need at Hawa Mahal?", a: "About 20 to 30 minutes inside. Seeing the façade from the street takes only a few minutes." },
+      { q: "What is the best time to visit Hawa Mahal?", a: "Just after sunrise, when the east-facing façade glows gold and the street is quiet, or after dark, when it is lit up." },
+    ],
+    body: `Almost every photo of Jaipur has Hawa Mahal in it: a tall pink wall of tiny windows, rising five storeys above the busiest road in the old city. It is the image on postcards, guidebook covers and fridge magnets. And yet, after years of guiding in Jaipur, I find that most visitors leave without knowing what they were looking at.
+
+Here is the first surprise: the famous façade is not the front of a palace. It is the back.
+
+In this guide I will explain why it was built, why it has 953 windows, what you will find inside, and when to see it so that you don't spend your visit fighting traffic and crowds.
+
+## Hawa Mahal at a Glance
+
+| | |
+|---|---|
+| **Built** | 1799 |
+| **Built by** | Maharaja Sawai Pratap Singh, grandson of Sawai Jai Singh II, the founder of Jaipur |
+| **Architect** | Lal Chand Ustad |
+| **Windows** | 953 small windows, known as *jharokhas* |
+| **Height** | Five storeys |
+| **Material** | Pink sandstone |
+| **Where** | In the walled old city, a short walk from City Palace and Jantar Mantar |
+
+## Why Was Hawa Mahal Built?
+
+The palace was built as an extension of the royal women's quarters of the City Palace. In the court of the time, royal women followed *purdah*: they were not to be seen by men outside the family.
+
+The road below was the stage for the city's processions, festivals and everyday street life. The latticed windows allowed the women of the court to watch all of it without being seen. Every small window was a private view of the city.
+
+The name means "Palace of the Winds", and the windows did a second job. The lattice lets air move through the building, creating a cooling breeze often explained by the Venturi effect, so the rooms behind the façade stay cooler than the street outside.
+
+## Why Does Hawa Mahal Have 953 Windows?
+
+The 953 windows give the façade its honeycomb look. Most of them are small *jharokhas*, overhanging windows with carved stone screens. From inside, each one frames a different slice of the street below. From outside, together they make one of the most recognisable buildings in India.
+
+The shape of the building is said to resemble the crown of Lord Krishna. Sawai Pratap Singh was a devotee of Krishna, and the pyramid-like outline rising to a narrow top is the detail most people notice once it has been pointed out to them.
+
+## The Façade Is Actually the Back of the Palace
+
+This is the part most visitors miss. The wall you photograph from the street is the rear of the building, and there is no entrance on the front. To go inside, you walk around to the entrance at the back.
+
+Once you know this, the building makes more sense. It was never meant to be entered from the street. It was meant to look out onto it.
+
+## What's Inside Hawa Mahal?
+
+Inside, the palace is lighter and simpler than its façade suggests. There are no grand staircases: you move between floors on ramps. The upper floors are narrow, often only one room deep, with small windows looking out over the old city.
+
+The top storeys are the reason to go in. From up there you look down on the busy road below and across to the rooftops of the walled city, Jantar Mantar and the City Palace. The building also houses a small museum.
+
+## Is It Worth Going Inside Hawa Mahal?
+
+My honest advice to guests: this is first a monument to admire from the outside. If you are short on time, seeing the façade from across the road gives you the experience most people come for.
+
+Go inside if you are curious to see the city the way the royal women once did, from behind the screens, and if you don't mind narrow ramps and small rooms. Plan about 20 to 30 minutes inside.
+
+## The Best Time to See Hawa Mahal
+
+**Just after sunrise.** The façade faces east, so the first light of the morning turns the pink stone gold. The street in front is still quiet, and you can stand and look without traffic in your photos. This is my favourite time of day to show it to guests.
+
+**After dark.** The façade is lit up at night, and the road in front is at its liveliest in the evening, with shops open and families out. It is a completely different mood from the morning.
+
+**Avoid late morning and early afternoon** if you can. That is when the road is busiest and the light is flat.
+
+## Hawa Mahal Timings and Tickets
+
+The palace is open to visitors from 9:00 AM to 4:30 PM, according to Incredible India, the official tourism website of the Government of India. You don't need a ticket to see the façade from the street. You only need one to go inside.
+
+Ticket prices for Jaipur's state-run monuments were revised in January 2026, and foreign visitors now pay INR 600 per person. To avoid queues at the counter and for hassle-free entry, consider a composite ticket, which is slightly cheaper than buying a ticket for each monument. Check the current fees at the ticket counter or on the Rajasthan Tourism website before you go.
+
+## How to Combine Hawa Mahal with Other Sights
+
+It sits in the heart of the walled city, so it is easy to combine with the old city's other landmarks:
+
+- **City Palace and Jantar Mantar** are a short walk away. The three together make a natural half day. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk that links them into one story.
+- **At sunrise,** [Jaipur at Dawn](/experiences/jaipur-at-dawn) passes Hawa Mahal just as the first light reaches the façade, after the flower market and the morning rituals at Govind Dev Ji Temple.
+- **In the evening,** [Living the Walled City](/experiences/living-walled-city) starts at Hawa Mahal and follows the old city's lanes as the lights come on.
+- **After dark,** [The Blue Hour](/experiences/the-blue-hour) drives past Hawa Mahal and Jaipur's other illuminated monuments in an open jeep.
+
+If you only have one day, see how Hawa Mahal fits into the rest of the city in our [one day in Jaipur itinerary](/journal/one-day-in-jaipur), or let us plan it for you on the [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour).
+
+## Tips for Your Visit
+
+- **Look at it from across the road.** The façade is too tall to appreciate from directly below. Cross the road for the full view.
+- **Mind the traffic.** The road in front is one of the busiest in the old city. Cross carefully, and avoid standing in the road for photos.
+- **Wear comfortable shoes** if you go inside. The ramps are smooth and can be steep in places.
+- **Ask your guide about the windows.** The best stories here are about the people who once stood behind them.
+
+And if you have ever wondered why the whole old city around Hawa Mahal is pink, the story is here: [Why Is Jaipur Called the Pink City?](/journal/why-is-jaipur-called-the-pink-city)`,
+  },
+
     // Viajar a la India (Month 2, Blog 12, ES)
   {
     slug: "viajar-a-la-india",
@@ -807,7 +922,7 @@ These three sit next to each other in the centre of the old city, so this is the
 
 **Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat.
 
-**Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road.
+**Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road. More in our [Hawa Mahal guide](/journal/hawa-mahal-jaipur).
 
 **With a guide:** [The Crown of Jaipur](/experiences/the-crown-of-jaipur) covers all three in two and a half hours. It ties them together as one story about how the city was planned.
 
@@ -1984,7 +2099,7 @@ Here are the things to do in Jaipur that I recommend to my own guests, from the 
 
 ### 1. See Hawa Mahal at Sunrise
 
-The Palace of Winds is the most photographed building in Jaipur, and most visitors do not realise that the famous honeycomb façade is actually the back of the palace. It was built in 1799 so that the women of the court could watch processions in the street without being seen.
+The Palace of Winds is the most photographed building in Jaipur, and most visitors do not realise that the famous honeycomb façade is actually the back of the palace. Our [Hawa Mahal guide](/journal/hawa-mahal-jaipur) tells the full story. It was built in 1799 so that the women of the court could watch processions in the street without being seen.
 
 **Tip:** Hawa Mahal is a monument to admire from the outside. Don't feel you have to go in; enter only if you are curious to see how it feels from behind the windows. Go just after sunrise, when the first light turns the east-facing façade gold and the street in front is still quiet.
 
