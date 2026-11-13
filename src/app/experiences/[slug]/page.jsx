@@ -578,7 +578,7 @@ export default async function ExperienceDetailPage({ params }) {
                               {exp.priceUSD ? `USD ${exp.priceUSD}` : ""}
                               {exp.priceUSD && exp.priceINR ? " / " : ""}
                               {exp.priceINR ? `INR ${exp.priceINR.toLocaleString("en-IN")}` : ""}
-                              {" per person"}
+                              {` ${exp.priceUnit || "per person"}`}
                             </span>
                             {exp.priceNote && (
                               <p style={{ fontFamily:IN, color:"#9C8550", fontSize:"0.68rem", fontWeight:500, marginTop:"2px" }}>
