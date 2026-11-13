@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
 import HighlightIcon from "@/components/HighlightIcon";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import Image from "next/image";
 import Link from "next/link";
 import {
   Clock, MapPin, Users, Gauge, Globe,
-  CheckCircle2, XCircle, ArrowRight, MessageCircle, ArrowLeft,
+  CheckCircle2, XCircle, ArrowRight, ArrowLeft,
 } from "lucide-react";
 import { experiences, getExperienceBySlug, getRelatedExperiences } from "@/data/experiences";
 import { cloudImg } from "@/lib/cloudinaryImage";
@@ -615,7 +616,7 @@ export default async function ExperienceDetailPage({ params }) {
                         Send Booking Enquiry <ArrowRight size={13} />
                       </Link>
                       <a href={waUrl} target="_blank" rel="noopener noreferrer" className="sb-wa">
-                        <MessageCircle size={14} /> WhatsApp Enquiry
+                        <WhatsAppIcon size={16} /> WhatsApp Enquiry
                       </a>
                     </div>
                   </div>
@@ -676,7 +677,7 @@ export default async function ExperienceDetailPage({ params }) {
           aria-label="WhatsApp enquiry"
           style={{ flexShrink: 0 }}
         >
-          <MessageCircle size={16} /> WhatsApp
+          <WhatsAppIcon size={18} /> WhatsApp
         </a>
       </div>
     </>
