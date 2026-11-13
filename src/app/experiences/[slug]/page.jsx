@@ -236,7 +236,7 @@ export default async function ExperienceDetailPage({ params }) {
           color: #FFFFFF !important;
           font-family: ${IN}; font-size: .82rem; font-weight: 700;
           letter-spacing: .07em; text-transform: uppercase;
-          text-decoration: none;
+          text-decoration: none; white-space: nowrap;
           padding: 0 20px;
           border-radius: 9999px;
           height: 48px;
@@ -666,7 +666,7 @@ export default async function ExperienceDetailPage({ params }) {
           className="mob-book-btn"
           style={{ flex: 1 }}
         >
-          Book This Experience
+          Book Now
         </Link>
         <a
           href={waUrl}

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { X, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { X, Send, Loader2, CheckCircle2, Castle, UtensilsCrossed, Palette, Footprints, Compass } from "lucide-react";
 
 /* ─────────────────────────────────────────────────────────────────
    CONSTANTS
@@ -466,10 +466,17 @@ export default function EnquiryPopup() {
           background: rgba(255,140,0,0.07);
         }
         .ep-exp-icon {
-          font-size: 1.1rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 9px;
+          background: rgba(245,166,35,0.12);
+          border: 1px solid rgba(245,166,35,0.22);
+          color: #F5A623;
           line-height: 1;
           flex-shrink: 0;
-          margin-top: 1px;
         }
 
         /* ── Trust stat pill ── */
@@ -706,14 +713,14 @@ export default function EnquiryPopup() {
               {/* Experience highlights */}
               <div style={{ display: "flex", flexDirection: "column", gap: "2px", marginBottom: "22px" }}>
                 {[
-                  { icon: "🏰", title: "Heritage & History",      desc: "Royal forts, architecture and local stories" },
-                  { icon: "🍽️", title: "Food & Local Flavours",   desc: "Hidden spots and authentic Jaipur tastes"   },
-                  { icon: "🎨", title: "Culture & Traditions",    desc: "Art, crafts, markets and everyday life"      },
-                  { icon: "🚶", title: "Local Experiences",       desc: "Curated walks through real neighbourhoods"   },
-                  { icon: "✨", title: "Custom Experiences",      desc: "Tell us what you want — we'll design it"     },
-                ].map(({ icon, title, desc }) => (
+                  { Icon: Castle,          title: "Heritage & History",      desc: "Royal forts, architecture and local stories" },
+                  { Icon: UtensilsCrossed, title: "Food & Local Flavours",   desc: "Hidden spots and authentic Jaipur tastes"   },
+                  { Icon: Palette,         title: "Culture & Traditions",    desc: "Art, crafts, markets and everyday life"      },
+                  { Icon: Footprints,      title: "Local Experiences",       desc: "Curated walks through real neighbourhoods"   },
+                  { Icon: Compass,         title: "Custom Experiences",      desc: "Tell us what you want — we'll design it"     },
+                ].map(({ Icon, title, desc }) => (
                   <div key={title} className="ep-exp-item">
-                    <span className="ep-exp-icon">{icon}</span>
+                    <span className="ep-exp-icon"><Icon size={17} strokeWidth={1.6} aria-hidden="true" /></span>
                     <div>
                       <p style={{
                         fontFamily: IN, fontSize: "0.8rem", fontWeight: 600,

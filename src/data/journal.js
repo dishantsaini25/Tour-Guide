@@ -1327,12 +1327,12 @@ Puedes ver todas las experiencias en nuestra [página de experiencias](/experien
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {
     slug: "forts-in-jaipur",
-    metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
+    metaTitle: "Amer vs Jaigarh vs Nahargarh Fort: Which Is Better?",
     datePublished: "2026-10-10",
     dateModified: "2026-10-30",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",
     excerpt: "Jaipur has three hill forts on the same Aravalli ridge. Here's what each one was built for, what to see, how long to spend, and the best order to visit them.",
-    metaDescription: "Amer, Jaigarh or Nahargarh: which fort is better? A local guide compares Jaipur's three hill forts, what to see in each and how to visit all three.",
+    metaDescription: "Are Amer, Jaigarh and Nahargarh the same fort? No. A local guide compares all three: history, views, time needed and the best hour to visit each.",
     category: "Jaipur Guide",
     readTime: "8 min read",
     image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",

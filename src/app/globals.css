@@ -105,13 +105,13 @@ h1, h2, h3, h4, h5 {
   .filters-bar::-webkit-scrollbar { display: none; }
   .fc-track::-webkit-scrollbar    { display: none; }
   .filters-bar > * { flex-shrink: 0; }
+  /* Mobile: 2-column grid so no item is cut off at the screen edge */
   .quick-info-strip {
-    display: flex; overflow-x: auto; scrollbar-width: none;
-    -webkit-overflow-scrolling: touch; gap: 20px;
-    flex-wrap: nowrap !important; padding: 18px 20px;
+    display: grid !important; grid-template-columns: 1fr 1fr;
+    gap: 16px 12px !important; padding: 18px 20px !important;
   }
-  .quick-info-strip::-webkit-scrollbar { display: none; }
-  .quick-info-strip > * { flex-shrink: 0; }
+  .quick-info-strip > * { min-width: 0; align-items: flex-start !important; }
+  .quick-info-strip p { overflow-wrap: anywhere; }
   .detail-page-content { padding-bottom: 100px; }
   .mobile-book-bar {
     display: flex;
