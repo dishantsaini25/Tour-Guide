@@ -1703,7 +1703,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-10-21",
+    dateModified: "2026-11-14",
     title: "How Much Does a Trip to Jaipur Cost?",
     metaTitle: "Jaipur Trip Cost: Is Jaipur Expensive?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
@@ -1731,7 +1731,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
       { q: "How much does a 3-day trip to Jaipur cost?", a: "Using the mid-range daily estimate above, roughly ₹5,600 to ₹6,000 per day, a 3-day trip for one person lands around ₹17,000 to ₹18,000, or $200 to $210, before international flights." },
       { q: "How much does a 4-day trip to Jaipur cost?", a: "At the same mid-range pace, expect roughly ₹22,000 to ₹24,000, or $260 to $280, for four days — though the daily cost often drops slightly on longer trips as you settle into a routine and shop around less." },
       { q: "Is Jaipur expensive?", a: "Not compared with most major Indian destinations. Street food costs around ₹100 to ₹150 a meal and mid-range hotels ₹1,500 to ₹3,000 a night, so a comfortable mid-range trip works out at roughly ₹5,600 to ₹6,000 per person per day." },
-      { q: "Is Jaipur cheaper than Delhi?", a: "For overall daily spending, generally yes, particularly for mid-range travellers, largely due to lower private transport and dining costs. Monument entry fees are broadly similar between the two cities, though Jaipur's composite ticket makes multi-monument days better value." },
+      { q: "Is Jaipur cheaper than Delhi?", a: "For overall daily spending, generally yes, particularly for mid-range travellers, largely due to lower private transport and dining costs. Monument entry fees are the exception: since January 2026, foreign visitors pay ₹1,000 at Amber Fort and ₹600 at most other state-run monuments in Jaipur." },
       { q: "What's the biggest hidden cost people forget to budget for?", a: "Camera and video fees at monuments, along with the 12 to 18 percent GST added to most hotel bills — both are easy to underestimate when planning from a quoted room rate alone." },
       { q: "Do guided experiences replace the need for a private cab?", a: "Not entirely. Raah's walking experiences cover their respective areas on foot, but you'll still want transport between experiences — particularly from the old city out to Amber — and for any independent exploring in between." },
     ],
@@ -1779,6 +1779,9 @@ Beyond independent sightseeing, guided experiences add real depth to a Jaipur tr
 - **[The Lost Kingdom](/experiences/the-lost-kingdom):** $40 / ₹3,500
 - **[The Farm & Fire](/experiences/farm-and-fire):** $45 / ₹4,000
 - **[The Blue Hour](/experiences/the-blue-hour):** about $85 / ₹7,500 for two people (private open-jeep evening tour, minimum two, up to four per jeep)
+- **[Jaipur Half Day Tour](/experiences/jaipur-half-day-tour):** $109 / ₹9,750 for one guest, with private car, guide, monument tickets and lunch
+- **[Jaipur Full Day Tour](/experiences/jaipur-full-day-tour):** $150 / ₹13,500 for one guest, with private car, guide, monument tickets and lunch
+- **[Pushkar Day Trip & Block Printing](/experiences/pushkar-day-trip-from-jaipur):** $249 / ₹22,410 for two guests
 
 Per-person rates drop for groups of three or more.
 
@@ -1786,13 +1789,13 @@ For travellers wanting to combine multiple experiences into a single day, combo 
 
 ## Jaipur vs. Delhi: Where Your Money Goes Further
 
-On entry fees alone, Jaipur and Delhi are fairly similar — Amber Fort costs foreign visitors around ₹500, close to the ₹550 charged at Delhi's Red Fort. If you plan to see several monuments, Jaipur's ₹1,000 composite ticket (covering Amber Fort, Hawa Mahal, Jantar Mantar and Nahargarh over two days) is the better value.
+On entry fees, Jaipur is no longer the cheaper city. Since Rajasthan revised its monument prices in January 2026, Amber Fort costs foreign visitors ₹1,000, and Hawa Mahal, Jantar Mantar, Albert Hall and Nahargarh cost ₹600 each. If you plan to see several monuments, ask at the ticket counter about combined tickets before you buy single entries.
 
 Where Jaipur pulls ahead is everything around the monument, not the ticket itself. Overall daily costs in Jaipur tend to run meaningfully lower than in Delhi, largely because private transport and dining are less expensive here — a day in Jaipur averaging in the $90s compares favorably against Delhi's higher costs for the same category of travel.
 
 A local guide at Amber Fort typically runs ₹400 to ₹1,000 for an hour to ninety minutes, and independent reviewers who've done both consistently flag the guide as the difference between "seeing a fort" and actually understanding what you're looking at — the Suhag Mandir's lattice screens or the Sukh Niwas water-cooling system aren't self-explanatory without someone to walk you through them.
 
-**The honest takeaway:** entry fees won't be where you save in Jaipur — they're similar to Delhi's. Expect the day around those sights — food, transport, and overall pace — to stretch your budget noticeably further instead.
+**The honest takeaway:** entry fees won't be where you save in Jaipur. Expect the day around those sights — food, transport, and overall pace — to stretch your budget noticeably further instead.
 
 ## Sample Daily Budget Breakdown
 
