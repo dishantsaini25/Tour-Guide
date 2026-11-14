@@ -3,6 +3,108 @@
  */
 
 export const journalArticles = [
+  // Stepwells: Chand Baori & Panna Meena (Month 3, Blog 2, EN)
+  {
+    slug: "chand-baori-stepwells-jaipur",
+    datePublished: "2026-11-14",
+    dateModified: "2026-11-14",
+    title: "Chand Baori and the Stepwells of Jaipur: A Local Guide",
+    metaTitle: "Chand Baori and the Stepwells of Jaipur",
+    excerpt: "What a stepwell is, why Chand Baori in Abhaneri is one of the largest in the world, and how to see it and Panna Meena ka Kund from Jaipur.",
+    metaDescription: "Chand Baori in Abhaneri and Panna Meena ka Kund in Amer: a local guide to Jaipur's stepwells, how to visit them and how far they are from Jaipur.",
+    category: "Jaipur Guide",
+    readTime: "6 min read",
+    image: "/images/journal/chand-baori-stepwell-abhaneri.webp",
+    relatedExperiences: [
+      "jaipur-full-day-tour",
+      "jaipur-half-day-tour",
+      "ridge-and-ramparts",
+    ],
+    images: [
+      { src: "/images/journal/chand-baori-stepwell-abhaneri.webp", alt: "Chand Baori stepwell in Abhaneri, with flights of steps down to the water" },
+      { src: "/images/journal/chand-baori-geometric-steps.webp", alt: "Geometric pattern of steps at Chand Baori, one of the largest stepwells in the world" },
+      { src: "/images/tours/panna-meena-ka-kund-amer.webp", alt: "Panna Meena ka Kund, the 16th-century stepwell in Amer, Jaipur" },
+      { src: "/images/journal/chand-baori-steps-close-up.webp", alt: "Close-up of the narrow stone steps at Chand Baori, Abhaneri" },
+      { src: "/images/journal/chand-baori-carved-stone-panel.webp", alt: "Carved stone panel displayed at Chand Baori, Abhaneri" },
+    ],
+    faqs: [
+      { q: "What is the most famous stepwell near Jaipur?", a: "Chand Baori in Abhaneri, about 95 km from Jaipur. It is one of the deepest and largest stepwells in the world, with about 3,500 steps over 13 levels." },
+      { q: "Is there a stepwell in Jaipur itself?", a: "Yes. Panna Meena ka Kund is in Amer, a short walk from Amber Fort. It is a 16th-century stepwell with criss-cross stairs on all four sides." },
+      { q: "How far is Chand Baori from Jaipur?", a: "About 95 km, on the road from Jaipur to Agra." },
+      { q: "Is there an entry fee for Panna Meena ka Kund?", a: "No. There is no ticket to visit Panna Meena ka Kund." },
+      { q: "Can you walk down the steps at Chand Baori?", a: "No. Visitors see the stepwell from the top and the surrounding galleries." },
+      { q: "Can I visit Chand Baori on the way from Jaipur to Agra?", a: "Yes. Abhaneri is on the route between Jaipur and Agra, so it is an easy stop on a Golden Triangle trip." },
+    ],
+    body: `Long before taps and tanks, Rajasthan survived on rainwater. In a region where the monsoon lasts only a few weeks, every drop had to be caught and kept for the dry months. The answer was the stepwell, or *baori*: a deep well with steps leading down to the water, so that people could reach it however far the level fell.
+
+Many stepwells were also works of art. Two of the most beautiful are within reach of Jaipur: Panna Meena ka Kund in Amer, a short walk from Amber Fort, and Chand Baori in the village of Abhaneri, one of the deepest and largest stepwells in the world.
+
+In this guide I will explain what a stepwell is, what makes each of these two special, and how to fit them into your trip.
+
+## What Is a Stepwell?
+
+A stepwell is a well that you can walk down into. Instead of lowering a bucket on a rope, people climbed down flights of stairs to the water, which could sit several storeys below the ground at the end of the dry season.
+
+Stepwells were more than water stores. Their deep walls kept the air inside cool, so they became places to rest and meet in the heat. Many had temples beside them, and some had pavilions and rooms built into their walls.
+
+## Panna Meena ka Kund, Amer
+
+**Where:** Amer, a short walk from Amber Fort
+**Built:** 16th century
+**Entry:** No ticket
+
+Panna Meena ka Kund is the stepwell most visitors to Jaipur see, because it sits in the old town of Amer, just below Amber Fort. It is square, with criss-cross flights of steps on all four sides leading down to the water. From the top, the pattern of the stairs looks almost like a drawing.
+
+It is not one of Rajasthan's biggest stepwells, but it is one of the most photographed. The people of Amer drew water from it for their homes and the nearby temples, and its cool air made it a resting place for travellers. On its northern wall is a room that is believed to have been used for ceremonies before weddings and on festival days.
+
+**Tips:**
+- Go early in the morning, before the tour buses, when the light is soft and the stepwell is quiet.
+- Combine it with Amber Fort and the old town of Amer. The 16th-century Jagat Shiromani Temple and the Ambikeshwar Temple, which dates back to the 10th century, are both close by.
+- Follow the instructions of the staff on site about walking on the steps.
+
+## Chand Baori, Abhaneri
+
+**Where:** Abhaneri village, about 95 km from Jaipur on the road to Agra
+**Built:** Around the 9th century
+**Steps:** About 3,500
+**Depth:** About 30 metres, over 13 levels
+
+Chand Baori is one of the oldest and most impressive stepwells in India. It is said to have been built by King Chanda, after whom it is named, around the 9th century. Its 3,500 narrow steps run down three sides in a dense geometric pattern, 13 levels deep, to a small square of green water about 30 metres below.
+
+The fourth side is different: a multi-storey pavilion with balconies and rooms, which is said to have been used by the royal family. Opposite the stepwell stands Harshat Mata Temple, dedicated to the goddess of joy and happiness.
+
+Standing at the top and looking down, the scale is hard to take in. The steps seem to repeat forever, and the light and shadow change as the sun moves across them.
+
+**Tips:**
+- Allow about an hour at Chand Baori and the Harshat Mata Temple together.
+- Morning light is best for photos, when the sun throws long shadows across the steps.
+- Visitors look at the stepwell from the top and the galleries. Do not try to climb down the steps.
+
+## How to Visit Chand Baori from Jaipur
+
+Abhaneri is about 95 km from Jaipur, on the road towards Agra. That gives you two easy ways to see it:
+
+- **As a stop on the way to or from Agra.** If you are travelling the Golden Triangle of Delhi, Agra and Jaipur, Abhaneri is right on the route between Agra and Jaipur. A short detour lets you see Chand Baori without spending an extra day.
+- **As a half-day trip from Jaipur.** Leave early, spend an hour at the stepwell and temple, and be back in Jaipur by lunch.
+
+## Which Stepwell Should You See?
+
+| | Panna Meena ka Kund | Chand Baori |
+|---|---|---|
+| **Location** | Amer, next to Amber Fort | Abhaneri, about 95 km from Jaipur |
+| **Age** | 16th century | Around 9th century |
+| **Size** | Small and intimate | One of the largest in the world |
+| **Time needed** | 20–30 minutes | About 1 hour |
+| **Best for** | Anyone visiting Amber Fort | Golden Triangle travellers and photographers |
+
+If you are in Jaipur for only a day or two, see Panna Meena ka Kund with Amber Fort. If you are driving between Jaipur and Agra, make time for Chand Baori.
+
+## See the Stepwells with Raah
+
+Panna Meena ka Kund is part of our [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) and [Jaipur Half Day Tour](/experiences/jaipur-half-day-tour), together with Amber Fort, Jal Mahal and the royal cenotaphs at Gaitore. For a deeper look at the fort and the old town around it, read our [Amber Fort guide](/journal/amber-fort-jaipur-guide).
+
+Planning your days in Jaipur? Our guide to [how many days you need in Jaipur](/journal/how-many-days-in-jaipur) will help you decide what fits.`,
+  },
     // Hawa Mahal (Month 3, Blog 1, EN)
   {
     slug: "hawa-mahal-jaipur",
