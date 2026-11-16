@@ -3,6 +3,138 @@
  */
 
 export const journalArticles = [
+  // Triángulo de Oro (Month 3, Blog 3, ES)
+  {
+    slug: "triangulo-de-oro-india",
+    datePublished: "2026-11-16",
+    dateModified: "2026-11-16",
+    title: "Triángulo de Oro de la India: ruta, días y consejos de un guía local",
+    metaTitle: "Triángulo de Oro de la India: ruta y días",
+    excerpt: "Delhi, Agra y Jaipur: cuántos días necesitas, distancias, por qué es famosa cada ciudad y una ruta de 7 días, contada por un guía local en Jaipur.",
+    metaDescription: "Triángulo de Oro de la India: Delhi, Agra y Jaipur. Cuántos días necesitas, distancias, ruta de 7 días y consejos de un guía local en Jaipur.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    lang: "es",
+    image: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
+    relatedExperiences: [
+      "jaipur-full-day-tour",
+      "the-crown-of-jaipur",
+      "jaipur-at-dawn",
+    ],
+    images: [
+      { src: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", alt: "El Fuerte Amber reflejado en el lago Maota, Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp", alt: "El Hawa Mahal (Palacio de los Vientos) iluminado de noche en Jaipur" },
+      { src: "/images/journal/chand-baori-stepwell-abhaneri.webp", alt: "El pozo escalonado de Chand Baori, en Abhaneri, entre Agra y Jaipur" },
+      { src: "/images/tours/jal-mahal-man-sagar-lake.webp", alt: "El Jal Mahal, el palacio sobre el lago Man Sagar, en Jaipur" },
+      { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "Chandra Mahal en el Palacio de la Ciudad de Jaipur" },
+    ],
+    faqs: [
+      { q: "¿Qué ciudades forman el Triángulo de Oro de la India?", a: "Delhi, Agra y Jaipur, en el norte de la India." },
+      { q: "¿Cuántos días se necesitan para el Triángulo de Oro?", a: "Un mínimo de 5 días. Lo ideal son 6 o 7, con dos días completos en Jaipur." },
+      { q: "¿Cuál es la mejor época para hacer el Triángulo de Oro?", a: "De octubre a marzo, cuando el clima es soleado y agradable." },
+      { q: "¿Qué día cierra el Taj Mahal?", a: "El Taj Mahal cierra los viernes." },
+      { q: "¿Qué ver entre Agra y Jaipur?", a: "Fatehpur Sikri, cerca de Agra, y el pozo escalonado de Chand Baori, en Abhaneri, a unos 95 km de Jaipur." },
+      { q: "¿Qué comprar en Jaipur?", a: "Joyas, textiles, alfombras, pulseras de laca y estatuas de mármol. Jaipur es la mejor ciudad del Triángulo de Oro para ir de compras." },
+      { q: "¿Se puede hacer el Triángulo de Oro con guía en español?", a: "Sí. En Jaipur, los paseos guiados de Raah están disponibles en español sin coste adicional." },
+    ],
+    body: `Si es tu primer viaje a la India, lo más probable es que alguien te haya hablado del Triángulo de Oro. Es la ruta clásica del norte del país: **Delhi, Agra y Jaipur**, tres ciudades unidas por buenas carreteras que, en el mapa, forman un triángulo.
+
+Es la mejor introducción a la India: la capital con sus mezquitas y mercados, el Taj Mahal en Agra y los fuertes y palacios de Jaipur, la Ciudad Rosa. Soy guía en Jaipur y cada semana acompaño a viajeros de España y México que hacen esta ruta. En esta guía te cuento cómo organizarla, cuántos días necesitas y qué no debes perderte.
+
+## ¿Qué es el Triángulo de Oro?
+
+Son tres ciudades del norte de la India:
+
+- **Delhi:** la capital, punto de llegada de la mayoría de los vuelos internacionales. La Vieja Delhi es famosa por su cocina y su comida callejera, y Nueva Delhi por sus grandes edificios oficiales, como el Rashtrapati Bhavan, la residencia del presidente de la India.
+- **Agra:** la ciudad del Taj Mahal y del Fuerte de Agra, y también del *petha*, un dulce tradicional hecho de calabaza blanca.
+- **Jaipur:** la capital de Rajastán, con el Fuerte Amber, el Palacio de la Ciudad, el Jantar Mantar y el Hawa Mahal. Es también la mejor ciudad de la ruta para ir de compras: joyas, textiles, alfombras, pulseras de laca y estatuas de mármol.
+
+La ruta suele empezar y terminar en Delhi. Las distancias son aproximadas:
+
+| Tramo | Distancia | Tiempo por carretera |
+|---|---|---|
+| Delhi → Agra | unos 230 km | 3,5 a 4 horas |
+| Agra → Jaipur | unos 240 km | 4 a 5 horas |
+| Jaipur → Delhi | unos 280 km | 5 a 6 horas |
+
+Entre Delhi y Agra también hay un tren rápido, el Gatimaan Express, que hace el trayecto en menos de dos horas.
+
+## ¿Cuántos días necesitas?
+
+**Mínimo, 5 días.** Con menos, pasarás más tiempo en la carretera que en las ciudades.
+
+**Lo ideal, 6 o 7 días.** Así puedes ver cada ciudad sin prisas y añadir alguna parada en el camino.
+
+Una propuesta de 7 días:
+
+- **Día 1:** llegada a Delhi y descanso.
+- **Día 2:** Delhi: Vieja Delhi, la Jama Masjid y el bazar de Chandni Chowk, y la tumba de Humayun.
+- **Día 3:** viaje a Agra. Por la tarde, el Fuerte de Agra.
+- **Día 4:** el Taj Mahal al amanecer. Después, viaje a Jaipur con paradas en Fatehpur Sikri y el pozo escalonado de Chand Baori.
+- **Día 5:** Jaipur: el Fuerte Amber por la mañana y la ciudad vieja por la tarde.
+- **Día 6:** Jaipur con calma: los bazares, los talleres de artesanos o una cena con una familia local.
+- **Día 7:** regreso a Delhi para tu vuelo.
+
+## Delhi: la puerta de entrada
+
+La mayoría de los viajeros llegan a Delhi y pasan allí uno o dos días. La Vieja Delhi, con la Jama Masjid y el bazar de Chandni Chowk, es intensa y fascinante, y es el mejor lugar de la ciudad para probar la cocina de Delhi y su comida callejera. La Nueva Delhi es más amplia y tranquila, con el Rashtrapati Bhavan, la residencia del presidente de la India, la tumba de Humayun y la Puerta de la India.
+
+Mi consejo: no intentes verlo todo. Elige dos o tres lugares por día y deja tiempo para recuperarte del viaje.
+
+## Agra: el Taj Mahal
+
+Agra merece al menos una noche, para poder ver el Taj Mahal al amanecer, cuando hay menos gente y la luz es suave. Además del Taj, el Fuerte de Agra es imprescindible.
+
+**Importante: el Taj Mahal cierra los viernes.** Organiza tu ruta para no llegar a Agra ese día.
+
+Antes de irte, prueba el *petha*, el dulce más famoso de Agra. Se hace con calabaza blanca y se vende en muchos sabores.
+
+## De Agra a Jaipur: paradas en el camino
+
+El trayecto entre Agra y Jaipur es el mejor del Triángulo para hacer paradas:
+
+- **Fatehpur Sikri:** la antigua ciudad imperial mogola, muy cerca de Agra.
+- **Chand Baori, en Abhaneri:** uno de los pozos escalonados más profundos y grandes del mundo, con unos 3.500 escalones. Está a unos 95 km de Jaipur.
+
+Si te gustan las aves, el Parque Nacional de Keoladeo, en Bharatpur, también está en esta zona. Es Patrimonio de la Humanidad de la UNESCO y uno de los santuarios de aves más conocidos del mundo.
+
+## Jaipur: la Ciudad Rosa
+
+Jaipur es la parte del Triángulo que más sorprende a los viajeros. Fue fundada en 1727 por el maharajá Sawai Jai Singh II y pintada de rosa en 1876 para recibir al príncipe de Gales, Alberto Eduardo, el futuro rey Eduardo VII.
+
+Lo que no te debes perder:
+
+- **El Fuerte Amber,** temprano por la mañana, antes de las multitudes.
+- **El Palacio de la Ciudad,** el **Jantar Mantar** y el **Hawa Mahal,** a pocos minutos a pie entre sí.
+- **Los bazares de la ciudad vieja** al atardecer, cuando se encienden las luces.
+- **Las compras:** Jaipur es famosa por sus joyas, sus textiles, sus alfombras, sus pulseras de laca y sus estatuas de mármol. Es el lugar ideal del Triángulo para comprar recuerdos.
+
+Mi consejo más importante: **no le des a Jaipur solo un día.** Muchos viajeros llegan desde Agra por la tarde y se van a la mañana siguiente. Con dos días completos, Jaipur deja de ser una lista de monumentos y se convierte en el mejor recuerdo del viaje.
+
+Aquí tienes más ideas: [qué ver en Jaipur](/journal/que-ver-en-jaipur) y nuestra guía del [Fuerte Amber](/journal/fuerte-amber-guia-completa).
+
+## La mejor época para hacer el Triángulo de Oro
+
+**De octubre a marzo**, cuando los días son soleados y agradables para caminar. De abril a junio hace mucho calor, y de julio a septiembre llega el monzón.
+
+Todos los detalles, mes a mes: [la mejor época para viajar a la India](/journal/mejor-epoca-para-viajar-a-la-india).
+
+## Consejos prácticos
+
+- **Contrata un coche con conductor** para los trayectos por carretera. Es la forma más cómoda de hacer la ruta y te permite parar donde quieras.
+- **Reserva con antelación** en temporada alta, de octubre a marzo.
+- **Lleva efectivo en billetes pequeños.** Muchos monumentos públicos, puestos y tuk-tuks no aceptan tarjeta.
+- **Contrata guías con licencia** en cada ciudad. Un buen guía cambia por completo lo que ves.
+- **Ve temprano** a los grandes monumentos: menos gente, menos calor y mejor luz.
+
+Más consejos para tu primer viaje: [viajar a la India](/journal/viajar-a-la-india) y [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)
+
+## Jaipur en español con Raah
+
+En Jaipur, en Raah ofrecemos nuestros paseos guiados en español sin coste adicional, con guías con licencia y grupos pequeños. Si llegas desde Agra y tienes un solo día, nuestro [tour de un día completo por Jaipur](/experiences/jaipur-full-day-tour) incluye el Fuerte Amber, el Jantar Mantar, el Palacio de la Ciudad y el Hawa Mahal, con coche privado y guía.
+
+Más información sobre nuestro [guía en español en Jaipur](/journal/english-spanish-speaking-guide-jaipur).`,
+  },
   // Stepwells: Chand Baori & Panna Meena (Month 3, Blog 2, EN)
   {
     slug: "chand-baori-stepwells-jaipur",
