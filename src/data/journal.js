@@ -3,6 +3,104 @@
  */
 
 export const journalArticles = [
+  // Jantar Mantar (Month 3, Blog 4, EN)
+  {
+    slug: "jantar-mantar-jaipur",
+    datePublished: "2026-11-17",
+    dateModified: "2026-11-17",
+    title: "Jantar Mantar Jaipur: A Local Guide to the Royal Observatory",
+    metaTitle: "Jantar Mantar Jaipur: Guide to the Royal Observatory",
+    excerpt: "How Jaipur's royal observatory works: the world's largest stone sundial, the instruments worth seeing and how to plan your visit.",
+    metaDescription: "Jantar Mantar in Jaipur: how the world's largest stone sundial works, the instruments worth seeing and tips for your visit, from a local guide.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    image: "/experiences/crown-of-jaipur/guests-jantar-mantar-rashi-yantra-jaipur.webp",
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-full-day-tour",
+      "jaipur-half-day-tour",
+    ],
+    images: [
+      { src: "/experiences/crown-of-jaipur/guests-jantar-mantar-rashi-yantra-jaipur.webp", alt: "Guests with a Raah guide at the Rashivalaya Yantra, Jantar Mantar, Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp", alt: "Hawa Mahal at sunset, a short walk from Jantar Mantar" },
+      { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "Chandra Mahal at the City Palace, next to Jantar Mantar" },
+    ],
+    faqs: [
+      { q: "Who built Jantar Mantar in Jaipur?", a: "Maharaja Sawai Jai Singh II, the founder of Jaipur. It was completed in 1734." },
+      { q: "How many instruments are there at Jantar Mantar Jaipur?", a: "There are 19 main instruments. The largest is the Vrihat Samrat Yantra, the world's largest stone sundial." },
+      { q: "How accurate is the sundial at Jantar Mantar?", a: "The Vrihat Samrat Yantra tells local time to an accuracy of about two seconds. Its shadow moves about one millimetre every second." },
+      { q: "Why doesn't the sundial match my phone?", a: "The sundial shows local solar time in Jaipur. Your phone shows Indian Standard Time, which is set for a line further east. The difference changes through the year." },
+      { q: "Is Jantar Mantar a UNESCO World Heritage Site?", a: "Yes, since 2010." },
+      { q: "How long do you need at Jantar Mantar?", a: "About an hour, ideally with a guide." },
+      { q: "What does Jantar Mantar mean?", a: "Roughly, \"calculation instrument\". The name comes from yantra, meaning instrument, and mantra, meaning formula or calculation." },
+      { q: "What is the entry fee for Jantar Mantar Jaipur for foreigners?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600." },
+      { q: "What is the best time to visit Jantar Mantar?", a: "A sunny morning, before midday. The instruments work with shadows, and late morning gives sharp shadows with less heat than the afternoon. October to March is the most comfortable season." },
+      { q: "How many Jantar Mantars are there in India?", a: "Sawai Jai Singh II built five: in Delhi, Jaipur, Ujjain, Varanasi and Mathura. The one in Mathura no longer survives, and Jaipur's is the largest and best preserved." },
+      { q: "Is Jantar Mantar worth visiting?", a: "Yes, especially with a guide. Without an explanation the instruments look like abstract sculptures. With one, you can watch the world's largest stone sundial tell the time." },
+    ],
+    body: `Most visitors walk into Jantar Mantar in Jaipur expecting a museum. What they find is a courtyard full of giant stone shapes: ramps, bowls, arcs and a staircase that seems to climb into the sky. It looks like a modern sculpture park. It is nearly 300 years old.
+
+Jantar Mantar is an observatory. Every structure here is a scientific instrument, built to measure time, track the sun and the stars, and predict eclipses, all with the naked eye. In this guide I'll explain who built it, how the most important instruments work, and how to make the most of your visit.
+
+## Jantar Mantar at a Glance
+
+| | |
+|---|---|
+| **Built** | 1728–1734 |
+| **Built by** | Maharaja Sawai Jai Singh II, the founder of Jaipur |
+| **Instruments** | 19 main instruments |
+| **Highlight** | The Vrihat Samrat Yantra, the world's largest stone sundial |
+| **UNESCO World Heritage Site** | Since 2010 |
+| **Where** | In the old city, next to City Palace and a short walk from Hawa Mahal |
+
+## Why Did Jai Singh II Build an Observatory?
+
+Sawai Jai Singh II was a king, but he was also a serious astronomer. He was not happy with the astronomical tables of his time, which often got the positions of the planets wrong. His answer was to build instruments so large that they could measure the sky more accurately than the small brass tools then in use.
+
+He built five observatories in all: in Delhi, Jaipur, Ujjain, Varanasi and Mathura. The one in Jaipur is the largest and the best preserved. Jaipur itself was planned by the same king, and his love of science shaped the whole city. More on that here: [Why Was Jaipur Built?](/journal/why-jaipur-was-built)
+
+## The Instruments Worth Seeing
+
+### Vrihat Samrat Yantra: the world's largest sundial
+
+This is the giant triangle you see from the entrance. It is about 27 metres tall, and its sloping edge is set at 27 degrees, the latitude of Jaipur, so that it points to the North Pole.
+
+As the sun moves, the triangle casts a shadow on the curved scales on either side. That shadow moves about one millimetre every second, so you can actually watch time pass. Stand by the scale for a minute and you will see the shadow move about the width of your hand. The instrument tells local time to an accuracy of about two seconds.
+
+### Laghu Samrat Yantra: the small sundial
+
+Next to the giant is its smaller version. It works in the same way but reads time to about 20 seconds. Jai Singh built the large one because he wanted more precision.
+
+Here's a detail most visitors miss: the sundials show *local solar time*, not the time on your phone. Jaipur lies west of the line that Indian Standard Time is based on, and the sun's timing also changes through the year. So the sundial and your phone usually disagree by somewhere between 10 and 45 minutes. Ask your guide to read the sundial for you, then compare.
+
+### Jai Prakash Yantra: the sky in a bowl
+
+These are two large bowls sunk into the ground, each with a grid marked on the inside. Think of each bowl as an upside-down copy of the sky. A small ring hangs over the centre, and its shadow falls on the grid to show the position of the sun.
+
+### Rashivalaya Yantra: one for each zodiac sign
+
+A group of 12 instruments, one for each sign of the zodiac. Each one is angled differently, to measure the position of the sky when its sign rises. Astrology mattered at the royal court, and these instruments were used to prepare horoscopes and choose auspicious dates.
+
+### Nadi Valaya Yantra: two faces, two seasons
+
+A round dial with two faces, one facing north and one facing south. The sun lights the north face for half the year and the south face for the other half. It is one of the easiest instruments to understand, and a favourite for photos.
+
+## Tips for Your Visit
+
+- **Go with a guide.** Without an explanation, the instruments are just strange shapes. With one, they become the most interesting stop in Jaipur.
+- **Go on a sunny day, before midday.** The instruments work with shadows, so you need sun. Late morning gives sharp shadows and less heat than the afternoon.
+- **Protect yourself from the sun.** There is very little shade inside. Bring a hat, sunscreen and water.
+- **Allow about an hour.** That is enough to see the main instruments properly.
+- **Tickets:** Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 to enter.
+
+## How to Combine Jantar Mantar with Other Sights
+
+Jantar Mantar sits right next to City Palace and is a few minutes' walk from Hawa Mahal. The three together make a natural half day, and they tell one story: the king who planned a city, studied the stars and built a palace at its centre.
+
+- [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk through Hawa Mahal, Jantar Mantar and City Palace.
+- The [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) adds Jantar Mantar and City Palace to a day that starts at Amber Fort.
+- Planning on your own? See our [Hawa Mahal guide](/journal/hawa-mahal-jaipur) and our [one day in Jaipur itinerary](/journal/one-day-in-jaipur).`,
+  },
   // Triángulo de Oro (Month 3, Blog 3, ES)
   {
     slug: "triangulo-de-oro-india",
