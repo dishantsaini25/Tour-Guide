@@ -68,7 +68,7 @@ export const faqs = [
     category: "Experiences",
     question: "What kind of experiences does Raah offer?",
     answer:
-      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking experience, a walled city community walk, a sunrise wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer combination packages for guests who want to go deeper into the city.",
+      "We offer a curated range of experiences: sunrise heritage walks through the Old City, a ridge and fort trek around Amber, an astronomy and royal architecture tour at Jaipur's iconic monuments, an evening jeep drive during the blue hour, an evening street food and bazaar walk, a countryside farmhouse cooking experience, a walled city community walk, a sunrise wilderness trail in the Aravallis, and an artisan craft lane walk. We also offer private day tours by car: the Jaipur Full Day Tour, the Jaipur Half Day Tour and a Pushkar day trip with hand block printing. Combination packages are available for guests who want to go deeper into the city.",
     linkText: "Browse all experiences",
     linkHref: "/experiences",
   },
@@ -77,7 +77,7 @@ export const faqs = [
     category: "Experiences",
     question: "How long do the experiences usually last?",
     answer:
-      "Most experiences last 2.5–3 hours. The Blue Hour (evening jeep drive) runs about 4 hours and The Lost Kingdom hike about 4.5 hours. Timings on each experience page are for October–March; they are flexible and confirmed at booking.",
+      "Most experiences last 2.5–3 hours. The Blue Hour (evening jeep drive) runs about 4 hours and The Lost Kingdom hike about 4.5 hours. Our private day tours by car last a half day or a full day, and the Pushkar day trip takes a full day. Timings on each experience page are for October–March; they are flexible and confirmed at booking.",
   },
   {
     id: 7,
@@ -91,7 +91,7 @@ export const faqs = [
     category: "Experiences",
     question: "Is transportation included in the experiences?",
     answer:
-      "Transportation is included in The Blue Hour, which is conducted in a private open-air 4x4 Jeep, and The Crown of Jaipur ends with a short tuk-tuk ride. Walking experiences take place entirely on foot. For Jaipur at Dawn, the route covers approximately 3–4 km at a gentle pace. Transport to and from meeting points can be arranged on request at an additional cost. Please check the individual experience page for transport details.",
+      "Transportation is included in The Blue Hour, which is conducted in a private open-air 4x4 Jeep, and The Crown of Jaipur ends with a short tuk-tuk ride. The Jaipur Full Day Tour, Jaipur Half Day Tour and Pushkar day trip include a private air-conditioned car with pickup from your hotel in Jaipur. Walking experiences take place entirely on foot. For Jaipur at Dawn, the route covers approximately 3–4 km at a gentle pace. Transport to and from meeting points can be arranged on request at an additional cost. Please check the individual experience page for transport details.",
   },
   {
     id: 9,
@@ -179,7 +179,7 @@ export const faqs = [
     category: "Booking",
     question: "How much do Raah experiences cost?",
     answer:
-      "Prices are per person, with lower per-person rates for groups. Jaipur at Dawn, Artisan's Jaipur and Living the Walled City cost ₹2,500 (about $30); The Ridge & Ramparts, The Crown of Jaipur and Beyond the Pink ₹2,800 (about $32); The Lost Kingdom ₹3,500 (about $40); The Farm & Fire ₹4,000 (about $45); and The Blue Hour ₹7,500 for two guests (minimum 2, up to 4 per jeep). Combo journeys that pair two or more experiences in a day are also available.",
+      "Prices are per person, with lower per-person rates for groups. Jaipur at Dawn, Artisan's Jaipur and Living the Walled City cost ₹2,500 (about $30); The Ridge & Ramparts, The Crown of Jaipur and Beyond the Pink ₹2,800 (about $32); The Lost Kingdom ₹3,500 (about $40); The Farm & Fire ₹4,000 (about $45); and The Blue Hour ₹7,500 for two guests (minimum 2, up to 4 per jeep). Private day tours by car cost ₹9,750 (USD 109) for the Jaipur Half Day Tour and ₹13,500 (USD 150) for the Jaipur Full Day Tour for one guest, and the Pushkar day trip starts at USD 249 for two guests. Combo journeys that pair two or more experiences in a day are also available.",
     linkText: "See all experiences and prices",
     linkHref: "/experiences",
   },
@@ -202,9 +202,9 @@ export const faqs = [
     category: "Booking",
     question: "Can I get a full-day guided tour cost estimate for a foreign visitor?",
     answer:
-      "Combo journeys pair two experiences (One Day Signature Journeys) or three experiences (Full-Day Premium Journeys) in a single day. Current combo prices are listed on our experiences page, and group pricing is available on request.",
-    linkText: "See all combo journeys",
-    linkHref: "/experiences",
+      "Yes. Our private Jaipur Full Day Tour costs ₹13,500 (USD 150) for one guest and ₹20,250 (USD 225) for two, with USD 95 for each extra guest up to four. It includes a private air-conditioned car, a government-approved guide, monument entry tickets and a buffet lunch. If you prefer walking, our combo journeys pair two or three walking experiences in a single day.",
+    linkText: "See the Jaipur Full Day Tour",
+    linkHref: "/experiences/jaipur-full-day-tour",
   },
 
   // ── Practical Information ─────────────────────────────────────────────────
@@ -254,6 +254,95 @@ export const faqs = [
   linkText: "See our full cost breakdown",
   linkHref: "/journal/jaipur-trip-cost",
 },
+  {
+    id: 33,
+    category: "Experiences",
+    question: "Do you offer hotel pickup?",
+    answer:
+      "Yes, on the Jaipur Full Day Tour, the Jaipur Half Day Tour and the Pushkar day trip, from hotels in Jaipur. Our walking experiences start at a fixed meeting point, which is listed on each experience page and confirmed when you book.",
+  },
+  {
+    id: 34,
+    category: "Experiences",
+    question: "Do you offer airport pickup or drop?",
+    answer:
+      "No. Airport pickup and drop are not included in our tours.",
+  },
+  {
+    id: 35,
+    category: "Experiences",
+    question: "Are monument entry tickets included?",
+    answer:
+      "It depends on the experience. On the Jaipur Full Day and Half Day tours, entry tickets to the monuments on the itinerary are included; Hawa Mahal and Jal Mahal are seen from outside. On our walking experiences, monument entry tickets are not included.",
+  },
+  {
+    id: 36,
+    category: "Experiences",
+    question: "Do you offer day trips from Jaipur?",
+    answer:
+      "Yes. Our private Pushkar day trip includes a hand block printing workshop in Bagru village and a guided walk in Pushkar, with an air-conditioned car and pickup from your hotel in Jaipur. It is available in English and Spanish.",
+    linkText: "See the Pushkar day trip",
+    linkHref: "/experiences/pushkar-day-trip-from-jaipur",
+  },
+  {
+    id: 37,
+    category: "Experiences",
+    question: "Is lunch included on the day tours?",
+    answer:
+      "Yes. A buffet lunch at an Indian restaurant is included on the Jaipur Full Day and Half Day tours. Drinks are not included. Meals are not included on the Pushkar day trip.",
+  },
+  {
+    id: 38,
+    category: "General",
+    question: "Are your guides licensed?",
+    answer:
+      "Yes. Raah's founder, Shobhit Sankhla, holds a Jaipur Regional Level Government Approved Tour Guide licence, and our day tours are led by government-approved local guides.",
+    linkText: "Meet your guide",
+    linkHref: "/about",
+  },
+  {
+    id: 39,
+    category: "Booking",
+    question: "Should I tip my guide?",
+    answer:
+      "Tips are not included in the price and are entirely at your discretion.",
+  },
+  {
+    id: 40,
+    category: "Practical Information",
+    question: "Do I need a guide at Amber Fort?",
+    answer:
+      "A guide is not required, but Amber Fort is large and most of its stories are not obvious from the signs. A licensed guide helps you understand what you are seeing and plan the best route through the palace. Our Full Day and Half Day tours include a government-approved guide at Amber Fort.",
+    linkText: "Read our Amber Fort guide",
+    linkHref: "/journal/amber-fort-jaipur-guide",
+  },
+  {
+    id: 41,
+    category: "Practical Information",
+    question: "What is the best time to visit Jaipur?",
+    answer:
+      "October to March, when days are sunny and pleasant for walking. April to June is very hot, and July to September is the monsoon.",
+    linkText: "Jaipur month by month",
+    linkHref: "/journal/best-time-to-visit-jaipur",
+  },
+  {
+    id: 42,
+    category: "Practical Information",
+    question: "How much are monument tickets in Jaipur for foreigners?",
+    answer:
+      "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹1,000 at Amber Fort and ₹600 at Hawa Mahal, Jantar Mantar, Albert Hall and Nahargarh.",
+    linkText: "See a full Jaipur trip budget",
+    linkHref: "/journal/jaipur-trip-cost",
+  },
+  {
+    id: 43,
+    category: "Practical Information",
+    question: "What should I wear when visiting temples in Jaipur?",
+    answer:
+      "Cover your shoulders and knees, and remove your shoes before entering. Comfortable shoes that slip on and off easily make temple visits simpler.",
+    linkText: "See our sunrise temple walk",
+    linkHref: "/experiences/jaipur-at-dawn",
+  },
 ];
 
 /**
