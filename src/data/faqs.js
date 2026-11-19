@@ -188,7 +188,7 @@ export const faqs = [
     category: "Booking",
     question: "What happens if I need to cancel?",
     answer:
-      "Please contact us as soon as possible if you need to cancel or reschedule. Cancellation and rescheduling terms are discussed at the time of booking. We handle each situation personally — reach out via WhatsApp or email and we'll work with you to find the best solution.",
+      "You receive a full refund if you cancel at least 48 hours before the start time, and a 50% refund if you cancel at least 12 hours before. Cancellations within 12 hours of the start time are not refunded. To cancel or reschedule, please contact us on WhatsApp or by email as soon as possible.",
   },
   {
     id: 20,

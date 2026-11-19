@@ -705,6 +705,7 @@ metaDescription: "Cook a traditional Rajasthani vegetarian meal over a wood-fire
       { q: "How far is the farmhouse from the city?", a: "It's 30 minutes away from central Jaipur. Return transport can be arranged on prior request." },
       { q: "Can children participate?", a: "Absolutely — children are natural participants in cooking experiences and tend to be our best students." },
       { q: "Can I book privately?", a: "Yes. Private bookings allow us to fully customise the menu and pace for your group." },
+      { q: "Is transport to the farmhouse included?", a: "Transport is not part of the experience, but for groups of two or more guests we offer complimentary transport for distances up to 10 km. Share your hotel when you book and we will confirm." },
       { q: "What time does the experience start?", a: "At 5:00 PM, ending around 8:00 PM, from October to March." },
       { q: "Are alcoholic drinks served?", a: "No. Alcoholic beverages are not included. The experience includes masala chai and a traditional vegetarian meal." },
       { q: "Do I take anything home?", a: "Yes, every guest receives a small souvenir from Raah." },
