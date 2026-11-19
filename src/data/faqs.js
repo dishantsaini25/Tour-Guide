@@ -343,6 +343,13 @@ export const faqs = [
     linkText: "See our sunrise temple walk",
     linkHref: "/experiences/jaipur-at-dawn",
   },
+  {
+    id: 44,
+    category: "Booking",
+    question: "How do I pay for my booking?",
+    answer:
+      "We accept payment by Wise or UPI. We share the payment details with you when we confirm your booking.",
+  },
 ];
 
 /**
