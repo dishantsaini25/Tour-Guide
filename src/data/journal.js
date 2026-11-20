@@ -880,9 +880,9 @@ Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn)
   {
     slug: "why-is-jaipur-called-the-pink-city",
     datePublished: "2026-10-23",
-    dateModified: "2026-10-23",
+    dateModified: "2026-11-20",
     title: "Why Is Jaipur Called the Pink City? The Story Behind the Colour",
-    metaTitle: "Why Is Jaipur Called the Pink City?",
+    metaTitle: "Why Is Jaipur Called the Pink City of India?",
     excerpt: "Why is everything in Jaipur's old city pink? The colour came in 1876, almost 150 years after the city was founded, and it came because of a single royal visit.",
     metaDescription: "Why is Jaipur called the Pink City of India? In 1876 the old city was painted pink to welcome the Prince of Wales. A local guide tells the full story.",
     category: "History",
@@ -903,10 +903,12 @@ Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn)
     faqs: [
             { q: "Which city is known as the Pink City of India?", a: "Jaipur, the capital of Rajasthan. It is called the Pink City of India because the buildings of its old walled city are painted pink." },
       { q: "Why is Jaipur called the Pink City?", a: "Because the old walled city is painted pink. Maharaja Sawai Ram Singh II had the city painted in 1876 to welcome the Prince of Wales, as pink is the colour of hospitality in Rajput culture." },
+      { q: "When was Jaipur painted pink?", a: "In 1876, for the visit of the Prince of Wales, the future King Edward VII. Jaipur itself is older: it was founded in 1727." },
       { q: "Who painted Jaipur pink?", a: "Maharaja Sawai Ram Singh II, the ruler of Jaipur, in 1876." },
       { q: "What colour was Jaipur before it was pink?", a: "According to the writer A.K. Roy, quoted in Aman Nath's book Jaipur: The Last Destination, the city was originally white. Maharaja Ram Singh then tried painting the streets in different colours, such as green and yellow, before pink was adopted for the whole city." },
       { q: "Is the whole of Jaipur pink?", a: "No. The pink colour is found in the old walled city. The newer parts of Jaipur are not painted in one colour." },
       { q: "Is Jaipur a UNESCO World Heritage Site?", a: "Yes. The walled city of Jaipur was added to the UNESCO World Heritage list in 2019. Jantar Mantar and Amber Fort have been World Heritage Sites since 2010 and 2013 respectively." },
+      { q: "Why is Jaipur also called the Paris of India?", a: "Jaipur is sometimes called the Paris of India for its planned layout and its beauty. Its best-known name, though, is the Pink City." },
       { q: "What is the best way to see the Pink City?", a: "On foot, early in the morning or in the late afternoon, when the light brings out the colour and the streets are easier to walk." },
     ],
     body: `Almost every guest I walk with asks me the same thing within the first hour: why is everything pink? It is a fair question. Walk through the old city and every facade, archway and shopfront is painted the same warm shade. The Pink City of Jaipur did not start out this way, though. The colour came almost 150 years after the city was founded, and it came because of a single royal visit.
@@ -914,6 +916,17 @@ Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn)
 ## The short answer
 
 In 1876, Maharaja Sawai Ram Singh II had the old city painted pink to welcome the Prince of Wales, the future King Edward VII, who was visiting Jaipur. In Rajput culture, pink is the colour of hospitality, so painting the city was a way of greeting an important guest. The colour stayed, and so did the name.
+
+## Jaipur, the Pink City: quick facts
+
+| | |
+|---|---|
+| Founded | 1727, by Maharaja Sawai Jai Singh II |
+| Painted pink | 1876, by Maharaja Sawai Ram Singh II |
+| Why pink | To welcome the Prince of Wales; pink is the colour of hospitality in Rajput culture |
+| Which part is pink | The old walled city |
+| UNESCO World Heritage | The walled city, since 2019 |
+| Best time to see the colour | Early morning and late afternoon |
 
 ## Jaipur before it was pink
 
@@ -1073,7 +1086,7 @@ Planning your budget? Our [Jaipur trip cost guide](/journal/jaipur-trip-cost) sh
   {
     slug: "best-time-to-visit-jaipur",
     datePublished: "2026-10-19",
-    dateModified: "2026-10-19",
+    dateModified: "2026-11-20",
     title: "Best Time to Visit Jaipur: A Local Guide's Month-by-Month Answer",
     metaTitle: "Best Time to Visit Jaipur, Month by Month",
     excerpt: "The best time to visit Jaipur is October to March, but the right month depends on your trip. A local guide on weather, festivals and crowds, month by month.",
@@ -1099,6 +1112,9 @@ Planning your budget? Our [Jaipur trip cost guide](/journal/jaipur-trip-cost) sh
       { q: "Is Jaipur too hot in April?", a: "April is hot, especially in the afternoons. You can still visit comfortably if you go out early in the morning and again in the evening, and rest in the middle of the day." },
       { q: "Is it worth visiting Jaipur in the monsoon?", a: "Yes, if you don't mind humidity. The rain usually comes in short showers, the landscape turns green and the monuments are much quieter than in winter." },
       { q: "How cold does Jaipur get in winter?", a: "Days are mild and sunny, but early mornings and nights in December and January are cold enough for a jacket." },
+      { q: "Which month is hottest in Jaipur?", a: "May and June are the hottest months. April is already hot, so plan sightseeing for early mornings and evenings from April to June." },
+      { q: "What is the off season in Jaipur?", a: "April to September: the hot summer months and the monsoon. Monuments are quieter and hotel prices are lower, especially in May and June." },
+      { q: "Is 2 days enough for Jaipur?", a: "Two days is enough for the highlights: one day for the old city (Hawa Mahal, City Palace, Jantar Mantar and the bazaars) and one for Amber Fort and the forts on the hills." },
       { q: "When is Jaipur most crowded?", a: "Late December to early January, Diwali, and winter weekends. If you travel then, book early and visit the big monuments first thing in the morning." },
     ],
     body: `The best time to visit Jaipur is from October to March. That is the short answer, and it is the one I give most guests. But the right month for you depends on what you want from the trip: the most comfortable weather, a festival, quieter monuments or lower hotel prices.
@@ -1186,7 +1202,7 @@ Reading in Spanish? Here is our guide to [la mejor época para viajar a la India
   {
     slug: "one-day-in-jaipur",
     datePublished: "2026-10-15",
-    dateModified: "2026-10-15",
+    dateModified: "2026-11-20",
     title: "One Day in Jaipur: A Local Guide's Itinerary",
     metaTitle: "One Day in Jaipur Itinerary: A Local's Plan",
     excerpt: "Only 24 hours in Jaipur? A local guide's one-day route: Amber Fort early, the old city at midday, sunset at Nahargarh and the city lit up after dark.",
@@ -1211,6 +1227,8 @@ Reading in Spanish? Here is our guide to [la mejor época para viajar a la India
       { q: "Is one day enough to see Jaipur?", a: "One day is enough to see the highlights: Amber Fort, City Palace, Jantar Mantar, Hawa Mahal and a sunset at Nahargarh. It is a full day, though. If you want time for the old city's markets, food and everyday life, two or three days is more comfortable." },
       { q: "Can I see Amber Fort and City Palace on the same day?", a: "Yes. Visit Amber first thing in the morning, then drive back to the old city for City Palace, Jantar Mantar and Hawa Mahal, which are within walking distance of each other." },
       { q: "What is the best order to see Jaipur in one day?", a: "North to south, then up the hill: Amber Fort in the morning, Jal Mahal on the way back, the old city monuments at midday, the bazaars in the afternoon, and Nahargarh Fort for sunset." },
+      { q: "Is Hawa Mahal entry free?", a: "No. Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 to go inside. You can see and photograph the famous facade from the street for free." },
+      { q: "How much does a one-day Jaipur tour cost?", a: "It depends on the car, the guide and what is included. Our private Jaipur Full Day Tour, with a licensed guide, an AC car, entry tickets and lunch, starts at USD 150 for one guest and USD 225 for two." },
       { q: "Can I visit Jaipur as a day trip from Delhi?", a: "You can, but it is a long day. The journey is around five hours by road each way, which leaves little time in the city. If possible, stay at least one night." },
       { q: "When is the best time of year for one day in Jaipur?", a: "October to March. The days are cool enough to walk comfortably, and the evenings are pleasant for sunset at Nahargarh and the night drive through the city." },
     ],
@@ -1254,7 +1272,7 @@ These three sit next to each other in the centre of the old city, so this is the
 
 **Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat.
 
-**Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road. More in our [Hawa Mahal guide](/journal/hawa-mahal-jaipur).
+**Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road. More in our [Hawa Mahal guide](/journal/hawa-mahal-jaipur), and the story of the colour in [why Jaipur is called the Pink City](/journal/why-is-jaipur-called-the-pink-city).
 
 **With a guide:** [The Crown of Jaipur](/experiences/the-crown-of-jaipur) covers all three in two and a half hours. It ties them together as one story about how the city was planned.
 
@@ -1527,7 +1545,7 @@ From October to March, evenings in Jaipur are cool and comfortable, which makes 
   {
     slug: "que-ver-en-jaipur",
     datePublished: "2026-10-12",
-        dateModified: "2026-10-31",
+        dateModified: "2026-11-20",
     title: "Qué ver en Jaipur: guía de un guía local",
     metaTitle: "Qué ver en Jaipur en 1 o 2 días: guía local",
     excerpt: "Qué ver en Jaipur, en qué orden y a qué hora: Hawa Mahal, Palacio de la Ciudad, Jantar Mantar, Fuerte Amber, los bazares y dónde comer, contado por un guía local.",
@@ -1556,6 +1574,8 @@ From October to March, evenings in Jaipur are cool and comfortable, which makes 
       { q: "¿Cuántos días se necesitan para ver Jaipur?", a: "Con dos días puedes ver lo esencial sin prisas: un día para la ciudad vieja (Hawa Mahal, Jantar Mantar, Palacio de la Ciudad y los bazares) y otro para el Fuerte Amber, el pueblo de Amber y el Fuerte Jaigarh. Con un tercer día puedes añadir una caminata por las colinas o una cena con una familia local." },
       { q: "¿Por qué Jaipur es la Ciudad Rosa?", a: "En 1876, el maharajá Ram Singh II mandó pintar la ciudad vieja de rosa para recibir al Príncipe de Gales, porque en la cultura rajput el rosa es el color de la hospitalidad. Desde entonces se conserva ese color en las fachadas del casco antiguo." },
       { q: "¿Cuál es la mejor época para visitar Jaipur?", a: "De octubre a marzo, cuando las temperaturas son agradables para caminar. De abril a junio hace mucho calor y de julio a septiembre es temporada de monzones." },
+      { q: "¿Cuánto cuesta la entrada a los monumentos de Jaipur?", a: "Desde enero de 2026, los visitantes extranjeros pagan ₹1.000 por el Fuerte Amber y ₹600 por el Hawa Mahal, el Jantar Mantar, el Albert Hall y el Fuerte Nahargarh. El Palacio de la Ciudad es privado y tiene su propia entrada." },
+      { q: "¿Qué ver cerca de Jaipur?", a: "Las dos excursiones más bonitas son Pushkar, una ciudad sagrada alrededor de un lago, con una parada en el pueblo de estampadores de Bagru, y el pozo escalonado Chand Baori en Abhaneri, a unos 95 km de Jaipur en la carretera hacia Agra." },
       { q: "¿Hay tours en español en Jaipur?", a: "Sí. Todas las experiencias de Raah se hacen en español sin coste adicional, en grupos pequeños de un máximo de 8 personas, con un guía que aprendió español en Salamanca." },
     ],
     body: `Jaipur es una ciudad que se suele ver con prisa. Muchos viajeros llegan desde Delhi o Agra, pasan un día, hacen fotos del Hawa Mahal y del Fuerte Amber y siguen la ruta. Lo entiendo, pero cada vez que acompaño a alguien por aquí pienso lo mismo: lo mejor de Jaipur no está en la lista de monumentos, está en lo que pasa entre ellos.
@@ -1639,6 +1659,29 @@ La comida de Jaipur es una de las grandes razones para quedarse más de un día.
 - **Chai:** el té con especias de los puestos callejeros. Es también la mejor excusa para sentarse a hablar con la gente.
 
 Mi recomendación es comer donde comen los locales, en negocios familiares con recetas de hace generaciones. En [Beyond the Pink](/experiences/beyond-the-pink) hacemos entre 6 y 8 degustaciones por los bazares de la ciudad vieja. Si prefieres cocinar, en [The Farm & Fire](/experiences/farm-and-fire) preparamos una cena vegetariana tradicional con una familia, sobre un fogón de leña.
+
+## Qué ver cerca de Jaipur
+
+Si tienes un día más, merece la pena salir de la ciudad:
+
+- **Pushkar y Bagru.** Pushkar es una ciudad sagrada construida alrededor de un lago, con sus ghats y el templo de Brahma, uno de los pocos dedicados a este dios en toda la India. De camino paramos en Bagru, un pueblo de estampadores donde imprimes tu propia tela con bloques de madera. Es nuestra [excursión de un día a Pushkar desde Jaipur](/experiences/pushkar-day-trip-from-jaipur).
+- **Chand Baori, en Abhaneri.** Uno de los pozos escalonados más grandes y profundos del mundo, a unos 95 km de Jaipur en la carretera hacia Agra. Te lo cuento en nuestra guía de los [pozos escalonados de Jaipur](/journal/chand-baori-stepwells-jaipur).
+
+Y si Jaipur es parte de un viaje más largo por el norte de la India, aquí tienes cómo organizar el [Triángulo de Oro](/journal/triangulo-de-oro-india).
+
+## El tiempo en Jaipur por meses
+
+| Mes | Cómo es el tiempo |
+|---|---|
+| Enero y febrero | Días soleados y agradables, mañanas y noches frías |
+| Marzo | Tardes cálidas |
+| Abril | Calor |
+| Mayo y junio | Mucho calor |
+| Julio y agosto | Lluvias del monzón y humedad |
+| Septiembre | Menos lluvia, todavía húmedo |
+| Octubre | Días cálidos y noches más frescas |
+| Noviembre | Tiempo ideal |
+| Diciembre | Días frescos y noches frías |
 
 ## ¿Cuándo visitar Jaipur?
 
