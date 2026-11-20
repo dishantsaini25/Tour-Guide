@@ -426,6 +426,7 @@ metaDescription: "A 2.5-hour guided walking tour of Hawa Mahal, Jantar Mantar an
       { q: "Can I see Hawa Mahal, Jantar Mantar and City Palace in one day?", a: "Yes, in half a day. The three stand side by side in the old city, and this walk covers all of them in about 2.5 hours, which leaves the rest of your day free for Amber Fort or the bazaars." },
       { q: "How far is Hawa Mahal from City Palace?", a: "Very close. Hawa Mahal stands at the edge of the City Palace complex, and Jantar Mantar is right next to City Palace, so the whole tour is done on foot." },
       { q: "How much is the entry fee for Hawa Mahal and Jantar Mantar?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 each for Hawa Mahal and Jantar Mantar. Both are also covered by the government composite ticket." },
+      { q: "What are the City Palace Jaipur timings?", a: "City Palace is open from 9:30 AM to 6:30 PM, and the last tickets are sold at 6:00 PM. The Royal Tour runs during the same hours." },
       { q: "Is City Palace entry free?", a: "No. City Palace is privately run and has its own ticket, which is not part of the government composite ticket." },
       { q: "Are monument entry tickets included?", a: "No. Entry tickets to Hawa Mahal, Jantar Mantar and City Palace are not included in the price." },
       { q: "What time does the tour start?", a: "There are two start times from October to March: 10:30 AM (ending around 1:00 PM) or 1:30 PM (ending around 4:00 PM)." },

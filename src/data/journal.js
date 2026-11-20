@@ -7,7 +7,7 @@ export const journalArticles = [
   {
     slug: "jantar-mantar-jaipur",
     datePublished: "2026-11-17",
-    dateModified: "2026-11-17",
+    dateModified: "2026-11-20",
     title: "Jantar Mantar Jaipur: A Local Guide to the Royal Observatory",
     metaTitle: "Jantar Mantar Jaipur: Guide to the Royal Observatory",
     excerpt: "How Jaipur's royal observatory works: the world's largest stone sundial, the instruments worth seeing and how to plan your visit.",
@@ -34,6 +34,7 @@ export const journalArticles = [
       { q: "How long do you need at Jantar Mantar?", a: "About an hour, ideally with a guide." },
       { q: "What does Jantar Mantar mean?", a: "Roughly, \"calculation instrument\". The name comes from yantra, meaning instrument, and mantra, meaning formula or calculation." },
       { q: "What is the entry fee for Jantar Mantar Jaipur for foreigners?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600." },
+      { q: "What are the Jantar Mantar Jaipur timings?", a: "Jantar Mantar is open from 9:00 AM to 7:00 PM, according to the official Rajasthan Tourism booking portal. We recommend arriving before 5:00 PM in summer and before 4:30 PM in winter." },
       { q: "What is the best time to visit Jantar Mantar?", a: "A sunny morning, before midday. The instruments work with shadows, and late morning gives sharp shadows with less heat than the afternoon. October to March is the most comfortable season." },
       { q: "How many Jantar Mantars are there in India?", a: "Sawai Jai Singh II built five: in Delhi, Jaipur, Ujjain, Varanasi and Mathura. The one in Mathura no longer survives, and Jaipur's is the largest and best preserved." },
       { q: "Is Jantar Mantar worth visiting?", a: "Yes, especially with a guide. Without an explanation the instruments look like abstract sculptures. With one, you can watch the world's largest stone sundial tell the time." },
@@ -90,6 +91,7 @@ A round dial with two faces, one facing north and one facing south. The sun ligh
 - **Go with a guide.** Without an explanation, the instruments are just strange shapes. With one, they become the most interesting stop in Jaipur.
 - **Go on a sunny day, before midday.** The instruments work with shadows, so you need sun. Late morning gives sharp shadows and less heat than the afternoon.
 - **Protect yourself from the sun.** There is very little shade inside. Bring a hat, sunscreen and water.
+- **Timings:** 9:00 AM to 7:00 PM, according to the [official Rajasthan Tourism booking portal](https://obms-tourist.rajasthan.gov.in/place-details/Jantar-Mantar). We recommend arriving before 5:00 PM in summer and before 4:30 PM in winter.
 - **Allow about an hour.** That is enough to see the main instruments properly.
 - **Tickets:** Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 to enter.
 
@@ -435,7 +437,7 @@ Ticket prices for Jaipur's state-run monuments were revised in January 2026, and
 
 It sits in the heart of the walled city, so it is easy to combine with the old city's other landmarks:
 
-- **City Palace and Jantar Mantar** are a short walk away. The three together make a natural half day. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk that links them into one story.
+- **City Palace and [Jantar Mantar](/journal/jantar-mantar-jaipur)** are a short walk away. The three together make a natural half day. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk that links them into one story.
 - **At sunrise,** [Jaipur at Dawn](/experiences/jaipur-at-dawn) passes Hawa Mahal just as the first light reaches the façade, after the flower market and the morning rituals at Govind Dev Ji Temple.
 - **In the evening,** [Living the Walled City](/experiences/living-walled-city) starts at Hawa Mahal and follows the old city's lanes as the lights come on.
 - **After dark,** [The Blue Hour](/experiences/the-blue-hour) drives past Hawa Mahal and Jaipur's other illuminated monuments in an open jeep.
@@ -1272,7 +1274,7 @@ These three sit next to each other in the centre of the old city, so this is the
 
 **City Palace.** The royal family of Jaipur still lives in part of it. The public section has museums of costumes and arms, painted gateways in the Pritam Niwas Chowk courtyard, and a lot of history about the people who built the city. Plan for about an hour.
 
-**Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat.
+**Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat. Our [Jantar Mantar guide](/journal/jantar-mantar-jaipur) explains the main instruments.
 
 **Hawa Mahal.** The famous pink facade is actually the back of the palace. It was built so the royal women could watch the street without being seen. See it from the front for the photo, then go inside if you have time. The upper floors look straight down on the main road. More in our [Hawa Mahal guide](/journal/hawa-mahal-jaipur), and the story of the colour in [why Jaipur is called the Pink City](/journal/why-is-jaipur-called-the-pink-city).
 
@@ -1441,7 +1443,7 @@ Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos p
   {
     slug: "things-to-do-in-jaipur-at-night",
     datePublished: "2026-10-13",
-    dateModified: "2026-10-28",
+    dateModified: "2026-11-20",
     title: "Things to Do in Jaipur at Night: A Local's Guide to the City After Dark",
     metaTitle: "Things to Do in Jaipur at Night: Local Guide",
     excerpt: "Sunset at Nahargarh, Hawa Mahal lit up, the Amber light show, evening bazaars and dinner with a local family. How a local guide would spend an evening in Jaipur.",
@@ -1469,6 +1471,9 @@ Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos p
       { q: "Is Nahargarh Fort open in the evening?", a: "Yes, Nahargarh is the most popular sunset spot in Jaipur. Check current timings on the official Rajasthan Tourism website before you go." },
       { q: "What time is the Amber Fort light and sound show?", a: "From October to February the English show is at 6:30 PM and the Hindi show at 7:30 PM. Timings move later in summer, so check the official Rajasthan Tourism website before you go." },
       { q: "Can you see Hawa Mahal at night?", a: "Yes. The façade is lit up after dark, and the street in front of it is busy and lively in the evening." },
+      { q: "What are the best places to visit in Jaipur at night for free?", a: "Hawa Mahal, Jal Mahal, Albert Hall Museum and Patrika Gate can all be seen lit up from outside without a ticket, and walking the old city bazaars in the evening is free too." },
+      { q: "Can you see Amber Fort at night?", a: "Yes. The fort is lit up above Maota Lake after dark, and the evening Sound & Light Show tells its story. Check the show timings on the official Rajasthan Tourism website before you go." },
+      { q: "What is a good evening plan in Jaipur for couples?", a: "Watch the sunset from Nahargarh Fort, see the lit monuments on the way back, then have dinner on a rooftop in the old city or cook dinner with a local family outside the city." },
       { q: "Is there a night tour in Jaipur?", a: "Yes. The Blue Hour is a private 4-hour evening tour in an open-air jeep, covering the sunset at Nahargarh and the city's lit monuments." },
     ],
     body: `Most visitors treat Jaipur as a daytime city. They see the forts in the morning, the palaces before lunch, and by evening they are back at the hotel, tired and done. That is a pity, because Jaipur after sunset is a different place. The heat drops, the stone turns gold and then blue, the monuments light up one by one, and the old city fills with people who were indoors all afternoon.
@@ -1524,6 +1529,20 @@ Night is when Jaipur's street food comes alive. Look out for:
 For the full list of dishes and where to find them, see our guide to [what to eat in Jaipur](/journal/what-to-eat-in-jaipur).
 
 The safest rule is simple: eat at busy stalls where the food is cooked fresh and the turnover is high. [Beyond the Pink](/experiences/beyond-the-pink) takes you through the old city's bazaars in the late afternoon and evening, with 6 to 8 tastings at family-run places and a stop at the evening temple rituals.
+
+## Free Places to Visit in Jaipur at Night
+
+You do not need a ticket to enjoy Jaipur after dark. These are all free:
+
+- **Hawa Mahal from the street**, when the façade is lit up
+- **The Jal Mahal promenade**, with the palace reflected in Man Sagar Lake
+- **Albert Hall Museum from outside**, floodlit arch by arch
+- **Patrika Gate** at Jawahar Circle
+- **The old city bazaars**, busiest between 5 and 8 PM
+
+## Jaipur at Night for Couples
+
+For a quieter evening for two, start with the sunset from Nahargarh Fort, then drive back past the lit monuments. A private open jeep on [The Blue Hour](/experiences/the-blue-hour) takes only your group, so it works well for a couple. Finish with dinner on a rooftop in the old city, or leave the city altogether and cook dinner with a local family.
 
 ## Have Dinner With a Local Family
 
@@ -1906,6 +1925,8 @@ Reading in Spanish? Here is our guide: [¿es seguro viajar a la India?](/journal
     datePublished: "2026-09-25",
     dateModified: "2026-10-30",
     title: "Fuerte Amber: Guía Completa",
+    metaTitle: "Fuerte Amber, Jaipur: guía completa",
+    metaDescription: "Guía completa del Fuerte Amber en Jaipur: su historia, qué ver dentro, cómo llegar y cómo visitarlo con un guía local que habla español.",
     excerpt: "Guía completa del Fuerte Amber en Jaipur — historia, qué ver, cómo llegar, y la mejor forma de visitarlo con guía local.",
     category: "Jaipur Guide", // TODO: confirm — same open question as other articles
     readTime: "6 min read",
@@ -2502,7 +2523,7 @@ The Palace of Winds is the most photographed building in Jaipur, and most visito
 
 City Palace is still home to the royal family of Jaipur, who live in Chandra Mahal. Visitors can walk through the courtyards, the textile and arms galleries, and Pritam Niwas Chowk, the courtyard with four painted gates, each representing a season.
 
-**Tip:** City Palace is more about opulence and grandeur than a museum. If you are going mainly for the famous Blue Room, know that it is only open on the palace's guided royal tour, which covers almost every corner of the palace at an extra cost.
+**Tip:** City Palace is more about opulence and grandeur than a museum. If you are going mainly for the famous Blue Room, know that it is only open on the palace's guided royal tour, which covers almost every corner of the palace at an extra cost. City Palace is open from 9:30 AM to 6:30 PM, with the last tickets sold at 6:00 PM.
 
 ### 3. Understand Jantar Mantar
 
