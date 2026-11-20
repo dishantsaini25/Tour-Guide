@@ -339,7 +339,7 @@ Planning your days in Jaipur? Our guide to [how many days you need in Jaipur](/j
   {
     slug: "hawa-mahal-jaipur",
     datePublished: "2026-11-11",
-    dateModified: "2026-11-11",
+    dateModified: "2026-11-20",
     title: "Hawa Mahal, Jaipur: A Local Guide to the Palace of the Winds",
     metaTitle: "Hawa Mahal: Palace of the Winds, Jaipur",
     excerpt: "Why Hawa Mahal's famous façade is actually the back of the palace, why it has 953 windows, what's inside and the best time to see it.",
@@ -362,6 +362,8 @@ Planning your days in Jaipur? Our guide to [how many days you need in Jaipur](/j
       { q: "Why does Hawa Mahal have 953 windows?", a: "The windows let the royal women watch street life and processions without being seen, and the latticed screens let air move through the building to keep it cool." },
       { q: "Is the Hawa Mahal façade the front or the back?", a: "Surprisingly, it's the back. The ornamented façade faces the street, and the only entrance is at the rear." },
       { q: "Can you go inside Hawa Mahal?", a: "Yes. You can go inside with a ticket and climb the ramps to the upper floors, which look out over the old city." },
+      { q: "How much does it cost to visit Hawa Mahal?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 to go inside. Hawa Mahal is also covered by the composite ticket. Seeing the façade from the street is free." },
+      { q: "How far is Hawa Mahal from City Palace?", a: "A short walk. Hawa Mahal stands at the edge of the City Palace complex, and Jantar Mantar is right next to City Palace, so the three are easy to see together on foot." },
       { q: "How long do you need at Hawa Mahal?", a: "About 20 to 30 minutes inside. Seeing the façade from the street takes only a few minutes." },
       { q: "What is the best time to visit Hawa Mahal?", a: "Just after sunrise, when the east-facing façade glows gold and the street is quiet, or after dark, when it is lit up." },
     ],
@@ -1976,7 +1978,7 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
   {
     slug: "jaipur-trip-cost",
     datePublished: "2026-09-24",
-    dateModified: "2026-11-14",
+    dateModified: "2026-11-20",
     title: "How Much Does a Trip to Jaipur Cost?",
     metaTitle: "Jaipur Trip Cost: Is Jaipur Expensive?",
     excerpt: "Jaipur is genuinely one of the more affordable major destinations in India to visit — but the real number depends on what kind of trip you're planning. Here's a realistic breakdown.",
@@ -2005,10 +2007,25 @@ Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
       { q: "How much does a 4-day trip to Jaipur cost?", a: "At the same mid-range pace, expect roughly ₹22,000 to ₹24,000, or $260 to $280, for four days — though the daily cost often drops slightly on longer trips as you settle into a routine and shop around less." },
       { q: "Is Jaipur expensive?", a: "Not compared with most major Indian destinations. Street food costs around ₹100 to ₹150 a meal and mid-range hotels ₹1,500 to ₹3,000 a night, so a comfortable mid-range trip works out at roughly ₹5,600 to ₹6,000 per person per day." },
       { q: "Is Jaipur cheaper than Delhi?", a: "For overall daily spending, generally yes, particularly for mid-range travellers, largely due to lower private transport and dining costs. Monument entry fees are the exception: since January 2026, foreign visitors pay ₹1,000 at Amber Fort and ₹600 at most other state-run monuments in Jaipur." },
+      { q: "How much are monument tickets in Jaipur?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹1,000 for Amber Fort and ₹600 each for Hawa Mahal, Jantar Mantar, Albert Hall and Nahargarh. City Palace and Jaigarh Fort are managed separately and have their own tickets." },
+      { q: "How much does a private cab cost in Jaipur for a day?", a: "Around ₹1,500 to ₹2,500 for a full day of sightseeing, which works out well for families or small groups sharing the fare." },
       { q: "What's the biggest hidden cost people forget to budget for?", a: "Camera and video fees at monuments, along with the 12 to 18 percent GST added to most hotel bills — both are easy to underestimate when planning from a quoted room rate alone." },
       { q: "Do guided experiences replace the need for a private cab?", a: "Not entirely. Raah's walking experiences cover their respective areas on foot, but you'll still want transport between experiences — particularly from the old city out to Amber — and for any independent exploring in between." },
     ],
     body: `Jaipur is genuinely one of the more affordable major destinations in India to visit — but "how much" still depends heavily on what kind of trip you're planning. Here's a realistic breakdown across accommodation, food, transport, and guided experiences, using both published cost data and Raah's own confirmed pricing, so you can build a budget that actually matches how you want to travel.
+
+## Jaipur Trip Cost at a Glance
+
+| Expense | Typical price in Jaipur |
+|---|---|
+| Hotel, per night | ₹500–₹800 budget · ₹1,500–₹3,000 mid-range · ₹5,000–₹8,000+ luxury |
+| Food, per meal | ₹100–₹150 street food · ₹300–₹500 café · ₹500–₹1,000 Rajasthani thali |
+| Auto or e-rickshaw, short ride | ₹10–₹30 |
+| Uber or Ola ride | ₹100–₹250 |
+| Private cab, full day | ₹1,500–₹2,500 |
+| Monument entry, foreign visitors | ₹1,000 Amber Fort · ₹600 Hawa Mahal, Jantar Mantar, Albert Hall, Nahargarh |
+| Guided walking experience | From ₹2,500 ($30) per person |
+| Total per day | ₹1,200–₹1,500 budget · ₹5,600–₹6,000 mid-range · ₹15,000+ comfort |
 
 ## Accommodation Costs: Budget to Luxury
 
