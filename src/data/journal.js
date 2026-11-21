@@ -3,6 +3,98 @@
  */
 
 export const journalArticles = [
+  // Palacio de la Ciudad (Month 3, ES)
+  {
+    slug: "palacio-de-la-ciudad-jaipur",
+    datePublished: "2026-11-21",
+    dateModified: "2026-11-21",
+    title: "Palacio de la Ciudad de Jaipur: guía completa de un guía local",
+    metaTitle: "Palacio de la Ciudad de Jaipur: guía completa",
+    excerpt: "Qué ver dentro del Palacio de la Ciudad de Jaipur: las puertas de las cuatro estaciones, las urnas de plata más grandes del mundo, el Chandra Mahal y el horario.",
+    metaDescription: "Palacio de la Ciudad de Jaipur: qué ver, las puertas de las estaciones, las urnas de plata más grandes del mundo y consejos de un guía local.",
+    category: "Jaipur Guide",
+    readTime: "6 min read",
+    lang: "es",
+    image: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp",
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-full-day-tour",
+      "jaipur-half-day-tour",
+    ],
+    images: [
+      { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "El Chandra Mahal, en el Palacio de la Ciudad de Jaipur" },
+      { src: "/experiences/crown-of-jaipur/painted-doorway-city-palace-jaipur.webp", alt: "Una de las puertas pintadas del Palacio de la Ciudad de Jaipur" },
+      { src: "/experiences/crown-of-jaipur/mirror-room-city-palace-jaipur.webp", alt: "Sala decorada con espejos en el Palacio de la Ciudad de Jaipur" },
+      { src: "/experiences/crown-of-jaipur/pillared-hall-city-palace-jaipur.webp", alt: "Salón de columnas en el Palacio de la Ciudad de Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-evening.webp", alt: "El Chandra Mahal del Palacio de la Ciudad al atardecer" },
+    ],
+    faqs: [
+      { q: "¿Quién construyó el Palacio de la Ciudad de Jaipur?", a: "El maharajá Sawai Jai Singh II, el fundador de Jaipur. Sus descendientes añadieron edificios a lo largo de los siglos." },
+      { q: "¿Cuál es el horario del Palacio de la Ciudad de Jaipur?", a: "Abre de 9:30 a 18:30, y la última entrada se vende a las 18:00. El Royal Tour, que incluye salas privadas del Chandra Mahal, tiene el mismo horario." },
+      { q: "¿Vive todavía la familia real en el Palacio de la Ciudad?", a: "Sí. La familia real vive en una parte del Chandra Mahal. El resto del palacio es un museo." },
+      { q: "¿Qué son las urnas de plata del Palacio de la Ciudad?", a: "Son dos urnas de unos 345 kilos cada una, reconocidas por el Libro Guinness de los Récords como las vasijas de plata de ley más grandes del mundo. Se hicieron para llevar agua del Ganges a Inglaterra en 1902." },
+      { q: "¿Qué representan las cuatro puertas del Pritam Niwas Chowk?", a: "Las cuatro estaciones: el otoño (Pavo Real), el verano (Loto), la primavera (Verde) y el invierno (Rosa)." },
+      { q: "¿Cuánto tiempo se necesita para visitar el Palacio de la Ciudad?", a: "Unas dos horas." },
+      { q: "¿Se puede visitar con guía en español?", a: "Sí. Nuestro paseo The Crown of Jaipur incluye el Palacio de la Ciudad y está disponible en español sin coste adicional." },
+    ],
+    body: `En el centro de la ciudad vieja de Jaipur hay un palacio que todavía es un hogar. El Palacio de la Ciudad (City Palace) fue la residencia de los maharajás de Jaipur, y la familia real sigue viviendo en una parte del edificio principal. El resto es un museo, con patios, salones y algunas de las piezas más sorprendentes de la India.
+
+Soy guía en Jaipur y lo visito casi cada semana con viajeros de España y México. En esta guía te cuento qué ver dentro, qué detalles no debes perderte y cómo organizar tu visita.
+
+## El Palacio de la Ciudad en breve
+
+| | |
+|---|---|
+| **Construido por** | El maharajá Sawai Jai Singh II, fundador de Jaipur |
+| **Dónde** | En el centro de la ciudad vieja, junto al Jantar Mantar y cerca del Hawa Mahal |
+| **Qué es hoy** | Museo y, en parte, residencia de la familia real |
+| **Horario** | De 9:30 a 18:30 (última entrada a las 18:00) |
+| **No te pierdas** | Las cuatro puertas de las estaciones y las urnas de plata gigantes |
+
+## Mubarak Mahal: el palacio de bienvenida
+
+Al entrar, el primer edificio que ves es el Mubarak Mahal, construido para recibir a los invitados extranjeros. Mezcla estilos rajput, islámico y europeo, con balcones tallados en piedra. Hoy alberga una colección de textiles y trajes reales.
+
+## Diwan-i-Khas y las urnas de plata más grandes del mundo
+
+El Diwan-i-Khas era la sala de audiencias privadas del maharajá. Aquí están dos urnas de plata enormes, los *Gangajalis*. Cada una mide 1,6 metros de alto, pesa unos 345 kilos y puede contener 4.000 litros de agua. Se hicieron fundiendo 14.000 monedas de plata, y el Libro Guinness de los Récords las reconoce como las vasijas de plata de ley más grandes del mundo.
+
+La historia es lo mejor: en 1902, el maharajá Sawai Madho Singh II viajó a Inglaterra para la coronación del rey Eduardo VII. Era muy devoto y no quería beber otra agua que la del río Ganges, así que se llevó estas dos urnas llenas.
+
+## Pritam Niwas Chowk: las puertas de las cuatro estaciones
+
+Para muchos viajeros, este es el momento favorito de la visita. Es un patio interior con cuatro puertas pintadas, y cada una representa una estación del año:
+
+- **La Puerta del Pavo Real:** el otoño. Es la más fotografiada, con pavos reales en relieve y colores intensos.
+- **La Puerta del Loto:** el verano.
+- **La Puerta Verde:** la primavera.
+- **La Puerta de la Rosa:** el invierno.
+
+Un consejo: llega pronto. Cuando hay mucha gente, es difícil sacar una foto de las puertas sin nadie delante.
+
+## Chandra Mahal: donde todavía vive la familia real
+
+Desde el Pritam Niwas Chowk se ve el Chandra Mahal, el edificio más alto y antiguo del complejo. Tiene siete pisos, cada uno con su propio nombre. Fíjate en lo alto: ondean dos banderas, una entera y otra de un cuarto de tamaño, la conocida bandera de «una y cuarta». La pequeña indica que el maharajá está en el palacio.
+
+La mayor parte del Chandra Mahal es privada. Hay una entrada especial, más cara, el Royal Tour, que permite ver algunas de sus salas, como el Sobha Niwas, con sus vidrios de colores; el Chhavi Niwas, el famoso salón azul; y el Shri Niwas, la sala de los espejos. Si te interesa, pregunta por ella en la taquilla.
+
+## Horario del Palacio de la Ciudad
+
+El palacio abre de **9:30 a 18:30**, y la última entrada se vende a las **18:00**. El Royal Tour del Chandra Mahal tiene el mismo horario.
+
+## Consejos para tu visita
+
+- **Ve a primera hora.** Es el mejor momento para ver los patios con calma.
+- **Calcula unas dos horas** para ver los patios y los museos sin prisas.
+- **Ve con guía.** Muchos objetos y salas no tienen explicaciones detalladas, y las mejores historias no están en los carteles.
+- **Combínalo con el Jantar Mantar y el Hawa Mahal.** Están a pocos minutos a pie y juntos forman una media jornada perfecta.
+
+## Visita el Palacio de la Ciudad en español con Raah
+
+En [The Crown of Jaipur](/experiences/the-crown-of-jaipur) recorremos el Hawa Mahal, el Jantar Mantar y el Palacio de la Ciudad como una sola historia: la del rey que planificó la ciudad. Ofrecemos nuestros paseos en español sin coste adicional. Más información sobre nuestro [guía en español en Jaipur](/journal/english-spanish-speaking-guide-jaipur).
+
+¿Organizando tu viaje? Mira también [qué ver en Jaipur](/journal/que-ver-en-jaipur) y nuestra guía del [Triángulo de Oro de la India](/journal/triangulo-de-oro-india).`,
+  },
   // Jantar Mantar (Month 3, Blog 4, EN)
   {
     slug: "jantar-mantar-jaipur",
@@ -205,7 +297,7 @@ Jaipur es la parte del Triángulo que más sorprende a los viajeros. Fue fundada
 Lo que no te debes perder:
 
 - **El Fuerte Amber,** temprano por la mañana, antes de las multitudes.
-- **El Palacio de la Ciudad,** el **Jantar Mantar** y el **Hawa Mahal,** a pocos minutos a pie entre sí.
+- **El [Palacio de la Ciudad](/journal/palacio-de-la-ciudad-jaipur),** el **Jantar Mantar** y el **Hawa Mahal,** a pocos minutos a pie entre sí.
 - **Los bazares de la ciudad vieja** al atardecer, cuando se encienden las luces.
 - **Las compras:** Jaipur es famosa por sus joyas, sus textiles, sus alfombras, sus pulseras de laca y sus estatuas de mármol. Es el lugar ideal del Triángulo para comprar recuerdos.
 
@@ -366,6 +458,7 @@ Planning your days in Jaipur? Our guide to [how many days you need in Jaipur](/j
       { q: "Can you go inside Hawa Mahal?", a: "Yes. You can go inside with a ticket and climb the ramps to the upper floors, which look out over the old city." },
       { q: "How much does it cost to visit Hawa Mahal?", a: "Since Rajasthan revised its monument prices in January 2026, foreign visitors pay ₹600 to go inside. Hawa Mahal is also covered by the composite ticket. Seeing the façade from the street is free." },
       { q: "How far is Hawa Mahal from City Palace?", a: "A short walk. Hawa Mahal stands at the edge of the City Palace complex, and Jantar Mantar is right next to City Palace, so the three are easy to see together on foot." },
+      { q: "What are the Hawa Mahal timings?", a: "Hawa Mahal is open from 9:00 AM to 6:30 PM, according to the official Rajasthan Tourism booking portal." },
       { q: "How long do you need at Hawa Mahal?", a: "About 20 to 30 minutes inside. Seeing the façade from the street takes only a few minutes." },
       { q: "What is the best time to visit Hawa Mahal?", a: "Just after sunrise, when the east-facing façade glows gold and the street is quiet, or after dark, when it is lit up." },
     ],
@@ -429,7 +522,7 @@ Go inside if you are curious to see the city the way the royal women once did, f
 
 ## Hawa Mahal Timings and Tickets
 
-The palace is open to visitors from 9:00 AM to 4:30 PM, according to Incredible India, the official tourism website of the Government of India. You don't need a ticket to see the façade from the street. You only need one to go inside.
+The palace is open to visitors from 9:00 AM to 6:30 PM, according to the official Rajasthan Tourism booking portal. You don't need a ticket to see the façade from the street. You only need one to go inside.
 
 Ticket prices for Jaipur's state-run monuments were revised in January 2026, and foreign visitors now pay INR 600 per person. To avoid queues at the counter and for hassle-free entry, consider a composite ticket, which is slightly cheaper than buying a ticket for each monument. Check the current fees at the ticket counter or on the Rajasthan Tourism website before you go.
 
@@ -1619,7 +1712,7 @@ Es la imagen más famosa de Jaipur y, sin embargo, casi nadie sabe que lo que fo
 
 ### 2. El Palacio de la Ciudad (City Palace)
 
-El Palacio de Jaipur sigue siendo hoy la residencia de la familia real, y una parte funciona como museo. Merece la pena recorrer sus patios, sus puertas decoradas y sus galerías con calma, porque cada espacio cuenta algo de cómo vivían y gobernaban los antiguos maharajás.
+El Palacio de Jaipur sigue siendo hoy la residencia de la familia real, y una parte funciona como museo. Merece la pena recorrer sus patios, sus puertas decoradas y sus galerías con calma, porque cada espacio cuenta algo de cómo vivían y gobernaban los antiguos maharajás. Te lo cuento todo en nuestra [guía del Palacio de la Ciudad](/journal/palacio-de-la-ciudad-jaipur).
 
 ### 3. Jantar Mantar
 
