@@ -23,6 +23,7 @@ export const journalArticles = [
     ],
     images: [
       { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "El Chandra Mahal, en el Palacio de la Ciudad de Jaipur" },
+      { src: "/images/journal/raah-guests-khasa-pol-city-palace.webp", alt: "Viajeras de Raah con el personal del palacio en la puerta Khasa Pol, Palacio de la Ciudad de Jaipur" },
       { src: "/experiences/crown-of-jaipur/painted-doorway-city-palace-jaipur.webp", alt: "Una de las puertas pintadas del Palacio de la Ciudad de Jaipur" },
       { src: "/experiences/crown-of-jaipur/mirror-room-city-palace-jaipur.webp", alt: "Sala decorada con espejos en el Palacio de la Ciudad de Jaipur" },
       { src: "/experiences/crown-of-jaipur/pillared-hall-city-palace-jaipur.webp", alt: "Salón de columnas en el Palacio de la Ciudad de Jaipur" },
@@ -93,7 +94,7 @@ El palacio abre de **9:30 a 18:30**, y la última entrada se vende a las **18:00
 
 En [The Crown of Jaipur](/experiences/the-crown-of-jaipur) recorremos el Hawa Mahal, el Jantar Mantar y el Palacio de la Ciudad como una sola historia: la del rey que planificó la ciudad. Ofrecemos nuestros paseos en español sin coste adicional. Más información sobre nuestro [guía en español en Jaipur](/journal/english-spanish-speaking-guide-jaipur).
 
-¿Organizando tu viaje? Mira también [qué ver en Jaipur](/journal/que-ver-en-jaipur) y nuestra guía del [Triángulo de Oro de la India](/journal/triangulo-de-oro-india).`,
+¿Organizando tu viaje? Mira también [qué ver en Jaipur](/journal/que-ver-en-jaipur), nuestra guía del [Triángulo de Oro de la India](/journal/triangulo-de-oro-india) y nuestros [consejos para viajar a la India](/journal/viajar-a-la-india).`,
   },
   // Jantar Mantar (Month 3, Blog 4, EN)
   {
@@ -349,6 +350,7 @@ Más información sobre nuestro [guía en español en Jaipur](/journal/english-s
       { src: "/images/journal/chand-baori-geometric-steps.webp", alt: "Geometric pattern of steps at Chand Baori, one of the largest stepwells in the world" },
       { src: "/images/tours/panna-meena-ka-kund-amer.webp", alt: "Panna Meena ka Kund, the 16th-century stepwell in Amer, Jaipur" },
       { src: "/images/journal/panna-meena-ka-kund-morning.webp", alt: "A guest looking over Panna Meena ka Kund in the morning light, Amer" },
+      { src: "/images/journal/raah-guests-panna-meena-ka-kund.webp", alt: "Raah guests at Panna Meena ka Kund, framed by a stone arch, Amer" },
       { src: "/images/journal/chand-baori-steps-close-up.webp", alt: "Close-up of the narrow stone steps at Chand Baori, Abhaneri" },
       { src: "/images/journal/chand-baori-carved-stone-panel.webp", alt: "Carved stone panel displayed at Chand Baori, Abhaneri" },
     ],
@@ -552,11 +554,11 @@ And if you have ever wondered why the whole old city around Hawa Mahal is pink, 
   {
     slug: "viajar-a-la-india",
     datePublished: "2026-10-31",
-    dateModified: "2026-10-31",
+    dateModified: "2026-11-21",
     title: "Viajar a la India: consejos de un guía local para tu primer viaje",
-    metaTitle: "Viajar a la India: consejos de un guía local",
+    metaTitle: "Viajar a la India: consejos, ruta y presupuesto",
     excerpt: "Todo lo que conviene saber antes de viajar a la India por primera vez: la ruta del Triángulo de Oro, cuántos días, la mejor época, qué necesitas y los consejos de un guía oficial de Jaipur.",
-    metaDescription: "Viajar a la India por primera vez: consejos de un guía local en Jaipur sobre la ruta, cuántos días, la mejor época, el dinero y la seguridad.",
+    metaDescription: "Viajar a la India por primera vez: la ruta, cuántos días, cuánto cuesta, la mejor época y la seguridad, con los consejos de un guía local en Jaipur.",
     category: "Travel Planning",
     readTime: "7 min read",
     lang: "es",
@@ -578,6 +580,7 @@ And if you have ever wondered why the whole old city around Hawa Mahal is pink, 
       { q: "¿Cuántos días se necesitan para viajar a la India?", a: "Para el Triángulo de Oro, un mínimo de siete u ocho días. Con dos semanas puedes añadir más ciudades de Rajastán." },
       { q: "¿Qué necesito para viajar a la India desde España o México?", a: "Pasaporte, visado (muchas nacionalidades pueden pedir el e-Visa por internet) y un seguro de viaje. Consulta siempre los requisitos actualizados en la web oficial." },
       { q: "¿Se necesita visa para viajar a la India?", a: "Sí, la mayoría de los viajeros la necesitan. Muchas nacionalidades, incluidas la española y la mexicana, pueden solicitar el visado electrónico (e-Visa) por internet. Consulta siempre la web oficial del gobierno de la India." },
+      { q: "¿Cuánto cuesta viajar a la India?", a: "Lo que más pesa es el vuelo. Una vez allí, en una ciudad como Jaipur puedes viajar con unas ₹1.200 a ₹1.500 al día con un presupuesto ajustado, unas ₹5.600 a ₹6.000 en un nivel medio y desde ₹15.000 al día con más comodidad, sin contar los vuelos." },
       { q: "¿Es caro viajar a la India?", a: "Una vez allí, la comida, el transporte local y muchos alojamientos son económicos comparados con España o México. El gasto más grande suele ser el vuelo." },
       { q: "¿Cuál es la mejor época para viajar a la India?", a: "De octubre a marzo, cuando los días son agradables en el norte del país." },
       { q: "¿Es seguro viajar a la India?", a: "Sí, para la mayoría de los viajeros. Los problemas más comunes son pequeñas estafas, el tráfico y el estómago, y casi todos se pueden evitar con información." },
@@ -601,7 +604,7 @@ Si tienes más tiempo, desde Jaipur puedes seguir por Rajastán hacia Udaipur, J
 
 Para el Triángulo de Oro, recomiendo un mínimo de siete u ocho días: dos en Delhi, uno o dos en Agra y dos o tres en Jaipur. Con dos días en Jaipur ves lo esencial, y con tres puedes añadir las colinas, la gastronomía y el campo sin prisas.
 
-Te lo explico con detalle en [qué ver en Jaipur](/journal/que-ver-en-jaipur).
+Te lo explico con detalle en [qué ver en Jaipur](/journal/que-ver-en-jaipur), y la ruta completa, día a día, en nuestra guía del [Triángulo de Oro de la India](/journal/triangulo-de-oro-india).
 
 ## La mejor época para viajar a la India
 
@@ -624,6 +627,21 @@ Lo explico mes a mes en [la mejor época para viajar a la India](/journal/mejor-
 - **Transporte:** en las ciudades, Uber y Ola funcionan bien y evitan tener que negociar el precio. Entre ciudades, el tren y el coche con conductor son las opciones más cómodas.
 - **Teléfono:** una tarjeta SIM local o una eSIM te facilita los mapas, las aplicaciones de taxi y estar localizable.
 
+## ¿Cuánto cuesta viajar a la India?
+
+Es una de las preguntas que más me hacen los viajeros de España y Latinoamérica. Lo que más pesa en el presupuesto es el vuelo. Una vez en la India, el gasto diario depende mucho de cómo viajes. Estos son los precios que vemos cada día en Jaipur:
+
+| Gasto | Precio aproximado en Jaipur |
+|---|---|
+| Hotel, por noche | ₹500–₹800 económico · ₹1.500–₹3.000 nivel medio · desde ₹5.000 lujo |
+| Comida, por plato | ₹100–₹150 comida callejera · ₹300–₹500 cafetería · ₹500–₹1.000 thali rajastaní |
+| Uber u Ola, por trayecto | ₹100–₹250 |
+| Coche con conductor, un día | ₹1.500–₹2.500 |
+| Entradas para extranjeros | ₹1.000 el Fuerte Amber · ₹600 el Hawa Mahal, el Jantar Mantar, el Albert Hall y el Fuerte Nahargarh |
+| **Total al día** | **₹1.200–₹1.500 ajustado · ₹5.600–₹6.000 nivel medio · desde ₹15.000 con comodidad** |
+
+Los precios de las entradas a los monumentos estatales de Rajastán son los vigentes desde enero de 2026. El Palacio de la Ciudad es privado y tiene su propia entrada.
+
 ## Mis consejos para viajar a la India
 
 Estos son los consejos que siempre doy a los viajeros que acompaño:
@@ -642,9 +660,9 @@ Muchos viajeros me preguntan si es peligroso viajar a la India. Mi respuesta es 
 
 Lo respondo con detalle, incluidos consejos para viajar sola, en [¿es seguro viajar a la India?](/journal/es-seguro-viajar-a-la-india)
 
-## Viajes a la India desde México y España
+## Viajes a la India desde España y Latinoamérica
 
-Desde España, lo habitual es volar con una escala, normalmente en Oriente Medio o en otra ciudad europea, hasta Delhi o Mumbai. Desde México, lo habitual es volar con una escala en Europa, Oriente Medio o Estados Unidos. Delhi es la mejor puerta de entrada para el Triángulo de Oro.
+Desde España, lo habitual es volar con una escala, normalmente en Oriente Medio o en otra ciudad europea, hasta Delhi o Mumbai. Desde México y el resto de Latinoamérica, lo habitual es volar con una o dos escalas, en Europa, Oriente Medio o Estados Unidos. Delhi es la mejor puerta de entrada para el Triángulo de Oro.
 
 ## Jaipur en tu viaje: con un guía en español
 
@@ -680,6 +698,7 @@ Lo que dicen nuestros viajeros:
     ],
     images: [
       { src: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp", alt: "Amber Fort (Amer Fort) reflected in Maota Lake, Jaipur" },
+      { src: "/images/journal/raah-guests-amer-fort-view.webp", alt: "Raah guests in front of Amber Fort and Maota Lake, Jaipur" },
       { src: "/experiences/ridge-and-ramparts/flute-player-pillared-hall-amer-fort.webp", alt: "A musician playing the flute in a pillared hall inside Amber Fort" },
       { src: "/experiences/ridge-and-ramparts/amer-fort-sketch-guest.webp", alt: "A guest's sketch of Amber Fort held up in front of the palace gardens" },
       { src: "/experiences/ridge-and-ramparts/jagat-shiromani-temple-shikhara-amer.webp", alt: "The carved shikhara of Jagat Shiromani Temple in Amer town" },
@@ -801,6 +820,7 @@ Reading in Spanish? Here is our [guía completa del Fuerte Amber](/journal/fuert
       { src: "/experiences/beyond-the-pink/kachori-maker-street-stall-jaipur.webp", alt: "A cook frying kachoris at a street stall in Jaipur's old city" },
       { src: "/experiences/beyond-the-pink/lassi-street-stall-jaipur-night.webp", alt: "A glass of lassi at a street stall in Jaipur at night" },
       { src: "/images/journal/masala-chai-kulhad-jaipur.webp", alt: "Masala chai in clay kulhad cups on a Raah walk in Jaipur" },
+      { src: "/images/journal/raah-guests-kulhad-chai-old-city.webp", alt: "Raah guests sharing masala chai in kulhad cups at a stall in Jaipur's old city" },
       { src: "/experiences/farm-and-fire/baati-roasting-on-coals.webp", alt: "Baati roasting on hot coals for a home-cooked Rajasthani meal" },
       { src: "/experiences/beyond-the-pink/dried-red-chillies-market-jaipur.webp", alt: "Sacks of dried red chillies at a spice market in Jaipur" },
     ],
@@ -1532,6 +1552,8 @@ Con dos o tres días puedes ver Jaipur sin prisas: un día para la ciudad vieja,
 
 Todas las experiencias de Raah se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur) y en grupos pequeños. En temporada alta (de noviembre a febrero) conviene reservar con antelación. En verano y en monzón ajustamos los horarios a las horas más frescas del día.
 
+Si es tu primer viaje, aquí tienes [todo lo que necesitas para viajar a la India](/journal/viajar-a-la-india): la ruta, el presupuesto y la seguridad.
+
 Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
   },
     // Things to Do in Jaipur at Night (Month 2, Blog 3, EN)
@@ -2033,6 +2055,7 @@ Reading in Spanish? Here is our guide: [¿es seguro viajar a la India?](/journal
     ],
     images: [
       { src: "/journal Images/raah-client-image-1.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
+      { src: "/images/journal/raah-guests-amer-fort-maota-lake.webp", alt: "Viajeras de Raah frente al Fuerte Amber y el lago Maota, Jaipur" },
       { src: "/journal Images/raah-client-image-2.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
       { src: "/journal Images/raah-testimonial-1.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
       { src: "/journal Images/raah-testimonial-2.webp", alt: "Experiencia con huéspedes de Raah en Jaipur" },
@@ -2087,7 +2110,7 @@ Reserve su experiencia en [The Ridge & Ramparts](/experiences/ridge-and-ramparts
 
 Consulte también [todas las experiencias de Raah en Jaipur](/experiences).
 
-¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días.
+¿Va a pasar más días en la ciudad? Aquí tiene [qué ver en Jaipur](/journal/que-ver-en-jaipur) en uno o dos días. Y si está preparando su primer viaje, lea nuestros [consejos para viajar a la India](/journal/viajar-a-la-india).
 
 ¿Prefiere leer en inglés? Aquí tiene nuestra [Amber Fort guide](/journal/amber-fort-jaipur-guide).`,  },
     // How Much Does a Trip to Jaipur Cost? Blog 6
