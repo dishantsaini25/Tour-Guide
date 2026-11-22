@@ -783,7 +783,7 @@ Desde España, lo habitual es volar con una escala, normalmente en Oriente Medio
 
 ## Jaipur en tu viaje: con un guía en español
 
-En Jaipur, todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur), con un guía oficial y en grupos pequeños de un máximo de 8 personas. Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todas nuestras experiencias en Jaipur](/experiences).
+En Jaipur, todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur), con un guía oficial y en grupos pequeños de un máximo de 8 personas. Si es tu primer día en la ciudad, [Jaipur at Dawn](/experiences/jaipur-at-dawn) es un buen comienzo: un paseo al amanecer por la ciudad vieja, antes del tráfico y de las multitudes. Puedes ver [todos nuestros tours en español en Jaipur](/tours-en-espanol).
 
 Si quieres conocer el Fuerte Amber a fondo, lee nuestra [guía completa del Fuerte Amber](/journal/fuerte-amber-guia-completa).
 
@@ -1671,7 +1671,7 @@ Todas las experiencias de Raah se hacen [en español sin coste adicional](/journ
 
 Si es tu primer viaje, aquí tienes [todo lo que necesitas para viajar a la India](/journal/viajar-a-la-india): la ruta, el presupuesto y la seguridad.
 
-Puedes ver todas nuestras [experiencias en Jaipur](/experiences) o escribirnos por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
+Puedes ver todos nuestros [tours en español en Jaipur](/tours-en-espanol) o escribirnos por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
   },
     // Things to Do in Jaipur at Night (Month 2, Blog 3, EN)
   {
@@ -1952,7 +1952,7 @@ Se puede ver Jaipur por tu cuenta, pero hay una diferencia entre ver los monumen
 
 Como escribió Rocío, de España: *"Excelentes días en Jaipur, atendidos maravillosamente por Shobhit. Un gran guía."*
 
-Puedes ver todas las experiencias en nuestra [página de experiencias](/experiences) o escribirnos directamente por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
+Puedes ver todos nuestros [tours en español en Jaipur](/tours-en-espanol) o escribirnos directamente por WhatsApp al **+91 99299 92539**. Te respondemos en español.`,
   },
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {

@@ -8,6 +8,11 @@ title: { absolute: "Jaipur City Sightseeing Tours — Raah Experiences" },
     "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
   alternates: {
     canonical: "https://www.raahexperiences.in/experiences",
+    languages: {
+      en: "https://www.raahexperiences.in/experiences",
+      es: "https://www.raahexperiences.in/tours-en-espanol",
+      "x-default": "https://www.raahexperiences.in/experiences",
+    },
   },
   openGraph: {
     title: "Jaipur City Sightseeing Tours — Raah Experiences",

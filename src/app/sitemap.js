@@ -19,6 +19,7 @@ export default function sitemap() {
     withDate({ url: `${BASE_URL}/experiences`, changeFrequency: "weekly", priority: 0.9 }, EXPERIENCES_UPDATED),
     withDate({ url: `${BASE_URL}/journal`, changeFrequency: "weekly", priority: 0.7 }, JOURNAL_UPDATED),
     { url: `${BASE_URL}/about`,   changeFrequency: "monthly", priority: 0.7 },
+    withDate({ url: `${BASE_URL}/tours-en-espanol`, changeFrequency: "monthly", priority: 0.8 }, "2026-11-22"),
     { url: `${BASE_URL}/faq`,     changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/gallery`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/contact`, changeFrequency: "yearly",  priority: 0.5 },
