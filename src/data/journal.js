@@ -3,6 +3,122 @@
  */
 
 export const journalArticles = [
+  // Palacio de los Vientos (Month 3, ES) - Spanish version of hawa-mahal-jaipur
+  {
+    slug: "palacio-de-los-vientos-jaipur",
+    datePublished: "2026-11-22",
+    dateModified: "2026-11-22",
+    title: "Palacio de los Vientos (Hawa Mahal), Jaipur: guía de un guía local",
+    metaTitle: "Palacio de los Vientos, Jaipur: guía del Hawa Mahal",
+    excerpt: "Por qué la famosa fachada del Hawa Mahal es en realidad la parte trasera del palacio, por qué tiene 953 ventanas, qué hay dentro y a qué hora verlo.",
+    metaDescription: "El Palacio de los Vientos (Hawa Mahal) de Jaipur: por qué tiene 953 ventanas, qué ver dentro, horario, entrada y la mejor hora para verlo.",
+    category: "Jaipur Guide",
+    readTime: "7 min read",
+    lang: "es",
+    hreflang: { en: "hawa-mahal-jaipur", es: "palacio-de-los-vientos-jaipur" },
+    image: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp",
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-at-dawn",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp", alt: "El Hawa Mahal, el Palacio de los Vientos, al atardecer en Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-illuminated-night.webp", alt: "La fachada del Hawa Mahal iluminada de noche, Jaipur" },
+      { src: "/experiences/the-blue-hour/hawa-mahal-night-crowd.webp", alt: "Ambiente de noche en la calle del Hawa Mahal, Jaipur" },
+    ],
+    faqs: [
+      { q: "¿Quién construyó el Palacio de los Vientos?", a: "El maharajá Sawai Pratap Singh, en 1799. Lo diseñó el arquitecto Lal Chand Ustad." },
+      { q: "¿Por qué tiene 953 ventanas?", a: "Las ventanas permitían a las mujeres reales ver la vida de la calle y las procesiones sin ser vistas, y las celosías dejan pasar el aire para mantener fresco el edificio." },
+      { q: "¿La fachada es la parte delantera o la trasera?", a: "La trasera. La fachada decorada da a la calle, y la única entrada está detrás." },
+      { q: "¿Se puede entrar en el Hawa Mahal?", a: "Sí. Con entrada puedes subir por las rampas hasta los pisos superiores, que dan a la ciudad vieja." },
+      { q: "¿Cuál es el horario del Hawa Mahal?", a: "Abre de 9:00 a 18:30." },
+      { q: "¿Cuánto tiempo se necesita?", a: "Unos 20 a 30 minutos dentro. Ver la fachada desde la calle lleva solo unos minutos." },
+      { q: "¿Cuál es la mejor hora para verlo?", a: "Justo después del amanecer, cuando la fachada brilla dorada y la calle está tranquila, o de noche, cuando está iluminada." },
+    ],
+    body: `En casi todas las fotos de Jaipur aparece su monumento más icónico, el Hawa Mahal: una fachada rosa de cinco pisos, con balcones ornamentados y ventanas en saledizo, sobre la calle más concurrida de la ciudad vieja. Es la imagen de las postales y de las portadas de las guías. Y, aun así, después de años como guía en Jaipur, veo que muchos viajeros se van sin saber qué estaban mirando.
+
+La primera sorpresa: la famosa fachada no es la parte delantera del palacio. Es la trasera.
+
+En esta guía te cuento por qué se construyó, por qué tiene 953 ventanas, qué hay dentro y a qué hora verlo para no pasar la visita entre tráfico y multitudes.
+
+## El Palacio de los Vientos en breve
+
+| | |
+|---|---|
+| **Construido en** | 1799 |
+| **Construido por** | El quinto maharajá de Jaipur, Sawai Pratap Singh, nieto de Sawai Jai Singh II, fundador de Jaipur |
+| **Arquitecto** | Lal Chand Ustad |
+| **Ventanas** | 953 ventanas, llamadas *jharokhas* (balcones con vistas privilegiadas) |
+| **Altura** | Cinco pisos |
+| **Grosor de la fachada** | Unos 20 cm |
+| **Material** | Arenisca rosa |
+| **Horario** | De 9:00 a 18:30 |
+| **Dónde** | En la ciudad vieja, a pocos minutos a pie del Palacio de la Ciudad y del Jantar Mantar |
+
+## ¿Por qué se construyó el Hawa Mahal?
+
+El palacio se construyó como una extensión de las estancias de las mujeres reales del [Palacio de la Ciudad](/journal/palacio-de-la-ciudad-jaipur). En la corte de la época, las mujeres reales seguían el *purdah*: se cubrían el rostro con un velo y no podían ser vistas por hombres ajenos a la familia. Una explicación muy extendida es que esta costumbre se generalizó en el norte de la India en tiempos de invasiones, como una forma de proteger a las mujeres.
+
+La calle de abajo era el escenario de las procesiones, las fiestas y la vida diaria de la ciudad. Las celosías permitían a las mujeres de la corte verlo todo sin ser vistas. Cada ventanita era una vista privada de la ciudad.
+
+Su nombre significa "Palacio de los Vientos", y las ventanas tenían una segunda función: las celosías dejan pasar el aire por el edificio gracias al efecto Venturi, así que las salas detrás de la fachada se mantienen más frescas que la calle, incluso en verano.
+
+## ¿Por qué tiene 953 ventanas?
+
+Las 953 ventanas le dan a la fachada su aspecto de panal. La mayoría son *jharokhas*, pequeñas ventanas voladas con celosías de piedra tallada. Desde dentro, cada una enmarca un trozo distinto de la calle. Desde fuera, juntas forman uno de los edificios más reconocibles de la India.
+
+Se dice que la silueta del edificio recuerda a la corona del dios Krishna. Sawai Pratap Singh era un gran devoto de Krishna, y esa forma de pirámide que se estrecha hacia arriba es el detalle que se nota cuando lo miras desde fuera y a cierta distancia.
+
+## La fachada es, en realidad, la parte trasera
+
+Esto es lo que casi todos los visitantes no saben. La pared que fotografían desde la calle es la parte trasera del edificio, y por delante no hay entrada. Para entrar, tienes que ir por la calle principal hasta la entrada actual del monumento.
+
+Cuando lo sabes, tiene todo el sentido admirar la belleza de la fachada desde fuera, más incluso que entrar. El edificio no se construyó para entrar por delante, sino para mirar la calle con discreción.
+
+## ¿Qué hay dentro?
+
+Por dentro, el palacio es más sencillo y luminoso de lo que sugiere la fachada. No hay grandes escaleras: se sube entre pisos por rampas. Los pisos superiores son estrechos y solo tienen pequeños balcones para mirar a través de la fachada. Los inferiores tienen un patio delante de una sola habitación de fondo, con ventanas que dan a la ciudad vieja.
+
+Los últimos pisos son la razón para entrar. Desde allí miras la calle y los tejados de la ciudad amurallada, el Jantar Mantar y el Palacio de la Ciudad. El edificio también alberga un pequeño museo.
+
+## ¿Merece la pena entrar?
+
+Mi consejo sincero: es, sobre todo, un monumento para admirar desde fuera. Si vas con poco tiempo, ver la fachada desde el otro lado de la calle ya te da lo que la mayoría viene a buscar.
+
+Entra si te interesa ver la ciudad como la veían las mujeres reales, detrás de las celosías, y no te importan las rampas estrechas ni las salas pequeñas. Calcula de 20 a 30 minutos dentro.
+
+## La mejor hora para ver el Hawa Mahal
+
+**Justo después del amanecer.** La fachada mira al este, así que la primera luz de la mañana vuelve dorada la piedra rosa. La calle todavía está tranquila y puedes mirar sin tráfico en tus fotos. Es mi momento favorito para enseñarlo.
+
+**De noche.** La fachada se ilumina y la calle está en su momento más animado, con las tiendas abiertas y las familias paseando. Es un ambiente completamente distinto al de la mañana.
+
+Si puedes, evita media mañana y primera hora de la tarde: es cuando hay más tráfico y la luz es más plana.
+
+## Horario y entradas
+
+El palacio abre de **9:00 a 18:30**. No necesitas entrada para ver la fachada desde la calle, solo para entrar.
+
+Los precios de las entradas a los monumentos estatales de Jaipur cambiaron en enero de 2026, y los visitantes extranjeros pagan ₹600 por persona. Para evitar colas en la taquilla, puedes comprar una entrada combinada, que sale algo más barata que pagar cada monumento por separado. Consulta los precios actuales en la taquilla o en la web de Rajasthan Tourism antes de ir.
+
+## Cómo combinarlo con otros lugares
+
+- **El Palacio de la Ciudad y el Jantar Mantar** están a pocos minutos a pie. Juntos forman una media jornada perfecta. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) es nuestro paseo guiado que los une en una sola historia.
+- **Al amanecer,** [Jaipur at Dawn](/experiences/jaipur-at-dawn) pasa por el Hawa Mahal justo cuando la primera luz llega a la fachada, después del mercado de flores y de los rituales de la mañana en el templo de Govind Dev Ji.
+- **De noche,** [The Blue Hour](/experiences/the-blue-hour) pasa por el Hawa Mahal y los demás monumentos iluminados de Jaipur en un jeep abierto.
+
+Todas nuestras experiencias se hacen [en español sin coste adicional](/journal/english-spanish-speaking-guide-jaipur).
+
+## Consejos para tu visita
+
+- **Míralo desde el otro lado de la calle.** La fachada es demasiado alta para apreciarla desde abajo.
+- **Cuidado con el tráfico.** La calle de delante es de las más concurridas de la ciudad vieja. Cruza con cuidado y no te quedes en la calzada para hacer fotos.
+- **Lleva calzado cómodo si vas a entrar.** Las rampas son lisas y en algunos tramos tienen bastante pendiente.
+- **Pregúntale a tu guía por las ventanas.** Las mejores historias son las de las personas que estuvieron detrás de ellas.
+
+¿Te preguntas por qué toda la ciudad vieja es rosa? Te lo cuento en [qué ver en Jaipur](/journal/que-ver-en-jaipur). Y si estás preparando tu primer viaje, aquí tienes nuestros [consejos para viajar a la India](/journal/viajar-a-la-india).`,
+  },
   // Palacio de la Ciudad (Month 3, ES)
   {
     slug: "palacio-de-la-ciudad-jaipur",
@@ -88,7 +204,7 @@ El palacio abre de **9:30 a 18:30**, y la última entrada se vende a las **18:00
 - **Ve a primera hora.** Es el mejor momento para ver los patios con calma.
 - **Calcula unas dos horas** para ver los patios y los museos sin prisas.
 - **Ve con guía.** Muchos objetos y salas no tienen explicaciones detalladas, y las mejores historias no están en los carteles.
-- **Combínalo con el Jantar Mantar y el Hawa Mahal.** Están a pocos minutos a pie y juntos forman una media jornada perfecta.
+- **Combínalo con el Jantar Mantar y el [Hawa Mahal](/journal/palacio-de-los-vientos-jaipur).** Están a pocos minutos a pie y juntos forman una media jornada perfecta.
 
 ## Visita el Palacio de la Ciudad en español con Raah
 
@@ -442,6 +558,7 @@ Planning your days in Jaipur? Our guide to [how many days you need in Jaipur](/j
     excerpt: "Why Hawa Mahal's famous façade is actually the back of the palace, why it has 953 windows, what's inside and the best time to see it.",
     metaDescription: "Hawa Mahal, Jaipur's Palace of the Winds: why it has 953 windows, what's inside, best time to visit and timings, from a licensed local guide.",
     category: "Jaipur Guide",
+    hreflang: { en: "hawa-mahal-jaipur", es: "palacio-de-los-vientos-jaipur" },
     readTime: "7 min read",
     image: "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp",
     relatedExperiences: [
@@ -1732,7 +1849,7 @@ El color rosa llegó más tarde. En 1876, el maharajá Ram Singh II mandó pinta
 
 Es la imagen más famosa de Jaipur y, sin embargo, casi nadie sabe que lo que fotografía es la parte trasera del palacio. Su fachada de cinco pisos y cientos de pequeñas ventanas se construyó para que las mujeres de la corte pudieran ver la vida de la calle y las procesiones sin ser vistas.
 
-**Mi consejo:** ven al amanecer. Cuando sale el sol, la fachada cambia de color en pocos minutos y la calle todavía está en silencio. A las diez de la mañana ya es otra ciudad.
+**Mi consejo:** ven al amanecer. Cuando sale el sol, la fachada cambia de color en pocos minutos y la calle todavía está en silencio. A las diez de la mañana ya es otra ciudad. Te lo cuento todo en nuestra [guía del Palacio de los Vientos](/journal/palacio-de-los-vientos-jaipur).
 
 ### 2. El Palacio de la Ciudad (City Palace)
 
