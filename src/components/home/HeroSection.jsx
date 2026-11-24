@@ -168,6 +168,13 @@ export default function HeroSection() {
               </Link>
             </div>
 
+            <p className="hero-up" style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.85)", marginTop: "22px", lineHeight: 1.6, ...up(640) }}>
+              Government-approved local guide · English &amp; Spanish · Max 8 guests ·{" "}
+              <Link href="/tours-en-espanol" lang="es" style={{ color: "#FFD89B", fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                Tours en español
+              </Link>
+            </p>
+
             <div className="hidden md:flex h-tags hero-up" style={{ ...up(700) }}>
               {["Small Groups Only", "No Forced Shopping", "Local Storytelling", "Slow Travel"].map((t) => (
                 <div key={t} style={{ display: "flex", alignItems: "center", gap: "8px", flexShrink: 0 }}>

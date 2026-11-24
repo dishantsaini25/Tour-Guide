@@ -7,6 +7,9 @@ import AboutPreview from "@/components/home/AboutPreview";
 import Testimonials from "@/components/home/Testimonials";
 import JournalPreview from "@/components/home/JournalPreview";
 import FinalCTA from "@/components/home/FinalCTA";
+import GuestMoments from "@/components/home/GuestMoments";
+import PlanByDays from "@/components/home/PlanByDays";
+import SpanishBanner from "@/components/home/SpanishBanner";
 
 export const metadata = {
   title: { absolute: "Jaipur City Tour | Heritage Walks by Raah Experiences" },
@@ -51,10 +54,13 @@ export default function HomePage() {
       <HeroSection />
       <StatsStrip />
       <FeaturedExperiences />
+      <GuestMoments />
+      <AboutPreview />
+      <PlanByDays />
+      <Testimonials />
+      <SpanishBanner />
       <WhyChooseUs />
       <JaipurInANutshell />
-      <AboutPreview />
-      <Testimonials />
       <JournalPreview />
       <FinalCTA />
     </>

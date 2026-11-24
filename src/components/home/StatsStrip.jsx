@@ -1,4 +1,5 @@
 "use client";
+import { experiences } from "@/data/experiences";
 import { useEffect, useRef, useState } from "react";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
@@ -7,7 +8,7 @@ const IN = "DM Sans, system-ui, sans-serif";
 
 const stats = [
   { value: 4,  suffix: "+", label: "Years of Local Expertise" },
-  { value: 9,  suffix: "+", label: "Curated Experiences"      },
+  { value: experiences.length, suffix: "", label: "Curated Experiences" },
   { value: 2,  suffix: "",  label: "Languages Offered"        },
   { value: 1,  suffix: "",  label: "City, Endless Stories"    },
 ];
