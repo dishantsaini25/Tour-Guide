@@ -125,7 +125,7 @@ export default function AboutPreview() {
         }
       `}</style>
 
-      <SectionWrapper variant="soft">
+      <SectionWrapper variant="main">
         {/* Heading */}
         <div style={{ textAlign:"center", marginBottom:"52px" }}>
           <p style={{ fontFamily:IN, fontSize:"0.6rem", letterSpacing:"0.28em", textTransform:"uppercase", fontWeight:700, color:OR, marginBottom:"10px" }}>

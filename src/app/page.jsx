@@ -54,10 +54,10 @@ export default function HomePage() {
       <HeroSection />
       <StatsStrip />
       <FeaturedExperiences />
-      <GuestMoments />
-      <AboutPreview />
       <PlanByDays />
+      <GuestMoments />
       <Testimonials />
+      <AboutPreview />
       <SpanishBanner />
       <WhyChooseUs />
       <JaipurInANutshell />

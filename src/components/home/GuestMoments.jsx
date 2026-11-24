@@ -53,16 +53,16 @@ export default function GuestMoments() {
         .gm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
         @media (min-width: 640px) { .gm-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; } }
         @media (min-width: 1024px) { .gm-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; } }
-        .gm-item { position: relative; border: 0; padding: 0; margin: 0; cursor: pointer; border-radius: 14px; overflow: hidden; background: #FFF3DC; aspect-ratio: 3 / 4; display: block; width: 100%; }
+        .gm-item { position: relative; border: 0; padding: 0; margin: 0; cursor: pointer; border-radius: 14px; overflow: hidden; background: #2C1D07; aspect-ratio: 3 / 4; display: block; width: 100%; }
         .gm-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
         .gm-item:hover img, .gm-item:focus-visible img { transform: scale(1.04); }
         .gm-item:focus-visible { outline: 3px solid #FF8C00; outline-offset: 2px; }
         .gm-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 10px 10px; background: linear-gradient(to top, rgba(20,10,0,.72), rgba(20,10,0,0)); color: #fff; font-family: 'DM Sans', system-ui, sans-serif; font-size: .78rem; font-weight: 600; text-align: left; letter-spacing: .02em; }
         .gm-hide-mobile { display: none; }
         @media (min-width: 640px) { .gm-hide-mobile { display: block; } }
-        .gm-more { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; min-height: 44px; border-radius: 9999px; border: 1.5px solid #FF8C00; color: #E07800; background: #fff; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+        .gm-more { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; min-height: 44px; border-radius: 9999px; border: 1.5px solid #FF8C00; color: #FFD89B; background: transparent; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
         @media (min-width: 640px) { .gm-more { display: none; } }
-        .gm-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #E07800; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: .85rem; text-decoration: none; }
+        .gm-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #FFD89B; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: .85rem; text-decoration: none; }
         .gm-box { position: fixed; inset: 0; z-index: 10000; background: rgba(10,6,0,.92); display: flex; align-items: center; justify-content: center; padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
         .gm-box figure { margin: 0; max-width: min(1000px, 100%); max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; }
         .gm-box img { max-width: 100%; max-height: calc(100vh - 140px); object-fit: contain; border-radius: 10px; }
@@ -74,9 +74,10 @@ export default function GuestMoments() {
         .gm-next { right: max(10px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
       `}</style>
 
-      <SectionWrapper variant="main" id="guest-moments">
+      <SectionWrapper variant="dark" id="guest-moments">
         <SectionHeading
-          label="Guest Moments"
+          label="Photo Gallery"
+          dark
           title="Jaipur, Through Our Guests' Eyes"
           subtitle="Real moments from Raah walks and tours: the forts, the palaces, the stepwells and the chai stops in between."
         />

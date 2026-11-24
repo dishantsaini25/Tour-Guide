@@ -45,14 +45,14 @@ export default function PlanByDays() {
       <style>{`
         .pbd-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
         @media (min-width: 768px) { .pbd-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; } }
-        .pbd-card { background: #fff; border: 1px solid #FFD89B; border-radius: 18px; padding: 24px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+        .pbd-card { background: #FFFDE7; border: 1px solid #FFD89B; box-shadow: 0 6px 22px rgba(255,140,0,.08); border-radius: 18px; padding: 24px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
         .pbd-days { align-self: flex-start; background: #FFF3DC; color: #E07800; font-family: 'DM Sans', system-ui, sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 12px; border-radius: 9999px; }
         .pbd-tours { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
         .pbd-tours a { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: 9999px; background: #FF8C00; color: #fff; text-decoration: none; font-family: 'DM Sans', system-ui, sans-serif; font-size: .82rem; font-weight: 600; }
         .pbd-tours a:hover, .pbd-tours a:focus-visible { background: #E07800; }
         .pbd-guide { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: auto; color: #E07800; text-decoration: none; font-family: 'DM Sans', system-ui, sans-serif; font-weight: 700; font-size: .85rem; }
       `}</style>
-      <SectionWrapper variant="soft" id="plan-by-days">
+      <SectionWrapper variant="main" id="plan-by-days">
         <SectionHeading
           label="Plan Your Days"
           title="How Many Days Do You Have?"

@@ -387,7 +387,7 @@ export default function Testimonials() {
 
         {/* ── Review image slider ── */}
         <div className="ri-subheading-wrap">
-          <p className="ri-subheading-label">Guest Moments</p>
+          <p className="ri-subheading-label">In Their Words</p>
           <div className="ri-subheading-line" />
           <h3 className="ri-subheading-title">Smiles from Our Travellers</h3>
           <p className="ri-subheading-subtitle">

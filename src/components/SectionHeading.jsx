@@ -2,7 +2,7 @@ export default function SectionHeading({ label, title, subtitle, align = "center
   const left = align === "left";
   const wrap = left
     ? { textAlign: "left", marginBottom: "48px" }
-    : { textAlign: "center", maxWidth: "680px", margin: "0 auto 56px" };
+    : { textAlign: "center", maxWidth: "960px", margin: "0 auto 48px" };
 
   return (
     <div style={wrap}>
@@ -13,12 +13,12 @@ export default function SectionHeading({ label, title, subtitle, align = "center
       )}
       <div style={{ width: "36px", height: "2px", background: "linear-gradient(to right, #FF8C00, #F5A623)", marginBottom: "16px", ...(left ? {} : { margin: "0 auto 16px" }) }} />
       {title && (
-        <h2 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2rem,4vw,3.2rem)", lineHeight: 1.1, color: dark ? "#FFFFFF" : "#1A1209", marginBottom: subtitle ? "14px" : 0 }}>
+        <h2 style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(1.8rem,3.4vw,3rem)", lineHeight: 1.15, textWrap: "balance", color: dark ? "#FFFFFF" : "#1A1209", marginBottom: subtitle ? "14px" : 0 }}>
           {title}
         </h2>
       )}
       {subtitle && (
-        <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", lineHeight: 1.8, color: dark ? "rgba(255,255,255,0.7)" : "#6B5B2E", fontWeight: 300 }}>
+        <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", lineHeight: 1.8, color: dark ? "rgba(255,255,255,0.7)" : "#6B5B2E", fontWeight: 300, maxWidth: "680px", margin: left ? 0 : "0 auto" }}>
           {subtitle}
         </p>
       )}
