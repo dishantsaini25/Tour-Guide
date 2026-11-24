@@ -20,14 +20,14 @@ title: { absolute: "Jaipur City Sightseeing Tours — Raah Experiences" },
       "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
     url: "https://www.raahexperiences.in/experiences",
     type: "website",
-    images: ["https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85"],
+    images: ["https://www.raahexperiences.in/images/tours/jal-mahal-man-sagar-lake.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jaipur City Sightseeing Tours — Raah Experiences",
     description:
       "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
-    images: ["https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85"],
+    images: ["https://www.raahexperiences.in/images/tours/jal-mahal-man-sagar-lake.webp"],
   },
 };
 

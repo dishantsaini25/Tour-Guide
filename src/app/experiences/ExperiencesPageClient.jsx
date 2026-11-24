@@ -399,7 +399,7 @@ export default function ExperiencesPageClient() {
       `}</style>
 
       {/* ── Hero ── */}
-      <section style={{ position: "relative", minHeight: "55vh", display: "flex", alignItems: "flex-end", backgroundImage: "url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=85')", backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
+      <section style={{ position: "relative", minHeight: "55vh", display: "flex", alignItems: "flex-end", backgroundImage: "url('https://res.cloudinary.com/inttzt45/image/upload/f_auto,q_auto,w_1600/v1791788867/raah-india/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp')", backgroundSize: "cover", backgroundPosition: "center", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "rgba(20,10,0,0.78)" }} />
         <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "160px 20px 64px", width: "100%" }}>
           <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.62rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "#F5A623", fontWeight: 700, marginBottom: "12px" }}>All Experiences</p>

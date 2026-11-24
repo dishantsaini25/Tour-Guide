@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
-/* Hero image — Pexels serves resized, compressed versions via URL params,
-   so mobile downloads ~100–200 KB instead of the multi-MB original. */
-const HERO_BASE = "https://images.pexels.com/photos/14247658/pexels-photo-14247658.jpeg?auto=compress&cs=tinysrgb";
-const HERO_SRCSET = [640, 960, 1280, 1920, 2560].map((w) => `${HERO_BASE}&w=${w} ${w}w`).join(", ");
+/* Hero image — Raah's own photo on Cloudinary. Cloudinary serves resized,
+   compressed versions (f_auto, q_auto, w_), so phones download a small file. */
+const HERO_PATH = "v1791788867/raah-india/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp";
+const heroUrl = (w) => `https://res.cloudinary.com/inttzt45/image/upload/f_auto,q_auto,w_${w}/${HERO_PATH}`;
+const HERO_SRCSET = [640, 960, 1280, 1920].map((w) => `${heroUrl(w)} ${w}w`).join(", ");
 
 /* Entrance animation runs in CSS (no JavaScript wait) and only moves the text —
    it never hides it — so the heading is visible on the first paint. */
@@ -103,10 +104,10 @@ export default function HeroSection() {
         <div style={{ position: "absolute", inset: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`${HERO_BASE}&w=1280`}
+            src={heroUrl(1280)}
             srcSet={HERO_SRCSET}
             sizes="100vw"
-            alt="Jaipur, the Pink City of India"
+            alt="Amber Fort reflected in Maota Lake, Jaipur"
             fetchPriority="high"
             decoding="async"
             style={{

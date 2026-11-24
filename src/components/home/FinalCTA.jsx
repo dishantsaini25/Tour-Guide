@@ -91,7 +91,7 @@ export default function FinalCTA() {
       `}</style>
 
       <section style={{ position: "relative", padding: "110px 0", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1600&q=85')", backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://res.cloudinary.com/inttzt45/image/upload/f_auto,q_auto,w_1600/v1791788871/raah-india/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp')", backgroundSize: "cover", backgroundPosition: "center" }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(20,10,0,0.82)" }} />
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(255,140,0,0.18) 0%, transparent 65%)" }} />
 

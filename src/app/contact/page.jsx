@@ -69,7 +69,7 @@ export default function ContactPage() {
       `}</style>
 
       {/* ── Hero ── */}
-      <section style={{ position:"relative", backgroundImage:"url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1400&q=85')", backgroundSize:"cover", backgroundPosition:"center", paddingTop:"140px", paddingBottom:"80px", overflow:"hidden" }}>
+      <section style={{ position:"relative", backgroundImage:"url('https://res.cloudinary.com/inttzt45/image/upload/f_auto,q_auto,w_1600/v1791788857/raah-india/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp')", backgroundSize:"cover", backgroundPosition:"center", paddingTop:"140px", paddingBottom:"80px", overflow:"hidden" }}>
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(105deg,rgba(20,10,0,0.78) 0%,rgba(20,10,0,0.45) 55%,rgba(20,10,0,0.2) 100%)" }} />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(20,10,0,0.82) 0%,transparent 55%)" }} />
         <div style={{ position:"relative", zIndex:10, maxWidth:"680px", margin:"0 auto", padding:"0 20px", textAlign:"center" }}>

@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="google-site-verification" content="0xOYCIdIz9rmJGreskRMlRuZrrxMIkkbt7RYOEkoSls" />
         <meta name="msvalidate.01" content="0CCB0A1597111DBD4D9520285B11FE6E" />
-        <link rel="preconnect" href="https://images.pexels.com" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
