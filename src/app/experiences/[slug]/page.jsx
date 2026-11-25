@@ -12,6 +12,7 @@ import { cloudImg } from "@/lib/cloudinaryImage";
 import FAQAccordion from "@/components/FAQAccordion";
 import GallerySlider from "./GallerySlider";
 import RelatedSlider from "./RelatedSlider";
+import BookBarWatcher from "./BookBarWatcher";
 
 export async function generateStaticParams() {
   return experiences.map(e => ({ slug: e.slug }));
@@ -269,16 +270,43 @@ export default async function ExperienceDetailPage({ params }) {
         }
         .mob-wa-btn:focus-visible { outline: 2px solid #25D366; outline-offset: 3px; }
 
-        /* ── Mobile booking snapshot ── */
+        /* ── Mobile & tablet booking card ── */
         .snap-card {
-          background:#FFFFFF; border:1px solid rgba(255,216,155,0.7);
-          border-top:4px solid ${OR}; border-radius:18px;
-          padding:18px 18px 16px; box-shadow:0 6px 24px rgba(255,140,0,0.10);
+          background:#FFFFFF; border:1px solid rgba(255,216,155,0.8);
+          border-radius:20px; overflow:hidden;
+          box-shadow:0 10px 30px rgba(120,70,0,0.10);
+          margin-top:-8px;
         }
-        .snap-rows { margin-top:12px; border-top:1px solid ${PH}; }
-        .snap-rows > div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid ${PH}; }
-        .snap-rows dt { font-family:${IN}; font-size:.74rem; color:#9C8550; flex-shrink:0; }
-        .snap-rows dd { font-family:${IN}; font-size:.8rem; color:${CH}; font-weight:600; text-align:right; margin:0; }
+        .snap-top {
+          padding:18px 18px 16px;
+          background:linear-gradient(135deg,#FFF8E6 0%,#FFEFD0 100%);
+          border-bottom:1px solid rgba(255,216,155,0.8);
+        }
+        .snap-badge {
+          font-family:${IN}; font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+          color:#9A5200; background:#FFFFFF; border:1px solid rgba(255,180,90,0.6);
+          padding:5px 10px; border-radius:9999px; white-space:nowrap;
+        }
+        .snap-facts {
+          list-style:none; margin:0; padding:6px 18px 4px;
+          display:grid; grid-template-columns:1fr 1fr; column-gap:14px;
+        }
+        .snap-facts li { display:flex; align-items:flex-start; gap:10px; padding:12px 0; border-bottom:1px solid #FBEBD0; min-width:0; }
+        .snap-facts li.wide { grid-column:1 / -1; }
+        .snap-facts li:last-child { border-bottom:none; }
+        .snap-ico {
+          width:30px; height:30px; border-radius:9px; flex-shrink:0;
+          display:flex; align-items:center; justify-content:center;
+          background:#FFF3DC; color:${OR};
+        }
+        .snap-lbl { display:block; font-family:${IN}; font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:#9C8550; margin-bottom:2px; }
+        .snap-val { display:block; font-family:${IN}; font-size:.86rem; color:${CH}; font-weight:600; line-height:1.4; overflow-wrap:anywhere; }
+        .snap-actions { display:grid; grid-template-columns:1.4fr 1fr; gap:10px; padding:4px 18px 0; }
+        .snap-foot { font-family:${IN}; font-size:.72rem; color:${MU}; text-align:center; padding:12px 18px 16px; }
+
+        /* ── Floating bar appears only after the booking card scrolls away ── */
+        .mobile-book-bar { transition:opacity .25s ease, visibility .25s ease; }
+        html:not(.show-book-bar) .mobile-book-bar { opacity:0; visibility:hidden; pointer-events:none; }
 
         /* ── Journey timeline ── */
         .journey { list-style:none; margin:0; padding:0; position:relative; }
@@ -401,7 +429,7 @@ export default async function ExperienceDetailPage({ params }) {
       </section>
 
       {/* ── Quick Info Strip ── */}
-      <div style={{ background:CR, borderBottom:`1px solid ${PH}` }}>
+      <div className="hidden lg:block" style={{ background:CR, borderBottom:`1px solid ${PH}` }}>
         <div className="quick-info-strip" style={{ maxWidth:"1320px", margin:"0 auto", padding:"18px 20px", display:"flex", flexWrap:"wrap", gap:"24px" }}>
           {[
             { Icon:Clock,  label:"Duration",   value:exp.duration },
@@ -431,27 +459,44 @@ export default async function ExperienceDetailPage({ params }) {
             {/* ─── Left column ─── */}
             <div className="lg:col-span-2" style={{ display:"flex", flexDirection:"column", gap:"52px" }}>
 
-              {/* Mobile booking snapshot — price and booking right after the hero */}
+              {/* Mobile & tablet booking card — key facts, price and booking in one place */}
               <div className="lg:hidden snap-card">
-                <div style={{ display:"flex", alignItems:"baseline", justifyContent:"space-between", gap:"12px", flexWrap:"wrap" }}>
-                  {exp.priceUSD ? (
-                    <p style={{ fontFamily:IN, color:CH, fontSize:"0.8rem" }}>
-                      From <strong style={{ fontFamily:PF, fontSize:"1.9rem", color:OR, fontWeight:700 }}>USD {exp.priceUSD}</strong>{" "}
-                      <span style={{ color:MU }}>{exp.priceUnit || "per person"}</span>
-                    </p>
-                  ) : (
-                    <p style={{ fontFamily:PF, fontSize:"1.3rem", color:CH, fontWeight:700 }}>Book This Experience</p>
-                  )}
-                  <span style={{ fontFamily:IN, fontSize:"0.7rem", color:MU }}>Reply within 24 hours</span>
+                <div className="snap-top">
+                  <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", gap:"10px", flexWrap:"wrap" }}>
+                    {exp.priceUSD ? (
+                      <p style={{ fontFamily:IN, color:MU, fontSize:"0.78rem", lineHeight:1.2 }}>
+                        From{" "}
+                        <strong style={{ fontFamily:PF, fontSize:"2rem", color:CH, fontWeight:700, letterSpacing:"-0.01em" }}>${exp.priceUSD}</strong>{" "}
+                        {exp.priceUnit || "per person"}
+                      </p>
+                    ) : (
+                      <p style={{ fontFamily:PF, fontSize:"1.4rem", color:CH, fontWeight:700 }}>Book This Experience</p>
+                    )}
+                    <span className="snap-badge">Local guide</span>
+                  </div>
+                  {exp.priceNote && <p style={{ fontFamily:IN, fontSize:"0.74rem", color:MU, marginTop:"6px", lineHeight:1.55 }}>{exp.priceNote}</p>}
                 </div>
-                {exp.priceNote && <p style={{ fontFamily:IN, fontSize:"0.74rem", color:"#9C8550", marginTop:"4px", lineHeight:1.5 }}>{exp.priceNote}</p>}
-                <dl className="snap-rows">
-                  <div><dt>Start time</dt><dd>{exp.startTime}</dd></div>
-                  {(exp.beforeYouCome?.meetingPoint || exp.meetingPoint) && (
-                    <div><dt>Meeting point</dt><dd>{exp.beforeYouCome?.meetingPoint || exp.meetingPoint}</dd></div>
-                  )}
-                </dl>
-                <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"10px", marginTop:"14px" }}>
+
+                <ul className="snap-facts">
+                  {[
+                    { Icon:Clock,  label:"Duration",   value:exp.duration },
+                    { Icon:Users,  label:"Group size", value:exp.groupSize },
+                    { Icon:Gauge,  label:"Difficulty", value:exp.difficulty },
+                    { Icon:Globe,  label:"Languages",  value:Array.isArray(exp.languages) ? exp.languages.join(", ") : exp.languages },
+                    { Icon:Clock,  label:"Start time", value:exp.startTime, wide:true },
+                    { Icon:MapPin, label:"Meeting point", value:exp.beforeYouCome?.meetingPoint || exp.meetingPoint, wide:true },
+                  ].filter(f => f.value).map(({ Icon, label, value, wide }) => (
+                    <li key={label} className={wide ? "wide" : ""}>
+                      <span className="snap-ico"><Icon size={14} /></span>
+                      <span style={{ minWidth:0 }}>
+                        <span className="snap-lbl">{label}</span>
+                        <span className="snap-val">{value}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="snap-actions">
                   <Link href={`/contact?experience=${encodeURIComponent(exp.title)}`} className="sb-book">
                     Book Now <ArrowRight size={13} />
                   </Link>
@@ -459,9 +504,7 @@ export default async function ExperienceDetailPage({ params }) {
                     <WhatsAppIcon size={16} /> WhatsApp
                   </a>
                 </div>
-                <p style={{ fontFamily:IN, fontSize:"0.74rem", color:MU, marginTop:"12px", textAlign:"center" }}>
-                  Private tours · Small groups · English &amp; Spanish
-                </p>
+                <p className="snap-foot">Free to enquire · We reply personally within 24 hours</p>
               </div>
 
               {/* Gallery — GallerySlider handles desktop grid + mobile MobileSlider */}
@@ -755,11 +798,12 @@ export default async function ExperienceDetailPage({ params }) {
       )}
 
       {/* ── Mobile sticky CTA bar — floating pill ── */}
+      <BookBarWatcher />
       <div className="mobile-book-bar" role="complementary" aria-label="Book this experience">
         {exp.priceUSD && (
           <div className="mob-price">
             <span>From</span>
-            <strong>USD {exp.priceUSD}</strong>
+            <strong>${exp.priceUSD}</strong>
           </div>
         )}
         <Link
