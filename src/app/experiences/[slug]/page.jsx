@@ -269,6 +269,55 @@ export default async function ExperienceDetailPage({ params }) {
         }
         .mob-wa-btn:focus-visible { outline: 2px solid #25D366; outline-offset: 3px; }
 
+        /* ── Mobile booking snapshot ── */
+        .snap-card {
+          background:#FFFFFF; border:1px solid rgba(255,216,155,0.7);
+          border-top:4px solid ${OR}; border-radius:18px;
+          padding:18px 18px 16px; box-shadow:0 6px 24px rgba(255,140,0,0.10);
+        }
+        .snap-rows { margin-top:12px; border-top:1px solid ${PH}; }
+        .snap-rows > div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid ${PH}; }
+        .snap-rows dt { font-family:${IN}; font-size:.74rem; color:#9C8550; flex-shrink:0; }
+        .snap-rows dd { font-family:${IN}; font-size:.8rem; color:${CH}; font-weight:600; text-align:right; margin:0; }
+
+        /* ── Journey timeline ── */
+        .journey { list-style:none; margin:0; padding:0; position:relative; }
+        .journey li { position:relative; display:flex; gap:16px; padding-bottom:20px; }
+        .journey li:last-child { padding-bottom:0; }
+        .journey li:not(:last-child)::before {
+          content:""; position:absolute; left:15px; top:34px; bottom:2px;
+          width:2px; background:linear-gradient(${PH}, rgba(255,216,155,0.25));
+        }
+        .journey-num {
+          width:32px; height:32px; border-radius:50%; flex-shrink:0;
+          display:flex; align-items:center; justify-content:center;
+          background:linear-gradient(135deg,#FF8C00,#E07800); color:#FFFFFF;
+          font-family:${IN}; font-size:.8rem; font-weight:700;
+          box-shadow:0 3px 10px rgba(255,140,0,0.25);
+        }
+        .journey-text { font-family:${IN}; color:${MU}; font-size:.92rem; line-height:1.75; font-weight:400; padding-top:5px; min-width:0; }
+
+        /* ── Story read-more ── */
+        .story-more summary {
+          list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px;
+          font-family:${IN}; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+          color:${OR}; padding:10px 18px; border:1px solid ${PH}; border-radius:9999px; background:${CR};
+        }
+        .story-more summary::-webkit-details-marker { display:none; }
+        .story-more summary::after { content:"+"; font-size:1rem; line-height:1; }
+        .story-more[open] summary::after { content:"−"; }
+        .story-more summary:focus-visible { outline:2px solid ${OR}; outline-offset:3px; }
+
+        /* ── Sticky bar price ── */
+        .mob-price { display:flex; flex-direction:column; justify-content:center; line-height:1.1; padding:0 6px 0 10px; flex-shrink:0; }
+        .mob-price span { font-family:${IN}; font-size:.62rem; color:${MU}; text-transform:uppercase; letter-spacing:.1em; }
+        .mob-price strong { font-family:${PF}; font-size:1.1rem; color:${CH}; }
+        @media (max-width: 380px) {
+          .mob-wa-label { display:none; }
+          .mob-wa-btn { padding:0 16px !important; }
+          .mob-book-btn { padding:0 14px !important; }
+        }
+
         /* ── Ideal-for chips ── */
         .ideal-chip {
           background: linear-gradient(145deg,#FFFBF0,#FFF7E4);
@@ -382,32 +431,48 @@ export default async function ExperienceDetailPage({ params }) {
             {/* ─── Left column ─── */}
             <div className="lg:col-span-2" style={{ display:"flex", flexDirection:"column", gap:"52px" }}>
 
-              {/* Story */}
-              <div>
-                <p style={LABEL}>The Story</p>
-                <div style={RULE} />
-                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Why This Experience Exists</h2>
-                <div style={{ display:"flex", flexDirection:"column", gap:"16px" }}>
-                  {exp.story.split("\n\n").map((p, i) => (
-                    <p key={i} style={{ fontFamily:IN, color:MU, lineHeight:1.9, fontSize:"0.95rem", fontWeight:300 }}>{p}</p>
-                  ))}
+              {/* Mobile booking snapshot — price and booking right after the hero */}
+              <div className="lg:hidden snap-card">
+                <div style={{ display:"flex", alignItems:"baseline", justifyContent:"space-between", gap:"12px", flexWrap:"wrap" }}>
+                  {exp.priceUSD ? (
+                    <p style={{ fontFamily:IN, color:CH, fontSize:"0.8rem" }}>
+                      From <strong style={{ fontFamily:PF, fontSize:"1.9rem", color:OR, fontWeight:700 }}>USD {exp.priceUSD}</strong>{" "}
+                      <span style={{ color:MU }}>{exp.priceUnit || "per person"}</span>
+                    </p>
+                  ) : (
+                    <p style={{ fontFamily:PF, fontSize:"1.3rem", color:CH, fontWeight:700 }}>Book This Experience</p>
+                  )}
+                  <span style={{ fontFamily:IN, fontSize:"0.7rem", color:MU }}>Reply within 24 hours</span>
                 </div>
+                {exp.priceNote && <p style={{ fontFamily:IN, fontSize:"0.74rem", color:"#9C8550", marginTop:"4px", lineHeight:1.5 }}>{exp.priceNote}</p>}
+                <dl className="snap-rows">
+                  <div><dt>Start time</dt><dd>{exp.startTime}</dd></div>
+                  {(exp.beforeYouCome?.meetingPoint || exp.meetingPoint) && (
+                    <div><dt>Meeting point</dt><dd>{exp.beforeYouCome?.meetingPoint || exp.meetingPoint}</dd></div>
+                  )}
+                </dl>
+                <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"10px", marginTop:"14px" }}>
+                  <Link href={`/contact?experience=${encodeURIComponent(exp.title)}`} className="sb-book">
+                    Book Now <ArrowRight size={13} />
+                  </Link>
+                  <a href={waUrl} target="_blank" rel="noopener noreferrer" className="sb-wa">
+                    <WhatsAppIcon size={16} /> WhatsApp
+                  </a>
+                </div>
+                <p style={{ fontFamily:IN, fontSize:"0.74rem", color:MU, marginTop:"12px", textAlign:"center" }}>
+                  Private tours · Small groups · English &amp; Spanish
+                </p>
               </div>
 
-              {/* What you'll experience */}
-              <div>
-                <p style={LABEL}>The Journey</p>
-                <div style={RULE} />
-                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>What You&apos;ll Experience{exp.seoName ? ` on This ${exp.seoName}` : ""}</h2>
-                <ul style={{ display:"flex", flexDirection:"column", gap:"14px" }}>
-                  {exp.whatYouExperience.map((item, i) => (
-                    <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"12px" }}>
-                      <CheckCircle2 size={16} style={{ color:GO, marginTop:"3px", flexShrink:0 }} />
-                      <span style={{ fontFamily:IN, color:MU, fontSize:"0.9rem", lineHeight:1.8, fontWeight:300 }}>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {/* Gallery — GallerySlider handles desktop grid + mobile MobileSlider */}
+              {exp.gallery && exp.gallery.length > 0 && (
+                <div>
+                  <p style={LABEL}>Gallery</p>
+                  <div style={RULE} />
+                  <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Moments From This Experience</h2>
+                 <GallerySlider images={exp.gallery.map((g, i) => ({ ...g, src: cloudImg(g.src), alt: g.alt || `${exp.title} – photo ${i + 1}` }))} title={exp.title} />
+                </div>
+              )}
 
               {/* Highlights */}
               <div style={{ background:CR, border:`1px solid ${PH}`, borderLeft:`4px solid ${OR}`, borderRadius:"0 16px 16px 0", padding:"28px 28px 28px 24px" }}>
@@ -438,6 +503,45 @@ export default async function ExperienceDetailPage({ params }) {
                     </ul>
                   </div>
                 )}
+              </div>
+
+              {/* What you'll experience */}
+              <div>
+                <p style={LABEL}>The Journey</p>
+                <div style={RULE} />
+                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>What You&apos;ll Experience{exp.seoName ? ` on This ${exp.seoName}` : ""}</h2>
+                <ol className="journey">
+                  {exp.whatYouExperience.map((item, i) => (
+                    <li key={i}>
+                      <span className="journey-num" aria-hidden="true">{i + 1}</span>
+                      <span className="journey-text">{item}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              {/* Story */}
+              <div>
+                <p style={LABEL}>The Story</p>
+                <div style={RULE} />
+                <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Why This Experience Exists</h2>
+                {(() => {
+                  const paras = exp.story.split("\n\n");
+                  const P = (p, i) => <p key={i} style={{ fontFamily:IN, color:MU, lineHeight:1.9, fontSize:"0.95rem", fontWeight:300 }}>{p}</p>;
+                  return (
+                    <div style={{ display:"flex", flexDirection:"column", gap:"16px" }}>
+                      {paras.slice(0, 1).map(P)}
+                      {paras.length > 1 && (
+                        <details className="story-more">
+                          <summary>Read the full story</summary>
+                          <div style={{ display:"flex", flexDirection:"column", gap:"16px", marginTop:"16px" }}>
+                            {paras.slice(1).map((p, i) => P(p, i + 1))}
+                          </div>
+                        </details>
+                      )}
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Ideal for */}
@@ -529,16 +633,6 @@ export default async function ExperienceDetailPage({ params }) {
                 </p>
               </div>
 
-              {/* Gallery — GallerySlider handles desktop grid + mobile MobileSlider */}
-              {exp.gallery && exp.gallery.length > 0 && (
-                <div>
-                  <p style={LABEL}>Gallery</p>
-                  <div style={RULE} />
-                  <h2 style={{ ...H2, fontSize:"clamp(1.6rem,3vw,2.5rem)" }}>Moments From This Experience</h2>
-                 <GallerySlider images={exp.gallery.map((g, i) => ({ ...g, src: cloudImg(g.src), alt: g.alt || `${exp.title} – photo ${i + 1}` }))} title={exp.title} />
-                </div>
-              )}
-
               {/* FAQs */}
               <div>
                 <p style={LABEL}>FAQs</p>
@@ -549,7 +643,7 @@ export default async function ExperienceDetailPage({ params }) {
             </div>
 
             {/* ─── Sticky Sidebar ─── */}
-            <div className="lg:col-span-1 detail-sidebar">
+            <div className="lg:col-span-1 detail-sidebar hidden lg:block">
               <div style={{ position:"sticky", top:"88px", display:"flex", flexDirection:"column", gap:"16px" }}>
 
                 {/* Booking card */}
@@ -662,6 +756,12 @@ export default async function ExperienceDetailPage({ params }) {
 
       {/* ── Mobile sticky CTA bar — floating pill ── */}
       <div className="mobile-book-bar" role="complementary" aria-label="Book this experience">
+        {exp.priceUSD && (
+          <div className="mob-price">
+            <span>From</span>
+            <strong>USD {exp.priceUSD}</strong>
+          </div>
+        )}
         <Link
           href={`/contact?experience=${encodeURIComponent(exp.title)}`}
           className="mob-book-btn"
@@ -677,7 +777,7 @@ export default async function ExperienceDetailPage({ params }) {
           aria-label="WhatsApp enquiry"
           style={{ flexShrink: 0 }}
         >
-          <WhatsAppIcon size={18} /> WhatsApp
+          <WhatsAppIcon size={18} /> <span className="mob-wa-label">WhatsApp</span>
         </a>
       </div>
     </>
