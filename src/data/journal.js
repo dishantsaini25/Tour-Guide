@@ -3,6 +3,94 @@
  */
 
 export const journalArticles = [
+  // Jal Mahal (Month 3, EN)
+  {
+    slug: "jal-mahal-jaipur",
+    datePublished: "2026-11-25",
+    dateModified: "2026-11-25",
+    title: "Jal Mahal, Jaipur: A Local Guide to the Water Palace",
+    metaTitle: "Jal Mahal Jaipur: The Water Palace Guide",
+    excerpt: "Why four of Jal Mahal's five floors are under water, who built it, whether there is an entry fee, whether you can go inside, and the best time to see it.",
+    metaDescription: "Jal Mahal Jaipur: why four of its five floors are under water, the entry fee, whether you can go inside, and the best time to see it.",
+    category: "Jaipur Guide",
+    readTime: "5 min read",
+    lang: "en",
+    image: "/images/tours/jal-mahal-man-sagar-lake.webp",
+    relatedExperiences: [
+      "jaipur-half-day-tour",
+      "jaipur-full-day-tour",
+      "the-blue-hour",
+    ],
+    images: [
+      { src: "/images/tours/jal-mahal-man-sagar-lake.webp", alt: "Jal Mahal, the Water Palace, in the middle of Man Sagar Lake, Jaipur" },
+      { src: "/images/tours/jal-mahal-aravalli-hills.webp", alt: "Jal Mahal on Man Sagar Lake with the Aravalli hills behind" },
+      { src: "/images/tours/gaitore-cenotaphs-garden-nahargarh-hills.webp", alt: "Royal cenotaphs at Gaitore ki Chhatriyan, a few minutes from Jal Mahal" },
+    ],
+    faqs: [
+      { q: "Is there an entry fee for Jal Mahal?", a: "No. Visitors cannot go inside, so there is no ticket. You can see the palace for free from the lakeside promenade." },
+      { q: "Can tourists enter Jal Mahal?", a: "No. Jal Mahal is not open to visitors." },
+      { q: "Why is Jal Mahal under water?", a: "It was built in the middle of Man Sagar Lake. It has five storeys, and when the lake is full, four of them are below the water." },
+      { q: "Who built Jal Mahal?", a: "Sources disagree. It is credited to Maharaja Madho Singh I, Sawai Jai Singh II or Sawai Pratap Singh, and was built in the 18th century as a royal pleasure palace and hunting lodge." },
+      { q: "When was Man Sagar Lake built?", a: "In 1610, by Raja Man Singh of Amer, who dammed the Darbhawati river to store water after a famine." },
+      { q: "What is the best time to see Jal Mahal?", a: "Early morning for soft light, or after dark when the palace is lit up." },
+    ],
+    body: `On the road from Jaipur to Amber Fort, almost every car slows down at the same spot. On the right, in the middle of a wide lake, a palace seems to float on the water, with the Aravalli hills rising behind it. This is Jal Mahal, the Water Palace, and it is one of the most photographed views in Jaipur.
+
+What most visitors don't know is that they are only seeing the top of it. In this guide I'll explain what Jal Mahal is, why most of it is under water, whether there is an entry fee, whether you can go inside, and when to see it at its best.
+
+## Jal Mahal at a Glance
+
+| | |
+|---|---|
+| **What it is** | An 18th-century palace in the middle of Man Sagar Lake |
+| **Storeys** | Five, of which four are under water when the lake is full |
+| **The lake** | Man Sagar, created in 1610 by Raja Man Singh of Amer |
+| **Entry fee** | None. It is seen free from the lakeside promenade |
+| **Can you go inside?** | No |
+| **Where** | On the Jaipur–Amber road, between the old city and Amber Fort |
+
+## The Lake Came First
+
+The story of Jal Mahal begins with water, not with the palace. At the end of the 16th century, the region around Amber suffered from famine and a severe shortage of water. In 1610, Raja Man Singh of Amer built a dam across the Darbhawati river to store the monsoon rains. The reservoir it created is Man Sagar Lake.
+
+The lake attracted birds, and over time it became a favourite place for the royal family's duck-shooting parties. That is where the palace comes in.
+
+## Who Built Jal Mahal?
+
+Here is something most guides won't tell you: no one is completely sure. Sources disagree. Some credit Maharaja Madho Singh I in the mid-18th century, others Maharaja Sawai Jai Singh II, and others Maharaja Sawai Pratap Singh at the end of the century. What they agree on is that it was built in the 18th century as a royal pleasure palace and hunting lodge on the lake, and that later rulers enlarged it.
+
+## Why Is Most of the Palace Under Water?
+
+Jal Mahal has five storeys. When Man Sagar Lake is full, four of them are below the water line and only the top floor is visible. That is what gives it its floating look.
+
+The palace was built to stand in water, and it has survived in the lake for over two centuries.
+
+## Jal Mahal Entry Fee
+
+There is no entry fee for Jal Mahal. Because visitors cannot go inside the palace, there is no ticket. You see it for free from the promenade along the lakeside road, which is also the best viewpoint, with the whole palace and the hills behind it in one frame.
+
+## Can You Go Inside Jal Mahal?
+
+No. Jal Mahal is not open to visitors, so tourists cannot enter the palace.
+
+## The Best Time to See Jal Mahal
+
+- **Early morning:** soft light, a calm lake and a quiet promenade. If you are driving to Amber Fort early, stop on the way.
+- **Sunset and after dark:** the palace is lit up at night, and its reflection in the lake is one of the prettiest evening sights in Jaipur.
+- **After the monsoon (September to November):** the lake is at its fullest, so the palace looks most like it is floating.
+
+A visit takes 15 to 20 minutes. Watch the traffic, as the road beside the promenade is busy.
+
+## How to Combine Jal Mahal with Other Sights
+
+Jal Mahal is on the way to Amber, so it fits naturally into a day around the forts:
+
+- **Gaitore ki Chhatriyan:** the marble cenotaphs of Jaipur's kings, a few minutes away at the foot of the Nahargarh hills.
+- **Amber Fort:** further up the same road. Read our [Amber Fort guide](/journal/amber-fort-jaipur-guide).
+- **In the evening:** [The Blue Hour](/experiences/the-blue-hour) is our open-jeep drive past Jaipur's illuminated monuments, starting near Jal Mahal.
+
+On our [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) and [Jaipur Half Day Tour](/experiences/jaipur-half-day-tour), we stop at Jal Mahal for photos and visit Gaitore, with a private car and a local guide. For more evening ideas, see [things to do in Jaipur at night](/journal/things-to-do-in-jaipur-at-night).`,
+  },
   // Palacio de los Vientos (Month 3, ES) - Spanish version of hawa-mahal-jaipur
   {
     slug: "palacio-de-los-vientos-jaipur",
@@ -1498,7 +1586,7 @@ If you can manage a steeper walk, the old royal passage from Amber leads up to J
 
 ## Late morning: Jal Mahal on the way back
 
-On the drive back to the city, stop for ten minutes at Jal Mahal, the palace in the middle of Man Sagar Lake. You can't go inside, so a photo from the promenade is all you need. Don't spend more time here than that. Your next stops need it more.
+On the drive back to the city, stop for ten minutes at [Jal Mahal](/journal/jal-mahal-jaipur), the palace in the middle of Man Sagar Lake. You can't go inside, so a photo from the promenade is all you need. Don't spend more time here than that. Your next stops need it more.
 
 ## Midday: City Palace, Jantar Mantar and Hawa Mahal
 
@@ -1727,7 +1815,7 @@ Go at least an hour before sunset. The drive up through the valley is beautiful,
 Once it is dark, Jaipur's best-known buildings are floodlit, and several of them look better at night than in the day.
 
 - **Hawa Mahal:** the honeycomb façade of the Palace of Winds turns warm gold under the lights. The street in front is lively in the evening, so it is a good place to stop, look up and watch the city go by.
-- **Jal Mahal:** the palace standing in Man Sagar Lake reflects in the still water after dark. You cannot go inside, but the lakeside promenade is where locals come for an evening walk and a snack.
+- **[Jal Mahal](/journal/jal-mahal-jaipur):** the palace standing in Man Sagar Lake reflects in the still water after dark. You cannot go inside, but the lakeside promenade is where locals come for an evening walk and a snack.
 - **Albert Hall Museum:** Jaipur's state museum is a striking Indo-Saracenic building, and the lighting brings out every arch and dome. Even if the museum is closed, the building is worth seeing from outside at night.
 - **Patrika Gate:** the colourful gateway at Jawahar Circle is covered in painted panels, and it photographs well after dark too.
 - **Birla Temple:** this Hindu temple dedicated to Lord Vishnu and Goddess Lakshmi is built entirely of white marble. It lights up brilliantly against the evening sky and has a calm, peaceful atmosphere for evening visitors.
@@ -2586,7 +2674,7 @@ Day two moves out of the old city and into Amber — the seat of Jaipur's former
 Meeting at the Amber Fort View Point by Maota Lake, this walk goes well beyond the fort itself — into the town of Amber, past the 16th-century Jagat Shiromani Temple, ancient stepwells once used as a neighborhood gathering point, and through a historic tunnel once reserved for the royal family, ending at Jaigarh Fort and its enormous cannon.
 
 **Afternoon: Lunch, Then Artisan's Jaipur or Rest**
-Amber town has a handful of local eateries worth stopping at after the morning walk. If you have the energy, a short visit to Jal Mahal (the Water Palace) on the way back into the city is a worthwhile photo stop — it sits directly on your route back from Amber and needs no separate booking.
+Amber town has a handful of local eateries worth stopping at after the morning walk. If you have the energy, a short visit to [Jal Mahal](/journal/jal-mahal-jaipur) (the Water Palace) on the way back into the city is a worthwhile photo stop — it sits directly on your route back from Amber and needs no separate booking.
 
 Back in the city, [Artisan's Jaipur](/experiences/artisans-jaipur) (1:30 PM – 4:00 PM) introduces you to the city's craft world — understanding how Jaipur stands among the world's finest shopping centers through the artisans who make it so.
 
