@@ -113,7 +113,7 @@ export default function HeroSection() {
             style={{
               position: "absolute", inset: 0, width: "100%", height: "100%",
               objectFit: "cover",
-              objectPosition: "center calc(40% - 100px)",
+              objectPosition: "center 8%",
             }}
           />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg, rgba(20,10,0,0.78) 0%, rgba(20,10,0,0.42) 55%, rgba(20,10,0,0.2) 100%)" }} />
