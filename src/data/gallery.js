@@ -592,13 +592,6 @@ export const galleryImages = [
     "tour": "artisans-jaipur"
   },
   {
-    "id": 87,
-    "src": "/images/tours/gaitore-ki-chhatriyan-marble-cenotaph.webp",
-    "alt": "Marble cenotaph at Gaitore ki Chhatriyan, the royal cremation ground of Jaipur's kings",
-    "category": "Amber & Forts",
-    "tour": "jaipur-full-day-tour"
-  },
-  {
     "id": 88,
     "src": "/images/tours/gaitore-carved-dome-interior.webp",
     "alt": "Carved marble dome inside a royal cenotaph at Gaitore, Jaipur",
