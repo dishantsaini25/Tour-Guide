@@ -1060,7 +1060,7 @@ metaDescription: "Meet Jaipur's master craftsmen at work — lac bangle makers, 
     cardImage: "/experiences/ridge-and-ramparts/amer-fort-reflection-maota-lake.webp",
     heroAlt: "Amer Fort reflected in Maota Lake, Jaipur",
     gallery: [
-      { src: "/images/tours/gaitore-carved-dome-interior.webp", alt: "Carved marble dome inside a royal cenotaph at Gaitore, Jaipur" },
+      { src: "/images/tours/gaitore-carved-dome-interior.webp", alt: "Carved marble domes of a royal cenotaph at Gaitore, Jaipur" },
       { src: "/images/tours/gaitore-cenotaphs-garden-nahargarh-hills.webp", alt: "Royal cenotaphs and gardens at Gaitore below the Nahargarh hills" },
       { src: "/images/tours/raah-guest-gaitore-cenotaphs.webp", alt: "A Raah guest at the marble cenotaphs of Gaitore ki Chhatriyan, Jaipur" },
       { src: "/experiences/ridge-and-ramparts/raah-group-ganesh-pol-amer-fort.webp", alt: "Group of Raah guests in front of the painted Ganesh Pol, Amer Fort" },

@@ -75,7 +75,19 @@ export default function HeroSection() {
           padding: clamp(56px,7vh,80px) 20px clamp(100px,12vh,130px);
         }
         @media (max-width: 767px) {
-          .hero-content-pad { padding-bottom: clamp(160px, 22vh, 200px); }
+          /* Mobile: keep the whole hero, including the trust line, inside the first screen */
+          .hero-content-pad { padding: 24px 20px 64px; }
+          .h-kicker { display: none !important; }
+          .h-title { margin-bottom: 14px !important; }
+          .h-desc { margin-bottom: 24px !important; font-size: 0.95rem !important; line-height: 1.65 !important; }
+          .h-ctas { flex-direction: column; gap: 12px !important; }
+          .h-ctas a { justify-content: center; padding: 14px 24px !important; }
+          .h-trust { margin-top: 18px !important; font-size: 0.82rem !important; }
+          .h-es {
+            display: inline-flex; margin-top: 10px; padding: 6px 14px;
+            border: 1px solid rgba(255,216,155,0.7); border-radius: 9999px;
+            text-decoration: none !important; background: rgba(20,10,0,0.25);
+          }
         }
 
         .hero-bottom-overlay {
@@ -88,7 +100,7 @@ export default function HeroSection() {
         }
 
         .hero-merge-fade {
-          height: 220px;
+          height: 90px;
           background: linear-gradient(to top, #FFFDE7 0%, rgba(255,253,231,0.85) 28%, rgba(255,253,231,0.35) 60%, transparent 100%);
         }
         @media (min-width: 768px) {
@@ -124,14 +136,14 @@ export default function HeroSection() {
         <div style={{ position: "relative", zIndex: 10, maxWidth: "1320px", margin: "0 auto", width: "100%" }} className="inner-pad hero-content-pad">
           <div style={{ maxWidth: "700px" }}>
 
-            <div className="hero-up" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px", ...up(100) }}>
+            <div className="hero-up h-kicker" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px", ...up(100) }}>
               <div style={{ width: "32px", height: "1px", background: "#F5A623" }} />
               <span style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "#F5A623", fontWeight: 600 }}>
                 Jaipur · Rajasthan · Curated Walking Experiences
               </span>
             </div>
 
-            <p className="hero-up" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2.6rem,8vw,7.5rem)", lineHeight: 1.05, color: "#FFFFFF", marginBottom: "24px", ...up(220) }}>
+            <p className="hero-up h-title" style={{ fontFamily: "Fraunces, Georgia, serif", fontWeight: 700, fontSize: "clamp(2.6rem,8vw,7.5rem)", lineHeight: 1.05, color: "#FFFFFF", marginBottom: "24px", ...up(220) }}>
               Raah India<br />
               <em style={{ color: "#FF8C00", fontStyle: "italic", fontWeight: 600 }}>Experiences</em>
             </p>
@@ -139,11 +151,11 @@ export default function HeroSection() {
             <h1 className="hero-up" style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(1.1rem,2.2vw,1.5rem)", color: "rgba(255,255,255,0.88)", lineHeight: 1.65, marginBottom: "10px", fontStyle: "italic", fontWeight: 400, ...up(360) }}>
               Curated Walking Tours &amp; Cultural Experiences in Jaipur
             </h1>
-            <p className="hero-up" style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: "40px", maxWidth: "540px", fontWeight: 300, ...up(440) }}>
+            <p className="hero-up h-desc" style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: "40px", maxWidth: "540px", fontWeight: 300, ...up(440) }}>
               Walk slowly through Jaipur&apos;s stories, rituals, flavours, forts, markets, and hidden corners — with someone who calls this city home.
             </p>
 
-            <div className="hero-up" style={{ display: "flex", flexWrap: "wrap", gap: "14px", ...up(560) }}>
+            <div className="hero-up h-ctas" style={{ display: "flex", flexWrap: "wrap", gap: "14px", ...up(560) }}>
               <Link href="/experiences" className="h-cta1"
                 style={{
                   display: "inline-flex", alignItems: "center", gap: "10px",
@@ -169,9 +181,9 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            <p className="hero-up" style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.85)", marginTop: "22px", lineHeight: 1.6, ...up(640) }}>
+            <p className="hero-up h-trust" style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.85)", marginTop: "22px", lineHeight: 1.6, ...up(640) }}>
               Government-approved local guide · English &amp; Spanish · Max 8 guests ·{" "}
-              <Link href="/tours-en-espanol" lang="es" style={{ color: "#FFD89B", fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              <Link href="/tours-en-espanol" lang="es" className="h-es" style={{ color: "#FFD89B", fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px" }}>
                 Tours en español
               </Link>
             </p>

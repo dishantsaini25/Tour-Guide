@@ -749,7 +749,7 @@ export default function EnquiryPopup() {
               <div style={{ display: "flex", flexDirection: "column", gap: "7px" }}>
                 {[
                   { num: "4+", label: "Years of Local Expertise"     },
-                  { num: "9+", label: "Curated Experiences"          },
+                  { num: "12", label: "Curated Experiences"          },
                   { num: "2",  label: "Languages — English & Spanish"},
                 ].map(({ num, label }) => (
                   <div key={label} className="ep-stat-pill">
@@ -793,7 +793,7 @@ export default function EnquiryPopup() {
                   Heritage · Food · Culture · Custom Experiences
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-                  {["4+ Years Expertise", "9+ Experiences", "English & Spanish"].map((s) => (
+                  {["4+ Years Expertise", "12 Experiences", "English & Spanish"].map((s) => (
                     <span key={s} style={{
                       fontFamily: IN, fontSize: "0.6rem", fontWeight: 600,
                       color: "#FF8C00", background: "rgba(255,140,0,0.12)",

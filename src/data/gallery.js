@@ -301,21 +301,21 @@ export const galleryImages = [
     "id": 45,
     "src": "/experiences/the-blue-hour/nahargarh-fort-madhavendra-bhawan-courtyard.webp",
     "alt": "Courtyard of Madhavendra Bhawan inside Nahargarh Fort",
-    "category": "Jaipur by Night",
+    "category": "Amber & Forts",
     "tour": "the-blue-hour"
   },
   {
     "id": 46,
     "src": "/experiences/the-blue-hour/nahargarh-fort-fresco-arch.webp",
     "alt": "Floral fresco above an arch inside Nahargarh Fort",
-    "category": "Jaipur by Night",
+    "category": "Amber & Forts",
     "tour": "the-blue-hour"
   },
   {
     "id": 47,
     "src": "/experiences/the-blue-hour/nahargarh-fort-painted-room.webp",
     "alt": "Painted room in Nahargarh Fort with a window over Jaipur",
-    "category": "Jaipur by Night",
+    "category": "Amber & Forts",
     "tour": "the-blue-hour"
   },
   {
@@ -385,21 +385,21 @@ export const galleryImages = [
     "id": 57,
     "src": "/experiences/beyond-the-pink/old-tailor-shop-walled-city-jaipur.webp",
     "alt": "Old tailor shop in the walled city of Jaipur",
-    "category": "Food & Crafts",
+    "category": "Old City & Palaces",
     "tour": "beyond-the-pink"
   },
   {
     "id": 58,
     "src": "/experiences/beyond-the-pink/locals-at-haveli-doorway-jaipur.webp",
     "alt": "Locals sitting at an old haveli doorway in Jaipur",
-    "category": "Food & Crafts",
+    "category": "Old City & Palaces",
     "tour": "beyond-the-pink"
   },
   {
     "id": 59,
     "src": "/experiences/beyond-the-pink/women-in-sarees-old-city-jaipur.webp",
     "alt": "Women in colourful sarees walking through Jaipur's old city",
-    "category": "Food & Crafts",
+    "category": "Old City & Palaces",
     "tour": "beyond-the-pink"
   },
   {
@@ -522,13 +522,6 @@ export const galleryImages = [
     "tour": "the-lost-kingdom"
   },
   {
-    "id": 77,
-    "src": "/experiences/the-lost-kingdom/aravalli-ridge-wall-watchtower.webp",
-    "alt": "Fortification wall and watchtower on an Aravalli ridge at dusk",
-    "category": "Amber & Forts",
-    "tour": "the-lost-kingdom"
-  },
-  {
     "id": 78,
     "src": "/experiences/the-lost-kingdom/old-wooden-door-ruins-amber-hills.webp",
     "alt": "Weathered wooden door in a ruined structure in the Amber hills",
@@ -536,38 +529,24 @@ export const galleryImages = [
     "tour": "the-lost-kingdom"
   },
   {
-    "id": 79,
-    "src": "/experiences/the-lost-kingdom/tree-at-hill-shrine-amber.webp",
-    "alt": "Large tree in the courtyard of a hill shrine near Amber",
-    "category": "Amber & Forts",
-    "tour": "the-lost-kingdom"
-  },
-  {
-    "id": 80,
-    "src": "/experiences/the-lost-kingdom/bare-trees-aravalli-forest.webp",
-    "alt": "Bare winter trees in the Aravalli forest near Amber",
-    "category": "Amber & Forts",
-    "tour": "the-lost-kingdom"
-  },
-  {
     "id": 81,
     "src": "/experiences/artisans-jaipur/hand-block-printing-workshop-jaipur.webp",
     "alt": "Guest trying hand block printing at a workshop near Jaipur",
-    "category": "Food & Crafts",
+    "category": "Pushkar & Bagru",
     "tour": "artisans-jaipur"
   },
   {
     "id": 82,
     "src": "/experiences/artisans-jaipur/block-printed-fabric-drying.webp",
     "alt": "Block-printed fabrics drying in the sun near Jaipur",
-    "category": "Food & Crafts",
+    "category": "Pushkar & Bagru",
     "tour": "artisans-jaipur"
   },
   {
     "id": 83,
     "src": "/experiences/artisans-jaipur/wooden-printing-block-floral.webp",
     "alt": "Hand-carved wooden printing block with a floral pattern",
-    "category": "Food & Crafts",
+    "category": "Pushkar & Bagru",
     "tour": "artisans-jaipur"
   },
   {
@@ -588,13 +567,13 @@ export const galleryImages = [
     "id": 86,
     "src": "/experiences/artisans-jaipur/guest-elephant-block-print-jaipur.webp",
     "alt": "Guest admiring an elephant motif in block-printed fabric near Jaipur",
-    "category": "Guest Moments",
+    "category": "Pushkar & Bagru",
     "tour": "artisans-jaipur"
   },
   {
     "id": 88,
     "src": "/images/tours/gaitore-carved-dome-interior.webp",
-    "alt": "Carved marble dome inside a royal cenotaph at Gaitore, Jaipur",
+    "alt": "Carved marble domes of a royal cenotaph at Gaitore, Jaipur",
     "category": "Amber & Forts",
     "tour": "jaipur-full-day-tour"
   },
@@ -623,7 +602,7 @@ export const galleryImages = [
     "id": 92,
     "src": "/experiences/the-blue-hour/hawa-mahal-sunset-jaipur.webp",
     "alt": "Hawa Mahal at sunset, Jaipur",
-    "category": "Amber & Forts",
+    "category": "Jaipur by Night",
     "tour": "jaipur-full-day-tour"
   },
   {
@@ -672,7 +651,7 @@ export const galleryImages = [
     "id": 99,
     "src": "/images/tours/guest-hand-block-printing-bagru.webp",
     "alt": "Guest printing fabric with a wooden block at a block printing workshop",
-    "category": "Guest Moments",
+    "category": "Pushkar & Bagru",
     "tour": "pushkar-day-trip-from-jaipur"
   },
   {
