@@ -56,7 +56,7 @@ export default function TermsPage() {
         <p style={{ fontFamily: IN, fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: OR, marginBottom: "10px" }}>Legal</p>
         <div style={{ width: "36px", height: "2px", background: OR, margin: "0 auto 16px" }} />
         <h1 style={{ fontFamily: PF, fontSize: "clamp(2rem,5vw,2.8rem)", fontWeight: 700, color: CH }}>Terms &amp; Conditions</h1>
-        <p style={{ fontFamily: IN, color: MU, marginTop: "10px", fontSize: "0.85rem", fontWeight: 300 }}>Last Updated: August 11, 2026</p>
+        <p style={{ fontFamily: IN, color: MU, marginTop: "10px", fontSize: "0.85rem", fontWeight: 300 }}>Last Updated: November 27, 2026</p>
       </div>
 
       {/* ── Content ── */}
@@ -126,9 +126,9 @@ export default function TermsPage() {
           <h2 style={H2}>8. Cancellation &amp; Rescheduling</h2>
           <p style={{ ...para, fontWeight: 600, color: CH, marginBottom: "6px" }}>By the guest:</p>
           <ul style={listStyle}>
-            <li><strong>More than 48 hours before the experience:</strong> Full refund or free rescheduling.</li>
-            <li><strong>24–48 hours before the experience:</strong> 50% refund or rescheduling at our discretion.</li>
-            <li><strong>Less than 24 hours before the experience:</strong> No refund. Rescheduling may be offered at our discretion.</li>
+            <li><strong>48 hours or more before the experience:</strong> Full refund or free rescheduling.</li>
+            <li><strong>12 to 48 hours before the experience:</strong> 50% refund or rescheduling at our discretion.</li>
+            <li><strong>Less than 12 hours before the experience:</strong> No refund. Rescheduling may be offered at our discretion.</li>
             <li><strong>No-show:</strong> No refund.</li>
           </ul>
           <p style={{ ...para, fontWeight: 600, color: CH, marginBottom: "6px" }}>By Raah India Experiences:</p>
@@ -137,7 +137,7 @@ export default function TermsPage() {
 
           {/* 9 */}
           <h2 style={H2}>9. Payment</h2>
-          <p style={para}>Payment terms are communicated and agreed upon at the time of booking. Currently, online payment is not processed directly through our website. Payment arrangements (such as bank transfer, UPI, or cash on the day) are agreed upon individually with each guest at the time of booking confirmation.</p>
+          <p style={para}>Payment terms are communicated and agreed upon at the time of booking. Currently, online payment is not processed directly through our website. Payment arrangements (such as Wise, UPI, bank transfer, or cash on the day) are agreed upon individually with each guest at the time of booking confirmation.</p>
           <p style={para}>Prices are subject to change without notice. The price confirmed at the time of booking will be honoured.</p>
 
           {/* 10 */}

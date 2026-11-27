@@ -84,6 +84,10 @@ const FAQS = [
     q: "How much walking is involved?",
     a: "The walks are at an easy pace with regular stops. Beyond the Pink, the food walk, is a little longer and rated moderate.",
   },
+  {
+    q: "Can I cancel or reschedule?",
+    a: "Yes. Cancel at least 48 hours before the start for a full refund or free rescheduling, or at least 12 hours before for a 50% refund. Cancellations within 12 hours of the start, and no-shows, are not refunded.",
+  },
 ];
 
 function priceLabel(exp) {
