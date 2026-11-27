@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import { cloudImg } from "@/lib/cloudinaryImage";
 import { galleryImages, galleryCategories } from "@/data/gallery";
@@ -52,6 +53,9 @@ export default function GalleryPage() {
       {/* Gallery */}
       <section style={{ background:"#FFFFFF", padding:"72px 0" }}>
         <div style={{ maxWidth:"1320px", margin:"0 auto", padding:"0 20px" }}>
+          <h2 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(1.5rem,3vw,2.1rem)", color:CH, textAlign:"center", marginBottom:"24px", textWrap:"balance" }}>
+            Photos from our walks in Jaipur
+          </h2>
           {/* Filters */}
           <div style={{ display:"flex", flexWrap:"wrap", gap:"8px", justifyContent:"center", marginBottom:"48px" }}>
             {galleryCategories.map(cat => (
@@ -93,6 +97,26 @@ export default function GalleryPage() {
               >Load more photos ({filtered.length - limit})</button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Walk with us */}
+      <section style={{ background:"#FFFDE7", padding:"64px 0", textAlign:"center", borderTop:"1px solid #FFD89B" }}>
+        <div style={{ maxWidth:"760px", margin:"0 auto", padding:"0 20px" }}>
+          <h2 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(1.5rem,3vw,2.1rem)", color:CH, marginBottom:"12px", textWrap:"balance" }}>
+            Walk these streets with us
+          </h2>
+          <p style={{ fontFamily:IN, color:MU, fontSize:"1rem", lineHeight:1.75, fontWeight:300, marginBottom:"28px" }}>
+            Every photo here was taken on a Raah walk. Choose a walk through the old city, or see all our experiences in Jaipur.
+          </p>
+          <div style={{ display:"flex", flexWrap:"wrap", gap:"12px", justifyContent:"center" }}>
+            <Link href="/jaipur-walking-tours" style={{ minHeight:"44px", display:"inline-flex", alignItems:"center", padding:"12px 28px", fontFamily:IN, fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", background:OR, color:"#FFFFFF", textDecoration:"none", borderRadius:"9999px" }}>
+              Walking tours in Jaipur
+            </Link>
+            <Link href="/experiences" style={{ minHeight:"44px", display:"inline-flex", alignItems:"center", padding:"12px 28px", fontFamily:IN, fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", border:"2px solid "+OR, color:OR, textDecoration:"none", borderRadius:"9999px" }}>
+              All experiences
+            </Link>
+          </div>
         </div>
       </section>
 

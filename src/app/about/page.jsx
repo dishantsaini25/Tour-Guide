@@ -190,8 +190,8 @@ export default function AboutPage() {
             <div style={{ position: "relative" }} className="lg:order-last">
               <div className="ab-img-wrap ab-img-wrap-43">
                 <Image
-                  src="/images/60ab29a94b1a370d8d8b9c37bd03be6c.jpg"
-                  alt="Elephant ride at Amer Fort, Jaipur"
+                  src="/images/painted-gateway-ceiling-jaipur.jpg"
+                  alt="Painted ceiling of a decorated gateway in Jaipur"
                   fill
                   className="object-cover"
                   sizes="(max-width:640px) 300px,(max-width:1024px) 380px,50vw"
@@ -229,8 +229,8 @@ export default function AboutPage() {
             <div style={{ position: "relative" }}>
               <div className="ab-img-wrap ab-img-wrap-34">
                 <Image
-                  src="/images/5390f68bd69ae1bc28bae879c2af17d7.jpg"
-                  alt="Jaipur — home of the curator"
+                  src="/images/jaipur-city-lights-dusk-from-fort-walls.jpg"
+                  alt="Jaipur city lights at dusk, seen from the fort walls above the city"
                   fill
                   className="object-cover"
                   sizes="(max-width:640px) 300px,(max-width:1024px) 380px,50vw"

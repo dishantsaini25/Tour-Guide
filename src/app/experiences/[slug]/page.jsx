@@ -64,7 +64,12 @@ export default async function ExperienceDetailPage({ params }) {
   if (!exp) notFound();
 
   const related = getRelatedExperiences(exp.slug, 3);
-  const waMsg   = `Hello! I'd like to enquire about "${exp.title}" by Raah India Experiences.`;
+  // Hide the SEO subtitle inside the H1 when it only repeats the tour name
+  // (e.g. "Jaipur Half Day Tour" + "Jaipur Half Day Tour with Guide & Car").
+  const titleWords = exp.title.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 2);
+  const seoLower = (exp.seoName || "").toLowerCase();
+  const seoNameRepeatsTitle = titleWords.length > 0 && titleWords.every((w) => seoLower.includes(w));
+  const waMsg  = `Hello! I'd like to enquire about "${exp.title}" by Raah India Experiences.`;
   const waUrl   = `https://wa.me/919929992539?text=${encodeURIComponent(waMsg)}`;
   const pageUrl = `https://www.raahexperiences.in/experiences/${exp.slug}`;
 
@@ -413,7 +418,7 @@ export default async function ExperienceDetailPage({ params }) {
 
                   <h1 style={{ fontFamily:PF, fontWeight:700, fontSize:"clamp(2.4rem,6.5vw,5.5rem)", color:"#FFFFFF", lineHeight:1.05, marginBottom:"12px" }}>
             {exp.title}{" "}
-            {exp.seoName && (
+            {exp.seoName && !seoNameRepeatsTitle && (
               <span style={{ display:"block", fontFamily:IN, fontSize:"0.28em", fontWeight:500, fontStyle:"normal", letterSpacing:"0.04em", color:"rgba(255,255,255,0.82)", marginTop:"12px" }}>
                 {exp.seoName}
               </span>

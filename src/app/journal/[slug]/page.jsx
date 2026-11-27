@@ -110,7 +110,7 @@ export default async function JournalArticlePage({ params }) {
   const t = LABELS[article.lang] || LABELS.en;
 
   return (
-    <>
+    <div lang={article.lang || "en"} style={{ display: "contents" }}>
       <SetPageLang lang={article.lang} />
 
       {/* ── BlogPosting schema ── */}
@@ -314,9 +314,16 @@ export default async function JournalArticlePage({ params }) {
                 </Link>
               ))}
             </div>
+            {article.lang === "es" && (
+              <p style={{ textAlign: "center", marginTop: "32px" }}>
+                <Link href="/tours-en-espanol" style={{ fontFamily: IN, fontSize: "0.82rem", fontWeight: 700, color: OR, textDecoration: "none", letterSpacing: "0.04em" }}>
+                  Ver todos nuestros tours en español en Jaipur →
+                </Link>
+              </p>
+            )}
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }

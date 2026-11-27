@@ -188,7 +188,7 @@ On our [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) and [Jaipur Hal
     datePublished: "2026-11-22",
     dateModified: "2026-11-22",
     title: "Palacio de los Vientos (Hawa Mahal), Jaipur: guía de un guía local",
-    metaTitle: "Palacio de los Vientos, Jaipur: guía del Hawa Mahal",
+    metaTitle: "Palacio de los Vientos (Hawa Mahal), Jaipur",
     excerpt: "Por qué la famosa fachada del Hawa Mahal es en realidad la parte trasera del palacio, por qué tiene 953 ventanas, qué hay dentro y a qué hora verlo.",
     metaDescription: "El Palacio de los Vientos (Hawa Mahal) de Jaipur: por qué tiene 953 ventanas, qué ver dentro, horario, entrada y la mejor hora para verlo.",
     category: "Jaipur Guide",
@@ -398,7 +398,7 @@ En [The Crown of Jaipur](/experiences/the-crown-of-jaipur) recorremos el Hawa Ma
     datePublished: "2026-11-17",
     dateModified: "2026-11-20",
     title: "Jantar Mantar Jaipur: A Local Guide to the Royal Observatory",
-    metaTitle: "Jantar Mantar Jaipur: Guide to the Royal Observatory",
+    metaTitle: "Jantar Mantar Jaipur: Observatory Guide",
     excerpt: "How Jaipur's royal observatory works: the world's largest stone sundial, the instruments worth seeing and how to plan your visit.",
     metaDescription: "Jantar Mantar in Jaipur: how the world's largest stone sundial works, the instruments worth seeing and tips for your visit, from a local guide.",
     category: "Jaipur Guide",
@@ -2137,7 +2137,7 @@ Puedes ver todos nuestros [tours en español en Jaipur](/tours-en-espanol) o esc
   // Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (Month 2, Blog 1)
   {
     slug: "forts-in-jaipur",
-    metaTitle: "Amer vs Jaigarh vs Nahargarh Fort: Which Is Better?",
+    metaTitle: "Amer vs Jaigarh vs Nahargarh: Which Fort?",
     datePublished: "2026-10-10",
     dateModified: "2026-10-30",
     title: "Forts in Jaipur: Amer vs Jaigarh vs Nahargarh (and Which to Visit)",

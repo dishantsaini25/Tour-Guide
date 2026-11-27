@@ -28,6 +28,8 @@ const navLinks = [
   ["/",            "Home"],
   ["/experiences", "All Experiences"],
   ["/jaipur-walking-tours", "Walking Tours in Jaipur"],
+  ["/tours-en-espanol", "Tours en español"],
+  ["/gallery",     "Photo Gallery"],
   ["/about",       "About & Philosophy"],
   ["/journal",     "The Raah Journal"],
   ["/contact",     "Book an Experience"],

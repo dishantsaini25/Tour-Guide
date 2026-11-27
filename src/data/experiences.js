@@ -105,10 +105,7 @@ const IMAGE_INVENTORY = {
   "the-lost-kingdom": [
     { file: "rocky-trail-aravalli-hills-amer.webp", alt: "Rocky hiking trail through the Aravalli hills near Amber" },
     { file: "aravalli-hills-amber-valley.webp", alt: "Aravalli hills around Amber valley" },
-    { file: "aravalli-ridge-wall-watchtower.webp", alt: "Fortification wall and watchtower on an Aravalli ridge at dusk" },
     { file: "old-wooden-door-ruins-amber-hills.webp", alt: "Weathered wooden door in a ruined structure in the Amber hills" },
-    { file: "tree-at-hill-shrine-amber.webp", alt: "Large tree in the courtyard of a hill shrine near Amber" },
-    { file: "bare-trees-aravalli-forest.webp", alt: "Bare winter trees in the Aravalli forest near Amber" },
   ],
   "artisans-jaipur": [
     { file: "rajasthani-kathputli-puppets.webp", alt: "Pair of Rajasthani kathputli puppets" },
@@ -1245,7 +1242,7 @@ metaDescription: "Meet Jaipur's master craftsmen at work — lac bangle makers, 
   {
     slug: "pushkar-day-trip-from-jaipur",
     seoName: "Pushkar Day Trip from Jaipur with Block Printing",
-    metaTitle: "Pushkar Day Trip from Jaipur with Block Printing",
+    metaTitle: "Pushkar & Bagru Day Trip from Jaipur",
     metaDescription: "Private Pushkar day trip from Jaipur with hotel pickup: hand block printing in Bagru village, then Pushkar Lake, the ghats and the Brahma Temple.",
     priceUSD: 249,
     priceINR: 22410,
