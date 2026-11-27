@@ -404,10 +404,13 @@ export default function ExperiencesPageClient() {
         <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "160px 20px 64px", width: "100%" }}>
           <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.62rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "#F5A623", fontWeight: 700, marginBottom: "12px" }}>All Experiences</p>
           <h1 style={{ fontFamily: "Fraunces, Georgia, serif", fontSize: "clamp(2.8rem,6vw,5.5rem)", fontWeight: 700, color: "#FFFFFF", lineHeight: 1.08, marginBottom: "14px" }}>
-            Every Walk Answers<br /><em style={{ color: "#FF8C00", fontStyle: "italic" }}>a Question</em>
+            Jaipur Tours &amp;<br /><em style={{ color: "#FF8C00", fontStyle: "italic" }}>Cultural Experiences</em>
           </h1>
-          <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", color: "rgba(255,255,255,0.65)", fontSize: "1.05rem", maxWidth: "520px", lineHeight: 1.7, fontWeight: 300 }}>
-            Seven curated experiences — each one designed to reveal a different layer of Jaipur.
+          <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", color: "rgba(255,255,255,0.75)", fontSize: "1.05rem", maxWidth: "600px", lineHeight: 1.7, fontWeight: 300 }}>
+            Every walk answers a question. Twelve curated experiences: heritage walks through the old city, food walks, artisan workshops, a cooking class with a local family, hill treks and private day tours, each led by a government-approved local guide in English or Spanish.
+          </p>
+          <p style={{ fontFamily: "DM Sans, system-ui, sans-serif", fontSize: "0.95rem", marginTop: "14px" }}>
+            <Link href="/jaipur-walking-tours" style={{ color: "#FFD89B", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px" }}>Only looking for walks? See our walking tours in Jaipur →</Link>
           </p>
         </div>
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "80px", background: "linear-gradient(to top, #FFFDE7, transparent)" }} />

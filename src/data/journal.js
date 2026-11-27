@@ -3,6 +3,97 @@
  */
 
 export const journalArticles = [
+  // City Palace (Month 3, EN) — language pair of palacio-de-la-ciudad-jaipur
+  {
+    slug: "city-palace-jaipur",
+    datePublished: "2026-11-27",
+    dateModified: "2026-11-27",
+    title: "City Palace Jaipur: A Local Guide to What to See Inside",
+    metaTitle: "City Palace Jaipur: What to See Inside",
+    excerpt: "What to see inside the City Palace of Jaipur: the four seasonal gates, the world's largest silver urns, the Chandra Mahal and tips from a local guide.",
+    metaDescription: "City Palace Jaipur: what to see inside the museum, the four seasonal gates, the world's largest silver urns and visiting tips from a local guide.",
+    category: "Jaipur Guide",
+    readTime: "6 min read",
+    lang: "en",
+    hreflang: { en: "city-palace-jaipur", es: "palacio-de-la-ciudad-jaipur" },
+    image: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp",
+    relatedExperiences: [
+      "the-crown-of-jaipur",
+      "jaipur-full-day-tour",
+      "jaipur-half-day-tour",
+    ],
+    images: [
+      { src: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp", alt: "The Chandra Mahal at the City Palace, Jaipur" },
+      { src: "/images/journal/raah-guests-khasa-pol-city-palace.webp", alt: "Raah guests with palace staff at the Khasa Pol gate, City Palace, Jaipur" },
+      { src: "/experiences/crown-of-jaipur/painted-doorway-city-palace-jaipur.webp", alt: "A painted doorway inside the City Palace, Jaipur" },
+      { src: "/experiences/crown-of-jaipur/mirror-room-city-palace-jaipur.webp", alt: "A mirror-work room inside the City Palace, Jaipur" },
+      { src: "/experiences/crown-of-jaipur/pillared-hall-city-palace-jaipur.webp", alt: "A pillared hall inside the City Palace, Jaipur" },
+      { src: "/experiences/the-blue-hour/chandra-mahal-city-palace-evening.webp", alt: "The Chandra Mahal of the City Palace in the evening" },
+    ],
+    faqs: [
+      { q: "Who built the City Palace in Jaipur?", a: "Maharaja Sawai Jai Singh II, the founder of Jaipur. Later rulers added buildings over the centuries." },
+      { q: "What are the City Palace timings?", a: "The City Palace is open from 9:30 AM to 6:30 PM, and the last ticket is sold at 6:00 PM. The Royal Tour of the Chandra Mahal has the same hours." },
+      { q: "Does the royal family still live in the City Palace?", a: "Yes. The royal family lives in part of the Chandra Mahal. The rest of the palace is a museum." },
+      { q: "What are the silver urns at the City Palace?", a: "Two silver urns of about 345 kilograms each, recognised by Guinness World Records as the largest sterling silver vessels in the world. They were made to carry Ganges water to England in 1902." },
+      { q: "What do the four gates of Pritam Niwas Chowk represent?", a: "The four seasons: autumn (Peacock Gate), summer (Lotus Gate), spring (Green Gate) and winter (Rose Gate)." },
+      { q: "How long do you need at the City Palace?", a: "About two hours." },
+      { q: "Can I see the Blue Room at the City Palace?", a: "The Chhavi Niwas, the famous Blue Room, is in the private Chandra Mahal. It can be seen on the Royal Tour, which has a separate, higher-priced ticket." },
+    ],
+    body: `In the heart of Jaipur's old city stands a palace that is still a home. The City Palace was the seat of the Maharajas of Jaipur, and the royal family still lives in part of it today. The rest is a museum of courtyards, halls and collections, including some of the most remarkable objects in India.
+
+I visit the City Palace almost every week with travellers. In this guide I'll explain what to see inside, the details most visitors miss, and how to plan your visit.
+
+## City Palace Jaipur at a Glance
+
+| | |
+|---|---|
+| **Founded by** | Maharaja Sawai Jai Singh II, the founder of Jaipur |
+| **Where** | In the centre of the old city, next to Jantar Mantar and close to Hawa Mahal |
+| **Today** | A museum, and in part still the royal family's residence |
+| **Timings** | 9:30 AM to 6:30 PM (last ticket at 6:00 PM) |
+| **Don't miss** | The four seasonal gates and the giant silver urns |
+| **Time needed** | About two hours |
+
+## Mubarak Mahal: The Palace of Welcome
+
+The first building you see inside is the Mubarak Mahal, built to receive foreign guests. It blends Rajput, Islamic and European styles, with finely carved stone balconies. Today it houses a collection of royal textiles and costumes.
+
+## Diwan-i-Khas and the World's Largest Silver Urns
+
+The Diwan-i-Khas was the Maharaja's hall of private audience. Here stand two enormous silver urns, the Gangajalis. Each is about 1.6 metres tall, weighs around 345 kilograms and can hold 4,000 litres of water. They were made from 14,000 melted silver coins, and Guinness World Records recognises them as the largest sterling silver vessels in the world.
+
+The story behind them is the best part. In 1902, Maharaja Sawai Madho Singh II travelled to England for the coronation of King Edward VII. A devout Hindu, he would drink no water but that of the Ganges, so he took these two urns with him, filled.
+
+## Pritam Niwas Chowk: The Four Seasonal Gates
+
+For many visitors this is the highlight of the palace. It is an inner courtyard with four painted doorways, each representing a season:
+
+- **The Peacock Gate:** autumn. The most photographed, with peacocks in relief and rich colours.
+- **The Lotus Gate:** summer.
+- **The Green Gate:** spring.
+- **The Rose Gate:** winter.
+
+A tip: come early. When the courtyard is crowded, it is hard to photograph the gates without people in front of them.
+
+## Chandra Mahal: Where the Royal Family Still Lives
+
+From Pritam Niwas Chowk you can see the Chandra Mahal, the tallest building in the complex. It has seven storeys, each with its own name. Look at the flag on top: when the Maharaja is in residence, his flag flies.
+
+Most of the Chandra Mahal is private. A separate, higher-priced ticket, the Royal Tour, gives access to some of its rooms, including the Chhavi Niwas, the famous Blue Room. If you are interested, ask about it at the ticket counter.
+
+## Tips for Your Visit
+
+- **Go early.** The palace opens at 9:30 AM, and the courtyards are calmest in the morning.
+- **Allow about two hours** to see the courtyards and museum galleries without rushing.
+- **Go with a guide.** Many rooms and objects have little explanation, and the best stories are not on the signs.
+- **Combine it with Jantar Mantar and Hawa Mahal.** They are a few minutes' walk apart and together make a natural half day. Read our [Jantar Mantar guide](/journal/jantar-mantar-jaipur) and [Hawa Mahal guide](/journal/hawa-mahal-jaipur).
+
+## Visit the City Palace with Raah
+
+[The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk through Hawa Mahal, Jantar Mantar and the City Palace, told as one story: the king who planned a city. If you have one day, our [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) includes the City Palace with Amber Fort, a private car and lunch. Both are available in English and Spanish.
+
+Planning your days? See our [one day in Jaipur itinerary](/journal/one-day-in-jaipur).`,
+  },
   // Jal Mahal (Month 3, EN)
   {
     slug: "jal-mahal-jaipur",
@@ -219,6 +310,7 @@ Todas nuestras experiencias se hacen [en español sin coste adicional](/journal/
     category: "Jaipur Guide",
     readTime: "6 min read",
     lang: "es",
+    hreflang: { en: "city-palace-jaipur", es: "palacio-de-la-ciudad-jaipur" },
     image: "/experiences/crown-of-jaipur/chandra-mahal-city-palace-jaipur.webp",
     relatedExperiences: [
       "the-crown-of-jaipur",
@@ -394,7 +486,7 @@ A round dial with two faces, one facing north and one facing south. The sun ligh
 
 ## How to Combine Jantar Mantar with Other Sights
 
-Jantar Mantar sits right next to City Palace and is a few minutes' walk from Hawa Mahal. The three together make a natural half day, and they tell one story: the king who planned a city, studied the stars and built a palace at its centre.
+Jantar Mantar sits right next to [City Palace](/journal/city-palace-jaipur) and is a few minutes' walk from Hawa Mahal. The three together make a natural half day, and they tell one story: the king who planned a city, studied the stars and built a palace at its centre.
 
 - [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk through Hawa Mahal, Jantar Mantar and City Palace.
 - The [Jaipur Full Day Tour](/experiences/jaipur-full-day-tour) adds Jantar Mantar and City Palace to a day that starts at Amber Fort.
@@ -738,7 +830,7 @@ Ticket prices for Jaipur's state-run monuments were revised in January 2026, and
 
 It sits in the heart of the walled city, so it is easy to combine with the old city's other landmarks:
 
-- **City Palace and [Jantar Mantar](/journal/jantar-mantar-jaipur)** are a short walk away. The three together make a natural half day. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk that links them into one story.
+- **[City Palace](/journal/city-palace-jaipur) and [Jantar Mantar](/journal/jantar-mantar-jaipur)** are a short walk away. The three together make a natural half day. [The Crown of Jaipur](/experiences/the-crown-of-jaipur) is our guided walk that links them into one story.
 - **At sunrise,** [Jaipur at Dawn](/experiences/jaipur-at-dawn) passes Hawa Mahal just as the first light reaches the façade, after the flower market and the morning rituals at Govind Dev Ji Temple.
 - **In the evening,** [Living the Walled City](/experiences/living-walled-city) starts at Hawa Mahal and follows the old city's lanes as the lights come on.
 - **After dark,** [The Blue Hour](/experiences/the-blue-hour) drives past Hawa Mahal and Jaipur's other illuminated monuments in an open jeep.
@@ -1592,7 +1684,7 @@ On the drive back to the city, stop for ten minutes at [Jal Mahal](/journal/jal-
 
 These three sit next to each other in the centre of the old city, so this is the easiest part of the day to plan. Walk between them.
 
-**City Palace.** The royal family of Jaipur still lives in part of it. The public section has museums of costumes and arms, painted gateways in the Pritam Niwas Chowk courtyard, and a lot of history about the people who built the city. Plan for about an hour.
+**[City Palace](/journal/city-palace-jaipur).** The royal family of Jaipur still lives in part of it. The public section has museums of costumes and arms, painted gateways in the Pritam Niwas Chowk courtyard, and a lot of history about the people who built the city. Plan for about an hour.
 
 **Jantar Mantar.** This is the 18th-century observatory built by Sawai Jai Singh II, the founder of Jaipur. The instruments look like sculptures until someone shows you how they work. The Virat Samrat Yantra, the world's largest sundial, still tells local time to within a couple of seconds. There is very little shade here, so bring water and a hat. Our [Jantar Mantar guide](/journal/jantar-mantar-jaipur) explains the main instruments.
 
@@ -2550,7 +2642,7 @@ Ready to book in your language? [Meet your guide](/about), or head straight to [
          { q: "Is this guide's license real?", a: "Yes — Shobhit holds a Jaipur Regional Level Government Approved Tour Guide license, along with the Pan India Incredible India Tour Guide (IITG) certification. Both are official, government-issued credentials, not self-claimed titles." },
       { q: "Are unlicensed guides always untrustworthy?", a: "Not necessarily — but licensing remains the clearest external signal available to a traveller who otherwise has no independent way to verify a stranger's actual expertise. It meaningfully reduces risk, even though it can't guarantee a perfect experience on its own." },
       { q: "Why do some guides push shopping stops so heavily?", a: "Many operate on a commission model, where shops quietly pay guides or drivers a fee for every tourist brought through the door — a cost that inevitably gets passed on to you through inflated prices once you're inside." },
-      { q: "Does Raah's guide work alone, or are there other guides on the team?", a: "Raah is a family-led concept rather than a solo operation. Founder Shobhit and his mentor and father both personally lead walking tours, built specifically to go beyond the standard, checklist-style itinerary most visitors default to. The goal has always been showing guests the real Jaipur, not steering them toward shopping stops — though if you're genuinely looking for honest local recommendations, they're happy to help with that too." },
+      { q: "Does Raah's guide work alone, or are there other guides on the team?", a: "Raah is a family-led concept rather than a solo operation. Founder Shobhit and his mentor and father both personally lead [walking tours](/jaipur-walking-tours), built specifically to go beyond the standard, checklist-style itinerary most visitors default to. The goal has always been showing guests the real Jaipur, not steering them toward shopping stops — though if you're genuinely looking for honest local recommendations, they're happy to help with that too." },
       { q: "Can I request a private, one-on-one experience?", a: "Yes — every Raah experience can be booked privately for couples, families, or small groups who'd prefer a more personalized pace." },
     ],
     body: `Jaipur has no shortage of people offering to show you around — outside every major fort, in every hotel lobby, on every street corner near a monument. Some are excellent. Many aren't. The difference usually isn't obvious until you're already midway through a tour that's turned into three unplanned stops at "family-run" shops with suspiciously enthusiastic recommendations, or a rushed walk through the main sights that leaves you with photos but no real understanding of what you actually saw. Knowing what actually separates a reputable guide from an opportunistic one can save your trip — not just your budget, but the entire experience of a city that rewards genuine local knowledge far more than a quick photo stop ever could.
@@ -2844,7 +2936,7 @@ The Palace of Winds is the most photographed building in Jaipur, and most visito
 
 ### 2. Walk Through City Palace
 
-City Palace is still home to the royal family of Jaipur, who live in Chandra Mahal. Visitors can walk through the courtyards, the textile and arms galleries, and Pritam Niwas Chowk, the courtyard with four painted gates, each representing a season.
+[City Palace](/journal/city-palace-jaipur) is still home to the royal family of Jaipur, who live in Chandra Mahal. Visitors can walk through the courtyards, the textile and arms galleries, and Pritam Niwas Chowk, the courtyard with four painted gates, each representing a season.
 
 **Tip:** City Palace is more about opulence and grandeur than a museum. If you are going mainly for the famous Blue Room, know that it is only open on the palace's guided royal tour, which covers almost every corner of the palace at an extra cost. City Palace is open from 9:30 AM to 6:30 PM, with the last tickets sold at 6:00 PM.
 

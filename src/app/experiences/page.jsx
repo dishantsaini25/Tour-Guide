@@ -3,9 +3,9 @@ import { cloudImg } from "@/lib/cloudinaryImage";
 import ExperiencesPageClient from "./ExperiencesPageClient";
 
 export const metadata = {
-title: { absolute: "Jaipur City Sightseeing Tours — Raah Experiences" },
+title: "Jaipur Tours & Cultural Experiences",
   description:
-    "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
+    "Jaipur tours and cultural experiences with a local guide: heritage walks, food walks, artisan workshops, a family cooking class and private day tours.",
   alternates: {
     canonical: "https://www.raahexperiences.in/experiences",
     languages: {
@@ -15,18 +15,18 @@ title: { absolute: "Jaipur City Sightseeing Tours — Raah Experiences" },
     },
   },
   openGraph: {
-    title: "Jaipur City Sightseeing Tours — Raah Experiences",
+    title: "Jaipur Tours & Cultural Experiences | Raah Experiences",
     description:
-      "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
+      "Jaipur tours and cultural experiences with a local guide: heritage walks, food walks, artisan workshops, a family cooking class and private day tours.",
     url: "https://www.raahexperiences.in/experiences",
     type: "website",
     images: ["https://www.raahexperiences.in/images/tours/jal-mahal-man-sagar-lake.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jaipur City Sightseeing Tours — Raah Experiences",
+    title: "Jaipur Tours & Cultural Experiences | Raah Experiences",
     description:
-      "Unique things to do in Jaipur — curated heritage walks, food trails, and hidden-gem tours with expert local guides.",
+      "Jaipur tours and cultural experiences with a local guide: heritage walks, food walks, artisan workshops, a family cooking class and private day tours.",
     images: ["https://www.raahexperiences.in/images/tours/jal-mahal-man-sagar-lake.webp"],
   },
 };

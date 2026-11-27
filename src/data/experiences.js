@@ -624,8 +624,8 @@ metaDescription: "An evening Pink City walk through Jaipur's old bazaars and art
   {
    slug: "farm-and-fire",
 seoName: "Rajasthani Cooking Class in Jaipur",
-metaTitle: "Rajasthani Cooking Class in Jaipur",
-metaDescription: "Cook a traditional Rajasthani vegetarian meal over a wood-fired chulha with a local family at a countryside farmhouse, 30 minutes from Jaipur.",
+metaTitle: "Cooking Class in Jaipur with a Local Family",
+metaDescription: "Home cooking class near Amber, Jaipur: cook a Rajasthani meal on a wood-fired chulha at a green farmhouse and share dinner with a local family.",
     priceUSD: 45,
     priceINR: 4000,
     priceNote: "₹7,200 for 2 · ₹3,200 pp for 3–4 · ₹2,500 pp for 5–8",
@@ -722,8 +722,8 @@ metaDescription: "Cook a traditional Rajasthani vegetarian meal over a wood-fire
 {
 slug: "living-walled-city",
 seoName: "Jaipur Old City Walking Tour",
-metaTitle: "Jaipur Old City Walk | Living the Walled City",
-metaDescription: "Walk Jaipur's UNESCO-listed walled city beyond its monuments — hidden mohallas, temples, mosques, havelis and the people who keep it alive.",
+metaTitle: "Jaipur Heritage Walk | Living the Walled City",
+metaDescription: "A heritage walk through Jaipur's UNESCO-listed walled city: hidden mohallas, temples, mosques, havelis and the people who keep it alive.",
   priceUSD: 30,
   priceINR: 2500,
   priceNote: "₹4,500 for 2 · ₹2,000 pp for 3–4 · ₹1,600 pp for 5–8",

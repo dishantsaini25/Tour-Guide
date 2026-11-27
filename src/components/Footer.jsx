@@ -27,6 +27,7 @@ const expLinks = [
 const navLinks = [
   ["/",            "Home"],
   ["/experiences", "All Experiences"],
+  ["/jaipur-walking-tours", "Walking Tours in Jaipur"],
   ["/about",       "About & Philosophy"],
   ["/journal",     "The Raah Journal"],
   ["/contact",     "Book an Experience"],
