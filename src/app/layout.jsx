@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="0xOYCIdIz9rmJGreskRMlRuZrrxMIkkbt7RYOEkoSls" />
+        <meta name="google-site-verification" content="F3sL2RNX5ujSWhtDRCKgIqR5ueBIuE8AOOeDWv1_v1E" />
         <meta name="msvalidate.01" content="0CCB0A1597111DBD4D9520285B11FE6E" />
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <script
