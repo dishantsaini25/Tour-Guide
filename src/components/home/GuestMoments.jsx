@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import SectionWrapper from "@/components/SectionWrapper";
 import SectionHeading from "@/components/SectionHeading";
-import { cloudImg } from "@/lib/cloudinaryImage";
+import { cloudImgW } from "@/lib/cloudinaryImage";
 
 // Real photos from Raah tours. Guests agreed to appear on the website (confirmed by Raah).
 const PHOTOS = [
@@ -92,7 +92,7 @@ export default function GuestMoments() {
               aria-label={`Open photo: ${p.alt}`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={cloudImg(p.src)} alt={p.alt} loading="lazy" decoding="async" />
+              <img src={cloudImgW(p.src, 640)} alt={p.alt} loading="lazy" decoding="async" />
               <span className="gm-cap">{p.place}</span>
             </button>
           ))}
@@ -130,7 +130,7 @@ export default function GuestMoments() {
           <button type="button" className="gm-btn gm-prev" onClick={prev} aria-label="Previous photo"><ChevronLeft size={22} /></button>
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={cloudImg(PHOTOS[open].src)} alt={PHOTOS[open].alt} />
+            <img src={cloudImgW(PHOTOS[open].src, 1400)} alt={PHOTOS[open].alt} />
             <figcaption>{PHOTOS[open].place} · {open + 1} / {PHOTOS.length}</figcaption>
           </figure>
           <button type="button" className="gm-btn gm-next" onClick={next} aria-label="Next photo"><ChevronRight size={22} /></button>

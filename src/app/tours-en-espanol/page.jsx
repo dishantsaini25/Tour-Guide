@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { experiences } from "@/data/experiences";
-import { cloudImg } from "@/lib/cloudinaryImage";
+import { cloudImgW } from "@/lib/cloudinaryImage";
 
 const URL = "https://www.raahexperiences.in/tours-en-espanol";
 const TITLE = "Tours en español en Jaipur con guía local";
@@ -151,7 +151,7 @@ export default function ToursEnEspanolPage() {
               <article key={exp.slug} style={{ background: "var(--card)", border: "1px solid var(--border-soft)", borderRadius: 16, overflow: "hidden", display: "flex", flexDirection: "column", minWidth: 0 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={cloudImg(exp.cardImage || exp.heroImage)}
+                  src={cloudImgW(exp.cardImage || exp.heroImage, 800)}
                   alt={exp.heroAlt || exp.title}
                   loading="lazy"
                   style={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", maxWidth: "100%" }}

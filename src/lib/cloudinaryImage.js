@@ -53,6 +53,25 @@ export function cloudImg(localPath) {
 }
 
 /**
+ * Same as cloudImg, but asks Cloudinary for a resized, auto-format, auto-quality
+ * version (e.g. WebP/AVIF at the given width). Use for plain <img> tags that do not
+ * go through next/image, so phones do not download the full-size original.
+ *
+ * @param {string|null|undefined} localPath
+ * @param {number} width  target width in CSS pixels x2 for retina
+ * @returns {string}
+ */
+export function cloudImgW(localPath, width) {
+  const url = cloudImg(localPath);
+  const marker = "/image/upload/";
+  const i = url.indexOf(marker);
+  if (i === -1) return url;                               // not a Cloudinary URL
+  const rest = url.slice(i + marker.length);
+  if (/^(f_|q_|w_|c_)/.test(rest)) return url;            // already transformed
+  return `${url.slice(0, i + marker.length)}f_auto,q_auto,w_${width}/${rest}`;
+}
+
+/**
  * Return true if the path is already served from Cloudinary.
  * Useful for conditional rendering or debugging.
  *

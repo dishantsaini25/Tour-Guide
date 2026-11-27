@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { cloudImg } from "@/lib/cloudinaryImage";
+import { cloudImgW } from "@/lib/cloudinaryImage";
 
 /* ── Review images — each mapped to a guest ─────────────────── */
 const reviewImages = [
@@ -101,7 +101,7 @@ function Lightbox({ idx, onClose, onNext, onPrev }) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={cloudImg(img.src)}
+            src={cloudImgW(img.src, 1400)}
             alt={img.alt}
             className="ri-lightbox-img"
           />
@@ -312,7 +312,7 @@ function ReviewImageCard({ img, onClick }) {
       <div className="ri-card-image-wrap">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={cloudImg(img.src)}
+          src={cloudImgW(img.src, 640)}
           alt={img.alt}
           className="ri-card-img"
           loading="lazy"

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
-import { cloudImg } from "@/lib/cloudinaryImage";
+import { cloudImgW } from "@/lib/cloudinaryImage";
 import { galleryImages, galleryCategories } from "@/data/gallery";
 
 const PF="Fraunces,Georgia,serif", IN="DM Sans,system-ui,sans-serif";
@@ -76,7 +76,7 @@ export default function GalleryPage() {
                   style={{ marginBottom:"12px", position:"relative", overflow:"hidden", cursor:"pointer", border:"1px solid #FFD89B" }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={cloudImg(img.src)} alt={img.alt} className="w-full h-auto block" loading="lazy" decoding="async" />
+                  <img src={cloudImgW(img.src, 640)} alt={img.alt} className="w-full h-auto block" loading="lazy" decoding="async" />
                   <div className="govl"
                     style={{ position:"absolute", inset:0, background:"rgba(255,140,0,0.72)", opacity:0, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:"8px", transition:"opacity .3s" }}
                   >
@@ -134,7 +134,7 @@ export default function GalleryPage() {
           ><ChevronRight size={22} /></button>
           <div style={{ maxWidth:"1100px", width:"100%" }} onClick={e => e.stopPropagation()}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={cloudImg(lightbox.src)} alt={lightbox.alt} className="w-full h-auto object-contain" style={{ maxHeight:"78vh", border:"1px solid rgba(255,255,255,0.08)" }} />
+            <img src={cloudImgW(lightbox.src, 1600)} alt={lightbox.alt} className="w-full h-auto object-contain" style={{ maxHeight:"78vh", border:"1px solid rgba(255,255,255,0.08)" }} />
             <div style={{ background:"rgba(20,10,0,0.88)", padding:"14px 20px", borderTop:"1px solid rgba(255,255,255,0.06)" }}>
               <p style={{ fontFamily:PF, color:"#FFFFFF", fontWeight:500, fontSize:"0.95rem", fontStyle:"italic" }}>{lightbox.alt}</p>
               <p style={{ fontFamily:IN, fontSize:"0.6rem", letterSpacing:"0.18em", textTransform:"uppercase", color:GO, fontWeight:700, marginTop:"4px" }}>{lightbox.category}</p>
