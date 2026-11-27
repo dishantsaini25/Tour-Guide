@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AboutValuesSlider from "./AboutClient";
-import urlMap from "../../../cloudinary-urls.json";
+import { cloudImg } from "@/lib/cloudinaryImage";
 
 export const metadata = {
 title: { absolute: "Meet Your Jaipur Tour Guide | Raah Experiences" },
@@ -28,8 +28,7 @@ const RULE_C = { width: "36px", height: "2px", background: `linear-gradient(to r
 const LABEL = { fontFamily: IN, fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700, color: OR };
 
 export default function AboutPage() {
-  const aboutHero = urlMap["/images/8c213b3328e704cdcb7aca874adfe1c1.jpg"]
-    || "/images/8c213b3328e704cdcb7aca874adfe1c1.jpg";
+  const aboutHero = cloudImg("/images/8c213b3328e704cdcb7aca874adfe1c1.jpg");
   return (
     <>
       <script

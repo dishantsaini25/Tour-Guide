@@ -1,4 +1,5 @@
 import JournalClient from "./JournalClient";
+import { cloudImg } from "@/lib/cloudinaryImage";
 
 export const metadata = {
   title: { absolute: "Jaipur Travel Blog | Stories of the Pink City by Raah Experiences" },
@@ -53,7 +54,6 @@ export default function JournalPage() {
         .jp-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp');
           background-size: cover;
           background-position: center 35%;
         }
@@ -105,7 +105,7 @@ export default function JournalPage() {
 
       {/* ── Premium hero ── */}
       <section className="jp-hero">
-        <div className="jp-hero-bg" />
+        <div className="jp-hero-bg" style={{ backgroundImage: `url('${cloudImg("/experiences/beyond-the-pink/pink-city-bazaar-cycle-rickshaw-jaipur.webp")}')` }} />
         <div className="jp-hero-dark" />
         <div className="jp-hero-overlay" />
         <div className="jp-hero-accent" />
