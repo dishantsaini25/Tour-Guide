@@ -176,7 +176,10 @@ export default function Footer() {
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
               <p style={{ fontFamily: IN, fontSize: "0.65rem", color: "rgba(255,253,231,0.18)", fontStyle: "italic" }}>
-                Crafted with care · Jaipur, Rajasthan
+                Crafted with care · Jaipur, Rajasthan · Managed by{" "}
+                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>
+                  PashGen
+                </a>
               </p>
             </div>
           </div>
@@ -255,7 +258,10 @@ export default function Footer() {
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
               <p style={{ fontSize: "0.68rem", color: "rgba(255,253,231,0.16)", fontStyle: "italic" }}>
-                Crafted with care · Jaipur, Rajasthan
+                Crafted with care · Jaipur, Rajasthan · Managed by{" "}
+                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>
+                  PashGen
+                </a>
               </p>
             </div>
           </div>
