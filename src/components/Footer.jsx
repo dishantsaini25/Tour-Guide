@@ -172,14 +172,14 @@ export default function Footer() {
               </div>
             </div>
             <div style={{ borderTop: `1px solid ${FBD}`, padding: "16px 20px", textAlign: "center" }}>
-              <p style={{ fontFamily: IN, fontSize: "0.7rem", color: "rgba(255,253,231,0.62)", fontWeight: 300, marginBottom: "3px" }}>
+              <p style={{ fontFamily: IN, fontSize: "0.76rem", color: "rgba(255,253,231,0.62)", fontWeight: 300, marginBottom: "3px" }}>
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
-              <p style={{ fontFamily: IN, fontSize: "0.65rem", color: "rgba(255,253,231,0.55)", fontStyle: "italic" }}>
-                Crafted with care · Jaipur, Rajasthan · Managed by{" "}
-                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>
+              <p style={{ fontFamily: IN, fontSize: "0.76rem", color: "rgba(255,253,231,0.55)", fontStyle: "italic" }}>
+                Crafted with care · Jaipur, Rajasthan · <span style={{ color: ACC, fontStyle: "normal" }}>Managed by{" "}
+                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: ACC, fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px" }}>
                   PashGen
-                </a>
+                </a></span>
               </p>
             </div>
           </div>
@@ -254,14 +254,14 @@ export default function Footer() {
           {/* Bottom bar */}
           <div style={{ borderTop: `1px solid ${FBD}` }}>
             <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "18px 32px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
-              <p style={{ fontSize: "0.72rem", color: "rgba(255,253,231,0.62)", fontWeight: 300 }}>
+              <p style={{ fontSize: "0.82rem", color: "rgba(255,253,231,0.62)", fontWeight: 300 }}>
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
-              <p style={{ fontSize: "0.68rem", color: "rgba(255,253,231,0.55)", fontStyle: "italic" }}>
-                Crafted with care · Jaipur, Rajasthan · Managed by{" "}
-                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>
+              <p style={{ fontSize: "0.82rem", color: "rgba(255,253,231,0.55)", fontStyle: "italic" }}>
+                Crafted with care · Jaipur, Rajasthan · <span style={{ color: ACC, fontStyle: "normal" }}>Managed by{" "}
+                <a href="https://www.pashgen.com/" target="_blank" rel="nofollow noopener" style={{ color: ACC, fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px" }}>
                   PashGen
-                </a>
+                </a></span>
               </p>
             </div>
           </div>
