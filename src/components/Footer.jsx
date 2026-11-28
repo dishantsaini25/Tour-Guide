@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
-import { MapPin, Mail, Phone, Plus, Minus } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 /* ── Light footer palette ── */
 const FG  = "#1A1209";               /* footer bg — warm near-black */
@@ -45,7 +44,6 @@ const socialIcons = [
 ];
 
 export default function Footer() {
-  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <>
@@ -94,23 +92,7 @@ export default function Footer() {
         {/* ── MOBILE FOOTER ── */}
         <div className="f-mobile" style={{ background: FG, color: FT }} aria-label="Site footer">
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 20px", borderBottom: mobileOpen ? `1px solid ${FBD}` : "none" }}>
-            <div>
-              <div style={{ fontFamily: PF, fontSize: "1.25rem", fontWeight: 700, color: FTH, lineHeight: 1 }}>Raah India</div>
-              <div style={{ fontFamily: IN, fontSize: "0.48rem", letterSpacing: "0.24em", textTransform: "uppercase", color: ACC, fontWeight: 600, marginTop: "3px" }}>Curated Experiences · Jaipur</div>
-            </div>
-            <button
-              onClick={() => setMobileOpen(p => !p)}
-              aria-expanded={mobileOpen}
-              aria-controls="mobile-footer-body"
-              aria-label={mobileOpen ? "Collapse footer" : "Expand footer"}
-              style={{ width: "44px", height: "44px", borderRadius: "50%", border: `1.5px solid rgba(245,166,35,0.35)`, background: "transparent", color: ACC, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}
-            >
-              {mobileOpen ? <Minus size={16} /> : <Plus size={16} />}
-            </button>
-          </div>
-
-          <div id="mobile-footer-body" style={{ overflow: "hidden", maxHeight: mobileOpen ? "1400px" : "0px", opacity: mobileOpen ? 1 : 0, transition: "max-height .45s ease, opacity .35s ease" }}>
+          <div id="mobile-footer-body">
             <div style={{ padding: "28px 20px 0" }}>
               <div style={{ textAlign: "center", marginBottom: "28px" }}>
                 <div style={{ fontFamily: PF, fontSize: "1.5rem", fontWeight: 700, color: FTH, marginBottom: "4px" }}>Raah India</div>
@@ -171,7 +153,7 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div style={{ borderTop: `1px solid ${FBD}`, padding: "16px 20px", textAlign: "center" }}>
+            <div style={{ borderTop: `1px solid ${FBD}`, padding: "16px 20px 96px", textAlign: "center" }}>
               <p style={{ fontFamily: IN, fontSize: "0.76rem", color: "rgba(255,253,231,0.62)", fontWeight: 300, marginBottom: "3px" }}>
                 © {new Date().getFullYear()} Raah India Experiences. All rights reserved.
               </p>
